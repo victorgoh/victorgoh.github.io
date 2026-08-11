@@ -44,6 +44,7 @@ export interface Plan {
   id: string;
   title: string;
   type: 'reading' | 'prayer' | 'reading_plan' | 'prayer_guide';
+  bannerUrl?: string;
   iconUrl?: string;
   items: ItemConfig[];
 }
