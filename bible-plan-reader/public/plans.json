@@ -1,0 +1,33 @@
+{
+  "organization": {
+    "name": "Full Gospel Assembly FGAKL",
+    "logoUrl": "https://www.fga.my/wp-content/uploads/2019/09/logo-fga.png",
+    "bannerUrl": "https://www.fga.my/wp-content/uploads/2023/08/Website-Banner-Photo-3-scaled.jpg",
+    "website": "https://fga.my",
+    "email": "info@fga.my"
+  },
+  "plans": [
+    {
+      "id": "40-days-fast-prayer-2026",
+      "title": "40 Days Fast & Prayer: Walk in Humility",
+      "description": "NECF 40 Days Fast and Prayer guide focused on intercession, humility, unity, and national transformation.",
+      "type": "prayer",
+      "totalItems": 40,
+      "url": "plans/40-days-fast-prayer-2026.json",
+      "creator": "NECF Malaysia",
+      "version": "1.0",
+      "iconUrl": "https://necf.org.my/aeimages/Image/2026/40_fnp_2026_-adult-_en_cover_r1.jpeg"
+    },
+    {
+      "id": "with-christ-in-school-of-prayer",
+      "title": "With Christ in the School of Prayer",
+      "description": "A 31-day devotional reading plan with Andrew Murray exploring the secrets, power, and ministry of prevailing prayer.",
+      "type": "reading",
+      "totalItems": 31,
+      "url": "plans/with-christ-in-school-of-prayer.json",
+      "creator": "Andrew Murray",
+      "version": "1.0",
+      "iconUrl": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=320&h=320&q=80"
+    }
+  ]
+}

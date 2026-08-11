@@ -1,0 +1,7 @@
+# Dependencies & build output
+node_modules/
+dist/
+
+# OS temporary files
+.DS_Store
+*.log

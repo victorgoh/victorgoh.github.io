@@ -1,0 +1,21 @@
+[
+  {
+    "id": "30-days-gospels",
+    "title": "30 Days in the Gospels (Featured)",
+    "description": "Walk through the life, teachings, and resurrection of Jesus across the four gospels.",
+    "type": "reading_plan",
+    "totalItems": 30,
+    "url": "plans/30-days-gospels.json",
+    "creator": "Faith Community Church",
+    "version": "1.1",
+    "bannerUrl": "https://images.unsplash.com/photo-1507434965515-61970f2bd7c6?auto=format&fit=crop&w=1440&h=810&q=80",
+    "iconUrl": "https://images.unsplash.com/photo-1507434965515-61970f2bd7c6?auto=format&fit=crop&w=320&h=320&q=80"
+  },
+  {
+    "id": "circular-test-root",
+    "title": "⚠️ Back to Main Catalog (Circular Test)",
+    "description": "This points back to /plans.json to test the circular reference validation system.",
+    "type": "category",
+    "url": "plans.json"
+  }
+]
