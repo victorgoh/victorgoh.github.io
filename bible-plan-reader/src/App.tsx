@@ -73,6 +73,21 @@ const BIBLE_VERSIONS = [
 ];
 
 export const App: React.FC = () => {
+  // Automatic cache invalidation when plan schemas or JSON content are updated
+  const CACHE_VERSION = 'v1.1';
+  try {
+    if (localStorage.getItem('app_plan_cache_version') !== CACHE_VERSION) {
+      Object.keys(localStorage).forEach((key) => {
+        if (key.startsWith('cached_plan_')) {
+          localStorage.removeItem(key);
+        }
+      });
+      localStorage.setItem('app_plan_cache_version', CACHE_VERSION);
+    }
+  } catch (e) {
+    console.error(e);
+  }
+
   // Dynamic custom repository URL state (URL query param "?repo=" overrides localStorage, falls back to default '/plans.json')
   const [repositoryUrl] = useState<string>(() => {
     const params = new URLSearchParams(window.location.search);
