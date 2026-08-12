@@ -21,10 +21,8 @@ export const en = {
       xl: 'Extra Large'
     },
     fontThemes: {
-      modern: 'Modern',
       editorial: 'Elegant',
-      warm: 'Friendly',
-      majestic: 'Traditional'
+      warm: 'Friendly'
     }
   },
   plans: {

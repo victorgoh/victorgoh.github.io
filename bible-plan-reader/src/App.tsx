@@ -96,12 +96,16 @@ export const App: React.FC = () => {
   });
 
   const [pref, setPref] = useState<UserPreferences>(() => {
-    return loadLocalState<UserPreferences>('user_preferences', {
+    const loaded = loadLocalState<UserPreferences>('user_preferences', {
       language: 'en',
       bibleTranslation: 'NIV',
       fontSize: 'medium',
-      fontTheme: 'modern'
+      fontTheme: 'editorial'
     });
+    if (loaded.fontTheme !== 'editorial' && loaded.fontTheme !== 'warm') {
+      loaded.fontTheme = 'editorial';
+    }
+    return loaded;
   });
 
   // Active Plan States
@@ -307,7 +311,8 @@ export const App: React.FC = () => {
     
     // Add current classes
     document.documentElement.classList.add(`size-${pref.fontSize || 'medium'}`);
-    document.documentElement.classList.add(`theme-font-${pref.fontTheme || 'modern'}`);
+    const activeTheme = (pref.fontTheme === 'warm') ? 'warm' : 'editorial';
+    document.documentElement.classList.add(`theme-font-${activeTheme}`);
   }, [pref.fontSize, pref.fontTheme]);
 
   // Recalculate item when plan or start date changes (on startup or plan load)
@@ -1258,13 +1263,11 @@ export const App: React.FC = () => {
                 <label htmlFor="settings-font-theme">{t('settings.fontTheme')}</label>
                 <select
                   id="settings-font-theme"
-                  value={pref.fontTheme || 'modern'}
+                  value={pref.fontTheme === 'warm' ? 'warm' : 'editorial'}
                   onChange={(e) => handleUpdateSettings({ ...pref, fontTheme: e.target.value as any })}
                 >
-                  <option value="modern">{t('settings.fontThemes.modern')}</option>
                   <option value="editorial">{t('settings.fontThemes.editorial')}</option>
                   <option value="warm">{t('settings.fontThemes.warm')}</option>
-                  <option value="majestic">{t('settings.fontThemes.majestic')}</option>
                 </select>
               </div>
 

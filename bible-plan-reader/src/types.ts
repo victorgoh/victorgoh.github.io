@@ -71,7 +71,7 @@ export interface UserPreferences {
   language: 'en' | 'zh' | 'ms';
   bibleTranslation: string;
   fontSize: 'small' | 'medium' | 'large' | 'xl';
-  fontTheme: 'modern' | 'editorial' | 'warm' | 'majestic';
+  fontTheme: 'editorial' | 'warm';
 }
 
 export interface OrgBranding {

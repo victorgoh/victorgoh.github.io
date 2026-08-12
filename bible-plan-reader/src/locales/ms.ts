@@ -21,10 +21,8 @@ export const ms = {
       xl: 'Sangat Besar'
     },
     fontThemes: {
-      modern: 'Moden',
       editorial: 'Elegan',
-      warm: 'Mesra',
-      majestic: 'Tradisional'
+      warm: 'Mesra'
     }
   },
   plans: {

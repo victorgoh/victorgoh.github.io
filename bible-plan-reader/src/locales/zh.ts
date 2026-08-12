@@ -21,10 +21,8 @@ export const zh = {
       xl: '特大'
     },
     fontThemes: {
-      modern: '现代',
       editorial: '典雅',
-      warm: '温馨',
-      majestic: '传统'
+      warm: '温馨'
     }
   },
   plans: {
