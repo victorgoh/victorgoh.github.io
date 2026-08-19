@@ -16,21 +16,16 @@ const deploymentPaths = [
 ];
 
 await Promise.all(
-  [...deploymentPaths, "growing-leaders"].map((path) =>
+  deploymentPaths.map((path) =>
     rm(join(projectDirectory, path), { force: true, recursive: true }),
   ),
 );
 
 for (const entry of deploymentPaths) {
-  const sourcePath =
-    entry === "_next"
-      ? join(staticBuildDirectory, "growing-leaders", entry)
-      : join(staticBuildDirectory, entry);
-
-  await cp(sourcePath, join(projectDirectory, entry), {
+  await cp(join(staticBuildDirectory, entry), join(projectDirectory, entry), {
     force: true,
     recursive: true,
   });
 }
 
-console.log("Staged the GitHub Pages site at /growing-leaders/.");
+console.log("Staged the static Cloudflare Pages site at the project root.");
