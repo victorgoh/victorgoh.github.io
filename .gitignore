@@ -5,3 +5,6 @@ dist/
 # OS temporary files
 .DS_Store
 *.log
+
+# Preserve local history when a standalone project is integrated here
+/.local-git-history/
