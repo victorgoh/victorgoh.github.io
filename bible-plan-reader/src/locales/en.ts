@@ -1,5 +1,5 @@
 export const en = {
-  appTitle: 'Daily Grace',
+  appTitle: 'Bible Reading & Prayer Guide',
   subtitle: 'Bible Reading & Prayer Guide',
   tabs: {
     readReflect: 'Read & Reflect',
