@@ -15,6 +15,16 @@
       "url": "plans/40-days-fast-prayer-2026.json",
       "creator": "NECF Malaysia",
       "version": "1.0",
+      "created": "2026-08-01",
+      "lastUpdated": "2026-08-01",
+      "tags": [
+        "Prayer",
+        "Fasting",
+        "Humility",
+        "Unity",
+        "Intercession"
+      ],
+      "featured": false,
       "iconUrl": "https://necf.org.my/aeimages/Image/2026/40_fnp_2026_-adult-_en_cover_r1.jpeg"
     },
     {
@@ -26,6 +36,15 @@
       "url": "plans/with-christ-in-school-of-prayer.json",
       "creator": "Andrew Murray",
       "version": "1.0",
+      "created": "2026-08-12",
+      "lastUpdated": "2026-08-12",
+      "tags": [
+        "Prayer",
+        "Devotional",
+        "Classic",
+        "Spiritual Growth"
+      ],
+      "featured": false,
       "iconUrl": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=320&h=320&q=80"
     },
     {
@@ -36,8 +55,38 @@
       "totalItems": 7,
       "url": "plans/new-leaders.json",
       "creator": "Bible Study Curriculum",
-      "version": "1.0",
+      "version": "1.1",
+      "created": "2026-08-21",
+      "lastUpdated": "2026-08-21",
+      "tags": [
+        "Leadership",
+        "Discipleship",
+        "Character",
+        "Bible Study"
+      ],
+      "featured": false,
       "iconUrl": "https://images.unsplash.com/photo-1519834785169-98be25ec3f84?auto=format&fit=crop&w=320&h=320&q=80"
+    },
+    {
+      "id": "growing-leaders",
+      "title": "Growing Leaders: 30-Lesson Leadership Journey",
+      "description": "A 30-lesson leadership journey across 6 foundational modules in calling, character, competence, and community, exploring how God shapes your story, integrity, faithfulness, gifts, relationships, and intimacy with Him.",
+      "type": "reading",
+      "totalItems": 31,
+      "url": "plans/growing-leaders.json",
+      "creator": "Growing Leaders Course",
+      "version": "1.0",
+      "created": "2026-08-21",
+      "lastUpdated": "2026-08-21",
+      "tags": [
+        "Leadership",
+        "Character",
+        "Spiritual Formation",
+        "Devotional",
+        "Discipleship"
+      ],
+      "featured": true,
+      "iconUrl": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=320&h=320&q=80"
     }
   ]
 }

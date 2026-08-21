@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1280" viewBox="0 0 1000 1280" role="img" aria-labelledby="title desc">
+  <title id="title">Being and doing development pathway</title>
+  <desc id="desc">A rising vertical pathway alternating between being and doing, leading toward integrated leadership that flows from life with God.</desc>
+  <defs><marker id="arrow" markerWidth="24" markerHeight="18" refX="21" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M3 3 L21 9 L3 15" fill="none" stroke="#8267a8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></marker><filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.12"/></filter></defs>
+  <rect width="1000" height="1280" fill="#f7f4ed"/>
+  <text x="500" y="52" text-anchor="middle" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#536575">Inner formation and faithful practice deepen together</text>
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(130 90)"><rect width="740" height="170" rx="25" fill="#dceff0" stroke="#2a9d8f" stroke-width="4"/><text x="42" y="58" font-size="30" font-weight="700" fill="#2a9d8f">BEING</text><text x="42" y="112" font-size="36" font-weight="700" fill="#17324d">Surrender and identity</text></g>
+    <g transform="translate(130 320)"><rect width="740" height="170" rx="25" fill="#fff0d8" stroke="#e9a23b" stroke-width="4"/><text x="42" y="58" font-size="30" font-weight="700" fill="#d58b1e">DOING</text><text x="42" y="112" font-size="36" font-weight="700" fill="#17324d">Faithful service</text></g>
+    <g transform="translate(130 550)"><rect width="740" height="170" rx="25" fill="#e7f2e4" stroke="#5a9367" stroke-width="4"/><text x="42" y="58" font-size="30" font-weight="700" fill="#5a9367">BEING</text><text x="42" y="112" font-size="36" font-weight="700" fill="#17324d">Character and trust</text></g>
+    <g transform="translate(130 780)"><rect width="740" height="170" rx="25" fill="#f8e3de" stroke="#d66b58" stroke-width="4"/><text x="42" y="58" font-size="30" font-weight="700" fill="#d66b58">DOING</text><text x="42" y="112" font-size="36" font-weight="700" fill="#17324d">Gifts and skill</text></g>
+    <g transform="translate(130 1010)"><rect width="740" height="185" rx="25" fill="#17324d" stroke="#17324d" stroke-width="4"/><text x="42" y="58" font-size="30" font-weight="700" fill="#f2c269">INTEGRATION</text><text x="42" y="112" font-size="36" font-weight="700" fill="white">Leadership flows from life with God</text></g>
+  </g>
+  <g fill="none" stroke="#8267a8" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"><line x1="500" y1="270" x2="500" y2="305"/><line x1="500" y1="500" x2="500" y2="535"/><line x1="500" y1="730" x2="500" y2="765"/><line x1="500" y1="960" x2="500" y2="995"/></g>
+  <text x="500" y="1245" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17324d">Service increasingly flows from character, communion and wisdom.</text>
+</svg>

@@ -58,6 +58,10 @@ export interface PlanListItem {
   url: string;
   creator?: string;
   version?: string;
+  created?: string;
+  lastUpdated?: string;
+  tags?: string[];
+  featured?: boolean;
   iconUrl?: string;
 }
 

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1270" viewBox="0 0 1000 1270" role="img" aria-labelledby="title desc">
+  <title id="title">Formation pathway from experience to faithful response</title>
+  <desc id="desc">Five vertical steps: formative experience, meaning attached, pattern formed, present leadership behaviour, and healing, growth and faithful response.</desc>
+  <defs><marker id="arrow" markerWidth="24" markerHeight="18" refX="21" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M3 3 L21 9 L3 15" fill="none" stroke="#2a9d8f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></marker><filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.13"/></filter></defs>
+  <rect width="1000" height="1270" fill="#f7f4ed"/>
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(150 55)"><rect width="700" height="165" rx="24" fill="#dceff0" stroke="#2a9d8f" stroke-width="4"/><text x="45" y="68" font-size="34" font-weight="700" fill="#17324d">1 · Formative experience</text><text x="45" y="118" font-size="30" fill="#536575">What happened?</text></g>
+    <g transform="translate(150 285)"><rect width="700" height="165" rx="24" fill="#e7f2e4" stroke="#5a9367" stroke-width="4"/><text x="45" y="68" font-size="34" font-weight="700" fill="#17324d">2 · Meaning attached</text><text x="45" y="118" font-size="30" fill="#536575">What did I conclude?</text></g>
+    <g transform="translate(150 515)"><rect width="700" height="165" rx="24" fill="#fff0d8" stroke="#e9a23b" stroke-width="4"/><text x="45" y="68" font-size="34" font-weight="700" fill="#17324d">3 · Pattern formed</text><text x="45" y="118" font-size="30" fill="#536575">A strength, habit, expectation or fear</text></g>
+    <g transform="translate(150 745)"><rect width="700" height="165" rx="24" fill="#f8e3de" stroke="#d66b58" stroke-width="4"/><text x="45" y="68" font-size="34" font-weight="700" fill="#17324d">4 · Present leadership behaviour</text><text x="45" y="118" font-size="30" fill="#536575">How does the pattern appear now?</text></g>
+    <g transform="translate(150 975)"><rect width="700" height="185" rx="24" fill="#ece6f5" stroke="#8267a8" stroke-width="4"/><text x="45" y="68" font-size="34" font-weight="700" fill="#17324d">5 · Healing, growth and response</text><text x="45" y="118" font-size="30" fill="#536575">What is my next faithful step?</text></g>
+  </g>
+  <g fill="none" stroke="#2a9d8f" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"><line x1="500" y1="230" x2="500" y2="270"/><line x1="500" y1="460" x2="500" y2="500"/><line x1="500" y1="690" x2="500" y2="730"/><line x1="500" y1="920" x2="500" y2="960"/></g>
+  <text x="500" y="1225" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17324d">Reflection helps us respond to the past truthfully and faithfully.</text>
+</svg>

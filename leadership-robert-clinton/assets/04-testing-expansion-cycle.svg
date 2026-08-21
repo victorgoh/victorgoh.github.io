@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1320" viewBox="0 0 1000 1320" role="img" aria-labelledby="title desc">
+  <title id="title">Character testing and growth cycle</title>
+  <desc id="desc">A five-step cycle from a character test to honest response, reflection with God, established learning, greater responsibility, and then a new test.</desc>
+  <defs><marker id="arrow" markerWidth="24" markerHeight="18" refX="21" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M3 3 L21 9 L3 15" fill="none" stroke="#5a9367" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></marker><filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.13"/></filter></defs>
+  <rect width="1000" height="1320" fill="#f7f4ed"/>
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(140 60)"><rect width="720" height="150" rx="24" fill="#fff0d8" stroke="#e9a23b" stroke-width="4"/><text x="42" y="62" font-size="34" font-weight="700" fill="#17324d">1 · Character test</text><text x="42" y="110" font-size="29" fill="#536575">Pressure reveals what is within</text></g>
+    <g transform="translate(140 275)"><rect width="720" height="150" rx="24" fill="#f8e3de" stroke="#d66b58" stroke-width="4"/><text x="42" y="62" font-size="34" font-weight="700" fill="#17324d">2 · Honest response</text><text x="42" y="110" font-size="29" fill="#536575">Obey, repent, seek help or repair</text></g>
+    <g transform="translate(140 490)"><rect width="720" height="150" rx="24" fill="#e7f2e4" stroke="#5a9367" stroke-width="4"/><text x="42" y="62" font-size="34" font-weight="700" fill="#17324d">3 · Reflection with God</text><text x="42" y="110" font-size="29" fill="#536575">Discern motives and receive grace</text></g>
+    <g transform="translate(140 705)"><rect width="720" height="150" rx="24" fill="#dceff0" stroke="#2a9d8f" stroke-width="4"/><text x="42" y="62" font-size="34" font-weight="700" fill="#17324d">4 · Established learning</text><text x="42" y="110" font-size="29" fill="#536575">Truth becomes a lived conviction</text></g>
+    <g transform="translate(140 920)"><rect width="720" height="150" rx="24" fill="#ece6f5" stroke="#8267a8" stroke-width="4"/><text x="42" y="62" font-size="34" font-weight="700" fill="#17324d">5 · Greater responsibility</text><text x="42" y="110" font-size="29" fill="#536575">Influence expands with maturity</text></g>
+  </g>
+  <g fill="none" stroke="#5a9367" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"><line x1="500" y1="220" x2="500" y2="260"/><line x1="500" y1="435" x2="500" y2="475"/><line x1="500" y1="650" x2="500" y2="690"/><line x1="500" y1="865" x2="500" y2="905"/><path d="M872 995 C952 995 952 135 875 135"/></g>
+  <rect x="145" y="1140" width="710" height="115" rx="24" fill="#17324d"/><text x="500" y="1187" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="white">The inner foundation</text><text x="500" y="1230" text-anchor="middle" font-family="Arial, sans-serif" font-size="29" fill="#dceff0">Integrity · Obedience · Scripture</text>
+  <text x="885" y="570" text-anchor="middle" transform="rotate(90 885 570)" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#4b7b56">New responsibility brings new tests</text>
+</svg>
