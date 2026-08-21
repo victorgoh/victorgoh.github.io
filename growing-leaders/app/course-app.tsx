@@ -619,9 +619,10 @@ function CourseMarkdown({
           );
         },
         img({ src = "", alt = "" }) {
-          const imageSource = src.startsWith("assets/")
-            ? joinBasePath(src)
-            : src;
+          const rawSrc = typeof src === "string" ? src : "";
+          const imageSource = rawSrc.startsWith("assets/")
+            ? joinBasePath(rawSrc)
+            : rawSrc;
           return <DiagramImage src={imageSource} alt={alt} />;
         },
       }}
