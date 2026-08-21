@@ -3,12 +3,12 @@
 ## Course materials
 
 - [Course Introduction](COURSE-INTRODUCTION.md)
-- [Session 1: God Uses Your Story](sessions/01-god-uses-your-story.md)
-- [Session 2: God Forms Your Character](sessions/02-character-is-formed-under-pressure.md)
-- [Session 3: God Builds Your Faithfulness](sessions/03-be-faithful-with-what-you-have.md)
-- [Session 4: God Develops Your Gifts](sessions/04-discover-and-develop-your-gifts.md)
-- [Session 5: God Shapes How You Lead People](sessions/05-learn-to-lead-with-people.md)
-- [Session 6: God Deepens Your Life With Him](sessions/06-lead-from-a-deepening-life-with-god.md)
+- [Module 1: God Uses Your Story](modules/01-god-uses-your-story.md)
+- [Module 2: God Forms Your Character](modules/02-character-is-formed-under-pressure.md)
+- [Module 3: God Builds Your Faithfulness](modules/03-be-faithful-with-what-you-have.md)
+- [Module 4: God Develops Your Gifts](modules/04-discover-and-develop-your-gifts.md)
+- [Module 5: God Shapes How You Lead People](modules/05-learn-to-lead-with-people.md)
+- [Module 6: God Deepens Your Life With Him](modules/06-lead-from-a-deepening-life-with-god.md)
 
 ## Project purpose
 

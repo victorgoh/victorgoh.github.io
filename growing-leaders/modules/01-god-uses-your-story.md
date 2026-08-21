@@ -1,4 +1,4 @@
-# Session 1: God Uses Your Story
+# Module 1: God Uses Your Story
 
 > **Main idea:** God uses your background and experiences to shape the way you lead, and he can meet you within your story to bring gratitude, healing, growth, and greater freedom.
 >

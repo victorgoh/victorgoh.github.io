@@ -162,12 +162,12 @@ You may not notice dramatic change after every session. Leadership formation is 
 
 Do not compare your pace with another person’s. Pay attention to the next faithful step God is placing before you.
 
-## I.9 Before the first session
+## I.9 Before the first module
 
 Take a moment to write a few sentences in response to these questions:
 
 1. Where am I currently serving, influencing, or taking responsibility for others?
-2. What do I hope will grow in me through these six sessions?
+2. What do I hope will grow in me through these six modules?
 3. What is one question about leadership that I am carrying?
 4. What would help me participate openly and consistently in this group?
 

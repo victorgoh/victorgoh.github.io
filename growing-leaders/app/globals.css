@@ -615,6 +615,7 @@ select:focus-visible {
 
 .storage-warning,
 .continue-card,
+.module-outline,
 .session-outline {
   width: min(100%, 850px);
   margin-right: auto;
@@ -686,6 +687,7 @@ select:focus-visible {
   padding: 8px 15px;
 }
 
+.module-outline,
 .session-outline {
   display: flex;
   width: 100%;
@@ -699,11 +701,13 @@ select:focus-visible {
   background: rgba(255, 253, 248, 0.82);
 }
 
+.module-outline > div,
 .session-outline > div {
   display: grid;
   gap: 3px;
 }
 
+.module-outline strong,
 .session-outline strong {
   display: block;
   margin-top: 3px;
@@ -711,6 +715,7 @@ select:focus-visible {
   font-size: 12px;
 }
 
+.module-outline button,
 .session-outline button {
   min-height: 42px;
   padding: 8px 13px;
@@ -723,6 +728,9 @@ select:focus-visible {
   font-weight: 800;
 }
 
+.module-outline button.module-complete,
+.module-outline button.session-complete,
+.session-outline button.module-complete,
 .session-outline button.session-complete {
   border-color: rgba(31, 122, 112, 0.3);
   background: var(--teal-soft);
@@ -752,6 +760,7 @@ select:focus-visible {
   font-size: 12px;
 }
 
+.module-sections,
 .session-sections {
   width: min(100%, 850px);
   margin: 0 auto 16px;
@@ -760,6 +769,7 @@ select:focus-visible {
   background: rgba(255, 253, 248, 0.82);
 }
 
+.module-sections summary,
 .session-sections summary {
   display: flex;
   min-height: 48px;
@@ -774,16 +784,19 @@ select:focus-visible {
   list-style: none;
 }
 
+.module-sections summary::-webkit-details-marker,
 .session-sections summary::-webkit-details-marker {
   display: none;
 }
 
+.module-sections summary span:last-child,
 .session-sections summary span:last-child {
   color: var(--ink-soft);
   font-size: 11px;
   font-weight: 700;
 }
 
+.module-sections nav,
 .session-sections nav {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -792,6 +805,7 @@ select:focus-visible {
   border-top: 1px solid rgba(24, 49, 71, 0.09);
 }
 
+.module-sections a,
 .session-sections a {
   padding: 7px 8px;
   border-radius: 7px;
@@ -802,6 +816,8 @@ select:focus-visible {
   text-decoration: none;
 }
 
+.module-sections a:hover,
+.module-sections a:focus-visible,
 .session-sections a:hover,
 .session-sections a:focus-visible {
   background: var(--teal-soft);
@@ -1379,6 +1395,7 @@ select:focus-visible {
     display: none;
   }
 
+  .module-sections nav,
   .session-sections nav {
     grid-template-columns: 1fr;
   }
@@ -1410,11 +1427,13 @@ select:focus-visible {
   }
 
   .continue-card,
+  .module-outline,
   .session-outline {
     align-items: stretch;
   }
 
   .continue-card,
+  .module-outline,
   .session-outline {
     display: grid;
   }
@@ -1423,6 +1442,7 @@ select:focus-visible {
     width: 100%;
   }
 
+  .module-outline button,
   .session-outline button {
     width: 100%;
     min-height: 44px;
@@ -1491,10 +1511,12 @@ select:focus-visible {
   .settings-overlay,
   .reset-notice,
   .document-toolbar,
+  .module-sections,
   .session-sections,
   .document-pagination,
   .storage-warning,
   .continue-card,
+  .module-outline,
   .session-outline {
     display: none !important;
   }

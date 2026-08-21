@@ -1,4 +1,4 @@
-# Session 4: God Develops Your Gifts
+# Module 4: God Develops Your Gifts
 
 > **Main idea:** God develops your gifts as you serve, practise, notice fruit, receive feedback, and depend on his grace.
 >

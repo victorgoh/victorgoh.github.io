@@ -5,47 +5,48 @@ import { fileURLToPath } from "node:url";
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const courseRoot = resolve(scriptDirectory, "..");
 const dataDirectory = resolve(courseRoot, "public", "data");
+const rootDataDirectory = resolve(courseRoot, "data");
 
-const sessions = [
+const modules = [
   {
-    id: "session-1",
-    file: "sessions/01-god-uses-your-story.md",
+    id: "module-1",
+    file: "modules/01-god-uses-your-story.md",
     label: "God Uses Your Story",
-    sessionNumber: 1,
+    moduleNumber: 1,
   },
   {
-    id: "session-2",
-    file: "sessions/02-character-is-formed-under-pressure.md",
+    id: "module-2",
+    file: "modules/02-character-is-formed-under-pressure.md",
     label: "God Forms Your Character",
-    sessionNumber: 2,
+    moduleNumber: 2,
   },
   {
-    id: "session-3",
-    file: "sessions/03-be-faithful-with-what-you-have.md",
+    id: "module-3",
+    file: "modules/03-be-faithful-with-what-you-have.md",
     label: "God Builds Your Faithfulness",
-    sessionNumber: 3,
+    moduleNumber: 3,
   },
   {
-    id: "session-4",
-    file: "sessions/04-discover-and-develop-your-gifts.md",
+    id: "module-4",
+    file: "modules/04-discover-and-develop-your-gifts.md",
     label: "God Develops Your Gifts",
-    sessionNumber: 4,
+    moduleNumber: 4,
   },
   {
-    id: "session-5",
-    file: "sessions/05-learn-to-lead-with-people.md",
+    id: "module-5",
+    file: "modules/05-learn-to-lead-with-people.md",
     label: "God Shapes How You Lead People",
-    sessionNumber: 5,
+    moduleNumber: 5,
   },
   {
-    id: "session-6",
-    file: "sessions/06-lead-from-a-deepening-life-with-god.md",
+    id: "module-6",
+    file: "modules/06-lead-from-a-deepening-life-with-god.md",
     label: "God Deepens Your Life With Him",
-    sessionNumber: 6,
+    moduleNumber: 6,
   },
 ];
 
-function splitSession(markdown, file) {
+function splitModule(markdown, file) {
   const divider = /\n---\n\n(?=# Facilitator guide\s*$)/m;
   const parts = markdown.split(divider);
   if (parts.length !== 2) {
@@ -55,12 +56,13 @@ function splitSession(markdown, file) {
 }
 
 await mkdir(dataDirectory, { recursive: true });
+await mkdir(rootDataDirectory, { recursive: true });
 
 const introduction = await readFile(resolve(courseRoot, "COURSE-INTRODUCTION.md"), "utf8");
-const sessionSources = await Promise.all(
-  sessions.map(async (session) => ({
-    ...session,
-    ...splitSession(await readFile(resolve(courseRoot, session.file), "utf8"), session.file),
+const moduleSources = await Promise.all(
+  modules.map(async (module) => ({
+    ...module,
+    ...splitModule(await readFile(resolve(courseRoot, module.file), "utf8"), module.file),
   })),
 );
 
@@ -73,30 +75,29 @@ const documents = [
     kind: "introduction",
     markdown: introduction,
   },
-  ...sessionSources.map((session) => ({
-    id: session.id,
-    file: session.file,
-    label: session.label,
-    shortLabel: `Session ${session.sessionNumber}`,
-    kind: "session",
-    sessionNumber: session.sessionNumber,
-    markdown: session.participant,
+  ...moduleSources.map((module) => ({
+    id: module.id,
+    file: module.file,
+    label: module.label,
+    shortLabel: `Module ${module.moduleNumber}`,
+    kind: "module",
+    moduleNumber: module.moduleNumber,
+    markdown: module.participant,
   })),
-  ...sessionSources.map((session) => ({
-    id: `facilitator-${session.sessionNumber}`,
-    file: `${session.file}#facilitator-guide`,
-    label: session.label,
-    shortLabel: `Session ${session.sessionNumber} Guide`,
+  ...moduleSources.map((module) => ({
+    id: `facilitator-${module.moduleNumber}`,
+    file: `${module.file}#facilitator-guide`,
+    label: module.label,
+    shortLabel: `Module ${module.moduleNumber} Guide`,
     kind: "facilitator",
-    sessionNumber: session.sessionNumber,
-    markdown: session.facilitator,
+    moduleNumber: module.moduleNumber,
+    markdown: module.facilitator,
   })),
 ];
 
-await writeFile(
-  resolve(dataDirectory, "course.json"),
-  `${JSON.stringify({ title: "How God Develops Leaders", documents }, null, 2)}\n`,
-  "utf8",
-);
+const coursePayload = `${JSON.stringify({ title: "How God Develops Leaders", documents }, null, 2)}\n`;
 
-console.log(`Synced ${sessions.length} Markdown sessions into ${documents.length} website documents.`);
+await writeFile(resolve(dataDirectory, "course.json"), coursePayload, "utf8");
+await writeFile(resolve(rootDataDirectory, "course.json"), coursePayload, "utf8");
+
+console.log(`Synced ${modules.length} Markdown modules into ${documents.length} website documents.`);

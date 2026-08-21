@@ -14,10 +14,10 @@ test("builds the course shell from the Markdown sources", async () => {
   assert.match(html, /<title>How God Develops Leaders<\/title>/i);
   assert.equal(data.title, "How God Develops Leaders");
   assert.equal(data.documents.length, 13);
-  assert.equal(data.documents.filter((item) => item.kind === "session").length, 6);
+  assert.equal(data.documents.filter((item) => item.kind === "module").length, 6);
   assert.equal(data.documents.filter((item) => item.kind === "facilitator").length, 6);
   assert.deepEqual(
-    data.documents.filter((item) => item.kind === "session").map((item) => item.label),
+    data.documents.filter((item) => item.kind === "module").map((item) => item.label),
     [
       "God Uses Your Story",
       "God Forms Your Character",
@@ -29,7 +29,7 @@ test("builds the course shell from the Markdown sources", async () => {
   );
   assert.deepEqual(
     data.documents
-      .filter((item) => item.kind === "session")
+      .filter((item) => item.kind === "module")
       .map((item) => item.markdown.match(/> \*\*Leadership habit:\*\* (.+)/)?.[1]),
     [
       "Notice and Learn",
@@ -54,21 +54,21 @@ test("builds the course shell from the Markdown sources", async () => {
     /^### I\.5\.1 Bring It Before God/m,
   );
   assert.match(
-    data.documents.find((item) => item.id === "session-2").markdown,
+    data.documents.find((item) => item.id === "module-2").markdown,
     /Let God’s Word shape you/,
   );
   assert.ok(
     data.documents
-      .filter((item) => item.kind === "session")
+      .filter((item) => item.kind === "module")
       .every((item) => !item.markdown.includes("# Facilitator guide")),
   );
   assert.ok(
     data.documents
-      .filter((item) => item.kind === "session")
+      .filter((item) => item.kind === "module")
       .every(
         (item) =>
-          new RegExp(`^## ${item.sessionNumber}\\.1 `, "m").test(item.markdown) &&
-          new RegExp(`^### ${item.sessionNumber}\\.\\d+\\.1 `, "m").test(item.markdown),
+          new RegExp(`^## ${item.moduleNumber}\\.1 `, "m").test(item.markdown) &&
+          new RegExp(`^### ${item.moduleNumber}\\.\\d+\\.1 `, "m").test(item.markdown),
       ),
   );
   assert.ok(
@@ -79,21 +79,21 @@ test("builds the course shell from the Markdown sources", async () => {
 });
 
 test("keeps the Markdown files as the content source", async () => {
-  const [rawData, introduction, sessionTwo] = await Promise.all([
+  const [rawData, introduction, moduleTwo] = await Promise.all([
     readFile(new URL("dist/client/data/course.json", root), "utf8"),
     readFile(new URL("COURSE-INTRODUCTION.md", root), "utf8"),
-    readFile(new URL("sessions/02-character-is-formed-under-pressure.md", root), "utf8"),
+    readFile(new URL("modules/02-character-is-formed-under-pressure.md", root), "utf8"),
   ]);
   const data = JSON.parse(rawData);
   const divider = /\n---\n\n(?=# Facilitator guide\s*$)/m;
-  const [participant, facilitator] = sessionTwo.split(divider);
+  const [participant, facilitator] = moduleTwo.split(divider);
 
   assert.equal(
     data.documents.find((item) => item.id === "course-introduction").markdown,
     introduction,
   );
   assert.equal(
-    data.documents.find((item) => item.id === "session-2").markdown,
+    data.documents.find((item) => item.id === "module-2").markdown,
     participant.trimEnd(),
   );
   assert.equal(
@@ -111,7 +111,7 @@ test("includes local responses, progress, printing, and accessible navigation", 
 
   assert.match(app, /window\.localStorage/);
   assert.match(app, /window\.print\(\)/);
-  assert.match(app, /Mark session complete/);
+  assert.match(app, /Mark module complete/);
   assert.match(app, /Skip to lesson content/);
   assert.match(app, /Participant course/);
   assert.match(app, /Facilitator resources/);

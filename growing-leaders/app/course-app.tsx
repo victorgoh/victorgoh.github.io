@@ -17,7 +17,8 @@ type CourseDocument = {
   file: string;
   label: string;
   shortLabel: string;
-  kind: "introduction" | "session" | "facilitator";
+  kind: "introduction" | "module" | "facilitator" | "session";
+  moduleNumber?: number;
   sessionNumber?: number;
   markdown: string;
 };
@@ -40,8 +41,13 @@ type ResumePoint = {
   title: string;
 };
 
-function activeDocumentIsNotSession(data: CourseData, activeId: string) {
-  return data.documents.find((document) => document.id === activeId)?.kind !== "session";
+function isCourseModule(document?: CourseDocument) {
+  return document?.kind === "module" || document?.kind === "session";
+}
+
+function activeDocumentIsNotModule(data: CourseData, activeId: string) {
+  const doc = data.documents.find((document) => document.id === activeId);
+  return !isCourseModule(doc);
 }
 
 function safeStorageGet(key: string) {
@@ -184,7 +190,7 @@ function sectionId(documentId: string, title: string) {
   return `${documentId}--${slugify(withoutSectionReference(title))}`;
 }
 
-function sessionSections(document: CourseDocument) {
+function moduleSections(document: CourseDocument) {
   return Array.from(document.markdown.matchAll(/^##\s+(.+)$/gm), (match) => ({
     title: plainText(match[1]),
     id: sectionId(document.id, match[1]),
@@ -195,10 +201,10 @@ function normalizeCourseHash(hash: string) {
   if (hash === "study-guide" || hash.startsWith("study-guide--")) {
     return "course-introduction";
   }
-  if (/^session-\d+--part-(1-learn|2-reflect-and-apply)$/.test(hash)) {
+  if (/^(?:module|session)-\d+--part-(1-learn|2-reflect-and-apply)$/.test(hash)) {
     return hash.replace(/--part-(1-learn|2-reflect-and-apply)$/, "--learn-reflect-and-apply");
   }
-  if (/^session-\d+--part-3-(facilitator-guide-for-the-group-meeting|lead-the-group-session)$/.test(hash)) {
+  if (/^(?:module|session)-\d+--part-3-(facilitator-guide-for-the-group-meeting|lead-the-group-session)$/.test(hash)) {
     return "facilitator-guide";
   }
   return hash;
@@ -415,13 +421,13 @@ function CourseMarkdown({
   documents,
   onNavigate,
   onStorageIssue,
-  sessionProgress,
+  moduleProgress,
 }: {
   document: CourseDocument;
   documents: CourseDocument[];
   onNavigate: (documentId: string, target?: string) => void;
   onStorageIssue: StorageIssueHandler;
-  sessionProgress?: ReactNode;
+  moduleProgress?: ReactNode;
 }) {
   const heading = (level: 1 | 2 | 3 | 4) => {
     function Heading({ children }: { children?: ReactNode }) {
@@ -444,8 +450,8 @@ function CourseMarkdown({
           </>
         ) : children,
       );
-      if (level === 2 && title === "Learn, Reflect and Apply" && sessionProgress) {
-        return <>{renderedHeading}{sessionProgress}</>;
+      if (level === 2 && title === "Learn, Reflect and Apply" && moduleProgress) {
+        return <>{renderedHeading}{moduleProgress}</>;
       }
       return renderedHeading;
     }
@@ -488,7 +494,7 @@ function CourseMarkdown({
             (child) => textFromChildren(child) !== "Write your response here.",
           );
           const line = node?.position?.start.line ?? 0;
-          const legacyLine = document.kind === "session" ? Math.max(0, line - 6) : line;
+          const legacyLine = isCourseModule(document) ? Math.max(0, line - 6) : line;
           const stableId = stableFieldId(document.markdown, line, "response");
           return (
             <div className="response-card">
@@ -517,7 +523,7 @@ function CourseMarkdown({
           const value = textFromChildren(children);
           const line = node?.position?.start.line ?? 0;
           const column = node?.position?.start.column ?? 0;
-          const legacyLine = document.kind === "session" ? Math.max(0, line - 6) : line;
+          const legacyLine = isCourseModule(document) ? Math.max(0, line - 6) : line;
           const stableId = stableFieldId(document.markdown, line, "table", column);
           return (
             <td>
@@ -542,7 +548,7 @@ function CourseMarkdown({
           if (type !== "checkbox") return <input type={type} {...props} />;
           const line = node?.position?.start.line ?? 0;
           const column = node?.position?.start.column ?? 0;
-          const legacyLine = document.kind === "session" ? Math.max(0, line - 6) : line;
+          const legacyLine = isCourseModule(document) ? Math.max(0, line - 6) : line;
           const checkboxLabel = plainText(document.markdown.split(/\r?\n/)[line - 1] ?? "Save this selection");
           const stableId = stableFieldId(document.markdown, line, "check", column);
           return (
@@ -564,7 +570,7 @@ function CourseMarkdown({
             const target = documents.find((item) => item.file === linkedFile);
             if (target) {
               const matchingSection = linkedSection
-                ? sessionSections(target).find(
+                ? moduleSections(target).find(
                     (section) =>
                       slugify(section.title) === linkedSection ||
                       section.id === `${target.id}--${linkedSection}`,
@@ -625,7 +631,7 @@ function CourseMarkdown({
   );
 }
 
-function SessionSectionMenu({
+function ModuleSectionMenu({
   document,
   compact,
   onNavigate,
@@ -634,17 +640,17 @@ function SessionSectionMenu({
   compact: boolean;
   onNavigate: (documentId: string, target?: string) => void;
 }) {
-  const sections = sessionSections(document);
+  const sections = moduleSections(document);
   const [open, setOpen] = useState(!compact);
 
   return (
     <details
-      className="session-sections"
+      className="module-sections session-sections"
       open={open}
       onToggle={(event) => setOpen(event.currentTarget.open)}
     >
       <summary>
-        <span>In this session</span>
+        <span>In this module</span>
         <span>{sections.length} sections</span>
       </summary>
       <nav aria-label={`${document.shortLabel} sections`}>
@@ -866,7 +872,7 @@ export function CourseApp() {
   }, [activeId]);
 
   useEffect(() => {
-    if (!data || activeDocumentIsNotSession(data, activeId)) return;
+    if (!data || activeDocumentIsNotModule(data, activeId)) return;
     let scheduled = false;
     const recordLocation = () => {
       scheduled = false;
@@ -1002,32 +1008,55 @@ export function CourseApp() {
     }
   }
 
-  function sessionProgressKey(documentId: string) {
-    return `${storagePrefix}:progress:${documentId}:session`;
+  function moduleProgressKey(documentId: string) {
+    return `${storagePrefix}:progress:${documentId}:module`;
   }
 
-  function sessionIsComplete(documentId: string) {
+  function moduleIsComplete(documentId: string) {
     void progressRevision;
-    const result = safeStorageGet(sessionProgressKey(documentId));
+    const result = safeStorageGet(moduleProgressKey(documentId));
     if (result.failed) return false;
-    if (result.value === null) {
-      const oldPartOne = safeStorageGet(
-        `${storagePrefix}:progress:${documentId}:${documentId}--part-1-learn`,
-      );
-      const oldPartTwo = safeStorageGet(
-        `${storagePrefix}:progress:${documentId}:${documentId}--part-2-reflect-and-apply`,
-      );
-      if (oldPartOne.value === "true" && oldPartTwo.value === "true") {
-        safeStorageSet(sessionProgressKey(documentId), "true");
-        return true;
-      }
+    if (result.value !== null) return result.value === "true";
+
+    // Legacy progress keys check
+    const legacySessionKey = `${storagePrefix}:progress:${documentId}:session`;
+    const legacySessionResult = safeStorageGet(legacySessionKey);
+    if (legacySessionResult.value === "true") {
+      safeStorageSet(moduleProgressKey(documentId), "true");
+      return true;
     }
-    return result.value === "true";
+
+    const altId = documentId.startsWith("module-")
+      ? documentId.replace("module-", "session-")
+      : documentId.replace("session-", "module-");
+    const altSessionResult = safeStorageGet(`${storagePrefix}:progress:${altId}:session`);
+    if (altSessionResult.value === "true") {
+      safeStorageSet(moduleProgressKey(documentId), "true");
+      return true;
+    }
+    const altModuleResult = safeStorageGet(`${storagePrefix}:progress:${altId}:module`);
+    if (altModuleResult.value === "true") {
+      safeStorageSet(moduleProgressKey(documentId), "true");
+      return true;
+    }
+
+    const oldPartOne = safeStorageGet(
+      `${storagePrefix}:progress:${documentId}:${documentId}--part-1-learn`,
+    );
+    const oldPartTwo = safeStorageGet(
+      `${storagePrefix}:progress:${documentId}:${documentId}--part-2-reflect-and-apply`,
+    );
+    if (oldPartOne.value === "true" && oldPartTwo.value === "true") {
+      safeStorageSet(moduleProgressKey(documentId), "true");
+      return true;
+    }
+
+    return false;
   }
 
-  function toggleSessionComplete(documentId: string) {
-    const key = sessionProgressKey(documentId);
-    const next = !sessionIsComplete(documentId);
+  function toggleModuleComplete(documentId: string) {
+    const key = moduleProgressKey(documentId);
+    const next = !moduleIsComplete(documentId);
     if (!safeStorageSet(key, String(next))) {
       reportStorageIssue();
       return;
@@ -1081,20 +1110,20 @@ export function CourseApp() {
   const resumeDocument = resumePoint
     ? data.documents.find((document) => document.id === resumePoint.documentId)
     : undefined;
-  const complete = activeDocument.kind === "session" && sessionIsComplete(activeDocument.id);
-  const sessionProgress = activeDocument.kind === "session" ? (
-    <section className="session-outline" aria-label="Session progress">
+  const complete = isCourseModule(activeDocument) && moduleIsComplete(activeDocument.id);
+  const moduleProgress = isCourseModule(activeDocument) ? (
+    <section className="module-outline session-outline" aria-label="Module progress">
       <div>
-        <span className="eyebrow">Session progress</span>
-        <strong>{complete ? "Session complete" : "Not yet complete"}</strong>
+        <span className="eyebrow">Module progress</span>
+        <strong>{complete ? "Module complete" : "Not yet complete"}</strong>
       </div>
       <button
         type="button"
-        className={complete ? "session-complete" : ""}
+        className={complete ? "module-complete session-complete" : ""}
         aria-pressed={complete}
-        onClick={() => toggleSessionComplete(activeDocument.id)}
+        onClick={() => toggleModuleComplete(activeDocument.id)}
       >
-        {complete ? "✓ Session complete" : "Mark session complete"}
+        {complete ? "✓ Module complete" : "Mark module complete"}
       </button>
     </section>
   ) : undefined;
@@ -1128,7 +1157,7 @@ export function CourseApp() {
           <span className="brand-mark" aria-hidden="true">H</span>
           <span>
             <strong>How God Develops Leaders</strong>
-            <small>A six-session mentoring journey</small>
+            <small>A six-module mentoring journey</small>
           </span>
         </a>
         <div className="header-actions">
@@ -1188,7 +1217,7 @@ export function CourseApp() {
               <p className="nav-group-title">{group.label}</p>
               {group.documents.map((document) => {
                 const documentComplete =
-                  document.kind === "session" && sessionIsComplete(document.id);
+                  isCourseModule(document) && moduleIsComplete(document.id);
                 return (
                   <a
                     key={document.id}
@@ -1207,7 +1236,7 @@ export function CourseApp() {
                         <span
                           className="nav-complete"
                           aria-label={`${document.shortLabel} complete`}
-                          title="Session complete"
+                          title="Module complete"
                         >
                           ✓
                         </span>
@@ -1410,8 +1439,8 @@ export function CourseApp() {
           </section>
         )}
 
-        {activeDocument.kind === "session" && (
-          <SessionSectionMenu
+        {isCourseModule(activeDocument) && (
+          <ModuleSectionMenu
             key={`${activeDocument.id}:${compactNavigation}`}
             document={activeDocument}
             compact={compactNavigation}
@@ -1419,7 +1448,7 @@ export function CourseApp() {
           />
         )}
 
-        {activeDocument.kind === "session" && sessionProgress}
+        {isCourseModule(activeDocument) && moduleProgress}
 
         <article
           className="course-content"
@@ -1431,7 +1460,7 @@ export function CourseApp() {
             documents={data.documents}
             onNavigate={navigate}
             onStorageIssue={reportStorageIssue}
-            sessionProgress={undefined}
+            moduleProgress={undefined}
           />
         </article>
 

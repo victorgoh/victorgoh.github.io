@@ -1,4 +1,4 @@
-# Session 5: God Shapes How You Lead People
+# Module 5: God Shapes How You Lead People
 
 > **Main idea:** God shapes how you lead people through relationships, responsibility, disagreement, feedback, and opportunities to use influence in the way of Jesus.
 >

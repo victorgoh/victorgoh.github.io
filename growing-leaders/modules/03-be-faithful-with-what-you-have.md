@@ -1,4 +1,4 @@
-# Session 3: God Builds Your Faithfulness
+# Module 3: God Builds Your Faithfulness
 
 > **Main idea:** God builds faithfulness through the ordinary responsibilities, relationships, limits, and opportunities entrusted to you.
 >

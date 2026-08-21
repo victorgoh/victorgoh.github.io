@@ -1,4 +1,4 @@
-# Session 2: God Forms Your Character
+# Module 2: God Forms Your Character
 
 > **Main idea:** God forms your character as pressure reveals what is within you, his Word brings truth, and you respond with integrity and obedience.
 >

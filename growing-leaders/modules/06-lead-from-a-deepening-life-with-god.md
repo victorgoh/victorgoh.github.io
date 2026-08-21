@@ -1,4 +1,4 @@
-# Session 6: God Deepens Your Life With Him
+# Module 6: God Deepens Your Life With Him
 
 > **Main idea:** God deepens your life with him so that your leadership increasingly flows from dependence, love, humility, and lasting spiritual fruit.
 >
