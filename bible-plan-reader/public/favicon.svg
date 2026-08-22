@@ -1,77 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4f46e5"/>
-      <stop offset="50%" stop-color="#6366f1"/>
-      <stop offset="100%" stop-color="#7c3aed"/>
-    </linearGradient>
-
-    <!-- Golden Sunrise Gradient -->
-    <linearGradient id="sunGrad" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.2"/>
-      <stop offset="50%" stop-color="#fbbf24" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#fef08a" stop-opacity="1"/>
-    </linearGradient>
-
-    <!-- Page Highlight Gradient -->
-    <linearGradient id="pageLeft" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f8fafc"/>
-      <stop offset="100%" stop-color="#e2e8f0"/>
-    </linearGradient>
-    <linearGradient id="pageRight" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#e2e8f0"/>
-      <stop offset="100%" stop-color="#ffffff"/>
-    </linearGradient>
-
-    <!-- Drop Shadow Filter -->
-    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.35"/>
-    </filter>
-    
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="12" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
-  </defs>
-
-  <!-- Background Squircle -->
-  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  <!-- Pure Black Squircle Background -->
+  <rect width="512" height="512" rx="112" fill="#000000"/>
   
-  <!-- Subtle Inner Border -->
-  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="#ffffff" stroke-opacity="0.15" stroke-width="4"/>
-
-  <!-- Radiant Sunrise (Rays behind pages) -->
-  <g opacity="0.85" filter="url(#glow)">
-    <!-- Sun Ray Beams -->
-    <path d="M256 220 L220 70 L292 70 Z" fill="url(#sunGrad)"/>
-    <path d="M256 220 L150 90 L200 65 Z" fill="url(#sunGrad)"/>
-    <path d="M256 220 L312 65 L362 90 Z" fill="url(#sunGrad)"/>
-    <path d="M256 220 L95 140 L125 100 Z" fill="url(#sunGrad)"/>
-    <path d="M256 220 L387 100 L417 140 Z" fill="url(#sunGrad)"/>
-    <!-- Central Rising Sun Orb -->
-    <circle cx="256" cy="220" r="54" fill="#fef08a" opacity="0.95"/>
-    <!-- Cross Motif inside Sun -->
-    <path d="M256 185 V245 M235 204 H277" stroke="#f59e0b" stroke-width="7" stroke-linecap="round"/>
-  </g>
-
-  <!-- Open Book Pages -->
-  <g filter="url(#dropShadow)">
-    <!-- Left Page -->
-    <path d="M256 384 C 200 365, 120 375, 80 395 V 230 C 120 210, 200 200, 256 220 Z" fill="url(#pageLeft)"/>
-    <!-- Right Page -->
-    <path d="M256 384 C 312 365, 392 375, 432 395 V 230 C 392 210, 312 200, 256 220 Z" fill="url(#pageRight)"/>
-    
-    <!-- Spine Center Shadow line -->
-    <path d="M256 220 V 384" stroke="#cbd5e1" stroke-width="5" stroke-linecap="round"/>
-    
-    <!-- Decorative Text Lines (Left Page) -->
-    <path d="M110 260 H220 M110 285 H210 M110 310 H220 M110 335 H180" stroke="#94a3b8" stroke-width="4.5" stroke-linecap="round" opacity="0.6"/>
-    
-    <!-- Decorative Text Lines (Right Page) -->
-    <path d="M292 260 H402 M302 285 H402 M292 310 H402 M332 335 H402" stroke="#94a3b8" stroke-width="4.5" stroke-linecap="round" opacity="0.6"/>
-  </g>
-
-  <!-- Golden Bookmark Ribbon -->
-  <path d="M256 220 V 420 L272 404 L288 420 V 220 Z" fill="#f59e0b" opacity="0.9" filter="url(#dropShadow)"/>
+  <!-- Book Cover & Spine -->
+  <rect x="130" y="96" width="252" height="320" rx="16" fill="none" stroke="#ffffff" stroke-width="26"/>
+  <path d="M182 96 V 416" stroke="#ffffff" stroke-width="18"/>
+  
+  <!-- Cover Cross -->
+  <path d="M284 180 V 320 M244 225 H 324" stroke="#ffffff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Page Rim Edge -->
+  <path d="M382 120 H 400 V 392 H 382" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
