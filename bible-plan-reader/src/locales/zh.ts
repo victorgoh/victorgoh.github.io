@@ -23,7 +23,11 @@ export const zh = {
     fontThemes: {
       editorial: '典雅',
       warm: '温馨'
-    }
+    },
+    syncPlan: '检查更新 / 重新同步计划',
+    syncSuccess: '已同步最新计划内容！',
+    syncUpToDate: '当前已是最新内容。',
+    syncing: '正在检查更新...'
   },
   plans: {
     title: '选择读经计划',

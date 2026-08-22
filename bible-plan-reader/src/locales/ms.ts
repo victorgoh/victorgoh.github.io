@@ -23,7 +23,11 @@ export const ms = {
     fontThemes: {
       editorial: 'Elegan',
       warm: 'Mesra'
-    }
+    },
+    syncPlan: 'Periksa Kemas Kini / Segar Semula',
+    syncSuccess: 'Rancangan dikemas kini dengan perubahan terkini!',
+    syncUpToDate: 'Rancangan sudah terkini.',
+    syncing: 'Memeriksa kemas kini...'
   },
   plans: {
     title: 'Pilih Rancangan Pembacaan',

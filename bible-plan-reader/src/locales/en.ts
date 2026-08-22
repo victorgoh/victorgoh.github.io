@@ -23,7 +23,11 @@ export const en = {
     fontThemes: {
       editorial: 'Elegant',
       warm: 'Friendly'
-    }
+    },
+    syncPlan: 'Check for Updates / Refresh Plan',
+    syncSuccess: 'Plan updated with latest changes!',
+    syncUpToDate: 'Plan is already up to date.',
+    syncing: 'Checking for updates...'
   },
   plans: {
     title: 'Select a Reading Plan',

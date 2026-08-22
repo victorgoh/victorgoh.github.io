@@ -28,6 +28,7 @@ import {
   HelpCircle,
   Target,
   RotateCcw,
+  RefreshCw,
   Church,
   X
 } from 'lucide-react';
@@ -75,7 +76,7 @@ const BIBLE_VERSIONS = [
 
 export const App: React.FC = () => {
   // Automatic cache invalidation when plan schemas or JSON content are updated
-  const CACHE_VERSION = 'v1.1';
+  const CACHE_VERSION = 'v1.2';
   try {
     if (localStorage.getItem('app_plan_cache_version') !== CACHE_VERSION) {
       Object.keys(localStorage).forEach((key) => {
@@ -252,9 +253,74 @@ export const App: React.FC = () => {
     }
   }, []);
 
-  // Fetch organization branding details
+  // Sync State for manual feedback
+  const [isSyncing, setIsSyncing] = useState<boolean>(false);
+  const [syncFeedback, setSyncFeedback] = useState<string | null>(null);
+
+  // Background revalidation (Stale-While-Revalidate) & Manual Re-sync
+  const revalidateActivePlan = async (isManual = false) => {
+    if (!activePlan?.id) return;
+    const planId = activePlan.id;
+    if (isManual) setIsSyncing(true);
+
+    try {
+      const storedUrl = localStorage.getItem(`active_plan_url_${planId}`);
+      const targetUrl = storedUrl 
+        ? (storedUrl.startsWith('http') || storedUrl.startsWith('/') ? storedUrl : `/${storedUrl}`)
+        : `/plans/${planId}.json`;
+      
+      const cacheBustUrl = targetUrl.includes('?') 
+        ? `${targetUrl}&_t=${Date.now()}` 
+        : `${targetUrl}?_t=${Date.now()}`;
+
+      const res = await fetch(cacheBustUrl, { cache: 'no-cache' });
+      if (!res.ok) throw new Error('Failed to fetch plan from network');
+      
+      const freshPlanRaw = await res.json();
+      const freshPlan = migratePlanSchema(freshPlanRaw);
+      
+      if (activePlan.iconUrl && !freshPlan.iconUrl) freshPlan.iconUrl = activePlan.iconUrl;
+      if (activePlan.bannerUrl && !freshPlan.bannerUrl) freshPlan.bannerUrl = activePlan.bannerUrl;
+
+      const freshStr = JSON.stringify(freshPlan);
+      const cachedStr = localStorage.getItem(`cached_plan_${planId}`);
+      
+      if (freshStr !== cachedStr) {
+        localStorage.setItem(`cached_plan_${planId}`, freshStr);
+        setActivePlan(freshPlan);
+        if (isManual) {
+          setSyncFeedback(t('settings.syncSuccess'));
+          setTimeout(() => setSyncFeedback(null), 3000);
+        }
+      } else if (isManual) {
+        setSyncFeedback(t('settings.syncUpToDate'));
+        setTimeout(() => setSyncFeedback(null), 3000);
+      }
+    } catch (err) {
+      console.debug('[PlanSync] Background revalidation skipped or offline:', err);
+      if (isManual) {
+        setSyncFeedback(t('plans.cacheError'));
+        setTimeout(() => setSyncFeedback(null), 3000);
+      }
+    } finally {
+      if (isManual) setIsSyncing(false);
+    }
+  };
+
+  // Automatically revalidate active plan in background whenever activePlan.id changes or app loads
   useEffect(() => {
-    fetch(repositoryUrl)
+    if (activePlan?.id) {
+      revalidateActivePlan(false);
+    }
+  }, [activePlan?.id]);
+
+  // Fetch organization branding details & repository with cache-busting
+  useEffect(() => {
+    const cacheBustedRepoUrl = repositoryUrl.includes('?') 
+      ? `${repositoryUrl}&_t=${Date.now()}` 
+      : `${repositoryUrl}?_t=${Date.now()}`;
+
+    fetch(cacheBustedRepoUrl, { cache: 'no-cache' })
       .then((res) => {
         if (!res.ok) return null;
         return res.json();
@@ -285,7 +351,9 @@ export const App: React.FC = () => {
             // Auto fallback to first available plan if current active plan ID is invalid/deleted or null
             const fallbackItem = plansList.find((p: any) => p.type !== 'category') || plansList[0];
             if (fallbackItem && fallbackItem.url) {
-              fetch(`/${fallbackItem.url}`)
+              const fbUrl = fallbackItem.url.startsWith('http') || fallbackItem.url.startsWith('/') ? fallbackItem.url : `/${fallbackItem.url}`;
+              const cacheBustFb = fbUrl.includes('?') ? `${fbUrl}&_t=${Date.now()}` : `${fbUrl}?_t=${Date.now()}`;
+              fetch(cacheBustFb, { cache: 'no-cache' })
                 .then((res) => res.json())
                 .then((rawPlan) => {
                   const planData = migratePlanSchema(rawPlan);
@@ -1287,9 +1355,29 @@ export const App: React.FC = () => {
                 </select>
               </div>
 
+              {/* Sync & Refresh Plan Button */}
+              {activePlan && (
+                <div style={{ marginTop: '24px', paddingTop: '20px', borderTop: '1px solid var(--border-glass)' }}>
+                  <button 
+                    className="btn btn-secondary" 
+                    style={{ width: '100%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }} 
+                    onClick={() => revalidateActivePlan(true)}
+                    disabled={isSyncing}
+                  >
+                    {isSyncing ? <Loader2 size={16} className="animate-spin" /> : <RefreshCw size={16} />}
+                    {isSyncing ? t('settings.syncing') : t('settings.syncPlan')}
+                  </button>
+                  {syncFeedback && (
+                    <div style={{ fontSize: '0.8rem', textAlign: 'center', marginTop: '8px', color: 'var(--primary)', fontWeight: 500 }}>
+                      {syncFeedback}
+                    </div>
+                  )}
+                </div>
+              )}
+
               {/* Reset plan option */}
               {activePlan && (
-                <div style={{ marginTop: '32px', paddingTop: '24px', borderTop: '1px solid var(--border-glass)' }}>
+                <div style={{ marginTop: '16px' }}>
                   <button className="btn btn-danger" style={{ width: '100%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }} onClick={handleRestartPlan}>
                     <RotateCcw size={16} /> {t('progress.restartPlan')}
                   </button>

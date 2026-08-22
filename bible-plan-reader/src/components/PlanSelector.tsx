@@ -85,11 +85,15 @@ export const PlanSelector: React.FC<PlanSelectorProps> = ({
 
   const currentNav = navStack[navStack.length - 1];
 
-  // Dynamic registry fetching based on active stack node
+  // Dynamic registry fetching based on active stack node with fresh cache
   useEffect(() => {
     setLoading(true);
     setError(null);
-    fetch(currentNav.url)
+    const registryUrl = currentNav.url.includes('?') 
+      ? `${currentNav.url}&_t=${Date.now()}` 
+      : `${currentNav.url}?_t=${Date.now()}`;
+
+    fetch(registryUrl, { cache: 'no-cache' })
       .then((res) => {
         if (!res.ok) throw new Error('Failed to load plan registry');
         return res.json();
@@ -110,16 +114,22 @@ export const PlanSelector: React.FC<PlanSelectorProps> = ({
   const handleSelectPlanDirect = async (item: PlanListItem, date: Date) => {
     setDownloadingId(item.id);
     try {
-      // Check cache first
-      const cached = localStorage.getItem(`cached_plan_${item.id}`);
-      let planData: Plan;
+      const planUrl = item.url.startsWith('http') || item.url.startsWith('/') ? item.url : `/${item.url}`;
+      const cacheBustUrl = planUrl.includes('?') ? `${planUrl}&_t=${Date.now()}` : `${planUrl}?_t=${Date.now()}`;
       
-      if (cached) {
-        planData = migratePlanSchema(JSON.parse(cached));
-      } else {
-        const res = await fetch(`/${item.url}`);
-        if (!res.ok) throw new Error('Failed to download plan content');
+      let planData: Plan;
+      try {
+        const res = await fetch(cacheBustUrl, { cache: 'no-cache' });
+        if (!res.ok) throw new Error('Failed to download plan content from network');
         planData = migratePlanSchema(await res.json());
+      } catch (networkErr) {
+        // Graceful offline fallback to localStorage cache
+        const cached = localStorage.getItem(`cached_plan_${item.id}`);
+        if (cached) {
+          planData = migratePlanSchema(JSON.parse(cached));
+        } else {
+          throw networkErr;
+        }
       }
       
       // Sync iconUrl from registry item to plan payload
