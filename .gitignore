@@ -8,3 +8,7 @@ dist/
 
 # Preserve local history when a standalone project is integrated here
 /.local-git-history/
+
+__pycache__/
+*.pyc
+

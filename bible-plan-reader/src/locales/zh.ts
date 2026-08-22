@@ -13,7 +13,7 @@ export const zh = {
     fontTheme: '字体主题',
     save: '保存修改',
     close: '关闭',
-    bibleVersionHint: '将自动应用到 BibleGateway 链接中',
+    bibleVersionHint: '自动应用到应用内经文阅读（HelloAO 开放圣经接口）',
     fontSizes: {
       small: '较小',
       medium: '标准 (默认)',

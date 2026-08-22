@@ -13,7 +13,7 @@ export const en = {
     fontTheme: 'Font Theme',
     save: 'Save Changes',
     close: 'Close',
-    bibleVersionHint: 'Appended dynamically to BibleGateway links',
+    bibleVersionHint: 'Applied dynamically to in-app Scripture reading (HelloAO API)',
     fontSizes: {
       small: 'Small',
       medium: 'Medium (Default)',

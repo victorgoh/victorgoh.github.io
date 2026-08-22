@@ -13,7 +13,7 @@ export const ms = {
     fontTheme: 'Tema Tulisan',
     save: 'Simpan Perubahan',
     close: 'Tutup',
-    bibleVersionHint: 'Dimasukkan secara dinamik ke pautan BibleGateway',
+    bibleVersionHint: 'Digunakan secara dinamik untuk pembacaan Alkitab dalam aplikasi (HelloAO API)',
     fontSizes: {
       small: 'Kecil',
       medium: 'Sederhana (Asal)',

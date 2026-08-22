@@ -4,6 +4,7 @@ import { translate } from './utils/i18n';
 import type { LanguageCode } from './utils/i18n';
 import { PlanSelector } from './components/PlanSelector';
 import SessionSelectorList from './components/SessionSelectorList';
+import { fetchHelloAoPassage } from './utils/helloAoBible';
 import ReactMarkdown from 'react-markdown';
 import {
   Moon,
@@ -64,12 +65,12 @@ export const migratePlanSchema = (plan: any): Plan => {
 };
 
 const BIBLE_VERSIONS = [
-  { code: 'NIV', name: 'New International Version (NIV)' },
-  { code: 'ESV', name: 'English Standard Version (ESV)' },
-  { code: 'NASB', name: 'New American Standard Bible (NASB)' },
-  { code: 'CUV', name: 'Chinese Union Version (CUV) - 圣经和合本' },
-  { code: 'AVB', name: 'Alkitab Versi Borneo (AVB) - Bahasa Melayu' },
-  { code: 'IND', name: 'Indonesian Terjemahan Baru (TB)' }
+  { code: 'BSB', name: 'Berean Standard Bible (BSB) - English' },
+  { code: 'WEB', name: 'World English Bible (WEB) - English' },
+  { code: 'KJV', name: 'King James Version (KJV) - English' },
+  { code: 'CU1', name: 'Chinese Union Version Simplified (新标点和合本-简)' },
+  { code: 'CUV', name: 'Chinese Union Version Traditional (新標點和合本-繁)' },
+  { code: 'TB',  name: 'Indonesian Terjemahan Baru (TB) / Melayu' }
 ];
 
 export const App: React.FC = () => {
@@ -412,7 +413,7 @@ export const App: React.FC = () => {
     localStorage.setItem(`plan_metadata_${activePlan.id}`, JSON.stringify(newMeta));
   };
 
-  const togglePassageInline = (pReference: string, idx: number, hasLocalText: boolean) => {
+  const togglePassageInline = async (pReference: string, idx: number, hasLocalText: boolean) => {
     const updatedCompletedItems = { ...planMetadata.completedItems };
     if (!updatedCompletedItems[currentItem]) {
       updatedCompletedItems[currentItem] = {};
@@ -421,21 +422,21 @@ export const App: React.FC = () => {
     updatedCompletedItems[currentItem][`passage-inline-${idx}`] = nextState;
     updateMetadata({ ...planMetadata, completedItems: updatedCompletedItems });
 
-    if (nextState && !hasLocalText && !fetchedPassages[pReference] && !loadingPassages[pReference]) {
-      setLoadingPassages(prev => ({ ...prev, [pReference]: true }));
-      fetch(`https://bible-api.com/${encodeURIComponent(pReference)}`)
-        .then(res => {
-          if (!res.ok) throw new Error();
-          return res.json();
-        })
-        .then(data => {
-          setFetchedPassages(prev => ({ ...prev, [pReference]: data.text }));
-          setLoadingPassages(prev => ({ ...prev, [pReference]: false }));
-        })
-        .catch(() => {
-          setFetchedPassages(prev => ({ ...prev, [pReference]: 'Could not load Scripture text. Please consult your personal Bible.' }));
-          setLoadingPassages(prev => ({ ...prev, [pReference]: false }));
-        });
+    const passageKey = `${pReference}_${pref.bibleTranslation || 'BSB'}`;
+    if (nextState && !hasLocalText && !fetchedPassages[passageKey] && !loadingPassages[passageKey]) {
+      setLoadingPassages(prev => ({ ...prev, [passageKey]: true }));
+      try {
+        const text = await fetchHelloAoPassage(pReference, pref.bibleTranslation || 'BSB');
+        setFetchedPassages(prev => ({ ...prev, [passageKey]: text }));
+      } catch (err) {
+        console.error('HelloAO Scripture Fetch Error:', err);
+        setFetchedPassages(prev => ({
+          ...prev,
+          [passageKey]: 'Could not load Scripture text. Please check your connection or consult your personal Bible.'
+        }));
+      } finally {
+        setLoadingPassages(prev => ({ ...prev, [passageKey]: false }));
+      }
     }
   };
 
@@ -900,8 +901,9 @@ export const App: React.FC = () => {
                       <div className="passage-list" style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                         {activeItemConfig.passages.map((p, idx) => {
                           const isInlineOpen = planMetadata?.completedItems?.[currentItem]?.[`passage-inline-${idx}`] || false;
-                          const isFetching = loadingPassages[p.reference];
-                          const fetchedText = fetchedPassages[p.reference];
+                          const passageKey = `${p.reference}_${pref.bibleTranslation || 'BSB'}`;
+                          const isFetching = loadingPassages[passageKey];
+                          const fetchedText = fetchedPassages[passageKey];
 
                           return (
                             <div key={idx} style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
@@ -940,20 +942,19 @@ export const App: React.FC = () => {
                                     background: 'var(--bg-card)', 
                                     border: '1px solid var(--border-glass)', 
                                     borderRadius: '12px', 
-                                    padding: '16px', 
+                                    padding: '16px 20px', 
                                     fontSize: '1.05rem', 
-                                    lineHeight: '1.7', 
+                                    lineHeight: '1.75', 
                                     color: 'var(--text-main)',
-                                    fontFamily: 'var(--font-serif)',
-                                    whiteSpace: 'pre-line'
+                                    fontFamily: 'var(--font-serif)'
                                   }}
                                 >
                                   {p.text ? (
-                                    p.text
+                                    <ReactMarkdown>{p.text}</ReactMarkdown>
                                   ) : isFetching ? (
                                     <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', fontSize: '0.95rem' }}><Loader2 size={16} className="spin" /> Loading Scripture text...</span>
                                   ) : fetchedText ? (
-                                    fetchedText
+                                    <ReactMarkdown>{fetchedText}</ReactMarkdown>
                                   ) : (
                                     <span style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Could not load Scripture text. Please check your connection.</span>
                                   )}

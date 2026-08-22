@@ -47,14 +47,22 @@ def update_devotional_markdown():
     text = re.sub(r'30-day journey',
                   r'30-lesson journey', text)
     text = re.sub(r'# Session (\d+):', r'# Module \1:', text)
+    text = re.sub(r'\bSession (\d+)\b', r'Module \1', text)
     text = re.sub(r'\(Days (\d+)–(\d+)\)', r'(Lessons \1–\2)', text)
+    text = re.sub(r'\(Days (\d+)-(\d+)\)', r'(Lessons \1–\2)', text)
     text = re.sub(r'## Day (\d+):', r'## Lesson \1:', text)
     text = re.sub(r'### Session (\d+) Review Checkpoint', r'### Module \1 Review Checkpoint', text)
     text = re.sub(r'### 🔍 Session (\d+) Review Checkpoint', r'### 🔍 Module \1 Review Checkpoint', text)
+    text = re.sub(r'30 Days of Growing Leaders', r'Growing Leaders: 30-Lesson Leadership Journey', text)
+    text = re.sub(r'30-Day Growth Synthesis', r'30-Lesson Growth Synthesis', text)
     text = re.sub(r'over Days (\d+) to (\d+)', r'over Lessons \1 to \2', text)
     text = re.sub(r'over Days (\d+) and (\d+)', r'over Lessons \1 and \2', text)
     text = re.sub(r'over the past 30 days', r'over these 30 lessons', text)
     text = re.sub(r'across all 30 days', r'across all 30 lessons', text)
+    text = re.sub(r'over these 30 days', r'over these 30 lessons', text)
+    text = re.sub(r'over the next 30 days', r'over the next 30 lessons', text)
+    text = re.sub(r'these 30 days', r'these 30 lessons', text)
+    text = re.sub(r'a 30-day event', r'a 30-lesson event', text)
 
     # Table of contents update
     text = re.sub(r'\[Session (\d+): ([^\]]+) \(Days (\d+)–(\d+)\)\]\(#session-(\d+)-([^\)]+)\)',

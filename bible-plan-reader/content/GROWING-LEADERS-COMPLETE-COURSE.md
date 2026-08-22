@@ -68,21 +68,36 @@ Together, these practices describe a growing leader:
 
 > **A growing leader notices experience, welcomes examination, follows through faithfully, develops through service, listens to people, and remains deeply connected to God.**
 
-## I.5 How each session works
+## I.5 How personal preparation works
 
-Before meeting with your group, set aside approximately 20–30 minutes for personal preparation. Try to complete it when you can read slowly and respond honestly.
+We know life is full, schedules get crowded, and leadership responsibilities can feel relentless. This personal preparation is **not academic homework or a test to pass**—it is a protected space for your own soul and leadership formation before you meet with your group.
 
-Each session will ask you to:
+Think of this time as a gift of margin: an unhurried conversation with God.
+
+### I.5.1 The 3 Golden Rules for Busy Leaders
+
+1. **Bullet Points Over Essays**: You do not need to write polished paragraphs. Single words, quick bullet points, mind maps, or raw questions are completely sufficient.
+2. **Choose What Resonates**: If time is short, focus on the Scripture and the questions that speak most directly to your current situation. A single honest reflection is worth more than a dozen rushed answers.
+3. **You Control Your Sharing**: Everything you write in this guide is private between you and God. You decide what feels appropriate and safe to share with your group.
+
+### I.5.2 Two Simple Ways to Fit It Into Your Week
+
+- **The 30-Minute Coffee Pause**: Set aside one unhurried 25–35 minute block during the week with your Bible, a warm drink, and a notebook.
+- **The "Two-Bite" Rhythm (15 mins + 15 mins)**:
+  - *Bite 1 (Mid-week, 15 mins)*: Read the opening scenario, main principle, and Scripture passage on your commute or during lunch.
+  - *Bite 2 (Day before meeting, 15 mins)*: Jot down your reflections, pray through the *Bring It Before God* prompts, and pick one insight to bring to the group.
+
+### I.5.3 What each session will ask you to explore
 
 1. Begin with a familiar leadership situation.
 2. Consider one main leadership principle.
 3. Read and explore a passage of Scripture.
 4. Reflect through Head, Heart, Hands, and Habits.
-5. Bring what you have learned before God in prayer.
+5. Bring what you have learned before God in prayer (*Notice, Name, Receive, Respond*).
 6. Choose something specific to practise.
 7. Bring one insight and one honest question or reflection to your group.
 
-### I.5.1 Bring It Before God
+### I.5.4 Bring It Before God
 
 The **Bring It Before God** section turns leadership learning into a personal conversation with God. It reminds us that Christian leadership formation is not merely self-improvement. We bring what we have learned and discovered to God, receive what we need from him, and choose a faithful response.
 
@@ -188,7 +203,10 @@ Finish with a simple prayer in your own words. You might ask God for honesty, co
 
 ## 1.1 Personal preparation
 
-Allow approximately 20–30 minutes. Read slowly and write brief, honest responses. You will choose what is appropriate to share with the group.
+> 💡 **A Quick Note Before You Begin**
+> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
+> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
+> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
 
 ## 1.2 Begin with life
 
@@ -538,7 +556,11 @@ At the beginning of Session 2, allow each person to share:
 
 ## 2.1 Personal preparation
 
-Allow approximately 20–30 minutes. Begin by reviewing last session’s Notice and Learn habit. Bring one observation from the week, even if you practised the habit only once or twice.
+> 💡 **A Quick Note Before You Begin**
+> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
+> - **Habit Check**: Begin by reviewing last session’s *Notice and Learn* habit. Bring one observation from your week, even if you tried it only once or twice.
+> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
+> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
 
 ## 2.2 Begin with life
 
@@ -738,7 +760,7 @@ Bring these three things to the conversation:
 
 1. One thing you learned from Notice and Learn.
 2. One passage that is encouraging, challenging, or correcting you.
-3. One situation in which you will Pause, Receive, and Respond.
+3. One situation in which you will Pause and Bring It Before God (Notice, Name, Receive, Respond).
 
 ---
 
@@ -806,7 +828,7 @@ Then formulate a response that combines restraint, truth, and an appropriate bou
 
 Each person identifies a pressure cue and a short passage, then completes:
 
-> When I notice __________, I will pause, receive the truth that __________, and respond by __________. I will reinforce this by reading __________ each day.
+> When I notice __________, I will pause and bring it before God (Notice: __________, Name: __________, Receive: __________, Respond: __________). I will reinforce this by reading __________ each day.
 
 ### 2.12.7 Pray — 3 minutes
 
@@ -823,7 +845,7 @@ Pray for integrity, teachability, wise understanding of Scripture, and courage t
 
 ## 2.14 Between sessions
 
-Send a brief check-in: “Have you had an opportunity to Pause, Receive, and Respond? What are you learning?” Begin Session 3 by asking what participants noticed and how Scripture shaped their response.
+Send a brief check-in: “Have you had an opportunity to Pause and Bring It Before God (Notice, Name, Receive, Respond)? What are you learning?” Begin Session 3 by asking what participants noticed and how Scripture shaped their response.
 
 ---
 
@@ -837,7 +859,11 @@ Send a brief check-in: “Have you had an opportunity to Pause, Receive, and Res
 
 ## 3.1 Personal preparation
 
-Allow approximately 20–30 minutes. Begin by reviewing a moment when you practised—or wish you had practised—Pause and Bring It Before God. What did you learn?
+> 💡 **A Quick Note Before You Begin**
+> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
+> - **Habit Check**: Begin by reviewing a moment when you practised—or wish you had practised—*Pause and Bring It Before God*. What did you learn?
+> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
+> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
 
 ## 3.2 Begin with life
 
@@ -1090,7 +1116,11 @@ Check in briefly about the specific 48-hour action. Begin Session 4 by asking wh
 
 ## 4.1 Personal preparation
 
-Allow approximately 20–30 minutes. Begin by reviewing the past week: What changed when you practised Record and Follow Through?
+> 💡 **A Quick Note Before You Begin**
+> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
+> - **Habit Check**: Begin by reviewing the past week: What changed or became clearer when you practised *Record and Follow Through*?
+> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
+> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
 
 ## 4.2 Begin with life
 
@@ -1337,7 +1367,11 @@ Ask participants whether they have arranged their experiment and feedback conver
 
 ## 5.1 Personal preparation
 
-Allow approximately 20–30 minutes. Begin by reviewing Serve, Notice, Ask. What did you try, what fruit did you notice, and what did you learn from feedback?
+> 💡 **A Quick Note Before You Begin**
+> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
+> - **Habit Check**: Begin by reviewing *Serve, Notice, Ask*. What did you try, what fruit did you notice, and what did you learn from feedback?
+> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
+> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
 
 ## 5.2 Begin with life
 
@@ -1583,7 +1617,11 @@ Ask participants what they discovered by practising Listen Before Responding. En
 
 ## 6.1 Personal preparation
 
-Allow approximately 25–30 minutes. Begin by reviewing your attempt to Listen Before Responding. What became clearer when you listened longer?
+> 💡 **A Quick Note Before You Begin**
+> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
+> - **Habit Check**: Begin by reviewing your attempt to *Listen Before Responding*. What became clearer when you listened longer?
+> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
+> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
 
 ## 6.2 Begin with life
 

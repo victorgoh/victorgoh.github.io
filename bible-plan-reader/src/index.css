@@ -726,18 +726,32 @@ body {
 .bible-text-panel {
   background: rgba(0, 0, 0, 0.03);
   border-left: 3px solid var(--primary);
-  padding: 12px 16px;
-  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+  padding: 14px 18px;
+  border-radius: var(--border-radius-sm);
   margin-top: 8px;
-  font-family: var(--font-body);
-  font-size: 1rem;
-  line-height: 1.6;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.75;
   color: var(--text-main);
-  text-align: justify;
+}
+
+.bible-text-panel p {
+  margin-bottom: 0.85rem;
+}
+
+.bible-text-panel p:last-child {
+  margin-bottom: 0;
+}
+
+.bible-text-panel strong {
+  color: var(--primary);
+  font-weight: 700;
+  font-family: var(--font-sans);
+  margin-right: 4px;
 }
 
 [data-theme='dark'] .bible-text-panel {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.03);
 }
 
 /* Devotional block */
