@@ -51,7 +51,7 @@ test("builds the course shell from the Markdown sources", async () => {
   );
   assert.match(
     data.documents.find((item) => item.id === "course-introduction").markdown,
-    /^### I\.5\.1 Bring It Before God/m,
+    /^### I\.5\.4 Bring It Before God/m,
   );
   assert.match(
     data.documents.find((item) => item.id === "module-2").markdown,

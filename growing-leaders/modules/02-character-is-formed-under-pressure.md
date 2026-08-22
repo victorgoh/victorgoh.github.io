@@ -8,7 +8,11 @@
 
 ## 2.1 Personal preparation
 
-Allow approximately 20–30 minutes. Begin by reviewing last session’s Notice and Learn habit. Bring one observation from the week, even if you practised the habit only once or twice.
+> 💡 **A Quick Note Before You Begin**
+> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
+> - **Habit Check**: Begin by reviewing last session’s *Notice and Learn* habit. Bring one observation from your week, even if you tried it only once or twice.
+> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
+> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
 
 ## 2.2 Begin with life
 
@@ -208,7 +212,7 @@ Bring these three things to the conversation:
 
 1. One thing you learned from Notice and Learn.
 2. One passage that is encouraging, challenging, or correcting you.
-3. One situation in which you will Pause, Receive, and Respond.
+3. One situation in which you will Pause and Bring It Before God (Notice, Name, Receive, Respond).
 
 ---
 
@@ -276,7 +280,7 @@ Then formulate a response that combines restraint, truth, and an appropriate bou
 
 Each person identifies a pressure cue and a short passage, then completes:
 
-> When I notice __________, I will pause, receive the truth that __________, and respond by __________. I will reinforce this by reading __________ each day.
+> When I notice __________, I will pause and bring it before God (Notice: __________, Name: __________, Receive: __________, Respond: __________). I will reinforce this by reading __________ each day.
 
 ### 2.12.7 Pray — 3 minutes
 
@@ -293,4 +297,4 @@ Pray for integrity, teachability, wise understanding of Scripture, and courage t
 
 ## 2.14 Between sessions
 
-Send a brief check-in: “Have you had an opportunity to Pause, Receive, and Respond? What are you learning?” Begin Session 3 by asking what participants noticed and how Scripture shaped their response.
+Send a brief check-in: “Have you had an opportunity to Pause and Bring It Before God (Notice, Name, Receive, Respond)? What are you learning?” Begin Session 3 by asking what participants noticed and how Scripture shaped their response.

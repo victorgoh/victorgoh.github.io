@@ -8,7 +8,11 @@
 
 ## 5.1 Personal preparation
 
-Allow approximately 20–30 minutes. Begin by reviewing Serve, Notice, Ask. What did you try, what fruit did you notice, and what did you learn from feedback?
+> 💡 **A Quick Note Before You Begin**
+> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
+> - **Habit Check**: Begin by reviewing *Serve, Notice, Ask*. What did you try, what fruit did you notice, and what did you learn from feedback?
+> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
+> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
 
 ## 5.2 Begin with life
 

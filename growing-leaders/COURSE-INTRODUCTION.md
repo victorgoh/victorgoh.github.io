@@ -68,21 +68,36 @@ Together, these practices describe a growing leader:
 
 > **A growing leader notices experience, welcomes examination, follows through faithfully, develops through service, listens to people, and remains deeply connected to God.**
 
-## I.5 How each session works
+## I.5 How personal preparation works
 
-Before meeting with your group, set aside approximately 20–30 minutes for personal preparation. Try to complete it when you can read slowly and respond honestly.
+We know life is full, schedules get crowded, and leadership responsibilities can feel relentless. This personal preparation is **not academic homework or a test to pass**—it is a protected space for your own soul and leadership formation before you meet with your group.
 
-Each session will ask you to:
+Think of this time as a gift of margin: an unhurried conversation with God.
+
+### I.5.1 The 3 Golden Rules for Busy Leaders
+
+1. **Bullet Points Over Essays**: You do not need to write polished paragraphs. Single words, quick bullet points, mind maps, or raw questions are completely sufficient.
+2. **Choose What Resonates**: If time is short, focus on the Scripture and the questions that speak most directly to your current situation. A single honest reflection is worth more than a dozen rushed answers.
+3. **You Control Your Sharing**: Everything you write in this guide is private between you and God. You decide what feels appropriate and safe to share with your group.
+
+### I.5.2 Two Simple Ways to Fit It Into Your Week
+
+- **The 30-Minute Coffee Pause**: Set aside one unhurried 25–35 minute block during the week with your Bible, a warm drink, and a notebook.
+- **The "Two-Bite" Rhythm (15 mins + 15 mins)**:
+  - *Bite 1 (Mid-week, 15 mins)*: Read the opening scenario, main principle, and Scripture passage on your commute or during lunch.
+  - *Bite 2 (Day before meeting, 15 mins)*: Jot down your reflections, pray through the *Bring It Before God* prompts, and pick one insight to bring to the group.
+
+### I.5.3 What each session will ask you to explore
 
 1. Begin with a familiar leadership situation.
 2. Consider one main leadership principle.
 3. Read and explore a passage of Scripture.
 4. Reflect through Head, Heart, Hands, and Habits.
-5. Bring what you have learned before God in prayer.
+5. Bring what you have learned before God in prayer (*Notice, Name, Receive, Respond*).
 6. Choose something specific to practise.
 7. Bring one insight and one honest question or reflection to your group.
 
-### I.5.1 Bring It Before God
+### I.5.4 Bring It Before God
 
 The **Bring It Before God** section turns leadership learning into a personal conversation with God. It reminds us that Christian leadership formation is not merely self-improvement. We bring what we have learned and discovered to God, receive what we need from him, and choose a faithful response.
 

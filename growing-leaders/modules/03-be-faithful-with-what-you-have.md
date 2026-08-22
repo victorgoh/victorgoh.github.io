@@ -8,7 +8,11 @@
 
 ## 3.1 Personal preparation
 
-Allow approximately 20–30 minutes. Begin by reviewing a moment when you practised—or wish you had practised—Pause and Bring It Before God. What did you learn?
+> 💡 **A Quick Note Before You Begin**
+> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
+> - **Habit Check**: Begin by reviewing a moment when you practised—or wish you had practised—*Pause and Bring It Before God*. What did you learn?
+> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
+> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
 
 ## 3.2 Begin with life
 

@@ -8,7 +8,11 @@
 
 ## 4.1 Personal preparation
 
-Allow approximately 20–30 minutes. Begin by reviewing the past week: What changed when you practised Record and Follow Through?
+> 💡 **A Quick Note Before You Begin**
+> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
+> - **Habit Check**: Begin by reviewing the past week: What changed or became clearer when you practised *Record and Follow Through*?
+> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
+> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
 
 ## 4.2 Begin with life
 

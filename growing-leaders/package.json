@@ -6,8 +6,9 @@
     "node": ">=22.13.0"
   },
   "scripts": {
+    "content:split": "node scripts/split-course.mjs",
     "content:number": "node scripts/number-sections.mjs",
-    "content:sync": "node scripts/sync-content.mjs",
+    "content:sync": "node scripts/split-course.mjs && node scripts/number-sections.mjs && node scripts/sync-content.mjs",
     "predev": "npm run content:sync",
     "prebuild": "npm run content:sync",
     "dev": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext dev",

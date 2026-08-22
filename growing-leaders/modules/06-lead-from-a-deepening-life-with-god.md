@@ -8,7 +8,11 @@
 
 ## 6.1 Personal preparation
 
-Allow approximately 25–30 minutes. Begin by reviewing your attempt to Listen Before Responding. What became clearer when you listened longer?
+> 💡 **A Quick Note Before You Begin**
+> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
+> - **Habit Check**: Begin by reviewing your attempt to *Listen Before Responding*. What became clearer when you listened longer?
+> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
+> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
 
 ## 6.2 Begin with life
 
