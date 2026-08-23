@@ -7,22 +7,14 @@ export const en = {
   },
   settings: {
     title: 'Settings',
-    language: 'Language',
-    bibleVersion: 'Preferred Bible Translation',
     fontSize: 'Text Font Size',
-    fontTheme: 'Font Theme',
     save: 'Save Changes',
     close: 'Close',
-    bibleVersionHint: 'Applied dynamically to in-app Scripture reading (HelloAO API)',
     fontSizes: {
       small: 'Small',
       medium: 'Medium (Default)',
       large: 'Large',
       xl: 'Extra Large'
-    },
-    fontThemes: {
-      editorial: 'Elegant',
-      warm: 'Friendly'
     },
     syncPlan: 'Check for Updates / Refresh Plan',
     syncSuccess: 'Plan updated with latest changes!',
@@ -30,11 +22,11 @@ export const en = {
     syncing: 'Checking for updates...'
   },
   plans: {
-    title: 'Select a Reading Plan',
+    title: 'Select a Plan',
     activePlan: 'Active Plan',
     choosePlan: 'Change Plan',
     creator: 'By',
-    duration: '{{count}} Sessions',
+    duration: '{{count}} items',
     startToday: 'Start Today',
     startFuture: 'Start Future Date',
     startDate: 'Start Date',
@@ -44,25 +36,23 @@ export const en = {
     startPlanBtn: 'Start Plan'
   },
   itemView: {
-    itemHeader: 'Session {{item}} of {{total}}',
-    itemHeaderPrayer: 'Session {{item}}',
-    itemHeaderReading: 'Session {{item}}',
-    shareSession: 'Share Session',
-    shareWithFriend: 'Share with Friend',
-    shareHelpTooltip: 'Share this direct link with a friend or your small group so everyone can read and reflect on today\'s session together.',
-    shareCopied: 'Link Copied!',
+    shareContent: 'Share',
+    shareWhatsApp: 'WhatsApp',
+    share: 'Share',
+    shareHelpTooltip: 'Share this with your group on WhatsApp or other apps so everyone can read and prepare.',
+    shareCopied: 'Copied!',
     markComplete: 'Mark Done',
     completed: 'Done',
-    actionSteps: 'Practice',
-    reflectionQuestions: 'Reflect',
-    noActionSteps: 'No specific action steps for today.',
-    noQuestions: 'No reflection questions for today.',
-    readPassages: 'Scripture Readings',
-    readInline: 'Read Scripture Text',
+    actionSteps: 'Practice & Action',
+    reflectionQuestions: 'Reflect & Discuss',
+    noActionSteps: 'No specific action steps.',
+    noQuestions: 'No reflection questions.',
+    readPassages: 'Scripture',
+    readInline: 'Read Scripture',
     openBibleGateway: 'Open in BibleGateway',
     devotionalBy: 'By {{author}}',
-    prevSession: 'Prev',
-    nextSession: 'Next'
+    prev: 'Previous',
+    next: 'Next'
   },
   timer: {
     title: 'Timer',

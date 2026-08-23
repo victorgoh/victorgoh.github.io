@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Montserrat:wght@400;600;700&family=Nunito:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
-
 :root {
-  /* Font Families Defaults */
-  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-serif: 'Playfair Display', Georgia, Cambria, serif;
+  /* Highly Readable Universal Font Family */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   
   --font-title: var(--font-sans);
-  --font-body: var(--font-serif);
+  --font-body: var(--font-sans);
   --font-ui: var(--font-sans);
   
   /* Font Size Scale Default */
@@ -82,40 +79,10 @@ html {
 }
 
 /* Font size configuration classes */
-.size-small { --font-scale: 0.85; }
+.size-small { --font-scale: 0.88; }
 .size-medium { --font-scale: 1.0; }
 .size-large { --font-scale: 1.15; }
 .size-xl { --font-scale: 1.3; }
-
-/* Font theme configuration classes */
-.theme-font-modern {
-  --font-sans: 'Outfit', sans-serif;
-  --font-serif: 'Playfair Display', serif;
-  --font-title: var(--font-sans);
-  --font-body: var(--font-serif);
-  --font-ui: var(--font-sans);
-}
-.theme-font-editorial {
-  --font-sans: 'Inter', sans-serif;
-  --font-serif: 'Lora', serif;
-  --font-title: var(--font-serif);
-  --font-body: var(--font-serif);
-  --font-ui: var(--font-sans);
-}
-.theme-font-warm {
-  --font-sans: 'Nunito', sans-serif;
-  --font-serif: 'Merriweather', serif;
-  --font-title: var(--font-serif);
-  --font-body: var(--font-serif);
-  --font-ui: var(--font-sans);
-}
-.theme-font-majestic {
-  --font-sans: 'Montserrat', sans-serif;
-  --font-serif: 'Cinzel', serif;
-  --font-title: var(--font-serif);
-  --font-body: var(--font-serif);
-  --font-ui: var(--font-sans);
-}
 
 body {
   font-family: var(--font-ui);
@@ -564,6 +531,19 @@ body {
 .btn-danger {
   background-color: var(--danger);
   color: var(--text-on-primary);
+}
+
+.btn-whatsapp {
+  background-color: #25D366;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 4px 12px -2px rgba(37, 211, 102, 0.35);
+}
+.btn-whatsapp:hover {
+  background-color: #20ba5a;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px -2px rgba(37, 211, 102, 0.45);
 }
 
 .icon-btn {
@@ -1349,5 +1329,25 @@ body {
 
 .session-selector-row.completed .circle-indicator {
   border-color: transparent !important;
+}
+
+/* Inline Markdown Content (Reflection & Practice) */
+.markdown-inline-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.markdown-inline-content p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.markdown-inline-content p + p {
+  margin-top: 6px;
+}
+
+.markdown-inline-content strong {
+  color: var(--text-main);
+  font-weight: 600;
 }
 

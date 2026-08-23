@@ -1,20 +1,14 @@
 import { en } from '../locales/en';
-import { zh } from '../locales/zh';
-import { ms } from '../locales/ms';
 
-export type LanguageCode = 'en' | 'zh' | 'ms';
-
-const translations: Record<LanguageCode, any> = { en, zh, ms };
+export type LanguageCode = 'en';
 
 export function translate(
-  lang: LanguageCode,
+  _lang: string,
   key: string,
   params?: Record<string, string | number>
 ): string {
-  const dict = translations[lang] || translations.en;
-
   const parts = key.split('.');
-  let current = dict;
+  let current: any = en;
 
   for (const part of parts) {
     if (current && typeof current === 'object' && part in current) {
@@ -23,20 +17,6 @@ export function translate(
       current = undefined;
       break;
     }
-  }
-
-  // Fallback to English if not found in target dictionary
-  if (current === undefined && lang !== 'en') {
-    let fallback = translations.en;
-    for (const part of parts) {
-      if (fallback && typeof fallback === 'object' && part in fallback) {
-        fallback = fallback[part];
-      } else {
-        fallback = undefined;
-        break;
-      }
-    }
-    current = fallback;
   }
 
   if (typeof current !== 'string') {

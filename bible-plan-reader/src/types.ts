@@ -44,8 +44,6 @@ export interface Plan {
   id: string;
   title: string;
   type: 'reading' | 'prayer' | 'reading_plan' | 'prayer_guide';
-  bannerUrl?: string;
-  iconUrl?: string;
   items: ItemConfig[];
 }
 
@@ -62,7 +60,6 @@ export interface PlanListItem {
   lastUpdated?: string;
   tags?: string[];
   featured?: boolean;
-  iconUrl?: string;
 }
 
 export interface UserPlanMetadata {
@@ -72,10 +69,7 @@ export interface UserPlanMetadata {
 }
 
 export interface UserPreferences {
-  language: 'en' | 'zh' | 'ms';
-  bibleTranslation: string;
   fontSize: 'small' | 'medium' | 'large' | 'xl';
-  fontTheme: 'editorial' | 'warm';
 }
 
 export interface OrgBranding {
@@ -88,7 +82,6 @@ export interface OrgBranding {
 export interface Organization {
   name: string;
   logoUrl?: string;
-  bannerUrl?: string;
   website?: string;
   email?: string;
   contactPhone?: string;

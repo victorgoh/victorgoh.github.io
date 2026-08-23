@@ -1,24 +1,22 @@
 import React from 'react';
-import { Check, Flame, FileText } from 'lucide-react';
+import { Check } from 'lucide-react';
 
-
-type SessionItem = {
+type ItemEntry = {
   item: number;
   title: string;
 };
 
 interface SessionSelectorListProps {
-  items: SessionItem[];
+  items: ItemEntry[];
   currentItem: number;
   completedItems: number[];
   onSelect: (item: number) => void;
-  planType: 'reading' | 'prayer' | 'reading_plan' | 'prayer_guide';
+  planType?: string;
 }
 
-// Forward ref to allow parent to scroll into view if needed
+// Forward ref to allow parent to scroll into view
 const SessionSelectorList = React.forwardRef<HTMLDivElement, SessionSelectorListProps>(
-  ({ items, currentItem, completedItems, onSelect, planType }, ref) => {
-    const isPrayer = planType === 'prayer' || planType === 'prayer_guide';
+  ({ items, currentItem, completedItems, onSelect }, ref) => {
     return (
       <div
         ref={ref as React.RefObject<HTMLDivElement>}
@@ -34,14 +32,14 @@ const SessionSelectorList = React.forwardRef<HTMLDivElement, SessionSelectorList
           scrollBehavior: 'smooth',
         }}
       >
-        {items.map((day) => {
-          const isCompleted = completedItems.includes(day.item);
-          const isCurrent = day.item === currentItem;
+        {items.map((entry) => {
+          const isCompleted = completedItems.includes(entry.item);
+          const isCurrent = entry.item === currentItem;
           return (
             <button
-              key={day.item}
-              id={`session-selector-item-${day.item}`}
-              onClick={() => onSelect(day.item)}
+              key={entry.item}
+              id={`session-selector-item-${entry.item}`}
+              onClick={() => onSelect(entry.item)}
               className={`session-selector-row ${isCurrent ? 'active' : ''} ${isCompleted ? 'completed' : ''}`}
               style={{
                 display: 'flex',
@@ -60,56 +58,41 @@ const SessionSelectorList = React.forwardRef<HTMLDivElement, SessionSelectorList
                 boxSizing: 'border-box',
               }}
             >
-              {/* Left Circle Indicator */}
+              {/* Left Number / Checkmark Badge */}
               <div
                 className={`circle-indicator ${isCompleted ? 'completed' : ''}`}
                 style={{
-                  width: '20px',
-                  height: '20px',
+                  width: '24px',
+                  height: '24px',
                   borderRadius: '50%',
-                  border: isCompleted ? 'none' : '2px solid var(--text-muted)',
-                  background: isCompleted ? 'var(--success)' : 'transparent',
+                  border: isCompleted ? 'none' : isCurrent ? '2px solid var(--primary)' : '2px solid var(--border-glass)',
+                  background: isCompleted ? 'var(--success)' : isCurrent ? 'var(--primary)' : 'transparent',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   flexShrink: 0,
-                  fontSize: '0.65rem',
-                  color: '#ffffff',
-                  fontWeight: 'bold',
+                  fontSize: '0.75rem',
+                  color: isCompleted || isCurrent ? '#ffffff' : 'var(--text-muted)',
+                  fontWeight: 700,
                   transition: 'all 0.15s ease',
                 }}
               >
-                {isCompleted && <Check size={12} strokeWidth={3} />}
+                {isCompleted ? <Check size={13} strokeWidth={3} /> : entry.item}
               </div>
 
-              {/* Text Column */}
+              {/* Title Column */}
               <div style={{ flex: 1, minWidth: 0 }}>
                 <div
                   style={{
-                    fontSize: '0.75rem',
-                    fontWeight: 600,
-                    color: isCurrent ? 'var(--primary)' : 'var(--text-muted)',
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.05em',
-                    marginBottom: '2px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '6px'
-                  }}
-                >
-                  {isPrayer ? <Flame size={12} /> : <FileText size={12} />}<span>{`Session ${day.item}`}</span>
-                </div>
-                <div
-                  style={{
-                    fontSize: '0.9rem',
+                    fontSize: '0.92rem',
                     fontWeight: isCurrent ? 600 : 500,
-                    color: 'var(--text-main)',
+                    color: isCurrent ? 'var(--primary)' : 'var(--text-main)',
                     whiteSpace: 'nowrap',
                     overflow: 'hidden',
                     textOverflow: 'ellipsis',
                   }}
                 >
-                  {day.title}
+                  {entry.title}
                 </div>
               </div>
             </button>

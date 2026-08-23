@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import type { Plan, UserPlanMetadata, UserPreferences, Organization } from './types';
 import { translate } from './utils/i18n';
-import type { LanguageCode } from './utils/i18n';
 import { PlanSelector } from './components/PlanSelector';
 import SessionSelectorList from './components/SessionSelectorList';
 import { fetchHelloAoPassage } from './utils/helloAoBible';
@@ -17,21 +16,31 @@ import {
   FileText,
   Check,
   Link,
-  ChevronUp,
   ChevronDown,
   ChevronLeft,
   ChevronRight,
   Loader2,
   Scroll,
-  Tv,
-  Music,
-  HelpCircle,
-  Target,
   RotateCcw,
   RefreshCw,
   Church,
-  X
+  X,
+  Share2
 } from 'lucide-react';
+
+// Custom WhatsApp SVG Icon
+const WhatsAppIcon: React.FC<{ size?: number; style?: React.CSSProperties }> = ({ size = 16, style }) => (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="currentColor"
+    style={{ display: 'inline-block', verticalAlign: 'middle', ...style }}
+    aria-hidden="true"
+  >
+    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+  </svg>
+);
 
 // Utility helper to safely load item from localStorage
 const loadLocalState = <T,>(key: string, defaultValue: T): T => {
@@ -65,18 +74,8 @@ export const migratePlanSchema = (plan: any): Plan => {
   return plan;
 };
 
-const BIBLE_VERSIONS = [
-  { code: 'BSB', name: 'Berean Standard Bible (BSB) - English' },
-  { code: 'WEB', name: 'World English Bible (WEB) - English' },
-  { code: 'KJV', name: 'King James Version (KJV) - English' },
-  { code: 'CU1', name: 'Chinese Union Version Simplified (新标点和合本-简)' },
-  { code: 'CUV', name: 'Chinese Union Version Traditional (新標點和合本-繁)' },
-  { code: 'TB',  name: 'Indonesian Terjemahan Baru (TB) / Melayu' }
-];
-
 export const App: React.FC = () => {
-  // Automatic cache invalidation when plan schemas or JSON content are updated
-  const CACHE_VERSION = 'v1.2';
+  const CACHE_VERSION = 'v1.4';
   try {
     if (localStorage.getItem('app_plan_cache_version') !== CACHE_VERSION) {
       Object.keys(localStorage).forEach((key) => {
@@ -90,7 +89,6 @@ export const App: React.FC = () => {
     console.error(e);
   }
 
-  // Dynamic custom repository URL state (URL query param "?repo=" overrides localStorage, falls back to default '/plans.json')
   const [repositoryUrl] = useState<string>(() => {
     const params = new URLSearchParams(window.location.search);
     const repoParam = params.get('repo');
@@ -102,10 +100,8 @@ export const App: React.FC = () => {
     return localStorage.getItem('custom_plans_repository') || '/plans.json';
   });
 
-  // Organization branding details
   const [orgInfo, setOrgInfo] = useState<Organization | null>(null);
 
-  // Theme & Preferences State
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     const local = localStorage.getItem('app_theme');
     if (local === 'light' || local === 'dark') return local;
@@ -113,19 +109,11 @@ export const App: React.FC = () => {
   });
 
   const [pref, setPref] = useState<UserPreferences>(() => {
-    const loaded = loadLocalState<UserPreferences>('user_preferences', {
-      language: 'en',
-      bibleTranslation: 'NIV',
-      fontSize: 'medium',
-      fontTheme: 'editorial'
+    return loadLocalState<UserPreferences>('user_preferences', {
+      fontSize: 'medium'
     });
-    if (loaded.fontTheme !== 'editorial' && loaded.fontTheme !== 'warm') {
-      loaded.fontTheme = 'editorial';
-    }
-    return loaded;
   });
 
-  // Active Plan States
   const [activePlan, setActivePlan] = useState<Plan | null>(() => {
     const activeId = localStorage.getItem('active_plan_id');
     if (activeId) {
@@ -141,7 +129,7 @@ export const App: React.FC = () => {
     return null;
   });
 
-  const [startDate, setStartDate] = useState<Date | null>(() => {
+  const [, setStartDate] = useState<Date | null>(() => {
     const activeId = localStorage.getItem('active_plan_id');
     if (activeId) {
       const meta = loadLocalState<UserPlanMetadata | null>(`plan_metadata_${activeId}`, null);
@@ -152,18 +140,17 @@ export const App: React.FC = () => {
 
   const [currentItem, setCurrentItem] = useState<number>(() => {
     const params = new URLSearchParams(window.location.search);
-    const sessionParam = params.get('session');
+    const sessionParam = params.get('session') || params.get('item');
     if (sessionParam) {
       const parsed = parseInt(sessionParam);
       if (!isNaN(parsed) && parsed > 0) return parsed;
     }
     return 1;
   });
+  
   const [shareStatus, setShareStatus] = useState<string | null>(null);
-  const [showShareHelp, setShowShareHelp] = useState<boolean>(false);
   const [headerExpanded, setHeaderExpanded] = useState<boolean>(false);
   
-  // Modal Overlays
   const [showSelector, setShowSelector] = useState<boolean>(false);
   const [showSettings, setShowSettings] = useState<boolean>(false);
   const [showItemSelector, setShowItemSelector] = useState<boolean>(false);
@@ -171,7 +158,6 @@ export const App: React.FC = () => {
   const bottomSessionListRef = useRef<HTMLDivElement | null>(null);
   const sessionListRef = useRef<HTMLDivElement | null>(null);
 
-  // Auto-scroll active session row into view when selector popover is toggled open
   useEffect(() => {
     if (showItemSelector) {
       const timer = setTimeout(() => {
@@ -184,11 +170,15 @@ export const App: React.FC = () => {
     }
   }, [showItemSelector, currentItem]);
 
-  // Local Bible API text fetch cache states
   const [fetchedPassages, setFetchedPassages] = useState<Record<string, string>>({});
   const [loadingPassages, setLoadingPassages] = useState<Record<string, boolean>>({});
+  const [openPassageIndices, setOpenPassageIndices] = useState<Record<number, boolean>>({});
 
-  // Active Plan Metadata (progress, journal, checkboxes)
+  // Reset passage accordion state whenever switching lessons/items
+  useEffect(() => {
+    setOpenPassageIndices({});
+  }, [currentItem, activePlan?.id]);
+
   const [planMetadata, setPlanMetadata] = useState<UserPlanMetadata>(() => {
     const activeId = localStorage.getItem('active_plan_id');
     if (activeId) {
@@ -205,59 +195,55 @@ export const App: React.FC = () => {
     };
   });
 
-  // Parse dynamic plans shared via link "?plan=" on startup
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const planParam = params.get('plan');
-    const startParam = params.get('start'); // e.g. YYYY-MM-DD
-    const sessionParam = params.get('session');
-    
-    if (planParam) {
-      const cleanPlan = encodeURI(planParam);
-      const fetchUrl = cleanPlan.startsWith('http') ? cleanPlan : `/${cleanPlan}`;
-      fetch(fetchUrl)
-        .then((res) => {
-          if (!res.ok) throw new Error('Failed to load shared plan');
-          return res.json();
-        })
-        .then((plan: Plan) => {
-          const migrated = migratePlanSchema(plan);
-          // Cache plan payload
-          localStorage.setItem(`cached_plan_${migrated.id}`, JSON.stringify(migrated));
-          localStorage.setItem('active_plan_id', migrated.id);
-          localStorage.setItem(`active_plan_url_${migrated.id}`, cleanPlan);
-          
-          // Calculate start date
-          const parsedStart = startParam ? new Date(startParam) : new Date();
-          const dateStr = parsedStart.toISOString();
-          localStorage.setItem(`plan_metadata_${migrated.id}`, JSON.stringify({
-            startDate: dateStr,
-            progress: [],
-            completedItems: {}
-          }));
-          
-          // Clear query params and redirect to load plan with session
-          const nextSearch = sessionParam ? `?session=${sessionParam}` : '';
-          const redirectUrl = window.location.origin + window.location.pathname + nextSearch;
-          window.location.href = redirectUrl;
-        })
-        .catch((err) => {
-          console.error('Error loading shared plan via link:', err);
-          alert('Failed to load the shared bible plan. Please check the URL.');
-        });
-    }
-    
-    // Clear "?repo" parameter so it stays clean in address bar
-    if (params.get('repo')) {
-      window.history.replaceState({}, '', window.location.pathname);
-    }
-  }, []);
-
-  // Sync State for manual feedback
   const [isSyncing, setIsSyncing] = useState<boolean>(false);
   const [syncFeedback, setSyncFeedback] = useState<string | null>(null);
 
-  // Background revalidation (Stale-While-Revalidate) & Manual Re-sync
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const planParam = params.get('plan');
+    const sessionParam = params.get('session') || params.get('item');
+
+    if (planParam) {
+      const decodedPlanUrl = decodeURIComponent(planParam);
+      const isDirectJson = decodedPlanUrl.endsWith('.json');
+      const targetUrl = isDirectJson ? decodedPlanUrl : `${decodedPlanUrl}/plan.json`;
+      const fullUrl = targetUrl.startsWith('http') || targetUrl.startsWith('/') ? targetUrl : `/${targetUrl}`;
+      const cacheBustUrl = fullUrl.includes('?') ? `${fullUrl}&_t=${Date.now()}` : `${fullUrl}?_t=${Date.now()}`;
+
+      fetch(cacheBustUrl, { cache: 'no-cache' })
+        .then((res) => {
+          if (!res.ok) throw new Error('Failed to load plan from URL parameter');
+          return res.json();
+        })
+        .then((rawPlan) => {
+          const planData = migratePlanSchema(rawPlan);
+          localStorage.setItem(`cached_plan_${planData.id}`, JSON.stringify(planData));
+          localStorage.setItem('active_plan_id', planData.id);
+          localStorage.setItem(`active_plan_url_${planData.id}`, decodedPlanUrl);
+
+          const savedMeta = loadLocalState<UserPlanMetadata>(`plan_metadata_${planData.id}`, {
+            startDate: new Date().toISOString(),
+            progress: [],
+            completedItems: {}
+          });
+
+          setActivePlan(planData);
+          setPlanMetadata(savedMeta);
+          if (savedMeta.startDate) setStartDate(new Date(savedMeta.startDate));
+
+          if (sessionParam) {
+            const parsedSession = parseInt(sessionParam);
+            if (!isNaN(parsedSession) && parsedSession > 0) {
+              setCurrentItem(parsedSession);
+            }
+          }
+        })
+        .catch((err) => {
+          console.error('Error fetching plan from URL query param:', err);
+        });
+    }
+  }, []);
+
   const revalidateActivePlan = async (isManual = false) => {
     if (!activePlan?.id) return;
     const planId = activePlan.id;
@@ -278,9 +264,6 @@ export const App: React.FC = () => {
       
       const freshPlanRaw = await res.json();
       const freshPlan = migratePlanSchema(freshPlanRaw);
-      
-      if (activePlan.iconUrl && !freshPlan.iconUrl) freshPlan.iconUrl = activePlan.iconUrl;
-      if (activePlan.bannerUrl && !freshPlan.bannerUrl) freshPlan.bannerUrl = activePlan.bannerUrl;
 
       const freshStr = JSON.stringify(freshPlan);
       const cachedStr = localStorage.getItem(`cached_plan_${planId}`);
@@ -289,17 +272,17 @@ export const App: React.FC = () => {
         localStorage.setItem(`cached_plan_${planId}`, freshStr);
         setActivePlan(freshPlan);
         if (isManual) {
-          setSyncFeedback(t('settings.syncSuccess'));
+          setSyncFeedback(translate('en', 'settings.syncSuccess'));
           setTimeout(() => setSyncFeedback(null), 3000);
         }
       } else if (isManual) {
-        setSyncFeedback(t('settings.syncUpToDate'));
+        setSyncFeedback(translate('en', 'settings.syncUpToDate'));
         setTimeout(() => setSyncFeedback(null), 3000);
       }
     } catch (err) {
       console.debug('[PlanSync] Background revalidation skipped or offline:', err);
       if (isManual) {
-        setSyncFeedback(t('plans.cacheError'));
+        setSyncFeedback(translate('en', 'plans.cacheError'));
         setTimeout(() => setSyncFeedback(null), 3000);
       }
     } finally {
@@ -307,14 +290,12 @@ export const App: React.FC = () => {
     }
   };
 
-  // Automatically revalidate active plan in background whenever activePlan.id changes or app loads
   useEffect(() => {
     if (activePlan?.id) {
       revalidateActivePlan(false);
     }
   }, [activePlan?.id]);
 
-  // Fetch organization branding details & repository with cache-busting
   useEffect(() => {
     const cacheBustedRepoUrl = repositoryUrl.includes('?') 
       ? `${repositoryUrl}&_t=${Date.now()}` 
@@ -336,19 +317,7 @@ export const App: React.FC = () => {
         const activeId = localStorage.getItem('active_plan_id');
         if (plansList.length > 0) {
           const matchedItem = activeId ? plansList.find((p: any) => p.id === activeId) : null;
-          if (matchedItem) {
-            setActivePlan((prev) => {
-              if (!prev) return prev;
-              const updated = {
-                ...prev,
-                bannerUrl: matchedItem.bannerUrl || prev.bannerUrl,
-                iconUrl: matchedItem.iconUrl || prev.iconUrl
-              };
-              localStorage.setItem(`cached_plan_${activeId}`, JSON.stringify(updated));
-              return updated;
-            });
-          } else {
-            // Auto fallback to first available plan if current active plan ID is invalid/deleted or null
+          if (!matchedItem && !activeId) {
             const fallbackItem = plansList.find((p: any) => p.type !== 'category') || plansList[0];
             if (fallbackItem && fallbackItem.url) {
               const fbUrl = fallbackItem.url.startsWith('http') || fallbackItem.url.startsWith('/') ? fallbackItem.url : `/${fallbackItem.url}`;
@@ -357,8 +326,6 @@ export const App: React.FC = () => {
                 .then((res) => res.json())
                 .then((rawPlan) => {
                   const planData = migratePlanSchema(rawPlan);
-                  if (fallbackItem.bannerUrl) planData.bannerUrl = fallbackItem.bannerUrl;
-                  if (fallbackItem.iconUrl) planData.iconUrl = fallbackItem.iconUrl;
                   localStorage.setItem(`cached_plan_${fallbackItem.id}`, JSON.stringify(planData));
                   localStorage.setItem('active_plan_id', fallbackItem.id);
                   localStorage.setItem(`active_plan_url_${fallbackItem.id}`, fallbackItem.url);
@@ -375,104 +342,104 @@ export const App: React.FC = () => {
       });
   }, [repositoryUrl]);
 
-
-
-  // Removed Journal auto-save timer/status hooks
-
-  // Sync theme attribute to HTML tag
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('app_theme', theme);
   }, [theme]);
 
-  // Sync font size and theme configurations to html classes
   useEffect(() => {
-    // Clear old classes
-    document.documentElement.classList.remove(
-      'size-small', 'size-medium', 'size-large', 'size-xl',
-      'theme-font-modern', 'theme-font-editorial', 'theme-font-warm', 'theme-font-majestic'
-    );
-    
-    // Add current classes
+    document.documentElement.classList.remove('size-small', 'size-medium', 'size-large', 'size-xl');
     document.documentElement.classList.add(`size-${pref.fontSize || 'medium'}`);
-    const activeTheme = (pref.fontTheme === 'warm') ? 'warm' : 'editorial';
-    document.documentElement.classList.add(`theme-font-${activeTheme}`);
-  }, [pref.fontSize, pref.fontTheme]);
+  }, [pref.fontSize]);
 
-  // Recalculate item when plan or start date changes (on startup or plan load)
   useEffect(() => {
     if (activePlan) {
-      // Check if session query param was supplied to override date/progress
       const params = new URLSearchParams(window.location.search);
-      const sessionParam = params.get('session');
+      const sessionParam = params.get('session') || params.get('item');
       
       if (sessionParam) {
         const parsed = parseInt(sessionParam);
         if (!isNaN(parsed) && parsed > 0 && parsed <= activePlan.items.length) {
           setCurrentItem(parsed);
-          
-          // Clear query param asynchronously to avoid resetting during React mount/remount cycles
-          setTimeout(() => {
-            const cleanUrl = new URL(window.location.href);
-            if (cleanUrl.searchParams.has('session')) {
-              cleanUrl.searchParams.delete('session');
-              window.history.replaceState({}, '', cleanUrl.pathname + cleanUrl.search);
-            }
-          }, 1000);
           return;
         }
       }
 
-      // If a session parameter is present in the URL, bypass the default date/progress calculation
-      if (params.has('session')) {
-        return;
-      }
-
       if (planMetadata.progress && planMetadata.progress.length > 0) {
-        // Show the next item after the last completed item
         const maxCompleted = Math.max(...planMetadata.progress);
-        const nextItem = maxCompleted + 1;
-        const targetItem = Math.min(activePlan.items.length, nextItem);
-        setCurrentItem(targetItem);
-      } else if (startDate) {
-        // Fall back to date elapsed calculation if there is no progress
-        const start = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate());
-        const today = new Date();
-        const curr = new Date(today.getFullYear(), today.getMonth(), today.getDate());
-        
-        const diffTime = curr.getTime() - start.getTime();
-        const diffItems = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1;
-        
-        const targetItem = Math.max(1, Math.min(activePlan.items.length, diffItems));
-        setCurrentItem(targetItem);
+        const nextItem = maxCompleted < activePlan.items.length ? maxCompleted + 1 : activePlan.items.length;
+        setCurrentItem(nextItem);
+      } else {
+        setCurrentItem(1);
       }
     }
-  }, [activePlan, startDate]);
+  }, [activePlan?.id]);
 
+  const activeItemConfig = activePlan?.items.find((d) => d.item === currentItem);
 
+  useEffect(() => {
+    if (activePlan && activeItemConfig) {
+      const passages = activeItemConfig.passages?.map(p => p.reference).join(', ');
+      const pageTitle = `${currentItem}. ${activeItemConfig.title} | ${activePlan.title}`;
+      document.title = pageTitle;
 
-  // Load correct metadata when active plan ID changes
+      const rawContent = activeItemConfig.devotional?.content || '';
+      const cleanSnippet = rawContent
+        .replace(/#{1,6}\s+[^\n]+/g, '')
+        .replace(/[*_~`>]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .slice(0, 160);
+
+      const desc = passages 
+        ? `Scripture: ${passages}. ${cleanSnippet}` 
+        : (cleanSnippet || activePlan.title);
+
+      const setMeta = (name: string, content: string, isProperty = false) => {
+        let tag = document.querySelector(isProperty ? `meta[property="${name}"]` : `meta[name="${name}"]`);
+        if (!tag) {
+          tag = document.createElement('meta');
+          if (isProperty) tag.setAttribute('property', name);
+          else tag.setAttribute('name', name);
+          document.head.appendChild(tag);
+        }
+        tag.setAttribute('content', content);
+      };
+
+      setMeta('description', desc);
+      setMeta('og:title', pageTitle, true);
+      setMeta('og:description', desc, true);
+      setMeta('twitter:title', pageTitle);
+      setMeta('twitter:description', desc);
+    } else if (activePlan) {
+      document.title = activePlan.title;
+    } else {
+      document.title = 'Bible Reading & Prayer Guide';
+    }
+  }, [activePlan, activeItemConfig, currentItem]);
+
   const handleSelectPlan = (plan: Plan, selectedStartDate: Date, planUrl: string) => {
+    setActivePlan(plan);
+    setStartDate(selectedStartDate);
+    setShowSelector(false);
     localStorage.setItem('active_plan_id', plan.id);
     localStorage.setItem(`active_plan_url_${plan.id}`, planUrl);
-    setActivePlan(plan);
-    
-    // Convert date string for storage safely
-    const dateStr = selectedStartDate.toISOString();
-    setStartDate(selectedStartDate);
 
-    const loadedMeta = loadLocalState<UserPlanMetadata>(`plan_metadata_${plan.id}`, {
-      startDate: dateStr,
+    const savedMeta = loadLocalState<UserPlanMetadata>(`plan_metadata_${plan.id}`, {
+      startDate: selectedStartDate.toISOString(),
       progress: [],
       completedItems: {}
     });
-    
-    // Explicitly enforce current start date update
-    loadedMeta.startDate = dateStr;
-    
-    setPlanMetadata(loadedMeta);
-    localStorage.setItem(`plan_metadata_${plan.id}`, JSON.stringify(loadedMeta));
-    setShowSelector(false);
+
+    setPlanMetadata(savedMeta);
+
+    if (savedMeta.progress && savedMeta.progress.length > 0) {
+      const maxCompleted = Math.max(...savedMeta.progress);
+      const nextItem = maxCompleted < plan.items.length ? maxCompleted + 1 : plan.items.length;
+      setCurrentItem(nextItem);
+    } else {
+      setCurrentItem(1);
+    }
   };
 
   const updateMetadata = (newMeta: UserPlanMetadata) => {
@@ -482,19 +449,14 @@ export const App: React.FC = () => {
   };
 
   const togglePassageInline = async (pReference: string, idx: number, hasLocalText: boolean) => {
-    const updatedCompletedItems = { ...planMetadata.completedItems };
-    if (!updatedCompletedItems[currentItem]) {
-      updatedCompletedItems[currentItem] = {};
-    }
-    const nextState = !updatedCompletedItems[currentItem][`passage-inline-${idx}`];
-    updatedCompletedItems[currentItem][`passage-inline-${idx}`] = nextState;
-    updateMetadata({ ...planMetadata, completedItems: updatedCompletedItems });
+    const nextState = !openPassageIndices[idx];
+    setOpenPassageIndices(prev => ({ ...prev, [idx]: nextState }));
 
-    const passageKey = `${pReference}_${pref.bibleTranslation || 'BSB'}`;
+    const passageKey = `${pReference}_BSB`;
     if (nextState && !hasLocalText && !fetchedPassages[passageKey] && !loadingPassages[passageKey]) {
       setLoadingPassages(prev => ({ ...prev, [passageKey]: true }));
       try {
-        const text = await fetchHelloAoPassage(pReference, pref.bibleTranslation || 'BSB');
+        const text = await fetchHelloAoPassage(pReference, 'BSB');
         setFetchedPassages(prev => ({ ...prev, [passageKey]: text }));
       } catch (err) {
         console.error('HelloAO Scripture Fetch Error:', err);
@@ -510,13 +472,7 @@ export const App: React.FC = () => {
 
   const handleRestartPlan = () => {
     if (!activePlan) return;
-    const confirmText = pref.language === 'zh' 
-      ? '确定要重置当前计划的进度吗？' 
-      : pref.language === 'ms'
-        ? 'Adakah anda pasti mahu menetapkan semula kemajuan rancangan ini?'
-        : 'Are you sure you want to reset all progress for this plan?';
-        
-    if (window.confirm(confirmText)) {
+    if (window.confirm('Are you sure you want to reset all progress for this plan?')) {
       const resetMeta: UserPlanMetadata = {
         startDate: new Date().toISOString(),
         progress: [],
@@ -525,6 +481,7 @@ export const App: React.FC = () => {
       setStartDate(new Date());
       updateMetadata(resetMeta);
       setCurrentItem(1);
+      setShowSettings(false);
     }
   };
 
@@ -538,49 +495,79 @@ export const App: React.FC = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
-  // Translate wrapper
   const t = (key: string, params?: Record<string, string | number>) => {
-    return translate(pref.language, key, params);
-  };
-
-  // Helper to parse embedded media links
-  const getYouTubeEmbedUrl = (url: string) => {
-    try {
-      const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
-      const match = url.match(regExp);
-      if (match && match[2].length === 11) {
-        return `https://www.youtube.com/embed/${match[2]}`;
-      }
-    } catch (e) {
-      console.log('Error parsing youtube link', e);
-    }
-    return '';
+    return translate('en', key, params);
   };
 
   const isPrayer = activePlan?.type === 'prayer_guide';
   const totalItems = activePlan?.items.length || 1;
-  const activeItemConfig = activePlan?.items.find((d) => d.item === currentItem);
 
-
-
-
-
-  const handleShareSession = () => {
-    if (!activePlan) return;
+  const getLessonShareDetails = () => {
+    if (!activePlan || !activeItemConfig) return null;
     const planUrl = localStorage.getItem(`active_plan_url_${activePlan.id}`) || `plans/${activePlan.id}.json`;
     const fullUrl = planUrl.startsWith('http') ? planUrl : new URL(planUrl, window.location.origin).href;
     const shareUrl = `${window.location.origin}${window.location.pathname}?plan=${encodeURIComponent(fullUrl)}&session=${currentItem}`;
     
-    navigator.clipboard.writeText(shareUrl)
-      .then(() => {
-        setShareStatus('copied');
-        setTimeout(() => setShareStatus(null), 2000);
-      })
-      .catch((err) => {
-        console.error('Failed to copy: ', err);
-        alert(`${t('itemView.shareSession')}: ${shareUrl}`);
-      });
+    const passages = activeItemConfig.passages?.map(p => p.reference).join(', ') || '';
+    const rawContent = activeItemConfig.devotional?.content || '';
+    
+    const cleanSnippet = rawContent
+      .replace(/#{1,6}\s+[^\n]+/g, '')
+      .replace(/[*_~`>]/g, '')
+      .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .slice(0, 220);
+
+    const formattedMessage = [
+      `📖 *${activePlan.title}*`,
+      `*${currentItem}. ${activeItemConfig.title}*`,
+      passages ? `📜 *Passage:* ${passages}` : '',
+      cleanSnippet ? `\n"${cleanSnippet}..."` : '',
+      `\n👉 *Open & Read:*`,
+      shareUrl
+    ].filter(Boolean).join('\n');
+
+    return { shareUrl, passages, cleanSnippet, formattedMessage };
   };
+
+  const handleShareWhatsApp = () => {
+    const details = getLessonShareDetails();
+    if (!details) return;
+
+    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(details.formattedMessage)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+  };
+
+  const handleShareSession = async () => {
+    const details = getLessonShareDetails();
+    if (!details || !activePlan || !activeItemConfig) return;
+    
+    // Check if Native Web Share is supported (e.g. mobile Safari / Chrome)
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: `${currentItem}. ${activeItemConfig.title} | ${activePlan.title}`,
+          text: details.formattedMessage
+        });
+        return;
+      } catch (err: any) {
+        if (err?.name === 'AbortError') return; // User cancelled share sheet
+        console.debug('Native share fallback to clipboard:', err);
+      }
+    }
+
+    // Default to clipboard copy
+    try {
+      await navigator.clipboard.writeText(details.formattedMessage);
+      setShareStatus('copied');
+      setTimeout(() => setShareStatus(null), 2500);
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+      alert(`Lesson Content:\n\n${details.formattedMessage}`);
+    }
+  };
+
   return (
     <div className="app-container">
       {/* Top Header Glass */}
@@ -590,25 +577,13 @@ export const App: React.FC = () => {
         style={{ cursor: 'pointer', padding: headerExpanded ? '16px 20px' : '10px 20px', transition: 'all 0.2s ease' }}
       >
         <div className="brand-section" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          {orgInfo?.logoUrl ? (
-            <img 
-              src={orgInfo.logoUrl} 
-              alt="" 
-              style={{ 
-                height: headerExpanded ? '32px' : '20px', 
-                objectFit: 'contain', 
-                transition: 'height 0.2s ease' 
-              }} 
-            />
-          ) : (
-            <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
-              <Church size={headerExpanded ? 24 : 18} />
-            </span>
-          )}
+          <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)' }}>
+            <Church size={headerExpanded ? 24 : 18} />
+          </span>
           
           {headerExpanded ? (
             <div style={{ display: 'flex', flexDirection: 'column', animation: 'fadeIn 0.2s ease' }}>
-              <h1 style={{ fontSize: '1.2rem', margin: 0 }}>
+              <h1 style={{ fontSize: '1.15rem', margin: 0, fontWeight: 700 }}>
                 {orgInfo ? orgInfo.name : t('appTitle')}
               </h1>
               <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', margin: 0 }}>
@@ -616,25 +591,40 @@ export const App: React.FC = () => {
               </p>
             </div>
           ) : (
-            <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontWeight: 500 }}>
+            <span style={{ fontSize: '0.88rem', color: 'var(--text-muted)', fontWeight: 600 }}>
               {orgInfo ? orgInfo.name : t('appTitle')}
             </span>
           )}
         </div>
         <div className="header-controls" onClick={(e) => e.stopPropagation()} style={{ display: 'flex', gap: '6px' }}>
-          <button className="icon-btn" onClick={toggleTheme} title={t('settings.theme')} aria-label="Toggle Dark Mode" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '8px' }}>
+          <button 
+            className="icon-btn" 
+            onClick={toggleTheme} 
+            title="Toggle Dark Mode" 
+            aria-label="Toggle Dark Mode"
+          >
             {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
           </button>
-          <button className="icon-btn" onClick={() => setShowSelector(true)} title={t('plans.choosePlan')} aria-label="Change Plan" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '8px' }}>
+          <button 
+            className="icon-btn" 
+            onClick={() => setShowSelector(true)} 
+            title={t('plans.choosePlan')} 
+            aria-label="Select Plan"
+          >
             <ClipboardList size={18} />
           </button>
-          <button className="icon-btn" onClick={() => setShowSettings(true)} title={t('settings.title')} aria-label="Settings" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '8px' }}>
+          <button 
+            className="icon-btn" 
+            onClick={() => setShowSettings(true)} 
+            title={t('settings.title')} 
+            aria-label="Settings"
+          >
             <Settings size={18} />
           </button>
         </div>
       </header>
 
-      {/* Active Plan Info Section */}
+      {/* Active Plan Header Card */}
       {activePlan && (
         <section 
           className="active-plan-banner-wrapper"
@@ -645,16 +635,16 @@ export const App: React.FC = () => {
         >
           <div className="active-plan-info" style={{ textAlign: 'left', width: '100%' }}>
             <span style={{ 
-              fontSize: headerExpanded ? '0.75rem' : '0.65rem', 
+              fontSize: '0.68rem', 
               textTransform: 'uppercase', 
-              letterSpacing: '0.05em', 
+              letterSpacing: '0.06em', 
               color: 'var(--primary)',
               fontWeight: 700
             }}>
               {activePlan.type === 'reading' || activePlan.type === 'reading_plan' ? t('tabs.readReflect') : t('tabs.prayer')}
             </span>
             <h2 style={{ 
-              fontSize: headerExpanded ? '1.3rem' : '1.05rem', 
+              fontSize: headerExpanded ? '1.25rem' : '1.05rem', 
               marginTop: '2px', 
               marginBottom: '0', 
               color: 'var(--text-main)',
@@ -670,19 +660,11 @@ export const App: React.FC = () => {
       {/* Main View Shell */}
       {!activePlan ? (
         <div className="empty-view">
-          {orgInfo?.logoUrl ? (
-            <img 
-              src={orgInfo.logoUrl} 
-              alt="" 
-              style={{ height: '80px', width: '80px', objectFit: 'contain', marginBottom: '16px', borderRadius: '16px' }} 
-            />
-          ) : (
-            <div className="empty-view-icon" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
-              <BookOpen size={48} />
-            </div>
-          )}
+          <div className="empty-view-icon" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+            <BookOpen size={48} />
+          </div>
           <h2>Welcome to {orgInfo ? orgInfo.name : t('appTitle')}</h2>
-          <p>{orgInfo ? `Browse plans provided by ${orgInfo.name} to begin your daily devotion.` : 'Please select a reading plan or prayer guide to begin your daily devotion.'}</p>
+          <p>{orgInfo ? `Browse plans provided by ${orgInfo.name} to begin your daily devotion.` : 'Please select a reading plan to begin your personal reflection or small group study.'}</p>
           
           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center', marginTop: '16px' }}>
             <button className="btn btn-primary" onClick={() => setShowSelector(true)}>
@@ -707,324 +689,217 @@ export const App: React.FC = () => {
               {activeItemConfig ? (
                 <>
                   <div className="item-view-header" style={{ position: 'relative' }}>
-                    <div className="item-view-title">
-                      <h2>{activeItemConfig.title}</h2>
-                      <div className="item-view-subtitle" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', width: '100%' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
-                          <button 
-                            className="item-selector-trigger"
+                    <div className="item-view-title" style={{ width: '100%' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', flexWrap: 'wrap', gap: '8px' }}>
+                        {/* Selector Popover Button */}
+                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+                          <button
+                            className="session-selector-btn"
                             onClick={() => setShowItemSelector(!showItemSelector)}
+                            title="Jump to item"
                             style={{
-                              background: 'none',
+                              background: 'transparent',
                               border: 'none',
                               color: 'var(--primary)',
-                              fontSize: '0.9rem',
-                              fontWeight: 600,
+                              fontSize: '0.95rem',
+                              fontWeight: 700,
                               cursor: 'pointer',
-                              padding: '6px 12px',
-                              margin: '-6px -12px',
+                              padding: '6px 10px',
+                              margin: '-6px -10px',
                               borderRadius: '8px',
                               display: 'inline-flex',
                               alignItems: 'center',
                               gap: '6px',
-                              fontFamily: 'var(--font-ui)',
                               transition: 'all 0.2s ease'
                             }}
                           >
-                            {isPrayer ? <Flame size={16} /> : <FileText size={16} />} {isPrayer 
-                               ? t('itemView.itemHeaderPrayer', { item: currentItem }) 
-                               : t('itemView.itemHeaderReading', { item: currentItem })} <ChevronDown size={14} />
+                            {isPrayer ? <Flame size={16} /> : <FileText size={16} />} 
+                            <span>{`${currentItem} of ${totalItems}`}</span>
+                            <ChevronDown size={14} />
                           </button>
-
-                          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '2px', position: 'relative', marginLeft: '6px' }}>
-                            <button
-                              className="share-session-trigger"
-                              onClick={handleShareSession}
-                              title={t('itemView.shareWithFriend')}
-                              style={{
-                                background: 'none',
-                                border: 'none',
-                                color: shareStatus === 'copied' ? 'var(--success)' : 'var(--text-muted)',
-                                fontSize: '0.8rem',
-                                fontWeight: 500,
-                                cursor: 'pointer',
-                                display: 'inline-flex',
-                                alignItems: 'center',
-                                gap: '4px',
-                                padding: '4px 8px',
-                                borderRadius: '4px',
-                                transition: 'all 0.2s ease',
-                                fontFamily: 'var(--font-ui)'
-                              }}
-                            >
-                              <span style={{ display: 'inline-flex', alignItems: 'center' }}>{shareStatus === 'copied' ? <Check size={14} /> : <Link size={14} />}</span>
-                              <span style={{ fontSize: '0.75rem' }}>
-                                {shareStatus === 'copied' ? t('itemView.shareCopied') : t('itemView.shareWithFriend')}
-                              </span>
-                            </button>
-
-                            <button
-                              type="button"
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                setShowShareHelp(!showShareHelp);
-                              }}
-                              onMouseEnter={() => setShowShareHelp(true)}
-                              onMouseLeave={() => setShowShareHelp(false)}
-                              title="What is this?"
-                              aria-label="Share Information"
-                              style={{
-                                background: 'none',
-                                border: 'none',
-                                color: 'var(--text-muted)',
-                                cursor: 'pointer',
-                                display: 'inline-flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                padding: '4px',
-                                borderRadius: '50%',
-                                opacity: 0.75
-                              }}
-                            >
-                              <HelpCircle size={13} />
-                            </button>
-
-                            {showShareHelp && (
-                              <div
-                                style={{
-                                  position: 'absolute',
-                                  top: '100%',
-                                  left: 0,
-                                  width: '230px',
-                                  background: 'var(--bg-card)',
-                                  backdropFilter: 'blur(var(--blur-glass))',
-                                  border: '1px solid var(--border-glass)',
-                                  borderRadius: '12px',
-                                  padding: '10px 14px',
-                                  marginTop: '6px',
-                                  boxShadow: 'var(--shadow-md)',
-                                  fontSize: '0.75rem',
-                                  lineHeight: 1.4,
-                                  color: 'var(--text-main)',
-                                  zIndex: 110,
-                                  animation: 'fadeIn 0.15s ease'
-                                }}
-                              >
-                                <div style={{ fontWeight: 600, color: 'var(--primary)', marginBottom: '4px' }}>💡 {t('itemView.shareWithFriend')}</div>
-                                {t('itemView.shareHelpTooltip')}
-                              </div>
-                            )}
-                          </div>
                         </div>
 
-                        {showItemSelector && (
-                          <div 
-                            className="item-selector-popover"
+                        {/* Top Quick Actions (WhatsApp icon & Copy Link icon) */}
+                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                          <button
+                            className="btn btn-whatsapp"
+                            onClick={handleShareWhatsApp}
+                            title="Share to WhatsApp"
+                            aria-label="Share to WhatsApp"
                             style={{
-                              position: 'absolute',
-                              top: '100%',
-                              left: 0,
-                              right: 0,
-                              background: 'var(--bg-card)',
-                              backdropFilter: 'blur(var(--blur-glass))',
-                              border: '1px solid var(--border-glass)',
-                              borderRadius: '16px',
-                              padding: '16px',
-                              marginTop: '12px',
-                              boxShadow: 'var(--shadow-md)',
-                              animation: 'fadeIn 0.2s ease',
-                              display: 'flex',
-                              flexDirection: 'column',
-                              gap: '12px',
-                              zIndex: 10,
-                              boxSizing: 'border-box'
+                              width: '32px',
+                              height: '32px',
+                              padding: 0,
+                              borderRadius: '8px',
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              cursor: 'pointer'
                             }}
                           >
-                            {/* Header details */}
-                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-muted)' }}>
-                              <span>
-                                {pref.language === 'zh' ? '选择阶段' : pref.language === 'ms' ? 'Pilih Sesi' : 'Select Session'}
-                              </span>
-                              <span>
-                                {currentItem} / {totalItems}
-                              </span>
-                            </div>
+                            <WhatsAppIcon size={17} />
+                          </button>
 
-                            {/* Scrollable list of session titles */}
-                            <div 
-                              ref={sessionListRef}
-                              className="session-selector-list"
-                              style={{
-                                display: 'flex',
-                                flexDirection: 'column',
-                                gap: '6px',
-                                maxHeight: '280px',
-                                overflowY: 'auto',
-                                paddingRight: '4px',
-                                scrollbarWidth: 'thin',
-                                scrollBehavior: 'smooth'
-                              }}
-                            >
-                              {activePlan.items.map((day) => {
-                                const isCompleted = planMetadata.progress.includes(day.item);
-                                const isCurrent = day.item === currentItem;
-                                
-                                return (
-                                  <button
-                                    key={day.item}
-                                    id={`session-selector-item-${day.item}`}
-                                    onClick={() => {
-                                      setCurrentItem(day.item);
-                                      setShowItemSelector(false);
-                                      window.scrollTo({ top: 0, behavior: 'smooth' });
-                                    }}
-                                    className={`session-selector-row ${isCurrent ? 'active' : ''} ${isCompleted ? 'completed' : ''}`}
-                                    style={{
-                                      display: 'flex',
-                                      alignItems: 'center',
-                                      gap: '12px',
-                                      padding: '10px 12px',
-                                      borderRadius: '10px',
-                                      border: isCurrent ? '1px solid var(--primary)' : '1px solid transparent',
-                                      background: isCurrent ? 'var(--primary-light)' : 'rgba(255, 255, 255, 0.02)',
-                                      cursor: 'pointer',
-                                      textAlign: 'left',
-                                      width: '100%',
-                                      transition: 'all 0.15s ease',
-                                      color: 'inherit',
-                                      fontFamily: 'inherit',
-                                      boxSizing: 'border-box'
-                                    }}
-                                  >
-                                    {/* Left Circle Indicator */}
-                                    <div 
-                                      className={`circle-indicator ${isCompleted ? 'completed' : ''}`}
-                                      style={{
-                                        width: '20px',
-                                        height: '20px',
-                                        borderRadius: '50%',
-                                        border: isCompleted ? 'none' : '2px solid var(--text-muted)',
-                                        background: isCompleted ? 'var(--success)' : 'transparent',
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        justifyContent: 'center',
-                                        flexShrink: 0,
-                                        fontSize: '0.65rem',
-                                        color: '#ffffff',
-                                        fontWeight: 'bold',
-                                        transition: 'all 0.15s ease'
-                                      }}
-                                    >
-                                      {isCompleted && <Check size={12} strokeWidth={3} />}
-                                    </div>
-
-                                    {/* Text Column */}
-                                    <div style={{ flex: 1, minWidth: 0 }}>
-                                      <div style={{ 
-                                        fontSize: '0.75rem', 
-                                        fontWeight: 600, 
-                                        color: isCurrent ? 'var(--primary)' : 'var(--text-muted)',
-                                        textTransform: 'uppercase',
-                                        letterSpacing: '0.05em',
-                                        marginBottom: '2px'
-                                      }}>
-                                        <div style={{
-                                          display: 'flex',
-                                          alignItems: 'center',
-                                        }}>
-                                          {activePlan?.type === 'prayer_guide' ? (
-                                            <Flame size={12} aria-label="Prayer guide" />
-                                          ) : (
-                                            <FileText size={12} aria-label="Reading session" />
-                                          )}
-                                          <span style={{ marginLeft: '6px' }}>
-                                            {pref.language === 'zh' ? `第 ${day.item} 阶段` : pref.language === 'ms' ? `Sesi ${day.item}` : `Session ${day.item}`}
-                                          </span>
-                                        </div>
-                                      </div>
-                                      <div style={{ 
-                                        fontSize: '0.9rem', 
-                                        fontWeight: isCurrent ? 600 : 500, 
-                                        color: 'var(--text-main)',
-                                        whiteSpace: 'nowrap',
-                                        overflow: 'hidden',
-                                        textOverflow: 'ellipsis'
-                                      }}>
-                                        {day.title}
-                                      </div>
-                                    </div>
-                                  </button>
-                                );
-                              })}
-                            </div>
-                          </div>
-                        )}
+                          <button
+                            className="icon-btn"
+                            onClick={handleShareSession}
+                            title="Copy Summary & Link"
+                            aria-label="Copy Summary & Link"
+                            style={{
+                              width: '32px',
+                              height: '32px',
+                              padding: 0,
+                              borderRadius: '8px',
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              cursor: 'pointer',
+                              color: shareStatus === 'copied' ? 'var(--success)' : 'inherit'
+                            }}
+                          >
+                            {shareStatus === 'copied' ? <Check size={16} /> : <Link size={15} />}
+                          </button>
+                        </div>
                       </div>
+
+                      {/* Contents Picker Popover */}
+                      {showItemSelector && (
+                        <div 
+                          className="item-selector-popover"
+                          style={{
+                            position: 'absolute',
+                            top: '100%',
+                            left: 0,
+                            right: 0,
+                            background: 'var(--bg-card)',
+                            backdropFilter: 'blur(var(--blur-glass))',
+                            border: '1px solid var(--border-glass)',
+                            borderRadius: '16px',
+                            padding: '16px',
+                            marginTop: '12px',
+                            boxShadow: 'var(--shadow-md)',
+                            animation: 'fadeIn 0.2s ease',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: '12px',
+                            zIndex: 100,
+                            boxSizing: 'border-box'
+                          }}
+                        >
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-muted)' }}>
+                            <span>Contents</span>
+                            <span>{currentItem} / {totalItems}</span>
+                          </div>
+
+                          <div 
+                            ref={sessionListRef}
+                            className="session-selector-list"
+                            style={{
+                              display: 'flex',
+                              flexDirection: 'column',
+                              gap: '6px',
+                              maxHeight: '280px',
+                              overflowY: 'auto',
+                              paddingRight: '4px',
+                              scrollbarWidth: 'thin',
+                              scrollBehavior: 'smooth'
+                            }}
+                          >
+                            <SessionSelectorList
+                              items={activePlan.items}
+                              currentItem={currentItem}
+                              completedItems={planMetadata.progress}
+                              planType={activePlan.type}
+                              onSelect={(itemNumber) => {
+                                setCurrentItem(itemNumber);
+                                setShowItemSelector(false);
+                                window.scrollTo({ top: 0, behavior: 'smooth' });
+                              }}
+                            />
+                          </div>
+                        </div>
+                      )}
+
+                      <h1 style={{ marginTop: '12px', fontSize: '1.45rem', fontWeight: 700, lineHeight: 1.3 }}>
+                        {activeItemConfig.title}
+                      </h1>
                     </div>
                   </div>
 
+                  {/* Scripture Reading Section */}
                   {activeItemConfig.passages && activeItemConfig.passages.length > 0 && (
-                    <div className="passage-section">
-                      <h4 className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><BookOpen size={14} /> {t('itemView.readPassages')}</h4>
-                      <div className="passage-list" style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                    <div className="passages-section" style={{ marginTop: '16px', marginBottom: '20px' }}>
+                      <div style={{ fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-muted)', fontWeight: 700, marginBottom: '8px' }}>
+                        {t('itemView.readPassages')}
+                      </div>
+                      <div className="passage-cards-grid" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                         {activeItemConfig.passages.map((p, idx) => {
-                          const isInlineOpen = planMetadata?.completedItems?.[currentItem]?.[`passage-inline-${idx}`] || false;
-                          const passageKey = `${p.reference}_${pref.bibleTranslation || 'BSB'}`;
-                          const isFetching = loadingPassages[passageKey];
-                          const fetchedText = fetchedPassages[passageKey];
+                          const isInlineOpen = !!openPassageIndices[idx];
+                          const passageKey = `${p.reference}_BSB`;
+                          const inlineText = p.text || fetchedPassages[passageKey];
+                          const isLoading = loadingPassages[passageKey];
 
                           return (
-                            <div key={idx} style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                              <button
-                                className="passage-toggle-btn"
-                                style={{
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  justifyContent: 'space-between',
-                                  width: '100%',
-                                  background: 'var(--bg-glass)',
-                                  border: '1px solid var(--border-glass)',
-                                  borderRadius: '12px',
-                                  padding: '12px 16px',
-                                  color: 'var(--text-main)',
-                                  fontSize: '1rem',
-                                  fontWeight: 500,
-                                  cursor: 'pointer',
-                                  textAlign: 'left',
-                                  transition: 'all 0.2s ease'
-                                }}
-                                onClick={() => togglePassageInline(p.reference, idx, !!p.text)}
-                              >
-                                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
-                                  <BookOpen size={16} /> {p.reference}
-                                </span>
-                                <span style={{ display: 'inline-flex', alignItems: 'center', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                                  {isInlineOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-                                </span>
-                              </button>
-                              
+                            <div 
+                              key={idx} 
+                              className="passage-card"
+                              style={{
+                                background: 'var(--bg-card)',
+                                border: '1px solid var(--border-glass)',
+                                borderRadius: '12px',
+                                padding: '12px 16px',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                gap: '8px'
+                              }}
+                            >
+                              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                  <Scroll size={16} style={{ color: 'var(--primary)' }} />
+                                  <span style={{ fontWeight: 600, fontSize: '0.98rem' }}>{p.reference}</span>
+                                </div>
+                                <div style={{ display: 'flex', gap: '6px' }}>
+                                  <button
+                                    className="btn btn-secondary"
+                                    onClick={() => togglePassageInline(p.reference, idx, !!p.text)}
+                                    style={{ fontSize: '0.78rem', padding: '4px 10px', borderRadius: '6px' }}
+                                  >
+                                    {isInlineOpen ? 'Hide Text' : t('itemView.readInline')}
+                                  </button>
+                                  {p.url && (
+                                    <a 
+                                      href={p.url} 
+                                      target="_blank" 
+                                      rel="noopener noreferrer" 
+                                      className="btn btn-secondary"
+                                      style={{ fontSize: '0.78rem', padding: '4px 8px', borderRadius: '6px', display: 'inline-flex', alignItems: 'center' }}
+                                      title="Open in BibleHub"
+                                    >
+                                      <Link size={12} />
+                                    </a>
+                                  )}
+                                </div>
+                              </div>
+
                               {isInlineOpen && (
                                 <div 
-                                  className="bible-text-panel" 
-                                  style={{ 
-                                    background: 'var(--bg-card)', 
-                                    border: '1px solid var(--border-glass)', 
-                                    borderRadius: '12px', 
-                                    padding: '16px 20px', 
-                                    fontSize: '1.05rem', 
-                                    lineHeight: '1.75', 
-                                    color: 'var(--text-main)',
-                                    fontFamily: 'var(--font-serif)'
+                                  className="bible-text-panel"
+                                  style={{
+                                    marginTop: '8px',
+                                    padding: '14px',
+                                    borderRadius: '8px',
+                                    background: 'var(--bg-app)',
+                                    border: '1px solid var(--border-glass)',
+                                    fontSize: '0.95rem',
+                                    lineHeight: 1.7
                                   }}
                                 >
-                                  {p.text ? (
-                                    <ReactMarkdown>{p.text}</ReactMarkdown>
-                                  ) : isFetching ? (
-                                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', fontSize: '0.95rem' }}><Loader2 size={16} className="spin" /> Loading Scripture text...</span>
-                                  ) : fetchedText ? (
-                                    <ReactMarkdown>{fetchedText}</ReactMarkdown>
+                                  {isLoading ? (
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', fontSize: '0.88rem' }}>
+                                      <Loader2 size={16} className="animate-spin" /> Loading Scripture (BSB)...
+                                    </div>
                                   ) : (
-                                    <span style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Could not load Scripture text. Please check your connection.</span>
+                                    <ReactMarkdown>{inlineText}</ReactMarkdown>
                                   )}
                                 </div>
                               )}
@@ -1035,95 +910,43 @@ export const App: React.FC = () => {
                     </div>
                   )}
 
+                  {/* Devotional Study Content */}
                   {activeItemConfig.devotional && (
-                    <div className="devotional-section">
-                      <h4 className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Scroll size={14} /> Devotional</h4>
-                      {activeItemConfig.devotional.title && (
-                        <h3 className="devotional-title">{activeItemConfig.devotional.title}</h3>
-                      )}
+                    <div className="devotional-content" style={{ marginTop: '20px', lineHeight: 1.75 }}>
                       {activeItemConfig.devotional.author && (
-                        <div className="devotional-author">
+                        <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginBottom: '12px', fontWeight: 500 }}>
                           {t('itemView.devotionalBy', { author: activeItemConfig.devotional.author })}
                         </div>
                       )}
-
-                      {activeItemConfig.media && (
-                        <div className="devotional-media-container">
-                          {activeItemConfig.media.image?.url && (
-                            <div className="media-image-wrapper">
-                              <img src={activeItemConfig.media.image.url} alt={activeItemConfig.media.image.caption || "Devotional illustration"} />
-                              {activeItemConfig.media.image.caption && (
-                                <div className="media-image-caption">{activeItemConfig.media.image.caption}</div>
-                              )}
-                            </div>
-                          )}
-                          
-                          {activeItemConfig.media.video?.url && (
-                            <div className="media-video-wrapper">
-                              {getYouTubeEmbedUrl(activeItemConfig.media.video.url) ? (
-                                <iframe 
-                                  src={getYouTubeEmbedUrl(activeItemConfig.media.video.url)}
-                                  title={activeItemConfig.media.video.title || "Video"}
-                                  frameBorder="0"
-                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                  allowFullScreen
-                                />
-                              ) : (
-                                <a href={activeItemConfig.media.video.url} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-                                  <Tv size={16} /> Play Video: {activeItemConfig.media.video.title || 'Link'}
-                                </a>
-                              )}
-                            </div>
-                          )}
-
-                          {activeItemConfig.media.audio?.url && (
-                            <div className="media-audio-wrapper">
-                              <div className="audio-title" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Music size={16} /> {activeItemConfig.media.audio.title || 'Devotional Audio Podcast'}</div>
-                              <audio controls src={activeItemConfig.media.audio.url} />
-                            </div>
-                          )}
-                        </div>
-                      )}
-
-                      {activeItemConfig.devotional.content && (
-                        <div className="devotional-content"><ReactMarkdown>{activeItemConfig.devotional.content}</ReactMarkdown></div>
-                      )}
+                      <ReactMarkdown>{activeItemConfig.devotional.content}</ReactMarkdown>
                     </div>
                   )}
 
-                  {((activeItemConfig.reflect && activeItemConfig.reflect.length > 0) || (activeItemConfig.reflectionQuestions && activeItemConfig.reflectionQuestions.length > 0)) && (
-                    <div className="passage-section">
-                      <h4 className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><HelpCircle size={14} /> {t('itemView.reflectionQuestions')}</h4>
-                      <ol className="questions-list">
-                        {(activeItemConfig.reflect || activeItemConfig.reflectionQuestions || []).map((q, idx) => (
-                          <li key={idx}><ReactMarkdown components={{ p: React.Fragment }}>{q}</ReactMarkdown></li>
-                        ))}
-                      </ol>
-                    </div>
-                  )}
-
-                  {((activeItemConfig.practice && activeItemConfig.practice.length > 0) || (activeItemConfig.actionSteps && activeItemConfig.actionSteps.length > 0)) && (
-                    <div className="passage-section">
-                      <h4 className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Target size={14} /> {t('itemView.actionSteps')}</h4>
-                      <ol className="action-steps-list">
-                        {(activeItemConfig.practice || activeItemConfig.actionSteps || []).map((step, idx) => (
-                          <li key={idx}><ReactMarkdown components={{ p: React.Fragment }}>{step}</ReactMarkdown></li>
-                        ))}
-                      </ol>
-                    </div>
-                  )}
-
-                  {activeItemConfig.prayers && activeItemConfig.prayers.length > 0 && (
-                    <div className="passage-section">
-                      <h4 className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Flame size={14} /> {t('tabs.prayer')}</h4>
-                      <div className="prayers-list" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                        {activeItemConfig.prayers.map((p, idx) => (
-                          <div key={idx} className="prayer-item-display" style={{ borderLeft: '3px solid var(--primary-light)', paddingLeft: '16px' }}>
-                            <div className="prayer-topic" style={{ fontWeight: 600, fontSize: '1.05rem', color: 'var(--text-main)', marginBottom: '4px' }}>
-                              {p.topic}
-                            </div>
-                            <div className="prayer-desc">
-                              <ReactMarkdown components={{ p: React.Fragment }}>{p.description}</ReactMarkdown>
+                  {/* Reflection & Group Discussion Questions */}
+                  {activeItemConfig.reflect && activeItemConfig.reflect.length > 0 && (
+                    <div className="section-block reflection-section" style={{ marginTop: '28px', paddingTop: '20px', borderTop: '1px solid var(--border-glass)' }}>
+                      <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '14px', color: 'var(--primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        💬 {t('itemView.reflectionQuestions')}
+                      </h3>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                        {activeItemConfig.reflect.map((q, idx) => (
+                          <div 
+                            key={idx}
+                            style={{
+                              background: 'var(--bg-card)',
+                              border: '1px solid var(--border-glass)',
+                              borderRadius: '10px',
+                              padding: '12px 16px',
+                              fontSize: '0.95rem',
+                              lineHeight: 1.6,
+                              display: 'flex',
+                              gap: '10px',
+                              alignItems: 'baseline'
+                            }}
+                          >
+                            <span style={{ fontWeight: 700, color: 'var(--primary)', flexShrink: 0 }}>{idx + 1}.</span>
+                            <div className="markdown-inline-content">
+                              <ReactMarkdown>{q}</ReactMarkdown>
                             </div>
                           </div>
                         ))}
@@ -1131,9 +954,100 @@ export const App: React.FC = () => {
                     </div>
                   )}
 
-                  <div className="bottom-controls-section" style={{ marginTop: '36px', paddingTop: '24px', borderTop: '1px solid var(--border-glass)', position: 'relative' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', gap: '10px', flexWrap: 'wrap' }}>
-                      {/* Prev Button */}
+                  {/* Practice / Action Steps */}
+                  {activeItemConfig.practice && activeItemConfig.practice.length > 0 && (
+                    <div className="section-block practice-section" style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid var(--border-glass)' }}>
+                      <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '14px', color: 'var(--accent)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        🎯 {t('itemView.actionSteps')}
+                      </h3>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                        {activeItemConfig.practice.map((act, idx) => (
+                          <div 
+                            key={idx}
+                            style={{
+                              background: 'var(--bg-card)',
+                              border: '1px solid var(--border-glass)',
+                              borderRadius: '10px',
+                              padding: '12px 16px',
+                              fontSize: '0.95rem',
+                              lineHeight: 1.6,
+                              display: 'flex',
+                              gap: '10px',
+                              alignItems: 'baseline'
+                            }}
+                          >
+                            <span style={{ fontWeight: 700, color: 'var(--accent)', flexShrink: 0 }}>•</span>
+                            <div className="markdown-inline-content">
+                              <ReactMarkdown>{act}</ReactMarkdown>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Bottom Navigation & Share Bar */}
+                  <div 
+                    className="item-nav-container"
+                    style={{ 
+                      marginTop: '36px', 
+                      paddingTop: '20px', 
+                      borderTop: '1px solid var(--border-glass)',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '16px'
+                    }}
+                  >
+                    {/* Quick Share Bar */}
+                    <div 
+                      style={{
+                        background: 'var(--bg-card)',
+                        border: '1px solid var(--border-glass)',
+                        borderRadius: '12px',
+                        padding: '12px 16px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        flexWrap: 'wrap',
+                        gap: '10px'
+                      }}
+                    >
+                      <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                        <strong style={{ color: 'var(--text-main)' }}>Share:</strong> Send to your group or friends
+                      </div>
+                      <div style={{ display: 'flex', gap: '8px' }}>
+                        <button
+                          className="btn btn-whatsapp"
+                          onClick={handleShareWhatsApp}
+                          title="Share to WhatsApp"
+                          aria-label="Share to WhatsApp"
+                          style={{ fontSize: '0.82rem', padding: '6px 12px', borderRadius: '8px', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                        >
+                          <WhatsAppIcon size={16} /> WhatsApp
+                        </button>
+                        <button
+                          className="btn btn-secondary"
+                          onClick={handleShareSession}
+                          title="Share or copy link"
+                          aria-label="Share"
+                          style={{ 
+                            fontSize: '0.82rem', 
+                            padding: '6px 12px', 
+                            borderRadius: '8px', 
+                            display: 'inline-flex', 
+                            alignItems: 'center', 
+                            gap: '6px',
+                            color: shareStatus === 'copied' ? 'var(--success)' : 'inherit'
+                          }}
+                        >
+                          {shareStatus === 'copied' ? <Check size={15} /> : <Share2 size={15} />}
+                          <span>{shareStatus === 'copied' ? 'Copied!' : 'Share'}</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Previous / Next / Complete Controls */}
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '8px' }}>
                       <button
                         className="btn btn-secondary"
                         disabled={currentItem <= 1}
@@ -1143,8 +1057,8 @@ export const App: React.FC = () => {
                             window.scrollTo({ top: 0, behavior: 'smooth' });
                           }
                         }}
-                        title={t('itemView.prevSession')}
-                        aria-label="Previous Session"
+                        title={t('itemView.prev')}
+                        aria-label="Previous"
                         style={{
                           display: 'inline-flex',
                           alignItems: 'center',
@@ -1159,48 +1073,46 @@ export const App: React.FC = () => {
                         <ChevronLeft size={20} />
                       </button>
 
-                      {/* Sessions Dropdown Selector */}
+                      {/* Bottom Selector Popover Button */}
                       <div style={{ position: 'relative' }}>
                         <button
-                          className="item-selector-trigger"
+                          className="session-selector-btn"
                           onClick={() => setShowBottomSelector(!showBottomSelector)}
+                          title="Jump to item"
                           style={{
-                            background: 'var(--bg-glass)',
+                            background: 'transparent',
                             border: '1px solid var(--border-glass)',
-                            color: 'var(--primary)',
-                            fontSize: '0.85rem',
+                            color: 'var(--text-main)',
+                            fontSize: '0.88rem',
                             fontWeight: 600,
                             cursor: 'pointer',
-                            padding: '10px 14px',
-                            borderRadius: '12px',
+                            padding: '8px 12px',
+                            borderRadius: '10px',
                             display: 'inline-flex',
                             alignItems: 'center',
-                            gap: '6px',
-                            fontFamily: 'var(--font-ui)',
-                            transition: 'all 0.2s ease'
+                            gap: '6px'
                           }}
                         >
-                          {isPrayer ? <Flame size={16} /> : <FileText size={16} />}
-                          <span>{isPrayer ? t('itemView.itemHeaderPrayer', { item: currentItem }) : t('itemView.itemHeaderReading', { item: currentItem })}</span>
+                          <span>{`${currentItem} of ${totalItems}`}</span>
                           <ChevronDown size={14} />
                         </button>
 
                         {showBottomSelector && (
-                          <div
-                            className="item-selector-popover"
+                          <div 
+                            className="item-selector-popover bottom"
                             style={{
                               position: 'absolute',
-                              bottom: '120%',
+                              bottom: '100%',
                               left: '50%',
                               transform: 'translateX(-50%)',
-                              width: '320px',
-                              maxWidth: '90vw',
+                              width: '280px',
                               background: 'var(--bg-card)',
                               backdropFilter: 'blur(var(--blur-glass))',
                               border: '1px solid var(--border-glass)',
                               borderRadius: '16px',
                               padding: '16px',
-                              boxShadow: 'var(--shadow-md)',
+                              marginBottom: '12px',
+                              boxShadow: 'var(--shadow-lg)',
                               animation: 'fadeIn 0.2s ease',
                               display: 'flex',
                               flexDirection: 'column',
@@ -1209,14 +1121,19 @@ export const App: React.FC = () => {
                               boxSizing: 'border-box'
                             }}
                           >
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-muted)' }}>
+                              <span>Contents</span>
+                              <span>{currentItem} / {totalItems}</span>
+                            </div>
+
                             <SessionSelectorList
                               ref={bottomSessionListRef}
-                              items={activePlan.items.map(item => ({ item: item.item, title: item.title }))}
+                              items={activePlan.items}
                               currentItem={currentItem}
                               completedItems={planMetadata.progress}
-                              planType={activePlan?.type ?? 'reading'}
-                              onSelect={(item) => {
-                                setCurrentItem(item);
+                              planType={activePlan.type}
+                              onSelect={(itemNumber) => {
+                                setCurrentItem(itemNumber);
                                 setShowBottomSelector(false);
                                 window.scrollTo({ top: 0, behavior: 'smooth' });
                               }}
@@ -1228,7 +1145,7 @@ export const App: React.FC = () => {
                       {/* Mark Done / Completed Button */}
                       <button 
                         className={`btn ${planMetadata.progress.includes(currentItem) ? 'btn-secondary' : 'btn-primary'}`}
-                        style={{ padding: '10px 18px', borderRadius: '12px', fontSize: '0.85rem', fontWeight: 600 }}
+                        style={{ padding: '10px 18px', borderRadius: '12px', fontSize: '0.88rem', fontWeight: 600 }}
                         onClick={() => {
                           const itemProgress = [...planMetadata.progress];
                           const idx = itemProgress.indexOf(currentItem);
@@ -1262,8 +1179,8 @@ export const App: React.FC = () => {
                             window.scrollTo({ top: 0, behavior: 'smooth' });
                           }
                         }}
-                        title={t('itemView.nextSession')}
-                        aria-label="Next Session"
+                        title={t('itemView.next')}
+                        aria-label="Next"
                         style={{
                           display: 'inline-flex',
                           alignItems: 'center',
@@ -1282,58 +1199,48 @@ export const App: React.FC = () => {
 
                 </>
               ) : (
-                <div className="empty-view">Day configuration not found.</div>
+                <div className="empty-view">Item not found.</div>
               )}
             </main>
         </div>
       )}
 
+      {/* Settings Modal (Simplified) */}
       {showSettings && (
         <div className="modal-backdrop" onClick={() => setShowSettings(false)}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()} style={{ maxWidth: '420px' }}>
             <div className="modal-header">
-              <h2 style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Settings size={20} /> {t('settings.title')}</h2>
-              <button className="close-btn" onClick={() => setShowSettings(false)} style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}><X size={18} /></button>
+              <h2 style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+                <Settings size={20} /> {t('settings.title')}
+              </h2>
+              <button 
+                className="close-btn" 
+                onClick={() => setShowSettings(false)} 
+                style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}
+                aria-label="Close Settings"
+              >
+                <X size={18} />
+              </button>
             </div>
-            <div className="modal-body">
-              {/* Language Selection */}
-              <div className="form-group">
-                <label htmlFor="settings-language">{t('settings.language')}</label>
-                <select
-                  id="settings-language"
-                  value={pref.language}
-                  onChange={(e) => handleUpdateSettings({ ...pref, language: e.target.value as LanguageCode })}
-                >
-                  <option value="en">English</option>
-                  <option value="zh">中文 (Chinese)</option>
-                  <option value="ms">Bahasa Melayu (BM)</option>
-                </select>
-              </div>
-
-               {/* Bible Version Selection */}
-              <div className="form-group">
-                <label htmlFor="settings-bible-version">{t('settings.bibleVersion')}</label>
-                <select
-                  id="settings-bible-version"
-                  value={pref.bibleTranslation}
-                  onChange={(e) => handleUpdateSettings({ ...pref, bibleTranslation: e.target.value })}
-                >
-                  {BIBLE_VERSIONS.map((v) => (
-                    <option key={v.code} value={v.code}>{v.name}</option>
-                  ))}
-                </select>
-                <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '4px' }}>
-                  *{t('settings.bibleVersionHint')}
-                </p>
-              </div>
-
+            <div className="modal-body" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               {/* Font Size Selection */}
               <div className="form-group">
-                <label htmlFor="settings-font-size">{t('settings.fontSize')}</label>
+                <label htmlFor="settings-font-size" style={{ display: 'block', marginBottom: '6px', fontWeight: 600 }}>
+                  {t('settings.fontSize')}
+                </label>
                 <select
                   id="settings-font-size"
                   value={pref.fontSize || 'medium'}
                   onChange={(e) => handleUpdateSettings({ ...pref, fontSize: e.target.value as any })}
+                  style={{
+                    width: '100%',
+                    padding: '8px 12px',
+                    borderRadius: '8px',
+                    border: '1px solid var(--border-glass)',
+                    background: 'var(--bg-card)',
+                    color: 'var(--text-main)',
+                    fontSize: '0.9rem'
+                  }}
                 >
                   <option value="small">{t('settings.fontSizes.small')}</option>
                   <option value="medium">{t('settings.fontSizes.medium')}</option>
@@ -1342,25 +1249,12 @@ export const App: React.FC = () => {
                 </select>
               </div>
 
-              {/* Font Theme Selection */}
-              <div className="form-group">
-                <label htmlFor="settings-font-theme">{t('settings.fontTheme')}</label>
-                <select
-                  id="settings-font-theme"
-                  value={pref.fontTheme === 'warm' ? 'warm' : 'editorial'}
-                  onChange={(e) => handleUpdateSettings({ ...pref, fontTheme: e.target.value as any })}
-                >
-                  <option value="editorial">{t('settings.fontThemes.editorial')}</option>
-                  <option value="warm">{t('settings.fontThemes.warm')}</option>
-                </select>
-              </div>
-
               {/* Sync & Refresh Plan Button */}
               {activePlan && (
-                <div style={{ marginTop: '24px', paddingTop: '20px', borderTop: '1px solid var(--border-glass)' }}>
+                <div style={{ marginTop: '8px', paddingTop: '16px', borderTop: '1px solid var(--border-glass)' }}>
                   <button 
                     className="btn btn-secondary" 
-                    style={{ width: '100%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }} 
+                    style={{ width: '100%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '10px' }} 
                     onClick={() => revalidateActivePlan(true)}
                     disabled={isSyncing}
                   >
@@ -1368,7 +1262,7 @@ export const App: React.FC = () => {
                     {isSyncing ? t('settings.syncing') : t('settings.syncPlan')}
                   </button>
                   {syncFeedback && (
-                    <div style={{ fontSize: '0.8rem', textAlign: 'center', marginTop: '8px', color: 'var(--primary)', fontWeight: 500 }}>
+                    <div style={{ fontSize: '0.82rem', textAlign: 'center', marginTop: '8px', color: 'var(--primary)', fontWeight: 500 }}>
                       {syncFeedback}
                     </div>
                   )}
@@ -1377,8 +1271,12 @@ export const App: React.FC = () => {
 
               {/* Reset plan option */}
               {activePlan && (
-                <div style={{ marginTop: '16px' }}>
-                  <button className="btn btn-danger" style={{ width: '100%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }} onClick={handleRestartPlan}>
+                <div>
+                  <button 
+                    className="btn btn-danger" 
+                    style={{ width: '100%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '6px', padding: '10px' }} 
+                    onClick={handleRestartPlan}
+                  >
                     <RotateCcw size={16} /> {t('progress.restartPlan')}
                   </button>
                 </div>
@@ -1388,17 +1286,15 @@ export const App: React.FC = () => {
         </div>
       )}
 
-      {/* Plan Selector Modal overlay */}
+      {/* Plan Selector Modal */}
       {showSelector && (
         <PlanSelector
-          lang={pref.language}
           activePlanId={activePlan?.id || null}
           repositoryUrl={repositoryUrl}
           onSelectPlan={handleSelectPlan}
           onClose={() => setShowSelector(false)}
         />
       )}
-
     </div>
   );
 };

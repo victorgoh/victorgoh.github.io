@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import type { PlanListItem, Plan } from '../types';
 import { translate } from '../utils/i18n';
-import type { LanguageCode } from '../utils/i18n';
 import { migratePlanSchema } from '../App';
 import { 
   Folder, 
@@ -12,11 +11,11 @@ import {
   User, 
   X, 
   ChevronDown, 
-  ChevronUp 
+  ChevronUp,
+  Tag
 } from 'lucide-react';
 
 interface PlanSelectorProps {
-  lang: LanguageCode;
   activePlanId: string | null;
   repositoryUrl: string;
   onSelectPlan: (plan: Plan, startDate: Date, planUrl: string) => void;
@@ -28,35 +27,7 @@ interface NavHistoryItem {
   title: string;
 }
 
-const PlanCardIcon: React.FC<{ iconUrl?: string; type: string }> = ({ iconUrl, type }) => {
-  const [imgError, setImgError] = useState<boolean>(false);
-
-  if (iconUrl && !imgError) {
-    return (
-      <img 
-        src={iconUrl} 
-        alt="" 
-        className="plan-card-icon" 
-        onError={() => setImgError(true)} 
-      />
-    );
-  }
-
-  return (
-    <div className="plan-card-icon-fallback" style={{ color: 'var(--primary)' }}>
-      {type === 'category' ? (
-        <Folder size={24} />
-      ) : type === 'reading_plan' || type === 'reading' ? (
-        <BookOpen size={24} />
-      ) : (
-        <Flame size={24} />
-      )}
-    </div>
-  );
-};
-
 export const PlanSelector: React.FC<PlanSelectorProps> = ({
-  lang,
   activePlanId,
   repositoryUrl,
   onSelectPlan,
@@ -66,26 +37,22 @@ export const PlanSelector: React.FC<PlanSelectorProps> = ({
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Expanded plan ID in list view
   const [expandedPlanId, setExpandedPlanId] = useState<string | null>(null);
   
-  // Navigation stack for directories (stores absolute/relative endpoint URLs)
   const [navStack, setNavStack] = useState<NavHistoryItem[]>([
-    { url: repositoryUrl, title: lang === 'zh' ? '主目录' : lang === 'ms' ? 'Utama' : 'All Plans' }
+    { url: repositoryUrl, title: 'All Plans' }
   ]);
 
-  // Synchronize history stack if the repository URL changes from parent search params
   useEffect(() => {
     setNavStack([
-      { url: repositoryUrl, title: lang === 'zh' ? '主目录' : lang === 'ms' ? 'Utama' : 'All Plans' }
+      { url: repositoryUrl, title: 'All Plans' }
     ]);
-  }, [repositoryUrl, lang]);
+  }, [repositoryUrl]);
 
   const [downloadingId, setDownloadingId] = useState<string | null>(null);
 
   const currentNav = navStack[navStack.length - 1];
 
-  // Dynamic registry fetching based on active stack node with fresh cache
   useEffect(() => {
     setLoading(true);
     setError(null);
@@ -99,17 +66,16 @@ export const PlanSelector: React.FC<PlanSelectorProps> = ({
         return res.json();
       })
       .then((data: any) => {
-        // Safe check for branded registry vs. flat plans list array
         const plansList = Array.isArray(data) ? data : (data.plans || []);
         setPlans(plansList);
         setLoading(false);
       })
       .catch((err) => {
         console.error(err);
-        setError(translate(lang, 'plans.cacheError') || 'Error loading plans registry');
+        setError(translate('en', 'plans.cacheError') || 'Error loading plans registry');
         setLoading(false);
       });
-  }, [currentNav.url, lang]);
+  }, [currentNav.url]);
 
   const handleSelectPlanDirect = async (item: PlanListItem, date: Date) => {
     setDownloadingId(item.id);
@@ -123,7 +89,6 @@ export const PlanSelector: React.FC<PlanSelectorProps> = ({
         if (!res.ok) throw new Error('Failed to download plan content from network');
         planData = migratePlanSchema(await res.json());
       } catch (networkErr) {
-        // Graceful offline fallback to localStorage cache
         const cached = localStorage.getItem(`cached_plan_${item.id}`);
         if (cached) {
           planData = migratePlanSchema(JSON.parse(cached));
@@ -132,50 +97,39 @@ export const PlanSelector: React.FC<PlanSelectorProps> = ({
         }
       }
       
-      // Sync iconUrl from registry item to plan payload
-      if (item.iconUrl) planData.iconUrl = item.iconUrl;
       localStorage.setItem(`cached_plan_${item.id}`, JSON.stringify(planData));
       
       onSelectPlan(planData, date, item.url);
       setDownloadingId(null);
     } catch (err) {
       console.error(err);
-      alert(translate(lang, 'plans.cacheError'));
+      alert(translate('en', 'plans.cacheError'));
       setDownloadingId(null);
     }
   };
 
   const handleStartPlan = (item: PlanListItem) => {
-    // Start plan relative to today's date context
     handleSelectPlanDirect(item, new Date());
   };
 
-  // Safe category navigation check to block circular directory structures
   const handleCategoryClick = (item: PlanListItem) => {
     const rawUrl = item.url;
-    // Standardize URL references to catch equivalent pathways
     const normalizedUrl = rawUrl.startsWith('/') ? rawUrl : `/${rawUrl}`;
 
-    // Cycle detection: Check if URL already exists in the nav history trail
     const isCircular = navStack.some((historyItem) => {
-      const historyNormalized = historyItem.url.startsWith('/') 
-        ? historyItem.url 
-        : `/${historyItem.url}`;
-      return historyNormalized === normalizedUrl;
+      const histNorm = historyItem.url.startsWith('/') ? historyItem.url : `/${historyItem.url}`;
+      return histNorm === normalizedUrl;
     });
 
     if (isCircular) {
-      const alertMsg = lang === 'zh' 
-        ? '检测到循环目录引用！无法打开此分类，防止无限加载循环。' 
-        : lang === 'ms'
-          ? 'Rujukan pekeliling dikesan! Gagal membuka kategori untuk mengelakkan kitaran tak terhingga.'
-          : 'Circular reference detected in plan directory! Blocked navigation to avoid infinite recursion loops.';
-      alert(alertMsg);
-      return;
+      const existingIdx = navStack.findIndex((historyItem) => {
+        const histNorm = historyItem.url.startsWith('/') ? historyItem.url : `/${historyItem.url}`;
+        return histNorm === normalizedUrl;
+      });
+      setNavStack(navStack.slice(0, existingIdx + 1));
+    } else {
+      setNavStack([...navStack, { url: normalizedUrl, title: item.title }]);
     }
-
-    // Push new category endpoint to the directory stack
-    setNavStack([...navStack, { url: normalizedUrl, title: item.title }]);
   };
 
   const handleJumpToHistory = (index: number) => {
@@ -184,17 +138,29 @@ export const PlanSelector: React.FC<PlanSelectorProps> = ({
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+      <div 
+        className="modal-content plan-selector-modal" 
+        onClick={(e) => e.stopPropagation()} 
+        style={{ maxWidth: '680px', width: '92%' }}
+      >
         <div className="modal-header">
-          <h2>{translate(lang, 'plans.title')}</h2>
-          <button className="close-btn" onClick={onClose} style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}><X size={18} /></button>
+          <h2 style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+            <BookOpen size={20} /> {translate('en', 'plans.title')}
+          </h2>
+          <button 
+            className="close-btn" 
+            onClick={onClose} 
+            style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}
+            aria-label="Close"
+          >
+            <X size={18} />
+          </button>
         </div>
-        
-        <div className="modal-body">
-          {/* Breadcrumbs Navigation Stack */}
+
+        <div className="modal-body" style={{ maxHeight: '72vh', overflowY: 'auto' }}>
           {navStack.length > 1 && (
             <div 
-              className="breadcrumbs" 
+              className="plan-breadcrumbs"
               style={{ 
                 display: 'flex', 
                 gap: '6px', 
@@ -238,7 +204,7 @@ export const PlanSelector: React.FC<PlanSelectorProps> = ({
             </div>
           )}
 
-          {loading && <div className="spinner-text">{translate(lang, 'plans.loading')}</div>}
+          {loading && <div className="spinner-text">{translate('en', 'plans.loading')}</div>}
           
           {error && <div className="error-alert">{error}</div>}
           
@@ -247,7 +213,6 @@ export const PlanSelector: React.FC<PlanSelectorProps> = ({
           )}
 
           {!loading && !error && (
-            /* Simple List View with Collapsible Details */
             <div className="simple-plans-list" style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
               {plans.map((item) => {
                 const isActive = item.id === activePlanId;
@@ -262,13 +227,12 @@ export const PlanSelector: React.FC<PlanSelectorProps> = ({
                       background: isActive ? 'var(--primary-light)' : 'var(--bg-card)',
                       border: isActive ? '1px solid var(--primary)' : '1px solid var(--border-glass)',
                       borderRadius: '12px',
-                      padding: '12px 14px',
+                      padding: '14px 16px',
                       transition: 'all 0.2s ease',
                       boxShadow: isActive ? '0 0 0 1px var(--primary)' : 'none'
                     }}
                   >
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
-                      {/* Title & Icon Header */}
                       <div 
                         style={{ display: 'flex', alignItems: 'center', gap: '10px', flex: 1, cursor: 'pointer', minWidth: 0 }}
                         onClick={() => setExpandedPlanId(isExpanded ? null : item.id)}
@@ -278,15 +242,14 @@ export const PlanSelector: React.FC<PlanSelectorProps> = ({
                         </span>
                         <div style={{ minWidth: 0, flex: 1 }}>
                           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-                            <span style={{ fontWeight: 600, fontSize: '0.95rem', color: 'var(--text-main)' }}>
+                            <span style={{ fontWeight: 600, fontSize: '0.98rem', color: 'var(--text-main)' }}>
                               {item.title}
                             </span>
-                            {isActive && <span className="active-badge">{translate(lang, 'plans.activePlan')}</span>}
+                            {isActive && <span className="active-badge">{translate('en', 'plans.activePlan')}</span>}
                           </div>
                         </div>
                       </div>
 
-                      {/* Action buttons */}
                       <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
                         <button
                           type="button"
@@ -295,8 +258,8 @@ export const PlanSelector: React.FC<PlanSelectorProps> = ({
                             background: 'var(--border-glass)',
                             border: 'none',
                             borderRadius: '8px',
-                            padding: '5px 9px',
-                            fontSize: '0.78rem',
+                            padding: '6px 10px',
+                            fontSize: '0.8rem',
                             fontWeight: 500,
                             color: 'var(--text-muted)',
                             cursor: 'pointer',
@@ -307,66 +270,64 @@ export const PlanSelector: React.FC<PlanSelectorProps> = ({
                           title="Toggle plan details"
                         >
                           {isExpanded ? (
-                            <><ChevronUp size={14} /> {lang === 'zh' ? '收起' : lang === 'ms' ? 'Tutup' : 'Details'}</>
+                            <><ChevronUp size={14} /> Details</>
                           ) : (
-                            <><ChevronDown size={14} /> {lang === 'zh' ? '详情' : lang === 'ms' ? 'Butiran' : 'Details'}</>
+                            <><ChevronDown size={14} /> Details</>
                           )}
                         </button>
 
                         {item.type === 'category' ? (
                           <button 
                             className="btn btn-primary" 
-                            style={{ padding: '6px 12px', fontSize: '0.82rem', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
+                            style={{ padding: '6px 14px', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                             onClick={() => handleCategoryClick(item)}
                           >
-                            <Folder size={14} /> {lang === 'zh' ? '浏览' : lang === 'ms' ? 'Semak' : 'Browse'}
+                            <Folder size={14} /> Browse
                           </button>
                         ) : (
                           <button 
                             className="btn btn-primary"
-                            style={{ padding: '6px 12px', fontSize: '0.82rem' }}
+                            style={{ padding: '6px 14px', fontSize: '0.85rem' }}
                             onClick={() => handleStartPlan(item)}
                             disabled={isDownloading}
                           >
-                            {isDownloading ? '...' : translate(lang, 'plans.startPlanBtn')}
+                            {isDownloading ? 'Loading...' : (isActive ? 'Continue' : 'Start Plan')}
                           </button>
                         )}
                       </div>
                     </div>
 
-                    {/* Expandable details panel */}
                     {isExpanded && (
                       <div 
                         className="simple-plan-details" 
                         style={{ 
-                          marginTop: '10px', 
-                          paddingTop: '10px', 
+                          marginTop: '12px', 
+                          paddingTop: '12px', 
                           borderTop: '1px dashed var(--border-glass)', 
-                          animation: 'fadeIn 0.2s ease',
                           display: 'flex',
                           flexDirection: 'column',
-                          gap: '8px'
+                          gap: '10px'
                         }}
                       >
-                        <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-                          <PlanCardIcon iconUrl={item.iconUrl} type={item.type} />
-                          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                            <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', margin: 0, lineHeight: 1.5 }}>
-                              {item.description}
-                            </p>
-                            <div className="plan-card-meta" style={{ marginTop: '4px', fontSize: '0.8rem', display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-                              {item.type !== 'category' && item.totalItems && (
-                                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-                                  <Clock size={12} /> {lang === 'zh' ? `${item.totalItems} 个阶段` : lang === 'ms' ? `${item.totalItems} Sesi` : `${item.totalItems} Sessions`}
-                                </span>
-                              )}
-                              {item.creator && (
-                                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-                                  <User size={12} /> {translate(lang, 'plans.creator')}: {item.creator}
-                                </span>
-                              )}
-                            </div>
-                          </div>
+                        <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: 0, lineHeight: 1.6 }}>
+                          {item.description}
+                        </p>
+                        <div className="plan-card-meta" style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', fontSize: '0.82rem', color: 'var(--text-muted)' }}>
+                          {item.type !== 'category' && item.totalItems && (
+                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontWeight: 500 }}>
+                              <Clock size={13} /> {item.totalItems} entries
+                            </span>
+                          )}
+                          {item.creator && (
+                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                              <User size={13} /> By {item.creator}
+                            </span>
+                          )}
+                          {item.tags && item.tags.length > 0 && (
+                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                              <Tag size={13} /> {item.tags.join(', ')}
+                            </span>
+                          )}
                         </div>
                       </div>
                     )}
@@ -380,3 +341,5 @@ export const PlanSelector: React.FC<PlanSelectorProps> = ({
     </div>
   );
 };
+
+export default PlanSelector;
