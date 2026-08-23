@@ -519,7 +519,8 @@ export const App: React.FC = () => {
       .trim()
       .slice(0, 220);
 
-    const formattedMessage = [
+    // WhatsApp formatted (uses asterisk markdown for WhatsApp bold styling)
+    const whatsappMessage = [
       `📖 *${activePlan.title}*`,
       `*${currentItem}. ${activeItemConfig.title}*`,
       passages ? `📜 *Passage:* ${passages}` : '',
@@ -528,14 +529,24 @@ export const App: React.FC = () => {
       shareUrl
     ].filter(Boolean).join('\n');
 
-    return { shareUrl, passages, cleanSnippet, formattedMessage };
+    // Standard plain-text formatted (clean without markdown asterisks for generic share/copy)
+    const standardMessage = [
+      `📖 ${activePlan.title}`,
+      `${currentItem}. ${activeItemConfig.title}`,
+      passages ? `📜 Passage: ${passages}` : '',
+      cleanSnippet ? `\n"${cleanSnippet}..."` : '',
+      `\n👉 Open & Read:`,
+      shareUrl
+    ].filter(Boolean).join('\n');
+
+    return { shareUrl, passages, cleanSnippet, whatsappMessage, standardMessage };
   };
 
   const handleShareWhatsApp = () => {
     const details = getLessonShareDetails();
     if (!details) return;
 
-    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(details.formattedMessage)}`;
+    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(details.whatsappMessage)}`;
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
@@ -548,7 +559,7 @@ export const App: React.FC = () => {
       try {
         await navigator.share({
           title: `${currentItem}. ${activeItemConfig.title} | ${activePlan.title}`,
-          text: details.formattedMessage
+          text: details.standardMessage
         });
         return;
       } catch (err: any) {
@@ -557,14 +568,14 @@ export const App: React.FC = () => {
       }
     }
 
-    // Default to clipboard copy
+    // Default to clipboard copy with clean standard format
     try {
-      await navigator.clipboard.writeText(details.formattedMessage);
+      await navigator.clipboard.writeText(details.standardMessage);
       setShareStatus('copied');
       setTimeout(() => setShareStatus(null), 2500);
     } catch (err) {
       console.error('Failed to copy: ', err);
-      alert(`Lesson Content:\n\n${details.formattedMessage}`);
+      alert(`Lesson Content:\n\n${details.standardMessage}`);
     }
   };
 
