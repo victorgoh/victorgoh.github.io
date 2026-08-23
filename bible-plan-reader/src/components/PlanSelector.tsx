@@ -11,7 +11,6 @@ import {
   User, 
   X, 
   ChevronDown, 
-  ChevronUp,
   Tag
 } from 'lucide-react';
 
@@ -229,71 +228,75 @@ export const PlanSelector: React.FC<PlanSelectorProps> = ({
                       borderRadius: '12px',
                       padding: '14px 16px',
                       transition: 'all 0.2s ease',
-                      boxShadow: isActive ? '0 0 0 1px var(--primary)' : 'none'
+                      boxShadow: isActive ? '0 0 0 1px var(--primary)' : 'none',
+                      cursor: 'pointer'
                     }}
+                    onClick={() => setExpandedPlanId(isExpanded ? null : item.id)}
                   >
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
-                      <div 
-                        style={{ display: 'flex', alignItems: 'center', gap: '10px', flex: 1, cursor: 'pointer', minWidth: 0 }}
-                        onClick={() => setExpandedPlanId(isExpanded ? null : item.id)}
-                      >
-                        <span style={{ color: item.type === 'prayer' || item.type === 'prayer_guide' ? 'var(--accent)' : 'var(--primary)', display: 'inline-flex' }}>
-                          {item.type === 'category' ? <Folder size={18} /> : item.type === 'reading' || item.type === 'reading_plan' ? <BookOpen size={18} /> : <Flame size={18} />}
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '10px' }}>
+                      <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', flex: 1, minWidth: 0 }}>
+                        <span style={{ 
+                          color: item.type === 'prayer' || item.type === 'prayer_guide' ? 'var(--accent)' : 'var(--primary)', 
+                          display: 'inline-flex',
+                          marginTop: '2px'
+                        }}>
+                          {item.type === 'category' ? <Folder size={20} /> : item.type === 'reading' || item.type === 'reading_plan' ? <BookOpen size={20} /> : <Flame size={20} />}
                         </span>
                         <div style={{ minWidth: 0, flex: 1 }}>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-                            <span style={{ fontWeight: 600, fontSize: '0.98rem', color: 'var(--text-main)' }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                            <span style={{ fontWeight: 600, fontSize: '0.98rem', color: 'var(--text-main)', lineHeight: 1.35 }}>
                               {item.title}
                             </span>
                             {isActive && <span className="active-badge">{translate('en', 'plans.activePlan')}</span>}
                           </div>
+                          {item.type !== 'category' && item.totalItems && (
+                            <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginTop: '2px' }}>
+                              {item.totalItems} entries {item.creator ? `• By ${item.creator}` : ''}
+                            </div>
+                          )}
                         </div>
                       </div>
 
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
-                        <button
-                          type="button"
-                          onClick={() => setExpandedPlanId(isExpanded ? null : item.id)}
-                          style={{
-                            background: 'var(--border-glass)',
-                            border: 'none',
-                            borderRadius: '8px',
-                            padding: '6px 10px',
-                            fontSize: '0.8rem',
-                            fontWeight: 500,
-                            color: 'var(--text-muted)',
-                            cursor: 'pointer',
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            gap: '4px'
-                          }}
-                          title="Toggle plan details"
-                        >
-                          {isExpanded ? (
-                            <><ChevronUp size={14} /> Details</>
-                          ) : (
-                            <><ChevronDown size={14} /> Details</>
-                          )}
-                        </button>
-
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}>
                         {item.type === 'category' ? (
                           <button 
                             className="btn btn-primary" 
-                            style={{ padding: '6px 14px', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
-                            onClick={() => handleCategoryClick(item)}
+                            style={{ padding: '6px 12px', fontSize: '0.82rem', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleCategoryClick(item);
+                            }}
                           >
-                            <Folder size={14} /> Browse
+                            <Folder size={13} /> Browse
                           </button>
                         ) : (
                           <button 
                             className="btn btn-primary"
-                            style={{ padding: '6px 14px', fontSize: '0.85rem' }}
-                            onClick={() => handleStartPlan(item)}
+                            style={{ padding: '6px 14px', fontSize: '0.82rem', whiteSpace: 'nowrap', fontWeight: 600 }}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleStartPlan(item);
+                            }}
                             disabled={isDownloading}
                           >
-                            {isDownloading ? 'Loading...' : (isActive ? 'Continue' : 'Start Plan')}
+                            {isDownloading ? 'Loading...' : (isActive ? 'Continue' : 'Start')}
                           </button>
                         )}
+
+                        <span
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            color: 'var(--text-muted)',
+                            transition: 'transform 0.2s ease',
+                            transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)',
+                            padding: '4px'
+                          }}
+                          aria-label="Toggle details"
+                        >
+                          <ChevronDown size={18} />
+                        </span>
                       </div>
                     </div>
 
@@ -308,11 +311,12 @@ export const PlanSelector: React.FC<PlanSelectorProps> = ({
                           flexDirection: 'column',
                           gap: '10px'
                         }}
+                        onClick={(e) => e.stopPropagation()}
                       >
-                        <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: 0, lineHeight: 1.6 }}>
+                        <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', margin: 0, lineHeight: 1.6 }}>
                           {item.description}
                         </p>
-                        <div className="plan-card-meta" style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', fontSize: '0.82rem', color: 'var(--text-muted)' }}>
+                        <div className="plan-card-meta" style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', fontSize: '0.80rem', color: 'var(--text-muted)' }}>
                           {item.type !== 'category' && item.totalItems && (
                             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontWeight: 500 }}>
                               <Clock size={13} /> {item.totalItems} entries
