@@ -4,6 +4,16 @@ import { translate } from './utils/i18n';
 import { PlanSelector } from './components/PlanSelector';
 import SessionSelectorList from './components/SessionSelectorList';
 import { fetchHelloAoPassage } from './utils/helloAoBible';
+import {
+  trackPlanSelected,
+  trackItemViewed,
+  trackItemCompleted,
+  trackPlanCompleted,
+  trackScriptureRead,
+  trackContentShared,
+  trackSettingsChanged,
+  trackPageView
+} from './utils/analytics';
 import ReactMarkdown from 'react-markdown';
 import {
   Moon,
@@ -411,10 +421,17 @@ export const App: React.FC = () => {
       setMeta('og:description', desc, true);
       setMeta('twitter:title', pageTitle);
       setMeta('twitter:description', desc);
+
+      // Track virtual page view and item view in Google Analytics
+      const pagePath = window.location.pathname + window.location.search;
+      trackPageView(pagePath, pageTitle);
+      trackItemViewed(activePlan.id, currentItem, activeItemConfig.title, activePlan.title);
     } else if (activePlan) {
       document.title = activePlan.title;
+      trackPageView(window.location.pathname + window.location.search, activePlan.title);
     } else {
       document.title = 'Bible Reading & Prayer Guide';
+      trackPageView(window.location.pathname + window.location.search, 'Bible Reading & Prayer Guide');
     }
   }, [activePlan, activeItemConfig, currentItem]);
 
@@ -424,6 +441,9 @@ export const App: React.FC = () => {
     setShowSelector(false);
     localStorage.setItem('active_plan_id', plan.id);
     localStorage.setItem(`active_plan_url_${plan.id}`, planUrl);
+
+    // Track plan selection in GA4
+    trackPlanSelected(plan.id, plan.title, plan.type);
 
     const savedMeta = loadLocalState<UserPlanMetadata>(`plan_metadata_${plan.id}`, {
       startDate: selectedStartDate.toISOString(),
@@ -451,6 +471,10 @@ export const App: React.FC = () => {
   const togglePassageInline = async (pReference: string, idx: number, hasLocalText: boolean) => {
     const nextState = !openPassageIndices[idx];
     setOpenPassageIndices(prev => ({ ...prev, [idx]: nextState }));
+
+    if (nextState && activePlan) {
+      trackScriptureRead(activePlan.id, currentItem, pReference);
+    }
 
     const passageKey = `${pReference}_BSB`;
     if (nextState && !hasLocalText && !fetchedPassages[passageKey] && !loadingPassages[passageKey]) {
@@ -486,13 +510,18 @@ export const App: React.FC = () => {
   };
 
   const handleUpdateSettings = (updatedPref: UserPreferences) => {
+    if (updatedPref.fontSize !== pref.fontSize) {
+      trackSettingsChanged('fontSize', updatedPref.fontSize);
+    }
     setPref(updatedPref);
     localStorage.setItem('user_preferences', JSON.stringify(updatedPref));
     setShowSettings(false);
   };
 
   const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
+    const nextTheme = theme === 'light' ? 'dark' : 'light';
+    trackSettingsChanged('theme', nextTheme);
+    setTheme(nextTheme);
   };
 
   const t = (key: string, params?: Record<string, string | number>) => {
@@ -544,7 +573,9 @@ export const App: React.FC = () => {
 
   const handleShareWhatsApp = () => {
     const details = getLessonShareDetails();
-    if (!details) return;
+    if (!details || !activePlan) return;
+
+    trackContentShared('whatsapp', activePlan.id, currentItem, activePlan.title);
 
     const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(details.whatsappMessage)}`;
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
@@ -561,6 +592,7 @@ export const App: React.FC = () => {
           title: `${currentItem}. ${activeItemConfig.title} | ${activePlan.title}`,
           text: details.standardMessage
         });
+        trackContentShared('native_share', activePlan.id, currentItem, activePlan.title);
         return;
       } catch (err: any) {
         if (err?.name === 'AbortError') return; // User cancelled share sheet
@@ -571,6 +603,7 @@ export const App: React.FC = () => {
     // Default to clipboard copy with clean standard format
     try {
       await navigator.clipboard.writeText(details.standardMessage);
+      trackContentShared('copy_link', activePlan.id, currentItem, activePlan.title);
       setShareStatus('copied');
       setTimeout(() => setShareStatus(null), 2500);
     } catch (err) {
@@ -1160,11 +1193,21 @@ export const App: React.FC = () => {
                         onClick={() => {
                           const itemProgress = [...planMetadata.progress];
                           const idx = itemProgress.indexOf(currentItem);
-                          if (idx === -1) {
+                          const isNowCompleted = idx === -1;
+                          
+                          if (isNowCompleted) {
                             itemProgress.push(currentItem);
                           } else {
                             itemProgress.splice(idx, 1);
                           }
+
+                          if (activePlan) {
+                            trackItemCompleted(activePlan.id, currentItem, totalItems, isNowCompleted);
+                            if (isNowCompleted && itemProgress.length === activePlan.items.length) {
+                              trackPlanCompleted(activePlan.id, activePlan.title, totalItems);
+                            }
+                          }
+
                           updateMetadata({
                             ...planMetadata,
                             progress: itemProgress
