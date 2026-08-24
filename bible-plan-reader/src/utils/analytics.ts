@@ -136,9 +136,9 @@ export function trackContentShared(
 // ── Settings Events ──
 
 /**
- * Track changes to user settings (font size, theme)
+ * Track changes to user settings (font size, theme, bible translation)
  */
-export function trackSettingsChanged(setting: 'fontSize' | 'theme', value: string): void {
+export function trackSettingsChanged(setting: 'fontSize' | 'theme' | 'bibleTranslation', value: string): void {
   trackEvent('settings_changed', {
     setting_name: setting,
     setting_value: value,

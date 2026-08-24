@@ -68,8 +68,21 @@ export interface UserPlanMetadata {
   completedItems: Record<number, Record<string, boolean>>; // dayNumber -> { "passage-idx": true, "prayer-idx": true, "action-idx": true }
 }
 
+export type SupportedBibleTranslation =
+  | 'BSB'
+  | 'ESV'
+  | 'CSB'
+  | 'NIV'
+  | 'NLT'
+  | 'NKJV'
+  | 'NASB2020'
+  | 'MSG'
+  | 'NRSVUE'
+  | 'AMP';
+
 export interface UserPreferences {
   fontSize: 'small' | 'medium' | 'large' | 'xl';
+  bibleTranslation?: SupportedBibleTranslation;
 }
 
 export interface OrgBranding {

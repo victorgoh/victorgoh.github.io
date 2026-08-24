@@ -4,6 +4,7 @@ import { translate } from './utils/i18n';
 import { PlanSelector } from './components/PlanSelector';
 import SessionSelectorList from './components/SessionSelectorList';
 import { fetchHelloAoPassage } from './utils/helloAoBible';
+import { buildBibleComUrl } from './utils/bibleUrl';
 import {
   trackPlanSelected,
   trackItemViewed,
@@ -26,9 +27,12 @@ import {
   FileText,
   Check,
   Link,
+  ExternalLink,
   ChevronDown,
+  ChevronUp,
   ChevronLeft,
   ChevronRight,
+  SlidersHorizontal,
   Loader2,
   Scroll,
   RotateCcw,
@@ -120,7 +124,8 @@ export const App: React.FC = () => {
 
   const [pref, setPref] = useState<UserPreferences>(() => {
     return loadLocalState<UserPreferences>('user_preferences', {
-      fontSize: 'medium'
+      fontSize: 'medium',
+      bibleTranslation: 'BSB'
     });
   });
 
@@ -163,6 +168,7 @@ export const App: React.FC = () => {
   
   const [showSelector, setShowSelector] = useState<boolean>(false);
   const [showSettings, setShowSettings] = useState<boolean>(false);
+  const [showAdvancedSettings, setShowAdvancedSettings] = useState<boolean>(false);
   const [showItemSelector, setShowItemSelector] = useState<boolean>(false);
   const [showBottomSelector, setShowBottomSelector] = useState<boolean>(false);
   const bottomSessionListRef = useRef<HTMLDivElement | null>(null);
@@ -513,9 +519,11 @@ export const App: React.FC = () => {
     if (updatedPref.fontSize !== pref.fontSize) {
       trackSettingsChanged('fontSize', updatedPref.fontSize);
     }
+    if (updatedPref.bibleTranslation !== pref.bibleTranslation) {
+      trackSettingsChanged('bibleTranslation', updatedPref.bibleTranslation || 'BSB');
+    }
     setPref(updatedPref);
     localStorage.setItem('user_preferences', JSON.stringify(updatedPref));
-    setShowSettings(false);
   };
 
   const toggleTheme = () => {
@@ -910,18 +918,24 @@ export const App: React.FC = () => {
                                   >
                                     {isInlineOpen ? 'Hide Text' : t('itemView.readInline')}
                                   </button>
-                                  {p.url && (
-                                    <a 
-                                      href={p.url} 
-                                      target="_blank" 
-                                      rel="noopener noreferrer" 
-                                      className="btn btn-secondary"
-                                      style={{ fontSize: '0.78rem', padding: '4px 8px', borderRadius: '6px', display: 'inline-flex', alignItems: 'center' }}
-                                      title="Open in BibleHub"
-                                    >
-                                      <Link size={12} />
-                                    </a>
-                                  )}
+                                  {(() => {
+                                    const selectedTranslation = pref.bibleTranslation || 'BSB';
+                                    const bibleUrl = buildBibleComUrl(p.reference, selectedTranslation, p.url);
+                                    if (!bibleUrl) return null;
+                                    return (
+                                      <a 
+                                        href={bibleUrl} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="btn btn-secondary"
+                                        style={{ fontSize: '0.78rem', padding: '4px 8px', borderRadius: '6px', display: 'inline-flex', alignItems: 'center' }}
+                                        title={`Open ${p.reference} on Bible.com (${selectedTranslation})`}
+                                        aria-label={`Open ${p.reference} on Bible.com in ${selectedTranslation}`}
+                                      >
+                                        <ExternalLink size={13} />
+                                      </a>
+                                    );
+                                  })()}
                                 </div>
                               </div>
 
@@ -1301,6 +1315,71 @@ export const App: React.FC = () => {
                   <option value="large">{t('settings.fontSizes.large')}</option>
                   <option value="xl">{t('settings.fontSizes.xl')}</option>
                 </select>
+              </div>
+
+              {/* Advanced Settings Section */}
+              <div style={{ borderTop: '1px solid var(--border-glass)', paddingTop: '12px' }}>
+                <button 
+                  type="button"
+                  onClick={() => setShowAdvancedSettings(!showAdvancedSettings)}
+                  style={{
+                    width: '100%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    padding: '8px 2px',
+                    background: 'transparent',
+                    border: 'none',
+                    color: 'var(--text-main)',
+                    cursor: 'pointer',
+                    fontWeight: 600,
+                    fontSize: '0.9rem'
+                  }}
+                >
+                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+                    <SlidersHorizontal size={16} style={{ color: 'var(--primary)' }} />
+                    Advanced Settings
+                  </span>
+                  {showAdvancedSettings ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                </button>
+
+                {showAdvancedSettings && (
+                  <div style={{ marginTop: '10px', display: 'flex', flexDirection: 'column', gap: '10px', padding: '12px', background: 'var(--bg-app)', borderRadius: '8px', border: '1px solid var(--border-glass)' }}>
+                    <div className="form-group">
+                      <label htmlFor="settings-bible-translation" style={{ display: 'block', marginBottom: '6px', fontWeight: 600, fontSize: '0.84rem' }}>
+                        Bible Link Translation
+                      </label>
+                      <select
+                        id="settings-bible-translation"
+                        value={pref.bibleTranslation || 'BSB'}
+                        onChange={(e) => handleUpdateSettings({ ...pref, bibleTranslation: e.target.value as any })}
+                        style={{
+                          width: '100%',
+                          padding: '8px 12px',
+                          borderRadius: '8px',
+                          border: '1px solid var(--border-glass)',
+                          background: 'var(--bg-card)',
+                          color: 'var(--text-main)',
+                          fontSize: '0.88rem'
+                        }}
+                      >
+                        <option value="BSB">BSB — Berean Standard Bible (Default)</option>
+                        <option value="ESV">ESV — English Standard Version</option>
+                        <option value="CSB">CSB — Christian Standard Bible</option>
+                        <option value="NIV">NIV — New International Version</option>
+                        <option value="NLT">NLT — New Living Translation</option>
+                        <option value="NKJV">NKJV — New King James Version</option>
+                        <option value="NASB2020">NASB2020 — New American Standard Bible 2020</option>
+                        <option value="MSG">MSG — The Message</option>
+                        <option value="NRSVUE">NRSVUE — New Revised Standard Version Updated Edition</option>
+                        <option value="AMP">AMP — Amplified Bible</option>
+                      </select>
+                      <p style={{ margin: '6px 0 0 0', fontSize: '0.76rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>
+                        This only changes what translation is opened when clicking external links to Bible.com. The default BSB verses displayed in the app are not changed.
+                      </p>
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Sync & Refresh Plan Button */}

@@ -64,20 +64,21 @@
       "featured": false
     },
     {
-      "id": "new-leaders",
-      "title": "The Growth of New Leaders",
-      "description": "A 6-session Bible study curriculum designed to help new and aspiring leaders lay a firm, biblically grounded foundation for their calling.",
+      "id": "leadership-lessons",
+      "title": "Lessons in Leadership: Biblical Wisdom from God's Servants",
+      "description": "A 6-session Bible study on character, calling, and influence drawn from the lives, struggles, and triumphs of biblical figures.",
       "type": "reading",
       "totalItems": 7,
-      "url": "plans/new-leaders.json",
+      "url": "plans/leadership-lessons.json",
       "creator": "Bible Study Curriculum",
-      "version": "1.1",
-      "created": "2026-08-21",
-      "lastUpdated": "2026-08-21",
+      "version": "1.2",
+      "created": "2026-08-24",
+      "lastUpdated": "2026-08-24",
       "tags": [
         "Leadership",
-        "Discipleship",
         "Character",
+        "Calling",
+        "Discipleship",
         "Bible Study"
       ],
       "featured": false
