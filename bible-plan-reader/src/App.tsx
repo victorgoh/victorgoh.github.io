@@ -11,6 +11,7 @@ import {
   trackItemCompleted,
   trackPlanCompleted,
   trackScriptureRead,
+  trackBibleLinkClicked,
   trackContentShared,
   trackSettingsChanged,
   trackPageView
@@ -931,6 +932,17 @@ export const App: React.FC = () => {
                                         style={{ fontSize: '0.78rem', padding: '4px 8px', borderRadius: '6px', display: 'inline-flex', alignItems: 'center' }}
                                         title={`Open ${p.reference} on Bible.com (${selectedTranslation})`}
                                         aria-label={`Open ${p.reference} on Bible.com in ${selectedTranslation}`}
+                                        onClick={() => {
+                                          if (activePlan) {
+                                            trackBibleLinkClicked(
+                                              activePlan.id,
+                                              currentItem,
+                                              p.reference,
+                                              selectedTranslation,
+                                              bibleUrl
+                                            );
+                                          }
+                                        }}
                                       >
                                         <ExternalLink size={13} />
                                       </a>

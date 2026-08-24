@@ -104,6 +104,25 @@ export function trackScriptureRead(planId: string, itemNumber: number, passages:
 }
 
 /**
+ * Track when a user clicks an external Bible passage link (e.g. to Bible.com)
+ */
+export function trackBibleLinkClicked(
+  planId: string,
+  itemNumber: number,
+  passage: string,
+  translation: string,
+  url: string
+): void {
+  trackEvent('bible_link_clicked', {
+    plan_id: planId,
+    item_number: itemNumber,
+    passage,
+    translation,
+    link_url: url,
+  });
+}
+
+/**
  * Track when a user switches between tabs (Read & Reflect vs Prayers)
  */
 export function trackTabSwitched(tab: string, planId?: string, itemNumber?: number): void {
