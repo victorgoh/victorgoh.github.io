@@ -6,15 +6,7 @@
 >
 > **Leadership habit:** Serve, Notice, Ask
 
-## 4.1 Personal preparation
-
-> 💡 **A Quick Note Before You Begin**
-> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
-> - **Habit Check**: Begin by reviewing the past week: What changed or became clearer when you practised *Record and Follow Through*?
-> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
-> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
-
-## 4.2 Begin with life
+## 4.1 Begin with life
 
 A new leader wants to know their spiritual gift. They complete several questionnaires and receive different results. One says leadership, another encouragement, and another teaching. The labels create more confusion than clarity.
 
@@ -24,7 +16,7 @@ Many people look for a label before they begin. Often discovery works in the opp
 
 As you serve faithfully in present responsibilities, your strengths and gifts often become clearer.
 
-## 4.3 Gifts are entrusted for service
+## 4.2 Gifts are entrusted for service
 
 Leaders bring several kinds of capacity:
 
@@ -37,9 +29,9 @@ These categories can overlap. The most important question is not, “What impres
 
 A strength is not automatically mature. Communication can encourage or manipulate. Confidence can provide direction or silence others. Compassion can offer care or avoid necessary truth. Gifts need character, skill, and community discernment.
 
-## 4.4 Explore Scripture: Stewards of God’s grace
+## 4.3 Explore Scripture: Stewards of God’s grace
 
-Read **1 Peter 4:7–11** in your preferred Bible translation.
+Read **1 Peter 4:7–11**.
 
 Peter addresses believers living under difficulty. He calls them to clear-minded prayer, deep love, hospitality, and service. Each person is to use what they have received as a faithful steward of God’s varied grace. Speaking and serving are done through God’s provision and for God’s glory.
 
@@ -58,21 +50,21 @@ Reflect:
 - Why do gifts need both love and dependence on God?
 - What kind of fruit would show that a gift is genuinely serving people?
 
-## 4.5 Four ways gifts become clearer
+## 4.4 Four ways gifts become clearer
 
-### 4.5.1 Service
+### 4.4.1 Service
 
 We learn by taking real responsibility. Serving exposes both capacity and areas needing growth.
 
-### 4.5.2 Fruit
+### 4.4.2 Fruit
 
 Look for what helps people, strengthens the community, advances a worthwhile purpose, and reflects Christlike character. Enjoyment or ease alone is not enough.
 
-### 4.5.3 Feedback
+### 4.4.3 Feedback
 
 Others may recognise patterns we overlook. Useful feedback includes specific examples rather than flattering labels.
 
-### 4.5.4 Development
+### 4.4.4 Development
 
 Potential becomes more dependable through learning, practice, correction, and repetition. A gift does not remove the need for preparation.
 
@@ -80,9 +72,9 @@ Comparison interferes with this process. A visible gift is not necessarily more 
 
 God provides the gift, but leaders remain responsible for developing the character and skill needed to use it well.
 
-## 4.6 Four dimensions of formation
+## 4.5 Four dimensions of formation
 
-### 4.6.1 Head: Understand gifts as stewardship
+### 4.5.1 Head: Understand gifts as stewardship
 
 The central leadership principle is:
 
@@ -94,7 +86,7 @@ Write briefly:
 2. Where have you seen good fruit from something you contributed?
 3. What ability might become more useful with development?
 
-### 4.6.2 Heart: Examine identity and comparison
+### 4.5.2 Heart: Examine identity and comparison
 
 Consider:
 
@@ -106,7 +98,7 @@ Consider:
 
 Choose one. What truth about grace, service, and belonging do you need to receive?
 
-### 4.6.3 Hands: Design a development experiment
+### 4.5.3 Hands: Design a development experiment
 
 Choose one possible strength or gift to explore during the next month.
 
@@ -121,7 +113,7 @@ Choose one possible strength or gift to explore during the next month.
 
 Keep the experiment small enough to complete. Examples include facilitating part of a meeting, encouraging a specific person, organising one task, explaining a short passage, or helping resolve a practical need.
 
-### 4.6.4 Habits: Serve, Notice, Ask
+### 4.5.4 Habits: Serve, Notice, Ask
 
 **Purpose:** To develop a possible gift through real service, observable fruit, specific feedback, and repeated practice.
 
@@ -140,21 +132,21 @@ Keep the experiment small enough to complete. Examples include facilitating part
 
 Feedback is information, not a verdict on your identity. Receive it thoughtfully, test it, and decide what to practise.
 
-## 4.7 Bring It Before God
+## 4.6 Bring It Before God
 
-### 4.7.1 Notice
+### 4.6.1 Notice
 
 What capacity, opportunity, comparison, or fear has your attention?
 
-### 4.7.2 Name
+### 4.6.2 Name
 
 What can you acknowledge honestly about the way you view your contribution?
 
-### 4.7.3 Receive
+### 4.6.3 Receive
 
 What grace, confidence, humility, or freedom do you need from God?
 
-### 4.7.4 Respond
+### 4.6.4 Respond
 
 What small development experiment will you try, and from whom will you seek feedback?
 
@@ -165,7 +157,7 @@ Write a brief prayer:
 > Help me serve _______________________________________________.  
 > I will develop this capacity by ________________________________.
 
-## 4.8 Prepare to share
+## 4.7 Prepare to share
 
 Bring:
 
@@ -177,23 +169,23 @@ Bring:
 
 # Facilitator guide
 
-## 4.9 Purpose of the conversation
+## 4.8 Purpose of the conversation
 
 Participants should understand gifts as grace entrusted for service, identify evidence of one possible capacity, design a small development experiment, and prepare to seek specific feedback.
 
-## 4.10 Prepare as facilitator
+## 4.9 Prepare as facilitator
 
 - Read 1 Peter 4:7–11 and the participant material.
 - Identify specific evidence of strength or growth you have observed in each participant.
 - Avoid assigning permanent labels or ranking gifts.
 
-## 4.11 One-hour conversation plan
+## 4.10 One-hour conversation plan
 
-### 4.11.1 Reconnect and review the previous habit — 10 minutes
+### 4.10.1 Reconnect and review the previous habit — 10 minutes
 
 Pray briefly. Ask what participants learned from Record and Follow Through and whether they completed, clarified, renegotiated, or released something.
 
-### 4.11.2 Enter through experience — 7 minutes
+### 4.10.2 Enter through experience — 7 minutes
 
 Ask:
 
@@ -201,7 +193,7 @@ Ask:
 
 Emphasise observable contribution and fruit.
 
-### 4.11.3 Explore Scripture — 11 minutes
+### 4.10.3 Explore Scripture — 11 minutes
 
 Discuss:
 
@@ -210,7 +202,7 @@ Discuss:
 - Why is stewardship a healthier picture than ownership?
 - What would it look like for God, rather than the leader, to receive glory?
 
-### 4.11.4 Share and examine — 15 minutes
+### 4.10.4 Share and examine — 15 minutes
 
 > **Halfway point:** The group will reach the halfway point of the one-hour conversation near the beginning of this activity.
 
@@ -218,7 +210,7 @@ Each person shares one possible strength or gift and the evidence they see. Invi
 
 Explore any comparison, fear, or need for recognition without shaming it.
 
-### 4.11.5 Practise giving developmental feedback — 8 minutes
+### 4.10.5 Practise giving developmental feedback — 8 minutes
 
 Use the structure:
 
@@ -226,23 +218,23 @@ Use the structure:
 
 Participants practise giving and receiving one piece of feedback. The receiver listens, asks one clarifying question, and says thank you before responding further.
 
-### 4.11.6 Make a commitment — 6 minutes
+### 4.10.6 Make a commitment — 6 minutes
 
 Each person completes:
 
 > I will try __________ in order to serve __________. Afterwards, I will ask __________ for specific feedback.
 
-### 4.11.7 Pray — 3 minutes
+### 4.10.7 Pray — 3 minutes
 
 Thank God for the grace entrusted to each person and pray for humility, courage, and fruitful service.
 
-## 4.12 Facilitator cautions
+## 4.11 Facilitator cautions
 
 - Do not treat a questionnaire result as definitive.
 - Do not confuse confidence, charisma, or visibility with spiritual effectiveness.
 - Do not promise a participant a role or platform.
 - Keep gifts connected to character, community, practice, and fruit.
 
-## 4.13 Between sessions
+## 4.12 Between sessions
 
 Ask participants whether they have arranged their experiment and feedback conversation. Begin Session 5 by hearing what they tried and what they learned.

@@ -6,15 +6,7 @@
 >
 > **Leadership habit:** Record and Follow Through
 
-## 3.1 Personal preparation
-
-> 💡 **A Quick Note Before You Begin**
-> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
-> - **Habit Check**: Begin by reviewing a moment when you practised—or wish you had practised—*Pause and Bring It Before God*. What did you learn?
-> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
-> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
-
-## 3.2 Begin with life
+## 3.1 Begin with life
 
 Two volunteers want greater responsibility.
 
@@ -28,7 +20,7 @@ Character is not formed only in moments of unusual pressure. It is also formed t
 
 Faithfulness is not glamorous. It may look like arriving prepared, caring for equipment, following up with a person, completing an administrative task, or saying early that we cannot meet a deadline. These small actions affect people. They either strengthen or weaken trust.
 
-## 3.3 Faithfulness is stewardship
+## 3.2 Faithfulness is stewardship
 
 Stewardship means caring responsibly for something entrusted to us. A leader may be entrusted with time, information, money, relationships, authority, opportunities, or a specific task. None should be treated casually.
 
@@ -46,9 +38,9 @@ Faithfulness is not saying yes to everything. Overcommitment may look generous a
 
 Nor is faithfulness the same as perfection. Reliable leaders still make mistakes. The difference is that they acknowledge them, communicate, repair what they can, and improve their process.
 
-## 3.4 Explore Scripture: Trustworthy in little and much
+## 3.3 Explore Scripture: Trustworthy in little and much
 
-Read **Luke 16:10–13** in your preferred Bible translation.
+Read **Luke 16:10–13**.
 
 Jesus connects faithfulness in small matters with faithfulness in larger ones. He also speaks about handling what belongs to another and about the impossibility of serving two masters.
 
@@ -68,7 +60,7 @@ Reflect:
 - How might ambition compete with faithfulness?
 - What pattern in your present responsibilities would become harmful if your influence increased?
 
-## 3.5 The hidden work of reliability
+## 3.4 The hidden work of reliability
 
 Reliable people often use simple practices that others do not see. They record commitments, clarify who is responsible, break work into steps, review progress, and communicate early.
 
@@ -86,9 +78,9 @@ Mature stewardship asks both, “How can I become more dependable?” and “Wha
 
 God often builds trustworthy leaders through repeated acts of ordinary faithfulness long before their work becomes visible.
 
-## 3.6 Four dimensions of formation
+## 3.5 Four dimensions of formation
 
-### 3.6.1 Head: Understand trust and stewardship
+### 3.5.1 Head: Understand trust and stewardship
 
 The central leadership principle is:
 
@@ -100,7 +92,7 @@ Write briefly:
 2. Which are easy to value, and which are easy to neglect?
 3. How does your follow-through affect other people?
 
-### 3.6.2 Heart: Examine what drives your commitments
+### 3.5.2 Heart: Examine what drives your commitments
 
 Consider what happens when someone asks you to take on a task.
 
@@ -112,7 +104,7 @@ Consider what happens when someone asks you to take on a task.
 
 Choose one pattern. What desire or fear may be underneath it? What would honesty and faithfulness look like instead?
 
-### 3.6.3 Hands: Complete a responsibility audit
+### 3.5.3 Hands: Complete a responsibility audit
 
 List your main current commitments. Keep the list manageable.
 
@@ -132,7 +124,7 @@ Then decide whether each commitment should be:
 
 Choose one commitment that needs attention within the next 48 hours. Take the next action or communicate with the person affected.
 
-### 3.6.4 Habits: Record and Follow Through
+### 3.5.4 Habits: Record and Follow Through
 
 **Purpose:** To reduce forgotten promises and improve trustworthy follow-through.
 
@@ -146,21 +138,21 @@ Choose one commitment that needs attention within the next 48 hours. Take the ne
 
 The habit includes commitments made in conversation, not only formal tasks. If a request is unclear, capture a question rather than inventing an expectation.
 
-## 3.7 Bring It Before God
+## 3.6 Bring It Before God
 
-### 3.7.1 Notice
+### 3.6.1 Notice
 
 Which responsibility or pattern needs your attention?
 
-### 3.7.2 Name
+### 3.6.2 Name
 
 Is there neglect, overcommitment, ambition, avoidance, or fear to acknowledge?
 
-### 3.7.3 Receive
+### 3.6.3 Receive
 
 What wisdom, humility, strength, or freedom do you need?
 
-### 3.7.4 Respond
+### 3.6.4 Respond
 
 What will you complete, clarify, renegotiate, or decline?
 
@@ -171,7 +163,7 @@ Write a brief prayer:
 > Give me wisdom to _______________________________________________.  
 > My next faithful action is _________________________________________.
 
-## 3.8 Prepare to share
+## 3.7 Prepare to share
 
 Bring:
 
@@ -183,23 +175,23 @@ Bring:
 
 # Facilitator guide
 
-## 3.9 Purpose of the conversation
+## 3.8 Purpose of the conversation
 
 Participants should connect faithfulness with stewardship and trust, examine a pattern affecting reliability, clarify one current responsibility, and establish the habit of Record and Follow Through.
 
-## 3.10 Prepare as facilitator
+## 3.9 Prepare as facilitator
 
 - Read Luke 16:10–13 and the participant material.
 - Bring an example of a small practice that helps you follow through.
 - Avoid celebrating busyness; model healthy limits and honest communication.
 
-## 3.11 One-hour conversation plan
+## 3.10 One-hour conversation plan
 
-### 3.11.1 Reconnect and review the previous habit — 10 minutes
+### 3.10.1 Reconnect and review the previous habit — 10 minutes
 
 Pray briefly. Ask about one moment when participants practised—or wish they had practised—Pause and Bring It Before God. What did they notice, and how did Scripture shape their response?
 
-### 3.11.2 Enter through experience — 7 minutes
+### 3.10.2 Enter through experience — 7 minutes
 
 Ask:
 
@@ -207,7 +199,7 @@ Ask:
 
 List the behaviours participants mention and notice how many are ordinary, repeatable actions.
 
-### 3.11.3 Explore Scripture — 11 minutes
+### 3.10.3 Explore Scripture — 11 minutes
 
 Discuss:
 
@@ -216,7 +208,7 @@ Discuss:
 - How might a desire for recognition compete with faithful service?
 - Why are healthy limits part of stewardship?
 
-### 3.11.4 Share and examine — 15 minutes
+### 3.10.4 Share and examine — 15 minutes
 
 > **Halfway point:** The group will reach the halfway point of the one-hour conversation near the beginning of this activity.
 
@@ -224,7 +216,7 @@ Invite each person to share one insight from the responsibility audit. Explore w
 
 Do not turn the conversation into productivity advice alone. Attend to the motives and relationships involved.
 
-### 3.11.5 Practise clarifying a commitment — 8 minutes
+### 3.10.5 Practise clarifying a commitment — 8 minutes
 
 In pairs, practise responding to this request:
 
@@ -232,23 +224,23 @@ In pairs, practise responding to this request:
 
 The participant should ask questions about the desired outcome, scope, deadline, authority, available help, and how progress will be reviewed. Discuss how clarification protects trust.
 
-### 3.11.6 Make a commitment — 6 minutes
+### 3.10.6 Make a commitment — 6 minutes
 
 Each person completes:
 
 > I will record commitments in __________, review them each day at __________, and follow through by __________.
 
-### 3.11.7 Pray — 3 minutes
+### 3.10.7 Pray — 3 minutes
 
 Pray for faithfulness, truthful limits, and care for the people affected by each participant’s commitments.
 
-## 3.12 Facilitator cautions
+## 3.11 Facilitator cautions
 
 - Do not equate faithfulness with unlimited availability or exhaustion.
 - Do not imply that greater responsibility is always the reward for faithful service.
 - Remember that reliability can be affected by health, disability, resources, or life circumstances; explore support and adjustment without shame.
 - Encourage early communication rather than perfection.
 
-## 3.13 Between sessions
+## 3.12 Between sessions
 
 Check in briefly about the specific 48-hour action. Begin Session 4 by asking what participants learned from Record and Follow Through.

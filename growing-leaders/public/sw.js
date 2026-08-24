@@ -1,4 +1,4 @@
-const CACHE_NAME = "growing-leaders-course-v1";
+const CACHE_NAME = "growing-leaders-course-v2";
 const scope = self.registration.scope;
 const coreAssets = [
   new URL("./", scope).toString(),
@@ -26,12 +26,22 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
 
-  if (request.mode === "navigate" || url.pathname.endsWith("/data/course.json")) {
+  // Network-first for navigation, data, and scripts/styles to ensure updates are visible immediately
+  if (
+    request.mode === "navigate" ||
+    url.pathname.endsWith("/data/course.json") ||
+    url.pathname.includes("/_next/") ||
+    url.pathname.includes("/assets/") ||
+    url.pathname.endsWith(".js") ||
+    url.pathname.endsWith(".css")
+  ) {
     event.respondWith(
       fetch(request)
         .then((response) => {
-          const copy = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
+          if (response.ok) {
+            const copy = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
+          }
           return response;
         })
         .catch(async () => (await caches.match(request)) || caches.match(new URL("./", scope))),
@@ -39,6 +49,7 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
+  // Cache-first for images / static media with network fallback
   event.respondWith(
     caches.match(request).then(
       (cached) =>

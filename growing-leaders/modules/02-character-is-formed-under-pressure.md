@@ -6,15 +6,7 @@
 >
 > **Leadership habit:** Pause and Bring It Before God
 
-## 2.1 Personal preparation
-
-> 💡 **A Quick Note Before You Begin**
-> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
-> - **Habit Check**: Begin by reviewing last session’s *Notice and Learn* habit. Bring one observation from your week, even if you tried it only once or twice.
-> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
-> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
-
-## 2.2 Begin with life
+## 2.1 Begin with life
 
 A leader has worked hard on a project, but another person receives the recognition. Later, the leader discovers a mistake that the other person made. Mentioning it publicly would make the leader look more capable.
 
@@ -32,7 +24,7 @@ Pressure does not tell the whole truth about your character, but it often tells 
 
 Your story helps explain some of the patterns you bring into leadership. Pressure often brings those patterns to the surface, where they can be examined and formed by God.
 
-## 2.3 Character and leadership
+## 2.2 Character and leadership
 
 Character is the developing pattern of who we are and how we respond. It is expressed in choices made both publicly and privately: telling the truth, keeping a confidence, admitting a mistake, treating people fairly, using authority carefully, and obeying God when another course appears easier.
 
@@ -50,9 +42,9 @@ Formation under pressure includes:
 
 Failure can become formative when it leads to truth and change. Hiding, blaming, and defending usually deepen the problem.
 
-## 2.4 Explore Scripture: David in the cave
+## 2.3 Explore Scripture: David in the cave
 
-Read **1 Samuel 24:1–12** in your preferred Bible translation.
+Read **1 Samuel 24:1–12**.
 
 David had been anointed as Israel’s future king, but Saul remained king and was trying to kill him. In the cave, David unexpectedly had Saul within reach. His companions interpreted the opportunity as permission from God to act. David secretly cut off a corner of Saul’s robe, but his conscience troubled him. He stopped his men from attacking and later addressed Saul openly from a distance.
 
@@ -72,7 +64,7 @@ Reflect:
 - How did he combine restraint, truth, and safety?
 - What does the passage suggest about an opportunity that seems to offer exactly what we want?
 
-## 2.5 Pressure can distort judgment
+## 2.4 Pressure can distort judgment
 
 Under pressure, we commonly tell ourselves incomplete stories:
 
@@ -87,7 +79,7 @@ A pause creates room to test the story. We can ask what is true, what love requi
 
 Integrity does not mean remaining passive in the face of harm. A faithful response may include a difficult conversation, a firm boundary, reporting misconduct, or seeking help. Restraint is not the same as avoidance. The question is whether our response is governed by truth, love, justice, and appropriate responsibility rather than by an unchecked reaction.
 
-## 2.6 Let God’s Word shape you
+## 2.5 Let God’s Word shape you
 
 Leaders can approach Scripture mainly to prepare a talk, answer someone else’s question, or support a decision already made. Scripture then becomes material we use rather than truth that first examines and forms us.
 
@@ -109,9 +101,9 @@ Samuel had to learn to listen to God and handle a difficult message responsibly 
 
 This does not mean treating every thought, emotion, coincidence, or strong impression as a direct message from God. Personal impressions should be tested through Scripture in context, the character and way of Jesus, mature counsel, Christian community, and responsible attention to consequences. No claimed message from God should be used to manipulate people, avoid accountability, override safeguarding, or justify conduct contrary to Scripture.
 
-## 2.7 Four dimensions of formation
+## 2.6 Four dimensions of formation
 
-### 2.7.1 Head: Understand what pressure and Scripture reveal
+### 2.6.1 Head: Understand what pressure and Scripture reveal
 
 The central leadership principle is:
 
@@ -124,7 +116,7 @@ Write briefly:
 3. What passage of Scripture has recently encouraged, challenged, or corrected you?
 4. What would it mean to receive that truth personally before applying it to someone else?
 
-### 2.7.2 Heart: Examine the motive beneath the reaction
+### 2.6.2 Heart: Examine the motive beneath the reaction
 
 Recall one recent, manageable situation in which you reacted strongly. Ask:
 
@@ -136,7 +128,7 @@ Recall one recent, manageable situation in which you reacted strongly. Ask:
 
 Honest examination is not self-condemnation. Conviction identifies something specific and invites a response. Shame makes the whole self the problem and encourages hiding. Bring what is specific into the light.
 
-### 2.7.3 Hands: Plan a faithful response
+### 2.6.3 Hands: Plan a faithful response
 
 Use the following framework for a current pressure point:
 
@@ -154,9 +146,9 @@ If you have caused harm, a faithful response may include a simple apology:
 
 Do not use an apology to demand immediate forgiveness or to avoid consequences.
 
-When pressure arises, pause before reacting. Then use the **Bring It Before God** practice in section 2.8—Notice, Name, Receive, Respond—to discern and take a truthful, loving, and responsible next step.
+When pressure arises, pause before reacting. Then use the **Bring It Before God** practice below—Notice, Name, Receive, Respond—to discern and take a truthful, loving, and responsible next step.
 
-### 2.7.4 Habits: Pause and Bring It Before God
+### 2.6.4 Habits: Pause and Bring It Before God
 
 **Purpose:** To create space under pressure for Scripture to examine you and guide a faithful response.
 
@@ -179,23 +171,23 @@ When pressure arises, pause before reacting. Then use the **Bring It Before God*
 
 If no passage comes to mind, use 1 Samuel 24:1–12 or ask your facilitator to help you select a short passage. Avoid choosing a verse merely because it appears to confirm what you already want.
 
-## 2.8 Bring It Before God
+## 2.7 Bring It Before God
 
 Having paused, bring the pressure before God using the same four movements.
 
-### 2.8.1 Notice
+### 2.7.1 Notice
 
 What pressure, motive, or pattern has your attention?
 
-### 2.8.2 Name
+### 2.7.2 Name
 
 What do you need to acknowledge without defending or exaggerating it?
 
-### 2.8.3 Receive
+### 2.7.3 Receive
 
 What truth from Scripture do you need to receive personally? What forgiveness, courage, or wisdom do you need from God?
 
-### 2.8.4 Respond
+### 2.7.4 Respond
 
 What faithful choice, apology, boundary, or request for help will you make?
 
@@ -206,7 +198,7 @@ Write a brief prayer:
 > Shape me through your Word by ___________________________________.  
 > Help me respond by ______________________________________________.
 
-## 2.9 Prepare to share
+## 2.8 Prepare to share
 
 Bring these three things to the conversation:
 
@@ -218,11 +210,11 @@ Bring these three things to the conversation:
 
 # Facilitator guide
 
-## 2.10 Purpose of the conversation
+## 2.9 Purpose of the conversation
 
 Participants should understand how pressure can expose motives and distort judgment, learn how to let God’s Word examine and form them, and commit to Pause and Bring It Before God in a real situation.
 
-## 2.11 Prepare as facilitator
+## 2.10 Prepare as facilitator
 
 - Read 1 Samuel 24:1–12 and the participant material.
 - Prepare an appropriate example of a time pressure exposed something in you.
@@ -230,13 +222,13 @@ Participants should understand how pressure can expose motives and distort judgm
 - Be ready to distinguish restraint from avoidance and integrity from image management.
 - Know how concerns about abuse, misconduct, or safety should be reported in your setting.
 
-## 2.12 One-hour conversation plan
+## 2.11 One-hour conversation plan
 
-### 2.12.1 Reconnect and review the previous habit — 10 minutes
+### 2.11.1 Reconnect and review the previous habit — 10 minutes
 
 Pray briefly. Invite each person to share how often they attempted Notice and Learn, one thing they observed, and what helped or hindered the practice. Treat attempts as information, not a score.
 
-### 2.12.2 Enter through experience — 7 minutes
+### 2.11.2 Enter through experience — 7 minutes
 
 Ask:
 
@@ -244,7 +236,7 @@ Ask:
 
 Let every participant answer before discussing patterns.
 
-### 2.12.3 Explore Scripture — 11 minutes
+### 2.11.3 Explore Scripture — 11 minutes
 
 Discuss two or three questions:
 
@@ -254,7 +246,7 @@ Discuss two or three questions:
 - What is the difference between refusing revenge and avoiding necessary action?
 - How should we test an opportunity that appears to give us what we want?
 
-### 2.12.4 Share and examine — 15 minutes
+### 2.11.4 Share and examine — 15 minutes
 
 > **Halfway point:** The group will reach the halfway point of the one-hour conversation near the beginning of this activity.
 
@@ -262,7 +254,7 @@ Invite each person to describe one low-risk pressure pattern. Ask what they feel
 
 Avoid diagnosing motives. Use tentative questions such as, “Could part of you be trying to protect something here?”
 
-### 2.12.5 Practise receiving and responding to Scripture — 8 minutes
+### 2.11.5 Practise receiving and responding to Scripture — 8 minutes
 
 Use this scenario:
 
@@ -276,17 +268,17 @@ Using 1 Samuel 24, ask:
 
 Then formulate a response that combines restraint, truth, and an appropriate boundary. Discuss the difference between using Scripture to judge the other person and allowing Scripture to guide one’s own response.
 
-### 2.12.6 Make a commitment — 6 minutes
+### 2.11.6 Make a commitment — 6 minutes
 
 Each person identifies a pressure cue and a short passage, then completes:
 
 > When I notice __________, I will pause and bring it before God (Notice: __________, Name: __________, Receive: __________, Respond: __________). I will reinforce this by reading __________ each day.
 
-### 2.12.7 Pray — 3 minutes
+### 2.11.7 Pray — 3 minutes
 
 Pray for integrity, teachability, wise understanding of Scripture, and courage to obey.
 
-## 2.13 Facilitator cautions
+## 2.12 Facilitator cautions
 
 - Do not suggest that all pressure is sent by God or should simply be endured.
 - Take disclosures of harm, abuse, or misconduct seriously and follow appropriate procedures.
@@ -295,6 +287,6 @@ Pray for integrity, teachability, wise understanding of Scripture, and courage t
 - Do not treat every thought or impression as a direct message from God.
 - Do not allow a participant to use a claimed message from God to control another person or avoid appropriate counsel and accountability.
 
-## 2.14 Between sessions
+## 2.13 Between sessions
 
 Send a brief check-in: “Have you had an opportunity to Pause and Bring It Before God (Notice, Name, Receive, Respond)? What are you learning?” Begin Session 3 by asking what participants noticed and how Scripture shaped their response.

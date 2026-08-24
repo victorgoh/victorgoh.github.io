@@ -115,7 +115,30 @@ test("includes local responses, progress, printing, and accessible navigation", 
   assert.match(app, /Skip to lesson content/);
   assert.match(app, /Participant course/);
   assert.match(app, /Facilitator resources/);
+  assert.match(app, /Settings/);
+  assert.match(app, /bible-settings-title/);
   assert.match(css, /@media print/);
   assert.match(css, /prefers-reduced-motion/);
+  assert.match(css, /\.bible-ref-link/);
   assert.match(worker, /data\/course\.json/);
 });
+
+test("supports Bible translation selection and deep linking to Bible.com", async () => {
+  const bibleUrlContent = await readFile(new URL("app/bible-url.tsx", root), "utf8");
+
+  assert.match(bibleUrlContent, /BSB: \{/);
+  assert.match(bibleUrlContent, /ESV: \{/);
+  assert.match(bibleUrlContent, /CSB: \{/);
+  assert.match(bibleUrlContent, /NIV: \{/);
+  assert.match(bibleUrlContent, /NLT: \{/);
+  assert.match(bibleUrlContent, /NKJV: \{/);
+  assert.match(bibleUrlContent, /NASB2020: \{/);
+  assert.match(bibleUrlContent, /MSG: \{/);
+  assert.match(bibleUrlContent, /NRSVUE: \{/);
+  assert.match(bibleUrlContent, /AMP: \{/);
+  assert.match(bibleUrlContent, /https:\/\/www\.bible\.com\/bible\//);
+  assert.match(bibleUrlContent, /function parseBibleReference/);
+  assert.match(bibleUrlContent, /function buildBibleComUrl/);
+  assert.match(bibleUrlContent, /function enhanceWithBibleLinks/);
+});
+

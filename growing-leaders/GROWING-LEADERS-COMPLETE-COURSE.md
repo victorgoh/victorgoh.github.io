@@ -95,7 +95,7 @@ Think of this time as a gift of margin: an unhurried conversation with God.
 4. Reflect through Head, Heart, Hands, and Habits.
 5. Bring what you have learned before God in prayer (*Notice, Name, Receive, Respond*).
 6. Choose something specific to practise.
-7. Bring one insight and one honest question or reflection to your group.
+7. Come prepared with **one encouraging insight**, **one honest question**, and **one small step you tried during the week**, and share those three items with the group.
 
 ### I.5.4 Bring It Before God
 
@@ -201,14 +201,7 @@ Finish with a simple prayer in your own words. You might ask God for honesty, co
 >
 > **Leadership habit:** Notice and Learn
 
-## 1.1 Personal preparation
-
-> 💡 **A Quick Note Before You Begin**
-> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
-> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
-> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
-
-## 1.2 Begin with life
+## 1.1 Begin with life
 
 Imagine two new team leaders.
 
@@ -250,7 +243,7 @@ This kind of reflection does not make the story the centre of leadership. God re
 
 ## 1.4 Explore Scripture: Joseph looks back
 
-Read **Genesis 50:15–21** in your preferred Bible translation.
+Read **Genesis 50:15–21**.
 
 This scene comes near the end of a long and difficult family story. Joseph had been favoured by his father, hated by his brothers, sold into slavery, falsely accused, imprisoned, forgotten, and eventually entrusted with great responsibility in Egypt. Years later, famine brought his brothers to him for help. After their father died, the brothers feared Joseph would finally take revenge.
 
@@ -554,15 +547,7 @@ At the beginning of Session 2, allow each person to share:
 >
 > **Leadership habit:** Pause and Bring It Before God
 
-## 2.1 Personal preparation
-
-> 💡 **A Quick Note Before You Begin**
-> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
-> - **Habit Check**: Begin by reviewing last session’s *Notice and Learn* habit. Bring one observation from your week, even if you tried it only once or twice.
-> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
-> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
-
-## 2.2 Begin with life
+## 2.1 Begin with life
 
 A leader has worked hard on a project, but another person receives the recognition. Later, the leader discovers a mistake that the other person made. Mentioning it publicly would make the leader look more capable.
 
@@ -600,7 +585,7 @@ Failure can become formative when it leads to truth and change. Hiding, blaming,
 
 ## 2.4 Explore Scripture: David in the cave
 
-Read **1 Samuel 24:1–12** in your preferred Bible translation.
+Read **1 Samuel 24:1–12**.
 
 David had been anointed as Israel’s future king, but Saul remained king and was trying to kill him. In the cave, David unexpectedly had Saul within reach. His companions interpreted the opportunity as permission from God to act. David secretly cut off a corner of Saul’s robe, but his conscience troubled him. He stopped his men from attacking and later addressed Saul openly from a distance.
 
@@ -702,7 +687,7 @@ If you have caused harm, a faithful response may include a simple apology:
 
 Do not use an apology to demand immediate forgiveness or to avoid consequences.
 
-When pressure arises, pause before reacting. Then use the **Bring It Before God** practice in section 2.8—Notice, Name, Receive, Respond—to discern and take a truthful, loving, and responsible next step.
+When pressure arises, pause before reacting. Then use the **Bring It Before God** practice below—Notice, Name, Receive, Respond—to discern and take a truthful, loving, and responsible next step.
 
 ### 2.7.4 Habits: Pause and Bring It Before God
 
@@ -857,15 +842,7 @@ Send a brief check-in: “Have you had an opportunity to Pause and Bring It Befo
 >
 > **Leadership habit:** Record and Follow Through
 
-## 3.1 Personal preparation
-
-> 💡 **A Quick Note Before You Begin**
-> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
-> - **Habit Check**: Begin by reviewing a moment when you practised—or wish you had practised—*Pause and Bring It Before God*. What did you learn?
-> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
-> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
-
-## 3.2 Begin with life
+## 3.1 Begin with life
 
 Two volunteers want greater responsibility.
 
@@ -899,7 +876,7 @@ Nor is faithfulness the same as perfection. Reliable leaders still make mistakes
 
 ## 3.4 Explore Scripture: Trustworthy in little and much
 
-Read **Luke 16:10–13** in your preferred Bible translation.
+Read **Luke 16:10–13**.
 
 Jesus connects faithfulness in small matters with faithfulness in larger ones. He also speaks about handling what belongs to another and about the impossibility of serving two masters.
 
@@ -1114,15 +1091,7 @@ Check in briefly about the specific 48-hour action. Begin Session 4 by asking wh
 >
 > **Leadership habit:** Serve, Notice, Ask
 
-## 4.1 Personal preparation
-
-> 💡 **A Quick Note Before You Begin**
-> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
-> - **Habit Check**: Begin by reviewing the past week: What changed or became clearer when you practised *Record and Follow Through*?
-> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
-> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
-
-## 4.2 Begin with life
+## 4.1 Begin with life
 
 A new leader wants to know their spiritual gift. They complete several questionnaires and receive different results. One says leadership, another encouragement, and another teaching. The labels create more confusion than clarity.
 
@@ -1147,7 +1116,7 @@ A strength is not automatically mature. Communication can encourage or manipulat
 
 ## 4.4 Explore Scripture: Stewards of God’s grace
 
-Read **1 Peter 4:7–11** in your preferred Bible translation.
+Read **1 Peter 4:7–11**.
 
 Peter addresses believers living under difficulty. He calls them to clear-minded prayer, deep love, hospitality, and service. Each person is to use what they have received as a faithful steward of God’s varied grace. Speaking and serving are done through God’s provision and for God’s glory.
 
@@ -1365,15 +1334,7 @@ Ask participants whether they have arranged their experiment and feedback conver
 >
 > **Leadership habit:** Listen Before Responding
 
-## 5.1 Personal preparation
-
-> 💡 **A Quick Note Before You Begin**
-> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
-> - **Habit Check**: Begin by reviewing *Serve, Notice, Ask*. What did you try, what fruit did you notice, and what did you learn from feedback?
-> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
-> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
-
-## 5.2 Begin with life
+## 5.1 Begin with life
 
 A leader presents a plan to the team. One member raises a concern. The leader hears resistance, interrupts, and explains the plan more forcefully. The team member stops speaking, and the meeting appears to move on smoothly.
 
@@ -1404,7 +1365,7 @@ Relationships do not merely provide a setting in which leadership happens. They 
 
 ## 5.4 Explore Scripture: A different kind of greatness
 
-Read **Mark 10:35–45** in your preferred Bible translation.
+Read **Mark 10:35–45**.
 
 James and John ask Jesus for positions of honour. The other disciples become angry, suggesting that competition for status affects the whole group. Jesus contrasts the rulers who dominate others with leadership among his followers. Greatness is expressed through service, following the pattern of the Son of Man.
 
@@ -1615,15 +1576,7 @@ Ask participants what they discovered by practising Listen Before Responding. En
 >
 > **Leadership habit:** Abide and Review
 
-## 6.1 Personal preparation
-
-> 💡 **A Quick Note Before You Begin**
-> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
-> - **Habit Check**: Begin by reviewing your attempt to *Listen Before Responding*. What became clearer when you listened longer?
-> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
-> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
-
-## 6.2 Begin with life
+## 6.1 Begin with life
 
 A capable leader begins with prayer, dependence, and care for people. As responsibilities increase, time with God becomes shorter. The leader continues using familiar skills and produces results, so few people notice the change. Gradually, impatience grows, people become tasks, and activity replaces attentiveness.
 
@@ -1650,9 +1603,9 @@ Spiritual depth is not withdrawal from responsibility. It is learning to act fro
 
 The practices that sustain one leader may differ from those that sustain another. The essential reality is dependence on Christ.
 
-## 6.4 Explore Scripture: Remain and bear fruit
+## 6.4 Explore Scripture: The vine and the branches
 
-Read **John 15:1–17** in your preferred Bible translation.
+Read **John 15:1–17**.
 
 Jesus speaks to his disciples on the night before his death. He uses the picture of a vine and branches. The branch does not manufacture life independently; it receives life by remaining connected. Jesus links remaining in him with his words, prayer, obedience, love, joy, and lasting fruit.
 

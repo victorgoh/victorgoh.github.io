@@ -6,15 +6,7 @@
 >
 > **Leadership habit:** Listen Before Responding
 
-## 5.1 Personal preparation
-
-> 💡 **A Quick Note Before You Begin**
-> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
-> - **Habit Check**: Begin by reviewing *Serve, Notice, Ask*. What did you try, what fruit did you notice, and what did you learn from feedback?
-> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
-> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
-
-## 5.2 Begin with life
+## 5.1 Begin with life
 
 A leader presents a plan to the team. One member raises a concern. The leader hears resistance, interrupts, and explains the plan more forcefully. The team member stops speaking, and the meeting appears to move on smoothly.
 
@@ -24,7 +16,7 @@ Leadership always involves people who have their own knowledge, fears, hopes, li
 
 Gifts are not given for private identity or recognition. They are entrusted to us so that we can serve real people in healthy and responsible ways.
 
-## 5.3 Influence is for service
+## 5.2 Influence is for service
 
 Authority and influence can help a group move towards a good purpose. They can also be used to protect the leader’s image, secure compliance, or silence discomfort.
 
@@ -43,9 +35,9 @@ Serving people does not mean pleasing everyone. A leader may need to make an unp
 
 Relationships do not merely provide a setting in which leadership happens. They are one of the main places where God forms leaders.
 
-## 5.4 Explore Scripture: A different kind of greatness
+## 5.3 Explore Scripture: A different kind of greatness
 
-Read **Mark 10:35–45** in your preferred Bible translation.
+Read **Mark 10:35–45**.
 
 James and John ask Jesus for positions of honour. The other disciples become angry, suggesting that competition for status affects the whole group. Jesus contrasts the rulers who dominate others with leadership among his followers. Greatness is expressed through service, following the pattern of the Son of Man.
 
@@ -63,7 +55,7 @@ Reflect:
 - What forms can “lording it over” people take in ordinary leadership?
 - How does Jesus redefine greatness without removing responsibility or influence?
 
-## 5.5 Listening as an act of leadership
+## 5.4 Listening as an act of leadership
 
 Listening does more than make people feel heard. It helps a leader understand reality, notice what they may have missed, and treat people as contributors rather than obstacles.
 
@@ -80,9 +72,9 @@ When relationships are difficult, leaders commonly:
 
 A better conversation makes room for observation, perspective, effect, and next steps.
 
-## 5.6 Four dimensions of formation
+## 5.5 Four dimensions of formation
 
-### 5.6.1 Head: Understand authority as stewardship
+### 5.5.1 Head: Understand authority as stewardship
 
 The central leadership principle is:
 
@@ -94,7 +86,7 @@ Write briefly:
 2. Who is affected by the way you use it?
 3. What is the difference between serving people and pleasing them?
 
-### 5.6.2 Heart: Examine your relational reflex
+### 5.5.2 Heart: Examine your relational reflex
 
 When someone disagrees, disappoints, or criticises you, do you tend to:
 
@@ -108,7 +100,7 @@ When someone disagrees, disappoints, or criticises you, do you tend to:
 
 What fear or desire may drive that reflex? What would love, courage, and humility make possible?
 
-### 5.6.3 Hands: Prepare a healthy conversation
+### 5.5.3 Hands: Prepare a healthy conversation
 
 Choose a real but manageable conversation.
 
@@ -123,7 +115,7 @@ Choose a real but manageable conversation.
 
 Begin with curiosity. If safety, misconduct, harassment, abuse, or a serious power imbalance is involved, seek appropriate help rather than attempting an informal conversation alone.
 
-### 5.6.4 Habits: Listen Before Responding
+### 5.5.4 Habits: Listen Before Responding
 
 **Purpose:** To understand people more accurately and reduce defensive or controlling responses.
 
@@ -141,21 +133,21 @@ Begin with curiosity. If safety, misconduct, harassment, abuse, or a serious pow
 
 **Support:** Tell the group one setting in which you will practise.
 
-## 5.7 Bring It Before God
+## 5.6 Bring It Before God
 
-### 5.7.1 Notice
+### 5.6.1 Notice
 
 Which relationship or leadership reflex has your attention?
 
-### 5.7.2 Name
+### 5.6.2 Name
 
 What do you need to acknowledge about your use of influence or response to people?
 
-### 5.7.3 Receive
+### 5.6.3 Receive
 
 What love, humility, courage, patience, or wisdom do you need?
 
-### 5.7.4 Respond
+### 5.6.4 Respond
 
 What conversation will you enter, and how will you listen differently?
 
@@ -166,7 +158,7 @@ Write a brief prayer:
 > Help me listen to _______________________________________________.  
 > In my next conversation, I will __________________________________.
 
-## 5.8 Prepare to share
+## 5.7 Prepare to share
 
 Bring:
 
@@ -178,23 +170,23 @@ Bring:
 
 # Facilitator guide
 
-## 5.9 Purpose of the conversation
+## 5.8 Purpose of the conversation
 
 Participants should understand influence as entrusted for service, recognise one relational reflex, practise Listen Before Responding, and plan a healthy conversation.
 
-## 5.10 Prepare as facilitator
+## 5.9 Prepare as facilitator
 
 - Read Mark 10:35–45 and the participant material.
 - Prepare to model listening without quickly correcting an answer.
 - Know the reporting and support pathways for serious relational concerns.
 
-## 5.11 One-hour conversation plan
+## 5.10 One-hour conversation plan
 
-### 5.11.1 Reconnect and review the previous habit — 10 minutes
+### 5.10.1 Reconnect and review the previous habit — 10 minutes
 
 Pray briefly. Invite each person to describe how they practised Serve, Notice, Ask and one adjustment they want to make.
 
-### 5.11.2 Enter through experience — 7 minutes
+### 5.10.2 Enter through experience — 7 minutes
 
 Ask:
 
@@ -202,7 +194,7 @@ Ask:
 
 Collect specific behaviours rather than general qualities.
 
-### 5.11.3 Explore Scripture — 11 minutes
+### 5.10.3 Explore Scripture — 11 minutes
 
 Discuss:
 
@@ -211,13 +203,13 @@ Discuss:
 - What misuse of power does Jesus reject?
 - How can a leader serve while still making decisions and addressing problems?
 
-### 5.11.4 Share and examine — 15 minutes
+### 5.10.4 Share and examine — 15 minutes
 
 > **Halfway point:** The group will reach the halfway point of the one-hour conversation near the beginning of this activity.
 
 Each participant names one relational reflex. Explore what triggers it, what it tries to achieve, how another person may experience it, and what alternative response is possible.
 
-### 5.11.5 Practise Listen Before Responding — 8 minutes
+### 5.10.5 Practise Listen Before Responding — 8 minutes
 
 In pairs, one person speaks for one minute about a manageable concern. The listener asks one open question, summarises, and checks understanding without giving advice. Switch roles and debrief:
 
@@ -225,23 +217,23 @@ In pairs, one person speaks for one minute about a manageable concern. The liste
 - What was difficult about not responding immediately?
 - What did the listener learn?
 
-### 5.11.6 Make a commitment — 6 minutes
+### 5.10.6 Make a commitment — 6 minutes
 
 Each person completes:
 
 > When I speak with __________ about __________, I will first ask __________ and summarise what I hear.
 
-### 5.11.7 Pray — 3 minutes
+### 5.10.7 Pray — 3 minutes
 
 Pray for servant-hearted influence, courage in difficult conversations, and love expressed through careful listening.
 
-## 5.12 Facilitator cautions
+## 5.11 Facilitator cautions
 
 - Do not frame service as tolerating abusive or unsafe behaviour.
 - Do not require reconciliation where safety, truth, or accountability has not been addressed.
 - Do not let listening become a technique for appearing caring while retaining a fixed decision deceptively.
 - Pay attention to power differences and organisational responsibilities.
 
-## 5.13 Between sessions
+## 5.12 Between sessions
 
 Ask participants what they discovered by practising Listen Before Responding. Encourage them to record what they understood only after listening.

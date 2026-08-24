@@ -6,15 +6,7 @@
 >
 > **Leadership habit:** Abide and Review
 
-## 6.1 Personal preparation
-
-> 💡 **A Quick Note Before You Begin**
-> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
-> - **Habit Check**: Begin by reviewing your attempt to *Listen Before Responding*. What became clearer when you listened longer?
-> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
-> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
-
-## 6.2 Begin with life
+## 6.1 Begin with life
 
 A capable leader begins with prayer, dependence, and care for people. As responsibilities increase, time with God becomes shorter. The leader continues using familiar skills and produces results, so few people notice the change. Gradually, impatience grows, people become tasks, and activity replaces attentiveness.
 
@@ -24,7 +16,7 @@ Skill, experience, and discipline matter. None can replace a living relationship
 
 Leading people exposes the limits of skill and effort. Sustainable leadership requires a life that remains deeply connected to Jesus.
 
-## 6.3 Beyond performance
+## 6.2 Beyond performance
 
 Leaders can become dependent on visible results, past success, praise, control, or constant activity. These sources may sustain effort temporarily, but they cannot produce the kind of fruit Jesus desires.
 
@@ -41,9 +33,9 @@ Spiritual depth is not withdrawal from responsibility. It is learning to act fro
 
 The practices that sustain one leader may differ from those that sustain another. The essential reality is dependence on Christ.
 
-## 6.4 Explore Scripture: Remain and bear fruit
+## 6.3 Explore Scripture: The vine and the branches
 
-Read **John 15:1–17** in your preferred Bible translation.
+Read **John 15:1–17**.
 
 Jesus speaks to his disciples on the night before his death. He uses the picture of a vine and branches. The branch does not manufacture life independently; it receives life by remaining connected. Jesus links remaining in him with his words, prayer, obedience, love, joy, and lasting fruit.
 
@@ -62,7 +54,7 @@ Reflect:
 - What might a leader be tempted to produce apart from deep connection with Jesus?
 - Where might pruning be different from punishment?
 
-## 6.5 An integrated life
+## 6.4 An integrated life
 
 Throughout this course you have considered four dimensions:
 
@@ -77,9 +69,9 @@ Remaining in Jesus gives the dimensions their centre. We learn truth to follow h
 
 Across this journey, God uses your story, forms your character, builds your faithfulness, develops your gifts, shapes how you lead people, and continues deepening your life with him.
 
-## 6.6 Four dimensions of formation
+## 6.5 Four dimensions of formation
 
-### 6.6.1 Head: Understand sustainable fruitfulness
+### 6.5.1 Head: Understand sustainable fruitfulness
 
 The central leadership principle is:
 
@@ -91,7 +83,7 @@ Review the course and write:
 2. What false picture of leadership are you beginning to release?
 3. What kind of fruit do you hope will grow in and through you?
 
-### 6.6.2 Heart: Notice your present invitation
+### 6.5.2 Heart: Notice your present invitation
 
 Which invitation feels most important now?
 
@@ -106,7 +98,7 @@ Which invitation feels most important now?
 
 What makes this invitation difficult? What would trust look like?
 
-### 6.6.3 Hands: Create a 30-day development plan
+### 6.5.3 Hands: Create a 30-day development plan
 
 Choose one next step in each dimension. Keep the plan realistic.
 
@@ -125,7 +117,7 @@ Then identify:
 - one practice you will stop, start, or continue;
 - one date when you will review the plan.
 
-### 6.6.4 Habits: Abide and Review
+### 6.5.4 Habits: Abide and Review
 
 **Purpose:** To keep leadership activity connected with inner life, relationships, learning, and dependence on God.
 
@@ -146,21 +138,21 @@ Then identify:
 
 This review is not a method for claiming certainty about everything God is doing. It is a practice of humble attention.
 
-## 6.7 Bring It Before God
+## 6.6 Bring It Before God
 
-### 6.7.1 Notice
+### 6.6.1 Notice
 
 Where do you sense life and fruit? Where do you sense depletion or disconnection?
 
-### 6.7.2 Name
+### 6.6.2 Name
 
 What reliance, neglect, fear, grief, or desire do you need to bring honestly to Jesus?
 
-### 6.7.3 Receive
+### 6.6.3 Receive
 
 What love, grace, rest, correction, or renewed purpose do you need?
 
-### 6.7.4 Respond
+### 6.6.4 Respond
 
 What will help you remain connected to Jesus while carrying responsibility?
 
@@ -172,7 +164,7 @@ Write a brief prayer:
 > Help me remain in you by ______________________________________.  
 > Form in me the fruit of ________________________________________.
 
-## 6.8 Look back over the journey
+## 6.7 Look back over the journey
 
 Complete these sentences:
 
@@ -183,7 +175,7 @@ Complete these sentences:
 - One way I want to love God and people more faithfully is ______________.
 - One person I will invite to support my growth is _______________________.
 
-## 6.9 Prepare to share
+## 6.8 Prepare to share
 
 Bring:
 
@@ -196,24 +188,24 @@ Bring:
 
 # Facilitator guide
 
-## 6.10 Purpose of the conversation
+## 6.9 Purpose of the conversation
 
 Participants should connect sustainable leadership with remaining in Jesus, integrate their Head–Heart–Hands–Habits learning, name significant growth, and leave with a supported 30-day development plan.
 
-## 6.11 Prepare as facilitator
+## 6.10 Prepare as facilitator
 
 - Read John 15:1–17 and the participant material.
 - Review notes from earlier sessions and identify specific growth to affirm in each participant.
 - Prepare your own brief example of a practice that helps keep leadership connected with God.
 - Plan an appropriate way for the mentoring relationship to continue or conclude.
 
-## 6.12 One-hour conversation plan
+## 6.11 One-hour conversation plan
 
-### 6.12.1 Reconnect and review the previous habit — 10 minutes
+### 6.11.1 Reconnect and review the previous habit — 10 minutes
 
 Pray briefly. Ask what participants learned by practising Listen Before Responding. What changed in the conversation or in them?
 
-### 6.12.2 Enter through experience — 7 minutes
+### 6.11.2 Enter through experience — 7 minutes
 
 Ask:
 
@@ -221,7 +213,7 @@ Ask:
 
 Allow both inner and relational signs: hurry, irritation, numbness, control, neglect, loss of joy, or treating people as tasks.
 
-### 6.12.3 Explore Scripture — 11 minutes
+### 6.11.3 Explore Scripture — 11 minutes
 
 Discuss:
 
@@ -230,7 +222,7 @@ Discuss:
 - What kinds of fruit matter in Christian leadership?
 - How can we respond humbly to pruning, limits, or change?
 
-### 6.12.4 Share and integrate — 15 minutes
+### 6.11.4 Share and integrate — 15 minutes
 
 > **Halfway point:** The group will reach the halfway point of the one-hour conversation near the beginning of this activity.
 
@@ -238,11 +230,11 @@ Each participant shares one significant insight and one continuing area of forma
 
 Keep this grounded in observed patterns rather than grand predictions about the participant’s future.
 
-### 6.12.5 Refine the 30-day plan — 8 minutes
+### 6.11.5 Refine the 30-day plan — 8 minutes
 
 Participants briefly present their plans. Help each person make the steps small, specific, connected to real life, and supported by someone. Confirm a review date.
 
-### 6.12.6 Make a commitment — 6 minutes
+### 6.11.6 Make a commitment — 6 minutes
 
 Each person completes:
 
@@ -250,18 +242,18 @@ Each person completes:
 
 If the group will continue meeting, agree on the next check-in. If not, identify another appropriate support relationship.
 
-### 6.12.7 Pray and commission — 3 minutes
+### 6.11.7 Pray and commission — 3 minutes
 
 Pray for each participant by name, giving thanks for God’s grace and asking for enduring love, humility, courage, faithfulness, and fruit.
 
-## 6.13 Facilitator cautions
+## 6.12 Facilitator cautions
 
 - Do not imply that spiritual practices guarantee visible success or freedom from difficulty.
 - Do not make the final session a performance review.
 - Avoid exaggerated predictions or claims about God’s specific future plan for a participant.
 - Do not leave development plans unsupported; help participants identify a real person and review date.
 
-## 6.14 After the course
+## 6.13 After the course
 
 Arrange a 30-day follow-up if appropriate. Review the plan using four questions:
 

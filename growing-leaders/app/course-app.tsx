@@ -11,6 +11,13 @@ import React, {
 } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import {
+  BIBLE_TRANSLATIONS,
+  DEFAULT_BIBLE_TRANSLATION,
+  SUPPORTED_TRANSLATION_KEYS,
+  SupportedBibleTranslation,
+  enhanceWithBibleLinks,
+} from "./bible-url";
 
 type CourseDocument = {
   id: string;
@@ -422,12 +429,14 @@ function CourseMarkdown({
   onNavigate,
   onStorageIssue,
   moduleProgress,
+  bibleTranslation = DEFAULT_BIBLE_TRANSLATION,
 }: {
   document: CourseDocument;
   documents: CourseDocument[];
   onNavigate: (documentId: string, target?: string) => void;
-  onStorageIssue: StorageIssueHandler;
+  onStorageIssue?: StorageIssueHandler;
   moduleProgress?: ReactNode;
+  bibleTranslation?: SupportedBibleTranslation;
 }) {
   const heading = (level: 1 | 2 | 3 | 4) => {
     function Heading({ children }: { children?: ReactNode }) {
@@ -438,7 +447,7 @@ function CourseMarkdown({
         { id, className: "content-heading", "data-section-title": title },
         level >= 2 ? (
           <>
-            <span>{children}</span>
+            <span>{enhanceWithBibleLinks(children, bibleTranslation)}</span>
             <a
               className="section-permalink"
               href={`#${id}`}
@@ -448,7 +457,9 @@ function CourseMarkdown({
               <span aria-hidden="true">#</span>
             </a>
           </>
-        ) : children,
+        ) : (
+          enhanceWithBibleLinks(children, bibleTranslation)
+        ),
       );
       if (level === 2 && title === "Learn, Reflect and Apply" && moduleProgress) {
         return <>{renderedHeading}{moduleProgress}</>;
@@ -467,6 +478,12 @@ function CourseMarkdown({
         h2: heading(2),
         h3: heading(3),
         h4: heading(4),
+        p({ children }) {
+          return <p>{enhanceWithBibleLinks(children, bibleTranslation)}</p>;
+        },
+        li({ children }) {
+          return <li>{enhanceWithBibleLinks(children, bibleTranslation)}</li>;
+        },
         blockquote({ node, children }) {
           const text = textFromChildren(children);
           const exerciseType = /^Core exercise(?: \d+\.\d+)?:/.test(text)
@@ -528,7 +545,7 @@ function CourseMarkdown({
           return (
             <td>
               {value ? (
-                children
+                enhanceWithBibleLinks(children, bibleTranslation)
               ) : (
                 <AnswerField
                   compact
@@ -689,6 +706,7 @@ export function CourseApp() {
   const [resumePoint, setResumePoint] = useState<ResumePoint | null>(null);
   const [readingSize, setReadingSize] = useState("standard");
   const [relaxedReading, setRelaxedReading] = useState(false);
+  const [bibleTranslation, setBibleTranslation] = useState<SupportedBibleTranslation>(DEFAULT_BIBLE_TRANSLATION);
   const [progressRevision, setProgressRevision] = useState(0);
   const pendingScroll = useRef<string | null>(null);
   const settingsCloseButton = useRef<HTMLButtonElement | null>(null);
@@ -716,11 +734,15 @@ export function CourseApp() {
   useEffect(() => {
     const size = safeStorageGet(`${storagePrefix}:preference:reading-size`);
     const relaxed = safeStorageGet(`${storagePrefix}:preference:relaxed-reading`);
+    const translation = safeStorageGet(`${storagePrefix}:preference:bible-translation`);
     const savedResume = safeStorageGet(`${storagePrefix}:preference:last-location`);
     const frame = window.requestAnimationFrame(() => {
-      if (size.failed || relaxed.failed || savedResume.failed) setStorageIssue(true);
+      if (size.failed || relaxed.failed || translation.failed || savedResume.failed) setStorageIssue(true);
       if (size.value === "large" || size.value === "standard") setReadingSize(size.value);
       setRelaxedReading(relaxed.value === "true");
+      if (translation.value && translation.value in BIBLE_TRANSLATIONS) {
+        setBibleTranslation(translation.value as SupportedBibleTranslation);
+      }
       if (savedResume.value) {
         try {
           setResumePoint(JSON.parse(savedResume.value) as ResumePoint);
@@ -830,7 +852,33 @@ export function CourseApp() {
 
   useEffect(() => {
     if (!("serviceWorker" in navigator)) return;
-    navigator.serviceWorker.register(joinBasePath("sw.js")).catch(() => undefined);
+    const isLocalhost =
+      window.location.hostname === "localhost" ||
+      window.location.hostname === "127.0.0.1" ||
+      window.location.hostname === "0.0.0.0";
+
+    if (isLocalhost) {
+      navigator.serviceWorker.getRegistrations().then((registrations) => {
+        for (const registration of registrations) {
+          registration.unregister().catch(() => undefined);
+        }
+      });
+      if ("caches" in window) {
+        caches.keys().then((keys) => {
+          for (const key of keys) {
+            caches.delete(key).catch(() => undefined);
+          }
+        });
+      }
+      return;
+    }
+
+    navigator.serviceWorker
+      .register(joinBasePath("sw.js"))
+      .then((reg) => {
+        reg.update().catch(() => undefined);
+      })
+      .catch(() => undefined);
   }, []);
 
   useEffect(() => {
@@ -1005,6 +1053,13 @@ export function CourseApp() {
   function updateRelaxedReading(enabled: boolean) {
     setRelaxedReading(enabled);
     if (!safeStorageSet(`${storagePrefix}:preference:relaxed-reading`, String(enabled))) {
+      reportStorageIssue();
+    }
+  }
+
+  function updateBibleTranslation(translation: SupportedBibleTranslation) {
+    setBibleTranslation(translation);
+    if (!safeStorageSet(`${storagePrefix}:preference:bible-translation`, translation)) {
       reportStorageIssue();
     }
   }
@@ -1262,7 +1317,7 @@ export function CourseApp() {
             onClick={openSettings}
           >
             <span aria-hidden="true">⚙</span>
-            Manage saved data
+            Settings
           </button>
         </div>
       </aside>
@@ -1328,6 +1383,28 @@ export function CourseApp() {
                   onChange={(event) => updateRelaxedReading(event.target.checked)}
                 />
                 Use more line spacing
+              </label>
+            </section>
+
+            <section className="settings-section" aria-labelledby="bible-settings-title">
+              <h3 id="bible-settings-title">Bible translation</h3>
+              <p>
+                Choose your preferred translation for opening Scripture passages on Bible.com or the YouVersion app.
+              </p>
+              <label>
+                Bible link translation
+                <select
+                  value={bibleTranslation}
+                  onChange={(event) =>
+                    updateBibleTranslation(event.target.value as SupportedBibleTranslation)
+                  }
+                >
+                  {SUPPORTED_TRANSLATION_KEYS.map((key) => (
+                    <option key={key} value={key}>
+                      {BIBLE_TRANSLATIONS[key].label}
+                    </option>
+                  ))}
+                </select>
               </label>
             </section>
 
@@ -1462,6 +1539,7 @@ export function CourseApp() {
             onNavigate={navigate}
             onStorageIssue={reportStorageIssue}
             moduleProgress={undefined}
+            bibleTranslation={bibleTranslation}
           />
         </article>
 

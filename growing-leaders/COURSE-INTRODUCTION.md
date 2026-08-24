@@ -95,7 +95,7 @@ Think of this time as a gift of margin: an unhurried conversation with God.
 4. Reflect through Head, Heart, Hands, and Habits.
 5. Bring what you have learned before God in prayer (*Notice, Name, Receive, Respond*).
 6. Choose something specific to practise.
-7. Bring one insight and one honest question or reflection to your group.
+7. Come prepared with **one encouraging insight**, **one honest question**, and **one small step you tried during the week**, and share those three items with the group.
 
 ### I.5.4 Bring It Before God
 

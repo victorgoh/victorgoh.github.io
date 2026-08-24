@@ -6,14 +6,7 @@
 >
 > **Leadership habit:** Notice and Learn
 
-## 1.1 Personal preparation
-
-> 💡 **A Quick Note Before You Begin**
-> - **Time Guide**: ~25–35 minutes (or two 15-minute sittings).
-> - **Posture**: Read with curiosity rather than pressure. Bullet points and unfinished thoughts are more than welcome.
-> - **The Goal**: Arrive at your group meeting with just **one insight that encouraged you** and **one honest question you are carrying**.
-
-## 1.2 Begin with life
+## 1.1 Begin with life
 
 Imagine two new team leaders.
 
@@ -37,7 +30,7 @@ Pause and consider:
 
 You do not need a complete answer. Simply begin to notice.
 
-## 1.3 Your story is part of your formation
+## 1.2 Your story is part of your formation
 
 New leaders sometimes believe that growth begins when they receive a leadership role. In reality, your development began much earlier.
 
@@ -53,9 +46,9 @@ A growing leader learns to ask:
 
 This kind of reflection does not make the story the centre of leadership. God remains at the centre. Reflection helps us bring more of our real selves into relationship with God, where gratitude, repentance, healing, learning, and change can begin.
 
-## 1.4 Explore Scripture: Joseph looks back
+## 1.3 Explore Scripture: Joseph looks back
 
-Read **Genesis 50:15–21** in your preferred Bible translation.
+Read **Genesis 50:15–21**.
 
 This scene comes near the end of a long and difficult family story. Joseph had been favoured by his father, hated by his brothers, sold into slavery, falsely accused, imprisoned, forgotten, and eventually entrusted with great responsibility in Egypt. Years later, famine brought his brothers to him for help. After their father died, the brothers feared Joseph would finally take revenge.
 
@@ -77,7 +70,7 @@ Reflect on the passage:
 - How does his understanding of the past shape the way he uses power in the present?
 - What would have been different if Joseph had used his authority to settle an old score?
 
-## 1.5 Reading our stories with humility
+## 1.4 Reading our stories with humility
 
 Joseph’s story is extraordinary. We should be careful not to assume that we can always identify exactly why something happened or confidently explain God’s purpose in another person’s pain.
 
@@ -102,9 +95,9 @@ Some parts of your story may require more care than this group can provide. Wise
 
 As you become more aware of how your story has shaped you, you can begin noticing what God wants to form within you—especially when leadership brings pressure.
 
-## 1.6 Four dimensions of formation
+## 1.5 Four dimensions of formation
 
-### 1.6.1 Head: Understand your formation
+### 1.5.1 Head: Understand your formation
 
 Your leadership did not begin with your current responsibility. You bring a history into every role and relationship. That history may have developed strengths, expectations, sensitivities, and protective responses.
 
@@ -120,7 +113,7 @@ Write briefly:
 2. What is one leadership assumption you may have learned from family, culture, church, education, or work?
 3. How might that assumption help you? How might it limit you?
 
-### 1.6.2 Heart: Notice what happens within you
+### 1.5.2 Heart: Notice what happens within you
 
 Our strongest reactions sometimes point towards an important part of our story. A leader who fears being ignored may dominate a conversation. Someone who fears disappointing others may agree to every request. Someone who experienced unpredictable authority may resist even healthy direction.
 
@@ -135,7 +128,7 @@ Think of a recent situation in which you had a strong reaction while serving, wo
 
 Be curious before becoming critical. The aim is not to shame yourself but to understand what needs God’s attention and grace.
 
-### 1.6.3 Hands: Create a simple leadership story map
+### 1.5.3 Hands: Create a simple leadership story map
 
 Draw a line representing your life from childhood to the present. Mark **three to five experiences** that have influenced the way you relate, serve, or lead. Choose experiences that are appropriate to explore in this setting.
 
@@ -162,7 +155,7 @@ Look at the map as a whole. What theme, repeated pattern, or question do you not
 
 Circle one experience you would like to understand more clearly. You may discuss it with your facilitator, a trusted mentor, or another appropriate person. You are not required to share it with the whole group.
 
-### 1.6.4 Habits: Notice and Learn
+### 1.5.4 Habits: Notice and Learn
 
 Leaders learn from experience when they create space to notice it. This week, practise a brief daily review.
 
@@ -189,23 +182,23 @@ Use a simple format:
 
 If you miss a day, begin again the next day. The purpose is attentive learning, not maintaining a perfect record.
 
-## 1.7 Bring It Before God
+## 1.6 Bring It Before God
 
 Take a few quiet moments with these four movements.
 
-### 1.7.1 Notice
+### 1.6.1 Notice
 
 What part of your story, reaction, strength, or pattern has your attention?
 
-### 1.7.2 Name
+### 1.6.2 Name
 
 What can you name honestly before God? This may include gratitude, grief, confusion, regret, fear, or hope.
 
-### 1.7.3 Receive
+### 1.6.3 Receive
 
 What truth, grace, wisdom, courage, or help do you need from God?
 
-### 1.7.4 Respond
+### 1.6.4 Respond
 
 What is one faithful next step? It may be to give thanks, change a response, seek feedback, repair a relationship, establish a boundary, or ask an appropriate person for help.
 
@@ -216,7 +209,7 @@ Write a brief prayer:
 > Help me to see ___________________________________________________.  
 > My next faithful step is ___________________________________________.
 
-## 1.8 Prepare to share
+## 1.7 Prepare to share
 
 Bring your notes to the mentoring conversation. Be ready to share:
 
@@ -230,7 +223,7 @@ Choose what is appropriate to share. You can participate honestly without tellin
 
 # Facilitator guide
 
-## 1.9 Purpose of the conversation
+## 1.8 Purpose of the conversation
 
 By the end of the session, participants should:
 
@@ -242,7 +235,7 @@ By the end of the session, participants should:
 
 This session is not intended to produce a complete life history or resolve painful experiences. Its purpose is to introduce attentive, grace-filled reflection.
 
-## 1.10 Prepare as facilitator
+## 1.9 Prepare as facilitator
 
 Before the meeting:
 
@@ -253,9 +246,9 @@ Before the meeting:
 - Know the relevant pastoral, safeguarding, or professional support pathways in your context.
 - Pray for humility, sensitivity, and discernment.
 
-## 1.11 One-hour conversation plan
+## 1.10 One-hour conversation plan
 
-### 1.11.1 Welcome and establish trust — 7 minutes
+### 1.10.1 Welcome and establish trust — 7 minutes
 
 Open in prayer and invite each person to answer:
 
@@ -263,7 +256,7 @@ Open in prayer and invite each person to answer:
 
 Introduce the purpose and briefly agree on group commitments: listening, appropriate confidentiality, no forced disclosure, space for every person, and gracious feedback.
 
-### 1.11.2 Enter through experience — 8 minutes
+### 1.10.2 Enter through experience — 8 minutes
 
 Ask:
 
@@ -271,7 +264,7 @@ Ask:
 
 Give every participant time to answer. Do not evaluate the examples. Notice how experience can shape both positive commitments and protective reactions.
 
-### 1.11.3 Explore Scripture — 12 minutes
+### 1.10.3 Explore Scripture — 12 minutes
 
 Invite someone to summarise Genesis 50:15–21 in their own words. Use two or three questions:
 
@@ -282,7 +275,7 @@ Invite someone to summarise Genesis 50:15–21 in their own words. Use two or th
 
 Keep the focus on the text and its leadership implications. Do not imply that harmful actions become good because God can work in and beyond them.
 
-### 1.11.4 Share and examine — 15 minutes
+### 1.10.4 Share and examine — 15 minutes
 
 > **Halfway point:** The group will reach the halfway point of the one-hour conversation near the beginning of this activity.
 
@@ -302,7 +295,7 @@ Helpful follow-up questions include:
 
 Do not ask participants to explain painful experiences in detail. If someone becomes distressed, slow down, acknowledge what has surfaced, offer choice about continuing, and follow the appropriate support process after the session.
 
-### 1.11.5 Practise noticing — 8 minutes
+### 1.10.5 Practise noticing — 8 minutes
 
 Offer this short scenario:
 
@@ -316,7 +309,7 @@ Ask the group to practise the three daily-review questions:
 
 Then ask each participant to apply the same questions privately to a recent low-risk situation of their own. Allow one or two minutes to write before inviting voluntary sharing.
 
-### 1.11.6 Make a commitment — 6 minutes
+### 1.10.6 Make a commitment — 6 minutes
 
 Ask each participant to complete:
 
@@ -324,11 +317,11 @@ Ask each participant to complete:
 
 Check that the cue is specific and realistic. Invite participants to record it or message it to the group.
 
-### 1.11.7 Pray — 4 minutes
+### 1.10.7 Pray — 4 minutes
 
 Invite each person to name one quality they want God to form in them through their story. Pray briefly for the person beside you, asking for truth, grace, courage, and growth.
 
-## 1.12 Facilitator cautions
+## 1.11 Facilitator cautions
 
 - Do not treat every past event as a lesson deliberately sent by God.
 - Do not hurry participants towards forgiveness, reconciliation, or disclosure without attention to truth, safety, responsibility, and appropriate support.
@@ -336,7 +329,7 @@ Invite each person to name one quality they want God to form in them through the
 - Do not allow one participant’s story to consume the entire meeting. Honour it and arrange follow-up if more time is needed.
 - Do not let reflection remain abstract. Help each participant identify one present leadership implication and one small practice.
 
-## 1.13 Between sessions
+## 1.12 Between sessions
 
 Send one brief, non-intrusive check-in during the week:
 
