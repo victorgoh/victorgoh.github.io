@@ -85,24 +85,24 @@ export interface UserPreferences {
   bibleTranslation?: SupportedBibleTranslation;
 }
 
-export interface OrgBranding {
+export interface CustomBranding {
   primaryColor?: string;
   accentColor?: string;
   primaryDarkColor?: string;
   accentDarkColor?: string;
 }
 
-export interface Organization {
+export interface Customization {
   name: string;
   logoUrl?: string;
   website?: string;
   email?: string;
   contactPhone?: string;
   socialLinks?: Record<string, string>;
-  branding?: OrgBranding;
+  branding?: CustomBranding;
 }
 
 export interface BrandedRegistry {
-  organization?: Organization;
+  customization?: Customization;
   plans: PlanListItem[];
 }

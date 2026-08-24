@@ -1,160 +1,140 @@
-# Bible Reading Plan & Prayer Guide SPA
+# EQUIP: Rooted and Formed
 
-This project is a premium, lightweight, responsive Single Page Application (SPA) designed for churches and Christian ministries to easily create, host, and share structured Bible reading plans and prayer guides with their congregations.
+A premium, lightweight, responsive Single Page Application (SPA) designed for churches, discipleship groups, and Christian ministries to host, explore, and share structured Bible reading plans, prayer guides, and leadership formation journeys.
 
-The application operates entirely on the client side, pulling structured JSON data from a directory, caching it locally in the user's browser, and tracking their daily reading and prayer progress dynamically.
+The application operates 100% on the client side, fetching structured JSON curriculum from a configurable repository, caching content offline in the browser (`localStorage`), tracking reading progress, and providing rich tools for personal quiet time and small group discussions.
+
+---
+
+## Key Pillars & Core Purpose
+
+* **Rooted in Scripture**: Daily readings with inline scripture text (Berean Standard Bible - BSB) and deep-linking to **Bible.com (YouVersion)** across 10 major English translations.
+* **Formed in Character**: In-depth devotional reflections, historical/cultural context, word studies, and dedicated personal prayers.
+* **Equipped for Community**: Facilitator discussion questions, practical action points, and 1-click WhatsApp sharing to foster growth in small groups and ministry teams.
+
+---
+
+## Active Curriculum & Reading Plans
+
+The repository comes pre-loaded with curated discipleship curriculum:
+
+1. **Apostolic Prayers: Cultivating Wisdom, Power, and Love** (12 Sessions)
+   - A deep devotional study on prayer, spiritual formation, and kingdom growth drawn from the transformative prayers of the Apostle Paul.
+2. **Lessons in Leadership: Biblical Wisdom from God's Servants** (6 Sessions)
+   - A study on character, calling, and resilience drawn from the lives, struggles, and triumphs of biblical figures.
+3. **Growing Leaders: 30-Lesson Leadership Journey** (30 Lessons)
+   - A 30-lesson leadership journey across 6 foundational modules exploring calling, integrity, character in the secret place, gifts, and intimacy with God.
+4. **With Christ in the School of Prayer** (31 Days)
+   - Andrew Murray's classic devotional exploring the secrets, authority, and ministry of prevailing prayer.
+5. **Archived Plans** (Category Sub-Folder)
+   - Contains past church-wide campaigns (e.g. *2026 14-Day Fast & Pray Prayer Guide*).
 
 ---
 
 ## App Features & Content Structure
 
-To make this application as impactful and interactive as possible, it supports two types of plans: **Bible Reading Plans** and **Prayer Guides**. The content is organized day-by-day and includes:
+Each daily lesson/session in a plan contains up to 6 modular sections:
 
-1. **Scripture Passages (Mandatory)**: A list of Bible references to read. **Each day must contain at least 1 passage reference**. The app supports a hybrid rendering model:
-   - **Inline Display**: If the creator includes the text of the scripture directly in the JSON file, the app renders it inline in a clean, highly readable layout.
-   - **External Reader Link**: If the text is not included, the app renders a button that links directly to BibleGateway.
-2. **Dynamic Bible Translation Overrides**: Users can select their preferred Bible version (e.g., NIV, ESV, NASB, CUV, AVB) in the Settings. When opening external links to BibleGateway, the app dynamically updates the version query parameter to match the user's choice.
-3. **Multi-language App Internationalization (i18n)**: The application's UI is localized into **English**, **Chinese (Simplified/Traditional)**, and **Bahasa Melayu (BM)**. Adding future languages (like Spanish or Indonesian) is as simple as adding a translation dictionary file.
-4. **Daily Devotional/Reflection**: Inspirational reading material written by pastors or ministry leaders, featuring clean typography for maximum legibility.
-5. **Rich Devotional Media**: Each day can include one optional image, one video link (e.g., YouTube/Vimeo embed), and one audio link (e.g., podcast/sermonette mp3) to enrich the devotional.
-6. **Prayer Topics** *(Primary focus for Prayer Guides)*: Specific prayer requests, targets (e.g., local community, world missions, family), and guided prayer text.
-7. **Reflection Questions**: Questions designed to help readers contemplate the passages and devotional content personally or in a small group context.
-8. **Action Steps (List)**: Practical tasks or challenges to help readers put their faith into action during the day.
-9. **Quiet Time Timer**: An interactive, visual count-up/countdown timer to assist users in dedicated silent reflection or prayer.
-10. **Progress Tracking**: Automatic progress bars, checkboxes for completed elements, and a calendar grid to navigate through days and see their history.
-
----
-
-## Language & Translation Setup (i18n)
-
-The app features a lightweight localization hook. The UI translations are separated into dictionary files:
-- `src/locales/en.ts` (English)
-- `src/locales/zh.ts` (Chinese - 中文)
-- `src/locales/ms.ts` (Bahasa Melayu - BM)
-
-Adding a new language (e.g., `es.ts` for Spanish or `id.ts` for Indonesian) is done by creating the file and adding it to the language manager in `src/utils/i18n.ts`.
-
----
-
-## Ways to Make JSON Plan Creation Easier
-
-Writing raw JSON files can be difficult for non-technical church staff. Here are several methods we recommend to simplify content creation:
-
-### 1. The Visual Form Builder (Recommended)
-We can build a hidden **"Creator Portal"** or admin page in the app (e.g., `/create.html` or accessible via a button in settings). This page displays a clean, user-friendly form where creators can:
-- Fill out text fields for title, descriptions, etc.
-- Add passages, prayer points, reflection questions, and action steps dynamically.
-- Upload media links.
-- View a live mobile-responsive preview of their day.
-- Click a button to automatically download the compiled `.json` file, ready to be uploaded to their website.
-
-### 2. Google Sheets to JSON Converter
-Creators write their reading plans in a shared Google Sheet or Microsoft Excel sheet where:
-- Columns are mapped to plan fields (e.g., `Day`, `Title`, `Passages`, `Devotional Content`, `Image URL`, `Video URL`, `Audio URL`, `Prayer Points`, etc.).
-- Multiple rows represent consecutive days.
-- A simple importer tool inside the app's admin page allows creators to upload the exported `.csv` or paste a Google Sheets share link, instantly converting it into the app's JSON format.
-
-### 3. Dedicated AI Prompts (Self-Service)
-Pastors can paste raw sermon series outlines or word documents directly into an LLM using our tailored **AI Prompt for Content Creators** (detailed below) to receive a perfect JSON file.
+1. **Scripture Passages (Mandatory)**: 
+   - **Inline Display**: Verse text rendered directly within the app card for distraction-free reading.
+   - **External Bible.com Link**: Directly opens the specific chapter/verse on Bible.com in the user's preferred translation (`BSB`, `ESV`, `CSB`, `NIV`, `NLT`, `NKJV`, `NASB2020`, `MSG`, `NRSVUE`, `AMP`).
+2. **Context & Devotional Reflection**:
+   - Historical & cultural background, original language insights (lay-friendly transliterated word studies), and practical life application.
+3. **Personal Prayer (`prayers`)**:
+   - A dedicated scriptural prayer card formatted in the first person for personal quiet time.
+4. **Facilitator & Small Group Discussion (`reflect`)**:
+   - Targeted discussion questions designed for community sharing and group application.
+5. **Posture & Practice (`practice`)**:
+   - Tangible action steps to live out the truth during the week.
+6. **Community Sharing & WhatsApp Integration**:
+   - 1-click **WhatsApp button** formatting a clean summary, passage references, and direct deep-link to the session for group chats.
+   - Native Web Share API support on mobile and 1-click clipboard copy on desktop.
+7. **Session Navigation**:
+   - Symmetrical full-width top and bottom drop-down popovers with live scroll-to-active session tracking.
+   - Sequential Previous / Next controls.
+8. **Settings & Customization**:
+   - Dark / Light mode toggle.
+   - Adjustable font sizing (`small`, `medium`, `large`, `xl`).
+   - Advanced Settings: Bible.com translation selector, manual cache sync / revalidation, restart plan progress, and whole-app reset.
 
 ---
 
 ## JSON Data Formats
 
-### 1. The Plan Registry: `plans.json`
-Place this file in the `public/` directory of the web server. It acts as the catalog that the app fetches to list available plans. The registry can be structured either as a **flat array** (legacy) or a **branded object** (recommended) for custom church white-labeling:
+### 1. The Plan Catalog: `plans.json`
+Located in `public/plans.json` (and mirrored to `dist/plans.json`). It acts as the root registry that the application loads:
 
-#### A. Branded Registry Format (Recommended)
 ```json
 {
-  "organization": {
-    "name": "Faith Community Church",
-    "logoUrl": "https://faithchurch.org/assets/logo.png",
-    "website": "https://faithchurch.org",
-    "email": "info@faithchurch.org"
+  "customization": {
+    "name": "EQUIP: Rooted and Formed",
+    "website": "https://yourchurch.org",
+    "email": "info@yourchurch.org"
   },
   "plans": [
     {
-      "id": "30-days-gospels",
-      "title": "30 Days in the Gospels",
-      "description": "Walk through the life, teachings, and resurrection of Jesus across the four gospels.",
+      "id": "prayers-of-paul",
+      "title": "Apostolic Prayers: Cultivating Wisdom, Power, and Love",
+      "description": "A 12-session devotional study on prayer, spiritual formation, and kingdom growth drawn from the transformative prayers of Paul.",
       "type": "reading",
-      "totalItems": 30,
-      "url": "plans/30-days-gospels.json",
-      "creator": "Faith Community Church",
-      "version": "1.1",
-      "iconUrl": "https://images.unsplash.com/photo-1507434965515-61970f2bd7c6?auto=format&fit=crop&w=320&h=320&q=80"
+      "totalItems": 12,
+      "url": "plans/prayers-of-paul.json",
+      "creator": "Prayers of Paul",
+      "version": "1.0",
+      "created": "2026-08-24",
+      "lastUpdated": "2026-08-24",
+      "tags": ["Prayer", "Spiritual Formation", "Discipleship"],
+      "featured": true
+    },
+    {
+      "id": "archived-plans",
+      "title": "Archived Plans",
+      "description": "Archived reading and prayer plans from past church campaigns.",
+      "type": "category",
+      "url": "plans/archived/plans.json",
+      "tags": ["Archived"]
     }
   ]
 }
 ```
 
-#### B. Flat Registry Format (Legacy)
-```json
-[
-  {
-    "id": "30-days-gospels",
-    "title": "30 Days in the Gospels",
-    "description": "Walk through the life, teachings, and resurrection of Jesus across the four gospels.",
-    "type": "reading",
-    "totalItems": 30,
-    "url": "plans/30-days-gospels.json",
-    "creator": "Faith Community Church",
-    "version": "1.1"
-  }
-]
-```
-
-### 2. Plan Detail Structure: `plans/[plan-id].json`
-Each plan has its own JSON file describing its metadata and an array of items.
+### 2. Plan Curriculum Format: `[plan-id].json`
+Located in `public/plans/[plan-id].json`. Each file contains the full structured curriculum:
 
 ```json
 {
-  "id": "30-days-gospels",
-  "title": "30 Days in the Gospels",
+  "id": "prayers-of-paul",
+  "title": "Apostolic Prayers: Cultivating Wisdom, Power, and Love",
+  "description": "A 12-session devotional study...",
   "type": "reading",
+  "created": "2026-08-24",
   "items": [
     {
       "item": 1,
-      "title": "The Word Became Flesh",
+      "title": "A Heart for All People",
       "passages": [
         {
-          "reference": "John 1:1-4",
-          "url": "https://www.biblegateway.com/passage/?search=John+1%3A1-4&version=NIV",
-          "text": "[Optional] In the beginning was the Word, and the Word was with God, and the Word was God..."
+          "reference": "1 Timothy 2:1-4",
+          "url": "https://www.bible.com/bible/3034/1TI.2.1-4.BSB"
         }
       ],
       "devotional": {
-        "author": "Pastor Marcus",
-        "content": "Before time began, Jesus existed. He is the true light that enters the darkness..."
-      },
-      "media": {
-        "image": {
-          "url": "https://images.unsplash.com/photo-1507434965515-61970f2bd7c6?auto=format&fit=crop&w=800&q=80",
-          "caption": "The Light shines in the darkness."
-        },
-        "video": {
-          "url": "https://www.youtube.com/watch?v=G-2e9mMf7E8",
-          "title": "Bible Project: John 1 Overview"
-        },
-        "audio": {
-          "url": "https://church-sermons.s3.amazonaws.com/devotionals/john-1.mp3",
-          "title": "John 1 Devotional Audio Podcast"
-        }
+        "author": "Reading Plan",
+        "content": "### Context & Insight\n\nPaul writes to Timothy in Ephesus...\n\n### Widening the Circle of Grace\n\nPrayer is the ultimate cure for self-centeredness...\n\n> “We pray because every seed needs spiritual covering.” — Marcus Yong"
       },
       "prayers": [
         {
-          "topic": "Seeking Truth",
-          "description": "Pray for a heart that is receptive to the light of Christ today."
+          "topic": "Personal Prayer",
+          "description": "Father in heaven, enlarge my heart today..."
         }
       ],
       "reflect": [
-        "What does it mean for Jesus to be the 'Word'?",
-        "How can you let His light shine in your circle of influence today?"
+        "Who is one person in authority or in your daily life you find difficult to pray for?",
+        "How does knowing you have direct access to God encourage you to intercede for others?"
       ],
       "practice": [
-        "Reach out to someone who is going through a hard time and share a word of encouragement.",
-        "Write down John 1:1 on a sticky note and place it where you will see it throughout the day."
+        "**Pray for Leaders**: Spend 3 minutes praying for national and local leaders.",
+        "**Advocate in Secret**: Choose one difficult colleague or neighbor and silently pray blessing over them."
       ]
     }
   ]
@@ -163,105 +143,35 @@ Each plan has its own JSON file describing its metadata and an array of items.
 
 ---
 
-## AI Prompt for Content Creators
+## Development & Build
 
-Churches can copy the prompt below and paste it into any modern LLM (e.g., ChatGPT, Claude, Gemini) along with a text document containing their devotional or prayer guide to output the correct format.
+### Prerequisites
+- Node.js (v18+)
+- npm or yarn
 
-```text
-You are a structural data formatting assistant. Your task is to compile plain-text devotional or prayer guides into a valid, strict JSON file compatible with the Bible Reading & Prayer Guide App.
+### Commands
+```bash
+# Install dependencies
+npm install
 
-I will provide you with a text document representing the plan, including the title, description, and day-by-day readings.
+# Start local development server
+npm run dev
 
-### JSON SCHEMA
-Translate the input text into a single JSON object matching this structure:
+# Build production bundle (TypeScript check & Vite build)
+npm run build
 
-{
-  "id": "[kebab-case-plan-unique-id]",
-  "title": "[Title of the Plan]",
-  "type": "reading" | "prayer",
-  "iconUrl": "[OPTIONAL: URL to 1:1 listing icon image or omit if not provided]",
-  "items": [
-    {
-      "item": 1,
-      "title": "[Title of the Session]",
-      "passages": [
-        {
-          "reference": "[Book Chapter:Verse-Verse]",
-          "url": "https://www.biblegateway.com/passage/?search=[URL_ENCODED_REFERENCE]&version=NIV",
-          "text": "[OPTIONAL: Include the full scripture text block if provided, otherwise omit]"
-        }
-      ],
-      "devotional": {
-        "author": "[Author Name - omit if unknown/not specified]",
-        "content": "[Full paragraph text of the devotional. Use normal paragraph spacing.]"
-      },
-      "media": {
-        "image": {
-          "url": "[URL to image or omit]",
-          "caption": "[Optional caption for the image]"
-        },
-        "video": {
-          "url": "[URL to Youtube/Vimeo video or omit]",
-          "title": "[Title of the video link]"
-        },
-        "audio": {
-          "url": "[URL to MP3/podcast audio file or omit]",
-          "title": "[Title of the audio track]"
-        }
-      },
-      "prayers": [
-        {
-          "topic": "[Topic of the prayer, e.g., Missions, Community, Gratitude]",
-          "description": "[Specific guidance or written prayer text]"
-        }
-      ],
-      "reflect": [
-        "[Reflection question 1?]",
-        "[Reflection question 2?]"
-      ],
-      "practice": [
-        "[Practical application challenge 1]",
-        "[Practical application challenge 2]"
-      ]
-    }
-  ]
-}
-
-### Formatting & Schema Rules:
-1. Every day MUST have at least 1 scripture passage reference populated in the "passages" array. Empty arrays are not allowed. If the source text is a prayer guide and does not specify a passage reference, select a relevant default scripture or request the user to provide one.
-2. Make sure to generate standard URLs for BibleGateway. Replace spaces in the reference with '+' and colons with '%3A' (e.g., "John 3:16" becomes "https://www.biblegateway.com/passage/?search=John+3%3A16&version=NIV"). Use the NIV version by default unless another translation is specified in the text.
-3. If the text of the Bible passage is included in the source document, extract it exactly and populate the "text" property for that passage. This allows the app to render the Bible text inline so users don't have to leave the app. If the text is not in the source document, do not include the "text" property in the JSON.
-4. If no media is provided, please still output the "media" object with empty strings for the "url" and "title" keys, rather than omitting it. Each day must support exactly one "image", one "video", and one "audio".
-5. Ensure "actionSteps" is always an array of strings, even if there is only one step.
-6. Ensure every day has a "day" number, starting at 1 and progressing sequentially.
-7. Keep the JSON strictly valid. Do not wrap the JSON in Markdown formatting other than the standard code block. Do not provide conversational responses before or after the JSON block. Output ONLY the JSON block.
-
-Here is the plain-text plan to format:
-=========================================
-[PASTE YOUR PLAIN TEXT CONTENT HERE]
-=========================================
+# Preview production build locally
+npm run preview
 ```
-
-> [!TIP]
-> For complete, copy-pasteable plain-text templates that you can customize before sending to the AI, refer to the [CREATORS_GUIDE.md](file:///Users/victorgoh/Projects/bible-plan-reader/CREATORS_GUIDE.md) file in this repository.
 
 ---
 
-## 🔗 Custom URL Sharing & Link Parameters
+## Deployment & Hosting
 
-Churches can distribute the web reader with query parameters in the URL to automatically override settings for their users:
+The compiled output in `dist/` is completely static and can be deployed directly to:
+* **GitHub Pages** (via GitHub Actions)
+* **Cloudflare Pages**
+* **Firebase Hosting** / **Vercel** / **Netlify** / **AWS S3**
 
-1. **Load Custom Catalog (`?repo=[URL]`)**:
-   Points the app to a custom `plans.json` file hosted anywhere on the web. The app will fetch that catalog, apply any embedded organization branding styling, and save the custom repository source in the user's browser settings.
-   ```text
-   https://bible-reader.pages.dev/?repo=https://mychurch.org/bible-app/plans.json
-   ```
-
-2. **Launch Plan Directly (`?plan=[URL]`)**:
-   Starts a specific reading plan automatically on Day 1. You can optionally couple this with `&start=YYYY-MM-DD` to anchor the calendar.
-   ```text
-   https://bible-reader.pages.dev/?plan=https://mychurch.org/bible-app/plans/john-study.json&start=2026-12-01
-   ```
-
-*Note: Custom hosted JSON endpoints must enable CORS (Cross-Origin Resource Sharing) with the response header `Access-Control-Allow-Origin: *` to load correctly in user web browsers. GitHub Pages and Cloudflare Pages enable this automatically.*
-
+For detailed deployment instructions, see [HOSTING.md](HOSTING.md).
+For guide on writing and converting custom curriculum, see [CREATORS_GUIDE.md](CREATORS_GUIDE.md).

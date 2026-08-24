@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import type { Plan, UserPlanMetadata, UserPreferences, Organization } from './types';
+import type { Plan, UserPlanMetadata, UserPreferences, Customization } from './types';
 import { translate } from './utils/i18n';
 import { PlanSelector } from './components/PlanSelector';
 import SessionSelectorList from './components/SessionSelectorList';
@@ -22,7 +22,6 @@ import {
   Sun,
   ClipboardList,
   Settings,
-  BookOpen,
   Globe,
   Flame,
   FileText,
@@ -38,9 +37,10 @@ import {
   Scroll,
   RotateCcw,
   RefreshCw,
-  Church,
+  Compass,
   X,
-  Share2
+  Share2,
+  Trash2
 } from 'lucide-react';
 
 // Custom WhatsApp SVG Icon
@@ -90,7 +90,7 @@ export const migratePlanSchema = (plan: any): Plan => {
 };
 
 export const App: React.FC = () => {
-  const CACHE_VERSION = 'v1.4';
+  const CACHE_VERSION = 'v1.5';
   try {
     if (localStorage.getItem('app_plan_cache_version') !== CACHE_VERSION) {
       Object.keys(localStorage).forEach((key) => {
@@ -115,7 +115,7 @@ export const App: React.FC = () => {
     return localStorage.getItem('custom_plans_repository') || '/plans.json';
   });
 
-  const [orgInfo, setOrgInfo] = useState<Organization | null>(null);
+  const [customizationInfo, setCustomizationInfo] = useState<Customization | null>(null);
 
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     const local = localStorage.getItem('app_theme');
@@ -167,7 +167,11 @@ export const App: React.FC = () => {
   const [shareStatus, setShareStatus] = useState<string | null>(null);
   const [headerExpanded, setHeaderExpanded] = useState<boolean>(false);
   
-  const [showSelector, setShowSelector] = useState<boolean>(false);
+  const [showSelector, setShowSelector] = useState<boolean>(() => {
+    const activeId = localStorage.getItem('active_plan_id');
+    const params = new URLSearchParams(window.location.search);
+    return !activeId && !params.get('plan');
+  });
   const [showSettings, setShowSettings] = useState<boolean>(false);
   const [showAdvancedSettings, setShowAdvancedSettings] = useState<boolean>(false);
   const [showItemSelector, setShowItemSelector] = useState<boolean>(false);
@@ -324,38 +328,20 @@ export const App: React.FC = () => {
         return res.json();
       })
       .then((data) => {
-        if (data && !Array.isArray(data) && data.organization) {
-          setOrgInfo(data.organization as Organization);
+        if (data && !Array.isArray(data) && data.customization) {
+          setCustomizationInfo(data.customization as Customization);
         } else {
-          setOrgInfo(null);
+          setCustomizationInfo(null);
         }
 
-        const plansList = Array.isArray(data) ? data : (data?.plans || []);
         const activeId = localStorage.getItem('active_plan_id');
-        if (plansList.length > 0) {
-          const matchedItem = activeId ? plansList.find((p: any) => p.id === activeId) : null;
-          if (!matchedItem && !activeId) {
-            const fallbackItem = plansList.find((p: any) => p.type !== 'category') || plansList[0];
-            if (fallbackItem && fallbackItem.url) {
-              const fbUrl = fallbackItem.url.startsWith('http') || fallbackItem.url.startsWith('/') ? fallbackItem.url : `/${fallbackItem.url}`;
-              const cacheBustFb = fbUrl.includes('?') ? `${fbUrl}&_t=${Date.now()}` : `${fbUrl}?_t=${Date.now()}`;
-              fetch(cacheBustFb, { cache: 'no-cache' })
-                .then((res) => res.json())
-                .then((rawPlan) => {
-                  const planData = migratePlanSchema(rawPlan);
-                  localStorage.setItem(`cached_plan_${fallbackItem.id}`, JSON.stringify(planData));
-                  localStorage.setItem('active_plan_id', fallbackItem.id);
-                  localStorage.setItem(`active_plan_url_${fallbackItem.id}`, fallbackItem.url);
-                  setActivePlan(planData);
-                })
-                .catch((e) => console.error('Error loading fallback plan:', e));
-            }
-          }
+        if (!activeId) {
+          setShowSelector(true);
         }
       })
       .catch((err) => {
-        console.error('Error loading organization details:', err);
-        setOrgInfo(null);
+        console.error('Error loading customization details:', err);
+        setCustomizationInfo(null);
       });
   }, [repositoryUrl]);
 
@@ -437,8 +423,8 @@ export const App: React.FC = () => {
       document.title = activePlan.title;
       trackPageView(window.location.pathname + window.location.search, activePlan.title);
     } else {
-      document.title = 'Bible Reading & Prayer Guide';
-      trackPageView(window.location.pathname + window.location.search, 'Bible Reading & Prayer Guide');
+      document.title = 'EQUIP: Rooted and Formed';
+      trackPageView(window.location.pathname + window.location.search, 'EQUIP: Rooted and Formed');
     }
   }, [activePlan, activeItemConfig, currentItem]);
 
@@ -513,6 +499,13 @@ export const App: React.FC = () => {
       updateMetadata(resetMeta);
       setCurrentItem(1);
       setShowSettings(false);
+    }
+  };
+
+  const handleResetApp = () => {
+    if (window.confirm('Reset all app data? This will clear all downloaded plans, reading progress, and local settings, and return to the plan selection screen.')) {
+      localStorage.clear();
+      window.location.href = window.location.origin + window.location.pathname;
     }
   };
 
@@ -631,13 +624,13 @@ export const App: React.FC = () => {
       >
         <div className="brand-section" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)' }}>
-            <Church size={headerExpanded ? 24 : 18} />
+            <Compass size={headerExpanded ? 24 : 18} strokeWidth={2.2} />
           </span>
           
           {headerExpanded ? (
             <div style={{ display: 'flex', flexDirection: 'column', animation: 'fadeIn 0.2s ease' }}>
               <h1 style={{ fontSize: '1.15rem', margin: 0, fontWeight: 700 }}>
-                {orgInfo ? orgInfo.name : t('appTitle')}
+                {customizationInfo ? customizationInfo.name : t('appTitle')}
               </h1>
               <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', margin: 0 }}>
                 {t('subtitle')}
@@ -645,7 +638,7 @@ export const App: React.FC = () => {
             </div>
           ) : (
             <span style={{ fontSize: '0.88rem', color: 'var(--text-muted)', fontWeight: 600 }}>
-              {orgInfo ? orgInfo.name : t('appTitle')}
+              {customizationInfo ? customizationInfo.name : t('appTitle')}
             </span>
           )}
         </div>
@@ -714,18 +707,49 @@ export const App: React.FC = () => {
       {!activePlan ? (
         <div className="empty-view">
           <div className="empty-view-icon" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
-            <BookOpen size={48} />
+            <Compass size={48} strokeWidth={2.2} />
           </div>
-          <h2>Welcome to {orgInfo ? orgInfo.name : t('appTitle')}</h2>
-          <p>{orgInfo ? `Browse plans provided by ${orgInfo.name} to begin your daily devotion.` : 'Please select a reading plan to begin your personal reflection or small group study.'}</p>
+          <h2>Welcome to {customizationInfo ? customizationInfo.name : t('appTitle')}</h2>
+          <p style={{ margin: '0 0 4px 0', color: 'var(--text-muted)', fontSize: '0.92rem' }}>
+            Select a reading plan to:
+          </p>
+
+          <ul style={{ 
+            listStyle: 'none', 
+            padding: '14px 18px', 
+            margin: '4px 0 14px 0', 
+            display: 'flex', 
+            flexDirection: 'column', 
+            gap: '10px', 
+            textAlign: 'left', 
+            maxWidth: '390px', 
+            width: '100%',
+            background: 'var(--bg-card)',
+            border: '1px solid var(--border-glass)',
+            borderRadius: '14px',
+            boxSizing: 'border-box'
+          }}>
+            <li style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '0.9rem', color: 'var(--text-main)' }}>
+              <span style={{ color: 'var(--primary)', display: 'inline-flex', flexShrink: 0 }}><Check size={16} strokeWidth={2.5} /></span>
+              <span>Guide your personal quiet time & reflection</span>
+            </li>
+            <li style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '0.9rem', color: 'var(--text-main)' }}>
+              <span style={{ color: 'var(--primary)', display: 'inline-flex', flexShrink: 0 }}><Check size={16} strokeWidth={2.5} /></span>
+              <span>Facilitate small group discussions</span>
+            </li>
+            <li style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '0.9rem', color: 'var(--text-main)' }}>
+              <span style={{ color: 'var(--primary)', display: 'inline-flex', flexShrink: 0 }}><Check size={16} strokeWidth={2.5} /></span>
+              <span>Learn, pray, and grow together in community</span>
+            </li>
+          </ul>
           
           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center', marginTop: '16px' }}>
             <button className="btn btn-primary" onClick={() => setShowSelector(true)}>
               Browse Available Plans
             </button>
-            {orgInfo?.website && (
+            {customizationInfo?.website && (
               <a 
-                href={orgInfo.website} 
+                href={customizationInfo.website} 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn btn-secondary"
@@ -992,6 +1016,41 @@ export const App: React.FC = () => {
                     </div>
                   )}
 
+                  {/* Personal / Guided Prayers */}
+                  {activeItemConfig.prayers && activeItemConfig.prayers.length > 0 && (
+                    <div className="section-block prayer-section" style={{ marginTop: '28px', paddingTop: '20px', borderTop: '1px solid var(--border-glass)' }}>
+                      <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '14px', color: 'var(--primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        🙏 Personal Prayer
+                      </h3>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                        {activeItemConfig.prayers.map((pr, idx) => (
+                          <div
+                            key={idx}
+                            style={{
+                              background: 'var(--bg-card)',
+                              border: '1px solid var(--border-glass)',
+                              borderLeft: '4px solid var(--primary)',
+                              borderRadius: '10px',
+                              padding: '14px 18px',
+                              fontSize: '0.95rem',
+                              lineHeight: 1.7,
+                              fontStyle: 'italic'
+                            }}
+                          >
+                            {pr.topic && pr.topic !== 'Personal Prayer' && (
+                              <div style={{ fontWeight: 700, fontStyle: 'normal', color: 'var(--primary)', marginBottom: '6px', fontSize: '0.9rem' }}>
+                                {pr.topic}
+                              </div>
+                            )}
+                            <div className="markdown-inline-content">
+                              <ReactMarkdown>{pr.description}</ReactMarkdown>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
                   {/* Reflection & Group Discussion Questions */}
                   {activeItemConfig.reflect && activeItemConfig.reflect.length > 0 && (
                     <div className="section-block reflection-section" style={{ marginTop: '28px', paddingTop: '20px', borderTop: '1px solid var(--border-glass)' }}>
@@ -1117,7 +1176,7 @@ export const App: React.FC = () => {
                     </div>
 
                     {/* Previous / Next / Complete Controls */}
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '8px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '8px', position: 'relative' }}>
                       <button
                         className="btn btn-secondary"
                         disabled={currentItem <= 1}
@@ -1144,7 +1203,7 @@ export const App: React.FC = () => {
                       </button>
 
                       {/* Bottom Selector Popover Button */}
-                      <div style={{ position: 'relative' }}>
+                      <div>
                         <button
                           className="session-selector-btn"
                           onClick={() => setShowBottomSelector(!showBottomSelector)}
@@ -1166,51 +1225,51 @@ export const App: React.FC = () => {
                           <span>{`${currentItem} of ${totalItems}`}</span>
                           <ChevronDown size={14} />
                         </button>
-
-                        {showBottomSelector && (
-                          <div 
-                            className="item-selector-popover bottom"
-                            style={{
-                              position: 'absolute',
-                              bottom: '100%',
-                              left: '50%',
-                              transform: 'translateX(-50%)',
-                              width: '280px',
-                              background: 'var(--bg-card)',
-                              backdropFilter: 'blur(var(--blur-glass))',
-                              border: '1px solid var(--border-glass)',
-                              borderRadius: '16px',
-                              padding: '16px',
-                              marginBottom: '12px',
-                              boxShadow: 'var(--shadow-lg)',
-                              animation: 'fadeIn 0.2s ease',
-                              display: 'flex',
-                              flexDirection: 'column',
-                              gap: '12px',
-                              zIndex: 100,
-                              boxSizing: 'border-box'
-                            }}
-                          >
-                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-muted)' }}>
-                              <span>Contents</span>
-                              <span>{currentItem} / {totalItems}</span>
-                            </div>
-
-                            <SessionSelectorList
-                              ref={bottomSessionListRef}
-                              items={activePlan.items}
-                              currentItem={currentItem}
-                              completedItems={planMetadata.progress}
-                              planType={activePlan.type}
-                              onSelect={(itemNumber) => {
-                                setCurrentItem(itemNumber);
-                                setShowBottomSelector(false);
-                                window.scrollTo({ top: 0, behavior: 'smooth' });
-                              }}
-                            />
-                          </div>
-                        )}
                       </div>
+
+                      {/* Wide Bottom Contents Popover */}
+                      {showBottomSelector && (
+                        <div 
+                          className="item-selector-popover bottom"
+                          style={{
+                            position: 'absolute',
+                            bottom: '100%',
+                            left: 0,
+                            right: 0,
+                            background: 'var(--bg-card)',
+                            backdropFilter: 'blur(var(--blur-glass))',
+                            border: '1px solid var(--border-glass)',
+                            borderRadius: '16px',
+                            padding: '16px',
+                            marginBottom: '12px',
+                            boxShadow: 'var(--shadow-lg)',
+                            animation: 'fadeIn 0.2s ease',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: '12px',
+                            zIndex: 100,
+                            boxSizing: 'border-box'
+                          }}
+                        >
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-muted)' }}>
+                            <span>Contents</span>
+                            <span>{currentItem} / {totalItems}</span>
+                          </div>
+
+                          <SessionSelectorList
+                            ref={bottomSessionListRef}
+                            items={activePlan.items}
+                            currentItem={currentItem}
+                            completedItems={planMetadata.progress}
+                            planType={activePlan.type}
+                            onSelect={(itemNumber) => {
+                              setCurrentItem(itemNumber);
+                              setShowBottomSelector(false);
+                              window.scrollTo({ top: 0, behavior: 'smooth' });
+                            }}
+                          />
+                        </div>
+                      )}
 
                       {/* Mark Done / Completed Button */}
                       <button 
@@ -1390,13 +1449,51 @@ export const App: React.FC = () => {
                         This only changes what translation is opened when clicking external links to Bible.com. The default BSB verses displayed in the app are not changed.
                       </p>
                     </div>
+
+                    {/* Reset App Data Option */}
+                    <div style={{ borderTop: '1px solid var(--border-glass)', paddingTop: '10px', marginTop: '6px' }}>
+                      <label style={{ display: 'block', marginBottom: '4px', fontWeight: 600, fontSize: '0.84rem', color: 'var(--danger, #ef4444)' }}>
+                        Reset Application
+                      </label>
+                      <p style={{ margin: '0 0 8px 0', fontSize: '0.76rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>
+                        Clears all cached plans, saved reading progress, and local settings, and returns to the plan selection screen.
+                      </p>
+                      <button
+                        type="button"
+                        className="btn btn-danger"
+                        onClick={handleResetApp}
+                        style={{
+                          width: '100%',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          gap: '6px',
+                          padding: '8px 12px',
+                          fontSize: '0.84rem',
+                          fontWeight: 600
+                        }}
+                      >
+                        <Trash2 size={15} /> Reset App & Return to Select Plan
+                      </button>
+                    </div>
                   </div>
                 )}
               </div>
 
+              {/* Close Button as First Button in Bottom Controls */}
+              <div style={{ marginTop: '8px', paddingTop: '16px', borderTop: '1px solid var(--border-glass)' }}>
+                <button 
+                  className="btn btn-primary" 
+                  style={{ width: '100%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '10px', fontWeight: 600 }} 
+                  onClick={() => setShowSettings(false)}
+                >
+                  <X size={16} /> {t('settings.close')}
+                </button>
+              </div>
+
               {/* Sync & Refresh Plan Button */}
               {activePlan && (
-                <div style={{ marginTop: '8px', paddingTop: '16px', borderTop: '1px solid var(--border-glass)' }}>
+                <div>
                   <button 
                     className="btn btn-secondary" 
                     style={{ width: '100%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '10px' }} 

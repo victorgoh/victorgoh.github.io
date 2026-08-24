@@ -1,0 +1,26 @@
+{
+  "customization": {
+    "name": "Archived Plans"
+  },
+  "plans": [
+    {
+      "id": "2026-fga-14days-fast-pray",
+      "title": "2026 14-Day Prayer Guide (Fast & Pray)",
+      "description": "14-Day Fast & Pray Devotional focusing on the 5 core spiritual themes: To Pray, To Give, To Serve, To Disciple, and To Go.",
+      "type": "prayer_guide",
+      "totalItems": 14,
+      "url": "plans/archived/2026-fga-14days-fast-pray.json",
+      "creator": "FGA",
+      "version": "1.0",
+      "created": "2026-08-23",
+      "lastUpdated": "2026-08-23",
+      "tags": [
+        "Prayer",
+        "Fasting",
+        "Discipleship",
+        "Mission"
+      ],
+      "featured": false
+    }
+  ]
+}

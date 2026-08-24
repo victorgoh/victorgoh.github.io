@@ -1,6 +1,6 @@
 export const en = {
-  appTitle: 'Bible Reading & Prayer Guide',
-  subtitle: 'Bible Reading & Prayer Guide',
+  appTitle: 'EQUIP: Rooted and Formed',
+  subtitle: 'Rooted and Formed in Christ',
   tabs: {
     readReflect: 'Read & Reflect',
     prayer: 'Prayers'
