@@ -149,12 +149,12 @@ const everydayDocuments = [
 
 // 3. Essentials Edition
 const essentialsSource = await readFile(resolve(courseRoot, "GROWING-LEADERS-ESSENTIALS.md"), "utf8");
-const essentialsSections = essentialsSource.split(/\n---\n\n(?=# Session \d+:)/);
+const essentialsSections = essentialsSource.split(/\n---\n\n(?=# Module \d+:)/);
 const essentialsIntro = essentialsSections[0].trim();
 const essentialsModules = essentialsSections.slice(1).map((sec, index) => {
   const modNum = index + 1;
-  const modLabel = modules[index]?.label ?? `Session ${modNum}`;
-  const split = splitModule(sec, `GROWING-LEADERS-ESSENTIALS.md Session ${modNum}`);
+  const modLabel = modules[index]?.label ?? `Module ${modNum}`;
+  const split = splitModule(sec, `GROWING-LEADERS-ESSENTIALS.md Module ${modNum}`);
   return {
     moduleNumber: modNum,
     label: modLabel,
@@ -174,25 +174,23 @@ const essentialsDocuments = [
     markdown: essentialsIntro,
   },
   ...essentialsModules.map((module) => ({
-    id: `essentials-session-${module.moduleNumber}`,
-    file: `GROWING-LEADERS-ESSENTIALS.md#session-${module.moduleNumber}`,
+    id: `essentials-module-${module.moduleNumber}`,
+    file: `GROWING-LEADERS-ESSENTIALS.md#module-${module.moduleNumber}`,
     label: module.label,
-    shortLabel: `Session ${module.moduleNumber}`,
-    kind: "session",
+    shortLabel: `Module ${module.moduleNumber}`,
+    kind: "module",
     edition: "essentials",
     moduleNumber: module.moduleNumber,
-    sessionNumber: module.moduleNumber,
     markdown: module.participant,
   })),
   ...essentialsModules.map((module) => ({
     id: `essentials-facilitator-${module.moduleNumber}`,
-    file: `GROWING-LEADERS-ESSENTIALS.md#session-${module.moduleNumber}-facilitator-guide`,
+    file: `GROWING-LEADERS-ESSENTIALS.md#module-${module.moduleNumber}-facilitator-guide`,
     label: module.label,
-    shortLabel: `Session ${module.moduleNumber} Guide`,
+    shortLabel: `Module ${module.moduleNumber} Guide`,
     kind: "facilitator",
     edition: "essentials",
     moduleNumber: module.moduleNumber,
-    sessionNumber: module.moduleNumber,
     markdown: module.facilitator,
   })),
 ];

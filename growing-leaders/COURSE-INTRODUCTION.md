@@ -14,7 +14,7 @@ You do not need a formal title to begin. Whenever your actions affect others, wh
 
 ## I.2 What this course is about
 
-Growing Leaders is a six-session mentoring journey for new and emerging leaders. Each session explores one part of leadership formation:
+Growing Leaders is a six-module mentoring journey for new and emerging leaders. Each module explores one part of leadership formation:
 
 1. **God Uses Your Story** — noticing how your background and experiences have shaped you.
 2. **God Forms Your Character** — learning what difficulty reveals and develops within you.
@@ -23,11 +23,11 @@ Growing Leaders is a six-session mentoring journey for new and emerging leaders.
 5. **God Shapes How You Lead People** — building healthy relationships and using influence responsibly.
 6. **God Deepens Your Life With Him** — integrating leadership with spiritual depth and continued growth.
 
-The six sessions are an introduction, not a complete account of leadership. They provide a starting point and a simple language for continuing the journey with God and with people who can help you grow.
+The six modules are an introduction, not a complete account of leadership. They provide a starting point and a simple language for continuing the journey with God and with people who can help you grow.
 
 ## I.3 Four dimensions of a growing leader
 
-Each session will invite you to grow in four connected dimensions.
+Each module will invite you to grow in four connected dimensions.
 
 ### I.3.1 Head: What do I need to understand?
 
@@ -45,17 +45,17 @@ Leadership brings what is within us closer to the surface. Responsibility may re
 
 The Hands concern what you do. Leadership ability grows through serving, trying, receiving feedback, learning from mistakes, and trying again.
 
-Each session will connect its main idea to an action, conversation, or skill that you can practise in your present circumstances. You do not need to wait for a more important role. Faithful practice can begin where you are.
+Each module will connect its main idea to an action, conversation, or skill that you can practise in your present circumstances. You do not need to wait for a more important role. Faithful practice can begin where you are.
 
 ### I.3.4 Habits: What will help this become a way of life?
 
 Habits are the small actions you repeat. They help truth move from your Head into your Heart and Hands.
 
-A single good intention can be forgotten when life becomes busy. A small habit creates a regular opportunity to remember, respond, and grow. Each session therefore includes one leadership habit to try. You are not being graded on perfect performance. The aim is to experiment, notice what happens, and learn.
+A single good intention can be forgotten when life becomes busy. A small habit creates a regular opportunity to remember, respond, and grow. Each module therefore includes one leadership habit to try. You are not being graded on perfect performance. The aim is to experiment, notice what happens, and learn.
 
 ## I.4 Six essential practices of a growing leader
 
-Across the six sessions, you will practise a simple progression:
+Across the six modules, you will practise a simple progression:
 
 1. **Notice and Learn** — notice experience and learn what it may be revealing.
 2. **Pause and Bring It Before God** — pause under pressure, then Notice, Name, Receive, and Respond before God.
@@ -87,7 +87,7 @@ Think of this time as a gift of margin: an unhurried conversation with God.
   - *Bite 1 (Mid-week, 15 mins)*: Read the opening scenario, main principle, and Scripture passage on your commute or during lunch.
   - *Bite 2 (Day before meeting, 15 mins)*: Jot down your reflections, pray through the *Bring It Before God* prompts, and pick one insight to bring to the group.
 
-### I.5.3 What each session will ask you to explore
+### I.5.3 What each module will ask you to explore
 
 1. Begin with a familiar leadership situation.
 2. Consider one main leadership principle.
@@ -101,7 +101,7 @@ Think of this time as a gift of margin: an unhurried conversation with God.
 
 The **Bring It Before God** section turns leadership learning into a personal conversation with God. It reminds us that Christian leadership formation is not merely self-improvement. We bring what we have learned and discovered to God, receive what we need from him, and choose a faithful response.
 
-Each session uses four movements:
+Each module uses four movements:
 
 1. **Notice:** Pay attention to what has become significant during the lesson.
 2. **Name:** Speak honestly to God about the gratitude, motive, fear, failure, desire, relationship, or responsibility involved.
@@ -163,7 +163,7 @@ This course is not counselling or trauma therapy. Some reflection may bring pain
 
 ## I.8 What growth may look like
 
-You may not notice dramatic change after every session. Leadership formation is often gradual. Growth may look like:
+You may not notice dramatic change after every module. Leadership formation is often gradual. Growth may look like:
 
 - noticing a reaction before acting on it;
 - asking a better question;
@@ -193,7 +193,7 @@ Finish with a simple prayer in your own words. You might ask God for honesty, co
 
 ## I.10 Facilitator Guide: Leading Meaningful Conversations
 
-If you are facilitating these sessions, your primary role is not to lecture or provide expert answers. You are creating a safe, hospitable, and unhurried space for emerging leaders to reflect, share honestly, and encounter God.
+If you are facilitating these modules, your primary role is not to lecture or provide expert answers. You are creating a safe, hospitable, and unhurried space for emerging leaders to reflect, share honestly, and encounter God.
 
 ### I.10.1 Key Facilitation Principles
 
@@ -201,7 +201,7 @@ If you are facilitating these sessions, your primary role is not to lecture or p
    Aim for participants to do 70% of the talking. Ask open-ended questions (*"What was that experience like for you?"* or *"What did that reveal about your heart?"*) rather than rushing to solve dilemmas.
 
 2. **Model Vulnerability with Healthy Boundaries**  
-   When sharing your own stories or struggles, be honest and authentic without making yourself the central focus of the session. A leader who admits unfinished growth invites others to do the same.
+   When sharing your own stories or struggles, be honest and authentic without making yourself the central focus of the meeting. A leader who admits unfinished growth invites others to do the same.
 
 3. **Honor Time as a Gift (Suggestions, Not Hard Rules)**  
    The minute allocations beside each segment in the 1-hour conversation outlines (e.g., *7 minutes*, *15 minutes*, *10 minutes*) are **practical pacing guides, not rigid laws**:
@@ -213,4 +213,4 @@ If you are facilitating these sessions, your primary role is not to lecture or p
    Reiterate that personal reflections shared in the group remain within the room. Never force anyone to disclose deeper than they are ready to go.
 
 5. **Point Toward Real-World Practice**  
-   Every session should end with concrete intentionality. Ensure each participant leaves with one clear, manageable habit or faithful next step to test before the next session.
+   Every module should end with concrete intentionality. Ensure each participant leaves with one clear, manageable habit or faithful next step to test before the next module.

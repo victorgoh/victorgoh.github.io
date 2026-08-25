@@ -1,7 +1,7 @@
 # Growing Leaders: Everyday Edition
 
-> **A Practical 6-Session Mentoring Journey for Stepping Into Leadership at Church, Work, and Home**  
-> *Clear, grounded, and written for real life.*
+> **A Practical 6-Module Mentoring Journey for Stepping Into Leadership at Church, Work, and Home**  
+> *A grounded, practical approach to Christian leadership for adults balancing work, family, church, and community responsibilities.*
 
 ---
 
@@ -31,7 +31,7 @@ Leadership is one of the primary tools God uses to mature us. Your patience, you
 
 ## I.2 The 4 Areas of Growth
 
-In every session, we explore four connected areas of life:
+In every module, we explore four connected areas of life:
 
 | Dimension | Key Question | What It Looks Like in Daily Life |
 | :--- | :--- | :--- |
@@ -42,20 +42,20 @@ In every session, we explore four connected areas of life:
 
 ---
 
-## I.3 The 6 Essential Leadership Habits
+### The 6 Core Habits
 
-Across the six sessions, you will build six simple, sustainable habits:
+Across the six modules, you will build six simple, sustainable habits:
 
-1. **Notice and Learn** — Notice how your past background and daily reactions shape your decisions.
-2. **Pause and Pray** — When pressure rises, pause and bring what is happening honestly before God (*Notice, Name, Receive, Respond*).
-3. **Write It Down and Follow Through** — Build trust through quiet reliability, clear communication, and healthy personal boundaries.
-4. **Serve, Notice, and Ask** — Discover and sharpen your strengths through active service, noticing good fruit, and welcoming honest feedback.
-5. **Listen Before Responding** — Seek to understand people’s hearts, concerns, and perspectives before offering quick solutions or decisions.
-6. **Abide and Review** — Guard your personal connection with Jesus as your primary source of strength, taking time to review your rhythm each week.
+1. **Notice and Learn:** A 3-minute evening check-in to see where God was at work in your day.
+2. **Pause and Pray:** Taking a 30-second breath before reacting to pressure or conflict.
+3. **Capture and Clarify:** Writing down commitments so nothing important falls through the cracks.
+4. **Encourage and Affirm:** Intentionally calling out God-given strengths in others.
+5. **Listen Before Responding:** Asking good questions and understanding before giving advice.
+6. **Abide and Rest:** Guarding regular unhurried time with God to lead from a full soul.
 
 ---
 
-## I.4 Preparing for Group Sessions (Designed for Busy Schedules)
+## I.4 Preparing for Group Meetings (Designed for Busy Schedules)
 
 We recognize that your week is already full with workplace deadlines, family needs, household responsibilities, and church commitments. 
 
@@ -76,7 +76,7 @@ This personal preparation is **not academic homework, an exam, or a corporate ev
 
 ## I.5 Bring It Before God: A Simple 4-Step Prayer Rhythm
 
-Every session includes a short prayer rhythm called **Bring It Before God**. It helps shift our reflections from mere self-analysis into a life-giving conversation with Jesus:
+Every module includes a short prayer rhythm called **Bring It Before God**. It helps shift our reflections from mere self-analysis into a life-giving conversation with Jesus:
 
 | Step | Action | Description |
 | :--- | :--- | :--- |
@@ -87,7 +87,16 @@ Every session includes a short prayer rhythm called **Bring It Before God**. It 
 
 ---
 
-## I.6 Group Postures & Trust Guidelines
+## I.6 Facilitating with Warmth and Clarity
+
+* **Value Honest Sharing:** Real leadership growth happens when we drop our masks and share real struggles.
+* **Respect Busy Schedules:** Start on time, end on time, and keep the reading accessible.
+* **Keep It Practical:** Finish every module with one clear, manageable step you can test in real life.
+* **Focus on Heart Formation:** Skills matter, but character and love for Jesus matter most.
+
+---
+
+## I.7 Group Postures & Trust Guidelines
 
 When meeting with your mentor or small group, agree together on these shared postures:
 
@@ -95,17 +104,7 @@ When meeting with your mentor or small group, agree together on these shared pos
 * **Be Honest:** Share what is genuine rather than what sounds impressive. We grow faster when we drop our masks.
 * **Be Teachable:** Welcome insights, different perspectives, and gentle feedback from others.
 * **Guard Confidentiality:** Treat everything shared in the room with deep respect and confidentiality.
-* **Keep It Practical:** Finish every session with one clear, manageable step you can test in real life.
-
----
-
-## I.7 Facilitator Quick Guide: Leading Meaningful Adult Discussions
-
-If you are facilitating these sessions:
-1. **Aim for a 70/30 Balance:** Aim for participants to speak 70% of the time while you guide the conversation 30% of the time.
-2. **Ask Open-Ended Follow-Ups:** Instead of giving quick advice, ask: *"What was that like for you?"* or *"What did that reveal about your default reaction?"*
-3. **Model Authentic Vulnerability:** Share relatable examples from your own leadership journey where you are still learning and growing.
-4. **Protect the Finish Line:** Keep an eye on the time so your group leaves at least 10 minutes to share personal next steps and pray for each other.
+* **Keep It Practical:** Finish every module with one clear, manageable step you can test in real life.
 
 ---
 
@@ -806,31 +805,30 @@ Schedule one 30-minute block of solitude and quiet this week. Turn off your phon
 # Facilitator guide
 
 ## Purpose of the Conversation
-Guide participants into sustainable spiritual rhythms, celebrate growth across the 6 sessions, and complete the Personal Leadership Growth Plan.
+Guide participants into sustainable spiritual rhythms, celebrate growth across the 6 modules, and complete the Personal Leadership Growth Plan.
 
 ## 60-Minute Conversation Plan
 
-### 1. Welcome & Course Milestone (8 mins)
-* Open with a prayer of thanksgiving.
-* Celebrate completing all six modules together!
+### 1. Welcome & Celebration (10 mins)
+* Open with a prayer of thanksgiving for what God has done over the six modules.
+* **Check-In:** *"What is one word that describes how you feel about your leadership today compared to when we started?"*
 
-### 2. Scripture & Abiding in Christ (12 mins)
+### 2. Abiding in the Vine (15 mins)
 * Read **John 15:1–8** and **Psalm 23**.
 * **Discussion:**
-  * *"Why is it so easy for leaders to fall into the trap of doing work for God without staying connected to God?"*
-  * *"How does Sabbath rest demonstrate real trust in God?"*
+  * *"Why is it so easy for leaders to slip into running on self-reliance instead of spiritual overflow?"*
+  * *"What soul-care rhythm has helped you most during this course?"*
 
-### 3. Course Review & Personal Transformation (20 mins) ⏱️ *Halfway Point*
-* Go around the room and give each person 2–3 minutes to share their biggest takeaway from the six sessions.
-* Discuss the warning signs of burnout and how to guard against them.
+### 3. Reviewing Our Growth (20 mins) ⏱️ *Halfway Point*
+* Go around the room and give each person 2–3 minutes to share their biggest takeaway from the six modules.
+* Celebrate the growth, vulnerability, and steps of faith taken by each participant.
 
-### 4. Personal Leadership Growth Plan (10 mins)
-* Allow 5 quiet minutes for participants to fill in their Personal Leadership Growth Plan (below).
-* Invite volunteers to share their top commitment.
+### 4. Completing the Leadership Growth Plan (10 mins)
+* Give 5–7 quiet minutes for participants to fill out the 5-point Growth Plan below.
+* Pair up to share one core commitment with a prayer partner.
 
-### 5. Commissioning & Blessing (10 mins)
-* Pray a prayer of blessing over each participant by name.
-* Read **Hebrews 13:20–21** as a closing benediction.
+### 5. Commissioning Prayer & Blessing (5 mins)
+* Close by praying a pastoral blessing over each participant and commissioning them for fruitful, Christ-centered leadership in their spheres of influence.
 
 ---
 

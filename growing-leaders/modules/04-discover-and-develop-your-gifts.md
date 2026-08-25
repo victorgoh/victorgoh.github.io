@@ -255,6 +255,6 @@ Thank God for the grace entrusted to each person and pray for humility, courage,
 - Do not promise a participant a role or platform.
 - Keep gifts connected to character, community, practice, and fruit.
 
-## 4.12 Between sessions
+## 4.12 Between modules
 
-Ask participants whether they have arranged their experiment and feedback conversation. Begin Session 5 by hearing what they tried and what they learned.
+Ask participants whether they have arranged their experiment and feedback conversation. Begin Module 5 by hearing what they tried and what they learned.

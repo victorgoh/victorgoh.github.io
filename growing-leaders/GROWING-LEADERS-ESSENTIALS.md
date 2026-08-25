@@ -27,7 +27,7 @@ You do not need a special title or badge to be a leader. Whenever you help someo
 
 ## The 4 H's: How a Leader Grows
 
-In every session, you will look at four parts of your life:
+In every module, you will look at four parts of your life:
 
 | Area | Question | What It Means |
 | :--- | :--- | :--- |
@@ -38,7 +38,7 @@ In every session, you will look at four parts of your life:
 
 ---
 
-## The 6 Sessions at a Glance
+## The 6 Modules at a Glance
 
 1. **God Uses Your Story** — How your past shapes who you are today.
 2. **God Forms Your Character** — How hard times grow your patience and trust.
@@ -63,7 +63,7 @@ You do not have to write long essays. This is not an exam or a formal evaluation
 
 ---
 
-# Session 1: God Uses Your Story
+# Module 1: God Uses Your Story
 
 > **Big Idea:** God uses your background, your family, and your life experiences to shape how you lead. He can heal past hurts and use your story for good.  
 > **Key Bible Passage:** Genesis 50:15–21 (Joseph forgives his brothers)  
@@ -97,7 +97,7 @@ Joseph could say to his brothers: *"You intended to harm me, but God intended it
 
 ---
 
-### 3. The 4 H's for Session 1
+### 3. The 4 H's for Module 1
 
 * 🧠 **Head (What to Know):** Your past affects how you act today. When you know your story, you can make better choices as a leader.
 * ❤️ **Heart (Who to Become):** A leader who brings past hurts and fears to God instead of taking them out on others.
@@ -170,7 +170,7 @@ Help emerging leaders see that God can use their background for good, identify t
 
 ---
 
-# Session 2: God Forms Your Character
+# Module 2: God Forms Your Character
 
 > **Big Idea:** True leadership is built on who you are when nobody is watching and how you act under pressure.  
 > **Key Bible Passage:** Romans 5:1–5 & 1 Samuel 24:1–12 (David spares Saul's life)  
@@ -204,7 +204,7 @@ David could have taken the shortcut. But he chose to honor God and spare Saul’
 
 ---
 
-### 3. The 4 H's for Session 2
+### 3. The 4 H's for Module 2
 
 * 🧠 **Head (What to Know):** Hard times and pressure are not mistakes. God uses them like a gym workout to build your spiritual muscles.
 * ❤️ **Heart (Who to Become):** A leader who chooses honesty, humility, and patience even when it is difficult.
@@ -274,7 +274,7 @@ Teach emerging leaders how pressure tests character and guide them to choose int
 
 ---
 
-# Session 3: God Builds Your Faithfulness
+# Module 3: God Builds Your Faithfulness
 
 > **Big Idea:** Big leadership starts with small things. If you are faithful with what you have today, God can trust you with more tomorrow.  
 > **Key Bible Passage:** Luke 16:10–12 & Matthew 25:14–23 (The Parable of the Talents)  
@@ -311,7 +311,7 @@ Faithfulness means:
 
 ---
 
-### 3. The 4 H's for Session 3
+### 3. The 4 H's for Module 3
 
 * 🧠 **Head (What to Know):** Trust is built in drops and lost in buckets. Reliability is one of the greatest gifts you can give your team.
 * ❤️ **Heart (Who to Become):** A servant leader who finds joy in honoring God through ordinary, quiet tasks.
@@ -379,7 +379,7 @@ Inspire emerging leaders to see value in unseen service, build punctuality, and 
 
 ---
 
-# Session 4: God Develops Your Gifts
+# Module 4: God Develops Your Gifts
 
 > **Big Idea:** God has given you unique gifts, talents, and abilities. You don't have to be good at everything, but you are called to serve others with what you have.  
 > **Key Bible Passage:** 1 Peter 4:10–11 & Romans 12:3–8  
@@ -415,7 +415,7 @@ How do you discover your gifts? You don't discover them by sitting alone in a ro
 
 ---
 
-### 3. The 4 H's for Session 4
+### 3. The 4 H's for Module 4
 
 * 🧠 **Head (What to Know):** You are part of a team. Healthy leadership means celebrating other people’s strengths instead of feeling threatened by them.
 * ❤️ **Heart (Who to Become):** Humble and secure, thankful for your gifts and eager to see others succeed.
@@ -483,7 +483,7 @@ Help participants identify their strengths, break free from comparison and impos
 
 ---
 
-# Session 5: God Shapes How You Lead People
+# Module 5: God Shapes How You Lead People
 
 > **Big Idea:** Jesus showed us that leading is not about bossing people around. Great leaders serve others, listen carefully, and build trust.  
 > **Key Bible Passage:** Mark 10:42–45 & Philippians 2:1–5  
@@ -524,7 +524,7 @@ People don’t follow a title; they follow someone who genuinely cares about the
 
 ---
 
-### 3. The 4 H's for Session 5
+### 3. The 4 H's for Module 5
 
 * 🧠 **Head (What to Know):** True authority comes from love and humility, not from control or loud voices.
 * ❤️ **Heart (Who to Become):** A leader who puts the good of the team ahead of personal credit or popularity.
@@ -593,7 +593,7 @@ Teach servant leadership through active listening, kindness, and practical acts 
 
 ---
 
-# Session 6: God Deepens Your Life With Him
+# Module 6: God Deepens Your Life With Him
 
 > **Big Idea:** You cannot give what you do not have. To lead others well for the long haul, you must stay closely connected to Jesus every day.  
 > **Key Bible Passage:** John 15:1–8 (The Vine and the Branches)  
@@ -629,7 +629,7 @@ When you stay close to Jesus:
 
 ---
 
-### 3. The 4 H's for Session 6
+### 3. The 4 H's for Module 6
 
 * 🧠 **Head (What to Know):** Leadership is a marathon, not a sprint. Sustainable leadership requires regular rest and spiritual refuelling.
 * ❤️ **Heart (Who to Become):** A disciple first, and a leader second. Your identity is a loved child of God, not your role.
@@ -651,7 +651,7 @@ When you stay close to Jesus:
 
 1. What usually distracts you or crowds out your personal time with God?
 2. What helps you feel most connected and refreshed in your relationship with Jesus?
-3. As we finish these 6 sessions, what is the single biggest lesson God has taught you about leadership?
+3. As we finish these 6 modules, what is the single biggest lesson God has taught you about leadership?
 
 ---
 
@@ -678,7 +678,7 @@ Celebrate completing the course, encourage lifelong spiritual rhythms of prayer 
 ## 45-Minute Conversation Plan
 
 ### 1. Celebration Check-In (7 mins)
-* Celebrate finishing all 6 sessions!
+* Celebrate finishing all 6 modules!
 * Share a snack or drink together to mark the milestone.
 
 ### 2. Scripture Spotlight: Stay Connected to the Vine (10 mins)

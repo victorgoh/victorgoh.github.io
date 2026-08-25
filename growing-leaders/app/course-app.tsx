@@ -50,7 +50,7 @@ const EDITIONS: { id: CourseEdition; label: string; tag: string; description: st
     id: "essentials",
     label: "Essentials Edition",
     tag: "Quick-Start • 45 min",
-    description: "Concise, accessible format focusing on core principles and fast-track sessions",
+    description: "Concise, accessible format focusing on core principles and fast-track modules",
     icon: "⚡",
   },
   {
@@ -276,6 +276,9 @@ function moduleSections(document: CourseDocument) {
 function normalizeCourseHash(hash: string) {
   if (hash === "study-guide" || hash.startsWith("study-guide--")) {
     return "course-introduction";
+  }
+  if (hash.startsWith("essentials-session-")) {
+    return hash.replace("essentials-session-", "essentials-module-");
   }
   if (/^(?:module|session)-\d+--part-(1-learn|2-reflect-and-apply)$/.test(hash)) {
     return hash.replace(/--part-(1-learn|2-reflect-and-apply)$/, "--learn-reflect-and-apply");
@@ -1536,7 +1539,7 @@ export function CourseApp() {
         <nav aria-label="Course documents">
           {[
             {
-              label: activeEdition === "essentials" ? "Participant sessions" : "Participant course",
+              label: activeEdition === "essentials" ? "Participant modules" : "Participant course",
               documents: editionDocuments.filter((document) => document.kind !== "facilitator"),
             },
             {

@@ -91,7 +91,7 @@ Instead, it may mean saying:
 - “My past has influenced me, but it does not have to control every future response.”
 - “God can meet me here and lead me towards truth, healing, and faithful action.”
 
-Some parts of your story may require more care than this group can provide. Wise leadership includes knowing when to seek appropriate pastoral, counselling, safeguarding, or professional help. You are not required to explore or disclose painful experiences in detail during this session.
+Some parts of your story may require more care than this group can provide. Wise leadership includes knowing when to seek appropriate pastoral, counselling, safeguarding, or professional help. You are not required to explore or disclose painful experiences in detail during this module.
 
 As you become more aware of how your story has shaped you, you can begin noticing what God wants to form within you—especially when leadership brings pressure.
 
@@ -176,7 +176,7 @@ Leaders learn from experience when they create space to notice it. This week, pr
 3. What might this reveal about how my story has shaped me?
 4. What might God be inviting me to learn or practise?
 
-**Review:** Before the next session, read your entries and look for a repeated reaction, strength, concern, or invitation to grow.
+**Review:** Before the next module, read your entries and look for a repeated reaction, strength, concern, or invitation to grow.
 
 **Support:** Tell the group when and where you plan to do the review. If helpful, set a reminder or ask another participant to check in once during the week.
 
@@ -351,13 +351,13 @@ Invite each person to name one quality they want God to form in them through the
 - Do not allow one participant’s story to consume the entire meeting. Honour it and arrange follow-up if more time is needed.
 - Do not let reflection remain abstract. Help each participant identify one present leadership implication and one small practice.
 
-## 1.12 Between sessions
+## 1.12 Between modules
 
 Send one brief, non-intrusive check-in during the week:
 
 > How is Notice and Learn going? No need for a long answer—what are you beginning to notice and learn?
 
-At the beginning of Session 2, allow each person to share:
+At the beginning of Module 2, allow each person to share:
 
 - how often they attempted the habit;
 - one thing they noticed;

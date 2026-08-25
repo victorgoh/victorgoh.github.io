@@ -256,6 +256,6 @@ Pray for faithfulness, truthful limits, and care for the people affected by each
 - Remember that reliability can be affected by health, disability, resources, or life circumstances; explore support and adjustment without shame.
 - Encourage early communication rather than perfection.
 
-## 3.12 Between sessions
+## 3.12 Between modules
 
-Check in briefly about the specific 48-hour action. Begin Session 4 by asking what participants learned from Record and Follow Through.
+Check in briefly about the specific 48-hour action. Begin Module 4 by asking what participants learned from Record and Follow Through.

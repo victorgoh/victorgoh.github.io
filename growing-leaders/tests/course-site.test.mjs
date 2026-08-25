@@ -42,8 +42,8 @@ test("builds the course shell with Complete, Everyday, and Essentials editions",
   assert.equal(everydayDocs.filter((item) => item.kind === "module").length, 6);
   assert.equal(everydayDocs.filter((item) => item.kind === "facilitator").length, 6);
 
-  // Essentials edition sessions & facilitator guides
-  assert.equal(essentialsDocs.filter((item) => item.kind === "session").length, 6);
+  // Essentials edition modules & facilitator guides
+  assert.equal(essentialsDocs.filter((item) => item.kind === "module").length, 6);
   assert.equal(essentialsDocs.filter((item) => item.kind === "facilitator").length, 6);
 
   assert.ok(data.documents.every((item) => item.markdown.length > 500));
@@ -74,7 +74,7 @@ test("keeps the Markdown files as the content source for all editions", async ()
   );
   assert.ok(data.documents.some((item) => item.id === "everyday-module-1"));
   assert.ok(data.documents.some((item) => item.id === "everyday-facilitator-1"));
-  assert.ok(data.documents.some((item) => item.id === "essentials-session-1"));
+  assert.ok(data.documents.some((item) => item.id === "essentials-module-1"));
   assert.ok(data.documents.some((item) => item.id === "essentials-facilitator-1"));
 });
 

@@ -254,6 +254,6 @@ Pray for servant-hearted influence, courage in difficult conversations, and love
 - Do not let listening become a technique for appearing caring while retaining a fixed decision deceptively.
 - Pay attention to power differences and organisational responsibilities.
 
-## 5.12 Between sessions
+## 5.12 Between modules
 
 Ask participants what they discovered by practising Listen Before Responding. Encourage them to record what they understood only after listening.

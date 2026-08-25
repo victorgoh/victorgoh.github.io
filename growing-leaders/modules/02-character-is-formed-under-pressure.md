@@ -305,6 +305,6 @@ Pray for integrity, teachability, wise understanding of Scripture, and courage t
 - Do not treat every thought or impression as a direct message from God.
 - Do not allow a participant to use a claimed message from God to control another person or avoid appropriate counsel and accountability.
 
-## 2.13 Between sessions
+## 2.13 Between modules
 
-Send a brief check-in: “Have you had an opportunity to Pause and Bring It Before God (Notice, Name, Receive, Respond)? What are you learning?” Begin Session 3 by asking what participants noticed and how Scripture shaped their response.
+Send a brief check-in: “Have you had an opportunity to Pause and Bring It Before God (Notice, Name, Receive, Respond)? What are you learning?” Begin Module 3 by asking what participants noticed and how Scripture shaped their response.

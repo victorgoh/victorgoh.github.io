@@ -183,7 +183,7 @@ Complete these sentences:
 Bring:
 
 1. One lesson from practising Listen Before Responding.
-2. One significant insight from the six-session journey.
+2. One significant insight from the six-module journey.
 3. Your 30-day plan and weekly review time.
 4. One way the group can pray for your continued formation.
 
@@ -209,7 +209,7 @@ Participants should connect sustainable leadership with remaining in Jesus, inte
 ## 6.10 Prepare as facilitator
 
 - Read John 15:1–17 and the participant material.
-- Review notes from earlier sessions and identify specific growth to affirm in each participant.
+- Review notes from earlier modules and identify specific growth to affirm in each participant.
 - Prepare your own brief example of a practice that helps keep leadership connected with God.
 - Plan an appropriate way for the mentoring relationship to continue or conclude.
 
@@ -263,7 +263,7 @@ Pray for each participant by name, giving thanks for God’s grace and asking fo
 ## 6.12 Facilitator cautions
 
 - Do not imply that spiritual practices guarantee visible success or freedom from difficulty.
-- Do not make the final session a performance review.
+- Do not make the final module a performance review.
 - Avoid exaggerated predictions or claims about God’s specific future plan for a participant.
 - Do not leave development plans unsupported; help participants identify a real person and review date.
 
