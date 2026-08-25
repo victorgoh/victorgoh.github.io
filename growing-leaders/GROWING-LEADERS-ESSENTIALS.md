@@ -74,7 +74,7 @@ You do not have to write long essays. This is not an exam or a formal evaluation
 
 ---
 
-### 1. Real Life: Two Different Leaders
+## 1. Real Life: Two Different Leaders
 
 Think about two new leaders:
 
@@ -87,7 +87,7 @@ Your family background, upbringing, friendships, life milestones, and painful mo
 
 ---
 
-### 2. Core Truth
+## 2. Core Truth
 
 God does not waste any part of your story. 
 
@@ -97,7 +97,7 @@ Joseph could say to his brothers: *"You intended to harm me, but God intended it
 
 ---
 
-### 3. The 4 H's for Module 1
+## 3. The 4 H's for Module 1
 
 * 🧠 **Head (What to Know):** Your past affects how you act today. When you know your story, you can make better choices as a leader.
 * ❤️ **Heart (Who to Become):** A leader who brings past hurts and fears to God instead of taking them out on others.
@@ -106,7 +106,7 @@ Joseph could say to his brothers: *"You intended to harm me, but God intended it
 
 ---
 
-### 4. Bring It Before God
+## 4. Bring It Before God
 
 Take 5 minutes to pray through these 4 steps:
 
@@ -117,7 +117,7 @@ Take 5 minutes to pray through these 4 steps:
 
 ---
 
-### 5. Group Discussion Questions
+## 5. Group Discussion Questions
 
 1. What is one positive experience or person from your past that helped shape who you are today?
 2. When something goes wrong or someone disagrees with you, do you usually get angry, pull away, or try to fix it right away?
@@ -125,7 +125,7 @@ Take 5 minutes to pray through these 4 steps:
 
 ---
 
-### 6. My Reflection Notes for Group Discussion
+## 6. My Reflection Notes for Group Discussion
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -181,7 +181,7 @@ Help emerging leaders see that God can use their background for good, identify t
 
 ---
 
-### 1. Real Life: The Pressure Test
+## 1. Real Life: The Pressure Test
 
 Imagine a tea bag. You only find out what is inside when you drop it into boiling hot water.
 
@@ -194,7 +194,7 @@ Pressure does not create what is inside you; it reveals what is already there.
 
 ---
 
-### 2. Core Truth
+## 2. Core Truth
 
 God cares far more about your **character** (who you are) than your **reputation** (what people think of you).
 
@@ -204,7 +204,7 @@ David could have taken the shortcut. But he chose to honor God and spare Saul’
 
 ---
 
-### 3. The 4 H's for Module 2
+## 3. The 4 H's for Module 2
 
 * 🧠 **Head (What to Know):** Hard times and pressure are not mistakes. God uses them like a gym workout to build your spiritual muscles.
 * ❤️ **Heart (Who to Become):** A leader who chooses honesty, humility, and patience even when it is difficult.
@@ -213,7 +213,7 @@ David could have taken the shortcut. But he chose to honor God and spare Saul’
 
 ---
 
-### 4. Bring It Before God
+## 4. Bring It Before God
 
 1. **Notice:** When was the last time you felt stressed, frustrated, or treated unfairly?
 2. **Name:** Tell God honestly what came out of your mouth or heart in that moment.
@@ -222,7 +222,7 @@ David could have taken the shortcut. But he chose to honor God and spare Saul’
 
 ---
 
-### 5. Group Discussion Questions
+## 5. Group Discussion Questions
 
 1. When you feel stressed or overloaded, what is your first reaction?
 2. Why is it tempting to take shortcuts when you want to achieve something good?
@@ -230,7 +230,7 @@ David could have taken the shortcut. But he chose to honor God and spare Saul’
 
 ---
 
-### 6. My Reflection Notes for Group Discussion
+## 6. My Reflection Notes for Group Discussion
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -285,7 +285,7 @@ Teach emerging leaders how pressure tests character and guide them to choose int
 
 ---
 
-### 1. Real Life: The Forgotten Job
+## 1. Real Life: The Forgotten Job
 
 Someone asks you to pack up equipment after an event or send a message by Wednesday. 
 
@@ -295,7 +295,7 @@ Many people want to do "great things" for God, but few people want to do the sma
 
 ---
 
-### 2. Core Truth
+## 2. Core Truth
 
 God measures leadership by **faithfulness**, not by fame or popularity.
 
@@ -311,7 +311,7 @@ Faithfulness means:
 
 ---
 
-### 3. The 4 H's for Module 3
+## 3. The 4 H's for Module 3
 
 * 🧠 **Head (What to Know):** Trust is built in drops and lost in buckets. Reliability is one of the greatest gifts you can give your team.
 * ❤️ **Heart (Who to Become):** A servant leader who finds joy in honoring God through ordinary, quiet tasks.
@@ -320,7 +320,7 @@ Faithfulness means:
 
 ---
 
-### 4. Bring It Before God
+## 4. Bring It Before God
 
 1. **Notice:** What small duties or promises are currently on your plate?
 2. **Name:** Confess to God if you have been careless, lazy, or overcommitted lately.
@@ -329,7 +329,7 @@ Faithfulness means:
 
 ---
 
-### 5. Group Discussion Questions
+## 5. Group Discussion Questions
 
 1. Can you think of someone you really trust? What makes them so reliable?
 2. Which small, hidden tasks in your life or church do you find hardest to do with a good attitude?
@@ -337,7 +337,7 @@ Faithfulness means:
 
 ---
 
-### 6. My Reflection Notes for Group Discussion
+## 6. My Reflection Notes for Group Discussion
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -390,7 +390,7 @@ Inspire emerging leaders to see value in unseen service, build punctuality, and 
 
 ---
 
-### 1. Real Life: The Comparison Trap
+## 1. Real Life: The Comparison Trap
 
 You look at someone else leading. They speak with ease, make everyone laugh, and never seem nervous. You think: *"I could never do that. I guess I'm not a leader."*
 
@@ -400,7 +400,7 @@ Both traps come from comparing yourself to others. God never asked you to be a c
 
 ---
 
-### 2. Core Truth
+## 2. Core Truth
 
 The Church is like a human body (1 Corinthians 12). An eye cannot do what a foot does, and an ear cannot do what a hand does. Every single part is needed.
 
@@ -415,7 +415,7 @@ How do you discover your gifts? You don't discover them by sitting alone in a ro
 
 ---
 
-### 3. The 4 H's for Module 4
+## 3. The 4 H's for Module 4
 
 * 🧠 **Head (What to Know):** You are part of a team. Healthy leadership means celebrating other people’s strengths instead of feeling threatened by them.
 * ❤️ **Heart (Who to Become):** Humble and secure, thankful for your gifts and eager to see others succeed.
@@ -424,7 +424,7 @@ How do you discover your gifts? You don't discover them by sitting alone in a ro
 
 ---
 
-### 4. Bring It Before God
+## 4. Bring It Before God
 
 1. **Notice:** What activities or ways of serving give you joy and help others?
 2. **Name:** Talk to God about any jealousy, comparison, or fear of failure you carry.
@@ -433,7 +433,7 @@ How do you discover your gifts? You don't discover them by sitting alone in a ro
 
 ---
 
-### 5. Group Discussion Questions
+## 5. Group Discussion Questions
 
 1. What is one thing you enjoy doing that seems to help or encourage others?
 2. Have you ever caught yourself comparing your gifts with someone else? How did it make you feel?
@@ -441,7 +441,7 @@ How do you discover your gifts? You don't discover them by sitting alone in a ro
 
 ---
 
-### 6. My Reflection Notes for Group Discussion
+## 6. My Reflection Notes for Group Discussion
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -494,7 +494,7 @@ Help participants identify their strengths, break free from comparison and impos
 
 ---
 
-### 1. Real Life: The Boss vs. The Servant
+## 1. Real Life: The Boss vs. The Servant
 
 In the world, people often think being a leader means having power:
 * Telling everyone what to do.
@@ -507,7 +507,7 @@ Then Jesus got down on His knees with a bowl of water and a towel and washed the
 
 ---
 
-### 2. Core Truth
+## 2. Core Truth
 
 Christian leadership is **servant leadership**.
 
@@ -524,7 +524,7 @@ People don’t follow a title; they follow someone who genuinely cares about the
 
 ---
 
-### 3. The 4 H's for Module 5
+## 3. The 4 H's for Module 5
 
 * 🧠 **Head (What to Know):** True authority comes from love and humility, not from control or loud voices.
 * ❤️ **Heart (Who to Become):** A leader who puts the good of the team ahead of personal credit or popularity.
@@ -533,7 +533,7 @@ People don’t follow a title; they follow someone who genuinely cares about the
 
 ---
 
-### 4. Bring It Before God
+## 4. Bring It Before God
 
 1. **Notice:** Who is one person you lead or serve with who is hard to get along with?
 2. **Name:** Tell God if you have been impatient, selfish, or critical toward them.
@@ -542,7 +542,7 @@ People don’t follow a title; they follow someone who genuinely cares about the
 
 ---
 
-### 5. Group Discussion Questions
+## 5. Group Discussion Questions
 
 1. Think of a leader who made you feel valued and supported. What did they do?
 2. Why is it hard to listen quietly when we think we already know the answer?
@@ -550,7 +550,7 @@ People don’t follow a title; they follow someone who genuinely cares about the
 
 ---
 
-### 6. My Reflection Notes for Group Discussion
+## 6. My Reflection Notes for Group Discussion
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -604,7 +604,7 @@ Teach servant leadership through active listening, kindness, and practical acts 
 
 ---
 
-### 1. Real Life: The Empty Battery
+## 1. Real Life: The Empty Battery
 
 Think about your smartphone. No matter how expensive, shiny, or powerful it is, if the battery runs down to 0%, it turns off and becomes useless.
 
@@ -614,7 +614,7 @@ Soon they feel tired, grumpy, cynical, and empty inside. Leadership becomes a he
 
 ---
 
-### 2. Core Truth
+## 2. Core Truth
 
 Jesus said: *"Remain in me, and I will remain in you. A branch cannot produce fruit if it is severed from the vine."*
 
@@ -629,7 +629,7 @@ When you stay close to Jesus:
 
 ---
 
-### 3. The 4 H's for Module 6
+## 3. The 4 H's for Module 6
 
 * 🧠 **Head (What to Know):** Leadership is a marathon, not a sprint. Sustainable leadership requires regular rest and spiritual refuelling.
 * ❤️ **Heart (Who to Become):** A disciple first, and a leader second. Your identity is a loved child of God, not your role.
@@ -638,7 +638,7 @@ When you stay close to Jesus:
 
 ---
 
-### 4. Bring It Before God
+## 4. Bring It Before God
 
 1. **Notice:** How full is your spiritual battery right now (1% to 100%)?
 2. **Name:** Speak openly to God about your tiredness, busyness, or any worries on your mind.
@@ -647,7 +647,7 @@ When you stay close to Jesus:
 
 ---
 
-### 5. Group Discussion Questions
+## 5. Group Discussion Questions
 
 1. What usually distracts you or crowds out your personal time with God?
 2. What helps you feel most connected and refreshed in your relationship with Jesus?
@@ -655,7 +655,7 @@ When you stay close to Jesus:
 
 ---
 
-### 6. My Reflection Notes for Group Discussion
+## 6. My Reflection Notes for Group Discussion
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 

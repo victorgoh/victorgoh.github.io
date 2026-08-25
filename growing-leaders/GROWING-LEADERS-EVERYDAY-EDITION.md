@@ -119,7 +119,7 @@ When meeting with your mentor or small group, agree together on these shared pos
 
 ---
 
-### 1. Real Life: The Baggage We Bring to the Table
+## 1. Real Life: The Baggage We Bring to the Table
 
 Consider two team leaders in their 40s:
 
@@ -139,7 +139,7 @@ Leadership inevitably brings these hidden patterns to the surface. When deadline
 
 ---
 
-### 2. Core Truth: God Redeems Your History
+## 2. Core Truth: God Redeems Your History
 
 God does not ask you to pretend your past never happened, nor does He tell you to leave your personality at the door. He meets you right inside your story.
 
@@ -156,7 +156,7 @@ God can take the hardest seasons of your life—an unfair workplace experience, 
 
 ---
 
-### 3. The 4 Areas of Growth for Module 1
+## 3. The 4 Areas of Growth for Module 1
 
 * 🧠 **Head (Clear Thinking):** My past experiences shape my present reactions. Recognizing where my habits come from helps me respond thoughtfully rather than reacting out of instinct.
 * ❤️ **Heart (Inner Character):** I can bring old hurts, insecurities, and regrets to God instead of letting them secretly drive my leadership.
@@ -165,7 +165,7 @@ God can take the hardest seasons of your life—an unfair workplace experience, 
 
 ---
 
-### 4. Bring It Before God
+## 4. Bring It Before God
 
 Take 5 unhurried minutes to pray through these four steps:
 
@@ -176,7 +176,7 @@ Take 5 unhurried minutes to pray through these four steps:
 
 ---
 
-### 5. Group Discussion Questions
+## 5. Group Discussion Questions
 
 1. When you look back at your working life or family background, what is one positive habit or strength you are grateful to have inherited?
 2. Under pressure or conflict, is your default tendency to *take over and control*, *withdraw and stay quiet*, or *appease everyone to keep the peace*? Where do you think that comes from?
@@ -184,13 +184,13 @@ Take 5 unhurried minutes to pray through these four steps:
 
 ---
 
-### 6. Small Step for the Week
+## 6. Small Step for the Week
 
 Pick one interaction this week at work, church, or home where you usually feel impatient or defensive. Before responding, take a slow breath, remember who you are in Christ, and listen with an open mind.
 
 ---
 
-### 7. My Reflection Notes for Group Discussion
+## 7. My Reflection Notes for Group Discussion
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -247,7 +247,7 @@ Help participants recognize that their life story and family background influenc
 
 ---
 
-### 1. Real Life: The Pressure Cooker
+## 1. Real Life: The Pressure Cooker
 
 Think about a standard kitchen pressure cooker. Under high heat and sealed pressure, whatever is inside comes to a boil quickly.
 
@@ -266,7 +266,7 @@ Pressure does not create what is in our hearts; it simply reveals what is alread
 
 ---
 
-### 2. Core Truth: Character Outweighs Reputation
+## 2. Core Truth: Character Outweighs Reputation
 
 The world focuses on **reputation** (what people say about you on LinkedIn or in public). God focuses on **character** (who you are when the doors are closed).
 
@@ -280,7 +280,7 @@ David understood that **how you get to a position determines how you will lead i
 
 ---
 
-### 3. The 4 Areas of Growth for Module 2
+## 3. The 4 Areas of Growth for Module 2
 
 * 🧠 **Head (Clear Thinking):** Trials and delays are not wasted time. God uses them like resistance training to build endurance and spiritual depth.
 * ❤️ **Heart (Inner Character):** A commitment to choose honesty, humility, and patience even when taking a shortcut seems easier and faster.
@@ -289,7 +289,7 @@ David understood that **how you get to a position determines how you will lead i
 
 ---
 
-### 4. Bring It Before God
+## 4. Bring It Before God
 
 1. **Notice:** When was the last time you felt stressed, unfairly treated, or tempted to cut a corner at work or home?
 2. **Name:** Confess honestly to God what surfaced in your thoughts, words, or attitude.
@@ -298,7 +298,7 @@ David understood that **how you get to a position determines how you will lead i
 
 ---
 
-### 5. Group Discussion Questions
+## 5. Group Discussion Questions
 
 1. When your schedule is overloaded or things go wrong, what is your most common warning sign that stress is taking over (e.g., irritability, withdrawal, sleeplessness, micromanagement)?
 2. Why is taking a moral or relational shortcut so tempting when we are trying to solve a problem quickly?
@@ -306,13 +306,13 @@ David understood that **how you get to a position determines how you will lead i
 
 ---
 
-### 6. Small Step for the Week
+## 6. Small Step for the Week
 
 The next time you receive a frustrating message or encounter an annoying situation, wait at least one hour before sending a written response. Bring your initial reaction to God first.
 
 ---
 
-### 7. My Reflection Notes for Group Discussion
+## 7. My Reflection Notes for Group Discussion
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -368,7 +368,7 @@ Equip participants to recognize pressure points, choose integrity over easy shor
 
 ---
 
-### 1. Real Life: The Hidden Cost of Dropped Balls
+## 1. Real Life: The Hidden Cost of Dropped Balls
 
 Imagine a colleague or church volunteer who is full of exciting ideas and charisma. They love speaking at meetings and starting new initiatives. 
 
@@ -383,7 +383,7 @@ Trust in adult life is built in drops and lost in buckets. Small commitments—s
 
 ---
 
-### 2. Core Truth: God Values Faithful Stewards
+## 2. Core Truth: God Values Faithful Stewards
 
 In Jesus’ Parable of the Talents (Matthew 25), the master entrusted his resources to his servants while he went away. When he returned, his praise for the servants who invested their resources was simple and profound:
 
@@ -400,7 +400,7 @@ Faithfulness as an adult leader means:
 
 ---
 
-### 3. The 4 Areas of Growth for Module 3
+## 3. The 4 Areas of Growth for Module 3
 
 * 🧠 **Head (Clear Thinking):** Competence without consistency destroys trust. Faithful stewardship in the small things proves character for greater responsibilities.
 * ❤️ **Heart (Inner Character):** Finding genuine satisfaction in pleasing God through quiet, unheralded service rather than performing for public applause.
@@ -409,7 +409,7 @@ Faithfulness as an adult leader means:
 
 ---
 
-### 4. Bring It Before God
+## 4. Bring It Before God
 
 1. **Notice:** Look across your current commitments at home, work, and church. Are there promises you have let slip?
 2. **Name:** Talk to God about any tendencies toward procrastination, people-pleasing, or disorganization.
@@ -418,7 +418,7 @@ Faithfulness as an adult leader means:
 
 ---
 
-### 5. Group Discussion Questions
+## 5. Group Discussion Questions
 
 1. Think of someone in your workplace or church whom you deeply trust. What specific habits make them so dependable?
 2. Why is it often difficult for adults to say *"No"* to new requests, even when our schedules are already stretched to the limit?
@@ -426,13 +426,13 @@ Faithfulness as an adult leader means:
 
 ---
 
-### 6. Small Step for the Week
+## 6. Small Step for the Week
 
 Do an honest calendar check. Identify one commitment that you are currently dropping or neglecting. Either complete it promptly or have an honest, polite conversation to reset expectations.
 
 ---
 
-### 7. My Reflection Notes for Group Discussion
+## 7. My Reflection Notes for Group Discussion
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -489,7 +489,7 @@ Help participants discover that reliable follow-through in ordinary duties is fo
 
 ---
 
-### 1. Real Life: The Comparison and Burnout Trap
+## 1. Real Life: The Comparison and Burnout Trap
 
 In adult life, it is very easy to fall into one of two common gifting traps:
 
@@ -500,7 +500,7 @@ Both traps arise from forgetting that God designed the Church as an interdepende
 
 ---
 
-### 2. Core Truth: Stewarding God’s Diverse Grace
+## 2. Core Truth: Stewarding God’s Diverse Grace
 
 The Apostle Paul reminds us:
 
@@ -513,7 +513,7 @@ Consider how gifts develop:
 
 ---
 
-### 3. The 4 Areas of Growth for Module 4
+## 3. The 4 Areas of Growth for Module 4
 
 * 🧠 **Head (Clear Thinking):** Leadership is a team sport. My responsibility is to contribute my strengths humbly while creating space for others to use theirs.
 * ❤️ **Heart (Inner Character):** Security in Christ that celebrates other people's gifts without feeling threatened, envious, or insecure.
@@ -522,7 +522,7 @@ Consider how gifts develop:
 
 ---
 
-### 4. Bring It Before God
+## 4. Bring It Before God
 
 1. **Notice:** What areas of serving give you deep joy and produce noticeable fruit in the lives of others?
 2. **Name:** Confess any jealousy, comparison, or frustration where you have tried to operate outside your God-given grace.
@@ -531,7 +531,7 @@ Consider how gifts develop:
 
 ---
 
-### 5. Group Discussion Questions
+## 5. Group Discussion Questions
 
 1. When you look at your life and work, what are 1 or 2 areas where you feel most energized and effective when serving?
 2. Have you ever tried to lead in an area that did not fit your gifts? What did that experience teach you about your limitations?
@@ -539,13 +539,13 @@ Consider how gifts develop:
 
 ---
 
-### 6. Small Step for the Week
+## 6. Small Step for the Week
 
 Send a specific message of encouragement to someone on your team or in your group, pointing out a specific gift or character strength you have observed in them and how it blessed you.
 
 ---
 
-### 7. My Reflection Notes for Group Discussion
+## 7. My Reflection Notes for Group Discussion
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -602,7 +602,7 @@ Free participants from comparison and exhaustion, help them identify their core 
 
 ---
 
-### 1. Real Life: Positional Authority vs. Relational Trust
+## 1. Real Life: Positional Authority vs. Relational Trust
 
 Think about two leaders you have worked under in your career or church life:
 
@@ -613,7 +613,7 @@ People do not follow a title for long; they follow leaders who genuinely care ab
 
 ---
 
-### 2. Core Truth: The Jesus Model of Leadership
+## 2. Core Truth: The Jesus Model of Leadership
 
 In the ancient Roman world—and in our corporate world today—greatness is measured by how many people serve you, report to you, or applaud you.
 
@@ -636,7 +636,7 @@ Leading people the Jesus way means:
 
 ---
 
-### 3. The 4 Areas of Growth for Module 5
+## 3. The 4 Areas of Growth for Module 5
 
 * 🧠 **Head (Clear Thinking):** Authority is given for stewardship, service, and protection—never for self-advancement or control.
 * ❤️ **Heart (Inner Character):** Cultivating genuine empathy, patience, and love for difficult people, seeing them as people made in God's image.
@@ -645,7 +645,7 @@ Leading people the Jesus way means:
 
 ---
 
-### 4. Bring It Before God
+## 4. Bring It Before God
 
 1. **Notice:** Who is one person in your team, workplace, or family with whom you find communication challenging?
 2. **Name:** Bring your honest frustrations, judgments, or impatience regarding this person before God.
@@ -654,7 +654,7 @@ Leading people the Jesus way means:
 
 ---
 
-### 5. Group Discussion Questions
+## 5. Group Discussion Questions
 
 1. Think of a leader who made a lasting positive impact on your life. What specific qualities made you trust and respect them?
 2. Why is active listening so difficult when we are busy, tired, or convinced that our solution is the best one?
@@ -662,13 +662,13 @@ Leading people the Jesus way means:
 
 ---
 
-### 6. Small Step for the Week
+## 6. Small Step for the Week
 
 Have an intentional 15-minute one-on-one conversation with a team member, colleague, or family member. Focus 100% on listening to their thoughts, challenges, and ideas without interrupting or jumping into problem-solving mode.
 
 ---
 
-### 7. My Reflection Notes for Group Discussion
+## 7. My Reflection Notes for Group Discussion
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -724,7 +724,7 @@ Shift leaders from authoritarian control to Jesus-style servant leadership, with
 
 ---
 
-### 1. Real Life: The Peril of Running on Empty
+## 1. Real Life: The Peril of Running on Empty
 
 Think about an electric vehicle or a modern smartphone. No matter how powerful the engine or how advanced the apps, when the battery reaches zero, everything stops.
 
@@ -740,7 +740,7 @@ When we try to lead out of our own limited emotional and physical energy, burnou
 
 ---
 
-### 2. Core Truth: Root Before Fruit
+## 2. Core Truth: Root Before Fruit
 
 Jesus gave His disciples a simple metaphor for sustainable life and leadership:
 
@@ -755,7 +755,7 @@ When your soul is nourished by the presence of Christ, you lead out of overflow 
 
 ---
 
-### 3. The 4 Areas of Growth for Module 6
+## 3. The 4 Areas of Growth for Module 6
 
 * 🧠 **Head (Clear Thinking):** Leadership is a long-distance marathon, not a sprint. Soul care and spiritual rest are essential responsibilities, not guilty luxuries.
 * ❤️ **Heart (Inner Character):** My primary identity is a beloved child of God, not my title, performance, or leadership role.
@@ -764,7 +764,7 @@ When your soul is nourished by the presence of Christ, you lead out of overflow 
 
 ---
 
-### 4. Bring It Before God
+## 4. Bring It Before God
 
 1. **Notice:** How full is your spiritual and emotional tank right now on a scale of 1 to 10?
 2. **Name:** Speak openly to Jesus about your fatigue, your anxieties, and any areas where you have been relying on your own strength.
@@ -773,7 +773,7 @@ When your soul is nourished by the presence of Christ, you lead out of overflow 
 
 ---
 
-### 5. Group Discussion Questions
+## 5. Group Discussion Questions
 
 1. What are your most common warning signs that your spiritual tank is running dangerously low?
 2. What daily or weekly habits have helped you stay most connected to Jesus during busy seasons of life?
@@ -781,13 +781,13 @@ When your soul is nourished by the presence of Christ, you lead out of overflow 
 
 ---
 
-### 6. Small Step for the Week
+## 6. Small Step for the Week
 
 Schedule one 30-minute block of solitude and quiet this week. Turn off your phone, sit in a quiet room or take a slow walk outdoors, and spend the time thanking God for His presence and listening to His voice.
 
 ---
 
-### 7. My Reflection Notes for Group Discussion
+## 7. My Reflection Notes for Group Discussion
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
