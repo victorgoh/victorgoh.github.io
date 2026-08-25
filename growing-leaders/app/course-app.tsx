@@ -1365,22 +1365,6 @@ export function CourseApp() {
     : undefined;
   const complete = isCourseModule(activeDocument) && moduleIsComplete(activeDocument.id);
   const currentEditionMeta = EDITIONS.find((e) => e.id === activeEdition) || EDITIONS[0];
-  const moduleProgress = isCourseModule(activeDocument) ? (
-    <section className="module-outline session-outline" aria-label="Module progress">
-      <div>
-        <span className="eyebrow">Module progress</span>
-        <strong>{complete ? "Module complete" : "Not yet complete"}</strong>
-      </div>
-      <button
-        type="button"
-        className={complete ? "module-complete session-complete" : ""}
-        aria-pressed={complete}
-        onClick={() => toggleModuleComplete(activeDocument.id)}
-      >
-        {complete ? "✓ Module complete" : "Mark module complete"}
-      </button>
-    </section>
-  ) : undefined;
 
   return (
     <div
@@ -1887,6 +1871,17 @@ export function CourseApp() {
             <span className="toolbar-crumb-edition">{currentEditionMeta.icon} {currentEditionMeta.label}</span>
             <span className="toolbar-crumb-separator" aria-hidden="true">/</span>
             <span className="toolbar-crumb-current">{activeDocument.shortLabel}</span>
+            {isCourseModule(activeDocument) && (
+              <button
+                type="button"
+                className={`toolbar-status-pill ${complete ? "toolbar-status-pill--complete" : ""}`}
+                onClick={() => toggleModuleComplete(activeDocument.id)}
+                title={complete ? "Click to unmark completion" : "Click to mark module complete"}
+                aria-pressed={complete}
+              >
+                {complete ? "✓ Complete" : "○ In progress"}
+              </button>
+            )}
           </div>
           <p className="document-position">
             {editionActiveIndex + 1} of {editionDocuments.length}
@@ -1924,8 +1919,6 @@ export function CourseApp() {
           />
         )}
 
-        {isCourseModule(activeDocument) && moduleProgress}
-
         <article
           className="course-content"
           key={`${activeDocument.id}:${resetRevision}`}
@@ -1941,6 +1934,26 @@ export function CourseApp() {
             bibleTranslation={bibleTranslation}
           />
         </article>
+
+        {isCourseModule(activeDocument) && (
+          <section className="module-bottom-completion" aria-label="Module completion">
+            <div className="completion-card-info">
+              <span className="completion-card-icon" aria-hidden="true">{complete ? "🎉" : "📖"}</span>
+              <div>
+                <strong>{complete ? "Module completed!" : "Finished with this module?"}</strong>
+                <p>{complete ? "Great job completing this module. Keep going with your leadership journey!" : "Mark this module complete to track your leadership formation progress."}</p>
+              </div>
+            </div>
+            <button
+              type="button"
+              className={`completion-toggle-btn ${complete ? "completion-toggle-btn--complete" : ""}`}
+              aria-pressed={complete}
+              onClick={() => toggleModuleComplete(activeDocument.id)}
+            >
+              {complete ? "✓ Module Complete" : "Mark Module Complete"}
+            </button>
+          </section>
+        )}
 
         <nav className="document-pagination" aria-label="Document navigation">
           {previousDocument ? (

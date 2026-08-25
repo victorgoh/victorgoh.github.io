@@ -87,7 +87,7 @@ test("includes local responses, edition switching, progress, printing, and acces
 
   assert.match(app, /window\.localStorage/);
   assert.match(app, /window\.print\(\)/);
-  assert.match(app, /Mark module complete/);
+  assert.match(app, /Mark [Mm]odule [Cc]omplete/);
   assert.match(app, /Skip to lesson content/);
   assert.match(app, /Participant course/);
   assert.match(app, /Facilitator resources/);
