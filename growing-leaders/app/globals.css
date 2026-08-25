@@ -1435,6 +1435,44 @@ select:focus-visible {
   color: var(--ink-soft);
 }
 
+.section-heading-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 36px 0 16px;
+}
+
+.section-heading-wrap h2,
+.section-heading-wrap h3 {
+  margin: 0;
+}
+
+.copy-notes-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(31, 122, 112, 0.3);
+  background: var(--teal-soft);
+  color: var(--teal);
+  font-size: 12.5px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: all 150ms ease;
+  box-shadow: 0 2px 6px rgba(24, 49, 71, 0.04);
+}
+
+.copy-notes-btn:hover {
+  background: var(--teal);
+  color: white;
+  border-color: var(--teal);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(31, 122, 112, 0.18);
+}
+
 .response-card {
   margin: 22px 0 29px;
   padding: 22px;

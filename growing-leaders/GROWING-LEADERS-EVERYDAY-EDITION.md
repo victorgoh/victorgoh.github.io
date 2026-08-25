@@ -838,13 +838,20 @@ Guide participants into sustainable spiritual rhythms, celebrate growth across t
 
 As you complete this 6-session journey, take 10 quiet minutes to synthesize what God has done and record your commitments for the road ahead:
 
-| Area of Growth | Focus Question | My Personal Commitment |
-| :--- | :--- | :--- |
-| **1. My Story & Identity** | *How has God redeemed my past for good?* | > |
-| **2. My Character Focus** | *What inner quality am I asking God to forge?* | > |
-| **3. My Daily Habit** | *What rhythm will I protect to stay with Jesus?* | > |
-| **4. My Relational Focus** | *How will I serve and build up my team?* | > |
-| **5. My Next Faithful Step** | *What responsibility am I stepping into with trust?* | > |
+* **1. My Story & Identity:** *How has God redeemed my past for good?*
+> Write your response here.
+
+* **2. My Character Focus:** *What inner quality am I asking God to forge?*
+> Write your response here.
+
+* **3. My Daily Habit:** *What rhythm will I protect to stay with Jesus?*
+> Write your response here.
+
+* **4. My Relational Focus:** *How will I serve and build up my team?*
+> Write your response here.
+
+* **5. My Next Faithful Step:** *What responsibility am I stepping into with trust?*
+> Write your response here.
 
 ---
 

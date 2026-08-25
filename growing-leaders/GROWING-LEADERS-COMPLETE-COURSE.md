@@ -364,11 +364,17 @@ These might include:
 
 For each experience, note:
 
-| Experience | What did I learn or begin to believe? | What strength or pattern developed? | How might it affect my leadership now? |
-|---|---|---|---|
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+* **1. Significant Experience:**
+> Write your response here.
+
+* **2. What did I learn or begin to believe?**
+> Write your response here.
+
+* **3. What strength or pattern developed?**
+> Write your response here.
+
+* **4. How might it affect my leadership now?**
+> Write your response here.
 
 Look at the map as a whole. What theme, repeated pattern, or question do you notice?
 
@@ -395,9 +401,14 @@ Leaders learn from experience when they create space to notice it. This week, pr
 
 Use a simple format:
 
-| What happened? | What happened within me? | What might I learn or practise? |
-|---|---|---|
-|  |  |  |
+* **What happened?**
+> Write your response here.
+
+* **What happened within me?**
+> Write your response here.
+
+* **What might I learn or practise?**
+> Write your response here.
 
 If you miss a day, begin again the next day. The purpose is attentive learning, not maintaining a perfect record.
 
@@ -708,13 +719,20 @@ Honest examination is not self-condemnation. Conviction identifies something spe
 
 Use the following framework for a current pressure point:
 
-| Question | My response |
-|---|---|
-| What are the facts, separate from my assumptions? |  |
-| What is happening within me? |  |
-| What responsibility or boundary is mine? |  |
-| What response would express truth and love? |  |
-| Who could give me wise, appropriate counsel? |  |
+* **What are the facts, separate from my assumptions?**
+> Write your response here.
+
+* **What is happening within me?**
+> Write your response here.
+
+* **What responsibility or boundary is mine?**
+> Write your response here.
+
+* **What response would express truth and love?**
+> Write your response here.
+
+* **Who could give me wise, appropriate counsel?**
+> Write your response here.
 
 If you have caused harm, a faithful response may include a simple apology:
 
@@ -986,15 +1004,19 @@ Consider what happens when someone asks you to take on a task.
 
 Choose one pattern. What desire or fear may be underneath it? What would honesty and faithfulness look like instead?
 
-### 3.6.3 Hands: Complete a responsibility audit
+List your main current commitments. Keep the list manageable:
 
-List your main current commitments. Keep the list manageable.
+* **Commitment / Responsibility:**
+> Write your response here.
 
-| Commitment | What does “done” mean? | Next action | Due or review date | Communicate with |
-|---|---|---|---|---|
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
+* **What does “done” mean?**
+> Write your response here.
+
+* **Next concrete action:**
+> Write your response here.
+
+* **Due date & person to communicate with:**
+> Write your response here.
 
 Then decide whether each commitment should be:
 
@@ -1242,16 +1264,25 @@ Choose one. What truth about grace, service, and belonging do you need to receiv
 
 ### 4.6.3 Hands: Design a development experiment
 
-Choose one possible strength or gift to explore during the next month.
+Choose one possible strength or gift to explore during the next month:
 
-| Question | My response |
-|---|---|
-| What capacity do I want to explore? |  |
-| Whom could it serve? |  |
-| What small opportunity could I try? |  |
-| What preparation or skill do I need? |  |
-| What fruit will I look for? |  |
-| Who can observe and give feedback? |  |
+* **What capacity do I want to explore?**
+> Write your response here.
+
+* **Whom could it serve?**
+> Write your response here.
+
+* **What small opportunity could I try?**
+> Write your response here.
+
+* **What preparation or skill do I need?**
+> Write your response here.
+
+* **What fruit will I look for?**
+> Write your response here.
+
+* **Who can observe and give feedback?**
+> Write your response here.
 
 Keep the experiment small enough to complete. Examples include facilitating part of a meeting, encouraging a specific person, organising one task, explaining a short passage, or helping resolve a practical need.
 
@@ -1498,16 +1529,25 @@ What fear or desire may drive that reflex? What would love, courage, and humilit
 
 ### 5.6.3 Hands: Prepare a healthy conversation
 
-Choose a real but manageable conversation.
+Choose a real but manageable conversation:
 
-| Step | Preparation |
-|---|---|
-| **Purpose:** What good outcome am I seeking? |  |
-| **Observation:** What happened, without exaggeration? |  |
-| **Perspective:** What do I need to understand from them? |  |
-| **Effect:** How has the situation affected people or the work? |  |
-| **Responsibility:** What part belongs to me? |  |
-| **Next step:** What request, decision, or agreement is needed? |  |
+* **Purpose: What good outcome am I seeking?**
+> Write your response here.
+
+* **Observation: What happened, without exaggeration?**
+> Write your response here.
+
+* **Perspective: What do I need to understand from them?**
+> Write your response here.
+
+* **Effect: How has the situation affected people or the work?**
+> Write your response here.
+
+* **Responsibility: What part belongs to me?**
+> Write your response here.
+
+* **Next step: What request, decision, or agreement is needed?**
+> Write your response here.
 
 Begin with curiosity. If safety, misconduct, harassment, abuse, or a serious power imbalance is involved, seek appropriate help rather than attempting an informal conversation alone.
 
@@ -1747,16 +1787,19 @@ Which invitation feels most important now?
 
 What makes this invitation difficult? What would trust look like?
 
-### 6.6.3 Hands: Create a 30-day development plan
+Choose one next step in each dimension. Keep the plan realistic:
 
-Choose one next step in each dimension. Keep the plan realistic.
+* **🧠 Head (30-day next step & support):**
+> Write your response here.
 
-| Dimension | My 30-day next step | Who will support me? | How will I review it? |
-|---|---|---|---|
-| Head |  |  |  |
-| Heart |  |  |  |
-| Hands |  |  |  |
-| Habits |  |  |  |
+* **❤️ Heart (30-day next step & support):**
+> Write your response here.
+
+* **✋ Hands (30-day next step & support):**
+> Write your response here.
+
+* **🔁 Habits (30-day next step & review rhythm):**
+> Write your response here.
 
 Then identify:
 

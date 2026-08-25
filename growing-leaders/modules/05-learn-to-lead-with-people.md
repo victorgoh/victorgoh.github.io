@@ -102,16 +102,25 @@ What fear or desire may drive that reflex? What would love, courage, and humilit
 
 ### 5.5.3 Hands: Prepare a healthy conversation
 
-Choose a real but manageable conversation.
+Choose a real but manageable conversation:
 
-| Step | Preparation |
-|---|---|
-| **Purpose:** What good outcome am I seeking? |  |
-| **Observation:** What happened, without exaggeration? |  |
-| **Perspective:** What do I need to understand from them? |  |
-| **Effect:** How has the situation affected people or the work? |  |
-| **Responsibility:** What part belongs to me? |  |
-| **Next step:** What request, decision, or agreement is needed? |  |
+* **Purpose: What good outcome am I seeking?**
+> Write your response here.
+
+* **Observation: What happened, without exaggeration?**
+> Write your response here.
+
+* **Perspective: What do I need to understand from them?**
+> Write your response here.
+
+* **Effect: How has the situation affected people or the work?**
+> Write your response here.
+
+* **Responsibility: What part belongs to me?**
+> Write your response here.
+
+* **Next step: What request, decision, or agreement is needed?**
+> Write your response here.
 
 Begin with curiosity. If safety, misconduct, harassment, abuse, or a serious power imbalance is involved, seek appropriate help rather than attempting an informal conversation alone.
 

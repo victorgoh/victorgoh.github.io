@@ -100,16 +100,25 @@ Choose one. What truth about grace, service, and belonging do you need to receiv
 
 ### 4.5.3 Hands: Design a development experiment
 
-Choose one possible strength or gift to explore during the next month.
+Choose one possible strength or gift to explore during the next month:
 
-| Question | My response |
-|---|---|
-| What capacity do I want to explore? |  |
-| Whom could it serve? |  |
-| What small opportunity could I try? |  |
-| What preparation or skill do I need? |  |
-| What fruit will I look for? |  |
-| Who can observe and give feedback? |  |
+* **What capacity do I want to explore?**
+> Write your response here.
+
+* **Whom could it serve?**
+> Write your response here.
+
+* **What small opportunity could I try?**
+> Write your response here.
+
+* **What preparation or skill do I need?**
+> Write your response here.
+
+* **What fruit will I look for?**
+> Write your response here.
+
+* **Who can observe and give feedback?**
+> Write your response here.
 
 Keep the experiment small enough to complete. Examples include facilitating part of a meeting, encouraging a specific person, organising one task, explaining a short passage, or helping resolve a practical need.
 

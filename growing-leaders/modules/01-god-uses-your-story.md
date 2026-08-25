@@ -145,11 +145,17 @@ These might include:
 
 For each experience, note:
 
-| Experience | What did I learn or begin to believe? | What strength or pattern developed? | How might it affect my leadership now? |
-|---|---|---|---|
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+* **1. Significant Experience:**
+> Write your response here.
+
+* **2. What did I learn or begin to believe?**
+> Write your response here.
+
+* **3. What strength or pattern developed?**
+> Write your response here.
+
+* **4. How might it affect my leadership now?**
+> Write your response here.
 
 Look at the map as a whole. What theme, repeated pattern, or question do you notice?
 
@@ -176,9 +182,14 @@ Leaders learn from experience when they create space to notice it. This week, pr
 
 Use a simple format:
 
-| What happened? | What happened within me? | What might I learn or practise? |
-|---|---|---|
-|  |  |  |
+* **What happened?**
+> Write your response here.
+
+* **What happened within me?**
+> Write your response here.
+
+* **What might I learn or practise?**
+> Write your response here.
 
 If you miss a day, begin again the next day. The purpose is attentive learning, not maintaining a perfect record.
 

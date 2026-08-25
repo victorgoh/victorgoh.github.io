@@ -104,15 +104,19 @@ Consider what happens when someone asks you to take on a task.
 
 Choose one pattern. What desire or fear may be underneath it? What would honesty and faithfulness look like instead?
 
-### 3.5.3 Hands: Complete a responsibility audit
+List your main current commitments. Keep the list manageable:
 
-List your main current commitments. Keep the list manageable.
+* **Commitment / Responsibility:**
+> Write your response here.
 
-| Commitment | What does “done” mean? | Next action | Due or review date | Communicate with |
-|---|---|---|---|---|
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
+* **What does “done” mean?**
+> Write your response here.
+
+* **Next concrete action:**
+> Write your response here.
+
+* **Due date & person to communicate with:**
+> Write your response here.
 
 Then decide whether each commitment should be:
 
@@ -124,7 +128,7 @@ Then decide whether each commitment should be:
 
 Choose one commitment that needs attention within the next 48 hours. Take the next action or communicate with the person affected.
 
-### 3.5.4 Habits: Record and Follow Through
+### 3.5.3 Habits: Record and Follow Through
 
 **Purpose:** To reduce forgotten promises and improve trustworthy follow-through.
 

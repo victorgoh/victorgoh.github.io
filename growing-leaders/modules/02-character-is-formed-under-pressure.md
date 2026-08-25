@@ -132,13 +132,20 @@ Honest examination is not self-condemnation. Conviction identifies something spe
 
 Use the following framework for a current pressure point:
 
-| Question | My response |
-|---|---|
-| What are the facts, separate from my assumptions? |  |
-| What is happening within me? |  |
-| What responsibility or boundary is mine? |  |
-| What response would express truth and love? |  |
-| Who could give me wise, appropriate counsel? |  |
+* **What are the facts, separate from my assumptions?**
+> Write your response here.
+
+* **What is happening within me?**
+> Write your response here.
+
+* **What responsibility or boundary is mine?**
+> Write your response here.
+
+* **What response would express truth and love?**
+> Write your response here.
+
+* **Who could give me wise, appropriate counsel?**
+> Write your response here.
 
 If you have caused harm, a faithful response may include a simple apology:
 

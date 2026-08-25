@@ -492,6 +492,58 @@ function DiagramImage({ src, alt }: { src: string; alt: string }) {
   );
 }
 
+function CopyNotesButton({
+  documentId,
+  documentTitle,
+}: {
+  documentId: string;
+  documentTitle: string;
+}) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    const notes: string[] = [];
+    try {
+      for (let i = 0; i < window.localStorage.length; i += 1) {
+        const key = window.localStorage.key(i);
+        if (key && key.startsWith(`${storagePrefix}:answer:${documentId}:`)) {
+          const val = window.localStorage.getItem(key)?.trim();
+          if (val) {
+            notes.push(val);
+          }
+        }
+      }
+    } catch {
+      // Ignore storage errors
+    }
+
+    const textToCopy =
+      notes.length > 0
+        ? `📝 Reflection Notes: ${documentTitle}\n\n` +
+          notes.map((n) => `• ${n}`).join("\n\n")
+        : `📝 ${documentTitle}\n\n(No responses written yet on this device.)`;
+
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2200);
+      });
+    }
+  };
+
+  return (
+    <button
+      type="button"
+      className="copy-notes-btn"
+      onClick={handleCopy}
+      title="Copy your written notes for this module to clipboard"
+    >
+      <span aria-hidden="true">{copied ? "✓" : "📋"}</span>
+      <span>{copied ? "Copied to clipboard!" : "Copy My Notes"}</span>
+    </button>
+  );
+}
+
 function CourseMarkdown({
   document,
   documents,
@@ -530,6 +582,24 @@ function CourseMarkdown({
           enhanceWithBibleLinks(children, bibleTranslation)
         ),
       );
+      const isReflectionHeading =
+        (level === 3 || level === 2) &&
+        (title.toLowerCase().includes("reflection notes") ||
+          title.toLowerCase().includes("prepare to share") ||
+          title.toLowerCase().includes("growth plan"));
+
+      if (isReflectionHeading) {
+        return (
+          <div className="section-heading-wrap">
+            {renderedHeading}
+            <CopyNotesButton
+              documentId={document.id}
+              documentTitle={document.label}
+            />
+          </div>
+        );
+      }
+
       if (level === 2 && title === "Learn, Reflect and Apply" && moduleProgress) {
         return <>{renderedHeading}{moduleProgress}</>;
       }

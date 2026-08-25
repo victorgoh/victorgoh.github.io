@@ -98,16 +98,19 @@ Which invitation feels most important now?
 
 What makes this invitation difficult? What would trust look like?
 
-### 6.5.3 Hands: Create a 30-day development plan
+Choose one next step in each dimension. Keep the plan realistic:
 
-Choose one next step in each dimension. Keep the plan realistic.
+* **🧠 Head (30-day next step & support):**
+> Write your response here.
 
-| Dimension | My 30-day next step | Who will support me? | How will I review it? |
-|---|---|---|---|
-| Head |  |  |  |
-| Heart |  |  |  |
-| Hands |  |  |  |
-| Habits |  |  |  |
+* **❤️ Heart (30-day next step & support):**
+> Write your response here.
+
+* **✋ Hands (30-day next step & support):**
+> Write your response here.
+
+* **🔁 Habits (30-day next step & review rhythm):**
+> Write your response here.
 
 Then identify:
 
@@ -117,7 +120,7 @@ Then identify:
 - one practice you will stop, start, or continue;
 - one date when you will review the plan.
 
-### 6.5.4 Habits: Abide and Review
+### 6.5.3 Habits: Abide and Review
 
 **Purpose:** To keep leadership activity connected with inner life, relationships, learning, and dependence on God.
 
