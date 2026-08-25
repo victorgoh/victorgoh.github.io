@@ -11,7 +11,7 @@
 
 Leadership often starts before you feel ready. 
 
-Someone asks you to help lead a team, look after a person, run a game, or help out in a group. You might feel excited, nervous, or both.
+Someone asks you to help coordinate a team, mentor a person, host a small group, or take on a new responsibility. You might feel excited, nervous, or both.
 
 It is normal to ask: *"What am I supposed to do?"*
 
@@ -51,7 +51,7 @@ In every session, you will look at four parts of your life:
 
 ## How to Prepare Each Week
 
-You do not have to write long essays. This is not a school test!
+You do not have to write long essays. This is not an exam or a formal evaluation!
 
 * **Keep it simple**: Use bullet points or single words.
 * **Be honest**: Share what is real, not just what sounds good.
@@ -83,7 +83,7 @@ Think about two new leaders:
 
 Neither leader started from scratch. Both brought their past into how they lead.
 
-Your family, school, friends, happy memories, and painful moments have all shaped you. Some experiences give you strengths. Other experiences make you want to protect yourself or hide.
+Your family background, upbringing, friendships, life milestones, and painful moments have all shaped you. Some experiences give you strengths. Other experiences make you want to protect yourself or hide.
 
 ---
 
@@ -218,7 +218,7 @@ David could have taken the shortcut. But he chose to honor God and spare Saul’
 # Facilitator guide
 
 ## Purpose of the Meeting
-Teach young leaders how pressure tests character and guide them to choose integrity and prayer over quick temper or shortcuts.
+Teach emerging leaders how pressure tests character and guide them to choose integrity and prayer over quick temper or shortcuts.
 
 ## 45-Minute Conversation Plan
 
@@ -310,7 +310,7 @@ Faithfulness means:
 # Facilitator guide
 
 ## Purpose of the Meeting
-Inspire young leaders to see value in unseen service, build punctuality, and follow through on their commitments.
+Inspire emerging leaders to see value in unseen service, build punctuality, and follow through on their commitments.
 
 ## 45-Minute Conversation Plan
 
