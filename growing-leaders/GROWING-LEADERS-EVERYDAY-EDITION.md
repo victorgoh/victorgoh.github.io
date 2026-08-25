@@ -1,6 +1,6 @@
 # Growing Leaders: Everyday Edition
 
-> **A Practical 6-Session Mentoring Journey for Adults Stepping Into Leadership at Church, Work, and Home**  
+> **A Practical 6-Session Mentoring Journey for Stepping Into Leadership at Church, Work, and Home**  
 > *Clear, grounded, and written for real life.*
 
 ---

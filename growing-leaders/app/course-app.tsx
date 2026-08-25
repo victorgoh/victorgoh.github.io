@@ -38,24 +38,27 @@ type CourseData = {
   documents: CourseDocument[];
 };
 
-const EDITIONS: { id: CourseEdition; label: string; tag: string; description: string }[] = [
+const EDITIONS: { id: CourseEdition; label: string; tag: string; description: string; icon: string }[] = [
   {
     id: "everyday",
     label: "Everyday Edition",
-    tag: "Adults 30–50",
-    description: "Clear, practical guide for working adults and lay leaders",
+    tag: "Practical & Grounded",
+    description: "Relatable workplace, family, and ministry scenarios with 60-min group plans",
+    icon: "☕",
   },
   {
     id: "essentials",
     label: "Essentials Edition",
-    tag: "NLT • Fast-Track",
-    description: "Quick-start guide with simple language and 45-min sessions",
+    tag: "Quick-Start • 45 min",
+    description: "Concise, accessible format focusing on core principles and fast-track sessions",
+    icon: "⚡",
   },
   {
     id: "complete",
     label: "Complete Course",
     tag: "In-Depth Study",
-    description: "Full theological and exegetical study guide",
+    description: "Comprehensive foundation with extensive biblical exegesis and theological depth",
+    icon: "📚",
   },
 ];
 
@@ -758,6 +761,7 @@ export function CourseApp() {
   const [resetNotice, setResetNotice] = useState("");
   const [resetRevision, setResetRevision] = useState(0);
   const [printMenuOpen, setPrintMenuOpen] = useState(false);
+  const [editionMenuOpen, setEditionMenuOpen] = useState(false);
   const [resumePoint, setResumePoint] = useState<ResumePoint | null>(null);
   const [readingSize, setReadingSize] = useState("standard");
   const [relaxedReading, setRelaxedReading] = useState(false);
@@ -769,6 +773,7 @@ export function CourseApp() {
   const menuButton = useRef<HTMLButtonElement | null>(null);
   const courseNav = useRef<HTMLElement | null>(null);
   const printMenu = useRef<HTMLDivElement | null>(null);
+  const editionMenu = useRef<HTMLDivElement | null>(null);
 
   const reportStorageIssue = useCallback(() => setStorageIssue(true), []);
 
@@ -904,6 +909,22 @@ export function CourseApp() {
       window.removeEventListener("keydown", closeOnEscape);
     };
   }, [printMenuOpen]);
+
+  useEffect(() => {
+    if (!editionMenuOpen) return;
+    const close = (event: MouseEvent) => {
+      if (!editionMenu.current?.contains(event.target as Node)) setEditionMenuOpen(false);
+    };
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setEditionMenuOpen(false);
+    };
+    document.addEventListener("mousedown", close);
+    window.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.removeEventListener("mousedown", close);
+      window.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [editionMenuOpen]);
 
   useEffect(() => {
     if (!("serviceWorker" in navigator)) return;
@@ -1284,30 +1305,54 @@ export function CourseApp() {
           </span>
         </a>
         <div className="header-actions">
-          <div className="header-edition-switcher" role="tablist" aria-label="Course editions">
-            {EDITIONS.map((ed) => {
-              const isSelected = activeEdition === ed.id;
-              return (
-                <button
-                  key={ed.id}
-                  type="button"
-                  role="tab"
-                  aria-selected={isSelected}
-                  className={`header-edition-btn ${isSelected ? "header-edition-btn--active" : ""}`}
-                  onClick={() => {
-                    const target = findTargetInEdition(data.documents, ed.id, activeDocument);
-                    navigate(target.id);
-                  }}
-                  title={ed.description}
-                >
-                  <span className="header-edition-btn-title">
-                    {ed.id === "everyday" ? "Everyday" : ed.id === "essentials" ? "Essentials" : "Complete"}
-                  </span>
-                  <span className="header-edition-btn-tag">{ed.tag}</span>
-                </button>
-              );
-            })}
+          <div className="header-edition-wrap" ref={editionMenu}>
+            <button
+              className="header-edition-dropdown-btn"
+              type="button"
+              aria-label="Select course edition"
+              aria-expanded={editionMenuOpen}
+              aria-haspopup="menu"
+              onClick={() => setEditionMenuOpen((open) => !open)}
+            >
+              <span className="edition-btn-icon" aria-hidden="true">{currentEditionMeta.icon}</span>
+              <span className="edition-btn-label">{currentEditionMeta.label}</span>
+              <span className="edition-btn-tag">{currentEditionMeta.tag}</span>
+              <span className="edition-btn-chevron" aria-hidden="true">▾</span>
+            </button>
+
+            {editionMenuOpen && (
+              <div className="header-edition-menu" role="menu" aria-label="Course editions">
+                <div className="edition-menu-header">
+                  <span>Switch Edition</span>
+                </div>
+                {EDITIONS.map((ed) => {
+                  const isSelected = activeEdition === ed.id;
+                  return (
+                    <button
+                      key={ed.id}
+                      type="button"
+                      role="menuitem"
+                      className={`edition-menu-item ${isSelected ? "edition-menu-item--active" : ""}`}
+                      onClick={() => {
+                        setEditionMenuOpen(false);
+                        const target = findTargetInEdition(data.documents, ed.id, activeDocument);
+                        navigate(target.id);
+                      }}
+                    >
+                      <div className="edition-menu-item-top">
+                        <span className="edition-menu-item-icon">{ed.icon}</span>
+                        <strong className="edition-menu-item-title">{ed.label}</strong>
+                        <span className="edition-menu-item-tag">{ed.tag}</span>
+                        {isSelected && <span className="edition-menu-item-check" aria-hidden="true">✓</span>}
+                      </div>
+                      <p className="edition-menu-item-desc">{ed.description}</p>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
           </div>
+
           <div className="print-menu-wrap" ref={printMenu}>
             <button
               className="print-button"
@@ -1614,6 +1659,7 @@ export function CourseApp() {
 
         <div className="edition-content-banner">
           <div className="edition-content-banner-info">
+            <span className="edition-content-banner-icon">{currentEditionMeta.icon}</span>
             <span className="edition-content-banner-badge">{currentEditionMeta.label}</span>
             <span className="edition-content-banner-desc">{currentEditionMeta.description}</span>
           </div>
@@ -1630,7 +1676,7 @@ export function CourseApp() {
                 }}
                 title={ed.description}
               >
-                {ed.label} ({ed.tag})
+                {ed.icon} {ed.label} ({ed.tag})
               </button>
             ))}
           </div>

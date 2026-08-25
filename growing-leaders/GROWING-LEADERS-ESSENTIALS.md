@@ -1,7 +1,7 @@
 # Growing Leaders: Essentials Edition
 
 > **A Quick-Start Guide for Emerging Leaders**  
-> *Written in clear, simple language at the reading level of the New Living Translation (NLT).*
+> *A concise, accessible guide focusing on core leadership principles and practical action.*
 
 ---
 
