@@ -180,8 +180,6 @@ Leaders learn from experience when they create space to notice it. This week, pr
 
 **Support:** Tell the group when and where you plan to do the review. If helpful, set a reminder or ask another participant to check in once during the week.
 
-Use a simple format:
-
 * **What happened?**
 > Write your response here.
 
