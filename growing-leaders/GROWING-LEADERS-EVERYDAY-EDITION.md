@@ -123,10 +123,10 @@ When meeting with your mentor or small group, agree together on these shared pos
 
 Consider two team leaders in their 40s:
 
-* **Marcus** grew up in a home where disagreements were resolved calmly around the kitchen table. When someone on his church volunteer team drops the ball, he picks up the phone, talks through the issue with patience, and helps them get back on track without creating drama.
+* **Andrew** grew up in a home where disagreements were resolved calmly around the kitchen table. When someone on his church volunteer team drops the ball, he picks up the phone, talks through the issue with patience, and helps them get back on track without creating drama.
 * **David** grew up in an environment where mistakes were met with harsh criticism or tense, stony silence. When a team member misses an important deadline, David’s stomach knots up. He either takes over the job himself out of frustration or avoids talking to the person altogether, letting resentment build.
 
-Neither Marcus nor David began with a clean slate. Both brought decades of learned habits, family patterns, and past workplace experiences into their leadership.
+Neither Andrew nor David began with a clean slate. Both brought decades of learned habits, family patterns, and past workplace experiences into their leadership.
 
 The same is true for all of us.
 
