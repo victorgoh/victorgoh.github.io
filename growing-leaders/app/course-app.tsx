@@ -1883,9 +1883,6 @@ export function CourseApp() {
               </button>
             )}
           </div>
-          <p className="document-position">
-            {editionActiveIndex + 1} of {editionDocuments.length}
-          </p>
         </div>
 
         {storageIssue && (
