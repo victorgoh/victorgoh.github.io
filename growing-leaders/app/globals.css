@@ -1938,16 +1938,16 @@ select:focus-visible {
   }
 
   .course-content::before {
-    content: "Growing Leaders: From Foundations to Maturity\A" attr(data-print-title);
+    content: "Growing Leaders: " attr(data-print-edition) "\A" attr(data-print-title);
     display: block;
     margin-bottom: 12mm;
     padding-bottom: 5mm;
-    border-bottom: 1px solid #879aa4;
+    border-bottom: 1.5px solid #879aa4;
     color: var(--ink);
     font-family: Georgia, "Times New Roman", serif;
     font-size: 13pt;
     font-weight: 700;
-    line-height: 1.35;
+    line-height: 1.4;
     white-space: pre-line;
   }
 

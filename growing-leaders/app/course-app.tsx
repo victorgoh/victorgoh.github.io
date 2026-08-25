@@ -1840,6 +1840,7 @@ export function CourseApp() {
         <article
           className="course-content"
           key={`${activeDocument.id}:${resetRevision}`}
+          data-print-edition={`${currentEditionMeta.label} (${currentEditionMeta.tag})`}
           data-print-title={`${activeDocument.shortLabel}: ${activeDocument.label}`}
         >
           <CourseMarkdown
