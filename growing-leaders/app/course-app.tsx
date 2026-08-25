@@ -49,7 +49,7 @@ const EDITIONS: { id: CourseEdition; label: string; tag: string; description: st
   {
     id: "essentials",
     label: "Essentials Edition",
-    tag: "Quick-Start • 45 min",
+    tag: "Fast-Track Basics",
     description: "Concise, accessible format focusing on core principles and fast-track modules",
     icon: "⚡",
   },

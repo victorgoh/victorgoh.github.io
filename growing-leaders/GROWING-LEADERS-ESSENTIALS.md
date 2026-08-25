@@ -1,6 +1,6 @@
 # Growing Leaders: Essentials Edition
 
-> **A Quick-Start Guide for Emerging Leaders**  
+> **Fast-Track Basics for Emerging Leaders**  
 > *A concise, accessible guide focusing on core leadership principles and practical action.*
 
 ---
