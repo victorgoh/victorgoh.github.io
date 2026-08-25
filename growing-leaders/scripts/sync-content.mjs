@@ -95,7 +95,7 @@ const documents = [
   })),
 ];
 
-const coursePayload = `${JSON.stringify({ title: "How God Develops Leaders", documents }, null, 2)}\n`;
+const coursePayload = `${JSON.stringify({ title: "Growing Leaders: From Foundations to Maturity", documents }, null, 2)}\n`;
 
 await writeFile(resolve(dataDirectory, "course.json"), coursePayload, "utf8");
 await writeFile(resolve(rootDataDirectory, "course.json"), coursePayload, "utf8");

@@ -992,7 +992,7 @@ export function CourseApp() {
       }
       const backup = JSON.stringify(
         {
-          course: "How God Develops Leaders",
+          course: "Growing Leaders: From Foundations to Maturity",
           storageVersion: 2,
           exportedAt: new Date().toISOString(),
           entries,
@@ -1003,7 +1003,7 @@ export function CourseApp() {
       const url = URL.createObjectURL(new Blob([backup], { type: "application/json" }));
       const link = document.createElement("a");
       link.href = url;
-      link.download = `how-god-develops-leaders-backup-${new Date().toISOString().slice(0, 10)}.json`;
+      link.download = `growing-leaders-backup-${new Date().toISOString().slice(0, 10)}.json`;
       link.click();
       URL.revokeObjectURL(url);
     } catch {
@@ -1022,7 +1022,9 @@ export function CourseApp() {
         entries?: Record<string, unknown>;
       };
       if (
-        parsed.course !== "How God Develops Leaders" ||
+        (parsed.course !== "Growing Leaders: From Foundations to Maturity" &&
+          parsed.course !== "How God Develops Leaders" &&
+          parsed.course !== "Growing Leaders") ||
         parsed.storageVersion !== 2 ||
         !parsed.entries
       ) {
@@ -1041,7 +1043,7 @@ export function CourseApp() {
       setResetNotice("Your saved course data has been restored from the backup.");
       window.setTimeout(() => setResetNotice(""), 6000);
     } catch {
-      setSettingsError("This file is not a valid backup for How God Develops Leaders.");
+      setSettingsError("This file is not a valid backup for Growing Leaders.");
     }
   }
 
@@ -1210,9 +1212,9 @@ export function CourseApp() {
             navigate("course-introduction");
           }}
         >
-          <span className="brand-mark" aria-hidden="true">H</span>
+          <span className="brand-mark" aria-hidden="true">G</span>
           <span>
-            <strong>How God Develops Leaders</strong>
+            <strong>Growing Leaders: From Foundations to Maturity</strong>
             <small>A six-module mentoring journey</small>
           </span>
         </a>

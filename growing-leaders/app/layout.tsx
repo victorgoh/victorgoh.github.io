@@ -9,21 +9,21 @@ const socialImage = siteUrl
 
 export const metadata: Metadata = {
   metadataBase: siteUrl ? new URL(siteUrl) : undefined,
-  title: "How God Develops Leaders",
+  title: "Growing Leaders: From Foundations to Maturity",
   description:
     "A six-module mentoring journey for new and emerging Christian leaders, forming the head, heart, hands, and habits.",
   icons: {
     icon: `${basePath}/favicon.png`,
   },
   openGraph: {
-    title: "How God Develops Leaders",
+    title: "Growing Leaders: From Foundations to Maturity",
     description: "A six-module mentoring journey forming the head, heart, hands, and habits.",
     type: "website",
     images: [{ url: socialImage, width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "How God Develops Leaders",
+    title: "Growing Leaders: From Foundations to Maturity",
     description: "A six-module mentoring journey forming the head, heart, hands, and habits.",
     images: [socialImage],
   },

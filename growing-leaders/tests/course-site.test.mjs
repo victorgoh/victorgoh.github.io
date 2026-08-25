@@ -11,8 +11,8 @@ test("builds the course shell from the Markdown sources", async () => {
   ]);
   const data = JSON.parse(rawData);
 
-  assert.match(html, /<title>How God Develops Leaders<\/title>/i);
-  assert.equal(data.title, "How God Develops Leaders");
+  assert.match(html, /<title>Growing Leaders: From Foundations to Maturity<\/title>/i);
+  assert.equal(data.title, "Growing Leaders: From Foundations to Maturity");
   assert.equal(data.documents.length, 13);
   assert.equal(data.documents.filter((item) => item.kind === "module").length, 6);
   assert.equal(data.documents.filter((item) => item.kind === "facilitator").length, 6);

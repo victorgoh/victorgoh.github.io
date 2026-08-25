@@ -1596,7 +1596,7 @@ select:focus-visible {
   }
 
   .course-content::before {
-    content: "How God Develops Leaders\A" attr(data-print-title);
+    content: "Growing Leaders: From Foundations to Maturity\A" attr(data-print-title);
     display: block;
     margin-bottom: 12mm;
     padding-bottom: 5mm;
