@@ -26,6 +26,26 @@
       "featured": true
     },
     {
+      "id": "prayers-of-paul-essentials",
+      "title": "Apostolic Prayers (Essentials Edition)",
+      "description": "A 12-session practical prayer journey in clear, accessible everyday language with NLT Scripture, exploring the life-changing prayers of the Apostle Paul for spiritual wisdom, inner strength, and love.",
+      "type": "reading",
+      "totalItems": 12,
+      "url": "plans/prayers-of-paul-essentials.json",
+      "creator": "Prayers of Paul",
+      "version": "1.0",
+      "created": "2026-08-25",
+      "lastUpdated": "2026-08-25",
+      "tags": [
+        "Prayer",
+        "Spiritual Formation",
+        "Devotional",
+        "Discipleship",
+        "Essentials"
+      ],
+      "featured": false
+    },
+    {
       "id": "leadership-lessons",
       "title": "Lessons in Leadership: Biblical Wisdom from God's Servants",
       "description": "A 6-session Bible study on character, calling, and influence drawn from the lives, struggles, and triumphs of biblical figures.",
@@ -62,6 +82,27 @@
         "Spiritual Formation",
         "Devotional",
         "Discipleship"
+      ],
+      "featured": false
+    },
+    {
+      "id": "growing-leaders-essentials",
+      "title": "Growing Leaders (Essentials Edition)",
+      "description": "A 30-lesson practical leadership journey in clear, accessible everyday language with NLT Scripture, exploring how God shapes your story, character, faithfulness, gifts, relationships, and life with Him.",
+      "type": "reading",
+      "totalItems": 30,
+      "url": "plans/growing-leaders-essentials.json",
+      "creator": "Growing Leaders Course",
+      "version": "1.0",
+      "created": "2026-08-25",
+      "lastUpdated": "2026-08-25",
+      "tags": [
+        "Leadership",
+        "Character",
+        "Spiritual Formation",
+        "Devotional",
+        "Discipleship",
+        "Essentials"
       ],
       "featured": false
     },
