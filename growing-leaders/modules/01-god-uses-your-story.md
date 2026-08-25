@@ -219,6 +219,17 @@ Bring your notes to the mentoring conversation. Be ready to share:
 
 Choose what is appropriate to share. You can participate honestly without telling the group every detail of your story.
 
+> 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
+
+* **1. One insight or moment that resonated most with me:**
+> Write your response here.
+
+* **2. One honest question or struggle I want to bring to the group:**
+> Write your response here.
+
+* **3. My personal next step or prayer focus for this week:**
+> Write your response here.
+
 ---
 
 # Facilitator guide

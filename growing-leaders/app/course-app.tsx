@@ -110,6 +110,17 @@ function isCourseModule(document?: CourseDocument) {
   return document?.kind === "module" || document?.kind === "session";
 }
 
+type GTagFunction = (...args: unknown[]) => void;
+
+function trackGAEvent(eventName: string, params?: Record<string, unknown>) {
+  if (typeof window !== "undefined") {
+    const gtag = (window as unknown as { gtag?: GTagFunction }).gtag;
+    if (typeof gtag === "function") {
+      gtag("event", eventName, params);
+    }
+  }
+}
+
 function activeDocumentIsNotModule(data: CourseData, activeId: string) {
   const doc = data.documents.find((document) => document.id === activeId);
   return !isCourseModule(doc);
@@ -979,6 +990,26 @@ export function CourseApp() {
   }, [data]);
 
   useEffect(() => {
+    if (!data) return;
+    const currentDoc = data.documents.find((d) => d.id === activeId) || data.documents[0];
+    const edition = documentEdition(currentDoc);
+    trackGAEvent("course_edition_view", {
+      course_edition: edition,
+      document_id: currentDoc.id,
+      document_title: currentDoc.label,
+      document_kind: currentDoc.kind,
+    });
+    if (typeof window !== "undefined") {
+      const gtag = (window as unknown as { gtag?: GTagFunction }).gtag;
+      if (typeof gtag === "function") {
+        gtag("set", "user_properties", {
+          course_edition: edition,
+        });
+      }
+    }
+  }, [data, activeId]);
+
+  useEffect(() => {
     if (!pendingScroll.current) {
       window.scrollTo({ top: 0, behavior: "smooth" });
       return;
@@ -1336,6 +1367,12 @@ export function CourseApp() {
                       onClick={() => {
                         setEditionMenuOpen(false);
                         const target = findTargetInEdition(data.documents, ed.id, activeDocument);
+                        trackGAEvent("course_edition_switch", {
+                          selected_edition: ed.id,
+                          previous_edition: activeEdition,
+                          source_document_id: activeDocument.id,
+                          target_document_id: target.id,
+                        });
                         navigate(target.id);
                       }}
                     >
@@ -1408,6 +1445,12 @@ export function CourseApp() {
                   className={`edition-tab ${isSelected ? "edition-tab--active" : ""}`}
                   onClick={() => {
                     const target = findTargetInEdition(data.documents, ed.id, activeDocument);
+                    trackGAEvent("course_edition_switch", {
+                      selected_edition: ed.id,
+                      previous_edition: activeEdition,
+                      source_document_id: activeDocument.id,
+                      target_document_id: target.id,
+                    });
                     navigate(target.id);
                   }}
                   title={ed.description}
@@ -1672,6 +1715,12 @@ export function CourseApp() {
                 className="edition-switch-link-btn"
                 onClick={() => {
                   const target = findTargetInEdition(data.documents, ed.id, activeDocument);
+                  trackGAEvent("course_edition_switch", {
+                    selected_edition: ed.id,
+                    previous_edition: activeEdition,
+                    source_document_id: activeDocument.id,
+                    target_document_id: target.id,
+                  });
                   navigate(target.id);
                 }}
                 title={ed.description}

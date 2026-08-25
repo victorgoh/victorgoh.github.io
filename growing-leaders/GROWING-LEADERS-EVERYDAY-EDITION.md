@@ -191,6 +191,21 @@ Pick one interaction this week at work, church, or home where you usually feel i
 
 ---
 
+### 7. My Reflection Notes for Group Discussion
+
+> 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
+
+* **1. One insight or moment that resonated most with me:**
+> Write your response here.
+
+* **2. One honest question or struggle I want to bring to the group:**
+> Write your response here.
+
+* **3. My personal next step or prayer focus for this week:**
+> Write your response here.
+
+---
+
 # Facilitator guide
 
 ## Purpose of the Conversation
@@ -295,6 +310,21 @@ David understood that **how you get to a position determines how you will lead i
 ### 6. Small Step for the Week
 
 The next time you receive a frustrating message or encounter an annoying situation, wait at least one hour before sending a written response. Bring your initial reaction to God first.
+
+---
+
+### 7. My Reflection Notes for Group Discussion
+
+> 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
+
+* **1. One insight or moment that resonated most with me:**
+> Write your response here.
+
+* **2. One honest question or struggle I want to bring to the group:**
+> Write your response here.
+
+* **3. My personal next step or prayer focus for this week:**
+> Write your response here.
 
 ---
 
@@ -403,6 +433,21 @@ Do an honest calendar check. Identify one commitment that you are currently drop
 
 ---
 
+### 7. My Reflection Notes for Group Discussion
+
+> 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
+
+* **1. One insight or moment that resonated most with me:**
+> Write your response here.
+
+* **2. One honest question or struggle I want to bring to the group:**
+> Write your response here.
+
+* **3. My personal next step or prayer focus for this week:**
+> Write your response here.
+
+---
+
 # Facilitator guide
 
 ## Purpose of the Conversation
@@ -498,6 +543,21 @@ Consider how gifts develop:
 ### 6. Small Step for the Week
 
 Send a specific message of encouragement to someone on your team or in your group, pointing out a specific gift or character strength you have observed in them and how it blessed you.
+
+---
+
+### 7. My Reflection Notes for Group Discussion
+
+> 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
+
+* **1. One insight or moment that resonated most with me:**
+> Write your response here.
+
+* **2. One honest question or struggle I want to bring to the group:**
+> Write your response here.
+
+* **3. My personal next step or prayer focus for this week:**
+> Write your response here.
 
 ---
 
@@ -609,6 +669,21 @@ Have an intentional 15-minute one-on-one conversation with a team member, collea
 
 ---
 
+### 7. My Reflection Notes for Group Discussion
+
+> 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
+
+* **1. One insight or moment that resonated most with me:**
+> Write your response here.
+
+* **2. One honest question or struggle I want to bring to the group:**
+> Write your response here.
+
+* **3. My personal next step or prayer focus for this week:**
+> Write your response here.
+
+---
+
 # Facilitator guide
 
 ## Purpose of the Conversation
@@ -710,6 +785,21 @@ When your soul is nourished by the presence of Christ, you lead out of overflow 
 ### 6. Small Step for the Week
 
 Schedule one 30-minute block of solitude and quiet this week. Turn off your phone, sit in a quiet room or take a slow walk outdoors, and spend the time thanking God for His presence and listening to His voice.
+
+---
+
+### 7. My Reflection Notes for Group Discussion
+
+> 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
+
+* **1. One insight or moment that resonated most with me:**
+> Write your response here.
+
+* **2. One honest question or struggle I want to bring to the group:**
+> Write your response here.
+
+* **3. My personal next step or prayer focus for this week:**
+> Write your response here.
 
 ---
 

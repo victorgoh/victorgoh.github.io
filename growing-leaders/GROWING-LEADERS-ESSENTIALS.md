@@ -125,6 +125,21 @@ Take 5 minutes to pray through these 4 steps:
 
 ---
 
+### 6. My Reflection Notes for Group Discussion
+
+> 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
+
+* **1. One insight or moment that resonated most with me:**
+> Write your response here.
+
+* **2. One honest question or struggle I want to bring to the group:**
+> Write your response here.
+
+* **3. My personal next step or prayer focus for this week:**
+> Write your response here.
+
+---
+
 # Facilitator guide
 
 ## Purpose of the Meeting
@@ -212,6 +227,21 @@ David could have taken the shortcut. But he chose to honor God and spare Saul’
 1. When you feel stressed or overloaded, what is your first reaction?
 2. Why is it tempting to take shortcuts when you want to achieve something good?
 3. What is one character quality you really want God to grow in you this month?
+
+---
+
+### 6. My Reflection Notes for Group Discussion
+
+> 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
+
+* **1. One insight or moment that resonated most with me:**
+> Write your response here.
+
+* **2. One honest question or struggle I want to bring to the group:**
+> Write your response here.
+
+* **3. My personal next step or prayer focus for this week:**
+> Write your response here.
 
 ---
 
@@ -307,6 +337,21 @@ Faithfulness means:
 
 ---
 
+### 6. My Reflection Notes for Group Discussion
+
+> 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
+
+* **1. One insight or moment that resonated most with me:**
+> Write your response here.
+
+* **2. One honest question or struggle I want to bring to the group:**
+> Write your response here.
+
+* **3. My personal next step or prayer focus for this week:**
+> Write your response here.
+
+---
+
 # Facilitator guide
 
 ## Purpose of the Meeting
@@ -393,6 +438,21 @@ How do you discover your gifts? You don't discover them by sitting alone in a ro
 1. What is one thing you enjoy doing that seems to help or encourage others?
 2. Have you ever caught yourself comparing your gifts with someone else? How did it make you feel?
 3. How can our team make better use of everyone’s different strengths?
+
+---
+
+### 6. My Reflection Notes for Group Discussion
+
+> 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
+
+* **1. One insight or moment that resonated most with me:**
+> Write your response here.
+
+* **2. One honest question or struggle I want to bring to the group:**
+> Write your response here.
+
+* **3. My personal next step or prayer focus for this week:**
+> Write your response here.
 
 ---
 
@@ -490,6 +550,21 @@ People don’t follow a title; they follow someone who genuinely cares about the
 
 ---
 
+### 6. My Reflection Notes for Group Discussion
+
+> 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
+
+* **1. One insight or moment that resonated most with me:**
+> Write your response here.
+
+* **2. One honest question or struggle I want to bring to the group:**
+> Write your response here.
+
+* **3. My personal next step or prayer focus for this week:**
+> Write your response here.
+
+---
+
 # Facilitator guide
 
 ## Purpose of the Meeting
@@ -577,6 +652,21 @@ When you stay close to Jesus:
 1. What usually distracts you or crowds out your personal time with God?
 2. What helps you feel most connected and refreshed in your relationship with Jesus?
 3. As we finish these 6 sessions, what is the single biggest lesson God has taught you about leadership?
+
+---
+
+### 6. My Reflection Notes for Group Discussion
+
+> 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
+
+* **1. One insight or moment that resonated most with me:**
+> Write your response here.
+
+* **2. One honest question or struggle I want to bring to the group:**
+> Write your response here.
+
+* **3. My personal next step or prayer focus for this week:**
+> Write your response here.
 
 ---
 

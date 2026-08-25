@@ -165,6 +165,17 @@ Bring:
 2. One possible strength or gift and evidence that supports it.
 3. Your development experiment and feedback request.
 
+> 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
+
+* **1. One insight or moment that resonated most with me:**
+> Write your response here.
+
+* **2. One honest question or struggle I want to bring to the group:**
+> Write your response here.
+
+* **3. My personal next step or prayer focus for this week:**
+> Write your response here.
+
 ---
 
 # Facilitator guide
