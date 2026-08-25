@@ -1804,6 +1804,15 @@ export function CourseApp() {
             aria-modal="true"
             aria-labelledby="onboarding-title"
           >
+            <button
+              type="button"
+              className="onboarding-close-btn"
+              aria-label="Close dialog"
+              onClick={() => setOnboardingOpen(false)}
+            >
+              ✕
+            </button>
+
             <div className="onboarding-dialog-header">
               <span className="onboarding-badge">Welcome to Growing Leaders</span>
               <h2 id="onboarding-title">Choose Your Course Edition</h2>
@@ -1856,7 +1865,7 @@ export function CourseApp() {
                 className="onboarding-dismiss-btn"
                 onClick={() => setOnboardingOpen(false)}
               >
-                Explore on my own
+                Close (keep current edition)
               </button>
             </div>
           </div>

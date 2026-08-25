@@ -467,6 +467,7 @@ select:focus-visible {
 }
 
 .onboarding-dialog {
+  position: relative;
   width: min(100%, 940px);
   max-height: min(880px, calc(100vh - 40px));
   overflow-y: auto;
@@ -475,6 +476,31 @@ select:focus-visible {
   border-radius: 24px;
   background: var(--paper);
   box-shadow: 0 32px 100px rgba(10, 26, 38, 0.45);
+}
+
+.onboarding-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(24, 49, 71, 0.14);
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 140ms ease;
+}
+
+.onboarding-close-btn:hover {
+  background: var(--ink);
+  color: white;
+  border-color: var(--ink);
+  transform: scale(1.05);
 }
 
 .onboarding-dialog-header {
