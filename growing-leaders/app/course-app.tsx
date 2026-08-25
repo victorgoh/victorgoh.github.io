@@ -1410,9 +1410,9 @@ export function CourseApp() {
           }}
         >
           <span className="brand-mark" aria-hidden="true">G</span>
-          <span>
-            <strong>Growing Leaders: From Foundations to Maturity</strong>
-            <small>{currentEditionMeta.label} ({currentEditionMeta.tag})</small>
+          <span className="brand-text">
+            <strong>Growing Leaders</strong>
+            <small>From Foundations to Maturity</small>
           </span>
         </a>
         <div className="header-actions">
@@ -1856,20 +1856,14 @@ export function CourseApp() {
       )}
 
       <main id="main-content" className="course-main" tabIndex={-1}>
-        <div className="course-main-header">
-          <div className="eyebrow-row">
-            <span className="eyebrow">Growing Leaders</span>
-            <span className="course-edition-badge">{currentEditionMeta.label}</span>
-          </div>
-          <p className="course-title">From Foundations to Maturity</p>
-        </div>
         <div className="document-announcement" aria-live="polite" aria-atomic="true">
           Now viewing {activeDocument.shortLabel}: {activeDocument.label}
         </div>
         <div className="document-toolbar">
-          <div>
-            <p className="eyebrow">{activeDocument.shortLabel} • {currentEditionMeta.label}</p>
-            <p>{activeDocument.label}</p>
+          <div className="toolbar-breadcrumbs">
+            <span className="toolbar-crumb-edition">{currentEditionMeta.icon} {currentEditionMeta.label}</span>
+            <span className="toolbar-crumb-separator" aria-hidden="true">/</span>
+            <span className="toolbar-crumb-current">{activeDocument.shortLabel}</span>
           </div>
           <p className="document-position">
             {editionActiveIndex + 1} of {editionDocuments.length}
