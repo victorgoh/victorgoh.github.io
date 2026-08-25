@@ -47,6 +47,8 @@ Paul shows us four simple ways to pray:
 
 When we pray for leaders, bosses, coworkers, and neighbors—even the difficult ones—we place their lives under God's protection. Real spiritual change starts when we faithfully bring people before God and trust Him to work in their hearts.
 
+> “We pray because every seed needs spiritual covering.” — Marcus Yong
+
 ### 4. Questions to Think About
 1. Who are the leaders or people in your life that you find hardest to pray for with genuine gratitude?
 2. How does knowing you have direct access to God give you confidence to pray for others?
@@ -78,6 +80,8 @@ When you pray for family members, friends, or coworkers who don't know Jesus, yo
 
 No heart is too hard, and no life is too far away for God's grace. Because Jesus paid the full price on the cross, the door to God is wide open. When we pray for open hearts, we partner with Jesus in bringing people home.
 
+> “God, do it again. Bring rain to our drought-stricken lives.” — Pastor Anand Kumar
+
 ### 4. Questions to Think About
 1. How does knowing that God wants *everyone* to be saved encourage you when praying for people who seem far from Him?
 2. What is the difference between knowing facts about God and having a real, personal friendship with Jesus?
@@ -108,6 +112,8 @@ Before Paul asked God to give the Ephesians greater wisdom or power, he started 
 In our homes, workplaces, and churches, it is very easy to develop a critical eye—spotting mistakes, flaws, and things that need fixing. But Paul teaches us the habit of thankful celebration. When you look for God's grace, you train your heart to notice where He is actively working.
 
 Small steps of obedience, a kind word, an act of forgiveness, or a growing desire to pray are real signs of God at work. When you thank God for the good you see in others and tell them, you encourage them to keep growing.
+
+> “God has got tremendous favour upon FGA.” — Elder Dorai
 
 ### 4. Questions to Think About
 1. Where are you most tempted to be critical of others instead of looking for God's grace in their lives?
@@ -145,6 +151,8 @@ Spiritual wisdom is not about impressing others with smart answers; it is about 
 
 A fruitful Christian life begins with a heart that finds its deepest satisfaction in knowing God.
 
+> “Nothing satisfies except You and You alone.” — Elder Khoo Kay Hup
+
 ### 4. Questions to Think About
 1. What is the difference between knowing facts about God and having a close, living relationship with Him?
 2. What distractions in your daily routine make your relationship with God feel dry or rushed?
@@ -179,6 +187,8 @@ Paul highlights three life-changing truths God wants your heart to see:
 
 When God floods your heart with light, you stop measuring your future by your current problems. You walk forward with peace, knowing God's power is on your side.
 
+> “It is about the clarity of the authority of Christ in your life.” — Elder Ho Kien Keong
+
 ### 4. Questions to Think About
 1. In what situations do you find your thoughts clouded by worry or worldly problems?
 2. What does it mean to you that you are God's "precious inheritance"?
@@ -212,6 +222,8 @@ God's answer to our weariness is not just a vacation; it is **inner strength fro
 - As you trust Him, Jesus makes your heart His comfortable home.
 
 When Christ lives at the center of your heart, His peace settles your emotions, His truth guides your thoughts, and His love anchors your decisions. You can face busy and demanding seasons with quiet joy because your strength comes from God.
+
+> “It is not us, but Thy Holy Spirit in us.” — Elder Liew Hoi Foo
 
 ### 4. Questions to Think About
 1. What are the warning signs in your life that you are running on human energy rather than the Spirit's strength?
@@ -255,6 +267,8 @@ Look at how huge God's love is:
 
 When you know you are completely loved by Jesus, you don't need to live in fear of rejection. You can lead, serve, and love others freely because your security is already settled forever.
 
+> “It is about the presence of God in your life.” — Elder Ho Kien Keong
+
 ### 4. Questions to Think About
 1. Do you tend to measure your worth by your performance and people's approval, or by God's love for you?
 2. Which dimension of Christ's love (wide, long, high, deep) encourages your heart the most right now?
@@ -291,6 +305,8 @@ When you face an impossible situation, stop measuring the problem by your own st
 
 God is waiting to do far more in your family, your workplace, and your church than you ever dared to ask. Step out in bold faith and trust Him to work.
 
+> “Do, O Lord, what only the Lord of the harvest can do.” — Pastor Anand Kumar
+
 ### 4. Questions to Think About
 1. Are your prayers currently bold and faith-filled, or small and cautious? What makes you hesitate to ask big things of God?
 2. Can you think of a time in your life when God did far more than you asked or expected?
@@ -325,6 +341,8 @@ Paul shows a clear 4-step progression in this prayer:
 4. **Endurance and Patience**: God's power gives you the stamina to keep doing good even when life gets tough.
 
 Knowing God's will is never just about getting information; it is about transformation. When you seek God's wisdom and live it out daily, your life becomes a steady witness that brings honor to Jesus Christ.
+
+> “What you sow today, you will reap tomorrow.” — Pastor Rachel Bulan
 
 ### 4. Questions to Think About
 1. What does it look like in your workplace or home to "live in a way that always honors and pleases the Lord"?
@@ -361,6 +379,8 @@ Notice three reassuring truths:
 3. **God will FINISH It**: God never abandons a project. He will bring His work in you to complete perfection when Jesus returns.
 
 When you look at your own flaws or see a friend struggling, don't lose heart. God is not finished yet. Keep trusting the Master Builder who always completes what He starts.
+
+> “Keep on sowing. Keep on praying. Keep on trusting the Lord.” — Pastor Benny Ho
 
 ### 4. Questions to Think About
 1. Do you ever feel discouraged about your spiritual progress or flaws? How does Philippians 1:6 give you peace?
@@ -399,6 +419,8 @@ Consider what Paul prays for:
 
 When love and wisdom work together, you won't be fooled by false trends or blinded by emotions. You will make wise choices, protect relationships, and live with pure integrity.
 
+> “We serve because seeds are planted through love in action.” — Marcus Yong
+
 ### 4. Questions to Think About
 1. Why is it dangerous to have "love without discernment" or "knowledge without love"?
 2. In what area of your life do you need God's wisdom to figure out "what really matters" right now?
@@ -436,6 +458,8 @@ Notice the two powerful themes Paul highlights in these final prayers:
 The goal of all our prayers, our study, and our daily service is simple: **that the name of Jesus Christ may be honored through the way we live.**
 
 When you live with faith in action and love that refreshes others, people see the goodness of God in you. Go out and be a refreshing blessing to your world today!
+
+> “We step beyond comfort and move towards people.” — Dr Paul Ng
 
 ### 4. Questions to Think About
 1. What is one good thing or act of service your faith is prompting you to do right now?
