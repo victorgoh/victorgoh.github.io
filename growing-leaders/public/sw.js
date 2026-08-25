@@ -1,4 +1,4 @@
-const CACHE_NAME = "growing-leaders-course-v2";
+const CACHE_NAME = "growing-leaders-course-v3";
 const scope = self.registration.scope;
 const coreAssets = [
   new URL("./", scope).toString(),
