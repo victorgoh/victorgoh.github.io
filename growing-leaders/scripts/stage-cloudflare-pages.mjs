@@ -6,6 +6,7 @@ const projectDirectory = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const staticBuildDirectory = join(projectDirectory, "dist", "client");
 
 const deploymentPaths = [
+  "_headers",
   "_next",
   "data",
   "favicon.png",

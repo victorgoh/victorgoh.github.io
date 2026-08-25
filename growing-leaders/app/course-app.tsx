@@ -1034,7 +1034,7 @@ export function CourseApp() {
     }
 
     navigator.serviceWorker
-      .register(joinBasePath("sw.js"))
+      .register(joinBasePath("sw.js"), { updateViaCache: "none" })
       .then((reg) => {
         reg.update().catch(() => undefined);
       })
