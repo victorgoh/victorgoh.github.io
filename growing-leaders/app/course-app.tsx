@@ -846,6 +846,7 @@ export function CourseApp() {
   const [resetRevision, setResetRevision] = useState(0);
   const [printMenuOpen, setPrintMenuOpen] = useState(false);
   const [editionMenuOpen, setEditionMenuOpen] = useState(false);
+  const [onboardingOpen, setOnboardingOpen] = useState(false);
   const [resumePoint, setResumePoint] = useState<ResumePoint | null>(null);
   const [readingSize, setReadingSize] = useState("standard");
   const [relaxedReading, setRelaxedReading] = useState(false);
@@ -880,6 +881,9 @@ export function CourseApp() {
     const relaxed = safeStorageGet(`${storagePrefix}:preference:relaxed-reading`);
     const translation = safeStorageGet(`${storagePrefix}:preference:bible-translation`);
     const savedResume = safeStorageGet(`${storagePrefix}:preference:last-location`);
+    const selectedEdition = safeStorageGet(`${storagePrefix}:preference:edition-selected`);
+    const hasHash = typeof window !== "undefined" && window.location.hash.length > 1;
+
     const frame = window.requestAnimationFrame(() => {
       if (size.failed || relaxed.failed || translation.failed || savedResume.failed) setStorageIssue(true);
       if (size.value === "large" || size.value === "standard") setReadingSize(size.value);
@@ -893,6 +897,9 @@ export function CourseApp() {
         } catch {
           safeStorageRemove(`${storagePrefix}:preference:last-location`);
         }
+      }
+      if (!selectedEdition.value && !hasHash) {
+        setOnboardingOpen(true);
       }
     });
     return () => window.cancelAnimationFrame(frame);
@@ -1645,6 +1652,25 @@ export function CourseApp() {
               <span>{savedCount === 1 ? "response or selection" : "responses and selections"}</span>
             </div>
 
+            <section className="settings-section" aria-labelledby="edition-settings-title">
+              <h3 id="edition-settings-title">Course edition</h3>
+              <p>
+                Currently reading: <strong>{currentEditionMeta.label}</strong> ({currentEditionMeta.tag})
+              </p>
+              <div className="settings-actions settings-actions--start">
+                <button
+                  type="button"
+                  className="secondary-button"
+                  onClick={() => {
+                    setSettingsOpen(false);
+                    setOnboardingOpen(true);
+                  }}
+                >
+                  Change edition
+                </button>
+              </div>
+            </section>
+
             <section className="settings-section" aria-labelledby="reading-settings-title">
               <h3 id="reading-settings-title">Reading preferences</h3>
               <label>
@@ -1714,26 +1740,21 @@ export function CourseApp() {
                     className="secondary-button"
                     onClick={() => setResetConfirmation(false)}
                   >
-                    Go back
+                    Keep my responses
                   </button>
-                  <button type="button" className="danger-button" onClick={resetLocalStorage}>
-                    Yes, clear all local storage
+                  <button type="button" className="warning-button" onClick={resetLocalStorage}>
+                    Clear everything
                   </button>
                 </div>
               </div>
             ) : (
-              <div className="settings-reset-panel">
-                <h3>Reset saved course responses</h3>
-                <p>
-                  Use this when saved answers appear corrupted or no longer match the
-                  current lesson content.
-                </p>
+              <div className="settings-actions">
                 <button
                   type="button"
-                  className="danger-outline-button"
+                  className="destructive-button"
                   onClick={() => setResetConfirmation(true)}
                 >
-                  Reset saved responses
+                  Clear all responses
                 </button>
               </div>
             )}
@@ -1753,13 +1774,95 @@ export function CourseApp() {
         </div>
       )}
 
+      {onboardingOpen && data && (
+        <div
+          className="onboarding-overlay"
+          role="presentation"
+          onClick={(event) => {
+            if (event.target === event.currentTarget) {
+              setOnboardingOpen(false);
+            }
+          }}
+        >
+          <div
+            className="onboarding-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="onboarding-title"
+          >
+            <div className="onboarding-dialog-header">
+              <span className="onboarding-badge">Welcome to Growing Leaders</span>
+              <h2 id="onboarding-title">Choose Your Course Edition</h2>
+              <p className="onboarding-subtitle">
+                Select the format that best fits your schedule and mentoring context. You can switch editions anytime.
+              </p>
+            </div>
+
+            <div className="onboarding-cards">
+              {EDITIONS.map((ed) => {
+                const isCurrent = activeEdition === ed.id;
+                return (
+                  <button
+                    key={ed.id}
+                    type="button"
+                    className={`onboarding-card onboarding-card--${ed.id} ${isCurrent ? "onboarding-card--current" : ""}`}
+                    onClick={() => {
+                      safeStorageSet(`${storagePrefix}:preference:edition-selected`, ed.id);
+                      setOnboardingOpen(false);
+                      const target =
+                        data.documents.find((d) => documentEdition(d) === ed.id && d.kind === "introduction") ||
+                        data.documents.find((d) => documentEdition(d) === ed.id) ||
+                        data.documents[0];
+                      trackGAEvent("course_edition_select", {
+                        selected_edition: ed.id,
+                        source: "onboarding_modal",
+                      });
+                      navigate(target.id);
+                    }}
+                  >
+                    <div className="onboarding-card-header">
+                      <span className="onboarding-card-icon" aria-hidden="true">{ed.icon}</span>
+                      <span className="onboarding-card-tag">{ed.tag}</span>
+                    </div>
+                    <h3 className="onboarding-card-title">{ed.label}</h3>
+                    <p className="onboarding-card-desc">{ed.description}</p>
+                    <div className="onboarding-card-footer">
+                      <span className="onboarding-card-btn-text">
+                        {isCurrent ? "Continue with this Edition →" : "Select this Edition →"}
+                      </span>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+
+            <div className="onboarding-dialog-footer">
+              <button
+                type="button"
+                className="onboarding-dismiss-btn"
+                onClick={() => setOnboardingOpen(false)}
+              >
+                Explore on my own
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {resetNotice && (
         <div className="reset-notice" role="status">
           {resetNotice}
         </div>
       )}
 
-      <main id="lesson-content" className="course-main" tabIndex={-1}>
+      <main id="main-content" className="course-main" tabIndex={-1}>
+        <div className="course-main-header">
+          <div className="eyebrow-row">
+            <span className="eyebrow">Growing Leaders</span>
+            <span className="course-edition-badge">{currentEditionMeta.label}</span>
+          </div>
+          <p className="course-title">From Foundations to Maturity</p>
+        </div>
         <div className="document-announcement" aria-live="polite" aria-atomic="true">
           Now viewing {activeDocument.shortLabel}: {activeDocument.label}
         </div>
@@ -1771,37 +1874,6 @@ export function CourseApp() {
           <p className="document-position">
             {editionActiveIndex + 1} of {editionDocuments.length}
           </p>
-        </div>
-
-        <div className="edition-content-banner">
-          <div className="edition-content-banner-info">
-            <span className="edition-content-banner-icon">{currentEditionMeta.icon}</span>
-            <span className="edition-content-banner-badge">{currentEditionMeta.label}</span>
-            <span className="edition-content-banner-desc">{currentEditionMeta.description}</span>
-          </div>
-          <div className="edition-content-banner-actions">
-            <span className="edition-switch-label">Switch edition:</span>
-            {EDITIONS.filter((ed) => ed.id !== activeEdition).map((ed) => (
-              <button
-                key={ed.id}
-                type="button"
-                className="edition-switch-link-btn"
-                onClick={() => {
-                  const target = findTargetInEdition(data.documents, ed.id, activeDocument);
-                  trackGAEvent("course_edition_switch", {
-                    selected_edition: ed.id,
-                    previous_edition: activeEdition,
-                    source_document_id: activeDocument.id,
-                    target_document_id: target.id,
-                  });
-                  navigate(target.id);
-                }}
-                title={ed.description}
-              >
-                {ed.icon} {ed.label} ({ed.tag})
-              </button>
-            ))}
-          </div>
         </div>
 
         {storageIssue && (
