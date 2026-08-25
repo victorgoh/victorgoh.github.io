@@ -70,7 +70,7 @@ You do not have to write long essays. This is not an exam or a formal evaluation
 > **This Week's Habit:** *Notice and Learn*
 
 > *"You intended to harm me, but God intended it all for good. He brought me to this position so I could save the lives of many people."*  
-> — **Genesis 50:20 (NLT)**
+> — **Genesis 50:20**
 
 ---
 
@@ -152,7 +152,7 @@ Help emerging leaders see that God can use their background for good, identify t
 * **Warm-Up:** *"On a scale of 1 to 10, how was your week? What was one highlight?"*
 
 ### 2. Story Spotlight: Joseph (10 mins)
-* Read **Genesis 50:20 (NLT)** together.
+* Read **Genesis 50:20** together.
 * Ask: *"If you were Joseph and had total power over the brothers who sold you into slavery, what would you have wanted to do?"*
 * Emphasize: *"God does not waste the hard parts of your story."*
 
@@ -177,7 +177,7 @@ Help emerging leaders see that God can use their background for good, identify t
 > **This Week's Habit:** *Pause and Pray*
 
 > *"We can rejoice, too, when we run into problems and trials, for we know that they help us develop endurance. And endurance develops strength of character, and character strengthens our confident hope of salvation."*  
-> — **Romans 5:3–4 (NLT)**
+> — **Romans 5:3–4**
 
 ---
 
@@ -257,7 +257,7 @@ Teach emerging leaders how pressure tests character and guide them to choose int
 * **Warm-Up:** *"What is the most stressful thing you had to deal with this past week?"*
 
 ### 2. Scripture Spotlight: David in the Cave (10 mins)
-* Read **1 Samuel 24:4–6 (NLT)**.
+* Read **1 Samuel 24:4–6** together.
 * Ask: *"Why didn't David kill Saul when he had the perfect chance?"*
 * Highlight: *"Taking the wrong shortcut damages who you are."*
 
@@ -281,7 +281,7 @@ Teach emerging leaders how pressure tests character and guide them to choose int
 > **This Week's Habit:** *Write It Down and Follow Through*
 
 > *"If you are faithful in little things, you will be faithful in large ones. But if you are dishonest in little things, you won't be honest with greater responsibilities."*  
-> — **Luke 16:10 (NLT)**
+> — **Luke 16:10**
 
 ---
 
@@ -301,7 +301,7 @@ God measures leadership by **faithfulness**, not by fame or popularity.
 
 In Jesus’ parable of the talents, the master did not say, *"Well done, my famous and powerful servant."* He said:
 
-> *"Well done, my good and faithful servant. You have been faithful in handling this small amount, so now I will give you many more responsibilities."* (Matthew 25:21 NLT)
+> *"Well done, my good and faithful servant. You have been faithful in handling this small amount, so now I will give you many more responsibilities."* (Matthew 25:21)
 
 Faithfulness means:
 * Showing up on time.
@@ -364,7 +364,7 @@ Inspire emerging leaders to see value in unseen service, build punctuality, and 
 * **Warm-Up:** *"What is the most boring chore you have to do at home, and how do you feel when doing it?"*
 
 ### 2. Scripture Spotlight: Small Things (10 mins)
-* Read **Luke 16:10 (NLT)** together.
+* Read **Luke 16:10** together.
 * Ask: *"Why does God test us with small, unexciting tasks before giving us big opportunities?"*
 
 ### 3. Group Discussion (15 mins)
@@ -386,7 +386,7 @@ Inspire emerging leaders to see value in unseen service, build punctuality, and 
 > **This Week's Habit:** *Serve, Notice, and Ask*
 
 > *"God has given each of you a gift from his great variety of spiritual gifts. Use them well to serve one another."*  
-> — **1 Peter 4:10 (NLT)**
+> — **1 Peter 4:10**
 
 ---
 
@@ -468,7 +468,7 @@ Help participants identify their strengths, break free from comparison and impos
 * **Warm-Up:** Go around the circle and have each person say one thing they appreciate about the person sitting to their left.
 
 ### 2. Scripture Spotlight: One Body, Many Parts (10 mins)
-* Read **1 Peter 4:10–11 (NLT)**.
+* Read **1 Peter 4:10–11** together.
 * Highlight: *"Gifts are given to serve other people, not to make us look cool."*
 
 ### 3. Group Chat (15 mins)
@@ -490,7 +490,7 @@ Help participants identify their strengths, break free from comparison and impos
 > **This Week's Habit:** *Listen Before You Speak*
 
 > *"Whoever wants to be a leader among you must be your servant, and whoever wants to be first among you must be the slave of everyone. For even the Son of Man came not to be served but to serve others, and to give his life as a ransom for many."*  
-> — **Mark 10:43–45 (NLT)**
+> — **Mark 10:43–45**
 
 ---
 
@@ -577,7 +577,7 @@ Teach servant leadership through active listening, kindness, and practical acts 
 * **Warm-Up:** *"Who is the kindest leader or teacher you’ve ever had? What made them special?"*
 
 ### 2. Scripture Spotlight: The Servant King (10 mins)
-* Read **Mark 10:42–45 (NLT)**.
+* Read **Mark 10:42–45** together.
 * Highlight: *"Jesus didn’t come to be served, but to serve. Real leaders wash feet."*
 
 ### 3. Group Chat & The 3-Second Rule (15 mins)
@@ -600,7 +600,7 @@ Teach servant leadership through active listening, kindness, and practical acts 
 > **This Week's Habit:** *Abide and Review*
 
 > *"Yes, I am the vine; you are the branches. Those who remain in me, and I in them, will produce much fruit. For apart from me you can do nothing."*  
-> — **John 15:5 (NLT)**
+> — **John 15:5**
 
 ---
 
@@ -642,7 +642,7 @@ When you stay close to Jesus:
 
 1. **Notice:** How full is your spiritual battery right now (1% to 100%)?
 2. **Name:** Speak openly to God about your tiredness, busyness, or any worries on your mind.
-3. **Receive:** Hear Jesus saying to you: *"Come to me, all of you who are weary and carry heavy burdens, and I will give you rest."* (Matthew 11:28 NLT)
+3. **Receive:** Hear Jesus saying to you: *"Come to me, all of you who are weary and carry heavy burdens, and I will give you rest."* (Matthew 11:28)
 4. **Respond:** Choose one time slot in your daily routine where you will consistently meet with God this week.
 
 ---
@@ -682,7 +682,7 @@ Celebrate completing the course, encourage lifelong spiritual rhythms of prayer 
 * Share a snack or drink together to mark the milestone.
 
 ### 2. Scripture Spotlight: Stay Connected to the Vine (10 mins)
-* Read **John 15:5 (NLT)**.
+* Read **John 15:5** together.
 * Highlight: *"Without Jesus, our leadership battery runs out fast. Stay plugged in."*
 
 ### 3. Reflection & Takeaways (15 mins)
@@ -717,4 +717,4 @@ Take a few minutes to write down your personal commitments as you finish this co
 ## A Closing Blessing for Growing Leaders
 
 > *"May the Lord bless you and protect you. May the Lord smile on you and be gracious to you. May the Lord show you his favor and give you his peace as you follow Jesus and lead His people with humble courage."*  
-> — **Numbers 6:24–26 (NLT)**
+> — **Numbers 6:24–26**

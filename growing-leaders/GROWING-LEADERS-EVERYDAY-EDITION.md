@@ -115,7 +115,7 @@ When meeting with your mentor or small group, agree together on these shared pos
 > **Leadership Habit:** *Notice and Learn*
 
 > *"You intended to harm me, but God intended it all for good. He brought me to this position so I could save the lives of many people."*  
-> — **Genesis 50:20 (NLT)**
+> — **Genesis 50:20**
 
 ---
 
@@ -150,7 +150,7 @@ Look at Joseph in the Book of Genesis:
 
 Years later, when Joseph was promoted to lead Egypt and held the power to take revenge on his brothers, he chose grace, forgiveness, and redemptive perspective instead:
 
-> *"You intended to harm me, but God intended it all for good. He brought me to this position so I could save the lives of many people."* (Genesis 50:20 NLT)
+> *"You intended to harm me, but God intended it all for good. He brought me to this position so I could save the lives of many people."* (Genesis 50:20)
 
 God can take the hardest seasons of your life—an unfair workplace experience, a difficult season in your family, or a personal failure—and use them to give you deeper compassion, wisdom, and emotional maturity as you care for others.
 
@@ -217,7 +217,7 @@ Help participants recognize that their life story and family background influenc
 * **Question:** *"Think of a leader or boss who influenced you early in your life. What is one positive habit you learned from them, or one mistake you decided never to repeat?"*
 
 ### 2. Scripture & Core Principle (12 mins)
-* Read **Genesis 50:15–21** (Joseph and his brothers) aloud from the NLT.
+* Read **Genesis 50:15–21** (Joseph and his brothers) aloud together.
 * **Discussion:**
   * *"What enabled Joseph to respond with forgiveness rather than revenge after all his suffering?"*
   * *"How does Joseph’s perspective ('God intended it for good') challenge how we view our past setbacks?"*
@@ -243,7 +243,7 @@ Help participants recognize that their life story and family background influenc
 > **Leadership Habit:** *Pause and Pray*
 
 > *"We can rejoice, too, when we run into problems and trials, for we know that they help us develop endurance. And endurance develops strength of character, and character strengthens our confident hope of salvation."*  
-> — **Romans 5:3–4 (NLT)**
+> — **Romans 5:3–4**
 
 ---
 
@@ -274,7 +274,7 @@ In 1 Samuel 24, David was hiding in a dark desert cave from King Saul, who was u
 
 David had the opportunity, the weapon, and the peer pressure to take a shortcut. But David cut only a corner of Saul’s robe, and his conscience immediately struck him. David refused to do the wrong thing to achieve a God-given promise:
 
-> *"The Lord forbid that I should do this to my lord the king. I must not attack him, for he is the Lord’s anointed."* (1 Samuel 24:6 NLT)
+> *"The Lord forbid that I should do this to my lord the king. I must not attack him, for he is the Lord’s anointed."* (1 Samuel 24:6)
 
 David understood that **how you get to a position determines how you will lead in it**. Taking ungodly shortcuts damages our soul. God uses seasons in the wilderness to forge leaders who trust His timing rather than forcing their own way.
 
@@ -364,7 +364,7 @@ Equip participants to recognize pressure points, choose integrity over easy shor
 > **Leadership Habit:** *Write It Down and Follow Through*
 
 > *"If you are faithful in little things, you will be faithful in large ones. But if you are dishonest in little things, you won't be honest with greater responsibilities."*  
-> — **Luke 16:10 (NLT)**
+> — **Luke 16:10**
 
 ---
 
@@ -387,7 +387,7 @@ Trust in adult life is built in drops and lost in buckets. Small commitments—s
 
 In Jesus’ Parable of the Talents (Matthew 25), the master entrusted his resources to his servants while he went away. When he returned, his praise for the servants who invested their resources was simple and profound:
 
-> *"Well done, my good and faithful servant. You have been faithful in handling this small amount, so now I will give you many more responsibilities. Let’s celebrate together!"* (Matthew 25:21 NLT)
+> *"Well done, my good and faithful servant. You have been faithful in handling this small amount, so now I will give you many more responsibilities. Let’s celebrate together!"* (Matthew 25:21)
 
 Notice what the master rewarded:
 * He did not reward popularity, flashiness, or charisma.
@@ -485,7 +485,7 @@ Help participants discover that reliable follow-through in ordinary duties is fo
 > **Leadership Habit:** *Serve, Notice, and Ask*
 
 > *"God has given each of you a gift from his great variety of spiritual gifts. Use them well to serve one another. Do you have the gift of speaking? Then speak as though God himself were speaking through you. Do you have the gift of helping others? Do it with all the strength and energy that God supplies."*  
-> — **1 Peter 4:10–11 (NLT)**
+> — **1 Peter 4:10–11**
 
 ---
 
@@ -504,7 +504,7 @@ Both traps arise from forgetting that God designed the Church as an interdepende
 
 The Apostle Paul reminds us:
 
-> *"Just as our bodies have many parts and each part has a special function, so it is with Christ’s body. We are many parts of one body, and we all belong to each other. In his grace, God has given us different gifts for doing certain things well."* (Romans 12:4–6 NLT)
+> *"Just as our bodies have many parts and each part has a special function, so it is with Christ’s body. We are many parts of one body, and we all belong to each other. In his grace, God has given us different gifts for doing certain things well."* (Romans 12:4–6)
 
 Consider how gifts develop:
 * **Gifts are discovered in motion:** You rarely discover your strengths by sitting alone taking personality tests. You discover them by rolling up your sleeves and serving real people.
@@ -598,7 +598,7 @@ Free participants from comparison and exhaustion, help them identify their core 
 > **Leadership Habit:** *Listen Before Responding*
 
 > *"Whoever wants to be a leader among you must be your servant, and whoever wants to be first among you must be the slave of everyone. For even the Son of Man came not to be served but to serve others, and to give his life as a ransom for many."*  
-> — **Mark 10:43–45 (NLT)**
+> — **Mark 10:43–45**
 
 ---
 
@@ -619,7 +619,7 @@ In the ancient Roman world—and in our corporate world today—greatness is mea
 
 Jesus completely upended this pyramid:
 
-> *"You know that the rulers in this world lord it over their people, and officials flaunt their authority over those under them. But among you it will be different. Whoever wants to be a leader among you must be your servant."* (Mark 10:42–43 NLT)
+> *"You know that the rulers in this world lord it over their people, and officials flaunt their authority over those under them. But among you it will be different. Whoever wants to be a leader among you must be your servant."* (Mark 10:42–43)
 
 Jesus demonstrated this not just in words, but by taking a towel, kneeling on the floor, and washing His disciples' dust-covered feet (John 13).
 
@@ -720,7 +720,7 @@ Shift leaders from authoritarian control to Jesus-style servant leadership, with
 > **Leadership Habit:** *Abide and Review*
 
 > *"Yes, I am the vine; you are the branches. Those who remain in me, and I in them, will produce much fruit. For apart from me you can do nothing."*  
-> — **John 15:5 (NLT)**
+> — **John 15:5**
 
 ---
 
@@ -744,7 +744,7 @@ When we try to lead out of our own limited emotional and physical energy, burnou
 
 Jesus gave His disciples a simple metaphor for sustainable life and leadership:
 
-> *"Remain in me, and I will remain in you. For a branch cannot produce fruit if it is severed from the vine, and you cannot be fruitful unless you remain in me. Yes, I am the vine; you are the branches... For apart from me you can do nothing."* (John 15:4–5 NLT)
+> *"Remain in me, and I will remain in you. For a branch cannot produce fruit if it is severed from the vine, and you cannot be fruitful unless you remain in me. Yes, I am the vine; you are the branches... For apart from me you can do nothing."* (John 15:4–5)
 
 Notice the order:
 * **Connection comes before production:** A branch does not strain and sweat to produce grapes. It simply stays connected to the vine, absorbing life and nutrients, and fruit naturally follows.
@@ -768,7 +768,7 @@ When your soul is nourished by the presence of Christ, you lead out of overflow 
 
 1. **Notice:** How full is your spiritual and emotional tank right now on a scale of 1 to 10?
 2. **Name:** Speak openly to Jesus about your fatigue, your anxieties, and any areas where you have been relying on your own strength.
-3. **Receive:** Hear Jesus’ gentle invitation: *"Come to me, all of you who are weary and carry heavy burdens, and I will give you rest."* (Matthew 11:28 NLT)
+3. **Receive:** Hear Jesus’ gentle invitation: *"Come to me, all of you who are weary and carry heavy burdens, and I will give you rest."* (Matthew 11:28)
 4. **Respond:** What is one life-giving boundary or spiritual rhythm you need to establish or reclaim this week?
 
 ---
@@ -856,4 +856,4 @@ As you complete this 6-session journey, take 10 quiet minutes to synthesize what
 ## A Final Blessing for the Journey
 
 > *"Now may the God of peace—who brought up from the dead our Lord Jesus, the great Shepherd of the sheep, and ratified an eternal covenant with his blood—equip you with all you need for doing his will. May he produce in you, through the power of Jesus Christ, every good thing that is pleasing to him. To him be glory forever and ever. Amen."*  
-> — **Hebrews 13:20–21 (NLT)**
+> — **Hebrews 13:20–21**
