@@ -19,12 +19,15 @@ import {
   enhanceWithBibleLinks,
 } from "./bible-url";
 
+type CourseEdition = "everyday" | "essentials" | "complete";
+
 type CourseDocument = {
   id: string;
   file: string;
   label: string;
   shortLabel: string;
   kind: "introduction" | "module" | "facilitator" | "session";
+  edition?: CourseEdition;
   moduleNumber?: number;
   sessionNumber?: number;
   markdown: string;
@@ -34,6 +37,58 @@ type CourseData = {
   title: string;
   documents: CourseDocument[];
 };
+
+const EDITIONS: { id: CourseEdition; label: string; tag: string; description: string }[] = [
+  {
+    id: "everyday",
+    label: "Everyday Edition",
+    tag: "Adults 30–50",
+    description: "Clear, practical guide for working adults and lay leaders",
+  },
+  {
+    id: "essentials",
+    label: "Essentials Edition",
+    tag: "NLT • Fast-Track",
+    description: "Quick-start guide with simple language and 45-min sessions",
+  },
+  {
+    id: "complete",
+    label: "Complete Course",
+    tag: "In-Depth Study",
+    description: "Full theological and exegetical study guide",
+  },
+];
+
+function documentEdition(doc?: CourseDocument): CourseEdition {
+  if (doc?.edition) return doc.edition;
+  if (doc?.id.startsWith("everyday-")) return "everyday";
+  if (doc?.id.startsWith("essentials-")) return "essentials";
+  return "complete";
+}
+
+function findTargetInEdition(
+  allDocs: CourseDocument[],
+  targetEdition: CourseEdition,
+  currentDoc: CourseDocument,
+): CourseDocument {
+  const targetDocs = allDocs.filter((d) => documentEdition(d) === targetEdition);
+  if (currentDoc.kind === "introduction") {
+    return targetDocs.find((d) => d.kind === "introduction") || targetDocs[0];
+  }
+  const modNum = currentDoc.moduleNumber || currentDoc.sessionNumber;
+  if (currentDoc.kind === "facilitator") {
+    const match = targetDocs.find(
+      (d) => d.kind === "facilitator" && (d.moduleNumber === modNum || d.sessionNumber === modNum),
+    );
+    if (match) return match;
+  } else {
+    const match = targetDocs.find(
+      (d) => d.kind !== "facilitator" && (d.moduleNumber === modNum || d.sessionNumber === modNum),
+    );
+    if (match) return match;
+  }
+  return targetDocs[0];
+}
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const storageNamespace = "growing-leaders-course";
@@ -718,7 +773,7 @@ export function CourseApp() {
   const reportStorageIssue = useCallback(() => setStorageIssue(true), []);
 
   useEffect(() => {
-    fetch(joinBasePath("data/course.json"))
+    fetch(joinBasePath(`data/course.json?t=${Date.now()}`), { cache: "no-cache" })
       .then((response) => {
         if (!response.ok) throw new Error("Course data could not be loaded.");
         return response.json() as Promise<CourseData>;
@@ -1162,13 +1217,22 @@ export function CourseApp() {
     0,
     data.documents.findIndex((document) => document.id === activeId),
   );
-  const activeDocument = data.documents[activeIndex];
-  const previousDocument = data.documents[activeIndex - 1];
-  const nextDocument = data.documents[activeIndex + 1];
+  const activeDocument = data.documents[activeIndex] || data.documents[0];
+  const activeEdition = documentEdition(activeDocument);
+  const editionDocuments = data.documents.filter(
+    (document) => documentEdition(document) === activeEdition,
+  );
+  const editionActiveIndex = Math.max(
+    0,
+    editionDocuments.findIndex((document) => document.id === activeDocument.id),
+  );
+  const previousDocument = editionDocuments[editionActiveIndex - 1];
+  const nextDocument = editionDocuments[editionActiveIndex + 1];
   const resumeDocument = resumePoint
     ? data.documents.find((document) => document.id === resumePoint.documentId)
     : undefined;
   const complete = isCourseModule(activeDocument) && moduleIsComplete(activeDocument.id);
+  const currentEditionMeta = EDITIONS.find((e) => e.id === activeEdition) || EDITIONS[0];
   const moduleProgress = isCourseModule(activeDocument) ? (
     <section className="module-outline session-outline" aria-label="Module progress">
       <div>
@@ -1206,19 +1270,44 @@ export function CourseApp() {
         </button>
         <a
           className="brand"
-          href="#course-introduction"
+          href={`#${activeDocument.id}`}
           onClick={(event) => {
             event.preventDefault();
-            navigate("course-introduction");
+            const introDoc = editionDocuments.find((d) => d.kind === "introduction") || activeDocument;
+            navigate(introDoc.id);
           }}
         >
           <span className="brand-mark" aria-hidden="true">G</span>
           <span>
             <strong>Growing Leaders: From Foundations to Maturity</strong>
-            <small>A six-module mentoring journey</small>
+            <small>{currentEditionMeta.label} ({currentEditionMeta.tag})</small>
           </span>
         </a>
         <div className="header-actions">
+          <div className="header-edition-switcher" role="tablist" aria-label="Course editions">
+            {EDITIONS.map((ed) => {
+              const isSelected = activeEdition === ed.id;
+              return (
+                <button
+                  key={ed.id}
+                  type="button"
+                  role="tab"
+                  aria-selected={isSelected}
+                  className={`header-edition-btn ${isSelected ? "header-edition-btn--active" : ""}`}
+                  onClick={() => {
+                    const target = findTargetInEdition(data.documents, ed.id, activeDocument);
+                    navigate(target.id);
+                  }}
+                  title={ed.description}
+                >
+                  <span className="header-edition-btn-title">
+                    {ed.id === "everyday" ? "Everyday" : ed.id === "essentials" ? "Essentials" : "Complete"}
+                  </span>
+                  <span className="header-edition-btn-tag">{ed.tag}</span>
+                </button>
+              );
+            })}
+          </div>
           <div className="print-menu-wrap" ref={printMenu}>
             <button
               className="print-button"
@@ -1260,15 +1349,41 @@ export function CourseApp() {
         aria-label={compactNavigation && menuOpen ? "Course contents" : undefined}
         aria-hidden={compactNavigation && !menuOpen ? "true" : undefined}
       >
+        <div className="edition-nav-section">
+          <p className="nav-kicker">Course Edition</p>
+          <div className="edition-tabs" role="tablist" aria-label="Course editions">
+            {EDITIONS.map((ed) => {
+              const isSelected = activeEdition === ed.id;
+              return (
+                <button
+                  key={ed.id}
+                  type="button"
+                  role="tab"
+                  aria-selected={isSelected}
+                  className={`edition-tab ${isSelected ? "edition-tab--active" : ""}`}
+                  onClick={() => {
+                    const target = findTargetInEdition(data.documents, ed.id, activeDocument);
+                    navigate(target.id);
+                  }}
+                  title={ed.description}
+                >
+                  <span className="edition-tab-label">{ed.label}</span>
+                  <span className="edition-tab-tag">{ed.tag}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
         <nav aria-label="Course documents">
           {[
             {
-              label: "Participant course",
-              documents: data.documents.filter((document) => document.kind !== "facilitator"),
+              label: activeEdition === "essentials" ? "Participant sessions" : "Participant course",
+              documents: editionDocuments.filter((document) => document.kind !== "facilitator"),
             },
             {
               label: "Facilitator resources",
-              documents: data.documents.filter((document) => document.kind === "facilitator"),
+              documents: editionDocuments.filter((document) => document.kind === "facilitator"),
             },
           ].map((group) => (
             <div className="nav-group" key={group.label}>
@@ -1489,12 +1604,36 @@ export function CourseApp() {
         </div>
         <div className="document-toolbar">
           <div>
-            <p className="eyebrow">{activeDocument.shortLabel}</p>
+            <p className="eyebrow">{activeDocument.shortLabel} • {currentEditionMeta.label}</p>
             <p>{activeDocument.label}</p>
           </div>
           <p className="document-position">
-            {activeIndex + 1} of {data.documents.length}
+            {editionActiveIndex + 1} of {editionDocuments.length}
           </p>
+        </div>
+
+        <div className="edition-content-banner">
+          <div className="edition-content-banner-info">
+            <span className="edition-content-banner-badge">{currentEditionMeta.label}</span>
+            <span className="edition-content-banner-desc">{currentEditionMeta.description}</span>
+          </div>
+          <div className="edition-content-banner-actions">
+            <span className="edition-switch-label">Switch edition:</span>
+            {EDITIONS.filter((ed) => ed.id !== activeEdition).map((ed) => (
+              <button
+                key={ed.id}
+                type="button"
+                className="edition-switch-link-btn"
+                onClick={() => {
+                  const target = findTargetInEdition(data.documents, ed.id, activeDocument);
+                  navigate(target.id);
+                }}
+                title={ed.description}
+              >
+                {ed.label} ({ed.tag})
+              </button>
+            ))}
+          </div>
         </div>
 
         {storageIssue && (

@@ -58,6 +58,7 @@ function splitModule(markdown, file) {
 await mkdir(dataDirectory, { recursive: true });
 await mkdir(rootDataDirectory, { recursive: true });
 
+// 1. Complete Course
 const introduction = await readFile(resolve(courseRoot, "COURSE-INTRODUCTION.md"), "utf8");
 const moduleSources = await Promise.all(
   modules.map(async (module) => ({
@@ -66,13 +67,14 @@ const moduleSources = await Promise.all(
   })),
 );
 
-const documents = [
+const completeDocuments = [
   {
     id: "course-introduction",
     file: "COURSE-INTRODUCTION.md",
     label: "Welcome to Growing Leaders",
     shortLabel: "Introduction",
     kind: "introduction",
+    edition: "complete",
     markdown: introduction,
   },
   ...moduleSources.map((module) => ({
@@ -81,6 +83,7 @@ const documents = [
     label: module.label,
     shortLabel: `Module ${module.moduleNumber}`,
     kind: "module",
+    edition: "complete",
     moduleNumber: module.moduleNumber,
     markdown: module.participant,
   })),
@@ -90,14 +93,124 @@ const documents = [
     label: module.label,
     shortLabel: `Module ${module.moduleNumber} Guide`,
     kind: "facilitator",
+    edition: "complete",
     moduleNumber: module.moduleNumber,
     markdown: module.facilitator,
   })),
 ];
 
-const coursePayload = `${JSON.stringify({ title: "Growing Leaders: From Foundations to Maturity", documents }, null, 2)}\n`;
+// 2. Everyday Edition
+const everydaySource = await readFile(resolve(courseRoot, "GROWING-LEADERS-EVERYDAY-EDITION.md"), "utf8");
+const everydaySections = everydaySource.split(/\n---\n\n(?=# Module \d+:)/);
+const everydayIntro = everydaySections[0].trim();
+const everydayModules = everydaySections.slice(1).map((sec, index) => {
+  const modNum = index + 1;
+  const modLabel = modules[index]?.label ?? `Module ${modNum}`;
+  const split = splitModule(sec, `GROWING-LEADERS-EVERYDAY-EDITION.md Module ${modNum}`);
+  return {
+    moduleNumber: modNum,
+    label: modLabel,
+    participant: split.participant,
+    facilitator: split.facilitator,
+  };
+});
+
+const everydayDocuments = [
+  {
+    id: "everyday-introduction",
+    file: "GROWING-LEADERS-EVERYDAY-EDITION.md#course-introduction",
+    label: "Introduction (Everyday Edition)",
+    shortLabel: "Introduction",
+    kind: "introduction",
+    edition: "everyday",
+    markdown: everydayIntro,
+  },
+  ...everydayModules.map((module) => ({
+    id: `everyday-module-${module.moduleNumber}`,
+    file: `GROWING-LEADERS-EVERYDAY-EDITION.md#module-${module.moduleNumber}`,
+    label: module.label,
+    shortLabel: `Module ${module.moduleNumber}`,
+    kind: "module",
+    edition: "everyday",
+    moduleNumber: module.moduleNumber,
+    markdown: module.participant,
+  })),
+  ...everydayModules.map((module) => ({
+    id: `everyday-facilitator-${module.moduleNumber}`,
+    file: `GROWING-LEADERS-EVERYDAY-EDITION.md#module-${module.moduleNumber}-facilitator-guide`,
+    label: module.label,
+    shortLabel: `Module ${module.moduleNumber} Guide`,
+    kind: "facilitator",
+    edition: "everyday",
+    moduleNumber: module.moduleNumber,
+    markdown: module.facilitator,
+  })),
+];
+
+// 3. Essentials Edition
+const essentialsSource = await readFile(resolve(courseRoot, "GROWING-LEADERS-ESSENTIALS.md"), "utf8");
+const essentialsSections = essentialsSource.split(/\n---\n\n(?=# Session \d+:)/);
+const essentialsIntro = essentialsSections[0].trim();
+const essentialsModules = essentialsSections.slice(1).map((sec, index) => {
+  const modNum = index + 1;
+  const modLabel = modules[index]?.label ?? `Session ${modNum}`;
+  const split = splitModule(sec, `GROWING-LEADERS-ESSENTIALS.md Session ${modNum}`);
+  return {
+    moduleNumber: modNum,
+    label: modLabel,
+    participant: split.participant,
+    facilitator: split.facilitator,
+  };
+});
+
+const essentialsDocuments = [
+  {
+    id: "essentials-introduction",
+    file: "GROWING-LEADERS-ESSENTIALS.md#course-introduction",
+    label: "Introduction (Essentials Edition)",
+    shortLabel: "Introduction",
+    kind: "introduction",
+    edition: "essentials",
+    markdown: essentialsIntro,
+  },
+  ...essentialsModules.map((module) => ({
+    id: `essentials-session-${module.moduleNumber}`,
+    file: `GROWING-LEADERS-ESSENTIALS.md#session-${module.moduleNumber}`,
+    label: module.label,
+    shortLabel: `Session ${module.moduleNumber}`,
+    kind: "session",
+    edition: "essentials",
+    moduleNumber: module.moduleNumber,
+    sessionNumber: module.moduleNumber,
+    markdown: module.participant,
+  })),
+  ...essentialsModules.map((module) => ({
+    id: `essentials-facilitator-${module.moduleNumber}`,
+    file: `GROWING-LEADERS-ESSENTIALS.md#session-${module.moduleNumber}-facilitator-guide`,
+    label: module.label,
+    shortLabel: `Session ${module.moduleNumber} Guide`,
+    kind: "facilitator",
+    edition: "essentials",
+    moduleNumber: module.moduleNumber,
+    sessionNumber: module.moduleNumber,
+    markdown: module.facilitator,
+  })),
+];
+
+const allDocuments = [...completeDocuments, ...everydayDocuments, ...essentialsDocuments];
+
+const coursePayload = `${JSON.stringify(
+  {
+    title: "Growing Leaders: From Foundations to Maturity",
+    documents: allDocuments,
+  },
+  null,
+  2,
+)}\n`;
 
 await writeFile(resolve(dataDirectory, "course.json"), coursePayload, "utf8");
 await writeFile(resolve(rootDataDirectory, "course.json"), coursePayload, "utf8");
 
-console.log(`Synced ${modules.length} Markdown modules into ${documents.length} website documents.`);
+console.log(
+  `Synced ${allDocuments.length} total documents (Complete: ${completeDocuments.length}, Everyday: ${everydayDocuments.length}, Essentials: ${essentialsDocuments.length}).`,
+);

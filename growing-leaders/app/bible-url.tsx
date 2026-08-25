@@ -310,7 +310,6 @@ export function BibleLink({
       onClick={(event) => event.stopPropagation()}
     >
       <span className="bible-ref-icon" aria-hidden="true">📖</span>
-      <span className="bible-ref-text">Bible.com</span>
       <svg
         className="bible-ref-external"
         width="10"

@@ -249,6 +249,202 @@ select:focus-visible {
   text-transform: uppercase;
 }
 
+.header-edition-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(24, 49, 71, 0.06);
+  border: 1px solid rgba(24, 49, 71, 0.08);
+}
+
+.header-edition-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: none;
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 160ms ease;
+  white-space: nowrap;
+}
+
+.header-edition-btn:hover {
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.header-edition-btn--active {
+  background: var(--paper);
+  color: var(--teal);
+  box-shadow: 0 2px 8px rgba(24, 49, 71, 0.08);
+}
+
+.header-edition-btn-title {
+  font-weight: 750;
+}
+
+.header-edition-btn-tag {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: rgba(24, 49, 71, 0.08);
+  color: var(--ink-soft);
+}
+
+.header-edition-btn--active .header-edition-btn-tag {
+  background: var(--teal-soft);
+  color: var(--teal);
+}
+
+@media (max-width: 960px) {
+  .header-edition-btn-tag {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .header-edition-switcher {
+    display: none;
+  }
+}
+
+.edition-content-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 16px 0 24px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(31, 122, 112, 0.18);
+  background: linear-gradient(135deg, rgba(220, 239, 235, 0.45) 0%, rgba(255, 253, 248, 0.85) 100%);
+}
+
+.edition-content-banner-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.edition-content-banner-badge {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: var(--teal);
+  color: white;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.edition-content-banner-desc {
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.edition-content-banner-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.edition-switch-label {
+  color: var(--ink-soft);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.edition-switch-link-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(31, 122, 112, 0.3);
+  background: var(--paper);
+  color: var(--teal);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 140ms ease;
+}
+
+.edition-switch-link-btn:hover {
+  background: var(--teal);
+  color: white;
+  border-color: var(--teal);
+}
+
+.edition-nav-section {
+  margin: 0 0 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(24, 49, 71, 0.1);
+}
+
+.edition-tabs {
+  display: grid;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.edition-tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid rgba(24, 49, 71, 0.08);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+  transition: all 160ms ease;
+}
+
+.edition-tab:hover {
+  background: var(--paper);
+  border-color: rgba(31, 122, 112, 0.25);
+}
+
+.edition-tab--active {
+  background: var(--paper);
+  border-color: var(--teal);
+  box-shadow: 0 4px 14px rgba(31, 122, 112, 0.12);
+}
+
+.edition-tab-label {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.edition-tab-tag {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 6px;
+  background: var(--teal-soft);
+  color: var(--teal);
+}
+
+.edition-tab--active .edition-tab-tag {
+  background: var(--teal);
+  color: white;
+}
+
 .course-nav nav {
   display: grid;
   gap: 22px;
@@ -963,17 +1159,17 @@ select:focus-visible {
 .bible-ref-link {
   display: inline-flex;
   align-items: center;
-  gap: 4.5px;
-  margin-left: 6px;
-  padding: 1px 7px;
+  gap: 3px;
+  margin-left: 5px;
+  padding: 1px 5px;
   border: 1px solid rgba(31, 122, 112, 0.28);
-  border-radius: 6px;
+  border-radius: 5px;
   background: var(--teal-soft);
   color: var(--teal);
   font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 11.5px;
+  font-size: 11px;
   font-weight: 700;
-  line-height: 1.4;
+  line-height: 1.2;
   text-decoration: none;
   vertical-align: middle;
   transition: all 0.15s ease-in-out;
@@ -996,10 +1192,6 @@ select:focus-visible {
 .bible-ref-icon {
   font-size: 11px;
   line-height: 1;
-}
-
-.bible-ref-text {
-  font-size: 11px;
 }
 
 .bible-ref-external {
