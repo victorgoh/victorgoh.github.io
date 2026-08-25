@@ -1466,6 +1466,20 @@ export function CourseApp() {
                     </button>
                   );
                 })}
+
+                <div className="edition-menu-footer">
+                  <button
+                    type="button"
+                    role="menuitem"
+                    className="edition-menu-compare-btn"
+                    onClick={() => {
+                      setEditionMenuOpen(false);
+                      setOnboardingOpen(true);
+                    }}
+                  >
+                    <span>✦ Compare all editions & choose</span>
+                  </button>
+                </div>
               </div>
             )}
           </div>

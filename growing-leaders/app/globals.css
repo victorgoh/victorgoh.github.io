@@ -414,6 +414,34 @@ select:focus-visible {
   color: var(--ink-soft);
 }
 
+.edition-menu-footer {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid rgba(24, 49, 71, 0.08);
+}
+
+.edition-menu-compare-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px dashed rgba(31, 122, 112, 0.35);
+  background: rgba(220, 239, 235, 0.25);
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.edition-menu-compare-btn:hover {
+  background: var(--teal-soft);
+  border-color: var(--teal);
+  border-style: solid;
+}
+
 @media (max-width: 900px) {
   .edition-btn-tag {
     display: none;
