@@ -100,6 +100,8 @@ test("includes local responses, edition switching, progress, printing, and acces
   assert.match(css, /\.edition-tabs/);
   assert.match(css, /\.edition-tab/);
   assert.match(css, /\.bible-ref-link/);
+  assert.match(css, /\.edition-content-banner/);
+  assert.match(css, /\.copy-notes-btn/);
   assert.match(worker, /data\/course\.json/);
 });
 

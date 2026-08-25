@@ -1915,7 +1915,9 @@ select:focus-visible {
   .storage-warning,
   .continue-card,
   .module-outline,
-  .session-outline {
+  .session-outline,
+  .edition-content-banner,
+  .copy-notes-btn {
     display: none !important;
   }
 
