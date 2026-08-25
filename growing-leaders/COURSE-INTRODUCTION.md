@@ -190,3 +190,27 @@ Finish with a simple prayer in your own words. You might ask God for honesty, co
 
 > **A prayer for the journey**  
 > God, thank you for meeting me where I am. Help me see what you want me to notice, receive what you want to teach me, and practise what you place before me. Form my understanding, my character, my service, and my daily habits. Teach me to lead with humility and love. Amen.
+
+## I.10 Facilitator Guide: Leading Meaningful Conversations
+
+If you are facilitating these sessions, your primary role is not to lecture or provide expert answers. You are creating a safe, hospitable, and unhurried space for emerging leaders to reflect, share honestly, and encounter God.
+
+### I.10.1 Key Facilitation Principles
+
+1. **Guide the Conversation, Don't Dominate It**  
+   Aim for participants to do 70% of the talking. Ask open-ended questions (*"What was that experience like for you?"* or *"What did that reveal about your heart?"*) rather than rushing to solve dilemmas.
+
+2. **Model Vulnerability with Healthy Boundaries**  
+   When sharing your own stories or struggles, be honest and authentic without making yourself the central focus of the session. A leader who admits unfinished growth invites others to do the same.
+
+3. **Honor Time as a Gift (Suggestions, Not Hard Rules)**  
+   The minute allocations beside each segment in the 1-hour conversation outlines (e.g., *7 minutes*, *15 minutes*, *10 minutes*) are **practical pacing guides, not rigid laws**:
+   - **Why time tags are included:** They help you keep an eye on the clock so the group doesn't spend 40 minutes on the opening check-in and rush through prayer and application.
+   - **Flexibility when the Holy Spirit moves:** If a participant opens up with deep vulnerability or an unexpected pastoral moment arises, feel free to adjust. Shorten another segment or let discussion linger where real formation is happening.
+   - **Protect the finish:** Always leave at least 8–10 minutes for personal next steps and praying for one another.
+
+4. **Foster Safety and Confidentiality**  
+   Reiterate that personal reflections shared in the group remain within the room. Never force anyone to disclose deeper than they are ready to go.
+
+5. **Point Toward Real-World Practice**  
+   Every session should end with concrete intentionality. Ensure each participant leaves with one clear, manageable habit or faithful next step to test before the next session.
