@@ -4,7 +4,7 @@
 >
 > **Main Scripture:** Genesis 50:15–21
 >
-> **Leadership habit:** Notice and Learn
+> **Leadership habit:** Reflect and Grow
 
 ## 1.1 Begin with life
 
@@ -161,7 +161,7 @@ Look at the map as a whole. What theme, repeated pattern, or question do you not
 
 Circle one experience you would like to understand more clearly. You may discuss it with your facilitator, a trusted mentor, or another appropriate person. You are not required to share it with the whole group.
 
-### 1.5.4 Habits: Notice and Learn
+### 1.5.4 Habits: Reflect and Grow
 
 Leaders learn from experience when they create space to notice it. This week, practise a brief daily review.
 
@@ -224,7 +224,7 @@ Bring your notes to the mentoring conversation. Be ready to share:
 
 1. One idea from the reading or Scripture that stood out to you.
 2. One strength, assumption, or pattern you noticed in your story.
-3. When and where you will practise Notice and Learn.
+3. When and where you will practise Reflect and Grow.
 
 Choose what is appropriate to share. You can participate honestly without telling the group every detail of your story.
 
@@ -251,7 +251,7 @@ By the end of the session, participants should:
 - identify at least one strength and one assumption or pattern shaped by experience;
 - see that honest reflection can create greater freedom in present leadership;
 - choose an appropriate next step;
-- commit to the habit of Notice and Learn for the coming week.
+- commit to the habit of Reflect and Grow for the coming week.
 
 This session is not intended to produce a complete life history or resolve painful experiences. Its purpose is to introduce attentive, grace-filled reflection.
 
@@ -315,7 +315,7 @@ Helpful follow-up questions include:
 
 Do not ask participants to explain painful experiences in detail. If someone becomes distressed, slow down, acknowledge what has surfaced, offer choice about continuing, and follow the appropriate support process after the session.
 
-### 1.10.5 Practise noticing — 8 minutes
+### 1.10.5 Practise Reflect and Grow — 8 minutes
 
 Offer this short scenario:
 
@@ -333,7 +333,7 @@ Then ask each participant to apply the same questions privately to a recent low-
 
 Ask each participant to complete:
 
-> I will practise Notice and Learn at __________ after/before __________. At the end of the week, I will look for __________.
+> I will practise Reflect and Grow at __________ after/before __________. At the end of the week, I will look for __________.
 
 Check that the cue is specific and realistic. Invite participants to record it or message it to the group.
 
@@ -353,7 +353,7 @@ Invite each person to name one quality they want God to form in them through the
 
 Send one brief, non-intrusive check-in during the week:
 
-> How is Notice and Learn going? No need for a long answer—what are you beginning to notice and learn?
+> How is Reflect and Grow going? No need for a long answer—what are you beginning to reflect on and learn?
 
 At the beginning of Module 2, allow each person to share:
 

@@ -173,16 +173,16 @@ Habits must be realistic enough to practise during ordinary life. They are exper
 
 | Session | Habit | Weekly practice |
 |---|---|---|
-| **1. God Uses Your Story** | Notice and Learn | Review a significant experience, notice what happened within you, and consider what it may be revealing or teaching you. |
-| **2. God Forms Your Character** | Pause and Bring It Before God | Pause under pressure, then Notice, Name, Receive, and Respond before God. |
-| **3. God Builds Your Faithfulness** | Record and Follow Through | Capture commitments, review them daily, and complete or communicate them. |
-| **4. God Develops Your Gifts** | Serve, Notice, Ask | Practise a possible gift, notice the fruit, and ask for specific feedback. |
-| **5. God Shapes How You Lead People** | Listen Before Responding | Understand and summarise the other person's perspective before offering your own. |
-| **6. God Deepens Your Life With Him** | Abide and Review | Remain attentive to God while reviewing your leadership and choosing a faithful next step. |
+| **1. God Uses Your Story** | Reflect and Grow | Review a significant experience, notice what happened within you, and extract God's wisdom and teaching. |
+| **2. God Forms Your Character** | Pause and Pray | Pause under pressure, take a breath, and bring thoughts before God before reacting. |
+| **3. God Builds Your Faithfulness** | Capture and Clarify | Capture commitments promptly, clarify expectations and deadlines, and follow through reliably. |
+| **4. God Develops Your Gifts** | Serve to Discover | Step up to serve in practical needs and ask for developmental feedback to discover and sharpen gifts. |
+| **5. God Shapes How You Lead People** | Understand before Solving | Ask open questions, summarise, and understand people before offering advice or solutions. |
+| **6. God Deepens Your Life With Him** | Abide to Grow | Guard daily unhurried time with Jesus and align weekly rhythms to lead from a full soul. |
 
 The habits form a developmental progression:
 
-> **Notice → Receive → Follow Through → Serve → Listen → Abide**
+> **Reflect → Pause → Capture → Serve → Understand → Abide**
 
 ## Facilitator approach
 

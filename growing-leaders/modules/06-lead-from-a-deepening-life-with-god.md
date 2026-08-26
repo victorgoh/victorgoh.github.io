@@ -4,7 +4,7 @@
 >
 > **Main Scripture:** John 15:1–17
 >
-> **Leadership habit:** Abide and Review
+> **Leadership habit:** Abide to Grow
 
 ## 6.1 Begin with life
 
@@ -98,6 +98,8 @@ Which invitation feels most important now?
 
 What makes this invitation difficult? What would trust look like?
 
+### 6.5.3 Hands: Design a 30-day leadership rhythm
+
 Choose one next step in each dimension. Keep the plan realistic:
 
 * **🧠 Head (30-day next step & support):**
@@ -120,7 +122,7 @@ Then identify:
 - one practice you will stop, start, or continue;
 - one date when you will review the plan.
 
-### 6.5.3 Habits: Abide and Review
+### 6.5.4 Habits: Abide to Grow
 
 **Purpose:** To keep leadership activity connected with inner life, relationships, learning, and dependence on God.
 
@@ -182,7 +184,7 @@ Complete these sentences:
 
 Bring:
 
-1. One lesson from practising Listen Before Responding.
+1. One lesson from practising Understand before Solving.
 2. One significant insight from the six-module journey.
 3. Your 30-day plan and weekly review time.
 4. One way the group can pray for your continued formation.
@@ -217,7 +219,7 @@ Participants should connect sustainable leadership with remaining in Jesus, inte
 
 ### 6.11.1 Reconnect and review the previous habit — 10 minutes
 
-Pray briefly. Ask what participants learned by practising Listen Before Responding. What changed in the conversation or in them?
+Pray briefly. Ask what participants learned by practising Understand before Solving. What changed in the conversation or in them?
 
 ### 6.11.2 Enter through experience — 7 minutes
 
@@ -244,7 +246,7 @@ Each participant shares one significant insight and one continuing area of forma
 
 Keep this grounded in observed patterns rather than grand predictions about the participant’s future.
 
-### 6.11.5 Refine the 30-day plan — 8 minutes
+### 6.11.5 Refine the 30-day plan for Abide to Grow — 8 minutes
 
 Participants briefly present their plans. Help each person make the steps small, specific, connected to real life, and supported by someone. Confirm a review date.
 

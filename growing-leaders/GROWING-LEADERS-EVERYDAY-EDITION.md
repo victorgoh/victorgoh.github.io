@@ -46,12 +46,12 @@ In every module, we explore four connected areas of life:
 
 Across the six modules, you will build six simple, sustainable habits:
 
-1. **Notice and Learn:** A 3-minute evening check-in to see where God was at work in your day.
-2. **Pause and Pray:** Taking a 30-second breath before reacting to pressure or conflict.
-3. **Capture and Clarify:** Writing down commitments so nothing important falls through the cracks.
-4. **Encourage and Affirm:** Intentionally calling out God-given strengths in others.
-5. **Listen Before Responding:** Asking good questions and understanding before giving advice.
-6. **Abide and Rest:** Guarding regular unhurried time with God to lead from a full soul.
+1. **Reflect and Grow:** A 3-minute evening review to discern where God was at work and extract wisdom.
+2. **Pause and Pray:** Taking a 30-second breath before reacting to pressure, stress, or conflict.
+3. **Capture and Clarify:** Promptly recording commitments, clarifying expectations, and following through.
+4. **Serve to Discover:** Stepping up in practical service and asking for feedback to discover and sharpen strengths.
+5. **Understand before Solving:** Pausing, asking open questions, and summarising before giving advice or solutions.
+6. **Abide to Grow:** Guarding unhurried daily time with Jesus and weekly aligning priorities with God.
 
 ---
 
@@ -112,7 +112,7 @@ When meeting with your mentor or small group, agree together on these shared pos
 
 > **Main Idea:** God uses your family background, career path, successes, and even your hardest seasons to shape the way you lead today. He redeems your story to give you deeper empathy, wisdom, and humility.  
 > **Key Scripture:** Genesis 50:15–21 (Joseph’s perspective on his life)  
-> **Leadership Habit:** *Notice and Learn*
+> **Leadership Habit:** *Reflect and Grow*
 
 > *"You intended to harm me, but God intended it all for good. He brought me to this position so I could save the lives of many people."*  
 > — **Genesis 50:20**
@@ -161,7 +161,7 @@ God can take the hardest seasons of your life—an unfair workplace experience, 
 * 🧠 **Head (Clear Thinking):** My past experiences shape my present reactions. Recognizing where my habits come from helps me respond thoughtfully rather than reacting out of instinct.
 * ❤️ **Heart (Inner Character):** I can bring old hurts, insecurities, and regrets to God instead of letting them secretly drive my leadership.
 * ✋ **Hands (Practical Action):** When I feel unusually defensive, anxious, or irritated this week, I will pause and ask: *"Is my reaction really about this moment, or is it triggered by something from my past?"*
-* 🔁 **Habit (Notice and Learn):** At the end of the day, take 3 minutes to review one interaction that felt tense. Ask: *What did this reveal about my default way of handling stress?*
+* 🔁 **Habit (Reflect and Grow):** At the end of the day, take 3 minutes to review one significant interaction or event. Ask: *What did this reveal about my heart, and what is God inviting me to learn?*
 
 ---
 
@@ -226,7 +226,7 @@ Help participants recognize that their life story and family background influenc
 * Have participants share one strength from their story and one default reaction under pressure (*control, withdraw, or appease*).
 * *Facilitator note:* Validate honest sharing with warmth. If someone shares deep past pain, thank them and offer to connect after the meeting.
 
-### 4. Practice: Notice and Learn (10 mins)
+### 4. Practice: Reflect and Grow (10 mins)
 * Present this scenario: *"A colleague questions your plan in a meeting. You feel defensive and give a sharp reply."*
 * Ask: *"If that leader used the 3-minute evening review, what might they learn about what was happening under the surface?"*
 
@@ -361,7 +361,7 @@ Equip participants to recognize pressure points, choose integrity over easy shor
 
 > **Main Idea:** Significant leadership is built on ordinary reliability. Being trustworthy with small, hidden responsibilities prepares you to steward greater influence.  
 > **Key Scripture:** Luke 16:10–12 & Matthew 25:14–23 (The Parable of the Talents)  
-> **Leadership Habit:** *Write It Down and Follow Through*
+> **Leadership Habit:** *Capture and Clarify*
 
 > *"If you are faithful in little things, you will be faithful in large ones. But if you are dishonest in little things, you won't be honest with greater responsibilities."*  
 > — **Luke 16:10**
@@ -468,7 +468,7 @@ Help participants discover that reliable follow-through in ordinary duties is fo
 * Discuss the power of saying a gracious "No" to protect your existing "Yes".
 * Have participants share one area of routine duty where they want to grow in consistency.
 
-### 4. Practice: The 2-Minute Task Audit (10 mins)
+### 4. Practice: Capture and Clarify (10 mins)
 * Give participants 2 quiet minutes to write down any overdue promises or neglected chores.
 * Discuss simple strategies (phone reminders, daily to-do lists, calendar blocks).
 
@@ -482,7 +482,7 @@ Help participants discover that reliable follow-through in ordinary duties is fo
 
 > **Main Idea:** God has equipped you with a distinct combination of natural abilities, learned skills, and spiritual gifts. You do not need to be good at everything; your role is to serve faithfully and help others thrive.  
 > **Key Scripture:** 1 Peter 4:10–11 & Romans 12:3–8; Exodus 35:30–35  
-> **Leadership Habit:** *Serve, Notice, and Ask*
+> **Leadership Habit:** *Serve to Discover*
 
 > *"God has given each of you a gift from his great variety of spiritual gifts. Use them well to serve one another. Do you have the gift of speaking? Then speak as though God himself were speaking through you. Do you have the gift of helping others? Do it with all the strength and energy that God supplies."*  
 > — **1 Peter 4:10–11**
@@ -518,7 +518,7 @@ Consider how gifts develop:
 * 🧠 **Head (Clear Thinking):** Leadership is a team sport. My responsibility is to contribute my strengths humbly while creating space for others to use theirs.
 * ❤️ **Heart (Inner Character):** Security in Christ that celebrates other people's gifts without feeling threatened, envious, or insecure.
 * ✋ **Hands (Practical Action):** Delegate or partner with someone on a task that falls outside your primary strengths, and encourage them as they step up.
-* 🔁 **Habit (Serve, Notice, and Ask):** Ask two trusted mentors or colleagues: *"Where do you see God using me most effectively to help others? What strengths do you notice?"*
+* 🔁 **Habit (Serve to Discover):** Ask two trusted mentors or colleagues: *"Where do you see God using me most effectively to help others? What strengths do you notice?"*
 
 ---
 
@@ -581,7 +581,7 @@ Free participants from comparison and exhaustion, help them identify their core 
 * Go around the room: Have each person share 1 area where they feel God has given them grace or joy in serving.
 * Encourage group members to affirm the gifts they see in one another.
 
-### 4. Practice: Pairing Strengths & Delegation (10 mins)
+### 4. Practice: Serve to Discover (10 mins)
 * Discuss how leaders can partner with people who have complementary strengths.
 * Identify one task to delegate or share.
 
@@ -595,7 +595,7 @@ Free participants from comparison and exhaustion, help them identify their core 
 
 > **Main Idea:** Christian leadership is defined by servant-hearted influence, not positional power. We lead people by listening with empathy, building mutual trust, and caring for their growth.  
 > **Key Scripture:** Mark 10:42–45 & Philippians 2:1–11  
-> **Leadership Habit:** *Listen Before Responding*
+> **Leadership Habit:** *Understand before Solving*
 
 > *"Whoever wants to be a leader among you must be your servant, and whoever wants to be first among you must be the slave of everyone. For even the Son of Man came not to be served but to serve others, and to give his life as a ransom for many."*  
 > — **Mark 10:43–45**
@@ -641,7 +641,7 @@ Leading people the Jesus way means:
 * 🧠 **Head (Clear Thinking):** Authority is given for stewardship, service, and protection—never for self-advancement or control.
 * ❤️ **Heart (Inner Character):** Cultivating genuine empathy, patience, and love for difficult people, seeing them as people made in God's image.
 * ✋ **Hands (Practical Action):** In your next meeting or family discussion, ask clarifying questions (*"Help me understand your perspective on this"*) before giving your opinion.
-* 🔁 **Habit (Listen Before Responding):** Practice the "3-Second Rule." When someone finishes speaking, pause for three full seconds before you respond to ensure they feel heard.
+* 🔁 **Habit (Understand before Solving):** Practice the "3-Second Rule." When someone finishes speaking, pause for three full seconds before you respond to ensure they feel heard.
 
 ---
 
@@ -704,7 +704,7 @@ Shift leaders from authoritarian control to Jesus-style servant leadership, with
 * Discuss the difference between listening to *understand* versus listening to *reply*.
 * Share challenges when dealing with difficult team members or family friction.
 
-### 4. Practice: The 3-Second Pause (10 mins)
+### 4. Practice: Understand before Solving (10 mins)
 * Run a 2-minute listening exercise in pairs: Person A shares a current leadership dilemma for 60 seconds; Person B must pause for 3 seconds and reflect back what they heard before offering any comment.
 
 ### 5. Next Steps & Prayer (10 mins)
@@ -717,7 +717,7 @@ Shift leaders from authoritarian control to Jesus-style servant leadership, with
 
 > **Main Idea:** Sustainable leadership flows out of a healthy, growing walk with Jesus. You cannot lead others where you have not walked with God yourself.  
 > **Key Scripture:** John 15:1–8 (The Vine and the Branches) & Psalm 23  
-> **Leadership Habit:** *Abide and Review*
+> **Leadership Habit:** *Abide to Grow*
 
 > *"Yes, I am the vine; you are the branches. Those who remain in me, and I in them, will produce much fruit. For apart from me you can do nothing."*  
 > — **John 15:5**
@@ -760,7 +760,7 @@ When your soul is nourished by the presence of Christ, you lead out of overflow 
 * 🧠 **Head (Clear Thinking):** Leadership is a long-distance marathon, not a sprint. Soul care and spiritual rest are essential responsibilities, not guilty luxuries.
 * ❤️ **Heart (Inner Character):** My primary identity is a beloved child of God, not my title, performance, or leadership role.
 * ✋ **Hands (Practical Action):** Guard an unhurried, daily appointment with God (even 15 minutes) for Scripture reading, silence, and prayer.
-* 🔁 **Habit (Abide and Review):** Take 15 minutes every Sunday evening or Monday morning to review your week with God: *Where was God at work? What do I need to entrust to Him for the coming days?*
+* 🔁 **Habit (Abide to Grow):** Guard a daily unhurried appointment with Jesus (even 15 minutes), and spend 15 minutes every Sunday evening reviewing your week with God: *Where was God at work? What do I need to entrust to Him for the coming days?*
 
 ---
 

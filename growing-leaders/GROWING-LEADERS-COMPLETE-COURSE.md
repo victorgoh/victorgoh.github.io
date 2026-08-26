@@ -57,16 +57,16 @@ A single good intention can be forgotten when life becomes busy. A small habit c
 
 Across the six modules, you will practise a simple progression:
 
-1. **Notice and Learn** — notice experience and learn what it may be revealing.
-2. **Pause and Bring It Before God** — pause under pressure, then Notice, Name, Receive, and Respond before God.
-3. **Record and Follow Through** — handle commitments with reliability, honest communication, and healthy limits.
-4. **Serve, Notice, Ask** — develop gifts through service, observable fruit, and specific feedback.
-5. **Listen Before Responding** — understand people before giving an answer or making a decision.
-6. **Abide and Review** — remain deeply connected to God while reflecting on leadership and choosing a next step.
+1. **Reflect and Grow** — review significant moments, notice inner reactions, and extract God's wisdom.
+2. **Pause and Pray** — pause under pressure, breathe, and bring thoughts before God before reacting.
+3. **Capture and Clarify** — record commitments promptly, clarify expectations, and follow through reliably.
+4. **Serve to Discover** — step up to serve in practical needs and ask for developmental feedback to discover and sharpen gifts.
+5. **Understand before Solving** — ask open questions, summarise, and understand people before giving advice or solutions.
+6. **Abide to Grow** — guard daily unhurried connection with Jesus and align weekly rhythms to lead from a full soul.
 
 Together, these practices describe a growing leader:
 
-> **A growing leader notices experience, welcomes examination, follows through faithfully, develops through service, listens to people, and remains deeply connected to God.**
+> **A growing leader reflects to grow, pauses to pray, captures and clarifies commitments, serves to discover gifts, understands before solving, and abides to grow deeply connected to God.**
 
 ## I.5 How personal preparation works
 
@@ -223,7 +223,7 @@ If you are facilitating these modules, your primary role is not to lecture or pr
 >
 > **Main Scripture:** Genesis 50:15–21
 >
-> **Leadership habit:** Notice and Learn
+> **Leadership habit:** Reflect and Grow
 
 ## 1.1 Begin with life
 
@@ -249,7 +249,7 @@ Pause and consider:
 
 You do not need a complete answer. Simply begin to notice.
 
-## 1.3 Your story is part of your formation
+## 1.2 Your story is part of your formation
 
 New leaders sometimes believe that growth begins when they receive a leadership role. In reality, your development began much earlier.
 
@@ -265,7 +265,7 @@ A growing leader learns to ask:
 
 This kind of reflection does not make the story the centre of leadership. God remains at the centre. Reflection helps us bring more of our real selves into relationship with God, where gratitude, repentance, healing, learning, and change can begin.
 
-## 1.4 Explore Scripture: Joseph looks back
+## 1.3 Explore Scripture: Joseph looks back
 
 Read **Genesis 50:15–21**.
 
@@ -289,7 +289,7 @@ Reflect on the passage:
 - How does his understanding of the past shape the way he uses power in the present?
 - What would have been different if Joseph had used his authority to settle an old score?
 
-## 1.5 Reading our stories with humility
+## 1.4 Reading our stories with humility
 
 Joseph’s story is extraordinary. We should be careful not to assume that we can always identify exactly why something happened or confidently explain God’s purpose in another person’s pain.
 
@@ -314,9 +314,9 @@ Some parts of your story may require more care than this group can provide. Wise
 
 As you become more aware of how your story has shaped you, you can begin noticing what God wants to form within you—especially when leadership brings pressure.
 
-## 1.6 Four dimensions of formation
+## 1.5 Four dimensions of formation
 
-### 1.6.1 Head: Understand your formation
+### 1.5.1 Head: Understand your formation
 
 Your leadership did not begin with your current responsibility. You bring a history into every role and relationship. That history may have developed strengths, expectations, sensitivities, and protective responses.
 
@@ -332,7 +332,7 @@ Write briefly:
 2. What is one leadership assumption you may have learned from family, culture, church, education, or work?
 3. How might that assumption help you? How might it limit you?
 
-### 1.6.2 Heart: Notice what happens within you
+### 1.5.2 Heart: Notice what happens within you
 
 Our strongest reactions sometimes point towards an important part of our story. A leader who fears being ignored may dominate a conversation. Someone who fears disappointing others may agree to every request. Someone who experienced unpredictable authority may resist even healthy direction.
 
@@ -347,7 +347,7 @@ Think of a recent situation in which you had a strong reaction while serving, wo
 
 Be curious before becoming critical. The aim is not to shame yourself but to understand what needs God’s attention and grace.
 
-### 1.6.3 Hands: Create a simple leadership story map
+### 1.5.3 Hands: Create a simple leadership story map
 
 Draw a line representing your life from childhood to the present. Mark **three to five experiences** that have influenced the way you relate, serve, or lead. Choose experiences that are appropriate to explore in this setting.
 
@@ -380,7 +380,7 @@ Look at the map as a whole. What theme, repeated pattern, or question do you not
 
 Circle one experience you would like to understand more clearly. You may discuss it with your facilitator, a trusted mentor, or another appropriate person. You are not required to share it with the whole group.
 
-### 1.6.4 Habits: Notice and Learn
+### 1.5.4 Habits: Reflect and Grow
 
 Leaders learn from experience when they create space to notice it. This week, practise a brief daily review.
 
@@ -410,23 +410,23 @@ Leaders learn from experience when they create space to notice it. This week, pr
 
 If you miss a day, begin again the next day. The purpose is attentive learning, not maintaining a perfect record.
 
-## 1.7 Bring It Before God
+## 1.6 Bring It Before God
 
 Take a few quiet moments with these four movements.
 
-### 1.7.1 Notice
+### 1.6.1 Notice
 
 What part of your story, reaction, strength, or pattern has your attention?
 
-### 1.7.2 Name
+### 1.6.2 Name
 
 What can you name honestly before God? This may include gratitude, grief, confusion, regret, fear, or hope.
 
-### 1.7.3 Receive
+### 1.6.3 Receive
 
 What truth, grace, wisdom, courage, or help do you need from God?
 
-### 1.7.4 Respond
+### 1.6.4 Respond
 
 What is one faithful next step? It may be to give thanks, change a response, seek feedback, repair a relationship, establish a boundary, or ask an appropriate person for help.
 
@@ -437,13 +437,13 @@ Write a brief prayer:
 > Help me to see ___________________________________________________.  
 > My next faithful step is ___________________________________________.
 
-## 1.8 Prepare to share
+## 1.7 Prepare to share
 
 Bring your notes to the mentoring conversation. Be ready to share:
 
 1. One idea from the reading or Scripture that stood out to you.
 2. One strength, assumption, or pattern you noticed in your story.
-3. When and where you will practise Notice and Learn.
+3. When and where you will practise Reflect and Grow.
 
 Choose what is appropriate to share. You can participate honestly without telling the group every detail of your story.
 
@@ -462,7 +462,7 @@ Choose what is appropriate to share. You can participate honestly without tellin
 
 # Facilitator guide
 
-## 1.9 Purpose of the conversation
+## 1.8 Purpose of the conversation
 
 By the end of the session, participants should:
 
@@ -470,11 +470,11 @@ By the end of the session, participants should:
 - identify at least one strength and one assumption or pattern shaped by experience;
 - see that honest reflection can create greater freedom in present leadership;
 - choose an appropriate next step;
-- commit to the habit of Notice and Learn for the coming week.
+- commit to the habit of Reflect and Grow for the coming week.
 
 This session is not intended to produce a complete life history or resolve painful experiences. Its purpose is to introduce attentive, grace-filled reflection.
 
-## 1.10 Prepare as facilitator
+## 1.9 Prepare as facilitator
 
 Before the meeting:
 
@@ -485,9 +485,9 @@ Before the meeting:
 - Know the relevant pastoral, safeguarding, or professional support pathways in your context.
 - Pray for humility, sensitivity, and discernment.
 
-## 1.11 One-hour conversation plan
+## 1.10 One-hour conversation plan
 
-### 1.11.1 Welcome and establish trust — 7 minutes
+### 1.10.1 Welcome and establish trust — 7 minutes
 
 Open in prayer and invite each person to answer:
 
@@ -495,7 +495,7 @@ Open in prayer and invite each person to answer:
 
 Introduce the purpose and briefly agree on group commitments: listening, appropriate confidentiality, no forced disclosure, space for every person, and gracious feedback.
 
-### 1.11.2 Enter through experience — 8 minutes
+### 1.10.2 Enter through experience — 8 minutes
 
 Ask:
 
@@ -503,7 +503,7 @@ Ask:
 
 Give every participant time to answer. Do not evaluate the examples. Notice how experience can shape both positive commitments and protective reactions.
 
-### 1.11.3 Explore Scripture — 12 minutes
+### 1.10.3 Explore Scripture — 12 minutes
 
 Invite someone to summarise Genesis 50:15–21 in their own words. Use two or three questions:
 
@@ -514,7 +514,7 @@ Invite someone to summarise Genesis 50:15–21 in their own words. Use two or th
 
 Keep the focus on the text and its leadership implications. Do not imply that harmful actions become good because God can work in and beyond them.
 
-### 1.11.4 Share and examine — 15 minutes
+### 1.10.4 Share and examine — 15 minutes
 
 > **Halfway point:** The group will reach the halfway point of the one-hour conversation near the beginning of this activity.
 
@@ -534,7 +534,7 @@ Helpful follow-up questions include:
 
 Do not ask participants to explain painful experiences in detail. If someone becomes distressed, slow down, acknowledge what has surfaced, offer choice about continuing, and follow the appropriate support process after the session.
 
-### 1.11.5 Practise noticing — 8 minutes
+### 1.10.5 Practise Reflect and Grow — 8 minutes
 
 Offer this short scenario:
 
@@ -548,19 +548,19 @@ Ask the group to practise the three daily-review questions:
 
 Then ask each participant to apply the same questions privately to a recent low-risk situation of their own. Allow one or two minutes to write before inviting voluntary sharing.
 
-### 1.11.6 Make a commitment — 6 minutes
+### 1.10.6 Make a commitment — 6 minutes
 
 Ask each participant to complete:
 
-> I will practise Notice and Learn at __________ after/before __________. At the end of the week, I will look for __________.
+> I will practise Reflect and Grow at __________ after/before __________. At the end of the week, I will look for __________.
 
 Check that the cue is specific and realistic. Invite participants to record it or message it to the group.
 
-### 1.11.7 Pray — 4 minutes
+### 1.10.7 Pray — 4 minutes
 
 Invite each person to name one quality they want God to form in them through their story. Pray briefly for the person beside you, asking for truth, grace, courage, and growth.
 
-## 1.12 Facilitator cautions
+## 1.11 Facilitator cautions
 
 - Do not treat every past event as a lesson deliberately sent by God.
 - Do not hurry participants towards forgiveness, reconciliation, or disclosure without attention to truth, safety, responsibility, and appropriate support.
@@ -568,11 +568,11 @@ Invite each person to name one quality they want God to form in them through the
 - Do not allow one participant’s story to consume the entire meeting. Honour it and arrange follow-up if more time is needed.
 - Do not let reflection remain abstract. Help each participant identify one present leadership implication and one small practice.
 
-## 1.13 Between modules
+## 1.12 Between modules
 
 Send one brief, non-intrusive check-in during the week:
 
-> How is Notice and Learn going? No need for a long answer—what are you beginning to notice and learn?
+> How is Reflect and Grow going? No need for a long answer—what are you beginning to reflect on and learn?
 
 At the beginning of Module 2, allow each person to share:
 
@@ -589,7 +589,7 @@ At the beginning of Module 2, allow each person to share:
 >
 > **Main Scripture:** 1 Samuel 24:1–12
 >
-> **Leadership habit:** Pause and Bring It Before God
+> **Leadership habit:** Pause and Pray
 
 ## 2.1 Begin with life
 
@@ -609,7 +609,7 @@ Pressure does not tell the whole truth about your character, but it often tells 
 
 Your story helps explain some of the patterns you bring into leadership. Pressure often brings those patterns to the surface, where they can be examined and formed by God.
 
-## 2.3 Character and leadership
+## 2.2 Character and leadership
 
 Character is the developing pattern of who we are and how we respond. It is expressed in choices made both publicly and privately: telling the truth, keeping a confidence, admitting a mistake, treating people fairly, using authority carefully, and obeying God when another course appears easier.
 
@@ -627,7 +627,7 @@ Formation under pressure includes:
 
 Failure can become formative when it leads to truth and change. Hiding, blaming, and defending usually deepen the problem.
 
-## 2.4 Explore Scripture: David in the cave
+## 2.3 Explore Scripture: David in the cave
 
 Read **1 Samuel 24:1–12**.
 
@@ -649,7 +649,7 @@ Reflect:
 - How did he combine restraint, truth, and safety?
 - What does the passage suggest about an opportunity that seems to offer exactly what we want?
 
-## 2.5 Pressure can distort judgment
+## 2.4 Pressure can distort judgment
 
 Under pressure, we commonly tell ourselves incomplete stories:
 
@@ -664,7 +664,7 @@ A pause creates room to test the story. We can ask what is true, what love requi
 
 Integrity does not mean remaining passive in the face of harm. A faithful response may include a difficult conversation, a firm boundary, reporting misconduct, or seeking help. Restraint is not the same as avoidance. The question is whether our response is governed by truth, love, justice, and appropriate responsibility rather than by an unchecked reaction.
 
-## 2.6 Let God’s Word shape you
+## 2.5 Let God’s Word shape you
 
 Leaders can approach Scripture mainly to prepare a talk, answer someone else’s question, or support a decision already made. Scripture then becomes material we use rather than truth that first examines and forms us.
 
@@ -686,9 +686,9 @@ Samuel had to learn to listen to God and handle a difficult message responsibly 
 
 This does not mean treating every thought, emotion, coincidence, or strong impression as a direct message from God. Personal impressions should be tested through Scripture in context, the character and way of Jesus, mature counsel, Christian community, and responsible attention to consequences. No claimed message from God should be used to manipulate people, avoid accountability, override safeguarding, or justify conduct contrary to Scripture.
 
-## 2.7 Four dimensions of formation
+## 2.6 Four dimensions of formation
 
-### 2.7.1 Head: Understand what pressure and Scripture reveal
+### 2.6.1 Head: Understand what pressure and Scripture reveal
 
 The central leadership principle is:
 
@@ -701,7 +701,7 @@ Write briefly:
 3. What passage of Scripture has recently encouraged, challenged, or corrected you?
 4. What would it mean to receive that truth personally before applying it to someone else?
 
-### 2.7.2 Heart: Examine the motive beneath the reaction
+### 2.6.2 Heart: Examine the motive beneath the reaction
 
 Recall one recent, manageable situation in which you reacted strongly. Ask:
 
@@ -713,7 +713,7 @@ Recall one recent, manageable situation in which you reacted strongly. Ask:
 
 Honest examination is not self-condemnation. Conviction identifies something specific and invites a response. Shame makes the whole self the problem and encourages hiding. Bring what is specific into the light.
 
-### 2.7.3 Hands: Plan a faithful response
+### 2.6.3 Hands: Plan a faithful response
 
 Use the following framework for a current pressure point:
 
@@ -740,7 +740,7 @@ Do not use an apology to demand immediate forgiveness or to avoid consequences.
 
 When pressure arises, pause before reacting. Then use the **Bring It Before God** practice below—Notice, Name, Receive, Respond—to discern and take a truthful, loving, and responsible next step.
 
-### 2.7.4 Habits: Pause and Bring It Before God
+### 2.6.4 Habits: Pause and Pray
 
 **Purpose:** To create space under pressure for Scripture to examine you and guide a faithful response.
 
@@ -763,23 +763,23 @@ When pressure arises, pause before reacting. Then use the **Bring It Before God*
 
 If no passage comes to mind, use 1 Samuel 24:1–12 or ask your facilitator to help you select a short passage. Avoid choosing a verse merely because it appears to confirm what you already want.
 
-## 2.8 Bring It Before God
+## 2.7 Bring It Before God
 
 Having paused, bring the pressure before God using the same four movements.
 
-### 2.8.1 Notice
+### 2.7.1 Notice
 
 What pressure, motive, or pattern has your attention?
 
-### 2.8.2 Name
+### 2.7.2 Name
 
 What do you need to acknowledge without defending or exaggerating it?
 
-### 2.8.3 Receive
+### 2.7.3 Receive
 
 What truth from Scripture do you need to receive personally? What forgiveness, courage, or wisdom do you need from God?
 
-### 2.8.4 Respond
+### 2.7.4 Respond
 
 What faithful choice, apology, boundary, or request for help will you make?
 
@@ -790,13 +790,13 @@ Write a brief prayer:
 > Shape me through your Word by ___________________________________.  
 > Help me respond by ______________________________________________.
 
-## 2.9 Prepare to share
+## 2.8 Prepare to share
 
 Bring these three things to the conversation:
 
-1. One thing you learned from Notice and Learn.
+1. One thing you learned from Reflect and Grow.
 2. One passage that is encouraging, challenging, or correcting you.
-3. One situation in which you will Pause and Bring It Before God (Notice, Name, Receive, Respond).
+3. One situation in which you will Pause and Pray (Notice, Name, Receive, Respond).
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -813,11 +813,11 @@ Bring these three things to the conversation:
 
 # Facilitator guide
 
-## 2.10 Purpose of the conversation
+## 2.9 Purpose of the conversation
 
-Participants should understand how pressure can expose motives and distort judgment, learn how to let God’s Word examine and form them, and commit to Pause and Bring It Before God in a real situation.
+Participants should understand how pressure can expose motives and distort judgment, learn how to let God’s Word examine and form them, and commit to Pause and Pray in a real situation.
 
-## 2.11 Prepare as facilitator
+## 2.10 Prepare as facilitator
 
 - Read 1 Samuel 24:1–12 and the participant material.
 - Prepare an appropriate example of a time pressure exposed something in you.
@@ -825,13 +825,13 @@ Participants should understand how pressure can expose motives and distort judgm
 - Be ready to distinguish restraint from avoidance and integrity from image management.
 - Know how concerns about abuse, misconduct, or safety should be reported in your setting.
 
-## 2.12 One-hour conversation plan
+## 2.11 One-hour conversation plan
 
-### 2.12.1 Reconnect and review the previous habit — 10 minutes
+### 2.11.1 Reconnect and review the previous habit — 10 minutes
 
-Pray briefly. Invite each person to share how often they attempted Notice and Learn, one thing they observed, and what helped or hindered the practice. Treat attempts as information, not a score.
+Pray briefly. Invite each person to share how often they attempted Reflect and Grow, one thing they observed, and what helped or hindered the practice. Treat attempts as information, not a score.
 
-### 2.12.2 Enter through experience — 7 minutes
+### 2.11.2 Enter through experience — 7 minutes
 
 Ask:
 
@@ -839,7 +839,7 @@ Ask:
 
 Let every participant answer before discussing patterns.
 
-### 2.12.3 Explore Scripture — 11 minutes
+### 2.11.3 Explore Scripture — 11 minutes
 
 Discuss two or three questions:
 
@@ -849,7 +849,7 @@ Discuss two or three questions:
 - What is the difference between refusing revenge and avoiding necessary action?
 - How should we test an opportunity that appears to give us what we want?
 
-### 2.12.4 Share and examine — 15 minutes
+### 2.11.4 Share and examine — 15 minutes
 
 > **Halfway point:** The group will reach the halfway point of the one-hour conversation near the beginning of this activity.
 
@@ -857,7 +857,7 @@ Invite each person to describe one low-risk pressure pattern. Ask what they feel
 
 Avoid diagnosing motives. Use tentative questions such as, “Could part of you be trying to protect something here?”
 
-### 2.12.5 Practise receiving and responding to Scripture — 8 minutes
+### 2.11.5 Practise Pause and Pray — 8 minutes
 
 Use this scenario:
 
@@ -871,17 +871,17 @@ Using 1 Samuel 24, ask:
 
 Then formulate a response that combines restraint, truth, and an appropriate boundary. Discuss the difference between using Scripture to judge the other person and allowing Scripture to guide one’s own response.
 
-### 2.12.6 Make a commitment — 6 minutes
+### 2.11.6 Make a commitment — 6 minutes
 
 Each person identifies a pressure cue and a short passage, then completes:
 
-> When I notice __________, I will pause and bring it before God (Notice: __________, Name: __________, Receive: __________, Respond: __________). I will reinforce this by reading __________ each day.
+> When I notice __________, I will Pause and Pray (Notice, Name, Receive, Respond). I will reinforce this by reading __________ each day.
 
-### 2.12.7 Pray — 3 minutes
+### 2.11.7 Pray — 3 minutes
 
 Pray for integrity, teachability, wise understanding of Scripture, and courage to obey.
 
-## 2.13 Facilitator cautions
+## 2.12 Facilitator cautions
 
 - Do not suggest that all pressure is sent by God or should simply be endured.
 - Take disclosures of harm, abuse, or misconduct seriously and follow appropriate procedures.
@@ -890,9 +890,9 @@ Pray for integrity, teachability, wise understanding of Scripture, and courage t
 - Do not treat every thought or impression as a direct message from God.
 - Do not allow a participant to use a claimed message from God to control another person or avoid appropriate counsel and accountability.
 
-## 2.14 Between modules
+## 2.13 Between modules
 
-Send a brief check-in: “Have you had an opportunity to Pause and Bring It Before God (Notice, Name, Receive, Respond)? What are you learning?” Begin Module 3 by asking what participants noticed and how Scripture shaped their response.
+Send a brief check-in: “Have you had an opportunity to Pause and Pray (Notice, Name, Receive, Respond)? What are you learning?” Begin Module 3 by asking what participants noticed and how Scripture shaped their response.
 
 ---
 
@@ -902,7 +902,7 @@ Send a brief check-in: “Have you had an opportunity to Pause and Bring It Befo
 >
 > **Main Scripture:** Luke 16:10–13
 >
-> **Leadership habit:** Record and Follow Through
+> **Leadership habit:** Capture and Clarify
 
 ## 3.1 Begin with life
 
@@ -918,7 +918,7 @@ Character is not formed only in moments of unusual pressure. It is also formed t
 
 Faithfulness is not glamorous. It may look like arriving prepared, caring for equipment, following up with a person, completing an administrative task, or saying early that we cannot meet a deadline. These small actions affect people. They either strengthen or weaken trust.
 
-## 3.3 Faithfulness is stewardship
+## 3.2 Faithfulness is stewardship
 
 Stewardship means caring responsibly for something entrusted to us. A leader may be entrusted with time, information, money, relationships, authority, opportunities, or a specific task. None should be treated casually.
 
@@ -936,7 +936,7 @@ Faithfulness is not saying yes to everything. Overcommitment may look generous a
 
 Nor is faithfulness the same as perfection. Reliable leaders still make mistakes. The difference is that they acknowledge them, communicate, repair what they can, and improve their process.
 
-## 3.4 Explore Scripture: Trustworthy in little and much
+## 3.3 Explore Scripture: Trustworthy in little and much
 
 Read **Luke 16:10–13**.
 
@@ -958,7 +958,7 @@ Reflect:
 - How might ambition compete with faithfulness?
 - What pattern in your present responsibilities would become harmful if your influence increased?
 
-## 3.5 The hidden work of reliability
+## 3.4 The hidden work of reliability
 
 Reliable people often use simple practices that others do not see. They record commitments, clarify who is responsible, break work into steps, review progress, and communicate early.
 
@@ -976,9 +976,9 @@ Mature stewardship asks both, “How can I become more dependable?” and “Wha
 
 God often builds trustworthy leaders through repeated acts of ordinary faithfulness long before their work becomes visible.
 
-## 3.6 Four dimensions of formation
+## 3.5 Four dimensions of formation
 
-### 3.6.1 Head: Understand trust and stewardship
+### 3.5.1 Head: Understand trust and stewardship
 
 The central leadership principle is:
 
@@ -990,7 +990,7 @@ Write briefly:
 2. Which are easy to value, and which are easy to neglect?
 3. How does your follow-through affect other people?
 
-### 3.6.2 Heart: Examine what drives your commitments
+### 3.5.2 Heart: Examine what drives your commitments
 
 Consider what happens when someone asks you to take on a task.
 
@@ -1001,6 +1001,8 @@ Consider what happens when someone asks you to take on a task.
 - Do you hide delays because you fear disappointing people?
 
 Choose one pattern. What desire or fear may be underneath it? What would honesty and faithfulness look like instead?
+
+### 3.5.3 Hands: Conduct a reliability audit
 
 List your main current commitments. Keep the list manageable:
 
@@ -1026,9 +1028,9 @@ Then decide whether each commitment should be:
 
 Choose one commitment that needs attention within the next 48 hours. Take the next action or communicate with the person affected.
 
-### 3.6.4 Habits: Record and Follow Through
+### 3.5.4 Habits: Capture and Clarify
 
-**Purpose:** To reduce forgotten promises and improve trustworthy follow-through.
+**Purpose:** To prevent commitments from falling through the cracks, clarify expectations, and protect trust through reliable follow-through.
 
 **Cue:** Whenever you agree to do something.
 
@@ -1040,21 +1042,21 @@ Choose one commitment that needs attention within the next 48 hours. Take the ne
 
 The habit includes commitments made in conversation, not only formal tasks. If a request is unclear, capture a question rather than inventing an expectation.
 
-## 3.7 Bring It Before God
+## 3.6 Bring It Before God
 
-### 3.7.1 Notice
+### 3.6.1 Notice
 
 Which responsibility or pattern needs your attention?
 
-### 3.7.2 Name
+### 3.6.2 Name
 
 Is there neglect, overcommitment, ambition, avoidance, or fear to acknowledge?
 
-### 3.7.3 Receive
+### 3.6.3 Receive
 
 What wisdom, humility, strength, or freedom do you need?
 
-### 3.7.4 Respond
+### 3.6.4 Respond
 
 What will you complete, clarify, renegotiate, or decline?
 
@@ -1065,13 +1067,13 @@ Write a brief prayer:
 > Give me wisdom to _______________________________________________.  
 > My next faithful action is _________________________________________.
 
-## 3.8 Prepare to share
+## 3.7 Prepare to share
 
 Bring:
 
-1. One lesson from practising Pause and Bring It Before God.
+1. One lesson from practising Pause and Pray.
 2. One responsibility you need to handle more faithfully.
-3. The place and time you will use to Record and Follow Through.
+3. The place and time you will use to Capture and Clarify.
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -1088,23 +1090,23 @@ Bring:
 
 # Facilitator guide
 
-## 3.9 Purpose of the conversation
+## 3.8 Purpose of the conversation
 
-Participants should connect faithfulness with stewardship and trust, examine a pattern affecting reliability, clarify one current responsibility, and establish the habit of Record and Follow Through.
+Participants should connect faithfulness with stewardship and trust, examine a pattern affecting reliability, clarify one current responsibility, and establish the habit of Capture and Clarify.
 
-## 3.10 Prepare as facilitator
+## 3.9 Prepare as facilitator
 
 - Read Luke 16:10–13 and the participant material.
 - Bring an example of a small practice that helps you follow through.
 - Avoid celebrating busyness; model healthy limits and honest communication.
 
-## 3.11 One-hour conversation plan
+## 3.10 One-hour conversation plan
 
-### 3.11.1 Reconnect and review the previous habit — 10 minutes
+### 3.10.1 Reconnect and review the previous habit — 10 minutes
 
-Pray briefly. Ask about one moment when participants practised—or wish they had practised—Pause and Bring It Before God. What did they notice, and how did Scripture shape their response?
+Pray briefly. Ask about one moment when participants practised—or wish they had practised—Pause and Pray. What did they notice, and how did prayer shape their response?
 
-### 3.11.2 Enter through experience — 7 minutes
+### 3.10.2 Enter through experience — 7 minutes
 
 Ask:
 
@@ -1112,7 +1114,7 @@ Ask:
 
 List the behaviours participants mention and notice how many are ordinary, repeatable actions.
 
-### 3.11.3 Explore Scripture — 11 minutes
+### 3.10.3 Explore Scripture — 11 minutes
 
 Discuss:
 
@@ -1121,7 +1123,7 @@ Discuss:
 - How might a desire for recognition compete with faithful service?
 - Why are healthy limits part of stewardship?
 
-### 3.11.4 Share and examine — 15 minutes
+### 3.10.4 Share and examine — 15 minutes
 
 > **Halfway point:** The group will reach the halfway point of the one-hour conversation near the beginning of this activity.
 
@@ -1129,7 +1131,7 @@ Invite each person to share one insight from the responsibility audit. Explore w
 
 Do not turn the conversation into productivity advice alone. Attend to the motives and relationships involved.
 
-### 3.11.5 Practise clarifying a commitment — 8 minutes
+### 3.10.5 Practise Capture and Clarify — 8 minutes
 
 In pairs, practise responding to this request:
 
@@ -1137,26 +1139,26 @@ In pairs, practise responding to this request:
 
 The participant should ask questions about the desired outcome, scope, deadline, authority, available help, and how progress will be reviewed. Discuss how clarification protects trust.
 
-### 3.11.6 Make a commitment — 6 minutes
+### 3.10.6 Make a commitment — 6 minutes
 
 Each person completes:
 
 > I will record commitments in __________, review them each day at __________, and follow through by __________.
 
-### 3.11.7 Pray — 3 minutes
+### 3.10.7 Pray — 3 minutes
 
 Pray for faithfulness, truthful limits, and care for the people affected by each participant’s commitments.
 
-## 3.12 Facilitator cautions
+## 3.11 Facilitator cautions
 
 - Do not equate faithfulness with unlimited availability or exhaustion.
 - Do not imply that greater responsibility is always the reward for faithful service.
 - Remember that reliability can be affected by health, disability, resources, or life circumstances; explore support and adjustment without shame.
 - Encourage early communication rather than perfection.
 
-## 3.13 Between modules
+## 3.12 Between modules
 
-Check in briefly about the specific 48-hour action. Begin Module 4 by asking what participants learned from Record and Follow Through.
+Check in briefly about the specific 48-hour action. Begin Module 4 by asking what participants learned from Capture and Clarify.
 
 ---
 
@@ -1166,7 +1168,7 @@ Check in briefly about the specific 48-hour action. Begin Module 4 by asking wha
 >
 > **Main Scripture:** 1 Peter 4:7–11
 >
-> **Leadership habit:** Serve, Notice, Ask
+> **Leadership habit:** Serve to Discover
 
 ## 4.1 Begin with life
 
@@ -1178,7 +1180,7 @@ Many people look for a label before they begin. Often discovery works in the opp
 
 As you serve faithfully in present responsibilities, your strengths and gifts often become clearer.
 
-## 4.3 Gifts are entrusted for service
+## 4.2 Gifts are entrusted for service
 
 Leaders bring several kinds of capacity:
 
@@ -1191,7 +1193,7 @@ These categories can overlap. The most important question is not, “What impres
 
 A strength is not automatically mature. Communication can encourage or manipulate. Confidence can provide direction or silence others. Compassion can offer care or avoid necessary truth. Gifts need character, skill, and community discernment.
 
-## 4.4 Explore Scripture: Stewards of God’s grace
+## 4.3 Explore Scripture: Stewards of God’s grace
 
 Read **1 Peter 4:7–11**.
 
@@ -1212,21 +1214,21 @@ Reflect:
 - Why do gifts need both love and dependence on God?
 - What kind of fruit would show that a gift is genuinely serving people?
 
-## 4.5 Four ways gifts become clearer
+## 4.4 Four ways gifts become clearer
 
-### 4.5.1 Service
+### 4.4.1 Service
 
 We learn by taking real responsibility. Serving exposes both capacity and areas needing growth.
 
-### 4.5.2 Fruit
+### 4.4.2 Fruit
 
 Look for what helps people, strengthens the community, advances a worthwhile purpose, and reflects Christlike character. Enjoyment or ease alone is not enough.
 
-### 4.5.3 Feedback
+### 4.4.3 Feedback
 
 Others may recognise patterns we overlook. Useful feedback includes specific examples rather than flattering labels.
 
-### 4.5.4 Development
+### 4.4.4 Development
 
 Potential becomes more dependable through learning, practice, correction, and repetition. A gift does not remove the need for preparation.
 
@@ -1234,9 +1236,9 @@ Comparison interferes with this process. A visible gift is not necessarily more 
 
 God provides the gift, but leaders remain responsible for developing the character and skill needed to use it well.
 
-## 4.6 Four dimensions of formation
+## 4.5 Four dimensions of formation
 
-### 4.6.1 Head: Understand gifts as stewardship
+### 4.5.1 Head: Understand gifts as stewardship
 
 The central leadership principle is:
 
@@ -1248,7 +1250,7 @@ Write briefly:
 2. Where have you seen good fruit from something you contributed?
 3. What ability might become more useful with development?
 
-### 4.6.2 Heart: Examine identity and comparison
+### 4.5.2 Heart: Examine identity and comparison
 
 Consider:
 
@@ -1260,7 +1262,7 @@ Consider:
 
 Choose one. What truth about grace, service, and belonging do you need to receive?
 
-### 4.6.3 Hands: Design a development experiment
+### 4.5.3 Hands: Design a development experiment
 
 Choose one possible strength or gift to explore during the next month:
 
@@ -1284,7 +1286,7 @@ Choose one possible strength or gift to explore during the next month:
 
 Keep the experiment small enough to complete. Examples include facilitating part of a meeting, encouraging a specific person, organising one task, explaining a short passage, or helping resolve a practical need.
 
-### 4.6.4 Habits: Serve, Notice, Ask
+### 4.5.4 Habits: Serve to Discover
 
 **Purpose:** To develop a possible gift through real service, observable fruit, specific feedback, and repeated practice.
 
@@ -1303,21 +1305,21 @@ Keep the experiment small enough to complete. Examples include facilitating part
 
 Feedback is information, not a verdict on your identity. Receive it thoughtfully, test it, and decide what to practise.
 
-## 4.7 Bring It Before God
+## 4.6 Bring It Before God
 
-### 4.7.1 Notice
+### 4.6.1 Notice
 
 What capacity, opportunity, comparison, or fear has your attention?
 
-### 4.7.2 Name
+### 4.6.2 Name
 
 What can you acknowledge honestly about the way you view your contribution?
 
-### 4.7.3 Receive
+### 4.6.3 Receive
 
 What grace, confidence, humility, or freedom do you need from God?
 
-### 4.7.4 Respond
+### 4.6.4 Respond
 
 What small development experiment will you try, and from whom will you seek feedback?
 
@@ -1328,13 +1330,13 @@ Write a brief prayer:
 > Help me serve _______________________________________________.  
 > I will develop this capacity by ________________________________.
 
-## 4.8 Prepare to share
+## 4.7 Prepare to share
 
 Bring:
 
-1. One lesson from reviewing your commitments.
+1. One lesson from practising Capture and Clarify.
 2. One possible strength or gift and evidence that supports it.
-3. Your development experiment and feedback request.
+3. Your development experiment and feedback request for Serve to Discover.
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -1351,23 +1353,23 @@ Bring:
 
 # Facilitator guide
 
-## 4.9 Purpose of the conversation
+## 4.8 Purpose of the conversation
 
 Participants should understand gifts as grace entrusted for service, identify evidence of one possible capacity, design a small development experiment, and prepare to seek specific feedback.
 
-## 4.10 Prepare as facilitator
+## 4.9 Prepare as facilitator
 
 - Read 1 Peter 4:7–11 and the participant material.
 - Identify specific evidence of strength or growth you have observed in each participant.
 - Avoid assigning permanent labels or ranking gifts.
 
-## 4.11 One-hour conversation plan
+## 4.10 One-hour conversation plan
 
-### 4.11.1 Reconnect and review the previous habit — 10 minutes
+### 4.10.1 Reconnect and review the previous habit — 10 minutes
 
-Pray briefly. Ask what participants learned from Record and Follow Through and whether they completed, clarified, renegotiated, or released something.
+Pray briefly. Ask what participants learned from Capture and Clarify and whether they completed, clarified, renegotiated, or released something.
 
-### 4.11.2 Enter through experience — 7 minutes
+### 4.10.2 Enter through experience — 7 minutes
 
 Ask:
 
@@ -1375,7 +1377,7 @@ Ask:
 
 Emphasise observable contribution and fruit.
 
-### 4.11.3 Explore Scripture — 11 minutes
+### 4.10.3 Explore Scripture — 11 minutes
 
 Discuss:
 
@@ -1384,7 +1386,7 @@ Discuss:
 - Why is stewardship a healthier picture than ownership?
 - What would it look like for God, rather than the leader, to receive glory?
 
-### 4.11.4 Share and examine — 15 minutes
+### 4.10.4 Share and examine — 15 minutes
 
 > **Halfway point:** The group will reach the halfway point of the one-hour conversation near the beginning of this activity.
 
@@ -1392,7 +1394,7 @@ Each person shares one possible strength or gift and the evidence they see. Invi
 
 Explore any comparison, fear, or need for recognition without shaming it.
 
-### 4.11.5 Practise giving developmental feedback — 8 minutes
+### 4.10.5 Practise Serve to Discover — 8 minutes
 
 Use the structure:
 
@@ -1400,24 +1402,24 @@ Use the structure:
 
 Participants practise giving and receiving one piece of feedback. The receiver listens, asks one clarifying question, and says thank you before responding further.
 
-### 4.11.6 Make a commitment — 6 minutes
+### 4.10.6 Make a commitment — 6 minutes
 
 Each person completes:
 
 > I will try __________ in order to serve __________. Afterwards, I will ask __________ for specific feedback.
 
-### 4.11.7 Pray — 3 minutes
+### 4.10.7 Pray — 3 minutes
 
 Thank God for the grace entrusted to each person and pray for humility, courage, and fruitful service.
 
-## 4.12 Facilitator cautions
+## 4.11 Facilitator cautions
 
 - Do not treat a questionnaire result as definitive.
 - Do not confuse confidence, charisma, or visibility with spiritual effectiveness.
 - Do not promise a participant a role or platform.
 - Keep gifts connected to character, community, practice, and fruit.
 
-## 4.13 Between modules
+## 4.12 Between modules
 
 Ask participants whether they have arranged their experiment and feedback conversation. Begin Module 5 by hearing what they tried and what they learned.
 
@@ -1429,7 +1431,7 @@ Ask participants whether they have arranged their experiment and feedback conver
 >
 > **Main Scripture:** Mark 10:35–45
 >
-> **Leadership habit:** Listen Before Responding
+> **Leadership habit:** Understand before Solving
 
 ## 5.1 Begin with life
 
@@ -1441,7 +1443,7 @@ Leadership always involves people who have their own knowledge, fears, hopes, li
 
 Gifts are not given for private identity or recognition. They are entrusted to us so that we can serve real people in healthy and responsible ways.
 
-## 5.3 Influence is for service
+## 5.2 Influence is for service
 
 Authority and influence can help a group move towards a good purpose. They can also be used to protect the leader’s image, secure compliance, or silence discomfort.
 
@@ -1460,7 +1462,7 @@ Serving people does not mean pleasing everyone. A leader may need to make an unp
 
 Relationships do not merely provide a setting in which leadership happens. They are one of the main places where God forms leaders.
 
-## 5.4 Explore Scripture: A different kind of greatness
+## 5.3 Explore Scripture: A different kind of greatness
 
 Read **Mark 10:35–45**.
 
@@ -1480,7 +1482,7 @@ Reflect:
 - What forms can “lording it over” people take in ordinary leadership?
 - How does Jesus redefine greatness without removing responsibility or influence?
 
-## 5.5 Listening as an act of leadership
+## 5.4 Listening as an act of leadership
 
 Listening does more than make people feel heard. It helps a leader understand reality, notice what they may have missed, and treat people as contributors rather than obstacles.
 
@@ -1497,9 +1499,9 @@ When relationships are difficult, leaders commonly:
 
 A better conversation makes room for observation, perspective, effect, and next steps.
 
-## 5.6 Four dimensions of formation
+## 5.5 Four dimensions of formation
 
-### 5.6.1 Head: Understand authority as stewardship
+### 5.5.1 Head: Understand authority as stewardship
 
 The central leadership principle is:
 
@@ -1511,7 +1513,7 @@ Write briefly:
 2. Who is affected by the way you use it?
 3. What is the difference between serving people and pleasing them?
 
-### 5.6.2 Heart: Examine your relational reflex
+### 5.5.2 Heart: Examine your relational reflex
 
 When someone disagrees, disappoints, or criticises you, do you tend to:
 
@@ -1525,7 +1527,7 @@ When someone disagrees, disappoints, or criticises you, do you tend to:
 
 What fear or desire may drive that reflex? What would love, courage, and humility make possible?
 
-### 5.6.3 Hands: Prepare a healthy conversation
+### 5.5.3 Hands: Prepare a healthy conversation
 
 Choose a real but manageable conversation:
 
@@ -1549,7 +1551,7 @@ Choose a real but manageable conversation:
 
 Begin with curiosity. If safety, misconduct, harassment, abuse, or a serious power imbalance is involved, seek appropriate help rather than attempting an informal conversation alone.
 
-### 5.6.4 Habits: Listen Before Responding
+### 5.5.4 Habits: Understand before Solving
 
 **Purpose:** To understand people more accurately and reduce defensive or controlling responses.
 
@@ -1567,21 +1569,21 @@ Begin with curiosity. If safety, misconduct, harassment, abuse, or a serious pow
 
 **Support:** Tell the group one setting in which you will practise.
 
-## 5.7 Bring It Before God
+## 5.6 Bring It Before God
 
-### 5.7.1 Notice
+### 5.6.1 Notice
 
 Which relationship or leadership reflex has your attention?
 
-### 5.7.2 Name
+### 5.6.2 Name
 
 What do you need to acknowledge about your use of influence or response to people?
 
-### 5.7.3 Receive
+### 5.6.3 Receive
 
 What love, humility, courage, patience, or wisdom do you need?
 
-### 5.7.4 Respond
+### 5.6.4 Respond
 
 What conversation will you enter, and how will you listen differently?
 
@@ -1592,13 +1594,13 @@ Write a brief prayer:
 > Help me listen to _______________________________________________.  
 > In my next conversation, I will __________________________________.
 
-## 5.8 Prepare to share
+## 5.7 Prepare to share
 
 Bring:
 
-1. One lesson from practising Serve, Notice, Ask.
+1. One lesson from practising Serve to Discover.
 2. One relational reflex you want to change.
-3. One conversation in which you will listen and summarise first.
+3. One conversation in which you will practise Understand before Solving.
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -1615,23 +1617,23 @@ Bring:
 
 # Facilitator guide
 
-## 5.9 Purpose of the conversation
+## 5.8 Purpose of the conversation
 
-Participants should understand influence as entrusted for service, recognise one relational reflex, practise Listen Before Responding, and plan a healthy conversation.
+Participants should understand influence as entrusted for service, recognise one relational reflex, practise Understand before Solving, and plan a healthy conversation.
 
-## 5.10 Prepare as facilitator
+## 5.9 Prepare as facilitator
 
 - Read Mark 10:35–45 and the participant material.
 - Prepare to model listening without quickly correcting an answer.
 - Know the reporting and support pathways for serious relational concerns.
 
-## 5.11 One-hour conversation plan
+## 5.10 One-hour conversation plan
 
-### 5.11.1 Reconnect and review the previous habit — 10 minutes
+### 5.10.1 Reconnect and review the previous habit — 10 minutes
 
-Pray briefly. Invite each person to describe how they practised Serve, Notice, Ask and one adjustment they want to make.
+Pray briefly. Invite each person to describe how they practised Serve to Discover and one adjustment or feedback they received.
 
-### 5.11.2 Enter through experience — 7 minutes
+### 5.10.2 Enter through experience — 7 minutes
 
 Ask:
 
@@ -1639,7 +1641,7 @@ Ask:
 
 Collect specific behaviours rather than general qualities.
 
-### 5.11.3 Explore Scripture — 11 minutes
+### 5.10.3 Explore Scripture — 11 minutes
 
 Discuss:
 
@@ -1648,13 +1650,13 @@ Discuss:
 - What misuse of power does Jesus reject?
 - How can a leader serve while still making decisions and addressing problems?
 
-### 5.11.4 Share and examine — 15 minutes
+### 5.10.4 Share and examine — 15 minutes
 
 > **Halfway point:** The group will reach the halfway point of the one-hour conversation near the beginning of this activity.
 
 Each participant names one relational reflex. Explore what triggers it, what it tries to achieve, how another person may experience it, and what alternative response is possible.
 
-### 5.11.5 Practise Listen Before Responding — 8 minutes
+### 5.10.5 Practise Understand before Solving — 8 minutes
 
 In pairs, one person speaks for one minute about a manageable concern. The listener asks one open question, summarises, and checks understanding without giving advice. Switch roles and debrief:
 
@@ -1662,26 +1664,26 @@ In pairs, one person speaks for one minute about a manageable concern. The liste
 - What was difficult about not responding immediately?
 - What did the listener learn?
 
-### 5.11.6 Make a commitment — 6 minutes
+### 5.10.6 Make a commitment — 6 minutes
 
 Each person completes:
 
 > When I speak with __________ about __________, I will first ask __________ and summarise what I hear.
 
-### 5.11.7 Pray — 3 minutes
+### 5.10.7 Pray — 3 minutes
 
 Pray for servant-hearted influence, courage in difficult conversations, and love expressed through careful listening.
 
-## 5.12 Facilitator cautions
+## 5.11 Facilitator cautions
 
 - Do not frame service as tolerating abusive or unsafe behaviour.
 - Do not require reconciliation where safety, truth, or accountability has not been addressed.
 - Do not let listening become a technique for appearing caring while retaining a fixed decision deceptively.
 - Pay attention to power differences and organisational responsibilities.
 
-## 5.13 Between modules
+## 5.12 Between modules
 
-Ask participants what they discovered by practising Listen Before Responding. Encourage them to record what they understood only after listening.
+Ask participants what they discovered by practising Understand before Solving. Encourage them to record what they understood only after listening.
 
 ---
 
@@ -1691,7 +1693,7 @@ Ask participants what they discovered by practising Listen Before Responding. En
 >
 > **Main Scripture:** John 15:1–17
 >
-> **Leadership habit:** Abide and Review
+> **Leadership habit:** Abide to Grow
 
 ## 6.1 Begin with life
 
@@ -1703,7 +1705,7 @@ Skill, experience, and discipline matter. None can replace a living relationship
 
 Leading people exposes the limits of skill and effort. Sustainable leadership requires a life that remains deeply connected to Jesus.
 
-## 6.3 Beyond performance
+## 6.2 Beyond performance
 
 Leaders can become dependent on visible results, past success, praise, control, or constant activity. These sources may sustain effort temporarily, but they cannot produce the kind of fruit Jesus desires.
 
@@ -1720,7 +1722,7 @@ Spiritual depth is not withdrawal from responsibility. It is learning to act fro
 
 The practices that sustain one leader may differ from those that sustain another. The essential reality is dependence on Christ.
 
-## 6.4 Explore Scripture: The vine and the branches
+## 6.3 Explore Scripture: The vine and the branches
 
 Read **John 15:1–17**.
 
@@ -1741,7 +1743,7 @@ Reflect:
 - What might a leader be tempted to produce apart from deep connection with Jesus?
 - Where might pruning be different from punishment?
 
-## 6.5 An integrated life
+## 6.4 An integrated life
 
 Throughout this course you have considered four dimensions:
 
@@ -1756,9 +1758,9 @@ Remaining in Jesus gives the dimensions their centre. We learn truth to follow h
 
 Across this journey, God uses your story, forms your character, builds your faithfulness, develops your gifts, shapes how you lead people, and continues deepening your life with him.
 
-## 6.6 Four dimensions of formation
+## 6.5 Four dimensions of formation
 
-### 6.6.1 Head: Understand sustainable fruitfulness
+### 6.5.1 Head: Understand sustainable fruitfulness
 
 The central leadership principle is:
 
@@ -1770,7 +1772,7 @@ Review the course and write:
 2. What false picture of leadership are you beginning to release?
 3. What kind of fruit do you hope will grow in and through you?
 
-### 6.6.2 Heart: Notice your present invitation
+### 6.5.2 Heart: Notice your present invitation
 
 Which invitation feels most important now?
 
@@ -1784,6 +1786,8 @@ Which invitation feels most important now?
 - remain patient in an unseen season.
 
 What makes this invitation difficult? What would trust look like?
+
+### 6.5.3 Hands: Design a 30-day leadership rhythm
 
 Choose one next step in each dimension. Keep the plan realistic:
 
@@ -1807,7 +1811,7 @@ Then identify:
 - one practice you will stop, start, or continue;
 - one date when you will review the plan.
 
-### 6.6.4 Habits: Abide and Review
+### 6.5.4 Habits: Abide to Grow
 
 **Purpose:** To keep leadership activity connected with inner life, relationships, learning, and dependence on God.
 
@@ -1828,21 +1832,21 @@ Then identify:
 
 This review is not a method for claiming certainty about everything God is doing. It is a practice of humble attention.
 
-## 6.7 Bring It Before God
+## 6.6 Bring It Before God
 
-### 6.7.1 Notice
+### 6.6.1 Notice
 
 Where do you sense life and fruit? Where do you sense depletion or disconnection?
 
-### 6.7.2 Name
+### 6.6.2 Name
 
 What reliance, neglect, fear, grief, or desire do you need to bring honestly to Jesus?
 
-### 6.7.3 Receive
+### 6.6.3 Receive
 
 What love, grace, rest, correction, or renewed purpose do you need?
 
-### 6.7.4 Respond
+### 6.6.4 Respond
 
 What will help you remain connected to Jesus while carrying responsibility?
 
@@ -1854,7 +1858,7 @@ Write a brief prayer:
 > Help me remain in you by ______________________________________.  
 > Form in me the fruit of ________________________________________.
 
-## 6.8 Look back over the journey
+## 6.7 Look back over the journey
 
 Complete these sentences:
 
@@ -1865,11 +1869,11 @@ Complete these sentences:
 - One way I want to love God and people more faithfully is ______________.
 - One person I will invite to support my growth is _______________________.
 
-## 6.9 Prepare to share
+## 6.8 Prepare to share
 
 Bring:
 
-1. One lesson from practising Listen Before Responding.
+1. One lesson from practising Understand before Solving.
 2. One significant insight from the six-module journey.
 3. Your 30-day plan and weekly review time.
 4. One way the group can pray for your continued formation.
@@ -1889,24 +1893,24 @@ Bring:
 
 # Facilitator guide
 
-## 6.10 Purpose of the conversation
+## 6.9 Purpose of the conversation
 
 Participants should connect sustainable leadership with remaining in Jesus, integrate their Head–Heart–Hands–Habits learning, name significant growth, and leave with a supported 30-day development plan.
 
-## 6.11 Prepare as facilitator
+## 6.10 Prepare as facilitator
 
 - Read John 15:1–17 and the participant material.
 - Review notes from earlier modules and identify specific growth to affirm in each participant.
 - Prepare your own brief example of a practice that helps keep leadership connected with God.
 - Plan an appropriate way for the mentoring relationship to continue or conclude.
 
-## 6.12 One-hour conversation plan
+## 6.11 One-hour conversation plan
 
-### 6.12.1 Reconnect and review the previous habit — 10 minutes
+### 6.11.1 Reconnect and review the previous habit — 10 minutes
 
-Pray briefly. Ask what participants learned by practising Listen Before Responding. What changed in the conversation or in them?
+Pray briefly. Ask what participants learned by practising Understand before Solving. What changed in the conversation or in them?
 
-### 6.12.2 Enter through experience — 7 minutes
+### 6.11.2 Enter through experience — 7 minutes
 
 Ask:
 
@@ -1914,7 +1918,7 @@ Ask:
 
 Allow both inner and relational signs: hurry, irritation, numbness, control, neglect, loss of joy, or treating people as tasks.
 
-### 6.12.3 Explore Scripture — 11 minutes
+### 6.11.3 Explore Scripture — 11 minutes
 
 Discuss:
 
@@ -1923,7 +1927,7 @@ Discuss:
 - What kinds of fruit matter in Christian leadership?
 - How can we respond humbly to pruning, limits, or change?
 
-### 6.12.4 Share and integrate — 15 minutes
+### 6.11.4 Share and integrate — 15 minutes
 
 > **Halfway point:** The group will reach the halfway point of the one-hour conversation near the beginning of this activity.
 
@@ -1931,11 +1935,11 @@ Each participant shares one significant insight and one continuing area of forma
 
 Keep this grounded in observed patterns rather than grand predictions about the participant’s future.
 
-### 6.12.5 Refine the 30-day plan — 8 minutes
+### 6.11.5 Refine the 30-day plan for Abide to Grow — 8 minutes
 
 Participants briefly present their plans. Help each person make the steps small, specific, connected to real life, and supported by someone. Confirm a review date.
 
-### 6.12.6 Make a commitment — 6 minutes
+### 6.11.6 Make a commitment — 6 minutes
 
 Each person completes:
 
@@ -1943,18 +1947,18 @@ Each person completes:
 
 If the group will continue meeting, agree on the next check-in. If not, identify another appropriate support relationship.
 
-### 6.12.7 Pray and commission — 3 minutes
+### 6.11.7 Pray and commission — 3 minutes
 
 Pray for each participant by name, giving thanks for God’s grace and asking for enduring love, humility, courage, faithfulness, and fruit.
 
-## 6.13 Facilitator cautions
+## 6.12 Facilitator cautions
 
 - Do not imply that spiritual practices guarantee visible success or freedom from difficulty.
 - Do not make the final module a performance review.
 - Avoid exaggerated predictions or claims about God’s specific future plan for a participant.
 - Do not leave development plans unsupported; help participants identify a real person and review date.
 
-## 6.14 After the course
+## 6.13 After the course
 
 Arrange a 30-day follow-up if appropriate. Review the plan using four questions:
 

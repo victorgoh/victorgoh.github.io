@@ -57,16 +57,16 @@ A single good intention can be forgotten when life becomes busy. A small habit c
 
 Across the six modules, you will practise a simple progression:
 
-1. **Notice and Learn** — notice experience and learn what it may be revealing.
-2. **Pause and Bring It Before God** — pause under pressure, then Notice, Name, Receive, and Respond before God.
-3. **Record and Follow Through** — handle commitments with reliability, honest communication, and healthy limits.
-4. **Serve, Notice, Ask** — develop gifts through service, observable fruit, and specific feedback.
-5. **Listen Before Responding** — understand people before giving an answer or making a decision.
-6. **Abide and Review** — remain deeply connected to God while reflecting on leadership and choosing a next step.
+1. **Reflect and Grow** — review significant moments, notice inner reactions, and extract God's wisdom.
+2. **Pause and Pray** — pause under pressure, breathe, and bring thoughts before God before reacting.
+3. **Capture and Clarify** — record commitments promptly, clarify expectations, and follow through reliably.
+4. **Serve to Discover** — step up to serve in practical needs and ask for developmental feedback to discover and sharpen gifts.
+5. **Understand before Solving** — ask open questions, summarise, and understand people before giving advice or solutions.
+6. **Abide to Grow** — guard daily unhurried connection with Jesus and align weekly rhythms to lead from a full soul.
 
 Together, these practices describe a growing leader:
 
-> **A growing leader notices experience, welcomes examination, follows through faithfully, develops through service, listens to people, and remains deeply connected to God.**
+> **A growing leader reflects to grow, pauses to pray, captures and clarifies commitments, serves to discover gifts, understands before solving, and abides to grow deeply connected to God.**
 
 ## I.5 How personal preparation works
 

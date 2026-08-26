@@ -40,12 +40,12 @@ In every module, you will look at four parts of your life:
 
 ## The 6 Modules at a Glance
 
-1. **God Uses Your Story** — How your past shapes who you are today.
-2. **God Forms Your Character** — How hard times grow your patience and trust.
-3. **God Builds Your Faithfulness** — Why doing small things well matters so much.
-4. **God Develops Your Gifts** — Finding your strengths and using them to help others.
-5. **God Shapes How You Lead People** — Leading with love, good listening, and care.
-6. **God Deepens Your Life With Him** — Staying close to Jesus so you do not run dry.
+1. **God Uses Your Story** *(Habit: Reflect and Grow)* — How your past and daily experiences shape who you are today.
+2. **God Forms Your Character** *(Habit: Pause and Pray)* — How hard times and pressure grow your integrity and trust in God.
+3. **God Builds Your Faithfulness** *(Habit: Capture and Clarify)* — Why doing small, unseen things well builds the foundation for greater trust.
+4. **God Develops Your Gifts** *(Habit: Serve to Discover)* — Finding your strengths and sharpening them by serving others and receiving feedback.
+5. **God Shapes How You Lead People** *(Habit: Understand before Solving)* — Leading with humility, active listening, and understanding before jumping in to solve.
+6. **God Deepens Your Life With Him** *(Habit: Abide to Grow)* — Staying close to Jesus as the Vine so you lead from a full soul and bear lasting fruit.
 
 ---
 
@@ -67,7 +67,7 @@ You do not have to write long essays. This is not an exam or a formal evaluation
 
 > **Big Idea:** God uses your background, your family, and your life experiences to shape how you lead. He can heal past hurts and use your story for good.  
 > **Key Bible Passage:** Genesis 50:15–21 (Joseph forgives his brothers)  
-> **This Week's Habit:** *Notice and Learn*
+> **This Week's Habit:** *Reflect and Grow*
 
 > *"You intended to harm me, but God intended it all for good. He brought me to this position so I could save the lives of many people."*  
 > — **Genesis 50:20**
@@ -102,7 +102,7 @@ Joseph could say to his brothers: *"You intended to harm me, but God intended it
 * 🧠 **Head (What to Know):** Your past affects how you act today. When you know your story, you can make better choices as a leader.
 * ❤️ **Heart (Who to Become):** A leader who brings past hurts and fears to God instead of taking them out on others.
 * ✋ **Hands (What to Do):** Notice when you get upset, defensive, or scared. Ask yourself: *"Why am I reacting this way?"*
-* 🔁 **Habit (Notice and Learn):** At the end of each day, take 2 minutes to write down one moment when you felt strong emotions, and ask God what it shows you.
+* 🔁 **Habit (Reflect and Grow):** At the end of each day, take 2–3 minutes to reflect on one key moment, note what it reveals about your heart, and ask God what He is teaching you.
 
 ---
 
@@ -143,7 +143,7 @@ Take 5 minutes to pray through these 4 steps:
 # Facilitator guide
 
 ## Purpose of the Meeting
-Help emerging leaders see that God can use their background for good, identify their default stress triggers, and build the 2-minute daily *Notice and Learn* habit.
+Help emerging leaders see that God can use their background for good, identify their default stress triggers, and build the 2-minute daily *Reflect and Grow* habit.
 
 ## 45-Minute Conversation Plan
 
@@ -160,8 +160,8 @@ Help emerging leaders see that God can use their background for good, identify t
 * *"When someone criticizes you or gets upset with you, what is your instant reaction (get angry, make a joke, or shut down)?"*
 * *"What is one strength or skill from your background that you are thankful for?"*
 
-### 4. Daily Habit: 2-Minute Review (8 mins)
-* Introduce the *Notice and Learn* habit.
+### 4. Daily Habit: Reflect and Grow (8 mins)
+* Introduce the *Reflect and Grow* habit.
 * Ask everyone to pull out their phone and set an alarm for 9:00 PM: *"2-min check-in with God."*
 
 ### 5. Wrap-Up & Prayer (5 mins)
@@ -371,7 +371,7 @@ Inspire emerging leaders to see value in unseen service, build punctuality, and 
 * *"Have you ever had a friend promise to help you and then flake out? How did that affect your trust in them?"*
 * *"What is one small job in your group or church (setting up, packing down, greeting) that you can do with 100% effort?"*
 
-### 4. Habit: The To-Do List (8 mins)
+### 4. Habit: Capture and Clarify (8 mins)
 * Have everyone write down 3 tasks or promises they must finish this week.
 
 ### 5. Prayer & Next Steps (5 mins)
@@ -383,7 +383,7 @@ Inspire emerging leaders to see value in unseen service, build punctuality, and 
 
 > **Big Idea:** God has given you unique gifts, talents, and abilities. You don't have to be good at everything, but you are called to serve others with what you have.  
 > **Key Bible Passage:** 1 Peter 4:10–11 & Romans 12:3–8  
-> **This Week's Habit:** *Serve, Notice, and Ask*
+> **This Week's Habit:** *Serve to Discover*
 
 > *"God has given each of you a gift from his great variety of spiritual gifts. Use them well to serve one another."*  
 > — **1 Peter 4:10**
@@ -420,7 +420,7 @@ How do you discover your gifts? You don't discover them by sitting alone in a ro
 * 🧠 **Head (What to Know):** You are part of a team. Healthy leadership means celebrating other people’s strengths instead of feeling threatened by them.
 * ❤️ **Heart (Who to Become):** Humble and secure, thankful for your gifts and eager to see others succeed.
 * ✋ **Hands (What to Do):** Use one of your strengths to help a leader or teammate who has a different gift.
-* 🔁 **Habit (Serve, Notice, and Ask):** Ask a mentor or friend: *"Where do you think I am most helpful when I serve?"*
+* 🔁 **Habit (Serve to Discover):** Ask a mentor or friend: *"Where do you think I am most helpful when I serve, and how can I grow?"*
 
 ---
 
@@ -475,7 +475,7 @@ Help participants identify their strengths, break free from comparison and impos
 * *"What is something you enjoy doing (art, music, tech, talking, planning, helping)?"*
 * *"Why do we compare ourselves to others, and how can we cheer each other on instead?"*
 
-### 4. Habit: Discover Your Strengths (8 mins)
+### 4. Habit: Serve to Discover (8 mins)
 * Ask each leader to identify one new area of service they would like to try out this month.
 
 ### 5. Prayer & Blessing (5 mins)
@@ -487,7 +487,7 @@ Help participants identify their strengths, break free from comparison and impos
 
 > **Big Idea:** Jesus showed us that leading is not about bossing people around. Great leaders serve others, listen carefully, and build trust.  
 > **Key Bible Passage:** Mark 10:42–45 & Philippians 2:1–5  
-> **This Week's Habit:** *Listen Before You Speak*
+> **This Week's Habit:** *Understand before Solving*
 
 > *"Whoever wants to be a leader among you must be your servant, and whoever wants to be first among you must be the slave of everyone. For even the Son of Man came not to be served but to serve others, and to give his life as a ransom for many."*  
 > — **Mark 10:43–45**
@@ -529,7 +529,7 @@ People don’t follow a title; they follow someone who genuinely cares about the
 * 🧠 **Head (What to Know):** True authority comes from love and humility, not from control or loud voices.
 * ❤️ **Heart (Who to Become):** A leader who puts the good of the team ahead of personal credit or popularity.
 * ✋ **Hands (What to Do):** In your next conversation or meeting, ask two good questions before sharing your own opinion.
-* 🔁 **Habit (Listen Before You Speak):** Practice the "3-Second Rule": When someone finishes speaking, pause for 3 seconds before you reply to make sure you truly understood them.
+* 🔁 **Habit (Understand before Solving):** Practice the 5-step listening cycle: Ask an open question, pause for 3 seconds, listen without interrupting, summarise back (*"What I hear you saying is..."*), and confirm understanding before offering advice or solutions.
 
 ---
 
@@ -580,7 +580,7 @@ Teach servant leadership through active listening, kindness, and practical acts 
 * Read **Mark 10:42–45** together.
 * Highlight: *"Jesus didn’t come to be served, but to serve. Real leaders wash feet."*
 
-### 3. Group Chat & The 3-Second Rule (15 mins)
+### 3. Group Chat & Understand before Solving (15 mins)
 * *"Why do so many leaders like giving orders instead of listening?"*
 * *"How does it feel when someone cuts you off while you are speaking?"*
 * Practice the 3-second pause in conversation.
@@ -597,7 +597,7 @@ Teach servant leadership through active listening, kindness, and practical acts 
 
 > **Big Idea:** You cannot give what you do not have. To lead others well for the long haul, you must stay closely connected to Jesus every day.  
 > **Key Bible Passage:** John 15:1–8 (The Vine and the Branches)  
-> **This Week's Habit:** *Abide and Review*
+> **This Week's Habit:** *Abide to Grow*
 
 > *"Yes, I am the vine; you are the branches. Those who remain in me, and I in them, will produce much fruit. For apart from me you can do nothing."*  
 > — **John 15:5**
@@ -634,7 +634,7 @@ When you stay close to Jesus:
 * 🧠 **Head (What to Know):** Leadership is a marathon, not a sprint. Sustainable leadership requires regular rest and spiritual refuelling.
 * ❤️ **Heart (Who to Become):** A disciple first, and a leader second. Your identity is a loved child of God, not your role.
 * ✋ **Hands (What to Do):** Set aside 15 minutes of quiet time each day with God, opening your Bible and listening in prayer.
-* 🔁 **Habit (Abide and Review):** Take 10 minutes every Sunday evening to look back over your week with God: *Where was God at work? What do I need to surrender for next week?*
+* 🔁 **Habit (Abide to Grow):** Guard 15 minutes of daily quiet time with Jesus, and take 10–15 minutes every Sunday evening to review your week with God: *Where was God at work? What do I need to surrender for next week?*
 
 ---
 

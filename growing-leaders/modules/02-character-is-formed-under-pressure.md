@@ -4,7 +4,7 @@
 >
 > **Main Scripture:** 1 Samuel 24:1–12
 >
-> **Leadership habit:** Pause and Bring It Before God
+> **Leadership habit:** Pause and Pray
 
 ## 2.1 Begin with life
 
@@ -155,7 +155,7 @@ Do not use an apology to demand immediate forgiveness or to avoid consequences.
 
 When pressure arises, pause before reacting. Then use the **Bring It Before God** practice below—Notice, Name, Receive, Respond—to discern and take a truthful, loving, and responsible next step.
 
-### 2.6.4 Habits: Pause and Bring It Before God
+### 2.6.4 Habits: Pause and Pray
 
 **Purpose:** To create space under pressure for Scripture to examine you and guide a faithful response.
 
@@ -209,9 +209,9 @@ Write a brief prayer:
 
 Bring these three things to the conversation:
 
-1. One thing you learned from Notice and Learn.
+1. One thing you learned from Reflect and Grow.
 2. One passage that is encouraging, challenging, or correcting you.
-3. One situation in which you will Pause and Bring It Before God (Notice, Name, Receive, Respond).
+3. One situation in which you will Pause and Pray (Notice, Name, Receive, Respond).
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -230,7 +230,7 @@ Bring these three things to the conversation:
 
 ## 2.9 Purpose of the conversation
 
-Participants should understand how pressure can expose motives and distort judgment, learn how to let God’s Word examine and form them, and commit to Pause and Bring It Before God in a real situation.
+Participants should understand how pressure can expose motives and distort judgment, learn how to let God’s Word examine and form them, and commit to Pause and Pray in a real situation.
 
 ## 2.10 Prepare as facilitator
 
@@ -244,7 +244,7 @@ Participants should understand how pressure can expose motives and distort judgm
 
 ### 2.11.1 Reconnect and review the previous habit — 10 minutes
 
-Pray briefly. Invite each person to share how often they attempted Notice and Learn, one thing they observed, and what helped or hindered the practice. Treat attempts as information, not a score.
+Pray briefly. Invite each person to share how often they attempted Reflect and Grow, one thing they observed, and what helped or hindered the practice. Treat attempts as information, not a score.
 
 ### 2.11.2 Enter through experience — 7 minutes
 
@@ -272,7 +272,7 @@ Invite each person to describe one low-risk pressure pattern. Ask what they feel
 
 Avoid diagnosing motives. Use tentative questions such as, “Could part of you be trying to protect something here?”
 
-### 2.11.5 Practise receiving and responding to Scripture — 8 minutes
+### 2.11.5 Practise Pause and Pray — 8 minutes
 
 Use this scenario:
 
@@ -290,7 +290,7 @@ Then formulate a response that combines restraint, truth, and an appropriate bou
 
 Each person identifies a pressure cue and a short passage, then completes:
 
-> When I notice __________, I will pause and bring it before God (Notice: __________, Name: __________, Receive: __________, Respond: __________). I will reinforce this by reading __________ each day.
+> When I notice __________, I will Pause and Pray (Notice, Name, Receive, Respond). I will reinforce this by reading __________ each day.
 
 ### 2.11.7 Pray — 3 minutes
 
@@ -307,4 +307,4 @@ Pray for integrity, teachability, wise understanding of Scripture, and courage t
 
 ## 2.13 Between modules
 
-Send a brief check-in: “Have you had an opportunity to Pause and Bring It Before God (Notice, Name, Receive, Respond)? What are you learning?” Begin Module 3 by asking what participants noticed and how Scripture shaped their response.
+Send a brief check-in: “Have you had an opportunity to Pause and Pray (Notice, Name, Receive, Respond)? What are you learning?” Begin Module 3 by asking what participants noticed and how Scripture shaped their response.

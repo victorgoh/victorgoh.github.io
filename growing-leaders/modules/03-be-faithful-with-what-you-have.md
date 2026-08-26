@@ -4,7 +4,7 @@
 >
 > **Main Scripture:** Luke 16:10–13
 >
-> **Leadership habit:** Record and Follow Through
+> **Leadership habit:** Capture and Clarify
 
 ## 3.1 Begin with life
 
@@ -104,6 +104,8 @@ Consider what happens when someone asks you to take on a task.
 
 Choose one pattern. What desire or fear may be underneath it? What would honesty and faithfulness look like instead?
 
+### 3.5.3 Hands: Conduct a reliability audit
+
 List your main current commitments. Keep the list manageable:
 
 * **Commitment / Responsibility:**
@@ -128,9 +130,9 @@ Then decide whether each commitment should be:
 
 Choose one commitment that needs attention within the next 48 hours. Take the next action or communicate with the person affected.
 
-### 3.5.3 Habits: Record and Follow Through
+### 3.5.4 Habits: Capture and Clarify
 
-**Purpose:** To reduce forgotten promises and improve trustworthy follow-through.
+**Purpose:** To prevent commitments from falling through the cracks, clarify expectations, and protect trust through reliable follow-through.
 
 **Cue:** Whenever you agree to do something.
 
@@ -171,9 +173,9 @@ Write a brief prayer:
 
 Bring:
 
-1. One lesson from practising Pause and Bring It Before God.
+1. One lesson from practising Pause and Pray.
 2. One responsibility you need to handle more faithfully.
-3. The place and time you will use to Record and Follow Through.
+3. The place and time you will use to Capture and Clarify.
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -192,7 +194,7 @@ Bring:
 
 ## 3.8 Purpose of the conversation
 
-Participants should connect faithfulness with stewardship and trust, examine a pattern affecting reliability, clarify one current responsibility, and establish the habit of Record and Follow Through.
+Participants should connect faithfulness with stewardship and trust, examine a pattern affecting reliability, clarify one current responsibility, and establish the habit of Capture and Clarify.
 
 ## 3.9 Prepare as facilitator
 
@@ -204,7 +206,7 @@ Participants should connect faithfulness with stewardship and trust, examine a p
 
 ### 3.10.1 Reconnect and review the previous habit — 10 minutes
 
-Pray briefly. Ask about one moment when participants practised—or wish they had practised—Pause and Bring It Before God. What did they notice, and how did Scripture shape their response?
+Pray briefly. Ask about one moment when participants practised—or wish they had practised—Pause and Pray. What did they notice, and how did prayer shape their response?
 
 ### 3.10.2 Enter through experience — 7 minutes
 
@@ -231,7 +233,7 @@ Invite each person to share one insight from the responsibility audit. Explore w
 
 Do not turn the conversation into productivity advice alone. Attend to the motives and relationships involved.
 
-### 3.10.5 Practise clarifying a commitment — 8 minutes
+### 3.10.5 Practise Capture and Clarify — 8 minutes
 
 In pairs, practise responding to this request:
 
@@ -258,4 +260,4 @@ Pray for faithfulness, truthful limits, and care for the people affected by each
 
 ## 3.12 Between modules
 
-Check in briefly about the specific 48-hour action. Begin Module 4 by asking what participants learned from Record and Follow Through.
+Check in briefly about the specific 48-hour action. Begin Module 4 by asking what participants learned from Capture and Clarify.

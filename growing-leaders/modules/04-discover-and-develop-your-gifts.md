@@ -4,7 +4,7 @@
 >
 > **Main Scripture:** 1 Peter 4:7–11
 >
-> **Leadership habit:** Serve, Notice, Ask
+> **Leadership habit:** Serve to Discover
 
 ## 4.1 Begin with life
 
@@ -122,7 +122,7 @@ Choose one possible strength or gift to explore during the next month:
 
 Keep the experiment small enough to complete. Examples include facilitating part of a meeting, encouraging a specific person, organising one task, explaining a short passage, or helping resolve a practical need.
 
-### 4.5.4 Habits: Serve, Notice, Ask
+### 4.5.4 Habits: Serve to Discover
 
 **Purpose:** To develop a possible gift through real service, observable fruit, specific feedback, and repeated practice.
 
@@ -170,9 +170,9 @@ Write a brief prayer:
 
 Bring:
 
-1. One lesson from reviewing your commitments.
+1. One lesson from practising Capture and Clarify.
 2. One possible strength or gift and evidence that supports it.
-3. Your development experiment and feedback request.
+3. Your development experiment and feedback request for Serve to Discover.
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -203,7 +203,7 @@ Participants should understand gifts as grace entrusted for service, identify ev
 
 ### 4.10.1 Reconnect and review the previous habit — 10 minutes
 
-Pray briefly. Ask what participants learned from Record and Follow Through and whether they completed, clarified, renegotiated, or released something.
+Pray briefly. Ask what participants learned from Capture and Clarify and whether they completed, clarified, renegotiated, or released something.
 
 ### 4.10.2 Enter through experience — 7 minutes
 
@@ -230,7 +230,7 @@ Each person shares one possible strength or gift and the evidence they see. Invi
 
 Explore any comparison, fear, or need for recognition without shaming it.
 
-### 4.10.5 Practise giving developmental feedback — 8 minutes
+### 4.10.5 Practise Serve to Discover — 8 minutes
 
 Use the structure:
 
