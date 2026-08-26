@@ -102,24 +102,15 @@ What fear or desire may drive that reflex? What would love, courage, and humilit
 
 ### 5.5.3 Hands: Prepare a healthy conversation
 
-Choose a real but manageable conversation:
+Choose a real but manageable conversation where tension, feedback, or misunderstanding exists. Outline your conversation plan using these six elements:
 
-* **Purpose: What good outcome am I seeking?**
-> Write your response here.
+1. **Purpose:** What good, constructive outcome am I seeking?
+2. **Observation:** What happened, stated simply without exaggeration?
+3. **Perspective:** What do I genuinely need to understand from their point of view?
+4. **Effect:** How has this situation affected relationships, trust, or the work?
+5. **Responsibility:** What part of this situation belongs to me?
+6. **Next Step:** What concrete request, decision, or mutual agreement is needed?
 
-* **Observation: What happened, without exaggeration?**
-> Write your response here.
-
-* **Perspective: What do I need to understand from them?**
-> Write your response here.
-
-* **Effect: How has the situation affected people or the work?**
-> Write your response here.
-
-* **Responsibility: What part belongs to me?**
-> Write your response here.
-
-* **Next step: What request, decision, or agreement is needed?**
 > Write your response here.
 
 Begin with curiosity. If safety, misconduct, harassment, abuse, or a serious power imbalance is involved, seek appropriate help rather than attempting an informal conversation alone.

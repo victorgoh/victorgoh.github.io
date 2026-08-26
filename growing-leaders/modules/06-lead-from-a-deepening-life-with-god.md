@@ -100,27 +100,19 @@ What makes this invitation difficult? What would trust look like?
 
 ### 6.5.3 Hands: Design a 30-day leadership rhythm
 
-Choose one next step in each dimension. Keep the plan realistic:
+Sustainable leadership requires building healthy, life-giving rhythms that keep you connected to Jesus. Outline your 30-day development plan across the four dimensions:
 
-* **🧠 Head (30-day next step & support):**
+1. **🧠 Head (30-day focus):** What truth will I study or keep in mind?
+2. **❤️ Heart (30-day focus):** What motive, fear, or desire will I bring before God?
+3. **✋ Hands (30-day focus):** What practical skill or service will I practise?
+4. **🔁 Habits (30-day focus):** What daily abiding and weekly review rhythm will I establish?
+
+Include:
+- One responsibility in which you will practise.
+- One feedback partner from whom you will seek insight.
+- One date when you will review your plan.
+
 > Write your response here.
-
-* **❤️ Heart (30-day next step & support):**
-> Write your response here.
-
-* **✋ Hands (30-day next step & support):**
-> Write your response here.
-
-* **🔁 Habits (30-day next step & review rhythm):**
-> Write your response here.
-
-Then identify:
-
-- one responsibility in which you will practise;
-- one person from whom you will seek feedback;
-- one conversation you need to have;
-- one practice you will stop, start, or continue;
-- one date when you will review the plan.
 
 ### 6.5.4 Habits: Abide to Grow
 

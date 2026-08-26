@@ -106,27 +106,16 @@ Choose one pattern. What desire or fear may be underneath it? What would honesty
 
 ### 3.5.3 Hands: Conduct a reliability audit
 
-List your main current commitments. Keep the list manageable:
+Faithfulness begins by knowing what you have actually taken on. List your main current commitments and audit your bandwidth:
 
-* **Commitment / Responsibility:**
+1. **Commitment / Task:** What specific responsibility have I agreed to?
+2. **Definition of “Done”:** What does clear completion look like?
+3. **Next Concrete Action:** What is the very next physical step?
+4. **Timeline & Communication:** What is the due date, and who needs an update?
+
+Decide whether each commitment should be **completed**, **clarified**, **renegotiated**, **delegated appropriately**, or **ended honestly**.
+
 > Write your response here.
-
-* **What does “done” mean?**
-> Write your response here.
-
-* **Next concrete action:**
-> Write your response here.
-
-* **Due date & person to communicate with:**
-> Write your response here.
-
-Then decide whether each commitment should be:
-
-- **completed;**
-- **clarified;**
-- **renegotiated;**
-- **delegated appropriately;**
-- **ended honestly.**
 
 Choose one commitment that needs attention within the next 48 hours. Take the next action or communicate with the person affected.
 

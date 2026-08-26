@@ -143,18 +143,12 @@ These might include:
 - a season of hardship or change;
 - an experience of God’s guidance or care.
 
-For each experience, note:
+For each key experience, map out:
+1. **Significant Experience:** What happened?
+2. **Belief / Lesson:** What did I learn or begin to believe?
+3. **Pattern / Strength:** What strength or protective pattern developed?
+4. **Leadership Impact:** How does it influence the way I lead today?
 
-* **1. Significant Experience:**
-> Write your response here.
-
-* **2. What did I learn or begin to believe?**
-> Write your response here.
-
-* **3. What strength or pattern developed?**
-> Write your response here.
-
-* **4. How might it affect my leadership now?**
 > Write your response here.
 
 Look at the map as a whole. What theme, repeated pattern, or question do you notice?
@@ -169,25 +163,16 @@ Leaders learn from experience when they create space to notice it. This week, pr
 
 **Cue:** Choose a regular point near the end of your day—for example, after dinner, before closing your laptop, or before going to bed.
 
-**Practice:** Take three to five minutes and write:
+**Practice:** Take three to five minutes to reflect on:
+1. **What happened?** What was one significant interaction or moment today?
+2. **What happened within me?** What emotions, reactions, or desires did I feel?
+3. **What might I learn or practise?** What is God revealing or inviting me to do differently?
 
-1. What was one significant moment today?
-2. What happened within me?
-3. What might this reveal about how my story has shaped me?
-4. What might God be inviting me to learn or practise?
+> Write your response here.
 
 **Review:** Before the next module, read your entries and look for a repeated reaction, strength, concern, or invitation to grow.
 
 **Support:** Tell the group when and where you plan to do the review. If helpful, set a reminder or ask another participant to check in once during the week.
-
-* **What happened?**
-> Write your response here.
-
-* **What happened within me?**
-> Write your response here.
-
-* **What might I learn or practise?**
-> Write your response here.
 
 If you miss a day, begin again the next day. The purpose is attentive learning, not maintaining a perfect record.
 

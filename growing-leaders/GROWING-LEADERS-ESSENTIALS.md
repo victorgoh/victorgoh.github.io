@@ -700,16 +700,11 @@ Celebrate completing the course, encourage lifelong spiritual rhythms of prayer 
 
 Take a few minutes to write down your personal commitments as you finish this course:
 
-* **1. My Core Strength:** *What is one gift God has given me to serve?*
-> Write your response here.
+1. **My Core Strength:** What is one gift or strength God has given me to serve others?
+2. **My Character Focus:** What inner character area is God growing in me under pressure?
+3. **My Daily Habit:** What small daily habit will keep me close to Jesus?
+4. **My Next Step:** What new leadership responsibility or step of faith will I take with trust?
 
-* **2. My Character Focus:** *What character area is God growing in me?*
-> Write your response here.
-
-* **3. My Daily Habit:** *What small habit will keep me close to Jesus?*
-> Write your response here.
-
-* **4. My Next Step:** *What new leadership step will I take with trust?*
 > Write your response here.
 
 ---

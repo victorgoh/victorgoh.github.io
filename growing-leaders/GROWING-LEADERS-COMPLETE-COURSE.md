@@ -362,18 +362,12 @@ These might include:
 - a season of hardship or change;
 - an experience of God’s guidance or care.
 
-For each experience, note:
+For each key experience, map out:
+1. **Significant Experience:** What happened?
+2. **Belief / Lesson:** What did I learn or begin to believe?
+3. **Pattern / Strength:** What strength or protective pattern developed?
+4. **Leadership Impact:** How does it influence the way I lead today?
 
-* **1. Significant Experience:**
-> Write your response here.
-
-* **2. What did I learn or begin to believe?**
-> Write your response here.
-
-* **3. What strength or pattern developed?**
-> Write your response here.
-
-* **4. How might it affect my leadership now?**
 > Write your response here.
 
 Look at the map as a whole. What theme, repeated pattern, or question do you notice?
@@ -388,25 +382,16 @@ Leaders learn from experience when they create space to notice it. This week, pr
 
 **Cue:** Choose a regular point near the end of your day—for example, after dinner, before closing your laptop, or before going to bed.
 
-**Practice:** Take three to five minutes and write:
+**Practice:** Take three to five minutes to reflect on:
+1. **What happened?** What was one significant interaction or moment today?
+2. **What happened within me?** What emotions, reactions, or desires did I feel?
+3. **What might I learn or practise?** What is God revealing or inviting me to do differently?
 
-1. What was one significant moment today?
-2. What happened within me?
-3. What might this reveal about how my story has shaped me?
-4. What might God be inviting me to learn or practise?
+> Write your response here.
 
 **Review:** Before the next module, read your entries and look for a repeated reaction, strength, concern, or invitation to grow.
 
 **Support:** Tell the group when and where you plan to do the review. If helpful, set a reminder or ask another participant to check in once during the week.
-
-* **What happened?**
-> Write your response here.
-
-* **What happened within me?**
-> Write your response here.
-
-* **What might I learn or practise?**
-> Write your response here.
 
 If you miss a day, begin again the next day. The purpose is attentive learning, not maintaining a perfect record.
 
@@ -715,21 +700,14 @@ Honest examination is not self-condemnation. Conviction identifies something spe
 
 ### 2.6.3 Hands: Plan a faithful response
 
-Use the following framework for a current pressure point:
+Use the following framework to plan a thoughtful, faithful response for a current pressure point:
 
-* **What are the facts, separate from my assumptions?**
-> Write your response here.
+1. **Facts vs. Assumptions:** What are the objective facts, separate from my interpretations?
+2. **Inner Reaction:** What is happening within me (frustration, defensiveness, fear, ambition)?
+3. **Responsibility & Limits:** What responsibility or healthy boundary belongs to me?
+4. **Faithful Action:** What response would express truth, love, and integrity?
+5. **Wise Counsel:** Who could give me mature, objective guidance?
 
-* **What is happening within me?**
-> Write your response here.
-
-* **What responsibility or boundary is mine?**
-> Write your response here.
-
-* **What response would express truth and love?**
-> Write your response here.
-
-* **Who could give me wise, appropriate counsel?**
 > Write your response here.
 
 If you have caused harm, a faithful response may include a simple apology:
@@ -1004,27 +982,16 @@ Choose one pattern. What desire or fear may be underneath it? What would honesty
 
 ### 3.5.3 Hands: Conduct a reliability audit
 
-List your main current commitments. Keep the list manageable:
+Faithfulness begins by knowing what you have actually taken on. List your main current commitments and audit your bandwidth:
 
-* **Commitment / Responsibility:**
+1. **Commitment / Task:** What specific responsibility have I agreed to?
+2. **Definition of “Done”:** What does clear completion look like?
+3. **Next Concrete Action:** What is the very next physical step?
+4. **Timeline & Communication:** What is the due date, and who needs an update?
+
+Decide whether each commitment should be **completed**, **clarified**, **renegotiated**, **delegated appropriately**, or **ended honestly**.
+
 > Write your response here.
-
-* **What does “done” mean?**
-> Write your response here.
-
-* **Next concrete action:**
-> Write your response here.
-
-* **Due date & person to communicate with:**
-> Write your response here.
-
-Then decide whether each commitment should be:
-
-- **completed;**
-- **clarified;**
-- **renegotiated;**
-- **delegated appropriately;**
-- **ended honestly.**
 
 Choose one commitment that needs attention within the next 48 hours. Take the next action or communicate with the person affected.
 
@@ -1264,24 +1231,15 @@ Choose one. What truth about grace, service, and belonging do you need to receiv
 
 ### 4.5.3 Hands: Design a development experiment
 
-Choose one possible strength or gift to explore during the next month:
+Choose one possible strength or spiritual gift to explore and sharpen during the next month. Outline your experiment using these prompts:
 
-* **What capacity do I want to explore?**
-> Write your response here.
+1. **Capacity / Strength:** What gift or skill do I want to explore?
+2. **Target Need:** Whom could it serve or build up?
+3. **Small Opportunity:** What specific, manageable role or task will I try?
+4. **Preparation:** What skill, practice, or preparation do I need beforehand?
+5. **Observable Fruit:** What positive outcome or blessing will I look for?
+6. **Feedback Partner:** Who can observe me and provide constructive, developmental feedback?
 
-* **Whom could it serve?**
-> Write your response here.
-
-* **What small opportunity could I try?**
-> Write your response here.
-
-* **What preparation or skill do I need?**
-> Write your response here.
-
-* **What fruit will I look for?**
-> Write your response here.
-
-* **Who can observe and give feedback?**
 > Write your response here.
 
 Keep the experiment small enough to complete. Examples include facilitating part of a meeting, encouraging a specific person, organising one task, explaining a short passage, or helping resolve a practical need.
@@ -1529,24 +1487,15 @@ What fear or desire may drive that reflex? What would love, courage, and humilit
 
 ### 5.5.3 Hands: Prepare a healthy conversation
 
-Choose a real but manageable conversation:
+Choose a real but manageable conversation where tension, feedback, or misunderstanding exists. Outline your conversation plan using these six elements:
 
-* **Purpose: What good outcome am I seeking?**
-> Write your response here.
+1. **Purpose:** What good, constructive outcome am I seeking?
+2. **Observation:** What happened, stated simply without exaggeration?
+3. **Perspective:** What do I genuinely need to understand from their point of view?
+4. **Effect:** How has this situation affected relationships, trust, or the work?
+5. **Responsibility:** What part of this situation belongs to me?
+6. **Next Step:** What concrete request, decision, or mutual agreement is needed?
 
-* **Observation: What happened, without exaggeration?**
-> Write your response here.
-
-* **Perspective: What do I need to understand from them?**
-> Write your response here.
-
-* **Effect: How has the situation affected people or the work?**
-> Write your response here.
-
-* **Responsibility: What part belongs to me?**
-> Write your response here.
-
-* **Next step: What request, decision, or agreement is needed?**
 > Write your response here.
 
 Begin with curiosity. If safety, misconduct, harassment, abuse, or a serious power imbalance is involved, seek appropriate help rather than attempting an informal conversation alone.
@@ -1789,27 +1738,19 @@ What makes this invitation difficult? What would trust look like?
 
 ### 6.5.3 Hands: Design a 30-day leadership rhythm
 
-Choose one next step in each dimension. Keep the plan realistic:
+Sustainable leadership requires building healthy, life-giving rhythms that keep you connected to Jesus. Outline your 30-day development plan across the four dimensions:
 
-* **🧠 Head (30-day next step & support):**
+1. **🧠 Head (30-day focus):** What truth will I study or keep in mind?
+2. **❤️ Heart (30-day focus):** What motive, fear, or desire will I bring before God?
+3. **✋ Hands (30-day focus):** What practical skill or service will I practise?
+4. **🔁 Habits (30-day focus):** What daily abiding and weekly review rhythm will I establish?
+
+Include:
+- One responsibility in which you will practise.
+- One feedback partner from whom you will seek insight.
+- One date when you will review your plan.
+
 > Write your response here.
-
-* **❤️ Heart (30-day next step & support):**
-> Write your response here.
-
-* **✋ Hands (30-day next step & support):**
-> Write your response here.
-
-* **🔁 Habits (30-day next step & review rhythm):**
-> Write your response here.
-
-Then identify:
-
-- one responsibility in which you will practise;
-- one person from whom you will seek feedback;
-- one conversation you need to have;
-- one practice you will stop, start, or continue;
-- one date when you will review the plan.
 
 ### 6.5.4 Habits: Abide to Grow
 

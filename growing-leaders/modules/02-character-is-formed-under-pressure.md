@@ -130,21 +130,14 @@ Honest examination is not self-condemnation. Conviction identifies something spe
 
 ### 2.6.3 Hands: Plan a faithful response
 
-Use the following framework for a current pressure point:
+Use the following framework to plan a thoughtful, faithful response for a current pressure point:
 
-* **What are the facts, separate from my assumptions?**
-> Write your response here.
+1. **Facts vs. Assumptions:** What are the objective facts, separate from my interpretations?
+2. **Inner Reaction:** What is happening within me (frustration, defensiveness, fear, ambition)?
+3. **Responsibility & Limits:** What responsibility or healthy boundary belongs to me?
+4. **Faithful Action:** What response would express truth, love, and integrity?
+5. **Wise Counsel:** Who could give me mature, objective guidance?
 
-* **What is happening within me?**
-> Write your response here.
-
-* **What responsibility or boundary is mine?**
-> Write your response here.
-
-* **What response would express truth and love?**
-> Write your response here.
-
-* **Who could give me wise, appropriate counsel?**
 > Write your response here.
 
 If you have caused harm, a faithful response may include a simple apology:
