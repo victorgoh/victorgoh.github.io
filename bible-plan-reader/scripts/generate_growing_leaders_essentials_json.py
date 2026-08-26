@@ -189,14 +189,14 @@ def main():
                     reflect_questions.append(q_m.group(1).strip())
 
         # 5. Action Step (Key Practice)
-        practice_match = re.search(r'### 5\. Action Step\s*\n(.*?)(?=\n### 6\. Prayer)', body, re.DOTALL)
+        practice_match = re.search(r'### 5\. Action Step\s*\n(.*?)(?=\n### 6\. (?:Personal )?Prayer)', body, re.DOTALL)
         practice_items = []
         if practice_match:
             p_text = practice_match.group(1).strip()
             practice_items.append(p_text)
 
         # 6. Personal Prayer
-        prayer_match = re.search(r'### 6\. Prayer\s*\n(.*?)(?=\n---|\n## |\Z)', body, re.DOTALL)
+        prayer_match = re.search(r'### 6\. (?:Personal )?Prayer\s*\n(.*?)(?=\n---|\n## |\Z)', body, re.DOTALL)
         prayer_text = ""
         if prayer_match:
             raw_prayer = prayer_match.group(1).strip()

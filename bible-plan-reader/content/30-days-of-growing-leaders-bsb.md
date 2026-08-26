@@ -1463,36 +1463,26 @@ In 2 Peter 3:17–18, writing his final apostolic testament on the eve of his ma
 Congratulations on completing the **Growing Leaders: 30-Lesson Leadership Journey**!
 
 Over these 30 lessons, you have explored the foundational pillars of Kingdom leadership:
-1. **Module 1**: *God Uses Your Story* (Cultivating Self-Awareness) $
-ightarrow$ **Reflect and Grow**
-2. **Module 2**: *God Forms Your Character* (Integrity Under Testing) $
-ightarrow$ **Pause & Bring It Before God**
-3. **Module 3**: *God Builds Your Faithfulness* (Reliable Stewardship) $
-ightarrow$ **Capture and Clarify**
-4. **Module 4**: *God Develops Your Gifts* (Stewardship & Humility) $
-ightarrow$ **Serve to Discover**
-5. **Module 5**: *God Shapes How You Lead People* (Servanthood & Succession) $
-ightarrow$ **Understand before Solving**
-6. **Module 6**: *God Deepens Your Life With Him* (Spiritual Endurance) $
-ightarrow$ **Abide to Grow**
+1. **Module 1: God Uses Your Story** *(Self-Awareness)* ➔ **Reflect and Grow**
+2. **Module 2: God Forms Your Character** *(Integrity Under Testing)* ➔ **Pause and Pray**
+3. **Module 3: God Builds Your Faithfulness** *(Reliable Stewardship)* ➔ **Capture and Clarify**
+4. **Module 4: God Develops Your Gifts** *(Team Stewardship)* ➔ **Serve to Discover**
+5. **Module 5: God Shapes How You Lead People** *(Servant Posture)* ➔ **Understand before Solving**
+6. **Module 6: God Deepens Your Life With Him** *(Spiritual Depth)* ➔ **Abide to Grow**
 
 As you conclude this devotional series, remember: **Leadership in the Kingdom of God is not about arriving at a destination of perfection; it is about establishing lifelong rhythms of grace.**
 
 The master habit that anchors all other habits is **Abide to Grow**:
 
 - **1. DAILY ABIDING**: Sit at Jesus' feet daily in Scripture and prayer, drawing life from the True Vine (*John 15:5*).
-- **2. WEEKLY REVIEW**: Take 20 minutes every week to review your 5 Core Habits:
-  - Did I *Notice & Learn* from my reactions?
-  - Did I *Pause & Bring* pressures before God?
-  - Did I *Capture and Clarify* my commitments and follow through?
-  - Did I *Serve to Discover* and sharpen gifts?
-  - Did I *Understand before Solving* in conversations?
-- **3. MONTHLY CELEBRATION**: Give thanks for areas of visible progress and surrender areas of failure to God's mercy.
-- **4. LIFELONG MULTIPLICATION**: Pour what you have learned into the next generation of emerging leaders (*2 Timothy 2:2*).
-
-You are chosen by Christ. You are appointed to go and bear fruit that will last (*John 15:16*). Keep on growing in grace (*2 Peter 3:18*). Lead with integrity of heart and skillfulness of hands, and may your life bring everlasting glory to the King of kings!
-
----
+- **2. WEEKLY REVIEW**: Take 15 minutes each week to review your 6 Core Habits:
+  - *Reflect and Grow*: Did I notice God's lessons from my reactions?
+  - *Pause and Pray*: Did I pause before reacting when stress flared up?
+  - *Capture and Clarify*: Did I keep my promises and manage commitments?
+  - *Serve to Discover*: Did I serve where needed and seek feedback?
+  - *Understand before Solving*: Did I listen to understand before fixing?
+  - *Abide to Grow*: Did I guard my personal walk with Jesus?
+- **3. LIFELONG MULTIPLICATION**: Pour what you have learned into the next generation of emerging leaders (*2 Timothy 2:2*).
 
 ### 🔍 Master Course Integration Checkpoint: The 30-Lesson Growth Synthesis
 
