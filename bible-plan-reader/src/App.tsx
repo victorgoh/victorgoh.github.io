@@ -90,7 +90,7 @@ export const migratePlanSchema = (plan: any): Plan => {
 };
 
 export const App: React.FC = () => {
-  const CACHE_VERSION = 'v1.5';
+  const CACHE_VERSION = 'v1.6';
   try {
     if (localStorage.getItem('app_plan_cache_version') !== CACHE_VERSION) {
       Object.keys(localStorage).forEach((key) => {

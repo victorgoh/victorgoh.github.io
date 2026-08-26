@@ -25,12 +25,12 @@ Every devotional in this journey addresses four interrelated areas of leadership
 
 | Session | Theme | Focus Scripture | Core Habit |
 | :--- | :--- | :--- | :--- |
-| **Week 1 (Days 1–5)** | **God Uses Your Story** | Genesis 50:15–21 | *Notice and Learn* |
-| **Week 2 (Days 6–10)** | **God Forms Your Character** | 1 Samuel 24:1–12 | *Pause and Bring It Before God* |
-| **Week 3 (Days 11–15)** | **God Builds Your Faithfulness** | Luke 16:10–13 | *Record and Follow Through* |
-| **Week 4 (Days 16–20)** | **God Develops Your Gifts** | 1 Peter 4:7–11 | *Serve, Notice, Ask* |
-| **Week 5 (Days 21–25)** | **God Shapes How You Lead People** | Mark 10:35–45 | *Listen Before Responding* |
-| **Week 6 (Days 26–30)** | **God Deepens Your Life With Him** | John 15:1–17 | *Abide and Review* |
+| **Week 1 (Days 1–5)** | **God Uses Your Story** | Genesis 50:15–21 | *Reflect and Grow* |
+| **Week 2 (Days 6–10)** | **God Forms Your Character** | 1 Samuel 24:1–12 | *Pause and Pray* |
+| **Week 3 (Days 11–15)** | **God Builds Your Faithfulness** | Luke 16:10–13 | *Capture and Clarify* |
+| **Week 4 (Days 16–20)** | **God Develops Your Gifts** | 1 Peter 4:7–11 | *Serve to Discover* |
+| **Week 5 (Days 21–25)** | **God Shapes How You Lead People** | Mark 10:35–45 | *Understand before Solving* |
+| **Week 6 (Days 26–30)** | **God Deepens Your Life With Him** | John 15:1–17 | *Abide to Grow* |
 
 ---
 
@@ -87,14 +87,14 @@ Every devotional in this journey addresses four interrelated areas of leadership
 
 ---
 
-### Day 5: Habit: Notice and Learn
+### Day 5: Habit: Reflect and Grow
 * **Passage**: Romans 8:28–39
 * **Concept Explained**: *The Habit of Reflective Living*. A growing leader does not just experience life; they *notice* what happens and *learn* what God is forming within them. Daily reflection prevents us from repeating the same mistakes over decades.
 * **Key Points**:
   1. Experience alone does not make us wiser; evaluated experience does.
   2. God uses daily challenges, delays, and friction to shape Christlike character in us.
   3. Reflection turns daily frustration into spiritual formation.
-* **Key Practice**: Implement the **Notice and Learn** habit tonight: Spend 5 minutes before bed reflecting on one moment today that triggered frustration or anxiety. Ask: *"What was happening in my heart, and what was God teaching me?"*
+* **Key Practice**: Implement the **Reflect and Grow** habit tonight: Spend 5 minutes before bed reflecting on one moment today that triggered frustration or anxiety. Ask: *"What was happening in my heart, and what was God teaching me?"*
 * **Prayer**: *Holy Spirit, give me an observant and teachable spirit. Help me not to rush past today's lessons, but to learn what You are forming in me.*
 
 ---
@@ -152,9 +152,9 @@ Every devotional in this journey addresses four interrelated areas of leadership
 
 ---
 
-### Day 10: Habit: Pause and Bring It Before God
+### Day 10: Habit: Pause and Pray
 * **Passage**: Hebrews 4:14–16
-* **Concept Explained**: *The Four Movements of Spiritual Processing*. When pressure strikes, human instinct reacts impulsively. The habit of *Pause and Bring It Before God* uses four movements:
+* **Concept Explained**: *The Four Movements of Spiritual Processing*. When pressure strikes, human instinct reacts impulsively. The habit of *Pause and Pray* uses four movements:
   1. **Notice**: What am I feeling right now?
   2. **Name**: Speak the raw emotion or fear honestly to God.
   3. **Receive**: Welcome His truth, grace, and wisdom.
@@ -221,14 +221,14 @@ Every devotional in this journey addresses four interrelated areas of leadership
 
 ---
 
-### Day 15: Habit: Record and Follow Through
+### Day 15: Habit: Capture and Clarify
 * **Passage**: Colossians 3:23–24
-* **Concept Explained**: *Work as Worship & Systemic Reliability*. Good intentions are easily forgotten in a busy world. The habit of *Record and Follow Through* involves capturing commitments in a single trusted place so nothing drops.
+* **Concept Explained**: *Work as Worship & Systemic Reliability*. Good intentions are easily forgotten in a busy world. The habit of *Capture and Clarify* involves capturing commitments in a single trusted place so nothing drops.
 * **Key Points**:
   1. Diligence in administrative tasks is a direct spiritual service to Christ.
   2. A reliable system frees your mind to be truly present with people.
   3. When our daily execution is orderly, peace reigns in our leadership.
-* **Key Practice**: Adopt the **Record and Follow Through** habit: Keep a simple notebook or digital list where every commitment made today is recorded and checked off upon completion.
+* **Key Practice**: Adopt the **Capture and Clarify** habit: Keep a simple notebook or digital list where every commitment made today is recorded and checked off upon completion.
 * **Prayer**: *Whatever I do today, Lord, let me do it with all my heart as working for You and not for human masters. Give me diligence and joy in my labor.*
 
 ---
@@ -286,7 +286,7 @@ Every devotional in this journey addresses four interrelated areas of leadership
 
 ---
 
-### Day 20: Habit: Serve, Notice, Ask
+### Day 20: Habit: Serve to Discover
 * **Passage**: Romans 12:3–8
 * **Concept Explained**: *The Three-Step Gift Discovery Pathway*. We do not discover gifts by taking a passive quiz in isolation. We follow a practical pathway:
   1. **Serve**: Step forward where there is a tangible need.
@@ -296,7 +296,7 @@ Every devotional in this journey addresses four interrelated areas of leadership
   1. Clarity comes through engagement, not contemplation.
   2. Fruitfulness and community affirmation confirm spiritual calling.
   3. The body of Christ helps us discover where we fit.
-* **Key Practice**: Practice the **Serve, Notice, Ask** habit: Step into a volunteer role or task this week, notice the outcome, and ask for a teammate’s observation.
+* **Key Practice**: Practice the **Serve to Discover** habit: Step into a volunteer role or task this week, notice the outcome, and ask for a teammate’s observation.
 * **Prayer**: *Lord Jesus, show me where I can meet needs in Your body today. Guide my steps as I serve, notice fruit, and learn from others.*
 
 ---
@@ -330,14 +330,14 @@ Every devotional in this journey addresses four interrelated areas of leadership
 
 ---
 
-### Day 23: Habit: Listen Before Responding
+### Day 23: Habit: Understand before Solving
 * **Passage**: James 1:19–20; Proverbs 18:13
-* **Concept Explained**: *Active, Empathetic Listening*. Scripture warns: *"To answer before listening—that is folly and shame."* Leaders often listen only to prepare their counter-argument. The habit of *Listen Before Responding* creates trust and unlocks deep understanding.
+* **Concept Explained**: *Active, Empathetic Listening*. Scripture warns: *"To answer before listening—that is folly and shame."* Leaders often listen only to prepare their counter-argument. The habit of *Understand before Solving* creates trust and unlocks deep understanding.
 * **Key Points**:
   1. Being quick to hear and slow to speak is an act of love.
   2. People need to feel understood before they will receive direction or advice.
   3. Asking good questions is more powerful than having quick answers.
-* **Key Practice**: In every conversation today, practice the **Listen Before Responding** habit: Ask at least two clarifying questions and summarize what you heard before giving your perspective.
+* **Key Practice**: In every conversation today, practice the **Understand before Solving** habit: Ask at least two clarifying questions and summarize what you heard before giving your perspective.
 * **Prayer**: *Holy Spirit, quiet my restless mouth and my anxious mind. Help me to truly listen to people's hearts and see them through Your eyes.*
 
 ---
@@ -419,14 +419,14 @@ Every devotional in this journey addresses four interrelated areas of leadership
 
 ---
 
-### Day 30: Habit: Abide and Review
+### Day 30: Habit: Abide to Grow
 * **Passage**: Psalm 23:1–6; John 15:9–17
-* **Concept Explained**: *The Habit of Spiritual Review & Under-Shepherding*. You are an under-shepherd; the Lord is your Shepherd. The *Abide and Review* habit pauses to look back over the leadership journey, celebrate God’s faithfulness, and step boldly into the future.
+* **Concept Explained**: *The Habit of Spiritual Review & Under-Shepherding*. You are an under-shepherd; the Lord is your Shepherd. The *Abide to Grow* habit pauses to look back over the leadership journey, celebrate God’s faithfulness, and step boldly into the future.
 * **Key Points**:
   1. Regular spiritual review anchors your soul in gratitude.
   2. Remembering where God brought you from gives you confidence for where He is leading you.
   3. The chief mark of a mature leader is ongoing, humble dependence on the Good Shepherd.
-* **Key Practice**: Complete the **Abide and Review** exercise: Write down the top 3 lessons God taught you over these 30 days and commit your next season of leadership into His hands.
+* **Key Practice**: Complete the **Abide to Grow** exercise: Write down the top 3 lessons God taught you over these 30 days and commit your next season of leadership into His hands.
 * **Prayer**: *The Lord is my Shepherd; I lack nothing. Thank You for guiding, correcting, and forming me. Lead me forward as I follow You, serving Your people with integrity, humility, and love. In Jesus' name, Amen.*
 
 ---
@@ -436,10 +436,10 @@ Every devotional in this journey addresses four interrelated areas of leadership
 Throughout this 30-day journey, readers develop a comprehensive spiritual toolkit of **6 Core Habits**:
 
 ```
- 1. Notice and Learn         ───▶ Notice daily experience & extract God's formation
- 2. Pause and Bring It       ───▶ Process pressure: Notice ➜ Name ➜ Receive ➜ Respond
- 3. Record and Follow Through───▶ Execute commitments diligently as unto the Lord
- 4. Serve, Notice, Ask       ───▶ Discover & develop gifts in the laboratory of service
- 5. Listen Before Responding ───▶ Honor people by understanding before speaking
- 6. Abide and Review         ───▶ Live deeply rooted in Christ & regularly review growth
+ 1. Reflect and Grow         ───▶ Notice daily experience & extract God's formation
+ 2. Pause and Pray       ───▶ Process pressure: Notice ➜ Name ➜ Receive ➜ Respond
+ 3. Capture and Clarify───▶ Execute commitments diligently as unto the Lord
+ 4. Serve to Discover       ───▶ Discover & develop gifts in the laboratory of service
+ 5. Understand before Solving ───▶ Honor people by understanding before speaking
+ 6. Abide to Grow         ───▶ Live deeply rooted in Christ & regularly review growth
 ```

@@ -117,12 +117,12 @@ def update_growing_leaders_bsb():
     items = []
 
     module_info = {
-        1: {"name": "Module 1: God Uses Your Story", "lessons": "Lessons 1–5", "habit": "Notice and Learn"},
-        2: {"name": "Module 2: God Forms Your Character", "lessons": "Lessons 6–10", "habit": "Pause and Bring It Before God"},
-        3: {"name": "Module 3: God Builds Your Faithfulness", "lessons": "Lessons 11–15", "habit": "Record and Follow Through"},
-        4: {"name": "Module 4: God Develops Your Gifts", "lessons": "Lessons 16–20", "habit": "Serve, Notice, Ask"},
-        5: {"name": "Module 5: God Shapes How You Lead People", "lessons": "Lessons 21–25", "habit": "Listen Before Responding"},
-        6: {"name": "Module 6: God Deepens Your Life With Him", "lessons": "Lessons 26–30", "habit": "Abide and Review"}
+        1: {"name": "Module 1: God Uses Your Story", "lessons": "Lessons 1–5", "habit": "Reflect and Grow"},
+        2: {"name": "Module 2: God Forms Your Character", "lessons": "Lessons 6–10", "habit": "Pause and Pray"},
+        3: {"name": "Module 3: God Builds Your Faithfulness", "lessons": "Lessons 11–15", "habit": "Capture and Clarify"},
+        4: {"name": "Module 4: God Develops Your Gifts", "lessons": "Lessons 16–20", "habit": "Serve to Discover"},
+        5: {"name": "Module 5: God Shapes How You Lead People", "lessons": "Lessons 21–25", "habit": "Understand before Solving"},
+        6: {"name": "Module 6: God Deepens Your Life With Him", "lessons": "Lessons 26–30", "habit": "Abide to Grow"}
     }
 
     for idx, block in enumerate(lesson_blocks, 1):
@@ -164,7 +164,7 @@ def update_growing_leaders_bsb():
         # Devotional
         dev_match = re.search(r'### 3\. ([^\n]+)\s*\n(.*?)(?=\n### 4\. Facilitator & Personal Reflection Questions)', body, re.DOTALL)
         if dev_match:
-            dev_title = dev_match.group(1).strip()
+            dev_title = re.sub(r"^Devotional Reflection:\s*", "", dev_match.group(1).strip())
             dev_body = dev_match.group(2).strip()
             dev_body = re.sub(r'\n+---\s*$', '', dev_body)
         else:
@@ -246,7 +246,7 @@ def update_growing_leaders_bsb():
         "type": "reading",
         "totalItems": len(items),
         "created": "2026-08-21",
-        "version": "1.0",
+        "version": "1.1",
         "iconUrl": "https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?auto=format&fit=crop&w=320&h=320&q=80",
         "bannerUrl": "https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?auto=format&fit=crop&w=1440&h=810&q=80",
         "items": items
@@ -312,7 +312,7 @@ def update_prayers_of_paul_bsb():
 
         dev_match = re.search(r'### 3\. ([^\n]+)\s*\n(.*?)(?=\n### 4\. Personal Prayer)', body, re.DOTALL)
         if dev_match:
-            dev_title = dev_match.group(1).strip()
+            dev_title = re.sub(r"^Devotional Reflection:\s*", "", dev_match.group(1).strip())
             dev_body = dev_match.group(2).strip()
         else:
             dev_title = "Devotional Reflection"
@@ -371,7 +371,7 @@ def update_prayers_of_paul_bsb():
         "type": "reading",
         "totalItems": len(items),
         "created": "2026-08-24",
-        "version": "1.0",
+        "version": "1.1",
         "iconUrl": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=320&h=320&q=80",
         "bannerUrl": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1440&h=810&q=80",
         "items": items
@@ -430,7 +430,7 @@ def update_leadership_lessons_bsb():
 
         dev_match = re.search(r'### 3\. ([^\n]+)\s*\n(.*?)(?=\n### 4\. Personal Prayer)', body, re.DOTALL)
         if dev_match:
-            dev_title = dev_match.group(1).strip()
+            dev_title = re.sub(r"^Devotional Reflection:\s*", "", dev_match.group(1).strip())
             dev_body = dev_match.group(2).strip()
         else:
             dev_title = "Devotional Reflection"
@@ -489,7 +489,7 @@ def update_leadership_lessons_bsb():
         "type": "reading",
         "totalItems": len(items),
         "created": "2026-08-24",
-        "version": "1.2",
+        "version": "1.3",
         "items": items
     }
 

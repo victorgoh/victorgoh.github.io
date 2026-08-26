@@ -231,7 +231,7 @@ def main():
         "type": "reading",
         "totalItems": len(items),
         "created": "2026-08-25",
-        "version": "1.0",
+        "version": "1.1",
         "iconUrl": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=320&h=320&q=80",
         "bannerUrl": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1440&h=810&q=80",
         "items": items
@@ -261,7 +261,7 @@ def main():
                 "totalItems": len(items),
                 "url": "plans/prayers-of-paul-essentials.json",
                 "creator": "Prayers of Paul",
-                "version": "1.0",
+                "version": "1.1",
                 "created": "2026-08-25",
                 "lastUpdated": "2026-08-25",
                 "tags": [

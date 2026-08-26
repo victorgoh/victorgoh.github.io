@@ -105,12 +105,12 @@ def main():
         content = f.read()
 
     module_info = {
-        1: {"name": "Module 1: God Uses Your Story", "lessons": "Lessons 1–5", "habit": "Notice and Learn"},
-        2: {"name": "Module 2: God Forms Your Character", "lessons": "Lessons 6–10", "habit": "Pause and Bring It Before God"},
-        3: {"name": "Module 3: God Builds Your Faithfulness", "lessons": "Lessons 11–15", "habit": "Record and Follow Through"},
-        4: {"name": "Module 4: God Develops Your Gifts", "lessons": "Lessons 16–20", "habit": "Serve, Notice, Ask"},
-        5: {"name": "Module 5: God Shapes How You Lead People", "lessons": "Lessons 21–25", "habit": "Listen Before Responding"},
-        6: {"name": "Module 6: God Deepens Your Life With Him", "lessons": "Lessons 26–30", "habit": "Abide and Review"}
+        1: {"name": "Module 1: God Uses Your Story", "lessons": "Lessons 1–5", "habit": "Reflect and Grow"},
+        2: {"name": "Module 2: God Forms Your Character", "lessons": "Lessons 6–10", "habit": "Pause and Pray"},
+        3: {"name": "Module 3: God Builds Your Faithfulness", "lessons": "Lessons 11–15", "habit": "Capture and Clarify"},
+        4: {"name": "Module 4: God Develops Your Gifts", "lessons": "Lessons 16–20", "habit": "Serve to Discover"},
+        5: {"name": "Module 5: God Shapes How You Lead People", "lessons": "Lessons 21–25", "habit": "Understand before Solving"},
+        6: {"name": "Module 6: God Deepens Your Life With Him", "lessons": "Lessons 26–30", "habit": "Abide to Grow"}
     }
 
     def get_module_num(lesson_num):
@@ -257,7 +257,7 @@ def main():
         "type": "reading",
         "totalItems": len(items),
         "created": "2026-08-25",
-        "version": "1.0",
+        "version": "1.1",
         "iconUrl": "https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?auto=format&fit=crop&w=320&h=320&q=80",
         "bannerUrl": "https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?auto=format&fit=crop&w=1440&h=810&q=80",
         "items": items
@@ -289,7 +289,7 @@ def main():
                 "totalItems": len(items),
                 "url": "plans/growing-leaders-essentials.json",
                 "creator": "Growing Leaders Course",
-                "version": "1.0",
+                "version": "1.1",
                 "created": "2026-08-25",
                 "lastUpdated": "2026-08-25",
                 "tags": [

@@ -72,12 +72,12 @@ def update_devotional_markdown():
 
     # Module definitions for context badges
     modules = {
-        1: ("Module 1: God Uses Your Story", "Notice and Learn", range(1, 6)),
-        2: ("Module 2: God Forms Your Character", "Pause and Bring It Before God", range(6, 11)),
-        3: ("Module 3: God Builds Your Faithfulness", "Record and Follow Through", range(11, 16)),
-        4: ("Module 4: God Develops Your Gifts", "Serve, Notice, Ask", range(16, 21)),
-        5: ("Module 5: God Shapes How You Lead People", "Listen Before Responding", range(21, 26)),
-        6: ("Module 6: God Deepens Your Life With Him", "Abide and Review", range(26, 31)),
+        1: ("Module 1: God Uses Your Story", "Reflect and Grow", range(1, 6)),
+        2: ("Module 2: God Forms Your Character", "Pause and Pray", range(6, 11)),
+        3: ("Module 3: God Builds Your Faithfulness", "Capture and Clarify", range(11, 16)),
+        4: ("Module 4: God Develops Your Gifts", "Serve to Discover", range(16, 21)),
+        5: ("Module 5: God Shapes How You Lead People", "Understand before Solving", range(21, 26)),
+        6: ("Module 6: God Deepens Your Life With Him", "Abide to Grow", range(26, 31)),
     }
 
     with open(filepath, 'w', encoding='utf-8') as f:
@@ -90,19 +90,19 @@ def generate_json_plan():
         md_text = f.read()
 
     modules_info = [
-        (1, "God Uses Your Story", "Notice and Learn", 1, 5),
-        (2, "God Forms Your Character", "Pause and Bring It Before God", 6, 10),
-        (3, "God Builds Your Faithfulness", "Record and Follow Through", 11, 15),
-        (4, "God Develops Your Gifts", "Serve, Notice, Ask", 16, 20),
-        (5, "God Shapes How You Lead People", "Listen Before Responding", 21, 25),
-        (6, "God Deepens Your Life With Him", "Abide and Review", 26, 30),
+        (1, "God Uses Your Story", "Reflect and Grow", 1, 5),
+        (2, "God Forms Your Character", "Pause and Pray", 6, 10),
+        (3, "God Builds Your Faithfulness", "Capture and Clarify", 11, 15),
+        (4, "God Develops Your Gifts", "Serve to Discover", 16, 20),
+        (5, "God Shapes How You Lead People", "Understand before Solving", 21, 25),
+        (6, "God Deepens Your Life With Him", "Abide to Grow", 26, 30),
     ]
 
     def get_module_for_lesson(lesson_num):
         for mod_num, mod_name, habit, start_l, end_l in modules_info:
             if start_l <= lesson_num <= end_l:
                 return mod_num, mod_name, habit, start_l, end_l
-        return 1, "God Uses Your Story", "Notice and Learn", 1, 5
+        return 1, "God Uses Your Story", "Reflect and Grow", 1, 5
 
     def parse_lesson_block(lesson_num, title, body):
         passages = []
@@ -200,7 +200,7 @@ def generate_json_plan():
         ],
         "devotional": {
             "author": "Growing Leaders Course",
-            "content": "### Welcome to Growing Leaders\n\nWhether you are stepping into Christian leadership for the first time, directing a ministry team, pastoring a congregation, or desiring to grow in spiritual maturity in your workplace and family, this 30-lesson leadership journey is designed to anchor your leadership in the character, wisdom, and heart of Jesus Christ.\n\n### The 4 Foundations of Holistic Leadership\n\nIn Kingdom leadership, God shapes us across four vital dimensions:\n\n1. **HEAD (Biblical Convictions & Mindset)**: Aligning our thinking with the truth of Scripture rather than secular power models.\n2. **HEART (Character & Spiritual Formation)**: Allowing the Holy Spirit to purify our motives, heal our insecurities, and cultivate Christlike fruit.\n3. **HANDS (Competence & Practical Skills)**: Developing our communication, delegation, decision-making, and relational skills.\n4. **HABITS (Sustainable Daily Rhythms)**: Embedding lifelong practices that sustain our stamina and prevent burnout.\n\n### The 6 Core Modules (5 Lessons Each)\n\n- **Module 1: God Uses Your Story (Lessons 1–5)** — *Core Habit: Notice and Learn*\n- **Module 2: God Forms Your Character (Lessons 6–10)** — *Core Habit: Pause and Bring It Before God*\n- **Module 3: God Builds Your Faithfulness (Lessons 11–15)** — *Core Habit: Record and Follow Through*\n- **Module 4: God Develops Your Gifts (Lessons 16–20)** — *Core Habit: Serve, Notice, Ask*\n- **Module 5: God Shapes How You Lead People (Lessons 21–25)** — *Core Habit: Listen Before Responding*\n- **Module 6: God Deepens Your Life With Him (Lessons 26–30)** — *Core Habit: Abide and Review*\n\nMay the Holy Spirit shape your heart over these 30 lessons to reflect the Shepherd-Leader, Jesus Christ."
+            "content": "### Welcome to Growing Leaders\n\nWhether you are stepping into Christian leadership for the first time, directing a ministry team, pastoring a congregation, or desiring to grow in spiritual maturity in your workplace and family, this 30-lesson leadership journey is designed to anchor your leadership in the character, wisdom, and heart of Jesus Christ.\n\n### The 4 Foundations of Holistic Leadership\n\nIn Kingdom leadership, God shapes us across four vital dimensions:\n\n1. **HEAD (Biblical Convictions & Mindset)**: Aligning our thinking with the truth of Scripture rather than secular power models.\n2. **HEART (Character & Spiritual Formation)**: Allowing the Holy Spirit to purify our motives, heal our insecurities, and cultivate Christlike fruit.\n3. **HANDS (Competence & Practical Skills)**: Developing our communication, delegation, decision-making, and relational skills.\n4. **HABITS (Sustainable Daily Rhythms)**: Embedding lifelong practices that sustain our stamina and prevent burnout.\n\n### The 6 Core Modules (5 Lessons Each)\n\n- **Module 1: God Uses Your Story (Lessons 1–5)** — *Core Habit: Reflect and Grow*\n- **Module 2: God Forms Your Character (Lessons 6–10)** — *Core Habit: Pause and Pray*\n- **Module 3: God Builds Your Faithfulness (Lessons 11–15)** — *Core Habit: Capture and Clarify*\n- **Module 4: God Develops Your Gifts (Lessons 16–20)** — *Core Habit: Serve to Discover*\n- **Module 5: God Shapes How You Lead People (Lessons 21–25)** — *Core Habit: Understand before Solving*\n- **Module 6: God Deepens Your Life With Him (Lessons 26–30)** — *Core Habit: Abide to Grow*\n\nMay the Holy Spirit shape your heart over these 30 lessons to reflect the Shepherd-Leader, Jesus Christ."
         },
         "prayers": [
             {
@@ -215,7 +215,7 @@ def generate_json_plan():
         ],
         "practice": [
             "Commit to setting aside unhurried time for each lesson for Scripture, reflection, and prayer.",
-            "Keep a journal ready to record the weekly habits (Notice & Learn, Pause & Bring It, Record & Follow Through, Serve-Notice-Ask, Listen Before Responding, Abide & Review)."
+            "Keep a journal ready to record the weekly habits (Notice & Learn, Pause & Bring It, Record & Follow Through, Serve-Notice-Ask, Understand before Solving, Abide & Review)."
         ]
     }
     items.append(intro_item)
@@ -250,7 +250,7 @@ def generate_json_plan():
         "type": "reading",
         "totalItems": len(items),
         "created": "2026-08-21",
-        "version": "1.0",
+        "version": "1.1",
         "iconUrl": "https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?auto=format&fit=crop&w=320&h=320&q=80",
         "bannerUrl": "https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?auto=format&fit=crop&w=1440&h=810&q=80",
         "items": items

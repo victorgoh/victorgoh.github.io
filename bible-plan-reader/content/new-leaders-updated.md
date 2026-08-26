@@ -43,7 +43,7 @@ When God calls him from the burning bush, Moses raises five separate objections.
 
 - **Key Word Study: "Here I am" (*Hineni*)** (Exodus 3:4) — In ancient Hebrew culture, *Hineni* was far more than an indication of physical location; it was the formal response of a devoted servant signaling total readiness, attentiveness, and surrender to their master. When Moses answered *"Here I am"* (*Hineni*), he surrendered his anonymity in the desert to be sent on God's mission. True leadership begins not when we feel qualified, but when we make ourselves completely available to God.
 
-### 3. Devotional Reflection: Overcoming Insecurity
+### 3. Overcoming Insecurity
 
 We are often held back by a silent fear of inadequacy—the feeling that we lack the eloquence, status, or holiness to lead. When faced with responsibility, we list our deficiencies just as Moses did.
 
@@ -80,7 +80,7 @@ Joshua’s authority was forged through four decades of humble, quiet preparatio
 
 - **Key Word Study: "Be strong and courageous" (*Chazaq* and *Amats*)** (Joshua 1:6, 7, 9) — In Hebrew, *Chazaq* means to bind firmly, grasp tightly, and remain steadfast under pressure, while *Amats* means to be stout-hearted, alert, and resilient against fear. Together, they describe a courage that is rooted in God's presence rather than human bravado. For emerging leaders, spiritual courage is the resolve to hold fast to God's instructions when circumstances feel overwhelming.
 
-### 3. Devotional Reflection: Under the Shadow of Greatness
+### 3. Under the Shadow of Greatness
 
 Before we are called to lead, we are called to serve. Joshua spent decades carrying out tasks, standing guard, and serving under Moses’ shadow. This was not wasted time; it was the crucible where his character was tested.
 
@@ -123,7 +123,7 @@ When Samuel evaluates Jesse’s sons, he is drawn to Eliab, the oldest, who stan
 
 - **Key Word Study: "Integrity of heart" (*Tom*)** (Psalm 78:72) — From the Hebrew root meaning completeness, wholeness, and blamelessness, *Tom* denotes an undivided heart that is consistent in private and public life. David learned this hidden integrity while defending his father's sheep in isolation from predators. In biblical leadership, integrity of heart (*tom*) must always precede skillful hands (*tebunah*), because what a leader does in secret forms the true foundation of their public ministry.
 
-### 3. Devotional Reflection: Shepherding in the Secret Place
+### 3. Shepherding in the Secret Place
 
 In a culture obsessed with visibility, platform, and public branding, we are continually tempted to prioritize our skills over our character. We work hard to look like leaders on the outside, neglecting the state of our hearts.
 
@@ -159,7 +159,7 @@ Paul focuses on transgenerational succession: Paul $\rightarrow$ Timothy $\right
 
 - **Key Word Study: "Entrust" (*Paratithemi*)** (2 Timothy 2:2) — In the ancient Greco-Roman world, *paratithemi* meant placing a sacred, high-value deposit (*paratheke*) into the custody of a trustworthy guardian, who was under solemn obligation to protect and return it unaltered. Paul reminds Timothy that the Gospel is not personal property to modify, but a sacred trust to guard carefully and pass down intact to reliable, qualified leaders.
 
-### 3. Devotional Reflection: Stewarding the Sacred Trust
+### 3. Stewarding the Sacred Trust
 
 No leader is permanent. The ultimate test of your leadership is not what you build, but whom you leave behind. Paul, facing execution, was not focused on his own legacy, but on ensuring that Timothy was equipped to pass the Gospel to the next generation.
 
@@ -201,7 +201,7 @@ Nehemiah faces fierce opposition from Sanballat (governor of Samaria) and Tobiah
 
 - **Key Word Study: "Posted a guard" (*Mishmar*)** (Nehemiah 4:9) — In Hebrew, *mishmar* denotes an active, watchful post stationed for protection against sudden attack. Nehemiah demonstrated that faith and practical diligence go hand in hand: earnest prayer to God (*"we prayed"*) was instantly coupled with concrete protective measures (*"posted a guard"*). Biblical leaders do not use faith as an excuse for passivity; they combine continual spiritual dependence with vigilant, practical boundaries.
 
-### 3. Devotional Reflection: Rebuilding in the Midst of Battle
+### 3. Rebuilding in the Midst of Battle
 
 The moment you begin to build something of spiritual value, you will face opposition. It may come as criticism from others, financial pressure, or internal doubt. The enemy’s goal is to make you drop your tools and walk away.
 
@@ -246,7 +246,7 @@ James and John’s request for prominence in Mark 10 reflects nationalistic expe
 
 - **Key Word Study: "Servant / Serve" (*Diakonos* and *Diakoneo*)** (Mark 10:43–45) — In the ancient Mediterranean world, *diakoneo* described the lowly, unglamorous task of waiting on tables or performing domestic service. Jesus completely redefined greatness by establishing self-giving service—rather than status, rank, or dominating authority—as the supreme mark of leadership in His Kingdom. True authority in Christ is demonstrated not by how many people serve us, but by our willingness to stoop down in love to serve others.
 
-### 3. Devotional Reflection: The Way of the Basin and Towel
+### 3. The Way of the Basin and Towel
 
 Human leadership is naturally drawn to the crown: titles, recognition, authority, and control. Even the disciples, having walked with Jesus for years, argued about who would be the greatest.
 

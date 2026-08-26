@@ -107,7 +107,7 @@ def main():
         ],
         "devotional": {
             "author": "Growing Leaders Course",
-            "content": "### Welcome to 30 Days of Growing Leaders\n\nWhether you are stepping into Christian leadership for the first time, directing a ministry team, pastoring a congregation, or desiring to grow in spiritual maturity in your workplace and family, this 30-day devotional journey is designed to anchor your leadership in the character, wisdom, and heart of Jesus Christ.\n\n### The 4 Foundations of Holistic Leadership\n\nIn Kingdom leadership, God shapes us across four vital dimensions:\n\n1. **HEAD (Biblical Convictions & Mindset)**: Aligning our thinking with the truth of Scripture rather than secular power models.\n2. **HEART (Character & Spiritual Formation)**: Allowing the Holy Spirit to purify our motives, heal our insecurities, and cultivate Christlike fruit.\n3. **HANDS (Competence & Practical Skills)**: Developing our communication, delegation, decision-making, and relational skills.\n4. **HABITS (Sustainable Daily Rhythms)**: Embedding lifelong practices that sustain our stamina and prevent burnout.\n\n### The 6 Core Sessions (5 Days Each)\n\n- **Session 1: God Uses Your Story (Days 1–5)** — *Core Habit: Notice and Learn*\n- **Session 2: God Forms Your Character (Days 6–10)** — *Core Habit: Pause and Bring It Before God*\n- **Session 3: God Builds Your Faithfulness (Days 11–15)** — *Core Habit: Record and Follow Through*\n- **Session 4: God Develops Your Gifts (Days 16–20)** — *Core Habit: Serve, Notice, Ask*\n- **Session 5: God Shapes How You Lead People (Days 21–25)** — *Core Habit: Listen Before Responding*\n- **Session 6: God Deepens Your Life With Him (Days 26–30)** — *Core Habit: Abide and Review*\n\nMay the Holy Spirit shape your heart over these 30 days to reflect the Shepherd-Leader, Jesus Christ."
+            "content": "### Welcome to 30 Days of Growing Leaders\n\nWhether you are stepping into Christian leadership for the first time, directing a ministry team, pastoring a congregation, or desiring to grow in spiritual maturity in your workplace and family, this 30-day devotional journey is designed to anchor your leadership in the character, wisdom, and heart of Jesus Christ.\n\n### The 4 Foundations of Holistic Leadership\n\nIn Kingdom leadership, God shapes us across four vital dimensions:\n\n1. **HEAD (Biblical Convictions & Mindset)**: Aligning our thinking with the truth of Scripture rather than secular power models.\n2. **HEART (Character & Spiritual Formation)**: Allowing the Holy Spirit to purify our motives, heal our insecurities, and cultivate Christlike fruit.\n3. **HANDS (Competence & Practical Skills)**: Developing our communication, delegation, decision-making, and relational skills.\n4. **HABITS (Sustainable Daily Rhythms)**: Embedding lifelong practices that sustain our stamina and prevent burnout.\n\n### The 6 Core Sessions (5 Days Each)\n\n- **Session 1: God Uses Your Story (Days 1–5)** — *Core Habit: Reflect and Grow*\n- **Session 2: God Forms Your Character (Days 6–10)** — *Core Habit: Pause and Pray*\n- **Session 3: God Builds Your Faithfulness (Days 11–15)** — *Core Habit: Capture and Clarify*\n- **Session 4: God Develops Your Gifts (Days 16–20)** — *Core Habit: Serve to Discover*\n- **Session 5: God Shapes How You Lead People (Days 21–25)** — *Core Habit: Understand before Solving*\n- **Session 6: God Deepens Your Life With Him (Days 26–30)** — *Core Habit: Abide to Grow*\n\nMay the Holy Spirit shape your heart over these 30 days to reflect the Shepherd-Leader, Jesus Christ."
         },
         "prayers": [
             {
@@ -122,7 +122,7 @@ def main():
         ],
         "practice": [
             "Commit to setting aside 15 minutes of unhurried time each day for Scripture, reflection, and prayer.",
-            "Keep a journal ready to record the weekly habits (Notice & Learn, Pause & Bring It, Record & Follow Through, Serve-Notice-Ask, Listen Before Responding, Abide & Review)."
+            "Keep a journal ready to record the weekly habits (Notice & Learn, Pause & Bring It, Record & Follow Through, Serve-Notice-Ask, Understand before Solving, Abide & Review)."
         ]
     }
     items.append(intro_item)
@@ -157,7 +157,7 @@ def main():
         "type": "reading",
         "totalItems": len(items),
         "created": "2026-08-21",
-        "version": "1.0",
+        "version": "1.1",
         "iconUrl": "https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?auto=format&fit=crop&w=320&h=320&q=80",
         "bannerUrl": "https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?auto=format&fit=crop&w=1440&h=810&q=80",
         "items": items

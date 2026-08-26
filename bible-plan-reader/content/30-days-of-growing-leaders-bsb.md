@@ -9,42 +9,42 @@
 ## 📖 Table of Contents
 
 - [Introduction & How to Use This Guide](#introduction--how-to-use-this-guide)
-- [Module 1: God Uses Your Story (Lessons 1–5)](#module-1-god-uses-your-story-lessons-15) — *Core Habit: Notice and Learn*
+- [Module 1: God Uses Your Story (Lessons 1–5)](#module-1-god-uses-your-story-lessons-15) — *Core Habit: Reflect and Grow*
   - [Lesson 1: You Don't Start With a Blank Slate](#lesson-1-you-dont-start-with-a-blank-slate)
   - [Lesson 2: Naming the Good, the Hard, and the Broken](#lesson-2-naming-the-good-the-hard-and-the-broken)
   - [Lesson 3: Breaking Unconscious Cycles of Fear](#lesson-3-breaking-unconscious-cycles-of-fear)
   - [Lesson 4: Choosing Redemption Over Revenge](#lesson-4-choosing-redemption-over-revenge)
-  - [Lesson 5: Habit: Notice and Learn](#lesson-5-habit-notice-and-learn) & *Module 1 Review Checkpoint*
-- [Module 2: God Forms Your Character (Lessons 6–10)](#module-2-god-forms-your-character-lessons-610) — *Core Habit: Pause and Bring It Before God*
+  - [Lesson 5: Habit: Reflect and Grow](#lesson-5-habit-reflect-and-grow) & *Module 1 Review Checkpoint*
+- [Module 2: God Forms Your Character (Lessons 6–10)](#module-2-god-forms-your-character-lessons-610) — *Core Habit: Pause and Pray*
   - [Lesson 6: The Cave of Testing](#lesson-6-the-cave-of-testing)
   - [Lesson 7: The Guarded Conscience](#lesson-7-the-guarded-conscience)
   - [Lesson 8: Integrity in the Secret Place](#lesson-8-integrity-in-the-secret-place)
   - [Lesson 9: Discerning Godly Wisdom vs. Peer Pressure](#lesson-9-discerning-godly-wisdom-vs-peer-pressure)
-  - [Lesson 10: Habit: Pause and Bring It Before God](#lesson-10-habit-pause-and-bring-it-before-god) & *Module 2 Review Checkpoint*
-- [Module 3: God Builds Your Faithfulness (Lessons 11–15)](#module-3-god-builds-your-faithfulness-lessons-1115) — *Core Habit: Record and Follow Through*
+  - [Lesson 10: Habit: Pause and Pray](#lesson-10-habit-pause-and-pray) & *Module 2 Review Checkpoint*
+- [Module 3: God Builds Your Faithfulness (Lessons 11–15)](#module-3-god-builds-your-faithfulness-lessons-1115) — *Core Habit: Capture and Clarify*
   - [Lesson 11: Faithfulness in the Small Things](#lesson-11-faithfulness-in-the-small-things)
   - [Lesson 12: The Currency of Trust: Keeping Your Word](#lesson-12-the-currency-of-trust-keeping-your-word)
   - [Lesson 13: Stewardship and Honest Communication](#lesson-13-stewardship-and-honest-communication)
   - [Lesson 14: Leading Within God-Given Limits](#lesson-14-leading-within-god-given-limits)
-  - [Lesson 15: Habit: Record and Follow Through](#lesson-15-habit-record-and-follow-through) & *Module 3 Review Checkpoint*
-- [Module 4: God Develops Your Gifts (Lessons 16–20)](#module-4-god-develops-your-gifts-lessons-1620) — *Core Habit: Serve, Notice, Ask*
+  - [Lesson 15: Habit: Capture and Clarify](#lesson-15-habit-capture-and-clarify) & *Module 3 Review Checkpoint*
+- [Module 4: God Develops Your Gifts (Lessons 16–20)](#module-4-god-develops-your-gifts-lessons-1620) — *Core Habit: Serve to Discover*
   - [Lesson 16: Stewards of Varied Grace](#lesson-16-stewards-of-varied-grace)
   - [Lesson 17: Fanning the Flame Through Practice](#lesson-17-fanning-the-flame-through-practice)
   - [Lesson 18: Gifts vs. Fruit: The Character Container](#lesson-18-gifts-vs-fruit-the-character-container)
   - [Lesson 19: Welcoming Constructive Feedback](#lesson-19-welcoming-constructive-feedback)
-  - [Lesson 20: Habit: Serve, Notice, Ask](#lesson-20-habit-serve-notice-ask) & *Module 4 Review Checkpoint*
-- [Module 5: God Shapes How You Lead People (Lessons 21–25)](#module-5-god-shapes-how-you-lead-people-days-2125) — *Core Habit: Listen Before Responding*
+  - [Lesson 20: Habit: Serve to Discover](#lesson-20-habit-serve-to-discover) & *Module 4 Review Checkpoint*
+- [Module 5: God Shapes How You Lead People (Lessons 21–25)](#module-5-god-shapes-how-you-lead-people-days-2125) — *Core Habit: Understand before Solving*
   - [Lesson 21: The Upside-Down Leader](#lesson-21-the-upside-down-leader)
   - [Lesson 22: The Way of the Basin and Towel](#lesson-22-the-way-of-the-basin-and-towel)
-  - [Lesson 23: Habit: Listen Before Responding](#lesson-23-habit-listen-before-responding)
+  - [Lesson 23: Habit: Understand before Solving](#lesson-23-habit-understand-before-solving)
   - [Lesson 24: Peacemaking and Navigating Disagreement](#lesson-24-peacemaking-and-navigating-disagreement)
   - [Lesson 25: Stewarding Influence and Empowering Others](#lesson-25-stewarding-influence-and-empowering-others) & *Module 5 Review Checkpoint*
-- [Module 6: God Deepens Your Life With Him (Lessons 26–30)](#module-6-god-deepens-your-life-with-him-lessons-2630) — *Core Habit: Abide and Review*
+- [Module 6: God Deepens Your Life With Him (Lessons 26–30)](#module-6-god-deepens-your-life-with-him-lessons-2630) — *Core Habit: Abide to Grow*
   - [Lesson 26: The Vine and the Branches](#lesson-26-the-vine-and-the-branches)
   - [Lesson 27: Mary, Martha, and the One Necessary Thing](#lesson-27-mary-martha-and-the-one-necessary-thing)
   - [Lesson 28: Running the Long Race](#lesson-28-running-the-long-race)
   - [Lesson 29: Finishing Well: Guarding the Deposit](#lesson-29-finishing-well-guarding-the-deposit)
-  - [Lesson 30: Habit: Abide and Review](#lesson-30-habit-abide-and-review) & *Master 30-Day Course Review Checkpoint*
+  - [Lesson 30: Habit: Abide to Grow](#lesson-30-habit-abide-to-grow) & *Master 30-Day Course Review Checkpoint*
 
 ---
 
@@ -78,7 +78,7 @@ May the Lord richly bless, strengthen, and deepen you as you embark on this tran
 # Module 1: God Uses Your Story (Lessons 1–5)
 
 > **Theme**: *Noticing how your background, experiences, and history have shaped your leadership.*  
-> **Course Core Habit**: *Notice and Learn*  
+> **Course Core Habit**: *Reflect and Grow*  
 > **Scripture Translation**: *Berean Standard Bible (BSB)*  
 
 ---
@@ -244,7 +244,7 @@ As a Christian leader, your authority is never given to you to settle old scores
 
 ---
 
-## Lesson 5: Habit: Notice and Learn
+## Lesson 5: Habit: Reflect and Grow
 
 ### 1. Scripture Text
 **Romans 8:28–39 (BSB)**
@@ -260,7 +260,7 @@ A common myth is that leadership wisdom automatically comes with age or years of
 
 Without intentional reflection, a leader can repeat the exact same one-year mistake thirty times over a thirty-year career. They react to pressure the same way, avoid difficult conversations the same way, and burnout the same way.
 
-A growing leader cultivates the habit of **Notice and Learn**:
+A growing leader cultivates the habit of **Reflect and Grow**:
 1. **Notice**: They pay attention to what is happening within them during daily leadership moments. They notice when their pulse quickens with anxiety, when irritation flares during a meeting, when a compliment strokes their pride, or when a task brings profound joy.
 2. **Learn**: Instead of ignoring these reactions, they bring them before God and ask: *"What is this revealing about my heart? What is God forming in me through this circumstance?"*
 
@@ -270,7 +270,7 @@ When you know that neither hardship, opposition, nor any power in creation can s
 
 ---
 
-### 🔍 Module 1 Review Checkpoint: The "Notice and Learn" Habit
+### 🔍 Module 1 Review Checkpoint: The "Reflect and Grow" Habit
 
 Take 5 minutes today to complete this simple weekly review of your story and daily responses:
 
@@ -283,7 +283,7 @@ Take 5 minutes today to complete this simple weekly review of your story and dai
 
 ### 4. Facilitator & Personal Reflection Questions
 1. How does knowing that God's ultimate goal is to shape you into the character of Christ change the way you view leadership setbacks, pressures, or delays?
-2. Why is daily reflection (*Notice and Learn*) essential for breaking out of automatic, fear-driven leadership habits?
+2. Why is daily reflection (*Reflect and Grow*) essential for breaking out of automatic, fear-driven leadership habits?
 3. Looking back over Lessons 1 to 5, what is the single most important truth God has highlighted about your story and leadership?
 
 ### 5. Key Practice
@@ -299,7 +299,7 @@ Take 5 minutes today to complete this simple weekly review of your story and dai
 # Module 2: God Forms Your Character (Lessons 6–10)
 
 > **Theme**: *Learning what pressure and testing reveal and develop within you.*  
-> **Course Core Habit**: *Pause and Bring It Before God*  
+> **Course Core Habit**: *Pause and Pray*  
 > **Scripture Translation**: *Berean Standard Bible (BSB)*  
 
 ---
@@ -477,7 +477,7 @@ A godly leader must develop the backbone to stand alone in the counsel of God. Y
 
 ---
 
-## Lesson 10: Habit: Pause and Bring It Before God
+## Lesson 10: Habit: Pause and Pray
 
 ### 1. Scripture Text
 **Hebrews 4:14–16 (BSB)**
@@ -495,7 +495,7 @@ When high-stakes leadership pressure strikes—a crisis erupts, an unfair accusa
 - We lash out at team members or withdraw in passive frustration.
 
 Spiritual leaders do not live by reaction; they live by **intentional spiritual response**. And the bridge between reaction and response is the core habit of:  
-**Pause and Bring It Before God**.
+**Pause and Pray**.
 
 The author of Hebrews reminds us that we have an empathetic High Priest who walked through intense leadership pressure, betrayal, fatigue, and temptation. Jesus knows what it feels like to have His motives questioned, His closest friends fall asleep in His hour of agony, and an entire crowd turn against Him.
 
@@ -506,11 +506,11 @@ Because Jesus sympathizes with us, we can stop the frantic momentum of pressure 
 3. **RECEIVE**: Open your hands and receive what God offers: His mercy for your failures, His peace for your anxiety, and His wisdom for your decision.
 4. **RESPOND**: Choose a concrete, Spirit-led next step of obedience, forgiveness, or calm action.
 
-When a leader learns to *Pause and Bring It Before God*, they stop pouring their anxiety onto their team. They decompress in the presence of God, so they can walk back into the room clothed in the peace, patience, and authority of Christ.
+When a leader learns to *Pause and Pray*, they stop pouring their anxiety onto their team. They decompress in the presence of God, so they can walk back into the room clothed in the peace, patience, and authority of Christ.
 
 ---
 
-### 🔍 Module 2 Review Checkpoint: The "Pause and Bring It" Rhythm
+### 🔍 Module 2 Review Checkpoint: The "Pause and Pray" Rhythm
 
 Take 5 minutes today to test the 4-step decompression rhythm on a recent pressure point:
 
@@ -522,7 +522,7 @@ Take 5 minutes today to test the 4-step decompression rhythm on a recent pressur
 ---
 
 ### 4. Facilitator & Personal Reflection Questions
-1. When stress hits its peak, what is your most common physical or emotional reaction? How can the habit of *Pause and Bring It Before God* break that cycle?
+1. When stress hits its peak, what is your most common physical or emotional reaction? How can the habit of *Pause and Pray* break that cycle?
 2. In ancient times, approaching the throne of a monarch or the Holy of Holies was terrifying. How does knowing that Jesus sits on a "throne of grace" and deeply sympathizes with your fatigue encourage you to pray with honesty?
 3. Looking back over Lessons 6 to 10 (David in the cave, the guarded conscience, the secret place, resisting peer pressure, pausing before God), which truth has spoken most directly to your character?
 
@@ -537,7 +537,7 @@ Take 5 minutes today to test the 4-step decompression rhythm on a recent pressur
 # Module 3: God Builds Your Faithfulness (Lessons 11–15)
 
 > **Theme**: *Growing through ordinary responsibilities, reliable stewardship, honest communication, and healthy limits.*  
-> **Course Core Habit**: *Record and Follow Through*  
+> **Course Core Habit**: *Capture and Clarify*  
 > **Scripture Translation**: *Berean Standard Bible (BSB)*  
 
 ---
@@ -714,7 +714,7 @@ When you set healthy boundaries, delegate authority, and honor Sabbath rhythms, 
 
 ---
 
-## Lesson 15: Habit: Record and Follow Through
+## Lesson 15: Habit: Capture and Clarify
 
 ### 1. Scripture Text
 **Colossians 3:23–24 (BSB)**
@@ -733,7 +733,7 @@ Paul destroys this false dichotomy. When you work from the heart, the most munda
 - Following through on an assigned task honors the Lord Christ whom you serve.
 - Maintaining an orderly schedule creates margin for the Holy Spirit to interrupt your day with divine appointments.
 
-Without intentional habits, good intentions evaporate under the onslaught of daily distraction. The core habit of **Record and Follow Through** is the engine of sustainable faithfulness:
+Without intentional habits, good intentions evaporate under the onslaught of daily distraction. The core habit of **Capture and Clarify** is the engine of sustainable faithfulness:
 
 - **1. RECORD IMMEDIATELY**: Never rely on your memory. The moment a commitment is made, write it down in one trusted place.
 - **2. CLARIFY NEXT ACTION**: Define the exact next physical step required (e.g., *"Draft 3-point agenda for Tuesday's team sync"*).
@@ -744,7 +744,7 @@ When you master this habit, your mental anxiety decreases dramatically. You no l
 
 ---
 
-### 🔍 Module 3 Review Checkpoint: The "Record and Follow Through" Audit
+### 🔍 Module 3 Review Checkpoint: The "Capture and Clarify" Audit
 
 Take 5 minutes today to evaluate your personal reliability and administrative rhythms:
 
@@ -771,7 +771,7 @@ Take 5 minutes today to evaluate your personal reliability and administrative rh
 # Module 4: God Develops Your Gifts (Lessons 16–20)
 
 > **Theme**: *Recognizing strengths, spiritual gifts, character fruit, and receiving feedback.*  
-> **Course Core Habit**: *Serve, Notice, Ask*  
+> **Course Core Habit**: *Serve to Discover*  
 > **Scripture Translation**: *Berean Standard Bible (BSB)*  
 
 ---
@@ -953,7 +953,7 @@ When a leader welcomes feedback with grace, they create a healthy, flourishing t
 
 ---
 
-## Lesson 20: Habit: Serve, Notice, Ask
+## Lesson 20: Habit: Serve to Discover
 
 ### 1. Scripture Text
 **Romans 12:3–8 (BSB)**
@@ -976,7 +976,7 @@ Paul outlines the rhythm of gift discovery in Romans 12:3–8:
 - **2. ACTIVE ENGAGEMENT**: Jump in and serve wherever there is a need: teaching, serving, encouraging, giving, leading, or showing mercy (*Romans 12:6–8*).
 - **3. COMMUNITY CONFIRMATION**: Your spiritual gifts will always be confirmed by the fruit they produce in the lives of other believers.
 
-The core habit of **Serve, Notice, Ask** provides a simple, practical framework for lifelong growth:
+The core habit of **Serve to Discover** provides a simple, practical framework for lifelong growth:
 
 1. **SERVE BROADLY**: Don’t wait for the "perfect" role. Volunteer to clean, pray, greet, teach a children's class, or organize logistics. Action brings clarity.
 2. **NOTICE THE FRUIT & ENERGY**: Pay attention to what happens when you serve:
@@ -985,11 +985,11 @@ The core habit of **Serve, Notice, Ask** provides a simple, practical framework 
    - *Where do other people experience genuine spiritual blessing through your efforts?*
 3. **ASK TRUSTED LEADERS**: Approach mature mentors and ask: *"What strengths and spiritual gifts do you see operating in my life? Where do you think I can make the greatest Kingdom contribution?"*
 
-When you practice *Serve, Notice, Ask*, you eliminate the guesswork from your calling. You grow in sober judgment, finding the sweet spot where your God-given grace brings maximum blessing to the body of Christ.
+When you practice *Serve to Discover*, you eliminate the guesswork from your calling. You grow in sober judgment, finding the sweet spot where your God-given grace brings maximum blessing to the body of Christ.
 
 ---
 
-### 🔍 Module 4 Review Checkpoint: The "Serve, Notice, Ask" Map
+### 🔍 Module 4 Review Checkpoint: The "Serve to Discover" Map
 
 Take 5 minutes today to map your recent service and community feedback:
 
@@ -1016,7 +1016,7 @@ Take 5 minutes today to map your recent service and community feedback:
 # Module 5: God Shapes How You Lead People (Lessons 21–25)
 
 > **Theme**: *Building healthy relationships, handling conflict, and exercising servant influence.*  
-> **Course Core Habit**: *Listen Before Responding*  
+> **Course Core Habit**: *Understand before Solving*  
 > **Scripture Translation**: *Berean Standard Bible (BSB)*  
 
 ---
@@ -1103,7 +1103,7 @@ When you know that your identity is secure in Christ, you no longer use leadersh
 
 ---
 
-## Lesson 23: Habit: Listen Before Responding
+## Lesson 23: Habit: Understand before Solving
 
 ### 1. Scripture Text
 **James 1:19–20 (BSB)**
@@ -1137,7 +1137,7 @@ Attentive listening is a profound expression of Christian love. When a leader tr
 - **It uncovers root causes**: The surface problem someone mentions is rarely the real issue. Patient listening unearths the underlying fears, hurt, or structural bottlenecks.
 - **It defuses anger**: People rarely escalate conflict when they feel genuinely understood.
 
-The core habit of **Listen Before Responding** requires conscious discipline:
+The core habit of **Understand before Solving** requires conscious discipline:
 1. **Silence the Inner Rebuttal**: Stop preparing what you are going to say next while the other person is talking.
 2. **Ask Clarifying Questions**: Say, *"Help me understand more about that... What was that experience like for you?"*
 3. **Reflect Back Before Deciding**: Before offering advice, summarize: *"What I hear you saying is... Did I capture that accurately?"*
@@ -1236,12 +1236,12 @@ When you mentor a younger leader, share your platform, give feedback, and releas
 
 ---
 
-### 🔍 Module 5 Review Checkpoint: The Relational Leadership Audit
+### 🔍 Module 5 Review Checkpoint: The "Understand before Solving" Audit
 
 Take 5 minutes today to evaluate how you relate to, listen to, and empower people:
 
 - **1. SERVANTHOOD**: Where am I currently tempted to "lord over" others rather than washing feet in humble love?
-- **2. LISTENING HABIT**: Did I practice "Listen Before Responding" this week? Where did I rush to give quick answers?
+- **2. LISTENING HABIT**: Did I practice "Understand before Solving" this week? Where did I rush to give quick answers?
 - **3. PEACEMAKING**: Is there any gossip, triangulation, or unspoken resentment I need to clear up through private reconciliation?
 - **4. EMPOWERING SUCCESSORS**: Who is one specific person I am intentionally investing in, mentoring, or delegating to?
 
@@ -1263,7 +1263,7 @@ Take 5 minutes today to evaluate how you relate to, listen to, and empower peopl
 # Module 6: God Deepens Your Life With Him (Lessons 26–30)
 
 > **Theme**: *Spiritual disciplines, abiding in Christ, finishing well, and maintaining intimacy with God.*  
-> **Course Core Habit**: *Abide and Review*  
+> **Course Core Habit**: *Abide to Grow*  
 > **Scripture Translation**: *Berean Standard Bible (BSB)*  
 
 ---
@@ -1445,7 +1445,7 @@ When you live your life as a drink offering poured out for Christ, you reach the
 
 ---
 
-## Lesson 30: Habit: Abide and Review
+## Lesson 30: Habit: Abide to Grow
 
 ### 1. Scripture Text
 **John 15:9–17 (BSB)**
@@ -1464,29 +1464,29 @@ Congratulations on completing the **Growing Leaders: 30-Lesson Leadership Journe
 
 Over these 30 lessons, you have explored the foundational pillars of Kingdom leadership:
 1. **Module 1**: *God Uses Your Story* (Cultivating Self-Awareness) $
-ightarrow$ **Notice & Learn**
+ightarrow$ **Reflect and Grow**
 2. **Module 2**: *God Forms Your Character* (Integrity Under Testing) $
 ightarrow$ **Pause & Bring It Before God**
 3. **Module 3**: *God Builds Your Faithfulness* (Reliable Stewardship) $
-ightarrow$ **Record & Follow Through**
+ightarrow$ **Capture and Clarify**
 4. **Module 4**: *God Develops Your Gifts* (Stewardship & Humility) $
-ightarrow$ **Serve, Notice, Ask**
+ightarrow$ **Serve to Discover**
 5. **Module 5**: *God Shapes How You Lead People* (Servanthood & Succession) $
-ightarrow$ **Listen Before Responding**
+ightarrow$ **Understand before Solving**
 6. **Module 6**: *God Deepens Your Life With Him* (Spiritual Endurance) $
-ightarrow$ **Abide & Review**
+ightarrow$ **Abide to Grow**
 
 As you conclude this devotional series, remember: **Leadership in the Kingdom of God is not about arriving at a destination of perfection; it is about establishing lifelong rhythms of grace.**
 
-The master habit that anchors all other habits is **Abide and Review**:
+The master habit that anchors all other habits is **Abide to Grow**:
 
 - **1. DAILY ABIDING**: Sit at Jesus' feet daily in Scripture and prayer, drawing life from the True Vine (*John 15:5*).
 - **2. WEEKLY REVIEW**: Take 20 minutes every week to review your 5 Core Habits:
   - Did I *Notice & Learn* from my reactions?
   - Did I *Pause & Bring* pressures before God?
-  - Did I *Record & Follow Through* on my commitments?
-  - Did I *Serve, Notice, Ask* to develop gifts?
-  - Did I *Listen Before Responding* in conversations?
+  - Did I *Capture and Clarify* my commitments and follow through?
+  - Did I *Serve to Discover* and sharpen gifts?
+  - Did I *Understand before Solving* in conversations?
 - **3. MONTHLY CELEBRATION**: Give thanks for areas of visible progress and surrender areas of failure to God's mercy.
 - **4. LIFELONG MULTIPLICATION**: Pour what you have learned into the next generation of emerging leaders (*2 Timothy 2:2*).
 
@@ -1509,7 +1509,7 @@ Take 15 minutes today to complete this master review of your leadership journey:
 
 ### 4. Facilitator & Personal Reflection Questions
 1. Looking across all 30 lessons, what is the single most transformative truth the Holy Spirit has spoken into your heart?
-2. Which of the 6 Core Habits (*Notice & Learn, Pause & Bring It, Record & Follow Through, Serve-Notice-Ask, Listen Before Responding, Abide & Review*) has become your strongest anchor, and which needs the most cultivation?
+2. Which of the 6 Core Habits (*Reflect and Grow, Pause and Pray, Capture and Clarify, Serve to Discover, Understand before Solving, Abide to Grow*) has become your strongest anchor, and which needs the most cultivation?
 3. Who is one person you can invite to go through this 30-lesson journey with you as a mentor or study partner?
 
 ### 5. Key Practice

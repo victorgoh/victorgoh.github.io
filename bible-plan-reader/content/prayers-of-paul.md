@@ -40,7 +40,7 @@ When facing cultural hostility or political tensions, the natural human reaction
 
 - **Key Word Study: "Intercessions" (*Enteuxis*)** (1 Timothy 2:1) — In the ancient world, *enteuxis* was a formal petition presented directly to a king on behalf of someone who could not speak for themselves. Through Jesus Christ, every believer has direct royal access to God's presence. Intercession means stepping into God's throne room to advocate for our neighbors, leaders, coworkers, and even difficult people, asking for God’s mercy and blessing on their lives.
 
-### 3. Devotional Reflection: Widening the Circle of Grace
+### 3. Widening the Circle of Grace
 
 Prayer is the ultimate cure for self-centeredness. When our prayer lives shrink, they quickly become limited to our own comfort, personal needs, and closest friends. But God’s heart reaches out to everyone in our daily lives.
 
@@ -88,7 +88,7 @@ Paul decisively counters this spiritual elitism by declaring the open, universal
 
 - **Key Word Study: "Knowledge of the Truth" (*Epignosis*)** (1 Timothy 2:4) — Unlike general knowledge (*gnosis*), *epignosis* means a full, personal, and life-changing understanding of the truth. God does not just want people to know *about* Him intellectually; He wants them to experience a deep, personal relationship with Jesus Christ that transforms their lives from the inside out.
 
-### 3. Devotional Reflection: In Step with the Heart of the Savior
+### 3. In Step with the Heart of the Savior
 
 God’s desire for the people around us goes far deeper than simply improving their day-to-day circumstances. His deepest desire is their salvation—that they would discover the truth and find eternal life in Christ.
 
@@ -132,7 +132,7 @@ Instead of complaining about his imprisonment, Paul was captivated by what God w
 
 - **Key Word Study: "Remembering" (*Mneia*)** (Ephesians 1:16) — In biblical language, *mneia* is not just a passing thought; it means an intentional, affectionate mention of someone before God in prayer. When Paul says he remembers the believers, he is deliberately holding them before God with deep gratitude (*eucharisteo*), celebrating the good work God is doing in them.
 
-### 3. Devotional Reflection: The Discipline of Grateful Remembrance
+### 3. The Discipline of Grateful Remembrance
 
 Before Paul asks God to give the Ephesians greater wisdom or power, he starts by celebrating what God has already begun in them. He focuses on two clear signs of spiritual life: **faith in Christ** and **love for all believers**.
 
@@ -176,7 +176,7 @@ Paul prays for a *"spirit of wisdom and revelation."* He is addressing believers
 
 - **Key Word Study: "Revelation" (*Apokalupsis*)** (Ephesians 1:17) — *Apokalupsis* literally means to pull back a curtain or uncover something previously hidden from sight. Paul is asking God to pull back the veil over our spiritual eyes so that we can clearly see the beauty, goodness, and majesty of God's true character.
 
-### 3. Devotional Reflection: Moving Beyond Information to Intimacy
+### 3. Moving Beyond Information to Intimacy
 
 It is possible to know a great deal *about* the Bible without truly knowing God intimately. We can memorize verses, attend services, and explain doctrines, yet feel spiritually distant.
 
@@ -220,7 +220,7 @@ Paul prays for the *"eyes of your heart"* to be illuminated. Living in a dominan
 
 - **Key Word Study: "Enlightened" (*Photizo*)** (Ephesians 1:18) — *Photizo* means to shed light upon, illuminate, or flood with light. Just as physical eyes are useless in a pitch-black room until the light switch is turned on, our spiritual perception requires the Holy Spirit to flood our hearts with light so we can see spiritual reality clearly.
 
-### 3. Devotional Reflection: Seeing Beyond the Visible
+### 3. Seeing Beyond the Visible
 
 Spiritual sight changes the way we live. When our vision is limited to what we can see physically, we easily become anxious about the future, discouraged by current problems, and intimidated by worldly pressures.
 
@@ -267,7 +267,7 @@ Paul asks that believers be strengthened with power (*dunamis*) in the *"inner b
 
 - **Key Word Study: "Dwell" (*Katoikeo*)** (Ephesians 3:17) — In Greek, *katoikeo* means to settle down permanently and make oneself completely at home, contrasting with *paroikeo* (which means to visit temporarily like a stranger in a hotel). Paul is praying that Christ would not be an occasional weekend guest in our lives, but would make our hearts His permanent home and sovereign dwelling place.
 
-### 3. Devotional Reflection: The Source of Inner Resilience
+### 3. The Source of Inner Resilience
 
 Burnout and emotional exhaustion rarely come from outward work alone; they happen when our inner life becomes depleted. When we try to meet life’s heavy demands in our own energy, our reserves quickly dry up.
 
@@ -311,7 +311,7 @@ Paul shows them that the only secure soil and foundation in the universe is the 
 
 - **Key Word Study: "Comprehend" (*Katalambano*)** (Ephesians 3:18) — *Katalambano* means to seize, lay hold of, or grasp tightly and make something one's own. Paul is praying that we wouldn't just understand Christ's love theoretically, but would firmly lay hold of its four dimensions in our daily experience: its width (reaching all people), length (stretching into eternity), depth (reaching the lowest sinner), and height (lifting us to heaven).
 
-### 3. Devotional Reflection: The Love That Never Runs Dry
+### 3. The Love That Never Runs Dry
 
 Much of our anxiety, insecurity, and need for approval comes from feeling unloved or fearing that love is conditional. When we base our security on our performance, achievements, or others' opinions, our foundation constantly shakes.
 
@@ -358,7 +358,7 @@ Paul writes this while in prison chains, yet his vision of God is vast and unbou
 
 - **Key Word Study: "Infinitely More" (*Huperekperissou*)** (Ephesians 3:20) — This is one of Paul's famous compound superlatives (*hyper-ek-perissou*), combining *hyper* (over, beyond) and *perissos* (superabundant). It means far beyond all measure, overwhelmingly exceeding the highest expectations. Paul uses this compound word to show that God does not just barely meet our requests; He superabundantly exceeds our wildest prayers and deepest dreams.
 
-### 3. Devotional Reflection: Expanding the Horizons of Faith
+### 3. Expanding the Horizons of Faith
 
 We often limit God by the size of our own past experiences, resources, or imagination. We pray timid, cautious prayers because we subconsciously assume God can only work within human boundaries.
 
@@ -402,7 +402,7 @@ Paul strongly refutes this error by pointing out that in Christ, believers alrea
 
 - **Key Word Study: "Worthy" (*Axios*)** (Colossians 1:10) — *Axios* was originally used of balancing a pair of scales: putting an item on one side that matches the weight on the other. Walking "worthy of the Lord" does not mean earning salvation; it means letting our daily conduct, words, and choices weigh in balanced alignment with the glorious Gospel we have received.
 
-### 3. Devotional Reflection: Living a Life of Lasting Impact
+### 3. Living a Life of Lasting Impact
 
 Knowing God’s will is never just about acquiring information; it is about transformation. Biblical wisdom always leads to practical obedience in our daily walk (*axios*).
 
@@ -450,7 +450,7 @@ Writing from prison, Paul expresses radiant joy (*chara*) for their partnership 
 
 - **Key Word Study: "Will Continue to Perfect / Finish" (*Epiteleo*)** (Philippians 1:6) — *Epiteleo* is a compound word formed from *epi* (intensive) and *teleo* (to finish or bring to the goal). It means to bring something fully to its intended completion without abandoning it along the way. God never leaves His construction projects half-finished.
 
-### 3. Devotional Reflection: Unshakable Confidence in God's Faithfulness
+### 3. Unshakable Confidence in God's Faithfulness
 
 Spiritual growth is a lifelong journey. There are seasons when our progress feels slow, when old weaknesses flare up, or when circumstances seem discouraging. We may be tempted to doubt whether we—or those we love—will ever make it through.
 
@@ -494,7 +494,7 @@ Paul prays that their love will not be blind or naive, but will be guided by spi
 
 - **Key Word Study: "Profound Insight / Discernment" (*Aisthesis*)** (Philippians 1:9) — *Aisthesis* refers to moral and spiritual perception—the refined capacity to test, evaluate, and distinguish between what is merely good and what is truly *best* (*ta diapheronta*). Wise love is discerning love that knows how to act for another person's true spiritual good.
 
-### 3. Devotional Reflection: The Balance of Love and Discernment
+### 3. The Balance of Love and Discernment
 
 Love without discernment can easily become permissive or easily manipulated; discernment without love quickly becomes harsh and critical. God’s design is for love and wisdom to grow together.
 
@@ -547,7 +547,7 @@ In Philemon, Paul writes a deeply personal appeal to a wealthy homeowner in Colo
 
 - **Key Word Study: "Refreshed" (*Anapauo*)** (Philemon 1:7) — *Anapauo* means to give rest, relieve from toil, refresh, and revitalize. In military contexts, it was used of an army taking rest after battle to recover their strength. Philemon was a leader whose love gave weary believers a spiritual breathing space where they felt revitalized and restored.
 
-### 3. Devotional Reflection: A Life That Glorifies Christ and Refreshes Others
+### 3. A Life That Glorifies Christ and Refreshes Others
 
 The ultimate purpose of prayer and spiritual growth is not for our own glory, but for the glory of Jesus Christ (*"that the name of our Lord Jesus will be glorified in you"*). 
 

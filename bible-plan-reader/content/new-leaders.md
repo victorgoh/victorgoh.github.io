@@ -43,7 +43,7 @@ When God calls him, Moses objects five times. His primary questions—_"Who am I
 
 - **Key Word Study**: **הִנֵּנִי (_Hineni_)** (Exodus 3:4) translates to "Here I am." In the ancient Near East, this was the formal response of a servant indicating absolute availability and submission to their master. It marks the moment Moses relinquishes his anonymity to be sent on mission.
 
-### 3. Devotional Reflection: Overcoming Insecurity
+### 3. Overcoming Insecurity
 
 We are often held back by a silent fear of inadequacy—the feeling that we lack the eloquence, status, or holiness to lead. When faced with responsibility, we list our deficiencies just as Moses did.
 
@@ -80,7 +80,7 @@ Joshua’s authority is established on his history of submission. For forty year
 
 - **Key Word Study**: **אָמַץ (_Amats_)** and **חָזַק (_Chazaq_)** (Joshua 1:6, 7, 9) describe a deep internal resolve. _Chazaq_ refers to binding fast, becoming firm and steady, while _amats_ means to be alert, stout, and resilient. Joshua’s strength is to be structurally steady and spiritually alert.
 
-### 3. Devotional Reflection: Under the Shadow of Greatness
+### 3. Under the Shadow of Greatness
 
 Before we are called to lead, we are called to serve. Joshua spent decades carrying out tasks, standing guard, and serving under Moses’ shadow. This was not wasted time; it was the crucible where his character was tested.
 
@@ -123,7 +123,7 @@ When Samuel evaluates Jesse’s sons, he is drawn to Eliab, the oldest, who stan
 
 - **Key Word Study**: **תֹּם (_Tom_)** (Psalm 78:72) denotes completeness, integrity, or wholeness. It comes from the root _tamam_, meaning to be complete or finished. David's shepherding was marked by an undivided heart—he fought lions and bears in secret, with no audience but God.
 
-### 3. Devotional Reflection: Shepherding in the Secret Place
+### 3. Shepherding in the Secret Place
 
 In a culture obsessed with visibility, platform, and public branding, we are continually tempted to prioritize our skills over our character. We work hard to look like leaders on the outside, neglecting the state of our hearts.
 
@@ -159,7 +159,7 @@ Paul focuses on transgenerational succession: Paul $\rightarrow$ Timothy $\right
 
 - **Key Word Study**: **παραθήκη (_Paratheke_)** (implicitly connected to the word _entrust_ in 2:2) refers to a sacred legal deposit. In the ancient Greco-Roman world, a trustee held a deposit in trust and was legally bound to return it completely unaltered. The Gospel is a sacred _paratheke_ that leaders must protect and hand down faithfully.
 
-### 3. Devotional Reflection: Stewarding the Sacred Trust
+### 3. Stewarding the Sacred Trust
 
 No leader is permanent. The ultimate test of your leadership is not what you build, but whom you leave behind. Paul, facing execution, was not focused on his own legacy, but on ensuring that Timothy was equipped to pass the Gospel to the next generation.
 
@@ -201,7 +201,7 @@ Nehemiah faces fierce opposition from Sanballat (governor of Samaria) and Tobiah
 
 - **Key Word Study**: **נָשָׂא (_Nasa_)** and **שָׁלַח (_Shalach_)** (implicitly connected to Nehemiah’s defense) represent carrying weapons while working. Nehemiah structured the labor force so that every builder held a trowel in one hand and a sword in the other. True leadership combines spiritual defense (the sword of the Spirit) with active building.
 
-### 3. Devotional Reflection: Rebuilding in the Midst of Battle
+### 3. Rebuilding in the Midst of Battle
 
 The moment you begin to build something of spiritual value, you will face opposition. It may come as criticism from others, financial pressure, or internal doubt. The enemy’s goal is to make you drop your tools and walk away.
 
@@ -246,7 +246,7 @@ James and John’s request for prominence in Mark 10 reflects nationalistic expe
 
 - **Key Word Study**: **διακονέω (_Diakoneo_)** (Mark 10:45) means to serve or minister. Originally describing waiting on tables, Jesus elevates it to represent the core posture of His mission: self-sacrifice for the redemption of others.
 
-### 3. Devotional Reflection: The Way of the Basin and Towel
+### 3. The Way of the Basin and Towel
 
 Human leadership is naturally drawn to the crown: titles, recognition, authority, and control. Even the disciples, having walked with Jesus for years, argued about who would be the greatest.
 
