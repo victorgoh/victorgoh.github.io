@@ -83,7 +83,7 @@ def parse_day_block(day_num, title, body):
     }
 
 def main():
-    with open('content/30-days-of-growing-leaders-updated.md', 'r', encoding='utf-8') as f:
+    with open('content/30-days-of-growing-leaders-bsb.md', 'r', encoding='utf-8') as f:
         md_text = f.read()
 
     # Split into days

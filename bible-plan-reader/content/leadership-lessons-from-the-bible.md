@@ -158,7 +158,7 @@ _Search me, O God, and know my heart today. Forgive me for focusing so much on p
 
 Paul writes from a cold Roman dungeon during his second imprisonment under Nero (approx. 66–67 CE). Expecting imminent martyrdom, he writes to Timothy, a young, somewhat timid leader in Ephesus facing heavy doctrinal error and opposition.
 
-Paul focuses on transgenerational succession: Paul $\rightarrow$ Timothy $\rightarrow$ Faithful Men $\rightarrow$ Others (2 Tim 2:2). To sustain this chain, Timothy must cultivate three qualities: single-minded focus (the soldier refraining from civilian entanglements), discipline and integrity (the competitor competing according to the rules), and patient labor (the hardworking farmer).
+Paul focuses on transgenerational succession: Paul ➔ Timothy ➔ Faithful Men ➔ Others (2 Tim 2:2). To sustain this chain, Timothy must cultivate three qualities: single-minded focus (the soldier refraining from civilian entanglements), discipline and integrity (the competitor competing according to the rules), and patient labor (the hardworking farmer).
 
 - **Key Word Study: "Entrust" (*Paratithemi*)** (2 Timothy 2:2) — In the ancient Greco-Roman world, *paratithemi* meant placing a sacred, high-value deposit (*paratheke*) into the custody of a trustworthy guardian, who was under solemn obligation to protect and return it unaltered. Paul reminds Timothy that the Gospel is not personal property to modify, but a sacred trust to guard carefully and pass down intact to faithful, qualified leaders.
 

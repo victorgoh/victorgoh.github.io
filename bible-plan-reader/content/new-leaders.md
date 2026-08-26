@@ -155,7 +155,7 @@ _Search me, O God, and know my heart today. Forgive me for focusing so much on m
 
 Paul writes from a cold Roman dungeon during his second imprisonment under Nero (approx. 66–67 CE). Expecting martyrdom, he writes to Timothy, a young, somewhat timid leader in Ephesus facing heavy doctrinal error and opposition.
 
-Paul focuses on transgenerational succession: Paul $\rightarrow$ Timothy $\rightarrow$ Faithful Men $\rightarrow$ Others (2 Tim 2:2). To sustain this chain, Timothy must cultivate three qualities: focus (the soldier), discipline/integrity (the athlete), and patient, hard work (the farmer).
+Paul focuses on transgenerational succession: Paul ➔ Timothy ➔ Faithful Men ➔ Others (2 Tim 2:2). To sustain this chain, Timothy must cultivate three qualities: focus (the soldier), discipline/integrity (the athlete), and patient, hard work (the farmer).
 
 - **Key Word Study**: **παραθήκη (_Paratheke_)** (implicitly connected to the word _entrust_ in 2:2) refers to a sacred legal deposit. In the ancient Greco-Roman world, a trustee held a deposit in trust and was legally bound to return it completely unaltered. The Gospel is a sacred _paratheke_ that leaders must protect and hand down faithfully.
 

@@ -1423,16 +1423,6 @@ The final core habit brings the entire journey together: **Abide to Grow.**
 
 ---
 
-### 🏆 Master 30-Day Course Review: The 6 Core Habits
-*Take 5 quiet minutes today to celebrate and evaluate your 30-day journey:*
-
-1. 📖 **Reflect and Grow (Story)**: Seeing God's hand in past experiences and learning from daily reactions.
-2. 🛡️ **Pause and Pray (Character)**: Resisting shortcuts, choosing integrity, and pausing before reacting under stress.
-3. 📋 **Capture and Clarify (Faithfulness)**: Building trust through reliability in small tasks and keeping promises.
-4. 🎁 **Serve to Discover (Gifts)**: Stepping up to serve where needed and sharpening strengths through feedback.
-5. 👂 **Understand before Solving (People)**: Leading with humility, pausing 3 seconds, and listening before fixing.
-6. 🌿 **Abide to Grow (Life with God)**: Guarding daily intimacy with Jesus and bearing fruit that lasts.
-
 ---
 
 ### 4. Questions to Think About
@@ -1443,7 +1433,7 @@ The final core habit brings the entire journey together: **Abide to Grow.**
 ### 5. Action Step
 **The Ongoing Abiding Rhythm**: Pick one "Habit Partner" from your group or a close friend. Send them a message: *"I just finished the Growing Leaders 30-day journey! Can we check in once a month to encourage each other in our walk with God?"*
 
-### 6. Personal Prayer
+### 6. Prayer
 *Lord Jesus, I thank You with all my heart for this 30-day journey. Thank You for shaping my story, testing my character, building my faithfulness, developing my gifts, teaching me how to love people, and drawing me close to Your heart. I surrender my leadership, my future, and my life into Your hands. May I always remain in Your love and bear fruit that lasts. To You be all the glory, honor, and praise, now and forever. Amen!*
 
 ---
