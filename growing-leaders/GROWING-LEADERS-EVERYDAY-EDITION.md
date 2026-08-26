@@ -348,7 +348,7 @@ Equip participants to recognize pressure points, choose integrity over easy shor
 * Discuss the warning signs of stress in adult life (fatigue, irritability, compromise).
 * Have each person share one character quality they want God to strengthen in their current season.
 
-### 4. Practice: The 10-Second Pause (10 mins)
+### 4. Practice: Pause and Pray (10 mins)
 * Practice the *Pause and Pray* habit (*Notice, Name, Receive, Respond*) with a real-life workplace or home pressure scenario.
 
 ### 5. Next Steps & Prayer (10 mins)
@@ -456,6 +456,7 @@ Help participants discover that reliable follow-through in ordinary duties is fo
 
 ### 1. Welcome & Check-In (8 mins)
 * Open in prayer.
+* **Review Habit:** *"How did you go with practising Pause and Pray this week when pressure flared up?"*
 * **Icebreaker:** *"On a scale of 1 to 10, how organized does your calendar or task list feel right now?"*
 
 ### 2. Scripture & The Talents (12 mins)
@@ -569,6 +570,7 @@ Free participants from comparison and exhaustion, help them identify their core 
 
 ### 1. Check-In & Icebreaker (8 mins)
 * Open in prayer.
+* **Review Habit:** *"How did you go with practising Capture and Clarify with your commitments and task lists this week?"*
 * **Icebreaker:** *"If you could instantly possess any skill or superpower for one day, what would it be?"*
 
 ### 2. Scripture & The Body of Christ (12 mins)
@@ -692,6 +694,7 @@ Shift leaders from authoritarian control to Jesus-style servant leadership, with
 
 ### 1. Check-In & Icebreaker (8 mins)
 * Open in prayer.
+* **Review Habit:** *"How did you go with practising Serve to Discover and noticing where God worked through your strengths?"*
 * **Icebreaker:** *"What is the best piece of advice a mentor ever gave you?"*
 
 ### 2. Scripture & Servant Leadership (12 mins)
@@ -811,6 +814,7 @@ Guide participants into sustainable spiritual rhythms, celebrate growth across t
 
 ### 1. Welcome & Celebration (10 mins)
 * Open with a prayer of thanksgiving for what God has done over the six modules.
+* **Review Habit:** *"How did you go with practising Understand before Solving in your conversations this week?"*
 * **Check-In:** *"What is one word that describes how you feel about your leadership today compared to when we started?"*
 
 ### 2. Abiding in the Vine (15 mins)
@@ -823,7 +827,7 @@ Guide participants into sustainable spiritual rhythms, celebrate growth across t
 * Go around the room and give each person 2–3 minutes to share their biggest takeaway from the six modules.
 * Celebrate the growth, vulnerability, and steps of faith taken by each participant.
 
-### 4. Completing the Leadership Growth Plan (10 mins)
+### 4. Leadership Growth Plan & Abide to Grow (10 mins)
 * Give 5–7 quiet minutes for participants to fill out the 5-point Growth Plan below.
 * Pair up to share one core commitment with a prayer partner.
 

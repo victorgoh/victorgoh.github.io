@@ -38,6 +38,21 @@ In every module, you will look at four parts of your life:
 
 ---
 
+## The 6 Core Habits of a Growing Leader
+
+Leadership is built one small habit at a time. Throughout this course, you will practice 6 simple habits that form a complete developmental rhythm:
+
+| Module | Core Habit | The Trigger (When) | The Micro-Action (What) |
+| :--- | :--- | :--- | :--- |
+| **1. Story** | **Reflect and Grow** | Daily evening alarm | 2-minute review: *"What is God teaching me?"* |
+| **2. Character** | **Pause and Pray** | When tension rises | 3 deep breaths and a silent prayer for wisdom |
+| **3. Faithfulness** | **Capture and Clarify** | Receiving a task or promise | Write it down instantly; clarify the deadline |
+| **4. Gifts** | **Serve to Discover** | Seeing a team need | Step up to serve, notice energy, ask for feedback |
+| **5. People** | **Understand before Solving** | Hearing a concern or conflict | Ask 1 open question and listen before fixing |
+| **6. Depth** | **Abide to Grow** | Morning start / Sunday review | 10-minute quiet time staying plugged into Jesus |
+
+---
+
 ## The 6 Modules at a Glance
 
 1. **God Uses Your Story** *(Habit: Reflect and Grow)* — How your past and daily experiences shape who you are today.
@@ -106,7 +121,20 @@ Joseph could say to his brothers: *"You intended to harm me, but God intended it
 
 ---
 
-## 4. Bring It Before God
+## 4. Habit of the Week: Reflect and Grow
+
+> **The Goal:** To learn from your daily experiences and see how God is shaping your leadership instincts.
+
+* 🔔 **The Trigger (When to do it):** Every evening before bed (set a 9:00 PM alarm).
+* ⚡ **The 3-Step Practice:**
+  1. **Name 1 key moment:** Pick one interaction or challenge from today.
+  2. **Notice your heart:** Ask: *"Why did I react the way I did?"* (Did fear, pride, or gratitude drive me?)
+  3. **Ask God:** *"Lord, what are You teaching me through this for tomorrow?"*
+* 📱 **Phone Action:** Set a recurring daily reminder on your phone titled: *"2-Min Reflect & Grow"*.
+
+---
+
+## 5. Bring It Before God
 
 Take 5 minutes to pray through these 4 steps:
 
@@ -117,7 +145,7 @@ Take 5 minutes to pray through these 4 steps:
 
 ---
 
-## 5. Group Discussion Questions
+## 6. Group Discussion Questions
 
 1. What is one positive experience or person from your past that helped shape who you are today?
 2. When something goes wrong or someone disagrees with you, do you usually get angry, pull away, or try to fix it right away?
@@ -125,7 +153,7 @@ Take 5 minutes to pray through these 4 steps:
 
 ---
 
-## 6. My Reflection Notes for Group Discussion
+## 7. My Reflection Notes for Group Discussion
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -213,7 +241,20 @@ David could have taken the shortcut. But he chose to honor God and spare Saul’
 
 ---
 
-## 4. Bring It Before God
+## 4. Habit of the Week: Pause and Pray
+
+> **The Goal:** To choose godly character and calm integrity instead of reacting out of stress or frustration.
+
+* 🔔 **The Trigger (When to do it):** Whenever tension rises, someone criticizes you, or a deadline creates panic.
+* ⚡ **The 3-Step Practice (The 3-Breath Pause):**
+  1. **Pause:** Stop speaking, typing, or texting for 10 seconds.
+  2. **Breathe & Pray:** Take 3 slow, deep breaths and whisper: *"Lord, give me Your wisdom and self-control."*
+  3. **Respond:** Choose a response that honors God and builds trust, refusing cheap shortcuts.
+* 📱 **Phone Action:** Put a sticky note or phone lock screen reminder: *"Pause before you react."*
+
+---
+
+## 5. Bring It Before God
 
 1. **Notice:** When was the last time you felt stressed, frustrated, or treated unfairly?
 2. **Name:** Tell God honestly what came out of your mouth or heart in that moment.
@@ -222,7 +263,7 @@ David could have taken the shortcut. But he chose to honor God and spare Saul’
 
 ---
 
-## 5. Group Discussion Questions
+## 6. Group Discussion Questions
 
 1. When you feel stressed or overloaded, what is your first reaction?
 2. Why is it tempting to take shortcuts when you want to achieve something good?
@@ -230,7 +271,7 @@ David could have taken the shortcut. But he chose to honor God and spare Saul’
 
 ---
 
-## 6. My Reflection Notes for Group Discussion
+## 7. My Reflection Notes for Group Discussion
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -254,6 +295,7 @@ Teach emerging leaders how pressure tests character and guide them to choose int
 
 ### 1. Check-In & Icebreaker (7 mins)
 * Open in prayer.
+* **Review Habit:** *"How did you go with your 2-minute Reflect and Grow evening check-in this past week?"*
 * **Warm-Up:** *"What is the most stressful thing you had to deal with this past week?"*
 
 ### 2. Scripture Spotlight: David in the Cave (10 mins)
@@ -265,7 +307,7 @@ Teach emerging leaders how pressure tests character and guide them to choose int
 * *"When you are tired or angry, what is your warning sign (e.g. snapping at people, going quiet, giving up)?"*
 * *"Why is who you are in private more important than who you pretend to be in public?"*
 
-### 4. Habit: The 3-Breath Pause (8 mins)
+### 4. Daily Habit: Pause and Pray (8 mins)
 * Practice the 3-breath pause together: Breathe in slowly, breathe out, pray: *"Lord, give me Your peace."*
 
 ### 5. Prayer & Next Steps (5 mins)
@@ -278,7 +320,7 @@ Teach emerging leaders how pressure tests character and guide them to choose int
 
 > **Big Idea:** Big leadership starts with small things. If you are faithful with what you have today, God can trust you with more tomorrow.  
 > **Key Bible Passage:** Luke 16:10–12 & Matthew 25:14–23 (The Parable of the Talents)  
-> **This Week's Habit:** *Write It Down and Follow Through*
+> **This Week's Habit:** *Capture and Clarify*
 
 > *"If you are faithful in little things, you will be faithful in large ones. But if you are dishonest in little things, you won't be honest with greater responsibilities."*  
 > — **Luke 16:10**
@@ -316,11 +358,24 @@ Faithfulness means:
 * 🧠 **Head (What to Know):** Trust is built in drops and lost in buckets. Reliability is one of the greatest gifts you can give your team.
 * ❤️ **Heart (Who to Become):** A servant leader who finds joy in honoring God through ordinary, quiet tasks.
 * ✋ **Hands (What to Do):** Pick one small job you have been putting off and finish it well today.
-* 🔁 **Habit (Write It Down and Follow Through):** Whenever you make a promise or agree to do a task, write it down immediately on paper or in your phone. Check it off when finished.
+* 🔁 **Habit (Capture and Clarify):** Whenever you make a promise or receive a task, write it down immediately and clarify the deadline so nothing is forgotten.
 
 ---
 
-## 4. Bring It Before God
+## 4. Habit of the Week: Capture and Clarify
+
+> **The Goal:** To build unshakable reliability and trust by never dropping responsibilities or overpromising.
+
+* 🔔 **The Trigger (When to do it):** Whenever someone asks you for help, gives an assignment, or you make a commitment.
+* ⚡ **The 3-Step Practice:**
+  1. **Capture immediately:** Write the task down in a notebook or phone app on the spot (never rely on memory).
+  2. **Clarify expectations:** Ask: *"When exactly is this needed, and what does 'done' look like?"*
+  3. **Follow through reliably:** Finish on time, or communicate early if a delay occurs.
+* 📱 **Phone Action:** Create a dedicated note on your phone called *"Commitments & To-Dos"*.
+
+---
+
+## 5. Bring It Before God
 
 1. **Notice:** What small duties or promises are currently on your plate?
 2. **Name:** Confess to God if you have been careless, lazy, or overcommitted lately.
@@ -329,7 +384,7 @@ Faithfulness means:
 
 ---
 
-## 5. Group Discussion Questions
+## 6. Group Discussion Questions
 
 1. Can you think of someone you really trust? What makes them so reliable?
 2. Which small, hidden tasks in your life or church do you find hardest to do with a good attitude?
@@ -337,7 +392,7 @@ Faithfulness means:
 
 ---
 
-## 6. My Reflection Notes for Group Discussion
+## 7. My Reflection Notes for Group Discussion
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -361,6 +416,7 @@ Inspire emerging leaders to see value in unseen service, build punctuality, and 
 
 ### 1. Check-In & Icebreaker (7 mins)
 * Open in prayer.
+* **Review Habit:** *"How did you go with practising Pause and Pray when tension flared up?"*
 * **Warm-Up:** *"What is the most boring chore you have to do at home, and how do you feel when doing it?"*
 
 ### 2. Scripture Spotlight: Small Things (10 mins)
@@ -371,7 +427,7 @@ Inspire emerging leaders to see value in unseen service, build punctuality, and 
 * *"Have you ever had a friend promise to help you and then flake out? How did that affect your trust in them?"*
 * *"What is one small job in your group or church (setting up, packing down, greeting) that you can do with 100% effort?"*
 
-### 4. Habit: Capture and Clarify (8 mins)
+### 4. Daily Habit: Capture and Clarify (8 mins)
 * Have everyone write down 3 tasks or promises they must finish this week.
 
 ### 5. Prayer & Next Steps (5 mins)
@@ -420,11 +476,24 @@ How do you discover your gifts? You don't discover them by sitting alone in a ro
 * 🧠 **Head (What to Know):** You are part of a team. Healthy leadership means celebrating other people’s strengths instead of feeling threatened by them.
 * ❤️ **Heart (Who to Become):** Humble and secure, thankful for your gifts and eager to see others succeed.
 * ✋ **Hands (What to Do):** Use one of your strengths to help a leader or teammate who has a different gift.
-* 🔁 **Habit (Serve to Discover):** Ask a mentor or friend: *"Where do you think I am most helpful when I serve, and how can I grow?"*
+* 🔁 **Habit (Serve to Discover):** Step up to serve where needed, pay attention to where you bear fruit, and ask for honest feedback to sharpen your strengths.
 
 ---
 
-## 4. Bring It Before God
+## 4. Habit of the Week: Serve to Discover
+
+> **The Goal:** To discover and sharpen your God-given strengths through real service rather than comparing yourself with others.
+
+* 🔔 **The Trigger (When to do it):** Whenever a practical need arises on your team, church, or community.
+* ⚡ **The 3-Step Practice:**
+  1. **Serve willingly:** Jump in and help without waiting for a title or platform.
+  2. **Notice the fruit:** Pay attention: *Did this bring life and joy? Did it help others grow?*
+  3. **Ask for honest feedback:** Ask a leader or peer: *"Where do you see God working through my strengths?"*
+* 📱 **Phone Action:** Send a quick message to a mentor or teammate asking for 1 area of strength they notice in you.
+
+---
+
+## 5. Bring It Before God
 
 1. **Notice:** What activities or ways of serving give you joy and help others?
 2. **Name:** Talk to God about any jealousy, comparison, or fear of failure you carry.
@@ -433,7 +502,7 @@ How do you discover your gifts? You don't discover them by sitting alone in a ro
 
 ---
 
-## 5. Group Discussion Questions
+## 6. Group Discussion Questions
 
 1. What is one thing you enjoy doing that seems to help or encourage others?
 2. Have you ever caught yourself comparing your gifts with someone else? How did it make you feel?
@@ -441,7 +510,7 @@ How do you discover your gifts? You don't discover them by sitting alone in a ro
 
 ---
 
-## 6. My Reflection Notes for Group Discussion
+## 7. My Reflection Notes for Group Discussion
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -465,6 +534,7 @@ Help participants identify their strengths, break free from comparison and impos
 
 ### 1. Check-In & Affirmation (7 mins)
 * Open in prayer.
+* **Review Habit:** *"How did you go with Capture and Clarify—did writing tasks down help you follow through?"*
 * **Warm-Up:** Go around the circle and have each person say one thing they appreciate about the person sitting to their left.
 
 ### 2. Scripture Spotlight: One Body, Many Parts (10 mins)
@@ -475,7 +545,7 @@ Help participants identify their strengths, break free from comparison and impos
 * *"What is something you enjoy doing (art, music, tech, talking, planning, helping)?"*
 * *"Why do we compare ourselves to others, and how can we cheer each other on instead?"*
 
-### 4. Habit: Serve to Discover (8 mins)
+### 4. Daily Habit: Serve to Discover (8 mins)
 * Ask each leader to identify one new area of service they would like to try out this month.
 
 ### 5. Prayer & Blessing (5 mins)
@@ -533,7 +603,20 @@ People don’t follow a title; they follow someone who genuinely cares about the
 
 ---
 
-## 4. Bring It Before God
+## 4. Habit of the Week: Understand before Solving
+
+> **The Goal:** To lead with Jesus-style humility by truly listening to people's hearts instead of rushing to control or fix them.
+
+* 🔔 **The Trigger (When to do it):** When someone shares a problem, complaint, disagreement, or feedback.
+* ⚡ **The 3-Step Practice:**
+  1. **The 3-Second Rule:** Pause for 3 full seconds before speaking to avoid interrupting.
+  2. **Ask one open question:** *"Can you help me understand what's on your mind?"*
+  3. **Summarize before solving:** Say: *"What I hear you saying is... Have I understood you correctly?"*
+* 📱 **Phone Action:** Before your next team meeting or difficult conversation, write down: *"Listen first, solve second."*
+
+---
+
+## 5. Bring It Before God
 
 1. **Notice:** Who is one person you lead or serve with who is hard to get along with?
 2. **Name:** Tell God if you have been impatient, selfish, or critical toward them.
@@ -542,7 +625,7 @@ People don’t follow a title; they follow someone who genuinely cares about the
 
 ---
 
-## 5. Group Discussion Questions
+## 6. Group Discussion Questions
 
 1. Think of a leader who made you feel valued and supported. What did they do?
 2. Why is it hard to listen quietly when we think we already know the answer?
@@ -550,7 +633,7 @@ People don’t follow a title; they follow someone who genuinely cares about the
 
 ---
 
-## 6. My Reflection Notes for Group Discussion
+## 7. My Reflection Notes for Group Discussion
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -574,6 +657,7 @@ Teach servant leadership through active listening, kindness, and practical acts 
 
 ### 1. Check-In & Icebreaker (7 mins)
 * Open in prayer.
+* **Review Habit:** *"How did you go with Serve to Discover—did you find an area to serve and ask for feedback?"*
 * **Warm-Up:** *"Who is the kindest leader or teacher you’ve ever had? What made them special?"*
 
 ### 2. Scripture Spotlight: The Servant King (10 mins)
@@ -585,7 +669,10 @@ Teach servant leadership through active listening, kindness, and practical acts 
 * *"How does it feel when someone cuts you off while you are speaking?"*
 * Practice the 3-second pause in conversation.
 
-### 4. Secret Act of Service (8 mins)
+### 4. Daily Habit: Understand before Solving (8 mins)
+* Practice the 3-second pause and listening habit in pairs:
+  1. Person A shares a real frustration or problem for 60 seconds.
+  2. Person B pauses for 3 full seconds, listens without interrupting, and summarizes back: *"What I hear you saying is..."*
 * Challenge each leader to do one secret act of kindness or helpful service this week for someone in their group.
 
 ### 5. Prayer (5 mins)
@@ -638,7 +725,20 @@ When you stay close to Jesus:
 
 ---
 
-## 4. Bring It Before God
+## 4. Habit of the Week: Abide to Grow
+
+> **The Goal:** To protect your personal walk with Jesus so that your public leadership always overflows from a full spiritual tank.
+
+* 🔔 **The Trigger (When to do it):** The first 10 minutes of your morning and your weekly Sunday rest.
+* ⚡ **The 3-Step Practice:**
+  1. **Plug in daily:** Read 1 chapter of Scripture slowly and talk to God before checking social media or emails.
+  2. **Rest weekly:** Guard a regular Sabbath rhythm to recharge emotionally and spiritually.
+  3. **Review with God:** Every Sunday evening, review your week: *"Am I staying connected to the Vine?"*
+* 📱 **Phone Action:** Set a daily morning "Quiet Time" calendar event to protect your first 10 minutes with God.
+
+---
+
+## 5. Bring It Before God
 
 1. **Notice:** How full is your spiritual battery right now (1% to 100%)?
 2. **Name:** Speak openly to God about your tiredness, busyness, or any worries on your mind.
@@ -647,7 +747,7 @@ When you stay close to Jesus:
 
 ---
 
-## 5. Group Discussion Questions
+## 6. Group Discussion Questions
 
 1. What usually distracts you or crowds out your personal time with God?
 2. What helps you feel most connected and refreshed in your relationship with Jesus?
@@ -655,7 +755,7 @@ When you stay close to Jesus:
 
 ---
 
-## 6. My Reflection Notes for Group Discussion
+## 7. My Reflection Notes for Group Discussion
 
 > 🔒 *Use this private space to write down your thoughts before your group meeting. For those who prefer pen and paper, feel free to write these in your journal.*
 
@@ -679,6 +779,7 @@ Celebrate completing the course, encourage lifelong spiritual rhythms of prayer 
 
 ### 1. Celebration Check-In (7 mins)
 * Celebrate finishing all 6 modules!
+* **Review Habit:** *"How did you go with Understand before Solving—did pausing 3 seconds change your conversations?"*
 * Share a snack or drink together to mark the milestone.
 
 ### 2. Scripture Spotlight: Stay Connected to the Vine (10 mins)
@@ -688,7 +789,7 @@ Celebrate completing the course, encourage lifelong spiritual rhythms of prayer 
 ### 3. Reflection & Takeaways (15 mins)
 * Ask each leader: *"What is the #1 lesson or habit from this course that made the biggest difference in your life?"*
 
-### 4. My Growth Plan (8 mins)
+### 4. Leadership Growth Plan & Abide to Grow (8 mins)
 * Give 3 quiet minutes for each person to fill in their Personal Leadership Growth Plan (below).
 
 ### 5. Commissioning Prayer & Blessing (5 mins)
