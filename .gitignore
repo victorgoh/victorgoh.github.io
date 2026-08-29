@@ -18,3 +18,8 @@ __pycache__/
 # BibleMate study outputs (kept local only)
 biblemate/
 **/biblemate/
+
+# Scratch files (kept local only)
+scratch/
+**/scratch/
+
