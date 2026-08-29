@@ -43,8 +43,10 @@ import {
   Share2,
   Trash2,
   ListOrdered,
-  BookOpen
+  BookOpen,
+  Clock
 } from 'lucide-react';
+import { calculateReadingTime } from './utils/readingTime';
 
 // Custom WhatsApp SVG Icon
 const WhatsAppIcon: React.FC<{ size?: number; style?: React.CSSProperties }> = ({ size = 16, style }) => (
@@ -914,7 +916,7 @@ export const App: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Section Controls Bar (Table of Contents button + Collapse/Expand All toggles) */}
+                  {/* Section Controls Bar (TOC button + Reading Time + Collapse/Expand toggles) */}
                   <div 
                     className="section-controls-bar"
                     style={{
@@ -941,12 +943,31 @@ export const App: React.FC = () => {
                         borderRadius: '8px',
                         fontWeight: 600
                       }}
+                      title="Open Table of Contents"
                     >
                       <ListOrdered size={15} />
-                      <span>Table of Contents</span>
+                      <span>TOC</span>
                     </button>
 
-                    <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                    <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+                      {/* Reading Time Indicator */}
+                      <span
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '4px',
+                          fontSize: '0.78rem',
+                          color: 'var(--text-muted)',
+                          padding: '3px 8px',
+                          borderRadius: '6px',
+                          background: 'rgba(128, 128, 128, 0.08)'
+                        }}
+                        title={`Estimated reading time: ~${calculateReadingTime(activeItemConfig)} min`}
+                      >
+                        <Clock size={12} />
+                        <span>~{calculateReadingTime(activeItemConfig)} min</span>
+                      </span>
+
                       <button
                         type="button"
                         onClick={collapseAllSections}
@@ -956,13 +977,13 @@ export const App: React.FC = () => {
                           alignItems: 'center',
                           gap: '4px',
                           fontSize: '0.78rem',
-                          padding: '4px 10px',
-                          borderRadius: '6px'
+                          padding: '5px 10px',
+                          borderRadius: '8px'
                         }}
                         title="Collapse all sections to shorten height"
                       >
                         <ChevronUp size={13} />
-                        <span>Collapse All</span>
+                        <span>Collapse</span>
                       </button>
                       <button
                         type="button"
@@ -973,13 +994,13 @@ export const App: React.FC = () => {
                           alignItems: 'center',
                           gap: '4px',
                           fontSize: '0.78rem',
-                          padding: '4px 10px',
-                          borderRadius: '6px'
+                          padding: '5px 10px',
+                          borderRadius: '8px'
                         }}
                         title="Expand all sections"
                       >
                         <ChevronDown size={13} />
-                        <span>Expand All</span>
+                        <span>Expand</span>
                       </button>
                     </div>
                   </div>

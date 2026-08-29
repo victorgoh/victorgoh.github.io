@@ -6,11 +6,13 @@ import {
   Check, 
   BookOpen, 
   ChevronRight, 
-  ListOrdered,
-  Sparkles,
-  Scroll,
-  MessageSquare
+  ListOrdered, 
+  Sparkles, 
+  Scroll, 
+  MessageSquare,
+  Clock
 } from 'lucide-react';
+import { calculateReadingTime } from '../utils/readingTime';
 
 interface TableOfContentsProps {
   isOpen: boolean;
@@ -549,6 +551,24 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
                           {item.reflect.length}Q
                         </span>
                       )}
+
+                      {/* Estimated Reading Time */}
+                      <span
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '4px',
+                          fontSize: '0.76rem',
+                          padding: '2px 7px',
+                          borderRadius: '6px',
+                          background: 'rgba(128, 128, 128, 0.08)',
+                          color: 'var(--text-muted)'
+                        }}
+                        title={`Estimated reading time: ~${calculateReadingTime(item)} min`}
+                      >
+                        <Clock size={11} />
+                        {calculateReadingTime(item)} min
+                      </span>
                     </div>
                   </div>
 
