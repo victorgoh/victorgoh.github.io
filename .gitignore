@@ -14,3 +14,7 @@ __pycache__/
 
 # AI agent configuration (kept local only)
 .agents/
+
+# BibleMate study outputs (kept local only)
+biblemate/
+**/biblemate/
