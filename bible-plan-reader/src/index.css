@@ -1351,3 +1351,42 @@ body {
   font-weight: 600;
 }
 
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Table of Contents Drawer Styles */
+.toc-session-card:hover {
+  background: var(--border-glass) !important;
+  transform: translateY(-1px);
+}
+
+.toc-session-card.is-current {
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.08);
+}
+
+.toc-session-card.is-current:hover {
+  background: var(--primary-light) !important;
+}
+
+/* Collapsible Section Header hover */
+.collapsible-header-btn:hover {
+  background-color: rgba(128, 128, 128, 0.04) !important;
+}
+
+.collapsible-section-card {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.collapsible-section-card:hover {
+  border-color: rgba(128, 128, 128, 0.2);
+}
+
+

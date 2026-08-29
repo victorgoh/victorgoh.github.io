@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import type { Plan, UserPlanMetadata, UserPreferences, Customization } from './types';
 import { translate } from './utils/i18n';
 import { PlanSelector } from './components/PlanSelector';
-import SessionSelectorList from './components/SessionSelectorList';
+import TableOfContents from './components/TableOfContents';
+import CollapsibleSection from './components/CollapsibleSection';
 import { fetchHelloAoPassage } from './utils/helloAoBible';
 import { buildBibleComUrl } from './utils/bibleUrl';
 import {
@@ -40,7 +41,9 @@ import {
   Compass,
   X,
   Share2,
-  Trash2
+  Trash2,
+  ListOrdered,
+  BookOpen
 } from 'lucide-react';
 
 // Custom WhatsApp SVG Icon
@@ -174,22 +177,56 @@ export const App: React.FC = () => {
   });
   const [showSettings, setShowSettings] = useState<boolean>(false);
   const [showAdvancedSettings, setShowAdvancedSettings] = useState<boolean>(false);
-  const [showItemSelector, setShowItemSelector] = useState<boolean>(false);
-  const [showBottomSelector, setShowBottomSelector] = useState<boolean>(false);
-  const bottomSessionListRef = useRef<HTMLDivElement | null>(null);
-  const sessionListRef = useRef<HTMLDivElement | null>(null);
+  const [showTOC, setShowTOC] = useState<boolean>(false);
 
-  useEffect(() => {
-    if (showItemSelector) {
-      const timer = setTimeout(() => {
-        const activeItem = document.getElementById(`session-selector-item-${currentItem}`);
-        if (activeItem) {
-          activeItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
-      }, 100);
-      return () => clearTimeout(timer);
-    }
-  }, [showItemSelector, currentItem]);
+  // Section collapse states (remembers user expand/collapse preference)
+  const [sectionsOpen, setSectionsOpen] = useState<{
+    passages: boolean;
+    devotional: boolean;
+    prayers: boolean;
+    reflect: boolean;
+    practice: boolean;
+  }>(() => {
+    return loadLocalState('sections_open_state', {
+      passages: true,
+      devotional: true,
+      prayers: false,
+      reflect: false,
+      practice: false
+    });
+  });
+
+  const toggleSection = (section: 'passages' | 'devotional' | 'prayers' | 'reflect' | 'practice') => {
+    setSectionsOpen((prev) => {
+      const updated = { ...prev, [section]: !prev[section] };
+      localStorage.setItem('sections_open_state', JSON.stringify(updated));
+      return updated;
+    });
+  };
+
+  const expandAllSections = () => {
+    const allOpen = {
+      passages: true,
+      devotional: true,
+      prayers: true,
+      reflect: true,
+      practice: true
+    };
+    setSectionsOpen(allOpen);
+    localStorage.setItem('sections_open_state', JSON.stringify(allOpen));
+  };
+
+  const collapseAllSections = () => {
+    const allClosed = {
+      passages: false,
+      devotional: false,
+      prayers: false,
+      reflect: false,
+      practice: false
+    };
+    setSectionsOpen(allClosed);
+    localStorage.setItem('sections_open_state', JSON.stringify(allClosed));
+  };
 
   const [fetchedPassages, setFetchedPassages] = useState<Record<string, string>>({});
   const [loadingPassages, setLoadingPassages] = useState<Record<string, boolean>>({});
@@ -461,6 +498,29 @@ export const App: React.FC = () => {
     localStorage.setItem(`plan_metadata_${activePlan.id}`, JSON.stringify(newMeta));
   };
 
+  const toggleItemCompletion = (itemNumber: number) => {
+    if (!activePlan) return;
+    const itemProgress = [...planMetadata.progress];
+    const idx = itemProgress.indexOf(itemNumber);
+    const isNowCompleted = idx === -1;
+
+    if (isNowCompleted) {
+      itemProgress.push(itemNumber);
+    } else {
+      itemProgress.splice(idx, 1);
+    }
+
+    trackItemCompleted(activePlan.id, itemNumber, activePlan.items.length, isNowCompleted);
+    if (isNowCompleted && itemProgress.length === activePlan.items.length) {
+      trackPlanCompleted(activePlan.id, activePlan.title, activePlan.items.length);
+    }
+
+    updateMetadata({
+      ...planMetadata,
+      progress: itemProgress
+    });
+  };
+
   const togglePassageInline = async (pReference: string, idx: number, hasLocalText: boolean) => {
     const nextState = !openPassageIndices[idx];
     setOpenPassageIndices(prev => ({ ...prev, [idx]: nextState }));
@@ -643,6 +703,16 @@ export const App: React.FC = () => {
           )}
         </div>
         <div className="header-controls" onClick={(e) => e.stopPropagation()} style={{ display: 'flex', gap: '6px' }}>
+          {activePlan && (
+            <button 
+              className="icon-btn" 
+              onClick={() => setShowTOC(true)} 
+              title="Table of Contents" 
+              aria-label="Table of Contents"
+            >
+              <ListOrdered size={18} />
+            </button>
+          )}
           <button 
             className="icon-btn" 
             onClick={toggleTheme} 
@@ -768,31 +838,30 @@ export const App: React.FC = () => {
                   <div className="item-view-header" style={{ position: 'relative' }}>
                     <div className="item-view-title" style={{ width: '100%' }}>
                       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', flexWrap: 'wrap', gap: '8px' }}>
-                        {/* Selector Popover Button */}
+                        {/* Table of Contents Trigger Button */}
                         <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
                           <button
                             className="session-selector-btn"
-                            onClick={() => setShowItemSelector(!showItemSelector)}
-                            title="Jump to item"
+                            onClick={() => setShowTOC(true)}
+                            title="Open Table of Contents"
                             style={{
-                              background: 'transparent',
-                              border: 'none',
+                              background: 'var(--primary-light)',
+                              border: '1px solid var(--border-glass)',
                               color: 'var(--primary)',
                               fontSize: '0.95rem',
                               fontWeight: 700,
                               cursor: 'pointer',
-                              padding: '6px 10px',
-                              margin: '-6px -10px',
-                              borderRadius: '8px',
+                              padding: '6px 12px',
+                              borderRadius: '10px',
                               display: 'inline-flex',
                               alignItems: 'center',
-                              gap: '6px',
+                              gap: '8px',
                               transition: 'all 0.2s ease'
                             }}
                           >
                             {isPrayer ? <Flame size={16} /> : <FileText size={16} />} 
-                            <span>{`${currentItem} of ${totalItems}`}</span>
-                            <ChevronDown size={14} />
+                            <span>{`${planMetadata.progress.includes(currentItem) ? '✓ ' : ''}${isPrayer ? 'Session' : 'Day'} ${currentItem} of ${totalItems}`}</span>
+                            <ListOrdered size={15} style={{ opacity: 0.75 }} />
                           </button>
                         </div>
 
@@ -839,76 +908,92 @@ export const App: React.FC = () => {
                         </div>
                       </div>
 
-                      {/* Contents Picker Popover */}
-                      {showItemSelector && (
-                        <div 
-                          className="item-selector-popover"
-                          style={{
-                            position: 'absolute',
-                            top: '100%',
-                            left: 0,
-                            right: 0,
-                            background: 'var(--bg-card)',
-                            backdropFilter: 'blur(var(--blur-glass))',
-                            border: '1px solid var(--border-glass)',
-                            borderRadius: '16px',
-                            padding: '16px',
-                            marginTop: '12px',
-                            boxShadow: 'var(--shadow-md)',
-                            animation: 'fadeIn 0.2s ease',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            gap: '12px',
-                            zIndex: 100,
-                            boxSizing: 'border-box'
-                          }}
-                        >
-                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-muted)' }}>
-                            <span>Contents</span>
-                            <span>{currentItem} / {totalItems}</span>
-                          </div>
-
-                          <div 
-                            ref={sessionListRef}
-                            className="session-selector-list"
-                            style={{
-                              display: 'flex',
-                              flexDirection: 'column',
-                              gap: '6px',
-                              maxHeight: '280px',
-                              overflowY: 'auto',
-                              paddingRight: '4px',
-                              scrollbarWidth: 'thin',
-                              scrollBehavior: 'smooth'
-                            }}
-                          >
-                            <SessionSelectorList
-                              items={activePlan.items}
-                              currentItem={currentItem}
-                              completedItems={planMetadata.progress}
-                              planType={activePlan.type}
-                              onSelect={(itemNumber) => {
-                                setCurrentItem(itemNumber);
-                                setShowItemSelector(false);
-                                window.scrollTo({ top: 0, behavior: 'smooth' });
-                              }}
-                            />
-                          </div>
-                        </div>
-                      )}
-
-                      <h1 style={{ marginTop: '12px', fontSize: '1.45rem', fontWeight: 700, lineHeight: 1.3 }}>
+                      <h1 style={{ marginTop: '14px', fontSize: '1.45rem', fontWeight: 700, lineHeight: 1.3 }}>
                         {activeItemConfig.title}
                       </h1>
                     </div>
                   </div>
 
+                  {/* Section Controls Bar (Table of Contents button + Collapse/Expand All toggles) */}
+                  <div 
+                    className="section-controls-bar"
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      alignItems: 'center',
+                      marginTop: '16px',
+                      marginBottom: '14px',
+                      padding: '4px 2px',
+                      flexWrap: 'wrap',
+                      gap: '8px'
+                    }}
+                  >
+                    <button
+                      type="button"
+                      onClick={() => setShowTOC(true)}
+                      className="btn btn-secondary"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '6px',
+                        fontSize: '0.82rem',
+                        padding: '5px 12px',
+                        borderRadius: '8px',
+                        fontWeight: 600
+                      }}
+                    >
+                      <ListOrdered size={15} />
+                      <span>Table of Contents</span>
+                    </button>
+
+                    <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                      <button
+                        type="button"
+                        onClick={collapseAllSections}
+                        className="btn btn-secondary"
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '4px',
+                          fontSize: '0.78rem',
+                          padding: '4px 10px',
+                          borderRadius: '6px'
+                        }}
+                        title="Collapse all sections to shorten height"
+                      >
+                        <ChevronUp size={13} />
+                        <span>Collapse All</span>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={expandAllSections}
+                        className="btn btn-secondary"
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '4px',
+                          fontSize: '0.78rem',
+                          padding: '4px 10px',
+                          borderRadius: '6px'
+                        }}
+                        title="Expand all sections"
+                      >
+                        <ChevronDown size={13} />
+                        <span>Expand All</span>
+                      </button>
+                    </div>
+                  </div>
+
                   {/* Scripture Reading Section */}
                   {activeItemConfig.passages && activeItemConfig.passages.length > 0 && (
-                    <div className="passages-section" style={{ marginTop: '16px', marginBottom: '20px' }}>
-                      <div style={{ fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-muted)', fontWeight: 700, marginBottom: '8px' }}>
-                        {t('itemView.readPassages')}
-                      </div>
+                    <CollapsibleSection
+                      id="passages"
+                      title={t('itemView.readPassages') || 'Scripture'}
+                      icon={<Scroll size={18} />}
+                      badge={`${activeItemConfig.passages.length} ${activeItemConfig.passages.length === 1 ? 'passage' : 'passages'}`}
+                      isOpen={sectionsOpen.passages}
+                      onToggle={() => toggleSection('passages')}
+                    >
                       <div className="passage-cards-grid" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                         {activeItemConfig.passages.map((p, idx) => {
                           const isInlineOpen = !!openPassageIndices[idx];
@@ -921,10 +1006,10 @@ export const App: React.FC = () => {
                               key={idx} 
                               className="passage-card"
                               style={{
-                                background: 'var(--bg-card)',
+                                background: 'var(--bg-app)',
                                 border: '1px solid var(--border-glass)',
-                                borderRadius: '12px',
-                                padding: '12px 16px',
+                                borderRadius: '10px',
+                                padding: '12px 14px',
                                 display: 'flex',
                                 flexDirection: 'column',
                                 gap: '8px'
@@ -982,7 +1067,7 @@ export const App: React.FC = () => {
                                     marginTop: '8px',
                                     padding: '14px',
                                     borderRadius: '8px',
-                                    background: 'var(--bg-app)',
+                                    background: 'var(--bg-card)',
                                     border: '1px solid var(--border-glass)',
                                     fontSize: '0.95rem',
                                     lineHeight: 1.7
@@ -1001,33 +1086,41 @@ export const App: React.FC = () => {
                           );
                         })}
                       </div>
-                    </div>
+                    </CollapsibleSection>
                   )}
 
                   {/* Devotional Study Content */}
                   {activeItemConfig.devotional && (
-                    <div className="devotional-content" style={{ marginTop: '20px', lineHeight: 1.75 }}>
-                      {activeItemConfig.devotional.author && (
-                        <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginBottom: '12px', fontWeight: 500 }}>
-                          {t('itemView.devotionalBy', { author: activeItemConfig.devotional.author })}
-                        </div>
-                      )}
-                      <ReactMarkdown>{activeItemConfig.devotional.content}</ReactMarkdown>
-                    </div>
+                    <CollapsibleSection
+                      id="devotional"
+                      title={activeItemConfig.devotional.title || (isPrayer ? 'Focus & Meditation' : 'Devotional Study')}
+                      icon={<BookOpen size={18} />}
+                      badge={activeItemConfig.devotional.author ? `By ${activeItemConfig.devotional.author}` : undefined}
+                      isOpen={sectionsOpen.devotional}
+                      onToggle={() => toggleSection('devotional')}
+                    >
+                      <div className="devotional-content" style={{ lineHeight: 1.75 }}>
+                        <ReactMarkdown>{activeItemConfig.devotional.content}</ReactMarkdown>
+                      </div>
+                    </CollapsibleSection>
                   )}
 
                   {/* Personal / Guided Prayers */}
                   {activeItemConfig.prayers && activeItemConfig.prayers.length > 0 && (
-                    <div className="section-block prayer-section" style={{ marginTop: '28px', paddingTop: '20px', borderTop: '1px solid var(--border-glass)' }}>
-                      <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '14px', color: 'var(--primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        🙏 Personal Prayer
-                      </h3>
+                    <CollapsibleSection
+                      id="prayers"
+                      title="Personal Prayer"
+                      icon={<span style={{ fontSize: '1.1rem' }}>🙏</span>}
+                      badge={`${activeItemConfig.prayers.length} ${activeItemConfig.prayers.length === 1 ? 'prayer' : 'prayers'}`}
+                      isOpen={sectionsOpen.prayers}
+                      onToggle={() => toggleSection('prayers')}
+                    >
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                         {activeItemConfig.prayers.map((pr, idx) => (
                           <div
                             key={idx}
                             style={{
-                              background: 'var(--bg-card)',
+                              background: 'var(--bg-app)',
                               border: '1px solid var(--border-glass)',
                               borderLeft: '4px solid var(--primary)',
                               borderRadius: '10px',
@@ -1048,21 +1141,25 @@ export const App: React.FC = () => {
                           </div>
                         ))}
                       </div>
-                    </div>
+                    </CollapsibleSection>
                   )}
 
                   {/* Reflection & Group Discussion Questions */}
                   {activeItemConfig.reflect && activeItemConfig.reflect.length > 0 && (
-                    <div className="section-block reflection-section" style={{ marginTop: '28px', paddingTop: '20px', borderTop: '1px solid var(--border-glass)' }}>
-                      <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '14px', color: 'var(--primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        💬 {t('itemView.reflectionQuestions')}
-                      </h3>
+                    <CollapsibleSection
+                      id="reflect"
+                      title={t('itemView.reflectionQuestions')}
+                      icon={<span style={{ fontSize: '1.1rem' }}>💬</span>}
+                      badge={`${activeItemConfig.reflect.length} ${activeItemConfig.reflect.length === 1 ? 'question' : 'questions'}`}
+                      isOpen={sectionsOpen.reflect}
+                      onToggle={() => toggleSection('reflect')}
+                    >
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                         {activeItemConfig.reflect.map((q, idx) => (
                           <div 
                             key={idx}
                             style={{
-                              background: 'var(--bg-card)',
+                              background: 'var(--bg-app)',
                               border: '1px solid var(--border-glass)',
                               borderRadius: '10px',
                               padding: '12px 16px',
@@ -1080,21 +1177,26 @@ export const App: React.FC = () => {
                           </div>
                         ))}
                       </div>
-                    </div>
+                    </CollapsibleSection>
                   )}
 
                   {/* Practice / Action Steps */}
                   {activeItemConfig.practice && activeItemConfig.practice.length > 0 && (
-                    <div className="section-block practice-section" style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid var(--border-glass)' }}>
-                      <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '14px', color: 'var(--accent)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        🎯 {t('itemView.actionSteps')}
-                      </h3>
+                    <CollapsibleSection
+                      id="practice"
+                      title={t('itemView.actionSteps')}
+                      icon={<span style={{ fontSize: '1.1rem' }}>🎯</span>}
+                      badge={`${activeItemConfig.practice.length} ${activeItemConfig.practice.length === 1 ? 'step' : 'steps'}`}
+                      isOpen={sectionsOpen.practice}
+                      onToggle={() => toggleSection('practice')}
+                      accentColor="var(--accent)"
+                    >
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                         {activeItemConfig.practice.map((act, idx) => (
                           <div 
                             key={idx}
                             style={{
-                              background: 'var(--bg-card)',
+                              background: 'var(--bg-app)',
                               border: '1px solid var(--border-glass)',
                               borderRadius: '10px',
                               padding: '12px 16px',
@@ -1112,7 +1214,7 @@ export const App: React.FC = () => {
                           </div>
                         ))}
                       </div>
-                    </div>
+                    </CollapsibleSection>
                   )}
 
                   {/* Bottom Navigation & Share Bar */}
@@ -1202,12 +1304,12 @@ export const App: React.FC = () => {
                         <ChevronLeft size={20} />
                       </button>
 
-                      {/* Bottom Selector Popover Button */}
+                      {/* Bottom Table of Contents Button */}
                       <div>
                         <button
                           className="session-selector-btn"
-                          onClick={() => setShowBottomSelector(!showBottomSelector)}
-                          title="Jump to item"
+                          onClick={() => setShowTOC(true)}
+                          title="Open Table of Contents"
                           style={{
                             background: 'transparent',
                             border: '1px solid var(--border-glass)',
@@ -1222,82 +1324,16 @@ export const App: React.FC = () => {
                             gap: '6px'
                           }}
                         >
+                          <ListOrdered size={15} />
                           <span>{`${currentItem} of ${totalItems}`}</span>
-                          <ChevronDown size={14} />
                         </button>
                       </div>
-
-                      {/* Wide Bottom Contents Popover */}
-                      {showBottomSelector && (
-                        <div 
-                          className="item-selector-popover bottom"
-                          style={{
-                            position: 'absolute',
-                            bottom: '100%',
-                            left: 0,
-                            right: 0,
-                            background: 'var(--bg-card)',
-                            backdropFilter: 'blur(var(--blur-glass))',
-                            border: '1px solid var(--border-glass)',
-                            borderRadius: '16px',
-                            padding: '16px',
-                            marginBottom: '12px',
-                            boxShadow: 'var(--shadow-lg)',
-                            animation: 'fadeIn 0.2s ease',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            gap: '12px',
-                            zIndex: 100,
-                            boxSizing: 'border-box'
-                          }}
-                        >
-                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-muted)' }}>
-                            <span>Contents</span>
-                            <span>{currentItem} / {totalItems}</span>
-                          </div>
-
-                          <SessionSelectorList
-                            ref={bottomSessionListRef}
-                            items={activePlan.items}
-                            currentItem={currentItem}
-                            completedItems={planMetadata.progress}
-                            planType={activePlan.type}
-                            onSelect={(itemNumber) => {
-                              setCurrentItem(itemNumber);
-                              setShowBottomSelector(false);
-                              window.scrollTo({ top: 0, behavior: 'smooth' });
-                            }}
-                          />
-                        </div>
-                      )}
 
                       {/* Mark Done / Completed Button */}
                       <button 
                         className={`btn ${planMetadata.progress.includes(currentItem) ? 'btn-secondary' : 'btn-primary'}`}
                         style={{ padding: '10px 18px', borderRadius: '12px', fontSize: '0.88rem', fontWeight: 600 }}
-                        onClick={() => {
-                          const itemProgress = [...planMetadata.progress];
-                          const idx = itemProgress.indexOf(currentItem);
-                          const isNowCompleted = idx === -1;
-                          
-                          if (isNowCompleted) {
-                            itemProgress.push(currentItem);
-                          } else {
-                            itemProgress.splice(idx, 1);
-                          }
-
-                          if (activePlan) {
-                            trackItemCompleted(activePlan.id, currentItem, totalItems, isNowCompleted);
-                            if (isNowCompleted && itemProgress.length === activePlan.items.length) {
-                              trackPlanCompleted(activePlan.id, activePlan.title, totalItems);
-                            }
-                          }
-
-                          updateMetadata({
-                            ...planMetadata,
-                            progress: itemProgress
-                          });
-                        }}
+                        onClick={() => toggleItemCompletion(currentItem)}
                       >
                         {planMetadata.progress.includes(currentItem) ? (
                           <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', justifyContent: 'center' }}>
@@ -1537,8 +1573,28 @@ export const App: React.FC = () => {
           onClose={() => setShowSelector(false)}
         />
       )}
+
+      {/* Table of Contents Drawer / Modal */}
+      {activePlan && (
+        <TableOfContents
+          isOpen={showTOC}
+          onClose={() => setShowTOC(false)}
+          plan={activePlan}
+          currentItem={currentItem}
+          completedItems={planMetadata.progress}
+          onSelectItem={(itemNumber) => {
+            setCurrentItem(itemNumber);
+            setShowTOC(false);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          onToggleComplete={(itemNumber) => {
+            toggleItemCompletion(itemNumber);
+          }}
+        />
+      )}
     </div>
   );
 };
 
 export default App;
+
