@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import type { Plan, UserPlanMetadata, UserPreferences, Customization } from './types';
 import { translate } from './utils/i18n';
 import { PlanSelector } from './components/PlanSelector';
@@ -24,8 +24,6 @@ import {
   ClipboardList,
   Settings,
   Globe,
-  Flame,
-  FileText,
   Check,
   Link,
   ExternalLink,
@@ -42,7 +40,6 @@ import {
   X,
   Share2,
   Trash2,
-  ListOrdered,
   BookOpen,
   Clock
 } from 'lucide-react';
@@ -180,6 +177,35 @@ export const App: React.FC = () => {
   const [showSettings, setShowSettings] = useState<boolean>(false);
   const [showAdvancedSettings, setShowAdvancedSettings] = useState<boolean>(false);
   const [showTOC, setShowTOC] = useState<boolean>(false);
+  const closePlanContents = useCallback(() => setShowTOC(false), []);
+
+  const updateItemUrl = (itemNumber: number, mode: 'push' | 'replace' = 'push') => {
+    const url = new URL(window.location.href);
+    url.searchParams.delete('session');
+    url.searchParams.set('item', String(itemNumber));
+    window.history[mode === 'push' ? 'pushState' : 'replaceState'](
+      { item: itemNumber },
+      '',
+      url
+    );
+  };
+
+  const navigateToItem = (itemNumber: number, options?: { history?: 'push' | 'replace' | 'none'; scroll?: boolean }) => {
+    if (!activePlan || itemNumber < 1 || itemNumber > activePlan.items.length) return;
+    if (itemNumber === currentItem) {
+      if (options?.scroll !== false) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+      return;
+    }
+    setCurrentItem(itemNumber);
+    if (options?.history !== 'none') {
+      updateItemUrl(itemNumber, options?.history || 'push');
+    }
+    if (options?.scroll !== false) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
   // Section collapse states (remembers user expand/collapse preference)
   const [sectionsOpen, setSectionsOpen] = useState<{
@@ -357,6 +383,23 @@ export const App: React.FC = () => {
   }, [activePlan?.id]);
 
   useEffect(() => {
+    const handlePopState = () => {
+      if (!activePlan) return;
+      const params = new URLSearchParams(window.location.search);
+      const itemParam = params.get('item') || params.get('session');
+      const parsedItem = itemParam ? parseInt(itemParam, 10) : NaN;
+
+      if (!isNaN(parsedItem) && parsedItem >= 1 && parsedItem <= activePlan.items.length) {
+        setCurrentItem(parsedItem);
+        window.scrollTo({ top: 0, behavior: 'auto' });
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [activePlan]);
+
+  useEffect(() => {
     const cacheBustedRepoUrl = repositoryUrl.includes('?') 
       ? `${repositoryUrl}&_t=${Date.now()}` 
       : `${repositoryUrl}?_t=${Date.now()}`;
@@ -418,6 +461,16 @@ export const App: React.FC = () => {
   }, [activePlan?.id]);
 
   const activeItemConfig = activePlan?.items.find((d) => d.item === currentItem);
+
+  // Keep reloads, copied URLs, and browser Back/Forward aligned with the visible item.
+  useEffect(() => {
+    if (!activePlan || !activeItemConfig) return;
+    const params = new URLSearchParams(window.location.search);
+    const urlItem = params.get('item') || params.get('session');
+    if (urlItem !== String(currentItem) || params.has('session')) {
+      updateItemUrl(currentItem, 'replace');
+    }
+  }, [activePlan, activeItemConfig, currentItem]);
 
   useEffect(() => {
     if (activePlan && activeItemConfig) {
@@ -599,7 +652,7 @@ export const App: React.FC = () => {
     if (!activePlan || !activeItemConfig) return null;
     const planUrl = localStorage.getItem(`active_plan_url_${activePlan.id}`) || `plans/${activePlan.id}.json`;
     const fullUrl = planUrl.startsWith('http') ? planUrl : new URL(planUrl, window.location.origin).href;
-    const shareUrl = `${window.location.origin}${window.location.pathname}?plan=${encodeURIComponent(fullUrl)}&session=${currentItem}`;
+    const shareUrl = `${window.location.origin}${window.location.pathname}?plan=${encodeURIComponent(fullUrl)}&item=${currentItem}`;
     
     const passages = activeItemConfig.passages?.map(p => p.reference).join(', ') || '';
     const rawContent = activeItemConfig.devotional?.content || '';
@@ -705,16 +758,6 @@ export const App: React.FC = () => {
           )}
         </div>
         <div className="header-controls" onClick={(e) => e.stopPropagation()} style={{ display: 'flex', gap: '6px' }}>
-          {activePlan && (
-            <button 
-              className="icon-btn" 
-              onClick={() => setShowTOC(true)} 
-              title="Table of Contents" 
-              aria-label="Table of Contents"
-            >
-              <ListOrdered size={18} />
-            </button>
-          )}
           <button 
             className="icon-btn" 
             onClick={toggleTheme} 
@@ -840,12 +883,16 @@ export const App: React.FC = () => {
                   <div className="item-view-header" style={{ position: 'relative' }}>
                     <div className="item-view-title" style={{ width: '100%' }}>
                       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', flexWrap: 'wrap', gap: '8px' }}>
-                        {/* Table of Contents Trigger Button */}
+                        {/* Current item / plan contents trigger */}
                         <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
                           <button
                             className="session-selector-btn"
                             onClick={() => setShowTOC(true)}
-                            title="Open Table of Contents"
+                            title="Open plan contents"
+                            aria-label={`Open plan contents, item ${currentItem} of ${totalItems}`}
+                            aria-haspopup="dialog"
+                            aria-expanded={showTOC}
+                            aria-controls="plan-contents-dialog"
                             style={{
                               background: 'var(--primary-light)',
                               border: '1px solid var(--border-glass)',
@@ -861,9 +908,8 @@ export const App: React.FC = () => {
                               transition: 'all 0.2s ease'
                             }}
                           >
-                            {isPrayer ? <Flame size={16} /> : <FileText size={16} />} 
-                            <span>{`${planMetadata.progress.includes(currentItem) ? '✓ ' : ''}${isPrayer ? 'Session' : 'Day'} ${currentItem} of ${totalItems}`}</span>
-                            <ListOrdered size={15} style={{ opacity: 0.75 }} />
+                            <span>{`${currentItem} of ${totalItems}`}</span>
+                            <ChevronDown size={16} aria-hidden="true" />
                           </button>
                         </div>
 
@@ -916,7 +962,7 @@ export const App: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Section Controls Bar (TOC button + Reading Time + Collapse/Expand toggles) */}
+                  {/* Section controls */}
                   <div 
                     className="section-controls-bar"
                     style={{
@@ -930,25 +976,6 @@ export const App: React.FC = () => {
                       gap: '8px'
                     }}
                   >
-                    <button
-                      type="button"
-                      onClick={() => setShowTOC(true)}
-                      className="btn btn-secondary"
-                      style={{
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        gap: '6px',
-                        fontSize: '0.82rem',
-                        padding: '5px 12px',
-                        borderRadius: '8px',
-                        fontWeight: 600
-                      }}
-                      title="Open Table of Contents"
-                    >
-                      <ListOrdered size={15} />
-                      <span>TOC</span>
-                    </button>
-
                     <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
                       {/* Reading Time Indicator */}
                       <span
@@ -1298,15 +1325,29 @@ export const App: React.FC = () => {
                       </div>
                     </div>
 
-                    {/* Previous / Next / Complete Controls */}
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '8px', position: 'relative' }}>
+                    {/* Completion remains a reading action, separate from navigation. */}
+                    <button
+                      className={`btn ${planMetadata.progress.includes(currentItem) ? 'btn-secondary' : 'btn-primary'}`}
+                      style={{ alignSelf: 'center', padding: '10px 18px', borderRadius: '12px', fontSize: '0.88rem', fontWeight: 600 }}
+                      onClick={() => toggleItemCompletion(currentItem)}
+                    >
+                      {planMetadata.progress.includes(currentItem) ? (
+                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', justifyContent: 'center' }}>
+                          <Check size={18} /> {t('itemView.completed')}
+                        </span>
+                      ) : (
+                        t('itemView.markComplete')
+                      )}
+                    </button>
+
+                    {/* Previous / contents / next navigation */}
+                    <nav className="reader-navigation" aria-label="Plan item navigation">
                       <button
                         className="btn btn-secondary"
                         disabled={currentItem <= 1}
                         onClick={() => {
                           if (currentItem > 1) {
-                            setCurrentItem(currentItem - 1);
-                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                            navigateToItem(currentItem - 1);
                           }
                         }}
                         title={t('itemView.prev')}
@@ -1325,44 +1366,17 @@ export const App: React.FC = () => {
                         <ChevronLeft size={20} />
                       </button>
 
-                      {/* Bottom Table of Contents Button */}
-                      <div>
-                        <button
-                          className="session-selector-btn"
-                          onClick={() => setShowTOC(true)}
-                          title="Open Table of Contents"
-                          style={{
-                            background: 'transparent',
-                            border: '1px solid var(--border-glass)',
-                            color: 'var(--text-main)',
-                            fontSize: '0.88rem',
-                            fontWeight: 600,
-                            cursor: 'pointer',
-                            padding: '8px 12px',
-                            borderRadius: '10px',
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            gap: '6px'
-                          }}
-                        >
-                          <ListOrdered size={15} />
-                          <span>{`${currentItem} of ${totalItems}`}</span>
-                        </button>
-                      </div>
-
-                      {/* Mark Done / Completed Button */}
-                      <button 
-                        className={`btn ${planMetadata.progress.includes(currentItem) ? 'btn-secondary' : 'btn-primary'}`}
-                        style={{ padding: '10px 18px', borderRadius: '12px', fontSize: '0.88rem', fontWeight: 600 }}
-                        onClick={() => toggleItemCompletion(currentItem)}
+                      <button
+                        className="session-selector-btn reader-navigation-current"
+                        onClick={() => setShowTOC(true)}
+                        title="Open plan contents"
+                        aria-label={`Open plan contents, item ${currentItem} of ${totalItems}`}
+                        aria-haspopup="dialog"
+                        aria-expanded={showTOC}
+                        aria-controls="plan-contents-dialog"
                       >
-                        {planMetadata.progress.includes(currentItem) ? (
-                          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', justifyContent: 'center' }}>
-                            <Check size={18} /> {t('itemView.completed')}
-                          </span>
-                        ) : (
-                          t('itemView.markComplete')
-                        )}
+                        <span>{`${currentItem} of ${totalItems}`}</span>
+                        <ChevronDown size={15} aria-hidden="true" />
                       </button>
 
                       {/* Next Button */}
@@ -1371,8 +1385,7 @@ export const App: React.FC = () => {
                         disabled={!activePlan || currentItem >= activePlan.items.length}
                         onClick={() => {
                           if (activePlan && currentItem < activePlan.items.length) {
-                            setCurrentItem(currentItem + 1);
-                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                            navigateToItem(currentItem + 1);
                           }
                         }}
                         title={t('itemView.next')}
@@ -1390,7 +1403,7 @@ export const App: React.FC = () => {
                       >
                         <ChevronRight size={20} />
                       </button>
-                    </div>
+                    </nav>
                   </div>
 
                 </>
@@ -1595,18 +1608,16 @@ export const App: React.FC = () => {
         />
       )}
 
-      {/* Table of Contents Drawer / Modal */}
+      {/* Plan contents drawer */}
       {activePlan && (
         <TableOfContents
           isOpen={showTOC}
-          onClose={() => setShowTOC(false)}
+          onClose={closePlanContents}
           plan={activePlan}
           currentItem={currentItem}
           completedItems={planMetadata.progress}
           onSelectItem={(itemNumber) => {
-            setCurrentItem(itemNumber);
-            setShowTOC(false);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            navigateToItem(itemNumber);
           }}
           onToggleComplete={(itemNumber) => {
             toggleItemCompletion(itemNumber);
@@ -1618,4 +1629,3 @@ export const App: React.FC = () => {
 };
 
 export default App;
-

@@ -7,7 +7,6 @@ import {
   BookOpen, 
   ChevronRight, 
   ListOrdered, 
-  Sparkles, 
   Scroll, 
   MessageSquare,
   Clock
@@ -39,16 +38,51 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
   const [filterTab, setFilterTab] = useState<FilterTab>('all');
   const activeItemRef = useRef<HTMLButtonElement | null>(null);
   const listContainerRef = useRef<HTMLDivElement | null>(null);
+  const panelRef = useRef<HTMLDivElement | null>(null);
+  const previouslyFocusedRef = useRef<HTMLElement | null>(null);
 
-  // Close on Escape key
+  // Treat the drawer as a modal dialog: move focus in, trap it, and restore it.
   useEffect(() => {
+    if (!isOpen) return;
+
+    previouslyFocusedRef.current = document.activeElement instanceof HTMLElement
+      ? document.activeElement
+      : null;
+
+    const focusTimer = window.setTimeout(() => {
+      panelRef.current?.querySelector<HTMLElement>('[data-autofocus="true"]')?.focus();
+    }, 50);
+
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isOpen) {
+      if (e.key === 'Escape') {
         onClose();
+        return;
+      }
+
+      if (e.key === 'Tab' && panelRef.current) {
+        const focusable = Array.from(panelRef.current.querySelectorAll<HTMLElement>(
+          'button:not([disabled]), input:not([disabled]), [href], [tabindex]:not([tabindex="-1"])'
+        ));
+        if (focusable.length === 0) return;
+
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
       }
     };
+
     window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    return () => {
+      window.clearTimeout(focusTimer);
+      window.removeEventListener('keydown', handleKeyDown);
+      previouslyFocusedRef.current?.focus();
+    };
   }, [isOpen, onClose]);
 
   // Lock body scroll when modal is open
@@ -84,7 +118,7 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
 
       const q = searchQuery.toLowerCase().trim();
       const matchTitle = item.title.toLowerCase().includes(q);
-      const matchNumber = String(item.item) === q || `day ${item.item}`.includes(q) || `session ${item.item}`.includes(q);
+      const matchNumber = String(item.item) === q || `item ${item.item}`.includes(q);
       const matchPassages = item.passages?.some((p) => p.reference.toLowerCase().includes(q));
       const matchDevotional = item.devotional?.content?.toLowerCase().includes(q) || item.devotional?.author?.toLowerCase().includes(q);
       const matchPrayers = item.prayers?.some((pr) => pr.topic?.toLowerCase().includes(q) || pr.description?.toLowerCase().includes(q));
@@ -114,7 +148,12 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
     >
       {/* Slide-over Panel */}
       <div
+        id="plan-contents-dialog"
+        ref={panelRef}
         className="toc-drawer-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="plan-contents-title"
         style={{
           width: '100%',
           maxWidth: '560px',
@@ -157,8 +196,8 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
                 <ListOrdered size={20} />
               </div>
               <div>
-                <h2 style={{ fontSize: '1.2rem', fontWeight: 700, margin: 0, lineHeight: 1.2 }}>
-                  Table of Contents
+                <h2 id="plan-contents-title" style={{ fontSize: '1.2rem', fontWeight: 700, margin: 0, lineHeight: 1.2 }}>
+                  Plan contents
                 </h2>
                 <span style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
                   {plan.title}
@@ -170,7 +209,8 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
               type="button"
               onClick={onClose}
               className="toc-close-btn"
-              aria-label="Close Table of Contents"
+              aria-label="Close plan contents"
+              data-autofocus="true"
               style={{
                 width: '42px',
                 height: '42px',
@@ -250,7 +290,8 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search sessions, scriptures, topics..."
+              placeholder="Search titles, scripture, or topics..."
+              aria-label="Search plan contents"
               style={{
                 width: '100%',
                 padding: '9px 12px 9px 36px',
@@ -367,7 +408,7 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
                 fontSize: '0.92rem'
               }}
             >
-              No sessions found matching your criteria.
+              No items found matching your criteria.
             </div>
           ) : (
             filteredItems.map((item) => {
@@ -450,7 +491,7 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
                           letterSpacing: '0.04em'
                         }}
                       >
-                        {plan.type === 'prayer' || plan.type === 'prayer_guide' ? 'Session' : 'Day'} {item.item}
+                        {item.item} of {totalCount}
                       </span>
                       {isCurrent && (
                         <span
@@ -588,53 +629,6 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
           )}
         </div>
 
-        {/* Footer Jump to Current */}
-        <div
-          style={{
-            padding: '14px 20px',
-            borderTop: '1px solid var(--border-glass)',
-            background: 'var(--bg-card)',
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            gap: '12px'
-          }}
-        >
-          <button
-            type="button"
-            onClick={() => {
-              onSelectItem(currentItem);
-              onClose();
-            }}
-            className="btn btn-secondary"
-            style={{
-              flex: 1,
-              padding: '8px 14px',
-              borderRadius: '8px',
-              fontSize: '0.88rem',
-              fontWeight: 600,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '6px'
-            }}
-          >
-            <Sparkles size={15} /> Jump to Current (Day {currentItem})
-          </button>
-          <button
-            type="button"
-            onClick={onClose}
-            className="btn btn-primary"
-            style={{
-              padding: '8px 18px',
-              borderRadius: '8px',
-              fontSize: '0.88rem',
-              fontWeight: 600
-            }}
-          >
-            Done
-          </button>
-        </div>
       </div>
     </div>
   );

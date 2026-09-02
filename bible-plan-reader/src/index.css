@@ -426,7 +426,7 @@ body {
   box-shadow: 0 0 0 3px var(--bg-app), 0 0 0 5px var(--success);
 }
 
-/* Day Main view styling */
+/* Main item view styling */
 .main-content-card {
   background: var(--bg-card);
   backdrop-filter: blur(var(--blur-glass));
@@ -1307,7 +1307,7 @@ body {
   background: var(--primary-light) !important;
 }
 
-/* Session Selection List Styles */
+/* Item selection list styles */
 .session-selector-row {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
@@ -1362,7 +1362,7 @@ body {
   }
 }
 
-/* Table of Contents Drawer Styles */
+/* Plan contents drawer styles */
 .toc-session-card:hover {
   background: var(--border-glass) !important;
   transform: translateY(-1px);
@@ -1374,6 +1374,60 @@ body {
 
 .toc-session-card.is-current:hover {
   background: var(--primary-light) !important;
+}
+
+/* Sequential plan navigation stays reachable during long reads on mobile. */
+.reader-navigation {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: max(12px, env(safe-area-inset-bottom));
+  z-index: 100;
+  display: grid;
+  grid-template-columns: 48px minmax(112px, 1fr) 48px;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid var(--border-glass);
+  border-radius: 16px;
+  background: var(--bg-glass-nav);
+  backdrop-filter: blur(var(--blur-glass));
+  -webkit-backdrop-filter: blur(var(--blur-glass));
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.reader-navigation > button {
+  min-height: 44px;
+}
+
+.reader-navigation-current {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 44px;
+  padding: 8px 16px;
+  border: 1px solid var(--border-glass);
+  border-radius: 10px;
+  background: var(--primary-light);
+  color: var(--primary);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .reader-navigation {
+    position: static;
+    grid-template-columns: 48px minmax(140px, 220px) 48px;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+  }
 }
 
 /* Collapsible Section Header hover */
@@ -1388,5 +1442,3 @@ body {
 .collapsible-section-card:hover {
   border-color: rgba(128, 128, 128, 0.2);
 }
-
-
