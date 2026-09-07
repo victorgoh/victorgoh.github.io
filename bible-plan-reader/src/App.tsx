@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import type { Plan, UserPlanMetadata, UserPreferences, Customization } from './types';
+import type { Plan, UserPlanMetadata, UserPreferences, Customization, UserNotes } from './types';
 import { translate } from './utils/i18n';
 import { PlanSelector } from './components/PlanSelector';
 import TableOfContents from './components/TableOfContents';
 import CollapsibleSection from './components/CollapsibleSection';
+import PersonalNotesSection from './components/PersonalNotesSection';
+import { useInactivityDetection } from './hooks/useInactivityDetection';
 import { fetchHelloAoPassage } from './utils/helloAoBible';
 import { buildBibleComUrl } from './utils/bibleUrl';
 import {
@@ -41,7 +43,9 @@ import {
   Share2,
   Trash2,
   BookOpen,
-  Clock
+  Clock,
+  Eye,
+  EyeOff
 } from 'lucide-react';
 import { calculateReadingTime } from './utils/readingTime';
 
@@ -178,6 +182,17 @@ export const App: React.FC = () => {
   const [showAdvancedSettings, setShowAdvancedSettings] = useState<boolean>(false);
   const [showTOC, setShowTOC] = useState<boolean>(false);
   const closePlanContents = useCallback(() => setShowTOC(false), []);
+  
+  // Focus mode state for dimming UI elements during reading (default ON, persisted)
+  const [isFocusMode, setIsFocusMode] = useState<boolean>(() => loadLocalState<boolean>('focus_mode', true));
+
+  // Persist focus mode changes to localStorage
+  useEffect(() => {
+    localStorage.setItem('focus_mode', JSON.stringify(isFocusMode));
+  }, [isFocusMode]);
+
+  // Inactivity detection for focus mode
+  const isActive = useInactivityDetection(5000); // 5 seconds of inactivity
 
   const updateItemUrl = (itemNumber: number, mode: 'push' | 'replace' = 'push') => {
     const url = new URL(window.location.href);
@@ -214,17 +229,22 @@ export const App: React.FC = () => {
     prayers: boolean;
     reflect: boolean;
     practice: boolean;
+    notes: boolean;
   }>(() => {
     return loadLocalState('sections_open_state', {
       passages: true,
       devotional: true,
       prayers: false,
       reflect: false,
-      practice: false
+      practice: false,
+      notes: false
     });
   });
 
-  const toggleSection = (section: 'passages' | 'devotional' | 'prayers' | 'reflect' | 'practice') => {
+  // Determine if we should dim UI elements based on focus mode and activity
+  const shouldDimUI = isFocusMode && !isActive;
+
+  const toggleSection = (section: 'passages' | 'devotional' | 'prayers' | 'reflect' | 'practice' | 'notes') => {
     setSectionsOpen((prev) => {
       const updated = { ...prev, [section]: !prev[section] };
       localStorage.setItem('sections_open_state', JSON.stringify(updated));
@@ -238,7 +258,8 @@ export const App: React.FC = () => {
       devotional: true,
       prayers: true,
       reflect: true,
-      practice: true
+      practice: true,
+      notes: true
     };
     setSectionsOpen(allOpen);
     localStorage.setItem('sections_open_state', JSON.stringify(allOpen));
@@ -250,7 +271,8 @@ export const App: React.FC = () => {
       devotional: false,
       prayers: false,
       reflect: false,
-      practice: false
+      practice: false,
+      notes: false
     };
     setSectionsOpen(allClosed);
     localStorage.setItem('sections_open_state', JSON.stringify(allClosed));
@@ -729,13 +751,58 @@ export const App: React.FC = () => {
     }
   };
 
+  const handleShareNote = async (note: string) => {
+    const details = getLessonShareDetails();
+    if (!details || !activePlan || !activeItemConfig) return;
+
+    const noteShareMessage = [
+      `📖 ${activePlan.title}`,
+      `${currentItem}. ${activeItemConfig.title}`,
+      details.passages ? `📜 Passage: ${details.passages}` : '',
+      details.cleanSnippet ? `\n"${details.cleanSnippet}..."` : '',
+      `\n📝 My Note:`,
+      note.trim(),
+      `\n👉 Open & Read:`,
+      details.shareUrl
+    ].filter(Boolean).join('\n');
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: `${currentItem}. ${activeItemConfig.title} — My Note`,
+          text: noteShareMessage
+        });
+        trackContentShared('share_note', activePlan.id, currentItem, activePlan.title);
+        return;
+      } catch (err: any) {
+        if (err?.name === 'AbortError') return;
+        console.debug('Native share fallback to clipboard:', err);
+      }
+    }
+
+    try {
+      await navigator.clipboard.writeText(noteShareMessage);
+      trackContentShared('share_note_copy', activePlan.id, currentItem, activePlan.title);
+      setShareStatus('copied');
+      setTimeout(() => setShareStatus(null), 2500);
+    } catch (err) {
+      console.error('Failed to copy note: ', err);
+      alert(`Share this note:\n\n${noteShareMessage}`);
+    }
+  };
+
   return (
     <div className="app-container">
       {/* Top Header Glass */}
       <header 
         className={`header-glass ${headerExpanded ? 'expanded' : 'collapsed'}`} 
         onClick={() => setHeaderExpanded(!headerExpanded)} 
-        style={{ cursor: 'pointer', padding: headerExpanded ? '16px 20px' : '10px 20px', transition: 'all 0.2s ease' }}
+        style={{ 
+          cursor: 'pointer', 
+          padding: headerExpanded ? '16px 20px' : '10px 20px', 
+          transition: 'opacity 0.4s ease, all 0.2s ease',
+          opacity: shouldDimUI ? 0.06 : 1
+        }}
       >
         <div className="brand-section" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)' }}>
@@ -758,6 +825,18 @@ export const App: React.FC = () => {
           )}
         </div>
         <div className="header-controls" onClick={(e) => e.stopPropagation()} style={{ display: 'flex', gap: '6px' }}>
+          {/* Focus Mode Toggle — always accessible at the top */}
+          {activePlan && (
+            <button 
+              className="icon-btn" 
+              onClick={() => setIsFocusMode(!isFocusMode)} 
+              title={isFocusMode ? 'Focus Mode ON — click to turn off' : 'Focus Mode OFF — click to enable'}
+              aria-label={isFocusMode ? 'Turn off Focus Mode' : 'Turn on Focus Mode'}
+              style={{ color: isFocusMode ? 'var(--primary)' : 'var(--text-muted)' }}
+            >
+              {isFocusMode ? <Eye size={18} /> : <EyeOff size={18} />}
+            </button>
+          )}
           <button 
             className="icon-btn" 
             onClick={toggleTheme} 
@@ -791,7 +870,8 @@ export const App: React.FC = () => {
           className="active-plan-banner-wrapper"
           style={{ 
             padding: headerExpanded ? '16px 20px' : '10px 16px',
-            transition: 'all 0.2s ease'
+            transition: 'opacity 0.4s ease, all 0.2s ease',
+            opacity: shouldDimUI ? 0.06 : 1
           }}
         >
           <div className="active-plan-info" style={{ textAlign: 'left', width: '100%' }}>
@@ -882,9 +962,21 @@ export const App: React.FC = () => {
                 <>
                   <div className="item-view-header" style={{ position: 'relative' }}>
                     <div className="item-view-title" style={{ width: '100%' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', flexWrap: 'wrap', gap: '8px' }}>
-                        {/* Current item / plan contents trigger */}
-                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+                      {/* Row 1: item counter + reading time + section controls + share actions */}
+                      <div 
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'space-between',
+                          width: '100%',
+                          flexWrap: 'wrap',
+                          gap: '8px',
+                          opacity: shouldDimUI ? 0.05 : 1,
+                          transition: 'opacity 0.4s ease'
+                        }}
+                      >
+                        {/* Left group: item counter + reading time + collapse/expand */}
+                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
                           <button
                             className="session-selector-btn"
                             onClick={() => setShowTOC(true)}
@@ -911,9 +1003,62 @@ export const App: React.FC = () => {
                             <span>{`${currentItem} of ${totalItems}`}</span>
                             <ChevronDown size={16} aria-hidden="true" />
                           </button>
+
+                          {/* Reading Time Badge */}
+                          <span
+                            style={{
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '4px',
+                              fontSize: '0.78rem',
+                              color: 'var(--text-muted)',
+                              padding: '5px 8px',
+                              borderRadius: '8px',
+                              background: 'rgba(128, 128, 128, 0.08)',
+                              whiteSpace: 'nowrap'
+                            }}
+                            title={`Estimated reading time: ~${calculateReadingTime(activeItemConfig)} min`}
+                          >
+                            <Clock size={12} />
+                            <span>~{calculateReadingTime(activeItemConfig)} min</span>
+                          </span>
+
+                          {/* Collapse/Expand controls */}
+                          <button
+                            type="button"
+                            onClick={collapseAllSections}
+                            className="btn btn-secondary"
+                            style={{
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '3px',
+                              fontSize: '0.76rem',
+                              padding: '5px 9px',
+                              borderRadius: '8px'
+                            }}
+                            title="Collapse all sections"
+                          >
+                            <ChevronUp size={12} />
+                          </button>
+                          <button
+                            type="button"
+                            onClick={expandAllSections}
+                            className="btn btn-secondary"
+                            style={{
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '3px',
+                              fontSize: '0.76rem',
+                              padding: '5px 9px',
+                              borderRadius: '8px'
+                            }}
+                            title="Expand all sections"
+                          >
+                            <ChevronDown size={12} />
+                          </button>
                         </div>
 
-                        {/* Top Quick Actions (WhatsApp icon & Copy Link icon) */}
+                        {/* Right group: Quick share actions */}
                         <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
                           <button
                             className="btn btn-whatsapp"
@@ -956,79 +1101,10 @@ export const App: React.FC = () => {
                         </div>
                       </div>
 
-                      <h1 style={{ marginTop: '14px', fontSize: '1.45rem', fontWeight: 700, lineHeight: 1.3 }}>
+                      {/* Row 2: Lesson title — full width, no chrome */}
+                      <h1 style={{ marginTop: '10px', fontSize: '1.45rem', fontWeight: 700, lineHeight: 1.3 }}>
                         {activeItemConfig.title}
                       </h1>
-                    </div>
-                  </div>
-
-                  {/* Section controls */}
-                  <div 
-                    className="section-controls-bar"
-                    style={{
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      alignItems: 'center',
-                      marginTop: '16px',
-                      marginBottom: '14px',
-                      padding: '4px 2px',
-                      flexWrap: 'wrap',
-                      gap: '8px'
-                    }}
-                  >
-                    <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
-                      {/* Reading Time Indicator */}
-                      <span
-                        style={{
-                          display: 'inline-flex',
-                          alignItems: 'center',
-                          gap: '4px',
-                          fontSize: '0.78rem',
-                          color: 'var(--text-muted)',
-                          padding: '3px 8px',
-                          borderRadius: '6px',
-                          background: 'rgba(128, 128, 128, 0.08)'
-                        }}
-                        title={`Estimated reading time: ~${calculateReadingTime(activeItemConfig)} min`}
-                      >
-                        <Clock size={12} />
-                        <span>~{calculateReadingTime(activeItemConfig)} min</span>
-                      </span>
-
-                      <button
-                        type="button"
-                        onClick={collapseAllSections}
-                        className="btn btn-secondary"
-                        style={{
-                          display: 'inline-flex',
-                          alignItems: 'center',
-                          gap: '4px',
-                          fontSize: '0.78rem',
-                          padding: '5px 10px',
-                          borderRadius: '8px'
-                        }}
-                        title="Collapse all sections to shorten height"
-                      >
-                        <ChevronUp size={13} />
-                        <span>Collapse</span>
-                      </button>
-                      <button
-                        type="button"
-                        onClick={expandAllSections}
-                        className="btn btn-secondary"
-                        style={{
-                          display: 'inline-flex',
-                          alignItems: 'center',
-                          gap: '4px',
-                          fontSize: '0.78rem',
-                          padding: '5px 10px',
-                          borderRadius: '8px'
-                        }}
-                        title="Expand all sections"
-                      >
-                        <ChevronDown size={13} />
-                        <span>Expand</span>
-                      </button>
                     </div>
                   </div>
 
@@ -1041,6 +1117,7 @@ export const App: React.FC = () => {
                       badge={`${activeItemConfig.passages.length} ${activeItemConfig.passages.length === 1 ? 'passage' : 'passages'}`}
                       isOpen={sectionsOpen.passages}
                       onToggle={() => toggleSection('passages')}
+                      isDimmed={shouldDimUI}
                     >
                       <div className="passage-cards-grid" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                         {activeItemConfig.passages.map((p, idx) => {
@@ -1146,6 +1223,7 @@ export const App: React.FC = () => {
                       badge={activeItemConfig.devotional.author ? `By ${activeItemConfig.devotional.author}` : undefined}
                       isOpen={sectionsOpen.devotional}
                       onToggle={() => toggleSection('devotional')}
+                      isDimmed={shouldDimUI}
                     >
                       <div className="devotional-content" style={{ lineHeight: 1.75 }}>
                         <ReactMarkdown>{activeItemConfig.devotional.content}</ReactMarkdown>
@@ -1162,6 +1240,7 @@ export const App: React.FC = () => {
                       badge={`${activeItemConfig.prayers.length} ${activeItemConfig.prayers.length === 1 ? 'prayer' : 'prayers'}`}
                       isOpen={sectionsOpen.prayers}
                       onToggle={() => toggleSection('prayers')}
+                      isDimmed={shouldDimUI}
                     >
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                         {activeItemConfig.prayers.map((pr, idx) => (
@@ -1201,6 +1280,7 @@ export const App: React.FC = () => {
                       badge={`${activeItemConfig.reflect.length} ${activeItemConfig.reflect.length === 1 ? 'question' : 'questions'}`}
                       isOpen={sectionsOpen.reflect}
                       onToggle={() => toggleSection('reflect')}
+                      isDimmed={shouldDimUI}
                     >
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                         {activeItemConfig.reflect.map((q, idx) => (
@@ -1238,6 +1318,7 @@ export const App: React.FC = () => {
                       isOpen={sectionsOpen.practice}
                       onToggle={() => toggleSection('practice')}
                       accentColor="var(--accent)"
+                      isDimmed={shouldDimUI}
                     >
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                         {activeItemConfig.practice.map((act, idx) => (
@@ -1265,6 +1346,17 @@ export const App: React.FC = () => {
                     </CollapsibleSection>
                   )}
 
+                  {/* Personal Notes Section */}
+                  <PersonalNotesSection
+                    plan={activePlan!}
+                    currentItem={currentItem}
+                    activeItemConfig={activeItemConfig}
+                    isOpen={sectionsOpen.notes}
+                    onToggle={() => toggleSection('notes')}
+                    isDimmed={shouldDimUI}
+                    onShareNote={handleShareNote}
+                  />
+
                   {/* Bottom Navigation & Share Bar */}
                   <div 
                     className="item-nav-container"
@@ -1274,7 +1366,9 @@ export const App: React.FC = () => {
                       borderTop: '1px solid var(--border-glass)',
                       display: 'flex',
                       flexDirection: 'column',
-                      gap: '16px'
+                      gap: '16px',
+                      opacity: shouldDimUI ? 0.06 : 1,
+                      transition: 'opacity 0.4s ease'
                     }}
                   >
                     {/* Quick Share Bar */}
@@ -1288,7 +1382,9 @@ export const App: React.FC = () => {
                         alignItems: 'center',
                         justifyContent: 'space-between',
                         flexWrap: 'wrap',
-                        gap: '10px'
+                        gap: '10px',
+                        opacity: shouldDimUI ? 0.05 : 1,
+                        transition: 'opacity 0.3s ease'
                       }}
                     >
                       <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>

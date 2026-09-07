@@ -13,6 +13,7 @@ export interface CollapsibleSectionProps {
   style?: React.CSSProperties;
   headerStyle?: React.CSSProperties;
   accentColor?: string;
+  isDimmed?: boolean;
 }
 
 export const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({
@@ -26,7 +27,8 @@ export const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({
   className = '',
   style,
   headerStyle,
-  accentColor
+  accentColor,
+  isDimmed = false
 }) => {
   return (
     <div
@@ -91,7 +93,8 @@ export const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({
               letterSpacing: '-0.01em',
               whiteSpace: 'nowrap',
               overflow: 'hidden',
-              textOverflow: 'ellipsis'
+              textOverflow: 'ellipsis',
+              opacity: 1  // Title text always fully visible
             }}
           >
             {title}
@@ -105,7 +108,9 @@ export const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({
                 background: 'var(--primary-light)',
                 color: 'var(--primary)',
                 fontWeight: 600,
-                flexShrink: 0
+                flexShrink: 0,
+                opacity: isDimmed ? 0.05 : 1,  // 95% dimming
+                transition: 'opacity 0.3s ease'
               }}
             >
               {badge}
@@ -124,8 +129,9 @@ export const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({
             background: isOpen ? 'var(--primary-light)' : 'rgba(128, 128, 128, 0.08)',
             color: isOpen ? 'var(--primary)' : 'var(--text-muted)',
             transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
-            transition: 'transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s ease',
-            flexShrink: 0
+            transition: 'transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s ease, opacity 0.3s ease',
+            flexShrink: 0,
+            opacity: isDimmed ? 0.05 : 1  // 95% dimming
           }}
         >
           <ChevronDown size={16} />
@@ -149,7 +155,7 @@ export const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({
             minHeight: 0
           }}
         >
-          <div style={{ padding: '16px 18px 20px 18px' }}>
+          <div style={{ padding: '16px 18px 20px 18px', opacity: 1 }}>
             {children}
           </div>
         </div>
@@ -157,4 +163,5 @@ export const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({
     </div>
   );
 };
+
 export default CollapsibleSection;

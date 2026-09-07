@@ -62,7 +62,9 @@ export const zh = {
     openBibleGateway: '在 BibleGateway 中打开',
     devotionalBy: '作者：{{author}}',
     prevSession: '上一课',
-    nextSession: '下一课'
+    nextSession: '下一课',
+    personalNotes: '个人笔记',
+    notesPlaceholder: '在此添加个人的反思、洞察或祷告点...'
   },
   timer: {
     title: '计时器',

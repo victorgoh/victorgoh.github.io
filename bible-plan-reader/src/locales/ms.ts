@@ -62,7 +62,9 @@ export const ms = {
     openBibleGateway: 'Buka di BibleGateway',
     devotionalBy: 'Oleh {{author}}',
     prevSession: 'Sebelum',
-    nextSession: 'Seterusnya'
+    nextSession: 'Seterusnya',
+    personalNotes: 'Nota Peribadi',
+    notesPlaceholder: 'Tambahkan refleksi, pemahaman, atau titik doa peribadi anda di sini...'
   },
   timer: {
     title: 'Pemasa',

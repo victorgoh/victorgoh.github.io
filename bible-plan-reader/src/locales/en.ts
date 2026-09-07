@@ -52,7 +52,9 @@ export const en = {
     openBibleGateway: 'Open in BibleGateway',
     devotionalBy: 'By {{author}}',
     prev: 'Previous',
-    next: 'Next'
+    next: 'Next',
+    personalNotes: 'Personal Notes',
+    notesPlaceholder: 'Add your personal reflections, insights, or prayer points here...'
   },
   timer: {
     title: 'Timer',

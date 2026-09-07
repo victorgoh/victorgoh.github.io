@@ -65,7 +65,12 @@ export interface PlanListItem {
 export interface UserPlanMetadata {
   startDate: string; // ISO date string
   progress: number[]; // Completed days
-  completedItems: Record<number, Record<string, boolean>>; // dayNumber -> { "passage-idx": true, "prayer-idx": true, "action-idx": true }
+}
+
+export interface UserNotes {
+  [planId: string]: {
+    [itemNumber: number]: string;
+  };
 }
 
 export type SupportedBibleTranslation =
