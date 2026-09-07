@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { loadNotesForPlan, saveNoteForItem, clearNoteForItem } from '../utils/notes';
-import type { ItemConfig, Plan } from '../types';
+import type { Plan } from '../types';
 import { Share2 } from 'lucide-react';
 
 interface PersonalNotesSectionProps {
   plan: Plan;
   currentItem: number;
-  activeItemConfig: ItemConfig;
   isOpen: boolean;
   onToggle: () => void;
   isDimmed?: boolean;
@@ -16,7 +15,6 @@ interface PersonalNotesSectionProps {
 const PersonalNotesSection: React.FC<PersonalNotesSectionProps> = ({
   plan,
   currentItem,
-  activeItemConfig,
   isOpen,
   onToggle,
   onShareNote

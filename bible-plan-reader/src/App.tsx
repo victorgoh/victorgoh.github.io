@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import type { Plan, UserPlanMetadata, UserPreferences, Customization, UserNotes } from './types';
+import type { Plan, UserPlanMetadata, UserPreferences, Customization } from './types';
 import { translate } from './utils/i18n';
 import { PlanSelector } from './components/PlanSelector';
 import TableOfContents from './components/TableOfContents';
@@ -1350,7 +1350,6 @@ export const App: React.FC = () => {
                   <PersonalNotesSection
                     plan={activePlan!}
                     currentItem={currentItem}
-                    activeItemConfig={activeItemConfig}
                     isOpen={sectionsOpen.notes}
                     onToggle={() => toggleSection('notes')}
                     isDimmed={shouldDimUI}

@@ -1,5 +1,4 @@
 // Utility functions for handling user notes in localStorage
-import type { UserNotes } from '../types';
 
 export const loadNotesForPlan = (planId: string): Record<number, string> => {
   try {

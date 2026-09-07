@@ -21,10 +21,10 @@ const SCROLL_KEYS = new Set([
 export const useInactivityDetection = (timeoutMs: number = 5000) => {
   const [isActive, setIsActive] = useState(true);
   const isScrollingRef = useRef(false);
-  const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const scrollTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
-    let timer: NodeJS.Timeout;
+    let timer: ReturnType<typeof setTimeout>;
     let isTouchScrolling = false;
 
     const resetTimer = () => {

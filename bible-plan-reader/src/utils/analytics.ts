@@ -139,7 +139,7 @@ export function trackTabSwitched(tab: string, planId?: string, itemNumber?: numb
  * Track when content is shared via WhatsApp or native share / copy link
  */
 export function trackContentShared(
-  method: 'whatsapp' | 'native_share' | 'copy_link',
+  method: 'whatsapp' | 'native_share' | 'copy_link' | 'share_note' | 'share_note_copy',
   planId: string,
   itemNumber: number,
   planTitle?: string
