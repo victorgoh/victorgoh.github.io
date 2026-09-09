@@ -204,7 +204,7 @@ def main():
 
         item = {
             "item": session_num,
-            "title": f"Session {session_num}: {title}",
+            "title": title,
             "passages": passages,
             "devotional": {
                 "author": "Reading Plan",

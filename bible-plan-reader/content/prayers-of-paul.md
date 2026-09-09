@@ -52,8 +52,6 @@ Paul highlights four complementary ways to pray:
 
 When we pray for leaders and difficult people, we are placing their lives under God's spiritual covering. Lasting fruit in our families, workplaces, and communities begins when we faithfully bring every person before God and trust Him to work in unseen ways.
 
-> “We pray because every seed needs spiritual covering.” — Marcus Yong
-
 ### 4. Personal Prayer
 
 _Father in heaven, enlarge my heart today. Forgive me for when my prayers become narrow, self-absorbed, or guarded. Teach me to pray faithfully for all people—for our national leaders, my neighbours, my coworkers, and even those who oppose or frustrate me. Thank You for granting me direct access into Your presence through Jesus. I lift these lives before Your throne today, trusting that no heart is beyond the reach of Your grace. In Jesus’ name, Amen._
@@ -95,8 +93,6 @@ God’s desire for the people around us goes far deeper than simply improving th
 When we pray for friends, relatives, and colleagues who do not know Jesus, we are not trying to convince a reluctant God to care. Instead, we are joining a loving God who is already reaching out to them.
 
 No heart is too hard, and no life is too far gone for God's grace. Because Jesus paid the ransom in full on the cross, the way to God is completely open. When we pray for open hearts, we are partnering with Jesus in bringing people home to the Father.
-
-> “God, do it again. Bring rain to our drought-stricken lives.” — Pastor Anand Kumar
 
 ### 4. Personal Prayer
 
@@ -140,8 +136,6 @@ In our families, workplaces, and church communities, it is easy to develop a cri
 
 Small steps of obedience, kindness, forgiveness, and a growing hunger for God are real signs of spiritual growth. When we thank God for the grace we see in others and encourage them, we help nurture the spiritual harvest God is growing in their lives.
 
-> “God has got tremendous favour upon FGA.” — Elder Dorai
-
 ### 4. Personal Prayer
 
 _Father, forgive me for the times I have been quick to complain and slow to give thanks. Open my eyes to see where Your grace is already at work in the people around me—in my family, my church, and my community. Make me a person of thankful remembrance. Help me to lift others up with joy, celebrating every step of faith and love I see in their lives. In Jesus' name, Amen._
@@ -183,8 +177,6 @@ It is possible to know a great deal *about* the Bible without truly knowing God 
 Paul’s prayer sets the ultimate goal of the Christian journey: knowing the Father more deeply. Spiritual wisdom is not about impressing others with theological knowledge; it is about having our hearts attuned to God’s voice and His desires. 
 
 When the Holy Spirit pulls back the curtain (*apokalupsis*) and reveals the Father’s heart, our priorities change. Insecurities fade, worship becomes natural, and our obedience is motivated by love rather than duty. A flourishing Christian life begins with a heart that is continually satisfied in knowing Him.
-
-> “Nothing satisfies except You and You alone.” — Elder Khoo Kay Hup
 
 ### 4. Personal Prayer
 
@@ -231,8 +223,6 @@ Paul reminds us that God has three wonderful realities for our hearts to see:
 
 When God floods the eyes of your heart with light (*photizo*), you no longer measure your future by your present obstacles. You walk forward with quiet confidence, anchored in His eternal promises.
 
-> “It is about the clarity of the authority of Christ in your life.” — Elder Ho Kien Keong
-
 ### 4. Personal Prayer
 
 _Father, flood the eyes of my heart with Your divine light today. Forgive me for when I fix my eyes on temporary problems rather than eternal truths. Help me to see clearly the hope to which You have called me, the value You place on my life, and the surpassing greatness of Your resurrection power at work in me. Let this spiritual clarity drive away all fear. In Jesus’ name, Amen._
@@ -274,8 +264,6 @@ Burnout and emotional exhaustion rarely come from outward work alone; they happe
 God’s answer to our weariness is not simply a vacation or a change of pace; it is supernatural reinforcement from the Holy Spirit. Out of the limitless riches of His glory, God pours divine power into our inner being.
 
 When our inner life is fortified by the Spirit, Christ settles down comfortably (*katoikeo*) in our hearts. His peace rules our emotions, His truth anchors our minds, and His love steadies our decisions. We can endure seasons of pressure and heavy responsibility with quiet joy, knowing that our strength comes from an inexhaustible well within.
-
-> “It is not us, but Thy Holy Spirit in us.” — Elder Liew Hoi Foo
 
 ### 4. Personal Prayer
 
@@ -322,8 +310,6 @@ When our roots go deep into the soil of Christ’s love, everything changes:
 
 Paul calls this a love that *"surpasses knowledge"*—it is greater than human language can describe, yet real enough to be experienced every single day. When we firmly grasp (*katalambano*) this love, we are filled with the very fullness of God.
 
-> “It is about the presence of God in your life.” — Elder Ho Kien Keong
-
 ### 4. Personal Prayer
 
 _Lord Jesus, help me to grasp how wide, long, high, and deep Your love truly is. Root my heart so securely in Your love that I am freed from fear, insecurity, and the need for human approval. Let my words, my choices, and my service be an overflow of the love I have received from You. Fill me today with all the fullness of God. Amen._
@@ -365,8 +351,6 @@ We often limit God by the size of our own past experiences, resources, or imagin
 Paul turns our attention to the God who is able (*dunamenos*). God is able not only to do what we ask, but what we imagine; and not just what we imagine, but *infinitely more* (*huperekperissou*)!
 
 Notice where this power operates: *"according to His power that is at work within us."* God does not work detached from His people; He releases His superabundant power through ordinary believers who dare to trust Him. When we pray bold, kingdom-centered prayers, we make room for God to display His glory in our lives, our churches, and across generations.
-
-> “Do, O Lord, what only the Lord of the harvest can do.” — Pastor Anand Kumar
 
 ### 4. Personal Prayer
 
@@ -414,8 +398,6 @@ Paul outlines four unmistakable marks of a fruitful life:
 
 When our lives are rooted in God's wisdom, our daily actions become seeds of righteousness that bear fruit in our families, workplaces, and communities.
 
-> “What you sow today, you will reap tomorrow.” — Pastor Rachel Bulan
-
 ### 4. Personal Prayer
 
 _Lord, fill me today with the knowledge of Your will in all spiritual wisdom and understanding. Teach me how to walk in a way that matches the high calling of Jesus. May my life bear fruit in every good work, and may I grow in knowing You more each day. Strengthen me with Your glorious might so that I can endure difficulties with patience and joyful thanksgiving. In Jesus’ name, Amen._
@@ -457,8 +439,6 @@ Spiritual growth is a lifelong journey. There are seasons when our progress feel
 Paul gives us an anchor for our souls: our confidence rests not in our own consistency, but in God's faithfulness! 
 
 The God who began the good work of salvation in your heart has taken full responsibility to carry it through to completion (*epiteleo*). He does not start a garden only to abandon it to weeds; He does not begin a masterpiece only to leave it incomplete. Every trial, every season of pruning, and every step of obedience is part of His perfecting work until the day Jesus returns.
-
-> “Keep on sowing. Keep on praying. Keep on trusting the Lord.” — Pastor Benny Ho
 
 ### 4. Personal Prayer
 
@@ -507,8 +487,6 @@ When our love is shaped by wisdom:
 
 This kind of discerning love produces a rich harvest—the fruit of righteousness that brings honor and praise to God.
 
-> “We serve because seeds are planted through love in action.” — Marcus Yong
-
 ### 4. Personal Prayer
 
 _Lord Jesus, let my love abound more and more. Guard me from both cold criticism and sentimental compromise. Grant me spiritual discernment and deep wisdom to know what is best in every relationship and decision. Fill my life with the fruit of righteousness that comes through You, so that my words, actions, and service bring true glory and praise to the Father. Amen._
@@ -554,8 +532,6 @@ The ultimate purpose of prayer and spiritual growth is not for our own glory, bu
 God takes delight in fulfilling our desires for goodness and every deed prompted by faith. When we step out in faith—sharing the Gospel, serving the needy, encouraging the weary—God’s power brings those efforts to fruition.
 
 At the same time, Paul shows us the beauty of quiet, practical grace: being someone who refreshes the hearts of others (*anapauo*). In a tired and stressed world, every believer is called to be an oasis of encouragement. When we combine bold faith for God's glory with tender love that refreshes people, we reflect the true heart of our Savior to the world.
-
-> “We step beyond comfort and move towards people.” — Dr Paul Ng
 
 ### 4. Personal Prayer
 
