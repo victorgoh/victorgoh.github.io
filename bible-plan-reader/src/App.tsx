@@ -7,7 +7,7 @@ import CollapsibleSection from './components/CollapsibleSection';
 import PersonalNotesSection from './components/PersonalNotesSection';
 import { useInactivityDetection } from './hooks/useInactivityDetection';
 import { fetchHelloAoPassage } from './utils/helloAoBible';
-import { buildBibleComUrl } from './utils/bibleUrl';
+import { buildBibleComUrl, type SupportedBibleTranslation } from './utils/bibleUrl';
 import {
   trackPlanSelected,
   trackItemViewed,
@@ -48,6 +48,7 @@ import {
   EyeOff
 } from 'lucide-react';
 import { calculateReadingTime } from './utils/readingTime';
+import { resolvePlanUrl, isLegacyPlanUrl } from './utils/planRegistry';
 
 // Custom WhatsApp SVG Icon
 const WhatsAppIcon: React.FC<{ size?: number; style?: React.CSSProperties }> = ({ size = 16, style }) => (
@@ -280,12 +281,7 @@ export const App: React.FC = () => {
 
   const [fetchedPassages, setFetchedPassages] = useState<Record<string, string>>({});
   const [loadingPassages, setLoadingPassages] = useState<Record<string, boolean>>({});
-  const [openPassageIndices, setOpenPassageIndices] = useState<Record<number, boolean>>({});
 
-  // Reset passage accordion state whenever switching lessons/items
-  useEffect(() => {
-    setOpenPassageIndices({});
-  }, [currentItem, activePlan?.id]);
 
   const [planMetadata, setPlanMetadata] = useState<UserPlanMetadata>(() => {
     const activeId = localStorage.getItem('active_plan_id');
@@ -312,43 +308,63 @@ export const App: React.FC = () => {
     const sessionParam = params.get('session') || params.get('item');
 
     if (planParam) {
-      const decodedPlanUrl = decodeURIComponent(planParam);
-      const isDirectJson = decodedPlanUrl.endsWith('.json');
-      const targetUrl = isDirectJson ? decodedPlanUrl : `${decodedPlanUrl}/plan.json`;
-      const fullUrl = targetUrl.startsWith('http') || targetUrl.startsWith('/') ? targetUrl : `/${targetUrl}`;
-      const cacheBustUrl = fullUrl.includes('?') ? `${fullUrl}&_t=${Date.now()}` : `${fullUrl}?_t=${Date.now()}`;
+      const decodedPlanParam = decodeURIComponent(planParam);
 
-      fetch(cacheBustUrl, { cache: 'no-cache' })
-        .then((res) => {
-          if (!res.ok) throw new Error('Failed to load plan from URL parameter');
-          return res.json();
-        })
-        .then((rawPlan) => {
-          const planData = migratePlanSchema(rawPlan);
-          localStorage.setItem(`cached_plan_${planData.id}`, JSON.stringify(planData));
-          localStorage.setItem('active_plan_id', planData.id);
-          localStorage.setItem(`active_plan_url_${planData.id}`, decodedPlanUrl);
+      /**
+       * Resolve the plan URL:
+       * - Legacy links contain '/' or end with '.json' or start with 'http' → use directly
+       * - New links are plain plan IDs (e.g. "prayers-of-paul-essentials") → resolve via registry
+       */
+      const resolvePlanUrlFromParam = async (): Promise<string> => {
+        if (isLegacyPlanUrl(decodedPlanParam)) {
+          // Legacy URL-based share link — use directly
+          return decodedPlanParam;
+        }
+        // New ID-based share link — look up in the plan registry
+        const resolvedUrl = await resolvePlanUrl(decodedPlanParam, repositoryUrl);
+        if (resolvedUrl) return resolvedUrl;
 
-          const savedMeta = loadLocalState<UserPlanMetadata>(`plan_metadata_${planData.id}`, {
-            startDate: new Date().toISOString(),
-            progress: [],
-            completedItems: {}
-          });
+        // Fallback: try common conventional path
+        return `plans/${decodedPlanParam}.json`;
+      };
 
-          setActivePlan(planData);
-          setPlanMetadata(savedMeta);
-          if (savedMeta.startDate) setStartDate(new Date(savedMeta.startDate));
+      resolvePlanUrlFromParam().then((planUrl) => {
+        const isDirectJson = planUrl.endsWith('.json');
+        const targetUrl = isDirectJson ? planUrl : `${planUrl}/plan.json`;
+        const fullUrl = targetUrl.startsWith('http') || targetUrl.startsWith('/') ? targetUrl : `/${targetUrl}`;
+        const cacheBustUrl = fullUrl.includes('?') ? `${fullUrl}&_t=${Date.now()}` : `${fullUrl}?_t=${Date.now()}`;
 
-          if (sessionParam) {
-            const parsedSession = parseInt(sessionParam);
-            if (!isNaN(parsedSession) && parsedSession > 0) {
-              setCurrentItem(parsedSession);
+        return fetch(cacheBustUrl, { cache: 'no-cache' })
+          .then((res) => {
+            if (!res.ok) throw new Error('Failed to load plan from URL parameter');
+            return res.json();
+          })
+          .then((rawPlan) => {
+            const planData = migratePlanSchema(rawPlan);
+            localStorage.setItem(`cached_plan_${planData.id}`, JSON.stringify(planData));
+            localStorage.setItem('active_plan_id', planData.id);
+            localStorage.setItem(`active_plan_url_${planData.id}`, planUrl);
+
+            const savedMeta = loadLocalState<UserPlanMetadata>(`plan_metadata_${planData.id}`, {
+              startDate: new Date().toISOString(),
+              progress: [],
+              completedItems: {}
+            });
+
+            setActivePlan(planData);
+            setPlanMetadata(savedMeta);
+            if (savedMeta.startDate) setStartDate(new Date(savedMeta.startDate));
+
+            if (sessionParam) {
+              const parsedSession = parseInt(sessionParam);
+              if (!isNaN(parsedSession) && parsedSession > 0) {
+                setCurrentItem(parsedSession);
+              }
             }
-          }
-        })
-        .catch((err) => {
-          console.error('Error fetching plan from URL query param:', err);
-        });
+          });
+      }).catch((err) => {
+        console.error('Error fetching plan from URL query param:', err);
+      });
     }
   }, []);
 
@@ -494,6 +510,36 @@ export const App: React.FC = () => {
     }
   }, [activePlan, activeItemConfig, currentItem]);
 
+  // Auto-fetch missing passage text and track scripture reading when switching items
+  useEffect(() => {
+    if (!activeItemConfig?.passages || !activePlan) return;
+
+    activeItemConfig.passages.forEach((p) => {
+      trackScriptureRead(activePlan.id, currentItem, p.reference);
+
+      const targetTranslation = pref.bibleTranslation || 'BSB';
+      const passageKey = `${p.reference}_${targetTranslation}`;
+      
+      if (!p.text && !fetchedPassages[passageKey] && !loadingPassages[passageKey]) {
+        setLoadingPassages(prev => ({ ...prev, [passageKey]: true }));
+        fetchHelloAoPassage(p.reference, targetTranslation)
+          .then(text => {
+            setFetchedPassages(prev => ({ ...prev, [passageKey]: text }));
+          })
+          .catch(err => {
+            console.error('HelloAO Scripture Fetch Error:', err);
+            setFetchedPassages(prev => ({
+              ...prev,
+              [passageKey]: 'Could not load Scripture text. Please check your connection or consult your personal Bible.'
+            }));
+          })
+          .finally(() => {
+            setLoadingPassages(prev => ({ ...prev, [passageKey]: false }));
+          });
+      }
+    });
+  }, [currentItem, activePlan?.id, activeItemConfig?.passages, pref.bibleTranslation]);
+
   useEffect(() => {
     if (activePlan && activeItemConfig) {
       const passages = activeItemConfig.passages?.map(p => p.reference).join(', ');
@@ -598,31 +644,7 @@ export const App: React.FC = () => {
     });
   };
 
-  const togglePassageInline = async (pReference: string, idx: number, hasLocalText: boolean) => {
-    const nextState = !openPassageIndices[idx];
-    setOpenPassageIndices(prev => ({ ...prev, [idx]: nextState }));
 
-    if (nextState && activePlan) {
-      trackScriptureRead(activePlan.id, currentItem, pReference);
-    }
-
-    const passageKey = `${pReference}_BSB`;
-    if (nextState && !hasLocalText && !fetchedPassages[passageKey] && !loadingPassages[passageKey]) {
-      setLoadingPassages(prev => ({ ...prev, [passageKey]: true }));
-      try {
-        const text = await fetchHelloAoPassage(pReference, 'BSB');
-        setFetchedPassages(prev => ({ ...prev, [passageKey]: text }));
-      } catch (err) {
-        console.error('HelloAO Scripture Fetch Error:', err);
-        setFetchedPassages(prev => ({
-          ...prev,
-          [passageKey]: 'Could not load Scripture text. Please check your connection or consult your personal Bible.'
-        }));
-      } finally {
-        setLoadingPassages(prev => ({ ...prev, [passageKey]: false }));
-      }
-    }
-  };
 
   const handleRestartPlan = () => {
     if (!activePlan) return;
@@ -672,9 +694,8 @@ export const App: React.FC = () => {
 
   const getLessonShareDetails = () => {
     if (!activePlan || !activeItemConfig) return null;
-    const planUrl = localStorage.getItem(`active_plan_url_${activePlan.id}`) || `plans/${activePlan.id}.json`;
-    const fullUrl = planUrl.startsWith('http') ? planUrl : new URL(planUrl, window.location.origin).href;
-    const shareUrl = `${window.location.origin}${window.location.pathname}?plan=${encodeURIComponent(fullUrl)}&item=${currentItem}`;
+    // Use stable plan ID instead of file path — survives folder moves
+    const shareUrl = `${window.location.origin}${window.location.pathname}?plan=${encodeURIComponent(activePlan.id)}&item=${currentItem}`;
     
     const passages = activeItemConfig.passages?.map(p => p.reference).join(', ') || '';
     const rawContent = activeItemConfig.devotional?.content || '';
@@ -1119,12 +1140,14 @@ export const App: React.FC = () => {
                       onToggle={() => toggleSection('passages')}
                       isDimmed={shouldDimUI}
                     >
-                      <div className="passage-cards-grid" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                      <div className="passage-cards-grid" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                         {activeItemConfig.passages.map((p, idx) => {
-                          const isInlineOpen = !!openPassageIndices[idx];
-                          const passageKey = `${p.reference}_BSB`;
-                          const inlineText = p.text || fetchedPassages[passageKey];
-                          const isLoading = loadingPassages[passageKey];
+                          const translationMatch = p.text?.match(/\((NLT|BSB|NIV|ESV|KJV|WEB)\)/i);
+                          const detectedTranslation = translationMatch ? translationMatch[1].toUpperCase() : (pref.bibleTranslation || 'BSB');
+                          const passageKey = `${p.reference}_${detectedTranslation}`;
+                          const inlineText = p.text || fetchedPassages[passageKey] || fetchedPassages[`${p.reference}_BSB`];
+                          const isLoading = loadingPassages[passageKey] || loadingPassages[`${p.reference}_BSB`];
+                          const bibleUrl = buildBibleComUrl(p.reference, detectedTranslation as SupportedBibleTranslation, p.url);
 
                           return (
                             <div 
@@ -1134,86 +1157,85 @@ export const App: React.FC = () => {
                                 background: 'var(--bg-app)',
                                 border: '1px solid var(--border-glass)',
                                 borderRadius: '10px',
-                                padding: '12px 14px',
+                                padding: '14px 16px',
                                 display: 'flex',
                                 flexDirection: 'column',
-                                gap: '8px'
+                                gap: '10px'
                               }}
                             >
-                              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                  <Scroll size={16} style={{ color: 'var(--primary)' }} />
-                                  <span style={{ fontWeight: 600, fontSize: '0.98rem' }}>{p.reference}</span>
+                              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '8px' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', minWidth: 0 }}>
+                                  <Scroll size={16} style={{ color: 'var(--primary)', flexShrink: 0 }} />
+                                  <span style={{ fontWeight: 600, fontSize: '0.98rem', letterSpacing: '-0.01em' }}>{p.reference}</span>
                                 </div>
                                 <div
                                   style={{
                                     display: 'flex',
+                                    alignItems: 'center',
                                     gap: '6px',
+                                    flexShrink: 0,
                                     opacity: shouldDimUI ? 0.05 : 1,
                                     transition: 'opacity 0.3s ease'
                                   }}
                                 >
-                                  <button
-                                    className="btn btn-secondary"
-                                    onClick={() => togglePassageInline(p.reference, idx, !!p.text)}
-                                    style={{ fontSize: '0.78rem', padding: '4px 10px', borderRadius: '6px' }}
+                                  <span
+                                    style={{
+                                      fontSize: '0.72rem',
+                                      padding: '2px 8px',
+                                      borderRadius: '12px',
+                                      background: 'var(--primary-light)',
+                                      color: 'var(--primary)',
+                                      fontWeight: 600
+                                    }}
                                   >
-                                    {isInlineOpen ? 'Hide Text' : t('itemView.readInline')}
-                                  </button>
-                                  {(() => {
-                                    const selectedTranslation = pref.bibleTranslation || 'BSB';
-                                    const bibleUrl = buildBibleComUrl(p.reference, selectedTranslation, p.url);
-                                    if (!bibleUrl) return null;
-                                    return (
-                                      <a 
-                                        href={bibleUrl} 
-                                        target="_blank" 
-                                        rel="noopener noreferrer" 
-                                        className="btn btn-secondary"
-                                        style={{ fontSize: '0.78rem', padding: '4px 8px', borderRadius: '6px', display: 'inline-flex', alignItems: 'center' }}
-                                        title={`Open ${p.reference} on Bible.com (${selectedTranslation})`}
-                                        aria-label={`Open ${p.reference} on Bible.com in ${selectedTranslation}`}
-                                        onClick={() => {
-                                          if (activePlan) {
-                                            trackBibleLinkClicked(
-                                              activePlan.id,
-                                              currentItem,
-                                              p.reference,
-                                              selectedTranslation,
-                                              bibleUrl
-                                            );
-                                          }
-                                        }}
-                                      >
-                                        <ExternalLink size={13} />
-                                      </a>
-                                    );
-                                  })()}
+                                    {detectedTranslation}
+                                  </span>
+                                  {bibleUrl && (
+                                    <a 
+                                      href={bibleUrl} 
+                                      target="_blank" 
+                                      rel="noopener noreferrer" 
+                                      className="btn btn-secondary"
+                                      style={{ fontSize: '0.78rem', padding: '4px 8px', borderRadius: '6px', display: 'inline-flex', alignItems: 'center' }}
+                                      title={`Open ${p.reference} on Bible.com (${detectedTranslation})`}
+                                      aria-label={`Open ${p.reference} on Bible.com in ${detectedTranslation}`}
+                                      onClick={() => {
+                                        if (activePlan) {
+                                          trackBibleLinkClicked(
+                                            activePlan.id,
+                                            currentItem,
+                                            p.reference,
+                                            detectedTranslation,
+                                            bibleUrl
+                                          );
+                                        }
+                                      }}
+                                    >
+                                      <ExternalLink size={13} />
+                                    </a>
+                                  )}
                                 </div>
                               </div>
 
-                              {isInlineOpen && (
-                                <div 
-                                  className="bible-text-panel"
-                                  style={{
-                                    marginTop: '8px',
-                                    padding: '14px',
-                                    borderRadius: '8px',
-                                    background: 'var(--bg-card)',
-                                    border: '1px solid var(--border-glass)',
-                                    fontSize: '0.95rem',
-                                    lineHeight: 1.7
-                                  }}
-                                >
-                                  {isLoading ? (
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', fontSize: '0.88rem' }}>
-                                      <Loader2 size={16} className="animate-spin" /> Loading Scripture (BSB)...
-                                    </div>
-                                  ) : (
-                                    <ReactMarkdown>{inlineText}</ReactMarkdown>
-                                  )}
-                                </div>
-                              )}
+                              <div 
+                                className="bible-text-panel"
+                                style={{
+                                  padding: '12px 14px',
+                                  borderRadius: '8px',
+                                  background: 'var(--bg-card)',
+                                  border: '1px solid var(--border-glass)',
+                                  fontSize: '0.95rem',
+                                  lineHeight: 1.75
+                                }}
+                              >
+                                {isLoading ? (
+                                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', fontSize: '0.88rem' }}>
+                                    <Loader2 size={16} className="animate-spin" /> Loading Scripture ({detectedTranslation})...
+                                  </div>
+                                ) : (
+                                  <ReactMarkdown>{inlineText || 'Passage text not available.'}</ReactMarkdown>
+                                )}
+                              </div>
                             </div>
                           );
                         })}
