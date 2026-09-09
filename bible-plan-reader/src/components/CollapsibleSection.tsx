@@ -66,12 +66,21 @@ export const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({
           color: 'var(--text-main)',
           fontFamily: 'inherit',
           textAlign: 'left',
-          gap: '12px',
-          transition: 'background-color 0.15s ease, border-color 0.15s ease',
+          gap: isDimmed ? 0 : '12px',
+          transition: 'background-color 0.15s ease, border-color 0.15s ease, gap 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
           ...headerStyle
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minWidth: 0, flex: 1 }}>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: isDimmed ? 0 : '10px',
+            minWidth: 0,
+            flex: 1,
+            transition: 'gap 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
+          }}
+        >
           {icon && (
             <div
               style={{
@@ -79,7 +88,9 @@ export const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({
                 alignItems: 'center',
                 justifyContent: 'center',
                 color: accentColor || 'var(--primary)',
-                flexShrink: 0
+                flexShrink: 0,
+                marginRight: isDimmed ? '10px' : 0,
+                transition: 'margin-right 0.3s ease'
               }}
             >
               {icon}
@@ -91,10 +102,13 @@ export const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({
               fontSize: '1rem',
               color: 'var(--text-main)',
               letterSpacing: '-0.01em',
-              whiteSpace: 'nowrap',
+              whiteSpace: isDimmed ? 'normal' : 'nowrap',
               overflow: 'hidden',
               textOverflow: 'ellipsis',
-              opacity: 1  // Title text always fully visible
+              lineHeight: 1.35,
+              opacity: 1,  // Title text always fully visible
+              minWidth: 0,
+              flex: 1
             }}
           >
             {title}
@@ -103,14 +117,18 @@ export const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({
             <span
               style={{
                 fontSize: '0.72rem',
-                padding: '2px 8px',
+                padding: isDimmed ? '2px 0' : '2px 8px',
                 borderRadius: '12px',
                 background: 'var(--primary-light)',
                 color: 'var(--primary)',
                 fontWeight: 600,
                 flexShrink: 0,
-                opacity: isDimmed ? 0.05 : 1,  // 95% dimming
-                transition: 'opacity 0.3s ease'
+                maxWidth: isDimmed ? 0 : '200px',
+                opacity: isDimmed ? 0 : 1,
+                overflow: 'hidden',
+                whiteSpace: 'nowrap',
+                pointerEvents: isDimmed ? 'none' : 'auto',
+                transition: 'max-width 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, padding 0.3s ease'
               }}
             >
               {badge}
@@ -123,15 +141,17 @@ export const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            width: '28px',
+            width: isDimmed ? 0 : '28px',
             height: '28px',
             borderRadius: '50%',
             background: isOpen ? 'var(--primary-light)' : 'rgba(128, 128, 128, 0.08)',
             color: isOpen ? 'var(--primary)' : 'var(--text-muted)',
             transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
-            transition: 'transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s ease, opacity 0.3s ease',
+            transition: 'transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s ease, opacity 0.3s ease, width 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
             flexShrink: 0,
-            opacity: isDimmed ? 0.05 : 1  // 95% dimming
+            opacity: isDimmed ? 0 : 1,
+            overflow: 'hidden',
+            pointerEvents: isDimmed ? 'none' : 'auto'
           }}
         >
           <ChevronDown size={16} />

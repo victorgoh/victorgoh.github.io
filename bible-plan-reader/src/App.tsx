@@ -1145,7 +1145,14 @@ export const App: React.FC = () => {
                                   <Scroll size={16} style={{ color: 'var(--primary)' }} />
                                   <span style={{ fontWeight: 600, fontSize: '0.98rem' }}>{p.reference}</span>
                                 </div>
-                                <div style={{ display: 'flex', gap: '6px' }}>
+                                <div
+                                  style={{
+                                    display: 'flex',
+                                    gap: '6px',
+                                    opacity: shouldDimUI ? 0.05 : 1,
+                                    transition: 'opacity 0.3s ease'
+                                  }}
+                                >
                                   <button
                                     className="btn btn-secondary"
                                     onClick={() => togglePassageInline(p.reference, idx, !!p.text)}
