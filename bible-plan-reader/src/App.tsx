@@ -5,6 +5,7 @@ import { PlanSelector } from './components/PlanSelector';
 import TableOfContents from './components/TableOfContents';
 import CollapsibleSection from './components/CollapsibleSection';
 import PersonalNotesSection from './components/PersonalNotesSection';
+import ScriptureViewer from './components/ScriptureViewer';
 import { useInactivityDetection } from './hooks/useInactivityDetection';
 import { fetchHelloAoPassage } from './utils/helloAoBible';
 import { buildBibleComUrl, type SupportedBibleTranslation } from './utils/bibleUrl';
@@ -42,6 +43,8 @@ import {
   X,
   Share2,
   Trash2,
+  AlignLeft,
+  List,
   BookOpen,
   Clock,
   Eye,
@@ -244,6 +247,25 @@ export const App: React.FC = () => {
 
   // Determine if we should dim UI elements based on focus mode and activity
   const shouldDimUI = isFocusMode && !isActive;
+
+  const [scriptureViewMode, setScriptureViewMode] = useState<'paragraph' | 'verse'>(() => {
+    try {
+      const saved = localStorage.getItem('bible_plan_scripture_view_mode');
+      if (saved === 'verse' || saved === 'paragraph') return saved;
+    } catch {
+      // Fallback
+    }
+    return 'paragraph';
+  });
+
+  const handleToggleScriptureViewMode = (mode: 'paragraph' | 'verse') => {
+    setScriptureViewMode(mode);
+    try {
+      localStorage.setItem('bible_plan_scripture_view_mode', mode);
+    } catch {
+      // Ignore
+    }
+  };
 
   const toggleSection = (section: 'passages' | 'devotional' | 'prayers' | 'reflect' | 'practice' | 'notes') => {
     setSectionsOpen((prev) => {
@@ -1178,6 +1200,29 @@ export const App: React.FC = () => {
                                     transition: 'opacity 0.3s ease'
                                   }}
                                 >
+                                  <div className="scripture-view-toggle-group" role="group" aria-label="Scripture display mode">
+                                    <button
+                                      type="button"
+                                      className={`scripture-toggle-btn ${scriptureViewMode === 'paragraph' ? 'active' : ''}`}
+                                      onClick={() => handleToggleScriptureViewMode('paragraph')}
+                                      title="Paragraph mode"
+                                      aria-pressed={scriptureViewMode === 'paragraph'}
+                                    >
+                                      <AlignLeft size={13} />
+                                      <span>Paragraph</span>
+                                    </button>
+                                    <button
+                                      type="button"
+                                      className={`scripture-toggle-btn ${scriptureViewMode === 'verse' ? 'active' : ''}`}
+                                      onClick={() => handleToggleScriptureViewMode('verse')}
+                                      title="Verse by verse mode"
+                                      aria-pressed={scriptureViewMode === 'verse'}
+                                    >
+                                      <List size={13} />
+                                      <span>Verse</span>
+                                    </button>
+                                  </div>
+
                                   <span
                                     style={{
                                       fontSize: '0.72rem',
@@ -1220,12 +1265,12 @@ export const App: React.FC = () => {
                               <div 
                                 className="bible-text-panel"
                                 style={{
-                                  padding: '12px 14px',
+                                  padding: '14px 16px',
                                   borderRadius: '8px',
                                   background: 'var(--bg-card)',
                                   border: '1px solid var(--border-glass)',
-                                  fontSize: '0.95rem',
-                                  lineHeight: 1.75
+                                  borderLeftWidth: '3px',
+                                  borderLeftColor: 'var(--primary)'
                                 }}
                               >
                                 {isLoading ? (
@@ -1233,7 +1278,12 @@ export const App: React.FC = () => {
                                     <Loader2 size={16} className="animate-spin" /> Loading Scripture ({detectedTranslation})...
                                   </div>
                                 ) : (
-                                  <ReactMarkdown>{inlineText || 'Passage text not available.'}</ReactMarkdown>
+                                  <ScriptureViewer
+                                    text={inlineText || ''}
+                                    reference={p.reference}
+                                    translation={detectedTranslation}
+                                    viewMode={scriptureViewMode}
+                                  />
                                 )}
                               </div>
                             </div>
