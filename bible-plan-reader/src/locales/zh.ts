@@ -51,6 +51,8 @@ export const zh = {
     shareWithFriend: '与朋友分享',
     shareHelpTooltip: '将此直接链接分享给朋友或小组，让大家一起跟进和阅读今天的每日内容。',
     shareCopied: '链接已复制!',
+    print: '打印',
+    printTooltip: '打印简洁学习资料',
     markComplete: '标记完成',
     completed: '已完成',
     actionSteps: '实践',

@@ -41,6 +41,8 @@ export const en = {
     share: 'Share',
     shareHelpTooltip: 'Share this with your group on WhatsApp or other apps so everyone can read and prepare.',
     shareCopied: 'Copied!',
+    print: 'Print',
+    printTooltip: 'Print clean study document',
     markComplete: 'Mark Done',
     completed: 'Done',
     actionSteps: 'Practice & Action',

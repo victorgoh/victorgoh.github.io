@@ -51,6 +51,8 @@ export const ms = {
     shareWithFriend: 'Kongsi dengan Rakan',
     shareHelpTooltip: 'Kongsi pautan terus ini dengan rakan atau kumpulan kecil anda supaya semua orang dapat membaca sesi hari ini bersama-sama.',
     shareCopied: 'Pautan disalin!',
+    print: 'Cetak',
+    printTooltip: 'Cetak bahan pembelajaran',
     markComplete: 'Tanda Selesai',
     completed: 'Selesai',
     actionSteps: 'Praktik',

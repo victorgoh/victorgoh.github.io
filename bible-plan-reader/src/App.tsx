@@ -6,6 +6,8 @@ import TableOfContents from './components/TableOfContents';
 import CollapsibleSection from './components/CollapsibleSection';
 import PersonalNotesSection from './components/PersonalNotesSection';
 import ScriptureViewer from './components/ScriptureViewer';
+import BiblePassagePopover from './components/BiblePassagePopover';
+import InteractiveMarkdown from './components/InteractiveMarkdown';
 import { useInactivityDetection } from './hooks/useInactivityDetection';
 import { fetchHelloAoPassage } from './utils/helloAoBible';
 import { buildBibleComUrl, type SupportedBibleTranslation } from './utils/bibleUrl';
@@ -20,7 +22,6 @@ import {
   trackSettingsChanged,
   trackPageView
 } from './utils/analytics';
-import ReactMarkdown from 'react-markdown';
 import {
   Moon,
   Sun,
@@ -42,6 +43,7 @@ import {
   Compass,
   X,
   Share2,
+  Printer,
   Trash2,
   AlignLeft,
   List,
@@ -189,6 +191,9 @@ export const App: React.FC = () => {
   
   // Focus mode state for dimming UI elements during reading (default ON, persisted)
   const [isFocusMode, setIsFocusMode] = useState<boolean>(() => loadLocalState<boolean>('focus_mode', true));
+
+  // Active Bible reference for popover / floating sheet preview
+  const [popoverReference, setPopoverReference] = useState<string | null>(null);
 
   // Persist focus mode changes to localStorage
   useEffect(() => {
@@ -794,6 +799,21 @@ export const App: React.FC = () => {
     }
   };
 
+  const handlePrint = () => {
+    // Expand all sections so the entire study material prints cleanly
+    setSectionsOpen({
+      passages: true,
+      devotional: true,
+      prayers: true,
+      reflect: true,
+      practice: true,
+      notes: true
+    });
+    setTimeout(() => {
+      window.print();
+    }, 150);
+  };
+
   const handleShareNote = async (note: string) => {
     const details = getLessonShareDetails();
     if (!details || !activePlan || !activeItemConfig) return;
@@ -1003,6 +1023,19 @@ export const App: React.FC = () => {
             <main className="main-content-card">
               {activeItemConfig ? (
                 <>
+                  {/* Print-only Document Header */}
+                  {activePlan && (
+                    <div className="print-only-header" aria-hidden="true">
+                      <div className="print-plan-title">{activePlan.title}</div>
+                      <div className="print-session-meta">
+                        <div className="print-session-badge">
+                          Session {currentItem} of {totalItems}
+                        </div>
+                        <h1 className="print-session-title">{activeItemConfig.title}</h1>
+                      </div>
+                    </div>
+                  )}
+
                   <div className="item-view-header" style={{ position: 'relative' }}>
                     <div className="item-view-title" style={{ width: '100%' }}>
                       {/* Row 1: item counter + reading time + section controls + share actions */}
@@ -1103,6 +1136,25 @@ export const App: React.FC = () => {
 
                         {/* Right group: Quick share actions */}
                         <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                          <button
+                            className="icon-btn"
+                            onClick={handlePrint}
+                            title={t('itemView.printTooltip') || 'Print study document'}
+                            aria-label={t('itemView.print') || 'Print'}
+                            style={{
+                              width: '32px',
+                              height: '32px',
+                              padding: 0,
+                              borderRadius: '8px',
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              cursor: 'pointer'
+                            }}
+                          >
+                            <Printer size={15} />
+                          </button>
+
                           <button
                             className="btn btn-whatsapp"
                             onClick={handleShareWhatsApp}
@@ -1286,7 +1338,7 @@ export const App: React.FC = () => {
                       isDimmed={shouldDimUI}
                     >
                       <div className="devotional-content" style={{ lineHeight: 1.75 }}>
-                        <ReactMarkdown>{activeItemConfig.devotional.content}</ReactMarkdown>
+                        <InteractiveMarkdown content={activeItemConfig.devotional.content} onReferenceClick={setPopoverReference} />
                       </div>
                     </CollapsibleSection>
                   )}
@@ -1323,7 +1375,7 @@ export const App: React.FC = () => {
                               </div>
                             )}
                             <div className="markdown-inline-content">
-                              <ReactMarkdown>{pr.description}</ReactMarkdown>
+                              <InteractiveMarkdown content={pr.description} onReferenceClick={setPopoverReference} />
                             </div>
                           </div>
                         ))}
@@ -1360,7 +1412,7 @@ export const App: React.FC = () => {
                           >
                             <span style={{ fontWeight: 700, color: 'var(--primary)', flexShrink: 0 }}>{idx + 1}.</span>
                             <div className="markdown-inline-content">
-                              <ReactMarkdown>{q}</ReactMarkdown>
+                              <InteractiveMarkdown content={q} onReferenceClick={setPopoverReference} />
                             </div>
                           </div>
                         ))}
@@ -1398,7 +1450,7 @@ export const App: React.FC = () => {
                           >
                             <span style={{ fontWeight: 700, color: 'var(--accent)', flexShrink: 0 }}>•</span>
                             <div className="markdown-inline-content">
-                              <ReactMarkdown>{act}</ReactMarkdown>
+                              <InteractiveMarkdown content={act} onReferenceClick={setPopoverReference} />
                             </div>
                           </div>
                         ))}
@@ -1450,6 +1502,23 @@ export const App: React.FC = () => {
                         <strong style={{ color: 'var(--text-main)' }}>Share:</strong> Send to your group or friends
                       </div>
                       <div style={{ display: 'flex', gap: '8px' }}>
+                        <button
+                          className="btn btn-secondary"
+                          onClick={handlePrint}
+                          title={t('itemView.printTooltip') || 'Print clean study document'}
+                          aria-label={t('itemView.print') || 'Print'}
+                          style={{ 
+                            fontSize: '0.82rem', 
+                            padding: '6px 12px', 
+                            borderRadius: '8px', 
+                            display: 'inline-flex', 
+                            alignItems: 'center', 
+                            gap: '6px' 
+                          }}
+                        >
+                          <Printer size={15} />
+                          <span>{t('itemView.print') || 'Print'}</span>
+                        </button>
                         <button
                           className="btn btn-whatsapp"
                           onClick={handleShareWhatsApp}
@@ -1779,6 +1848,18 @@ export const App: React.FC = () => {
           }}
         />
       )}
+
+      {/* Bible Passage Popover / Floating Panel */}
+      <BiblePassagePopover
+        reference={popoverReference}
+        translation={pref.bibleTranslation || 'BSB'}
+        onClose={() => setPopoverReference(null)}
+        onOpenExternal={(ref, url) => {
+          if (activePlan) {
+            trackBibleLinkClicked(activePlan.id, currentItem, ref, pref.bibleTranslation || 'BSB', url);
+          }
+        }}
+      />
     </div>
   );
 };

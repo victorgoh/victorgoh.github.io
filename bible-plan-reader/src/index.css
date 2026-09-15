@@ -1795,3 +1795,479 @@ body {
   }
 }
 
+/* Interactive Bible Reference Chips in Markdown Content */
+.interactive-markdown-wrapper {
+  display: block;
+}
+
+.bible-ref-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: var(--primary-light);
+  color: var(--primary);
+  border: 1px solid rgba(var(--primary-rgb, 59, 130, 246), 0.25);
+  padding: 1px 7px;
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.9em;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  vertical-align: baseline;
+  transition: all 0.15s ease;
+  margin: 0 2px;
+  text-decoration: none;
+}
+
+.bible-ref-chip:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.bible-ref-chip:active {
+  transform: scale(0.96);
+}
+
+.bible-ref-chip-icon {
+  font-size: 0.85em;
+  line-height: 1;
+}
+
+/* Bible Passage Popover / Floating Sheet */
+.bible-popover-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  animation: fadeInOverlay 0.2s ease forwards;
+}
+
+.bible-popover-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 80vh;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  animation: slideUpSheet 0.26s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.bible-popover-drag-bar {
+  width: 36px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--text-muted);
+  opacity: 0.4;
+  margin: 10px auto 4px auto;
+}
+
+.bible-popover-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border-glass);
+  gap: 10px;
+}
+
+.bible-popover-title-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  flex: 1;
+}
+
+.bible-popover-icon {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.bible-popover-ref {
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+  color: var(--text-main);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bible-popover-trans-badge {
+  font-size: 0.72rem;
+  padding: 2px 7px;
+  border-radius: 10px;
+  background: var(--primary-light);
+  color: var(--primary);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.bible-popover-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.bible-popover-external-btn {
+  font-size: 0.78rem !important;
+  padding: 5px 10px !important;
+  border-radius: 6px !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.bible-popover-close-btn {
+  background: rgba(128, 128, 128, 0.1);
+  border: none;
+  color: var(--text-muted);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.bible-popover-close-btn:hover {
+  background: rgba(128, 128, 128, 0.2);
+  color: var(--text-main);
+}
+
+.bible-popover-body {
+  padding: 14px 16px 24px 16px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  flex: 1;
+}
+
+.bible-popover-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 36px 0;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.bible-popover-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 28px 16px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.bible-popover-error p {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.bible-popover-error-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.bible-popover-empty {
+  text-align: center;
+  padding: 32px 0;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+@media (min-width: 641px) {
+  .bible-popover-overlay {
+    align-items: center;
+    padding: 20px;
+  }
+
+  .bible-popover-panel {
+    max-width: 580px;
+    border-radius: 16px;
+    animation: popInModal 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .bible-popover-drag-bar {
+    display: none;
+  }
+
+  .bible-popover-header {
+    padding: 14px 20px;
+  }
+
+  .bible-popover-body {
+    padding: 16px 20px 24px 20px;
+  }
+}
+
+@keyframes fadeInOverlay {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUpSheet {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes popInModal {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* ==========================================================================
+   Print Document Stylesheet - Clean, distraction-free reading printout
+   ========================================================================== */
+
+.print-only-header {
+  display: none !important;
+}
+
+@media print {
+  @page {
+    margin: 1.6cm 1.4cm;
+    size: portrait;
+  }
+
+  /* Reset body, background, and typography for paper */
+  html, body {
+    background: #ffffff !important;
+    color: #111111 !important;
+    font-size: 11pt !important;
+    line-height: 1.6 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Expand container to full page width */
+  .app-container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .content-grid,
+  .main-content-card {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Document Title & Session Header on printout */
+  .print-only-header {
+    display: block !important;
+    margin-bottom: 22px !important;
+    padding-bottom: 14px !important;
+    border-bottom: 2px solid #111111 !important;
+  }
+
+  .print-plan-title {
+    font-size: 11pt !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    color: #4b5563 !important;
+    font-weight: 600 !important;
+    margin-bottom: 4px !important;
+  }
+
+  .print-session-meta {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2px !important;
+  }
+
+  .print-session-badge {
+    font-size: 10pt !important;
+    color: #374151 !important;
+    font-weight: 600 !important;
+  }
+
+  .print-session-title {
+    font-size: 20pt !important;
+    font-weight: 800 !important;
+    color: #000000 !important;
+    margin: 2px 0 0 0 !important;
+    line-height: 1.25 !important;
+  }
+
+  /* Hide all app chrome, navigation bars, buttons, and popups */
+  .header-glass,
+  .reader-navigation,
+  .item-view-header,
+  .passage-actions,
+  .scripture-view-toggle-group,
+  .scripture-verse-copy-btn,
+  .bible-popover-overlay,
+  .plan-selector-overlay,
+  .toc-drawer,
+  .share-card,
+  .btn-whatsapp,
+  .btn-secondary,
+  .btn-primary,
+  .btn,
+  button,
+  .icon-btn,
+  .collapsible-header-btn > div:last-child,
+  .timer-container,
+  .timer-widget {
+    display: none !important;
+  }
+
+  /* Expand all Collapsible Sections for complete study sheet */
+  .collapsible-section-card {
+    background: #ffffff !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 8px !important;
+    margin-bottom: 18px !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .collapsible-section-card div[role="region"] {
+    display: block !important;
+    grid-template-rows: 1fr !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .collapsible-section-card div[role="region"] > div {
+    overflow: visible !important;
+    height: auto !important;
+  }
+
+  .collapsible-header-btn {
+    background: #f9fafb !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    padding: 10px 14px !important;
+    color: #111111 !important;
+    cursor: default !important;
+    pointer-events: none !important;
+    display: flex !important;
+  }
+
+  .collapsible-header-btn span {
+    color: #111111 !important;
+    font-weight: 700 !important;
+  }
+
+  .collapsible-content-body {
+    padding: 14px !important;
+    opacity: 1 !important;
+  }
+
+  /* Scripture Cards */
+  .passage-card {
+    background: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 6px !important;
+    padding: 12px 14px !important;
+    margin-bottom: 14px !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .passage-card-header {
+    border-bottom: 1px solid #f3f4f6 !important;
+    padding-bottom: 6px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .passage-card-header span {
+    color: #111111 !important;
+    font-weight: 700 !important;
+  }
+
+  .bible-text-panel {
+    background: transparent !important;
+    border: none !important;
+    border-left: 3px solid #4b5563 !important;
+    padding: 4px 10px !important;
+    margin-top: 6px !important;
+  }
+
+  .scripture-list-row {
+    border-bottom: 1px solid #f3f4f6 !important;
+    padding: 6px 0 !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .scripture-list-badge {
+    background: #f3f4f6 !important;
+    color: #1f2937 !important;
+    border: 1px solid #d1d5db !important;
+    font-weight: 700 !important;
+  }
+
+  .scripture-list-text,
+  .scripture-paragraph-view {
+    color: #111111 !important;
+    font-size: 10.5pt !important;
+    line-height: 1.65 !important;
+  }
+
+  /* Devotional reading layout */
+  .devotional-content {
+    color: #111111 !important;
+    font-size: 10.5pt !important;
+    line-height: 1.7 !important;
+  }
+
+  .devotional-content h1,
+  .devotional-content h2,
+  .devotional-content h3 {
+    color: #111111 !important;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Convert interactive Bible reference chips to plain printed citations */
+  .bible-ref-chip {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    color: #111111 !important;
+    font-weight: 700 !important;
+    cursor: default !important;
+    display: inline !important;
+    text-decoration: none !important;
+  }
+
+  .bible-ref-chip-icon {
+    display: none !important;
+  }
+
+  /* Ensure full opacity across all content elements */
+  * {
+    opacity: 1 !important;
+  }
+}
+
