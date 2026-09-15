@@ -1175,17 +1175,8 @@ export const App: React.FC = () => {
                             <div 
                               key={idx} 
                               className="passage-card"
-                              style={{
-                                background: 'var(--bg-app)',
-                                border: '1px solid var(--border-glass)',
-                                borderRadius: '10px',
-                                padding: '14px 16px',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                gap: '10px'
-                              }}
                             >
-                              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '8px' }}>
+                              <div className="passage-card-header">
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', minWidth: 0 }}>
                                   <Scroll size={16} style={{ color: 'var(--primary)', flexShrink: 0 }} />
                                   <span style={{ fontWeight: 600, fontSize: '0.98rem', letterSpacing: '-0.01em' }}>{p.reference}</span>
@@ -1262,17 +1253,7 @@ export const App: React.FC = () => {
                                 </div>
                               </div>
 
-                              <div 
-                                className="bible-text-panel"
-                                style={{
-                                  padding: '14px 16px',
-                                  borderRadius: '8px',
-                                  background: 'var(--bg-card)',
-                                  border: '1px solid var(--border-glass)',
-                                  borderLeftWidth: '3px',
-                                  borderLeftColor: 'var(--primary)'
-                                }}
-                              >
+                              <div className="bible-text-panel">
                                 {isLoading ? (
                                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', fontSize: '0.88rem' }}>
                                     <Loader2 size={16} className="animate-spin" /> Loading Scripture ({detectedTranslation})...

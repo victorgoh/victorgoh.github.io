@@ -127,6 +127,12 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .app-container {
+    padding: 12px 8px 100px 8px;
+  }
+}
+
 /* Header styling - Horizontal row layout to save space */
 .header-glass {
   background: var(--bg-card);
@@ -704,12 +710,37 @@ body {
   flex: 1;
 }
 
+.passage-card {
+  background: var(--bg-app);
+  border: 1px solid var(--border-glass);
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: padding var(--transition-fast);
+}
+
+.passage-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .passage-card {
+    padding: 10px 8px;
+    gap: 8px;
+    border-radius: 8px;
+  }
+}
+
 .bible-text-panel {
   background: var(--bg-card);
-  border-left: 3px solid var(--primary);
   border: 1px solid var(--border-glass);
-  border-left-width: 3px;
-  border-left-color: var(--primary);
+  border-left: 3px solid var(--primary);
   padding: 14px 18px;
   border-radius: var(--border-radius-sm);
   margin-top: 8px;
@@ -718,6 +749,18 @@ body {
   line-height: 1.85;
   color: var(--text-main);
   transition: all var(--transition-fast);
+}
+
+@media (max-width: 640px) {
+  .bible-text-panel {
+    padding: 6px 4px 6px 8px;
+    background: transparent;
+    border: none;
+    border-left: 3px solid var(--primary);
+    border-radius: 0;
+    margin-top: 4px;
+    line-height: 1.6;
+  }
 }
 
 .bible-text-panel p {
@@ -883,7 +926,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  padding: 8px 10px;
+  padding: 8px 34px 8px 10px;
   border-radius: 8px;
   border-bottom: 1px solid var(--border-glass);
   transition: background var(--transition-fast);
@@ -937,24 +980,98 @@ body {
 }
 
 .scripture-verse-copy-btn {
-  flex-shrink: 0;
-  background: transparent;
-  border: none;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
   color: var(--text-muted);
   cursor: pointer;
-  padding: 4px;
+  padding: 4px 6px;
   border-radius: 4px;
   opacity: 0;
-  transition: opacity var(--transition-fast), color var(--transition-fast);
+  transition: opacity var(--transition-fast), color var(--transition-fast), background var(--transition-fast);
+  z-index: 1;
 }
 
-.scripture-list-row:hover .scripture-verse-copy-btn {
-  opacity: 0.8;
+.scripture-list-row:hover .scripture-verse-copy-btn,
+.scripture-verse-copy-btn:focus-visible,
+.scripture-verse-copy-btn.copied {
+  opacity: 0.85;
+}
+
+.scripture-verse-copy-btn.copied {
+  opacity: 1 !important;
+  color: #10b981;
 }
 
 .scripture-verse-copy-btn:hover {
   opacity: 1;
   color: var(--primary);
+}
+
+@media (hover: none) {
+  .scripture-verse-copy-btn {
+    opacity: 0.25;
+  }
+  .scripture-list-row:active .scripture-verse-copy-btn {
+    opacity: 0.9;
+  }
+}
+
+/* Mobile optimizations for Scripture Viewer (e.g. iPhone 17 Pro, 16 Pro, 15 Pro) */
+@media (max-width: 640px) {
+  .scripture-list-view {
+    gap: 4px;
+  }
+
+  .scripture-list-row {
+    display: flow-root;
+    position: relative;
+    padding: 6px 26px 6px 2px;
+    gap: 0;
+    border-radius: 6px;
+  }
+
+  .scripture-list-gutter {
+    float: left;
+    min-width: unset;
+    padding-top: 0;
+    margin-right: 6px;
+    margin-top: 1px;
+    margin-bottom: 2px;
+  }
+
+  .scripture-list-badge {
+    font-size: 0.70rem;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 6px;
+    min-width: 18px;
+    line-height: 1.35;
+    display: inline-block;
+  }
+
+  .scripture-list-body {
+    display: block;
+  }
+
+  .scripture-list-text {
+    font-size: 0.98rem;
+    line-height: 1.58;
+  }
+
+  .scripture-verse-copy-btn {
+    top: 4px;
+    right: 2px;
+    padding: 3px 5px;
+  }
+
+  .scripture-paragraph-view {
+    font-size: 0.98rem;
+    line-height: 1.62;
+    text-align: left;
+  }
 }
 
 /* Devotional block */
@@ -1665,3 +1782,16 @@ body {
 .collapsible-section-card:hover {
   border-color: rgba(128, 128, 128, 0.2);
 }
+
+/* Collapsible content body responsive padding */
+.collapsible-content-body {
+  padding: 16px 18px 20px 18px;
+  opacity: 1;
+}
+
+@media (max-width: 640px) {
+  .collapsible-content-body {
+    padding: 10px 8px 14px 8px;
+  }
+}
+

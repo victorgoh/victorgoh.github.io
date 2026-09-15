@@ -271,7 +271,7 @@ export const ScriptureViewer: React.FC<ScriptureViewerProps> = ({
               </div>
               <button
                 type="button"
-                className="scripture-verse-copy-btn"
+                className={`scripture-verse-copy-btn ${copiedVerse === v.verseNumber ? 'copied' : ''}`}
                 onClick={() => handleCopyVerse(v.verseNumber, v.text)}
                 title="Copy verse"
                 aria-label={`Copy verse ${v.verseNumber}`}

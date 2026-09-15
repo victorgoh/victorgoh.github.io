@@ -175,7 +175,7 @@ export const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({
             minHeight: 0
           }}
         >
-          <div style={{ padding: '16px 18px 20px 18px', opacity: 1 }}>
+          <div className="collapsible-content-body">
             {children}
           </div>
         </div>
