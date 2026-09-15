@@ -35,7 +35,6 @@ export const InteractiveMarkdown: React.FC<InteractiveMarkdownProps> = ({
                       onReferenceClick(ref);
                     }
                   }}
-                  title={`Tap to read ${ref}`}
                   aria-label={`Read Bible passage ${ref}`}
                 >
                   <span className="bible-ref-chip-icon" aria-hidden="true">📖</span>

@@ -1807,7 +1807,7 @@ body {
   background: var(--primary-light);
   color: var(--primary);
   border: 1px solid rgba(var(--primary-rgb, 59, 130, 246), 0.25);
-  padding: 1px 7px;
+  padding: 2px 8px;
   border-radius: 6px;
   font-family: var(--font-sans);
   font-size: 0.9em;
@@ -1815,21 +1815,46 @@ body {
   line-height: 1.4;
   cursor: pointer;
   vertical-align: baseline;
-  transition: all 0.15s ease;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.1s ease;
   margin: 0 2px;
   text-decoration: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+  position: relative;
 }
 
-.bible-ref-chip:hover {
-  background: var(--primary);
-  color: #fff;
-  border-color: var(--primary);
-  transform: translateY(-1px);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+/* Expanded invisible touch hit area for reliable single-tap on mobile */
+.bible-ref-chip::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  bottom: -6px;
+  left: -4px;
+  right: -4px;
+}
+
+/* Restrict hover effects strictly to pointer devices (mouse) so mobile doesn't emulate hover */
+@media (hover: hover) and (pointer: fine) {
+  .bible-ref-chip:hover {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .bible-ref-chip:active {
-  transform: scale(0.96);
+  transform: scale(0.95);
+  background: var(--primary);
+  color: #fff;
+}
+
+.bible-ref-chip-icon,
+.bible-ref-chip-text {
+  pointer-events: none;
 }
 
 .bible-ref-chip-icon {
