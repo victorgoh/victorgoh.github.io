@@ -81,9 +81,9 @@ const PersonalNotesSection: React.FC<PersonalNotesSectionProps> = ({
   };
 
   return (
-    <div className="collapsible-section" style={{ marginTop: '16px' }}>
+    <div id="section-notes" className="collapsible-section personal-notes-section" style={{ marginTop: '16px' }}>
       <div 
-        className="collapsible-header"
+        className="collapsible-header personal-notes-header"
         onClick={onToggle}
         style={{
           display: 'flex',
@@ -103,11 +103,11 @@ const PersonalNotesSection: React.FC<PersonalNotesSectionProps> = ({
           <h3 style={{ margin: 0, fontSize: '1rem', fontWeight: 600, color: 'var(--text-main)' }}>
             Personal Note
           </h3>
-          <p style={{ margin: '4px 0 0 0', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+          <p className="personal-notes-subtitle" style={{ margin: '4px 0 0 0', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
             {note ? 'Tap to edit your note' : 'Add personal reflection or insight'}
           </p>
         </div>
-        <span style={{ 
+        <span className="personal-notes-counter" style={{ 
           fontSize: '0.8rem', 
           padding: '4px 8px',
           background: note ? 'var(--accent)' : 'var(--bg-app)',
@@ -120,7 +120,7 @@ const PersonalNotesSection: React.FC<PersonalNotesSectionProps> = ({
 
       {isOpen && (
         <div 
-          className="collapsible-content"
+          className="collapsible-content personal-notes-screen-content"
           style={{
             padding: '12px 16px',
             borderTop: '1px solid var(--border-glass)',
@@ -128,6 +128,7 @@ const PersonalNotesSection: React.FC<PersonalNotesSectionProps> = ({
           }}
         >
           <textarea
+            className="personal-notes-textarea"
             value={note}
             onChange={handleNoteChange}
             onKeyDown={handleKeyDown}
@@ -149,6 +150,7 @@ const PersonalNotesSection: React.FC<PersonalNotesSectionProps> = ({
           />
           
           <div 
+            className="personal-notes-actions-bar"
             style={{ 
               display: 'flex', 
               justifyContent: 'space-between', 
@@ -217,6 +219,17 @@ const PersonalNotesSection: React.FC<PersonalNotesSectionProps> = ({
           </div>
         </div>
       )}
+
+      {/* Print-only Note Display (Clean and distraction-free) */}
+      <div className="personal-notes-print-content" aria-hidden="true">
+        {note.trim() ? (
+          <div className="personal-notes-print-text">
+            {note}
+          </div>
+        ) : (
+          <div className="personal-notes-print-empty" />
+        )}
+      </div>
     </div>
   );
 };

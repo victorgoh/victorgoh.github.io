@@ -1027,12 +1027,7 @@ export const App: React.FC = () => {
                   {activePlan && (
                     <div className="print-only-header" aria-hidden="true">
                       <div className="print-plan-title">{activePlan.title}</div>
-                      <div className="print-session-meta">
-                        <div className="print-session-badge">
-                          Session {currentItem} of {totalItems}
-                        </div>
-                        <h1 className="print-session-title">{activeItemConfig.title}</h1>
-                      </div>
+                      <h1 className="print-session-title">{activeItemConfig.title}</h1>
                     </div>
                   )}
 
@@ -1358,6 +1353,7 @@ export const App: React.FC = () => {
                         {activeItemConfig.prayers.map((pr, idx) => (
                           <div
                             key={idx}
+                            className="prayer-card"
                             style={{
                               background: 'var(--bg-app)',
                               border: '1px solid var(--border-glass)',
@@ -1398,6 +1394,7 @@ export const App: React.FC = () => {
                         {activeItemConfig.reflect.map((q, idx) => (
                           <div 
                             key={idx}
+                            className="reflect-card"
                             style={{
                               background: 'var(--bg-app)',
                               border: '1px solid var(--border-glass)',
@@ -1436,6 +1433,7 @@ export const App: React.FC = () => {
                         {activeItemConfig.practice.map((act, idx) => (
                           <div 
                             key={idx}
+                            className="practice-card"
                             style={{
                               background: 'var(--bg-app)',
                               border: '1px solid var(--border-glass)',
@@ -1484,6 +1482,7 @@ export const App: React.FC = () => {
                   >
                     {/* Quick Share Bar */}
                     <div 
+                      className="quick-share-bar"
                       style={{
                         background: 'var(--bg-card)',
                         border: '1px solid var(--border-glass)',
