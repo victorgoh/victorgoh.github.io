@@ -362,8 +362,24 @@ export const App: React.FC = () => {
         const cacheBustUrl = fullUrl.includes('?') ? `${fullUrl}&_t=${Date.now()}` : `${fullUrl}?_t=${Date.now()}`;
 
         return fetch(cacheBustUrl, { cache: 'no-cache' })
-          .then((res) => {
-            if (!res.ok) throw new Error('Failed to load plan from URL parameter');
+          .then(async (res) => {
+            if (!res.ok) {
+              // If the direct URL failed (e.g. file was moved to a sub-folder), resolve by ID from the plan registry
+              const slug = decodedPlanParam.split('/').pop()?.replace('.json', '');
+              if (slug) {
+                const resolved = await resolvePlanUrl(slug, repositoryUrl);
+                if (resolved && resolved !== planUrl) {
+                  const freshTargetUrl = resolved.startsWith('http') || resolved.startsWith('/') ? resolved : `/${resolved}`;
+                  const freshBust = freshTargetUrl.includes('?') ? `${freshTargetUrl}&_t=${Date.now()}` : `${freshTargetUrl}?_t=${Date.now()}`;
+                  const retryRes = await fetch(freshBust, { cache: 'no-cache' });
+                  if (retryRes.ok) {
+                    planUrl = resolved;
+                    return retryRes.json();
+                  }
+                }
+              }
+              throw new Error('Failed to load plan from URL parameter');
+            }
             return res.json();
           })
           .then((rawPlan) => {
@@ -410,7 +426,19 @@ export const App: React.FC = () => {
         ? `${targetUrl}&_t=${Date.now()}` 
         : `${targetUrl}?_t=${Date.now()}`;
 
-      const res = await fetch(cacheBustUrl, { cache: 'no-cache' });
+      let res = await fetch(cacheBustUrl, { cache: 'no-cache' });
+      if (!res.ok) {
+        // Fall back to resolving via plan registry in case the plan was moved to a sub-folder
+        const resolved = await resolvePlanUrl(planId, repositoryUrl);
+        if (resolved) {
+          const freshTargetUrl = resolved.startsWith('http') || resolved.startsWith('/') ? resolved : `/${resolved}`;
+          const freshBust = freshTargetUrl.includes('?') ? `${freshTargetUrl}&_t=${Date.now()}` : `${freshTargetUrl}?_t=${Date.now()}`;
+          res = await fetch(freshBust, { cache: 'no-cache' });
+          if (res.ok) {
+            localStorage.setItem(`active_plan_url_${planId}`, resolved);
+          }
+        }
+      }
       if (!res.ok) throw new Error('Failed to fetch plan from network');
       
       const freshPlanRaw = await res.json();

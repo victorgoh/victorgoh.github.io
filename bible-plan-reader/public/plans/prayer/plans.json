@@ -1,0 +1,66 @@
+{
+  "customization": {
+    "name": "Prayer Lessons"
+  },
+  "plans": [
+    {
+      "id": "prayers-of-paul",
+      "title": "Apostolic Prayers: Cultivating Wisdom, Power, and Love",
+      "description": "A 12-session devotional study on prayer, spiritual formation, and kingdom growth drawn from the transformative prayers of Paul.",
+      "type": "reading",
+      "totalItems": 12,
+      "url": "plans/prayer/prayers-of-paul.json",
+      "creator": "Prayer Lessons",
+      "version": "1.1",
+      "created": "2026-08-24",
+      "lastUpdated": "2026-09-18",
+      "tags": [
+        "Prayer",
+        "Spiritual Formation",
+        "Devotional",
+        "Discipleship",
+        "Bible Study"
+      ],
+      "featured": true
+    },
+    {
+      "id": "prayers-of-paul-essentials",
+      "title": "Apostolic Prayers (Essentials Edition)",
+      "description": "A 12-session practical prayer journey in clear, accessible everyday language, exploring the life-changing prayers of the Apostle Paul for spiritual wisdom, inner strength, and love.",
+      "type": "reading",
+      "totalItems": 12,
+      "url": "plans/prayer/prayers-of-paul-essentials.json",
+      "creator": "Prayer Lessons",
+      "version": "1.1",
+      "created": "2026-08-25",
+      "lastUpdated": "2026-09-18",
+      "tags": [
+        "Prayer",
+        "Spiritual Formation",
+        "Devotional",
+        "Discipleship",
+        "Essentials"
+      ],
+      "featured": false
+    },
+    {
+      "id": "with-christ-in-school-of-prayer",
+      "title": "With Christ in the School of Prayer",
+      "description": "A 31-day devotional reading plan exploring the secrets, spiritual power, and sacred ministry of prevailing prayer. Adapted and updated from Andrew Murray's original classic work.",
+      "type": "reading",
+      "totalItems": 31,
+      "url": "plans/prayer/with-christ-in-school-of-prayer.json",
+      "creator": "Prayer Lessons",
+      "version": "1.1",
+      "created": "2026-08-12",
+      "lastUpdated": "2026-09-18",
+      "tags": [
+        "Prayer",
+        "Devotional",
+        "Classic",
+        "Spiritual Growth"
+      ],
+      "featured": false
+    }
+  ]
+}

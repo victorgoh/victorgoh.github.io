@@ -1104,7 +1104,7 @@ body {
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--text-main);
-  white-space: pre-line;
+  white-space: normal;
 }
 
 @media (min-width: 600px) {
@@ -1798,6 +1798,94 @@ body {
 /* Interactive Bible Reference Chips in Markdown Content */
 .interactive-markdown-wrapper {
   display: block;
+}
+
+.interactive-markdown-wrapper p {
+  margin: 0 0 12px 0;
+  line-height: 1.7;
+}
+
+.interactive-markdown-wrapper p:last-child {
+  margin-bottom: 0;
+}
+
+.interactive-markdown-wrapper h1,
+.interactive-markdown-wrapper h2,
+.interactive-markdown-wrapper h3,
+.interactive-markdown-wrapper h4 {
+  color: var(--text-main);
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+  line-height: 1.35;
+}
+
+.interactive-markdown-wrapper h1:first-child,
+.interactive-markdown-wrapper h2:first-child,
+.interactive-markdown-wrapper h3:first-child,
+.interactive-markdown-wrapper h4:first-child {
+  margin-top: 0;
+}
+
+.interactive-markdown-wrapper h1 { font-size: 1.35rem; }
+.interactive-markdown-wrapper h2 { font-size: 1.22rem; }
+.interactive-markdown-wrapper h3 { font-size: 1.12rem; }
+.interactive-markdown-wrapper h4 { font-size: 1.02rem; }
+
+/* Lists & Sub-lists alignment */
+.interactive-markdown-wrapper ul,
+.interactive-markdown-wrapper ol {
+  margin: 8px 0 14px 0;
+  padding-left: 24px;
+}
+
+.interactive-markdown-wrapper li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+.interactive-markdown-wrapper li:last-child {
+  margin-bottom: 0;
+}
+
+/* Ensure paragraph inside list item aligns smoothly with bullet/number */
+.interactive-markdown-wrapper li > p {
+  margin: 0 0 6px 0;
+}
+
+.interactive-markdown-wrapper li > p:last-child {
+  margin-bottom: 0;
+}
+
+/* Sub-lists nested inside a list item */
+.interactive-markdown-wrapper li > ul,
+.interactive-markdown-wrapper li > ol {
+  margin: 6px 0 8px 0;
+  padding-left: 20px;
+}
+
+/* Blockquote styling with clean border and background */
+.interactive-markdown-wrapper blockquote {
+  margin: 12px 0;
+  padding: 10px 16px;
+  border-left: 4px solid var(--primary);
+  background: rgba(var(--primary-rgb, 59, 130, 246), 0.08);
+  border-radius: 0 var(--border-radius-sm, 8px) var(--border-radius-sm, 8px) 0;
+  color: var(--text-main);
+  font-style: italic;
+}
+
+.interactive-markdown-wrapper blockquote p {
+  margin: 0 0 6px 0;
+}
+
+.interactive-markdown-wrapper blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.interactive-markdown-wrapper hr {
+  border: none;
+  border-top: 1px solid var(--border-glass);
+  margin: 20px 0;
 }
 
 .bible-ref-chip {

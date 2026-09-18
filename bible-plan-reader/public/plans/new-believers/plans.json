@@ -1,0 +1,45 @@
+{
+  "customization": {
+    "name": "New Believers"
+  },
+  "plans": [
+    {
+      "id": "new-life-in-christ",
+      "title": "New Life in Christ (Interactive Small Group Study)",
+      "description": "A 10-session interactive discipleship guide structured for small group discussion, with key passage studies, personal prayers, and actionable steps. Compiled by Jeff Tan, updated by Victor Goh.",
+      "type": "reading",
+      "totalItems": 10,
+      "url": "plans/new-believers/new-life-in-christ.json",
+      "creator": "SET FGA",
+      "version": "1.0",
+      "created": "2026-09-18",
+      "lastUpdated": "2026-09-18",
+      "tags": [
+        "New Believers",
+        "Discipleship",
+        "Small Group",
+        "Foundations"
+      ],
+      "featured": true
+    },
+    {
+      "id": "new-life-in-christ-booklet",
+      "title": "New Life in Christ (Complete Booklet Edition)",
+      "description": "The complete 10-chapter discipleship manual with comprehensive expositions, all sub-points, S.O.A.P. devotional models, and memory verses. Compiled by Jeff Tan, updated by Victor Goh.",
+      "type": "reading",
+      "totalItems": 10,
+      "url": "plans/new-believers/new-life-in-christ-booklet.json",
+      "creator": "SET FGA",
+      "version": "1.0",
+      "created": "2026-09-18",
+      "lastUpdated": "2026-09-18",
+      "tags": [
+        "New Believers",
+        "Discipleship",
+        "Booklet",
+        "Comprehensive"
+      ],
+      "featured": false
+    }
+  ]
+}
