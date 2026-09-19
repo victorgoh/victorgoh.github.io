@@ -1,6 +1,6 @@
 export const en = {
-  appTitle: 'EQUIP: Rooted and Formed',
-  subtitle: 'Rooted and Formed in Christ',
+  appTitle: 'EQUIP: Formed Together',
+  subtitle: 'Growing into the likeness of Christ, side by side.',
   tabs: {
     readReflect: 'Read & Reflect',
     prayer: 'Prayers'

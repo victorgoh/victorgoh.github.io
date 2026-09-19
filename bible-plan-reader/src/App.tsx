@@ -996,36 +996,51 @@ export const App: React.FC = () => {
             <Compass size={48} strokeWidth={2.2} />
           </div>
           <h2>Welcome to {customizationInfo ? customizationInfo.name : t('appTitle')}</h2>
-          <p style={{ margin: '0 0 4px 0', color: 'var(--text-muted)', fontSize: '0.92rem' }}>
-            Select a reading plan to:
+          <p style={{ margin: '0 0 6px 0', color: 'var(--text-muted)', fontSize: '0.92rem' }}>
+            Choose a plan with your group to:
           </p>
 
           <ul style={{ 
             listStyle: 'none', 
-            padding: '14px 18px', 
+            padding: '16px 18px', 
             margin: '4px 0 14px 0', 
             display: 'flex', 
             flexDirection: 'column', 
-            gap: '10px', 
+            gap: '12px', 
             textAlign: 'left', 
-            maxWidth: '390px', 
+            maxWidth: '420px', 
             width: '100%',
             background: 'var(--bg-card)',
             border: '1px solid var(--border-glass)',
             borderRadius: '14px',
             boxSizing: 'border-box'
           }}>
-            <li style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '0.9rem', color: 'var(--text-main)' }}>
-              <span style={{ color: 'var(--primary)', display: 'inline-flex', flexShrink: 0 }}><Check size={16} strokeWidth={2.5} /></span>
-              <span>Guide your personal quiet time & reflection</span>
+            <li style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '0.9rem', color: 'var(--text-main)' }}>
+              <span style={{ color: 'var(--primary)', display: 'inline-flex', flexShrink: 0, marginTop: '2px' }}><Check size={16} strokeWidth={2.5} /></span>
+              <div>
+                <strong>Spark honest conversations</strong>
+                <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '2px', lineHeight: 1.35 }}>
+                  Move beyond surface-level catchups with Scripture-guided reflection and discussion.
+                </div>
+              </div>
             </li>
-            <li style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '0.9rem', color: 'var(--text-main)' }}>
-              <span style={{ color: 'var(--primary)', display: 'inline-flex', flexShrink: 0 }}><Check size={16} strokeWidth={2.5} /></span>
-              <span>Facilitate small group discussions</span>
+            <li style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '0.9rem', color: 'var(--text-main)' }}>
+              <span style={{ color: 'var(--primary)', display: 'inline-flex', flexShrink: 0, marginTop: '2px' }}><Check size={16} strokeWidth={2.5} /></span>
+              <div>
+                <strong>Put faith into practice</strong>
+                <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '2px', lineHeight: 1.35 }}>
+                  Challenge each other with weekly spiritual habits and real-life action steps.
+                </div>
+              </div>
             </li>
-            <li style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '0.9rem', color: 'var(--text-main)' }}>
-              <span style={{ color: 'var(--primary)', display: 'inline-flex', flexShrink: 0 }}><Check size={16} strokeWidth={2.5} /></span>
-              <span>Learn, pray, and grow together in community</span>
+            <li style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '0.9rem', color: 'var(--text-main)' }}>
+              <span style={{ color: 'var(--primary)', display: 'inline-flex', flexShrink: 0, marginTop: '2px' }}><Check size={16} strokeWidth={2.5} /></span>
+              <div>
+                <strong>Cheer each other on</strong>
+                <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '2px', lineHeight: 1.35 }}>
+                  Pray together and encourage one another as you follow Jesus day by day.
+                </div>
+              </div>
             </li>
           </ul>
           
