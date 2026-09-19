@@ -93,7 +93,7 @@ Being saved does not mean instant perfection. We will still battle sin; however,
 
 Take heart in **Philippians 1:6**: *He who began a good work in you will carry it on to completion until the day of Christ Jesus.*
 
-> “Faith is not the absence of doubt; faith is anchoring our soul to God's unchanging facts when our feelings waver.” — Discipleship Ministry""",
+> “Faith is not the absence of doubt; faith is anchoring our soul to God's unchanging facts when our feelings waver.”""",
         "prayer": "Father in heaven, thank You for the incredible gift of eternal life through Jesus Christ. When doubts or fluctuating emotions try to shake my confidence, remind me that my salvation does not rest on my performance, but on the finished work of Jesus on the cross and the unfailing promises of Your Word. Cleanse me from every sin, deepen my trust, and help me walk boldly as Your beloved child today. In Jesus' name, Amen.",
         "reflect": [
             "What doubts, fears, or misunderstandings did you wrestle with after first accepting Jesus Christ?",
@@ -137,7 +137,7 @@ Paul reveals that all Scripture is profitable for four transformative works:
 - **Study it diligently (**2 Timothy 2:15**):** Handle the Word of truth with reverence and precision.
 - **Hold fast to it (**2 Timothy 1:13**):** Guard sound doctrine in a culture of shifting values.
 
-> “The Bible was not given merely to increase our knowledge, but to transform our character and equip our lives.” — Discipleship Ministry""",
+> “The Bible was not given merely to increase our knowledge, but to transform our character and equip our lives.”""",
         "prayer": "Lord God, thank You for breathing Your life into the Holy Scriptures and giving me an infallible lamp for my feet. Forgive me for the times I have neglected Your Word or sought worldly counsel before seeking Your truth. Give me a ravenous hunger for Scripture. Teach me, correct me, and mold me into a doer of Your Word who honors You in thought, word, and deed. In Jesus' name, Amen.",
         "reflect": [
             "Which of the four metaphors of Scripture (Lamp, Bread, Discerning Sword, Weapon of Warfare) resonates most with your current season?",
@@ -187,7 +187,7 @@ Scripture honestly identifies obstacles that clog our communion with God:
 - **Unconfessed sin (**Isaiah 59:2; Psalm 66:18**):** Known disobedience breaks relational fellowship.
 - **Unforgiveness (**Matthew 6:14–15**):** Harboring resentment shuts down the flow of God's grace in our own hearts.
 
-> “Prayer does not change God's purpose; prayer aligns our heart with God's power and unleashes His will on earth.” — Discipleship Ministry""",
+> “Prayer does not change God's purpose; prayer aligns our heart with God's power and unleashes His will on earth.”""",
         "prayer": "Our Father in heaven, hallowed be Your holy name. Thank You that through Jesus Christ, the veil is torn and I can step boldly into Your presence. Teach me to pray with faith, humility, and persistence. Forgive my sins, search my heart, and release me from any bitterness or unforgiveness I have held against others. Guard my steps today, lead me away from temptation, and let Your kingdom be advanced in my home, workplace, and community. In Jesus' mighty name, Amen.",
         "reflect": [
             "Which element of the A.C.T.S. pattern (Adoration, Confession, Thanksgiving, Supplication) comes most naturally to you, and which is most neglected?",
@@ -240,7 +240,7 @@ One of the most practical tools for daily devotions is the **S.O.A.P.** method:
 - **Application:** Age and fatigue are no excuse to stop serving God. I will not say *"let the young people do it."* I will volunteer for the outreach ministry with joy!
 - **Prayer:** *Lord, give me Caleb's spirit. Let me hold onto Your vision with passion as long as I live. Amen!*
 
-> “Quiet Time is not an item to check off a religious checklist; it is showing up for a daily love relationship with your Creator.” — Discipleship Ministry""",
+> “Quiet Time is not an item to check off a religious checklist; it is showing up for a daily love relationship with your Creator.”""",
         "prayer": "Loving Father, thank You that You desire intimate daily fellowship with me. Forgive me for the rushed mornings and cluttered days that crowd You out. Help me establish a faithful 21-day rhythm of meeting with You. Give me ears to hear Your voice in Scripture, a humble heart to apply Your truth, and eyes to see where You are working in my life today. In Jesus' name, Amen.",
         "reflect": [
             "What time of day and physical location could realistically serve as your undistracted 'Quiet Time' sanctuary?",
@@ -293,7 +293,7 @@ When temptation strikes, remember three eternal facts:
 6. **Walk with Godly Believers (**Proverbs 13:20**):** Surround yourself with friends whose faith and purity inspire you.
 7. **Seek Accountability (**Galatians 6:1**):** If you are trapped in a repeating cycle, break the secrecy. Confide in a pastor, cell leader, or mature believer who can pray and walk with you.
 
-> “Enduring temptation is not about grit and willpower; it is about keeping our eyes glued to the greater beauty and satisfaction found in Jesus Christ.” — Discipleship Ministry""",
+> “Enduring temptation is not about grit and willpower; it is about keeping our eyes glued to the greater beauty and satisfaction found in Jesus Christ.”""",
         "prayer": "Holy God, You are pure, righteous, and faithful. Thank You that You never leave me defenseless when temptation attacks. Forgive me for the times I have lingered near sin or trusted in my own strength. Open my eyes to see the escape route You provide in every trial. Give me the holy courage of Joseph to run from evil, a mind renewed by Your Word, and the wisdom to walk in honest accountability with brothers and sisters in Christ. In Jesus' victorious name, Amen.",
         "reflect": [
             "In which of the three areas (lust of the flesh, lust of the eyes, pride of life) do you find yourself most vulnerable to spiritual attacks?",
@@ -349,7 +349,7 @@ In a small group, you experience:
 - **Inspiration from real-life testimonies** of God's work in others
 - **Spiritual protection** against deception and backsliding
 
-> “We cannot love Jesus and despise His Bride. God did not call us to be solitary stones, but to be built together into a living temple.” — Discipleship Ministry""",
+> “We cannot love Jesus and despise His Bride. God did not call us to be solitary stones, but to be built together into a living temple.”""",
         "prayer": "Father of our Lord Jesus Christ, thank You for adopting me into Your royal family and making me a living member of the Body of Christ. Deliver me from the temptation to isolate myself or live as a spectator. Give me a deep love for Your church, grace to forgive when others let me down, and a servant's heart to minister to those around me. Plant me firmly in a loving small group where I can grow, serve, and glorify Your name. In Jesus' name, Amen.",
         "reflect": [
             "Have you ever experienced a season where you withdrew from fellowship—what happened to your spiritual passion during that time?",
@@ -401,7 +401,7 @@ Money is often the greatest competitor for the human heart (**Matthew 6:24**). G
 2. **Cheerful, Voluntary Giving:** God does not want reluctant giving extracted under guilt. *"God loves a cheerful giver"* (giving with a joyful, willing heart).
 3. **Divine Sufficiency:** As you honor God, He promises to make all grace abound so that you have all sufficiency in all things for every good work.
 
-> “You cannot outgive God. When we hold our resources with open hands, God has room to place His blessings into our palms.” — Discipleship Ministry""",
+> “You cannot outgive God. When we hold our resources with open hands, God has room to place His blessings into our palms.”""",
         "prayer": "Lord God, Maker of heaven and earth, I confess that everything I possess belongs to You. Forgive me for the times I have lived like an anxious owner rather than a faithful steward. Break the spirit of greed, fear, and materialism off my life. Teach me to manage my time, energy, and finances with kingdom purpose. Give me the joy of a cheerful giver who honors You with the first-fruits of my labor and blesses those in need. In Jesus' name, Amen.",
         "reflect": [
             "How does shifting from the mindset of 'Owner' to 'Steward' change the way you view your paycheck, your calendar, and your possessions?",
@@ -456,7 +456,7 @@ Instituted on the night Jesus was betrayed (**1 Corinthians 11:23–26**), the L
 2. **Oneness & Unity (**1 Corinthians 10:17**):** Celebrating that we are one family in Christ.
 3. **Reverent Self-Examination (**1 Corinthians 11:28–29**):** Pausing to examine our hearts, confessing known sin, and reconciling with any brother or sister before eating.
 
-> “Water baptism is our public declaration that the old life is buried; Holy Communion is our ongoing proclamation that Christ is alive and returning soon.” — Discipleship Ministry""",
+> “Water baptism is our public declaration that the old life is buried; Holy Communion is our ongoing proclamation that Christ is alive and returning soon.”""",
         "prayer": "Lord Jesus, thank You for instituting these holy ordinances to anchor my faith. Thank You that when I was baptized, my old life was buried and I was raised up to walk in brand-new life. Whenever I partake of the bread and the cup, flood my heart with awe at the price You paid on Calvary. Cleanse my heart from any hidden fault, heal any division between me and my brothers and sisters, and keep me faithful until the day You return. In Your holy name, Amen.",
         "reflect": [
             "If you have already been water-baptized, what did that public moment mean to you? If not, what is holding you back from taking this step of obedience?",
@@ -504,7 +504,7 @@ Receiving the Spirit is an act of simple, expectant faith:
 - **Feelings of Inadequacy:** The Spirit is a free gift of grace, not a prize earned by spiritual maturity.
 - **Unforgiveness & Sin:** Cleanse your heart by confessing known sin and releasing any bitterness (**Psalm 66:18; Mark 11:25**).
 
-> “The Christian life is not difficult; it is impossible without the Holy Spirit. He is the divine wind in our sails.” — Discipleship Ministry""",
+> “The Christian life is not difficult; it is impossible without the Holy Spirit. He is the divine wind in our sails.”""",
         "prayer": "Heavenly Father, I thank You that You have not left me to live the Christian life in my own fragile strength. I hunger for all that You have promised. Lord Jesus, baptize me afresh with the Holy Spirit and with fire. Fill me to overflowing. Release Your spiritual gifts in my life, grant me boldness to witness for Christ, and produce the beautiful fruit of love, joy, and peace in my daily walk. By faith, I receive Your supernatural empowerment right now. In Jesus' mighty name, Amen.",
         "reflect": [
             "Why did Jesus command the early disciples to wait for the Holy Spirit before launching out into global mission?",
@@ -557,7 +557,7 @@ Effective witnessing flows naturally through authentic relationships:
 - Keep the relationship warm, kind, and loving. An angry response shuts the door; unconditional kindness keeps the door wide open.
 - Never stop praying for them!
 
-> “Evangelism is not high-pressure salesmanship; it is introducing your friends to the greatest Friend you have ever known.” — Discipleship Ministry""",
+> “Evangelism is not high-pressure salesmanship; it is introducing your friends to the greatest Friend you have ever known.”""",
         "prayer": "Lord of the harvest, thank You for sending someone into my life to share the Good News of Jesus with me. Fill my heart with Your compassion for the lost. Strip away my fear of man, my self-consciousness, and my hesitation. Give me eyes to see the people around me through Your love. Open doors of conversation in my home, workplace, and neighborhood, and give me the wisdom and gentleness to point people to the Savior. In Jesus' name, Amen.",
         "reflect": [
             "Who was the person God used to first share the Gospel with you, and what about their life or words touched your heart?",

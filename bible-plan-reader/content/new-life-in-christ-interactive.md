@@ -75,7 +75,7 @@ Being saved does not mean instant perfection. We will still battle sin; however,
 
 Take heart in **Philippians 1:6**: *He who began a good work in you will carry it on to completion until the day of Christ Jesus.*
 
-> “Faith is not the absence of doubt; faith is anchoring our soul to God's unchanging facts when our feelings waver.” — Discipleship Ministry
+> “Faith is not the absence of doubt; faith is anchoring our soul to God's unchanging facts when our feelings waver.”
 
 ### 3. Personal Prayer
 
@@ -127,7 +127,7 @@ Paul reveals that all Scripture is profitable for four transformative works:
 - **Study it diligently (**2 Timothy 2:15**):** Handle the Word of truth with reverence and precision.
 - **Hold fast to it (**2 Timothy 1:13**):** Guard sound doctrine in a culture of shifting values.
 
-> “The Bible was not given merely to increase our knowledge, but to transform our character and equip our lives.” — Discipleship Ministry
+> “The Bible was not given merely to increase our knowledge, but to transform our character and equip our lives.”
 
 ### 3. Personal Prayer
 
@@ -185,7 +185,7 @@ Scripture honestly identifies obstacles that clog our communion with God:
 - **Unconfessed sin (**Isaiah 59:2; Psalm 66:18**):** Known disobedience breaks relational fellowship.
 - **Unforgiveness (**Matthew 6:14–15**):** Harboring resentment shuts down the flow of God's grace in our own hearts.
 
-> “Prayer does not change God's purpose; prayer aligns our heart with God's power and unleashes His will on earth.” — Discipleship Ministry
+> “Prayer does not change God's purpose; prayer aligns our heart with God's power and unleashes His will on earth.”
 
 ### 3. Personal Prayer
 
@@ -246,7 +246,7 @@ One of the most practical tools for daily devotions is the **S.O.A.P.** method:
 - **Application:** Age and fatigue are no excuse to stop serving God. I will not say *"let the young people do it."* I will volunteer for the outreach ministry with joy!
 - **Prayer:** *Lord, give me Caleb's spirit. Let me hold onto Your vision with passion as long as I live. Amen!*
 
-> “Quiet Time is not an item to check off a religious checklist; it is showing up for a daily love relationship with your Creator.” — Discipleship Ministry
+> “Quiet Time is not an item to check off a religious checklist; it is showing up for a daily love relationship with your Creator.”
 
 ### 3. Personal Prayer
 
@@ -307,7 +307,7 @@ When temptation strikes, remember three eternal facts:
 6. **Walk with Godly Believers (**Proverbs 13:20**):** Surround yourself with friends whose faith and purity inspire you.
 7. **Seek Accountability (**Galatians 6:1**):** If you are trapped in a repeating cycle, break the secrecy. Confide in a pastor, cell leader, or mature believer who can pray and walk with you.
 
-> “Enduring temptation is not about grit and willpower; it is about keeping our eyes glued to the greater beauty and satisfaction found in Jesus Christ.” — Discipleship Ministry
+> “Enduring temptation is not about grit and willpower; it is about keeping our eyes glued to the greater beauty and satisfaction found in Jesus Christ.”
 
 ### 3. Personal Prayer
 
@@ -371,7 +371,7 @@ In a small group, you experience:
 - **Inspiration from real-life testimonies** of God's work in others
 - **Spiritual protection** against deception and backsliding
 
-> “We cannot love Jesus and despise His Bride. God did not call us to be solitary stones, but to be built together into a living temple.” — Discipleship Ministry
+> “We cannot love Jesus and despise His Bride. God did not call us to be solitary stones, but to be built together into a living temple.”
 
 ### 3. Personal Prayer
 
@@ -431,7 +431,7 @@ Money is often the greatest competitor for the human heart (**Matthew 6:24**). G
 2. **Cheerful, Voluntary Giving:** God does not want reluctant giving extracted under guilt. *"God loves a cheerful giver"* (giving with a joyful, willing heart).
 3. **Divine Sufficiency:** As you honor God, He promises to make all grace abound so that you have all sufficiency in all things for every good work.
 
-> “You cannot outgive God. When we hold our resources with open hands, God has room to place His blessings into our palms.” — Discipleship Ministry
+> “You cannot outgive God. When we hold our resources with open hands, God has room to place His blessings into our palms.”
 
 ### 3. Personal Prayer
 
@@ -494,7 +494,7 @@ Instituted on the night Jesus was betrayed (**1 Corinthians 11:23–26**), the L
 2. **Oneness & Unity (**1 Corinthians 10:17**):** Celebrating that we are one family in Christ.
 3. **Reverent Self-Examination (**1 Corinthians 11:28–29**):** Pausing to examine our hearts, confessing known sin, and reconciling with any brother or sister before eating.
 
-> “Water baptism is our public declaration that the old life is buried; Holy Communion is our ongoing proclamation that Christ is alive and returning soon.” — Discipleship Ministry
+> “Water baptism is our public declaration that the old life is buried; Holy Communion is our ongoing proclamation that Christ is alive and returning soon.”
 
 ### 3. Personal Prayer
 
@@ -550,7 +550,7 @@ Receiving the Spirit is an act of simple, expectant faith:
 - **Feelings of Inadequacy:** The Spirit is a free gift of grace, not a prize earned by spiritual maturity.
 - **Unforgiveness & Sin:** Cleanse your heart by confessing known sin and releasing any bitterness (**Psalm 66:18; Mark 11:25**).
 
-> “The Christian life is not difficult; it is impossible without the Holy Spirit. He is the divine wind in our sails.” — Discipleship Ministry
+> “The Christian life is not difficult; it is impossible without the Holy Spirit. He is the divine wind in our sails.”
 
 ### 3. Personal Prayer
 
@@ -611,7 +611,7 @@ Effective witnessing flows naturally through authentic relationships:
 - Keep the relationship warm, kind, and loving. An angry response shuts the door; unconditional kindness keeps the door wide open.
 - Never stop praying for them!
 
-> “Evangelism is not high-pressure salesmanship; it is introducing your friends to the greatest Friend you have ever known.” — Discipleship Ministry
+> “Evangelism is not high-pressure salesmanship; it is introducing your friends to the greatest Friend you have ever known.”
 
 ### 3. Personal Prayer
 
