@@ -311,7 +311,7 @@ print(f"Wrote {os.path.join(NEW_BELIEVERS_DIR, 'plans.json')}")
 print("\n--- 5. Generating Root public/plans.json ---")
 root_manifest = {
     "customization": {
-        "name": "EQUIP: Rooted and Formed",
+        "name": "EQUIP: Formed Together",
         "website": "",
         "email": ""
     },

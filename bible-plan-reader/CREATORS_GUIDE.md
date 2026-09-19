@@ -1,6 +1,6 @@
 # Content Creator's Guide & Sample Curriculum Templates
 
-This guide is designed for pastors, ministry leaders, writers, and content creators. It explains how to structure your devotional and discipleship plans for **EQUIP: Rooted and Formed**, details mandatory vs. optional sections, and provides sample templates you can copy, edit, and convert using our AI Assistant Prompt.
+This guide is designed for pastors, ministry leaders, writers, and content creators. It explains how to structure your devotional and discipleship plans for **EQUIP: Formed Together**, details mandatory vs. optional sections, and provides sample templates you can copy, edit, and convert using our AI Assistant Prompt.
 
 ---
 
@@ -77,7 +77,7 @@ _Father in heaven, enlarge my heart today. Forgive me for when my prayers become
 Pastors and creators can copy and paste raw sermon transcripts, outlines, or study notes into ChatGPT, Claude, or Gemini along with this system prompt to get a valid plan JSON file:
 
 ````markdown
-You are a structural data formatting assistant for the "EQUIP: Rooted and Formed" Bible Plan Reader app.
+You are a structural data formatting assistant for the "EQUIP: Formed Together" Bible Plan Reader app.
 Convert the provided study outline into a strict JSON file matching the following schema.
 
 Rules:

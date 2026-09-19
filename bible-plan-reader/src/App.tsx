@@ -638,8 +638,9 @@ export const App: React.FC = () => {
       document.title = activePlan.title;
       trackPageView(window.location.pathname + window.location.search, activePlan.title);
     } else {
-      document.title = 'EQUIP: Rooted and Formed';
-      trackPageView(window.location.pathname + window.location.search, 'EQUIP: Rooted and Formed');
+      const fallbackTitle = customizationInfo ? customizationInfo.name : t('appTitle');
+      document.title = fallbackTitle;
+      trackPageView(window.location.pathname + window.location.search, fallbackTitle);
     }
   }, [activePlan, activeItemConfig, currentItem]);
 

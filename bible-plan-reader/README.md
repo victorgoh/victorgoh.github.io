@@ -1,4 +1,4 @@
-# EQUIP: Rooted and Formed
+# EQUIP: Formed Together
 
 A premium, lightweight, responsive Single Page Application (SPA) designed for churches, discipleship groups, and Christian ministries to host, explore, and share structured Bible reading plans, prayer guides, and leadership formation journeys.
 
@@ -67,7 +67,7 @@ Located in `public/plans.json` (and mirrored to `dist/plans.json`). It acts as t
 ```json
 {
   "customization": {
-    "name": "EQUIP: Rooted and Formed",
+    "name": "EQUIP: Formed Together",
     "website": "https://yourchurch.org",
     "email": "info@yourchurch.org"
   },
