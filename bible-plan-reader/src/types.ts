@@ -66,6 +66,7 @@ export interface UserPlanMetadata {
   startDate: string; // ISO date string
   progress: number[]; // Completed days
   completedItems?: Record<number, boolean>;
+  lastReadItem?: number;
 }
 
 export interface UserNotes {

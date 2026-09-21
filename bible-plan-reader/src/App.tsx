@@ -101,6 +101,24 @@ export const migratePlanSchema = (plan: any): Plan => {
   return plan;
 };
 
+export const getInitialItemForPlan = (
+  plan: Plan,
+  metadata: UserPlanMetadata | null,
+  overrideItem?: number | null
+): number => {
+  if (overrideItem && overrideItem >= 1 && overrideItem <= plan.items.length) {
+    return overrideItem;
+  }
+  if (metadata?.lastReadItem && metadata.lastReadItem >= 1 && metadata.lastReadItem <= plan.items.length) {
+    return metadata.lastReadItem;
+  }
+  if (metadata?.progress && metadata.progress.length > 0) {
+    const maxCompleted = Math.max(...metadata.progress);
+    return maxCompleted < plan.items.length ? maxCompleted + 1 : plan.items.length;
+  }
+  return 1;
+};
+
 export const App: React.FC = () => {
   const CACHE_VERSION = 'v1.6';
   try {
@@ -169,11 +187,30 @@ export const App: React.FC = () => {
   const [currentItem, setCurrentItem] = useState<number>(() => {
     const params = new URLSearchParams(window.location.search);
     const sessionParam = params.get('session') || params.get('item');
+    const planParam = params.get('plan');
+    const activeId = localStorage.getItem('active_plan_id');
+
+    let parsed: number | null = null;
     if (sessionParam) {
-      const parsed = parseInt(sessionParam);
-      if (!isNaN(parsed) && parsed > 0) return parsed;
+      const val = parseInt(sessionParam, 10);
+      if (!isNaN(val) && val > 0) parsed = val;
     }
-    return 1;
+
+    if (activeId) {
+      const cached = localStorage.getItem(`cached_plan_${activeId}`);
+      if (cached) {
+        try {
+          const plan = migratePlanSchema(JSON.parse(cached));
+          const meta = loadLocalState<UserPlanMetadata | null>(`plan_metadata_${activeId}`, null);
+          const overrideItem = (!planParam || planParam === activeId) ? parsed : null;
+          return getInitialItemForPlan(plan, meta, overrideItem);
+        } catch (e) {
+          console.error(e);
+        }
+      }
+    }
+
+    return parsed || 1;
   });
   
   const [shareStatus, setShareStatus] = useState<string | null>(null);
@@ -203,16 +240,20 @@ export const App: React.FC = () => {
   // Inactivity detection for focus mode
   const isActive = useInactivityDetection(5000); // 5 seconds of inactivity
 
-  const updateItemUrl = (itemNumber: number, mode: 'push' | 'replace' = 'push') => {
+  const updateItemUrl = useCallback((itemNumber: number, mode: 'push' | 'replace' = 'push', planId?: string) => {
     const url = new URL(window.location.href);
     url.searchParams.delete('session');
     url.searchParams.set('item', String(itemNumber));
+    const targetPlanId = planId || activePlan?.id;
+    if (targetPlanId) {
+      url.searchParams.set('plan', targetPlanId);
+    }
     window.history[mode === 'push' ? 'pushState' : 'replaceState'](
-      { item: itemNumber },
+      { item: itemNumber, plan: targetPlanId },
       '',
       url
     );
-  };
+  }, [activePlan?.id]);
 
   const navigateToItem = (itemNumber: number, options?: { history?: 'push' | 'replace' | 'none'; scroll?: boolean }) => {
     if (!activePlan || itemNumber < 1 || itemNumber > activePlan.items.length) return;
@@ -398,12 +439,18 @@ export const App: React.FC = () => {
             setPlanMetadata(savedMeta);
             if (savedMeta.startDate) setStartDate(new Date(savedMeta.startDate));
 
+            let parsedSession: number | null = null;
             if (sessionParam) {
-              const parsedSession = parseInt(sessionParam);
-              if (!isNaN(parsedSession) && parsedSession > 0) {
-                setCurrentItem(parsedSession);
+              const val = parseInt(sessionParam, 10);
+              if (!isNaN(val) && val > 0) {
+                parsedSession = val;
               }
             }
+            const targetItem = getInitialItemForPlan(planData, savedMeta, parsedSession);
+            savedMeta.lastReadItem = targetItem;
+            setPlanMetadata(savedMeta);
+            setCurrentItem(targetItem);
+            updateItemUrl(targetItem, 'replace', planData.id);
           });
       }).catch((err) => {
         console.error('Error fetching plan from URL query param:', err);
@@ -477,12 +524,36 @@ export const App: React.FC = () => {
 
   useEffect(() => {
     const handlePopState = () => {
-      if (!activePlan) return;
       const params = new URLSearchParams(window.location.search);
+      const planParam = params.get('plan');
       const itemParam = params.get('item') || params.get('session');
+
+      let currentActivePlan = activePlan;
+
+      if (planParam && activePlan && planParam !== activePlan.id) {
+        const cached = localStorage.getItem(`cached_plan_${planParam}`);
+        if (cached) {
+          try {
+            const planData = migratePlanSchema(JSON.parse(cached));
+            const savedMeta = loadLocalState<UserPlanMetadata>(`plan_metadata_${planData.id}`, {
+              startDate: new Date().toISOString(),
+              progress: [],
+              completedItems: {}
+            });
+            setActivePlan(planData);
+            setPlanMetadata(savedMeta);
+            localStorage.setItem('active_plan_id', planData.id);
+            currentActivePlan = planData;
+          } catch (e) {
+            console.error(e);
+          }
+        }
+      }
+
+      if (!currentActivePlan) return;
       const parsedItem = itemParam ? parseInt(itemParam, 10) : NaN;
 
-      if (!isNaN(parsedItem) && parsedItem >= 1 && parsedItem <= activePlan.items.length) {
+      if (!isNaN(parsedItem) && parsedItem >= 1 && parsedItem <= currentActivePlan.items.length) {
         setCurrentItem(parsedItem);
         window.scrollTo({ top: 0, behavior: 'auto' });
       }
@@ -530,28 +601,20 @@ export const App: React.FC = () => {
     document.documentElement.classList.add(`size-${pref.fontSize || 'medium'}`);
   }, [pref.fontSize]);
 
+  // Persist currentItem as lastReadItem in plan_metadata whenever it changes
   useEffect(() => {
-    if (activePlan) {
-      const params = new URLSearchParams(window.location.search);
-      const sessionParam = params.get('session') || params.get('item');
-      
-      if (sessionParam) {
-        const parsed = parseInt(sessionParam);
-        if (!isNaN(parsed) && parsed > 0 && parsed <= activePlan.items.length) {
-          setCurrentItem(parsed);
-          return;
-        }
+    if (!activePlan || !currentItem) return;
+    setPlanMetadata((prev) => {
+      if (prev.lastReadItem === currentItem) return prev;
+      const updated: UserPlanMetadata = { ...prev, lastReadItem: currentItem };
+      try {
+        localStorage.setItem(`plan_metadata_${activePlan.id}`, JSON.stringify(updated));
+      } catch (e) {
+        console.warn('Failed to save plan metadata to localStorage', e);
       }
-
-      if (planMetadata.progress && planMetadata.progress.length > 0) {
-        const maxCompleted = Math.max(...planMetadata.progress);
-        const nextItem = maxCompleted < activePlan.items.length ? maxCompleted + 1 : activePlan.items.length;
-        setCurrentItem(nextItem);
-      } else {
-        setCurrentItem(1);
-      }
-    }
-  }, [activePlan?.id]);
+      return updated;
+    });
+  }, [activePlan, currentItem]);
 
   const activeItemConfig = activePlan?.items.find((d) => d.item === currentItem);
 
@@ -560,10 +623,11 @@ export const App: React.FC = () => {
     if (!activePlan || !activeItemConfig) return;
     const params = new URLSearchParams(window.location.search);
     const urlItem = params.get('item') || params.get('session');
-    if (urlItem !== String(currentItem) || params.has('session')) {
+    const urlPlan = params.get('plan');
+    if (urlItem !== String(currentItem) || urlPlan !== activePlan.id || params.has('session')) {
       updateItemUrl(currentItem, 'replace');
     }
-  }, [activePlan, activeItemConfig, currentItem]);
+  }, [activePlan, activeItemConfig, currentItem, updateItemUrl]);
 
   // Auto-fetch missing passage text and track scripture reading when switching items
   useEffect(() => {
@@ -660,15 +724,17 @@ export const App: React.FC = () => {
       completedItems: {}
     });
 
+    const targetItem = getInitialItemForPlan(plan, savedMeta, null);
+    savedMeta.lastReadItem = targetItem;
     setPlanMetadata(savedMeta);
+    setCurrentItem(targetItem);
 
-    if (savedMeta.progress && savedMeta.progress.length > 0) {
-      const maxCompleted = Math.max(...savedMeta.progress);
-      const nextItem = maxCompleted < plan.items.length ? maxCompleted + 1 : plan.items.length;
-      setCurrentItem(nextItem);
-    } else {
-      setCurrentItem(1);
-    }
+    // Update URL immediately so stale URL parameters from previous plan do not persist
+    const url = new URL(window.location.href);
+    url.searchParams.delete('session');
+    url.searchParams.set('plan', plan.id);
+    url.searchParams.set('item', String(targetItem));
+    window.history.replaceState({ item: targetItem, plan: plan.id }, '', url);
   };
 
   const updateMetadata = (newMeta: UserPlanMetadata) => {
@@ -696,7 +762,8 @@ export const App: React.FC = () => {
 
     updateMetadata({
       ...planMetadata,
-      progress: itemProgress
+      progress: itemProgress,
+      lastReadItem: currentItem
     });
   };
 
@@ -708,11 +775,13 @@ export const App: React.FC = () => {
       const resetMeta: UserPlanMetadata = {
         startDate: new Date().toISOString(),
         progress: [],
-        completedItems: {}
+        completedItems: {},
+        lastReadItem: 1
       };
       setStartDate(new Date());
       updateMetadata(resetMeta);
       setCurrentItem(1);
+      updateItemUrl(1, 'replace');
       setShowSettings(false);
     }
   };
