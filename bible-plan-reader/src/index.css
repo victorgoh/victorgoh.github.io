@@ -1757,6 +1757,10 @@ body {
   cursor: pointer;
 }
 
+.item-nav-container {
+  padding-bottom: calc(76px + env(safe-area-inset-bottom));
+}
+
 @media (min-width: 600px) {
   .reader-navigation {
     position: static;
@@ -1767,6 +1771,10 @@ body {
     background: transparent;
     backdrop-filter: none;
     box-shadow: none;
+  }
+
+  .item-nav-container {
+    padding-bottom: 0;
   }
 }
 
