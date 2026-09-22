@@ -26,7 +26,7 @@ export const en = {
     activePlan: 'Active Plan',
     choosePlan: 'Change Plan',
     creator: 'By',
-    duration: '{{count}} items',
+    duration: '{{count}} sessions',
     startToday: 'Start Today',
     startFuture: 'Start Future Date',
     startDate: 'Start Date',

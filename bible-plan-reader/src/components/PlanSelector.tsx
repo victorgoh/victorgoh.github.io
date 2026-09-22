@@ -251,7 +251,7 @@ export const PlanSelector: React.FC<PlanSelectorProps> = ({
                           </div>
                           {item.type !== 'category' && item.totalItems && (
                             <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginTop: '2px' }}>
-                              {item.totalItems} entries {item.creator ? `• By ${item.creator}` : ''}
+                              {item.totalItems} {item.totalItems === 1 ? 'session' : 'sessions'} {item.creator ? `• By ${item.creator}` : ''}
                             </div>
                           )}
                         </div>
@@ -319,7 +319,7 @@ export const PlanSelector: React.FC<PlanSelectorProps> = ({
                         <div className="plan-card-meta" style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', fontSize: '0.80rem', color: 'var(--text-muted)' }}>
                           {item.type !== 'category' && item.totalItems && (
                             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontWeight: 500 }}>
-                              <Clock size={13} /> {item.totalItems} entries
+                              <Clock size={13} /> {item.totalItems} {item.totalItems === 1 ? 'session' : 'sessions'}
                             </span>
                           )}
                           {item.creator && (

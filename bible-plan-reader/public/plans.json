@@ -6,6 +6,25 @@
   },
   "plans": [
     {
+      "id": "formed-together",
+      "title": "Formed Together",
+      "description": "An introduction to the EQUIP Reader app for those new to the platform, exploring how to use it as a tool to facilitate spiritual formation through reading, praying, reflecting, and practicing together.",
+      "type": "reading",
+      "totalItems": 4,
+      "url": "plans/formed-together.json",
+      "creator": "EQUIP",
+      "version": "1.0",
+      "created": "2026-09-22",
+      "lastUpdated": "2026-09-22",
+      "tags": [
+        "Introduction",
+        "Discipleship",
+        "Community",
+        "Spiritual Formation"
+      ],
+      "featured": true
+    },
+    {
       "id": "new-believers-plans",
       "title": "New Believers",
       "description": "Foundational discipleship guides and interactive studies for new believers and small group mentoring.",
