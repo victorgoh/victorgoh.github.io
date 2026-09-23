@@ -63,7 +63,7 @@ When your small group gathers to read Scripture together, you join an ancient an
 Solitary Bible reading is essential, but reading together creates depth and accountability that solitary study alone cannot produce:
 * **Sparking Mutual Insight**: One person's observation unlocks understanding for someone who has struggled with a passage for years. 
 * **Asking Hard Questions**: In a safe community, questions surface that would otherwise remain buried in isolated reading.
-* **Mutual Admonition & Sharpness**: As Paul urged the Colossians, letting the word of Christ dwell richly *among you* involves teaching and admonishing one another ([Col 3:16](https://www.bible.com/bible/3034/COL.3.16.BSB)). As iron sharpens iron, our interpretations are refined, cognitive blind spots are challenged gently, and the community becomes grounded in immutable truth.
+* **Mutual Admonition & Sharpness**: As Paul urged the Colossians, letting the word of Christ dwell richly *among you* involves teaching and admonishing one another (Col 3:16). As iron sharpens iron, our interpretations are refined, cognitive blind spots are challenged gently, and the community becomes grounded in immutable truth.
 
 Eagerness paired with careful examination—not blind acceptance, and not cynical skepticism—honors God’s Word and creates fertile soil for lasting faith.
 
@@ -156,7 +156,7 @@ _Father of mercies, thank You that we do not have to walk through life pretendin
 ### 5. Facilitator & Group Discussion
 
 1. **Moving Beyond Surface Requests**: Why is it so difficult to share our actual spiritual, emotional, or moral struggles in small group prayer times? What would help make our group a safer space?
-2. **The Practice of Confession**: James directly links mutual confession with healing ([James 5:16](https://www.bible.com/bible/3034/JAS.5.16.BSB)). In what ways does bringing our struggles into the light of Christian community bring spiritual and emotional release?
+2. **The Practice of Confession**: James directly links mutual confession with healing (James 5:16). In what ways does bringing our struggles into the light of Christian community bring spiritual and emotional release?
 3. **Remembering Elijah**: How does knowing that Elijah was an ordinary human being with doubts and fears encourage your faith when praying over seemingly impossible situations?
 
 ---
@@ -210,7 +210,7 @@ When a small group reflects together, something supernatural takes place:
 * **Shared Illumination**: One member’s reflection often unlocks understanding for someone else who felt stuck. When a brother shares how the soldier’s single-minded focus exposes his own digital distractions, others in the room are convicted. When a sister reflects on the farmer’s patience, it steadies someone else’s anxiety over unanswered prayers.
 * **Allowing Silence to Sit**: Real understanding requires space. In our rush to fill every quiet pause with noise, we often forfeit the moment when the Spirit speaks. In community, we learn to let holy silence sit until God’s clarity emerges.
 
-Strength is rooted in the grace that is in Christ Jesus ([2 Tim 2:1](https://www.bible.com/bible/3034/2TI.2.1.BSB)), but that strength develops muscle as we reflect together on God's Word and allow it to reshape our thinking.
+Strength is rooted in the grace that is in Christ Jesus (2 Tim 2:1), but that strength develops muscle as we reflect together on God's Word and allow it to reshape our thinking.
 
 #### The App as a Tool for Reflecting Together
 Inside the **EQUIP Reader** app, the **Reflect & Discuss** questions and **Personal Notes** drawer facilitate this reflective rhythm:
@@ -232,7 +232,7 @@ _Lord Jesus, my Commander, Coach, and Provider, forgive me for rushing through Y
 
 ### 5. Facilitator & Group Discussion
 
-1. **Soldier, Athlete, Farmer**: Looking at Paul's three pictures in [2 Timothy 2:3–6](https://www.bible.com/bible/3034/2TI.2.3-6.BSB), which one speaks most directly to your current spiritual season?
+1. **Soldier, Athlete, Farmer**: Looking at Paul's three pictures in 2 Timothy 2:3–6, which one speaks most directly to your current spiritual season?
    * *The Soldier*: Where do you feel distracted or entangled by secondary affairs?
    * *The Athlete*: Where are you tempted to compromise or take shortcuts?
    * *The Farmer*: Where are you growing weary while waiting for a harvest?
@@ -280,7 +280,7 @@ Christianity is fundamentally embodied. We do not truly believe more of the Bibl
 
 Notice that the virtues Paul lists in Philippians 4 are thoroughly communal:
 * **Rejoicing & Gentleness**: Rejoicing together steadies a community when circumstances crumble. Demonstrating gentleness (*epieikes*—gracious reasonableness) diffuses friction among brothers and sisters.
-* **Peace Transmitted through Presence**: While the peace of God guards individual hearts and minds ([Phil 4:7](https://www.bible.com/bible/3034/PHP.4.7.BSB)), that peace is overwhelmingly transmitted and sustained through the faithful presence of fellow disciples. When you are overwhelmed by anxiety, seeing the steady faith and prayer of someone next to you steadies your own soul.
+* **Peace Transmitted through Presence**: While the peace of God guards individual hearts and minds (Phil 4:7), that peace is overwhelmingly transmitted and sustained through the faithful presence of fellow disciples. When you are overwhelmed by anxiety, seeing the steady faith and prayer of someone next to you steadies your own soul.
 * **The Laboratory of the Small Group**: Paul said, *"What you have seen in me, put into practice."* Others learn how to follow Jesus not just from hearing what we say, but by watching how we live, how we respond to adversity, how we speak about our spouses, and how we handle financial stress. Your small group is a holy laboratory where discipleship becomes visible, tested, and practiced together.
 
 Growth in Christ never happens in isolation. It flourishes when we walk alongside people who are actively trying to follow Jesus with authenticity and mutual accountability.
