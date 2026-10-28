@@ -2,7 +2,7 @@
 
 ## Complete Discipleship Guide (Digitized Booklet Edition)
 
-_A comprehensive foundational discipleship manual for personal grounding and study_
+_A comprehensive foundational discipleship manual for personal grounding and study. Compiled for SET FGA._
 
 ---
 

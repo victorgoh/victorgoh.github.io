@@ -111,7 +111,7 @@ def main():
     # Update main headers for booklet edition
     booklet_md = booklet_md.replace(
         "## Complete Discipleship Guide (Chapters 1–10)",
-        "## Complete Discipleship Guide (Digitized Booklet Edition)\n\n_A comprehensive foundational discipleship manual for personal grounding and study_"
+        "## Complete Discipleship Guide (Digitized Booklet Edition)\n\n_A comprehensive foundational discipleship manual for personal grounding and study. Compiled for SET FGA._"
     )
     with open('content/new-life-in-christ-booklet.md', 'w', encoding='utf-8') as f:
         f.write(booklet_md)
@@ -163,11 +163,11 @@ def main():
     booklet_json = {
         "id": "new-life-in-christ-booklet",
         "title": "New Life in Christ: Discipleship Guide (Booklet Edition)",
-        "description": "The complete digitized discipleship manual for new believers, containing all 10 in-depth chapters, full scriptural expositions, foundational doctrines, and memory verses. Compiled by Jeff Tan, updated by Victor Goh.",
+        "description": "The complete digitized discipleship manual for new believers, containing all 10 in-depth chapters, full scriptural expositions, foundational doctrines, and memory verses. Compiled for SET FGA.",
         "type": "reading",
         "totalItems": 10,
         "created": "2026-09-18",
-        "version": "1.0",
+        "version": "1.1",
         "creator": "SET FGA",
         "tags": [
             "New Believers",
@@ -191,14 +191,14 @@ def main():
             {
                 "id": "new-life-in-christ",
                 "title": "New Life in Christ (Interactive Small Group Study)",
-                "description": "A 10-session interactive discipleship guide structured for small group discussion, with key passage studies, personal prayers, and actionable steps. Compiled by Jeff Tan, updated by Victor Goh.",
+                "description": "A 10-session interactive discipleship guide structured for small group discussion, with key passage studies, personal prayers, and actionable steps. Compiled for SET FGA.",
                 "type": "reading",
                 "totalItems": 10,
                 "url": "plans/new-believers/new-life-in-christ.json",
                 "creator": "SET FGA",
-                "version": "1.0",
+                "version": "1.1",
                 "created": "2026-09-18",
-                "lastUpdated": "2026-09-18",
+                "lastUpdated": "2026-10-28",
                 "tags": [
                     "New Believers",
                     "Discipleship",
@@ -210,14 +210,14 @@ def main():
             {
                 "id": "new-life-in-christ-booklet",
                 "title": "New Life in Christ (Complete Booklet Edition)",
-                "description": "The complete 10-chapter discipleship manual with comprehensive expositions, all sub-points, S.O.A.P. devotional models, and memory verses. Compiled by Jeff Tan, updated by Victor Goh.",
+                "description": "The complete 10-chapter discipleship manual with comprehensive expositions, all sub-points, S.O.A.P. devotional models, and memory verses. Compiled for SET FGA.",
                 "type": "reading",
                 "totalItems": 10,
                 "url": "plans/new-believers/new-life-in-christ-booklet.json",
                 "creator": "SET FGA",
-                "version": "1.0",
+                "version": "1.1",
                 "created": "2026-09-18",
-                "lastUpdated": "2026-09-18",
+                "lastUpdated": "2026-10-28",
                 "tags": [
                     "New Believers",
                     "Discipleship",

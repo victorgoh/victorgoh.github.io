@@ -1,11 +1,11 @@
 {
   "id": "new-life-in-christ-booklet",
   "title": "New Life in Christ: Discipleship Guide (Booklet Edition)",
-  "description": "The complete digitized discipleship manual for new believers, containing all 10 in-depth chapters, full scriptural expositions, foundational doctrines, and memory verses. Compiled by Jeff Tan, updated by Victor Goh.",
+  "description": "The complete digitized discipleship manual for new believers, containing all 10 in-depth chapters, full scriptural expositions, foundational doctrines, and memory verses. Compiled for SET FGA.",
   "type": "reading",
   "totalItems": 10,
   "created": "2026-09-18",
-  "version": "1.0",
+  "version": "1.1",
   "creator": "SET FGA",
   "tags": [
     "New Believers",

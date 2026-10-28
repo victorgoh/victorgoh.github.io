@@ -1,7 +1,7 @@
 # New Life in Christ: Discipleship Guide for New Believers
 ## Interactive Small Group & Devotional Study Edition
 
-_A 10-Session Foundational Journey in Following Jesus, Growing in Faith, and Walking in Community_
+_A 10-Session Foundational Journey in Following Jesus, Growing in Faith, and Walking in Community. Compiled for SET FGA._
 
 ---
 

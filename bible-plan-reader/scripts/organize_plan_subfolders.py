@@ -101,7 +101,7 @@ update_plan_file(
     os.path.join(NEW_BELIEVERS_DIR, "new-life-in-christ.json"),
     creator="SET FGA",
     devotional_author="SET FGA",
-    description="A 10-session foundational discipleship guide for new believers designed for personal study and small group discussion, covering assurance of salvation, prayer, the Word, fellowship, overcoming temptation, and sharing your faith. Compiled by Jeff Tan, updated by Victor Goh."
+    description="A 10-session foundational discipleship guide for new believers designed for personal study and small group discussion, covering assurance of salvation, prayer, the Word, fellowship, overcoming temptation, and sharing your faith. Compiled for SET FGA."
 )
 
 update_plan_file(
@@ -109,7 +109,7 @@ update_plan_file(
     os.path.join(NEW_BELIEVERS_DIR, "new-life-in-christ-booklet.json"),
     creator="SET FGA",
     devotional_author="SET FGA",
-    description="The complete digitized discipleship manual for new believers, containing all 10 in-depth chapters, full scriptural expositions, foundational doctrines, and memory verses. Compiled by Jeff Tan, updated by Victor Goh."
+    description="The complete digitized discipleship manual for new believers, containing all 10 in-depth chapters, full scriptural expositions, foundational doctrines, and memory verses. Compiled for SET FGA."
 )
 
 print("\n--- 4. Generating Category Sub-Manifests ---")
@@ -267,14 +267,14 @@ new_believers_manifest = {
         {
             "id": "new-life-in-christ",
             "title": "New Life in Christ (Interactive Small Group Study)",
-            "description": "A 10-session interactive discipleship guide structured for small group discussion, with key passage studies, personal prayers, and actionable steps. Compiled by Jeff Tan, updated by Victor Goh.",
+            "description": "A 10-session interactive discipleship guide structured for small group discussion, with key passage studies, personal prayers, and actionable steps. Compiled for SET FGA.",
             "type": "reading",
             "totalItems": 10,
             "url": "plans/new-believers/new-life-in-christ.json",
             "creator": "SET FGA",
-            "version": "1.0",
+            "version": "1.1",
             "created": "2026-09-18",
-            "lastUpdated": "2026-09-18",
+            "lastUpdated": "2026-10-28",
             "tags": [
                 "New Believers",
                 "Discipleship",
@@ -286,14 +286,14 @@ new_believers_manifest = {
         {
             "id": "new-life-in-christ-booklet",
             "title": "New Life in Christ (Complete Booklet Edition)",
-            "description": "The complete 10-chapter discipleship manual with comprehensive expositions, all sub-points, S.O.A.P. devotional models, and memory verses. Compiled by Jeff Tan, updated by Victor Goh.",
+            "description": "The complete 10-chapter discipleship manual with comprehensive expositions, all sub-points, S.O.A.P. devotional models, and memory verses. Compiled for SET FGA.",
             "type": "reading",
             "totalItems": 10,
             "url": "plans/new-believers/new-life-in-christ-booklet.json",
             "creator": "SET FGA",
-            "version": "1.0",
+            "version": "1.1",
             "created": "2026-09-18",
-            "lastUpdated": "2026-09-18",
+            "lastUpdated": "2026-10-28",
             "tags": [
                 "New Believers",
                 "Discipleship",

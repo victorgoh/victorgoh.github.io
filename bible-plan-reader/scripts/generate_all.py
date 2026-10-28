@@ -658,11 +658,11 @@ def generate_interactive_json():
     plan = {
         "id": "new-life-in-christ",
         "title": "New Life in Christ: Discipleship Guide (Interactive Study)",
-        "description": "A 10-session foundational discipleship guide for new believers designed for personal study and small group discussion, covering assurance of salvation, prayer, the Word, fellowship, overcoming temptation, and sharing your faith. Compiled by Jeff Tan, updated by Victor Goh.",
+        "description": "A 10-session foundational discipleship guide for new believers designed for personal study and small group discussion, covering assurance of salvation, prayer, the Word, fellowship, overcoming temptation, and sharing your faith. Compiled for SET FGA.",
         "type": "reading",
         "totalItems": 10,
         "created": "2026-09-18",
-        "version": "1.0",
+        "version": "1.1",
         "creator": "SET FGA",
         "tags": [
             "New Believers",
